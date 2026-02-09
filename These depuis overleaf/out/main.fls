@@ -171,6 +171,9 @@ INPUT ./appendix/mis/acronym.tex
 INPUT appendix/mis/acronym.tex
 OUTPUT out/main.glo
 OUTPUT out/main.acn
+INPUT out/main.aux
+INPUT out/main.aux
+INPUT out/main.aux
 OUTPUT out/main.aux
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -209,76 +212,3 @@ INPUT ./img/usyd-logo.jpg
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 OUTPUT out/main.ist
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT ./Chapitres/abstract.tex
-INPUT ./Chapitres/abstract.tex
-INPUT ./Chapitres/abstract.tex
-INPUT ./Chapitres/abstract.tex
-INPUT Chapitres/abstract.tex
-INPUT ./appendix/mis/dedication.tex
-INPUT ./appendix/mis/dedication.tex
-INPUT ./appendix/mis/dedication.tex
-INPUT ./appendix/mis/dedication.tex
-INPUT appendix/mis/dedication.tex
-INPUT ./appendix/mis/declaration.tex
-INPUT ./appendix/mis/declaration.tex
-INPUT ./appendix/mis/declaration.tex
-INPUT ./appendix/mis/declaration.tex
-INPUT appendix/mis/declaration.tex
-INPUT ./appendix/mis/acknowledgements.tex
-INPUT ./appendix/mis/acknowledgements.tex
-INPUT ./appendix/mis/acknowledgements.tex
-INPUT ./appendix/mis/acknowledgements.tex
-INPUT appendix/mis/acknowledgements.tex
-OUTPUT out/main.toc
-OUTPUT out/main.lof
-OUTPUT out/main.lot
-INPUT ./Chapitres/Introduction.tex
-INPUT ./Chapitres/Introduction.tex
-INPUT ./Chapitres/Introduction.tex
-INPUT ./Chapitres/Introduction.tex
-INPUT Chapitres/Introduction.tex
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
-INPUT ./Chapitres/Ramsey interferometers on qudit .tex
-INPUT ./Chapitres/Ramsey interferometers on qudit .tex
-INPUT ./Chapitres/Ramsey interferometers on qudit .tex
-INPUT ./Chapitres/Ramsey interferometers on qudit .tex
-INPUT Chapitres/Ramsey interferometers on qudit .tex
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms.tex
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms.tex
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms.tex
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms.tex
-INPUT Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms.tex
-INPUT ./Chapitres/conclusion.tex
-INPUT ./Chapitres/conclusion.tex
-INPUT ./Chapitres/conclusion.tex
-INPUT ./Chapitres/conclusion.tex
-INPUT Chapitres/conclusion.tex
-INPUT ./appendix/appendixA.tex
-INPUT ./appendix/appendixA.tex
-INPUT ./appendix/appendixA.tex
-INPUT ./appendix/appendixA.tex
-INPUT appendix/appendixA.tex
-INPUT out/main.aux
-INPUT out/main.out
-INPUT out/main.out
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
