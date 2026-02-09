@@ -14,7 +14,7 @@
 \usepackage{lipsum} %DUMMY TEXT
 \usepackage{float}
 \raggedbottom
-\usepackage[subsection]{placeins}
+\usepackage[section]{placeins}
 
 % CONFIGS
 \pagestyle{fancy}
@@ -59,7 +59,7 @@
 \begin{document}
 
 \input{appendix/titlepage}
-\input{appendix/mis/abstract}
+\input{appendix/abstract}
 \pagenumbering{gobble}
 \input{appendix/mis/dedication}
 \input{appendix/mis/declaration}
@@ -70,11 +70,11 @@
 \listoftables
 \printglossary[type=\acronymtype]
 
-\input{Chapitres/Introduction}
+\input{Chapitres/Introduction/Introduction}
 \pagenumbering{arabic}
-\input{Chapitres/Ramsey interferometers on qudit }
-\input{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms}
-\input{Chapitres/conclusion}
+\input{Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit}
+\input{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms}
+\input{Chapitres/conclusion/conclusion}
 
 \bibliography{ref}
 \pagenumbering{roman}

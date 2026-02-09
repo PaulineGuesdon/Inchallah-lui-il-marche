@@ -195,8 +195,14 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
-OUTPUT out/main.out
+INPUT out/main.out
+INPUT out/main.out
+INPUT out/main.out
+INPUT out/main.out
 OUTPUT out/main.pdf
+INPUT out/main.out
+INPUT out/main.out
+OUTPUT out/main.out
 INPUT ./appendix/titlepage.tex
 INPUT ./appendix/titlepage.tex
 INPUT ./appendix/titlepage.tex
@@ -205,10 +211,149 @@ INPUT appendix/titlepage.tex
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT ./img/usyd-logo.jpg
-INPUT ./img/usyd-logo.jpg
-INPUT ./img/usyd-logo.jpg
-INPUT ./img/usyd-logo.jpg
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 OUTPUT out/main.ist
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT ./appendix/abstract.tex
+INPUT ./appendix/abstract.tex
+INPUT ./appendix/abstract.tex
+INPUT ./appendix/abstract.tex
+INPUT appendix/abstract.tex
+INPUT ./appendix/mis/dedication.tex
+INPUT ./appendix/mis/dedication.tex
+INPUT ./appendix/mis/dedication.tex
+INPUT ./appendix/mis/dedication.tex
+INPUT appendix/mis/dedication.tex
+INPUT ./appendix/mis/declaration.tex
+INPUT ./appendix/mis/declaration.tex
+INPUT ./appendix/mis/declaration.tex
+INPUT ./appendix/mis/declaration.tex
+INPUT appendix/mis/declaration.tex
+INPUT ./appendix/mis/acknowledgements.tex
+INPUT ./appendix/mis/acknowledgements.tex
+INPUT ./appendix/mis/acknowledgements.tex
+INPUT ./appendix/mis/acknowledgements.tex
+INPUT appendix/mis/acknowledgements.tex
+INPUT out/main.toc
+INPUT out/main.toc
+INPUT out/main.toc
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+OUTPUT out/main.toc
+INPUT out/main.lof
+INPUT out/main.lof
+INPUT out/main.lof
+OUTPUT out/main.lof
+INPUT out/main.lot
+INPUT out/main.lot
+INPUT out/main.lot
+OUTPUT out/main.lot
+INPUT ./Chapitres/Introduction/Introduction.tex
+INPUT ./Chapitres/Introduction/Introduction.tex
+INPUT ./Chapitres/Introduction/Introduction.tex
+INPUT ./Chapitres/Introduction/Introduction.tex
+INPUT Chapitres/Introduction/Introduction.tex
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./Chapitres/Introduction/energy_levels_repumper.png
+INPUT ./Chapitres/Introduction/energy_levels_repumper.png
+INPUT ./Chapitres/Introduction/energy_levels_repumper.png
+INPUT ./Chapitres/Introduction/energy_levels_repumper.png
+INPUT ./Chapitres/Introduction/energy_levels_repumper.png
+INPUT ./Chapitres/Introduction/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/need_for_stir.png
+INPUT ./Chapitres/Introduction/need_for_stir.png
+INPUT ./Chapitres/Introduction/need_for_stir.png
+INPUT ./Chapitres/Introduction/need_for_stir.png
+INPUT ./Chapitres/Introduction/need_for_stir.png
+INPUT ./Chapitres/Introduction/randomisation.jpeg
+INPUT ./Chapitres/Introduction/randomisation.jpeg
+INPUT ./Chapitres/Introduction/randomisation.jpeg
+INPUT ./Chapitres/Introduction/randomisation.jpeg
+INPUT ./Chapitres/Introduction/randomisation.jpeg
+INPUT ./Chapitres/Introduction/ODT_loading.png
+INPUT ./Chapitres/Introduction/ODT_loading.png
+INPUT ./Chapitres/Introduction/ODT_loading.png
+INPUT ./Chapitres/Introduction/ODT_loading.png
+INPUT ./Chapitres/Introduction/ODT_loading.png
+INPUT ./Chapitres/Introduction/optical_pumping.png
+INPUT ./Chapitres/Introduction/optical_pumping.png
+INPUT ./Chapitres/Introduction/optical_pumping.png
+INPUT ./Chapitres/Introduction/optical_pumping.png
+INPUT ./Chapitres/Introduction/optical_pumping.png
+INPUT ./Chapitres/Introduction/spin_kick_scheme.png
+INPUT ./Chapitres/Introduction/spin_kick_scheme.png
+INPUT ./Chapitres/Introduction/spin_kick_scheme.png
+INPUT ./Chapitres/Introduction/spin_kick_scheme.png
+INPUT ./Chapitres/Introduction/spin_kick_scheme.png
+INPUT ./Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex
+INPUT ./Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex
+INPUT ./Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex
+INPUT ./Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex
+INPUT Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex
+INPUT Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png
+INPUT ./Chapitres/conclusion/conclusion.tex
+INPUT ./Chapitres/conclusion/conclusion.tex
+INPUT ./Chapitres/conclusion/conclusion.tex
+INPUT ./Chapitres/conclusion/conclusion.tex
+INPUT Chapitres/conclusion/conclusion.tex
+INPUT out/main.bbl
+INPUT out/main.bbl
+INPUT out/main.bbl
+INPUT ./appendix/appendixA.tex
+INPUT ./appendix/appendixA.tex
+INPUT ./appendix/appendixA.tex
+INPUT ./appendix/appendixA.tex
+INPUT appendix/appendixA.tex
+INPUT out/main.aux
+INPUT out/main.out
+INPUT out/main.out
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
