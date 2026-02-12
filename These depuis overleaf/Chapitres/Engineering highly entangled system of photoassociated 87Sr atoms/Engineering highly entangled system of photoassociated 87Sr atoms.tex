@@ -44,10 +44,8 @@ to tune the scattering length of the atoms and thus the interactions in the syst
 
 
 \subsection{Molecular formalism/vocabulary (condon radius, optical length...)}
-Optical length is defined as the imaginary part of the scattering length.
-
-and describes the stength of 
-the photoassociation rate 
+Optical length is defined as the imaginary part of the scattering length and 
+describes the strength of the photoassociation rate 
 
 \begin{equation}
     K_2= \frac{4\pi \hbar}{\mu} nl_{opt}
@@ -60,10 +58,15 @@ The Franck Condon factor is the probability to transition from an initial vibrat
 a final vibrational $f$ state
 
 \begin{equation} 
-    F_{FC} = \Bigg|\int \psi_i^* \psi_f dr\Bigg |^2 
+    F_{FC} = \Bigg|\int_0^{\infty} \psi_i(R) \psi_f(R) dR\Bigg |^2 
 \end{equation}
 
-The Condon radius is the distance between the atoms for which this factor is maximum.
+It depends directly with the overlap of the wavefunctions of the initial and final states.
+The Condon radius is the distance between the atoms for which this factor is maximum.\\
+
+\begin{equation}
+    T = R+J
+\end{equation}
 
 \subsection{Internal energy states}
 \subsubsection{WKB approximation}
@@ -73,6 +76,7 @@ The Condon radius is the distance between the atoms for which this factor is max
     \caption{Caption}
     \label{fig:placeholder}
 \end{figure}
+
 \subsubsection{}
 \subsection{External energy states}
 \section{About photoassociation on other species}
