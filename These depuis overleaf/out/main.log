@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.5)  13 FEB 2026 16:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.5)  13 FEB 2026 16:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -829,27 +829,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--82
  []
 
 [7]
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
 <Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png, id=598, 679.03688pt x 452.4403pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png  used on input line 94.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png  used on input line 105.
 (pdftex.def)             Requested size: 298.75262pt x 199.05363pt.
 <Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png, id=599, 399.74344pt x 375.65344pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png  used on input line 106.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png  used on input line 117.
 (pdftex.def)             Requested size: 298.75262pt x 280.76494pt.
- [8 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png>]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png, id=605, 407.27156pt x 487.8225pt>
+[8 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png>]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png, id=608, 407.27156pt x 487.8225pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png  used on input line 115.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png  used on input line 126.
 (pdftex.def)             Requested size: 298.75262pt x 357.8567pt.
  [9 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png>]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png, id=611, 567.62062pt x 371.88937pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png, id=614, 567.62062pt x 371.88937pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png  used on input line 127.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png  used on input line 138.
 (pdftex.def)             Requested size: 298.75262pt x 195.73853pt.
  [10 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png>]) (Chapitres/conclusion/conclusion.tex [11 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png>]) (c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\These depuis overleaf\out\main.bbl [12
 
@@ -876,17 +880,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 4B784B208A7F9397CA333EBA1318FE8B;13801.
  ) 
 Here is how much of TeX's memory you used:
- 19902 strings out of 467866
- 390622 string characters out of 5413486
+ 19907 strings out of 467866
+ 390712 string characters out of 5413486
  921807 words of memory out of 5000000
- 48413 multiletter control sequences out of 15000+600000
+ 48415 multiletter control sequences out of 15000+600000
  633255 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,11n,79p,2593b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\These depuis overleaf\out\main.pdf" (28 pages, 2965446 bytes).
+Output written on "c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\These depuis overleaf\out\main.pdf" (28 pages, 2966791 bytes).
 PDF statistics:
- 699 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
+ 702 PDF objects out of 1000 (max. 8388607)
+ 108 named destinations out of 1000 (max. 500000)
  580 words of extra memory for PDF output out of 10000 (max. 10000000)
 
