@@ -62,34 +62,30 @@ a final vibrational $f$ state
 \end{equation}
 
 
-R the distance inter-nuclear.
+R the inter-nuclear distance.
 It depends directly with the overlap of the wavefunctions of the initial and final states.
 The Condon radius is the distance between the atoms for which this factor is maximum
-which also means that in a classical approachthe atoms spend the most time at this position.\\
+which also means that in a classical approach the atoms spend the most time at this position.\\
 
 
 \textbf{The good quantum numbers}\\
 We write the total angular momentum of the molecule $T = R + F = R + I + J$, $F$ being the 
-total spin of the two atoms $f_1 + f_2$, and R the rotational angular momentum of the molecule. 
-$R = 0, 2$ or $4$ in our case because we have only s-wave collisions which means that the orbital
-part of the wavefunction should be odd and the spin one antisymetric
+total spin of the two atoms $f_1 + f_2$, $J = j_1+j_2$ is the angular momentum
+of the molecule that describes the spin-orbit coupling, and R the rotational angular momentum of the molecule. \\
 
+We define the projection of the different angular momentum on the inter-nuclear axis as
 \begin{equation}
-    \ket{\Psi} = \left(\ket{\phi_1}_1 \ket{\phi_2}_2 + p(-1)^R \ket{\phi_2}_1 \ket{\phi_1}_2\right)
-     \otimes\ket{\chi}
+    \Omega = \Lambda + \Sigma
 \end{equation}
 
-
-We are in Hund's case (c) because there is a strong spin-orbit coupling that
-couples to the internuclear axis, and is quantified by $\Omega$.\\
+with $\Lambda$ the projection of the orbital momentum of the molecule on the internuclear axis
+and $\Sigma$ the projection of the momentum spin.
 
 $M_T$ is the projection of the total angular momentum $T$ onto a defined quantization axis,
 sometimes being the internuclear axis depending on the Hund's case.\\
-$J = j_1+j_2$ is the angular moment of the electronic state of the molecule.\\
-$\Omega$ is the projection of J on the internuclear axis.\\
 
-The experiment presented in the following is photoassociation in the $F=11/2$ hyperfine state. We will focus on this
-section in this state to simplify the discussion.\\
+The experiment presented in the following section is photoassociation in the $F=11/2$ hyperfine
+state. We will focus on this section in this state to simplify the discussion.\\
 
 Say we have one atome in the $^1S_0$ state and one in the $^3P_1$ state: we can have a total spin of $J = 0, 1$ 
 or $2$. It gives possible values of total atomic angular momentum F:
@@ -101,12 +97,29 @@ or $2$. It gives possible values of total atomic angular momentum F:
 \end{align}\\
 
 
+
 We have one atom with $f_1=9/2$ from the $^1S_0$ state and one in the $^3P_1$ state with $f_2=11/2$.
-The possible values of total angular momentum of the molecule are $F = 1, 2, 3, 4, 5, 6, 7, 8, 9$ or $10$.\\
+The possible values of total angular momentum of the molecule are $F = 1, 2, 3, 4, 5, 6, 7, 8, 9$ or $10$.
 
+For the rotationnal quantum number there is a parity of the total wavefunction that needs to 
+be fulfilled. In addition there are only s-wave collisions in cold gases then the part of the 
+wavefunction should be odd the spin one antisymetric
+\begin{equation}
+    \ket{\Psi} = \left(\ket{\phi_e}_A \ket{\phi_g}_B + (-1)^R \ket{\phi_e}_B \ket{\phi_g}_A\right)
+     \otimes\ket{\chi}
+\end{equation}
+$\ket{\phi_e}$ and $\ket{\phi_g}$ are the electronic wavefunctions of the two atoms A and B, 
+and $\ket{\chi}$ is the spin wavefunction.
+It gives accessible values $R = 0, 2$ or $4$...
 
-Ajouter une représentation de mon cas de Hund en particulier pour illustrer les
-nombres quantiques (cas a ou c)\\
+For $^1S_0$-$^3P_1$ molecular state there is a strong spin-orbit coupling that couples its 
+related momentum to the internuclear axis, quantified by $\Omega$ and described as Hund's case (c)\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png}
+    \caption{Caption}
+    \label{fig:placeholder}
+\end{figure}
 
 \subsection{External energy states}
 To describe two-body losses of a photoassociation process, we need to change our basis 
