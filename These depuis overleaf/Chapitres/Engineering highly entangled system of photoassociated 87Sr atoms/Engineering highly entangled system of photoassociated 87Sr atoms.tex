@@ -84,9 +84,31 @@ and $\Sigma$ the projection of the momentum spin.
 $M_T$ is the projection of the total angular momentum $T$ onto a defined quantization axis,
 sometimes being the internuclear axis depending on the Hund's case.\\
 
-The experiment presented in the following section is photoassociation in the $F=11/2$ hyperfine
-state. We will focus on this section in this state to simplify the discussion.\\
+For the rotational quantum number there is a parity of the total wavefunction that needs to 
+be fulfilled. In addition there are only s-wave collisions in cold gases then the part of the 
+wavefunction should be odd the spin one antisymetric
+\begin{equation}
+    \ket{\Psi} = \left(\ket{\phi_e}_A \ket{\phi_g}_B + (-1)^R \ket{\phi_e}_B \ket{\phi_g}_A\right)
+     \otimes\ket{\chi}
+\end{equation}
+$\ket{\phi_e}$ and $\ket{\phi_g}$ are the electronic wavefunctions of the two atoms A and B 
+in ground and excited state respectively, $\ket{\chi}$ is the spin wavefunction.
+It gives accessible values $R = 0, 2$ or $4$...
 
+The hamiltonian of the homonuclear molecule 
+For $^1S_0$ - $^3P_1$ molecular state there is a strong spin-orbit coupling that couples its 
+related momentum to the internuclear axis (\ref{fig:hund}), quantified by $\Omega$ and described as Hund's case 
+(c) \\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png}
+    \caption{hund}
+    \label{fig:hund}
+\end{figure}
+
+The experiment presented in the following section is photoassociation in the $F=11/2$ hyperfine
+state. We will focus in this state to simplify the discussion.\\
 Say we have one atome in the $^1S_0$ state and one in the $^3P_1$ state: we can have a total spin of $J = 0, 1$ 
 or $2$. It gives possible values of total atomic angular momentum F:
 
@@ -97,34 +119,23 @@ or $2$. It gives possible values of total atomic angular momentum F:
 \end{align}\\
 
 
-
 We have one atom with $f_1=9/2$ from the $^1S_0$ state and one in the $^3P_1$ state with $f_2=11/2$.
 The possible values of total angular momentum of the molecule are $F = 1, 2, 3, 4, 5, 6, 7, 8, 9$ or $10$.
 
-For the rotationnal quantum number there is a parity of the total wavefunction that needs to 
-be fulfilled. In addition there are only s-wave collisions in cold gases then the part of the 
-wavefunction should be odd the spin one antisymetric
-\begin{equation}
-    \ket{\Psi} = \left(\ket{\phi_e}_A \ket{\phi_g}_B + (-1)^R \ket{\phi_e}_B \ket{\phi_g}_A\right)
-     \otimes\ket{\chi}
-\end{equation}
-$\ket{\phi_e}$ and $\ket{\phi_g}$ are the electronic wavefunctions of the two atoms A and B, 
-and $\ket{\chi}$ is the spin wavefunction.
-It gives accessible values $R = 0, 2$ or $4$...
-
-For $^1S_0$-$^3P_1$ molecular state there is a strong spin-orbit coupling that couples its 
-related momentum to the internuclear axis, quantified by $\Omega$ and described as Hund's case (c)\\
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png}
-    \caption{Caption}
-    \label{fig:placeholder}
-\end{figure}
 
 \subsection{External energy states}
-To describe two-body losses of a photoassociation process, we need to change our basis 
+To describe two-body losses of a photoassociation process, we can change the study basis 
 depending on the distance between the two atoms by approximating dominant couplings 
-over others. (Hund's cases)
+over others. (Hund's cases) \\
+The hamiltonian of the two-atom system is given by
+
+\begin{equation}
+    \hat{H} = \hat{T} + \hat{V}_{BO} + \frac{\hbar^2}{2\mu r^2} + \hat{H}_{HF} 
+\end{equation}
+with
+\begin{equation}
+    \hat{V}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
+\end{equation}
 
 \subsubsection{WKB approximation}
 \begin{figure}[H]
@@ -136,6 +147,7 @@ over others. (Hund's cases)
 
 \subsubsection{}
 \subsection{Internal energy states}
+Leroy-Bernstein approx
 \section{About photoassociation on other species}
 
 \subsection{Mass scaling (88Sr)}
