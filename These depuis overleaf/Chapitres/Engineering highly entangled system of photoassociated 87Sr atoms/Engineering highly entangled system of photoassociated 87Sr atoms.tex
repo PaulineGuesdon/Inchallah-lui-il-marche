@@ -65,40 +65,54 @@ a final vibrational $f$ state
 R the distance inter-nuclear.
 It depends directly with the overlap of the wavefunctions of the initial and final states.
 The Condon radius is the distance between the atoms for which this factor is maximum
-which also means that the atoms spend the most time at this position.\\
+which also means that in a classical approachthe atoms spend the most time at this position.\\
 
 
-The good quantum numbers :\\
+\textbf{The good quantum numbers}\\
 We write the total angular momentum of the molecule $T = R + F = R + I + J$, $F$ being the 
-total spin of the two atoms $f_1 + f_2$, and R the rotational angular momentum of the molecule. The R =0
-in our case because we have only s-wave collisions.\\
+total spin of the two atoms $f_1 + f_2$, and R the rotational angular momentum of the molecule. 
+$R = 0, 2$ or $4$ in our case because we have only s-wave collisions which means that the orbital
+part of the wavefunction should be odd and the spin one antisymetric
 
-$M_T$ is the projection of T on the quantization axis being the internuclear axis.\\
+\begin{equation}
+    \ket{\Psi} = \left(\ket{\phi_1}_1 \ket{\phi_2}_2 + p(-1)^R \ket{\phi_2}_1 \ket{\phi_1}_2\right)
+     \otimes\ket{\chi}
+\end{equation}
+
+
+We are in Hund's case (c) because there is a strong spin-orbit coupling that
+couples to the internuclear axis, and is quantified by $\Omega$.\\
+
+$M_T$ is the projection of the total angular momentum $T$ onto a defined quantization axis,
+sometimes being the internuclear axis depending on the Hund's case.\\
 $J = j_1+j_2$ is the angular moment of the electronic state of the molecule.\\
 $\Omega$ is the projection of J on the internuclear axis.\\
-
-Ajouter une représentation de mon cas de Hund en particulier pour illustrer les
-nombres quantiques (cas a ou c)\\
 
 The experiment presented in the following is photoassociation in the $F=11/2$ hyperfine state. We will focus on this
 section in this state to simplify the discussion.\\
 
 Say we have one atome in the $^1S_0$ state and one in the $^3P_1$ state: we can have a total spin of $J = 0, 1$ 
-or $2$. The nuclear spin of the $^87Sr$ being $I = 9/2$, we can have a total nuclear spin of $I = 0, 1, 2, 3, 4, 5, 6, 7, 
-8$ or $9$. It gives possible values of F:
+or $2$. It gives possible values of total atomic angular momentum F:
 
 \begin{align}
 \text{For } J=0, &\quad F=\frac{9}{2} \\
 \text{For } J=1, &\quad F=\frac{7}{2},\frac{9}{2},\frac{11}{2} \\
 \text{For } J=2, &\quad F=\frac{5}{2},\frac{7}{2},\frac{9}{2},\frac{11}{2},\frac{13}{2}
-\end{align}
-
+\end{align}\\
 
 
 We have one atom with $f_1=9/2$ from the $^1S_0$ state and one in the $^3P_1$ state with $f_2=11/2$.
-The possible values of total angular momentum of the molecule are $F = 1, 2, 3, 4, 5, 6, 7, 8, 9$ or $10$.
+The possible values of total angular momentum of the molecule are $F = 1, 2, 3, 4, 5, 6, 7, 8, 9$ or $10$.\\
 
-\subsection{Internal energy states}
+
+Ajouter une représentation de mon cas de Hund en particulier pour illustrer les
+nombres quantiques (cas a ou c)\\
+
+\subsection{External energy states}
+To describe two-body losses of a photoassociation process, we need to change our basis 
+depending on the distance between the two atoms by approximating dominant couplings 
+over others. (Hund's cases)
+
 \subsubsection{WKB approximation}
 \begin{figure}[H]
     \centering
@@ -108,7 +122,7 @@ The possible values of total angular momentum of the molecule are $F = 1, 2, 3, 
 \end{figure}
 
 \subsubsection{}
-\subsection{External energy states}
+\subsection{Internal energy states}
 \section{About photoassociation on other species}
 
 \subsection{Mass scaling (88Sr)}
