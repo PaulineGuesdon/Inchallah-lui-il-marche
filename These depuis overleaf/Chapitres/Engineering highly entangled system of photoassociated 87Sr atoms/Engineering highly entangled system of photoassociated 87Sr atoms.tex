@@ -58,11 +58,11 @@ The Franck Condon factor is the probability to transition from an initial vibrat
 a final vibrational $f$ state
 
 \begin{equation} 
-    F_{FC} = \Bigg|\int_0^{\infty} \psi_i(R) \psi_f(R) dR\Bigg |^2 
+    F_{FC} = \Bigg|\int_0^{\infty} \psi_i(r) \psi_f(r) dr\Bigg |^2 
 \end{equation}
 
 
-R the inter-nuclear distance.
+r the inter-nuclear distance.
 It depends directly with the overlap of the wavefunctions of the initial and final states.
 The Condon radius is the distance between the atoms for which this factor is maximum
 which also means that in a classical approach the atoms spend the most time at this position.\\
@@ -81,8 +81,7 @@ We define the projection of the different angular momentum on the inter-nuclear 
 with $\Lambda$ the projection of the orbital momentum of the molecule on the internuclear axis
 and $\Sigma$ the projection of the momentum spin.
 
-$M_T$ is the projection of the total angular momentum $T$ onto a defined quantization axis,
-sometimes being the internuclear axis depending on the Hund's case.\\
+$M_T$ is the projection of the total angular momentum $T$ onto a defined quantization axis.\\
 
 For the rotational quantum number there is a parity of the total wavefunction that needs to 
 be fulfilled. In addition there are only s-wave collisions in cold gases then the part of the 
@@ -120,8 +119,13 @@ or $2$. It gives possible values of total atomic angular momentum F:
 
 
 We have one atom with $f_1=9/2$ from the $^1S_0$ state and one in the $^3P_1$ state with $f_2=11/2$.
-The possible values of total angular momentum of the molecule are $F = 1, 2, 3, 4, 5, 6, 7, 8, 9$ or $10$.
+The possible values of total angular momentum of the molecule are 
 
+\begin{align}
+\text{For } R=0, &\quad {T = 1, 2, 3... 10}\\
+\text{For } R=2, &\quad {T = 1,2... 12}\\
+\text{For } R=4, &\quad {T = 1,2 ... 14}
+\end{align}\\
 
 \subsection{External energy states}
 To describe two-body losses of a photoassociation process, we can change the study basis 
@@ -130,13 +134,16 @@ over others. (Hund's cases) \\
 The hamiltonian of the two-atom system is given by
 
 \begin{equation}
-    \hat{H} = \hat{T} + \hat{V}_{BO} + \frac{\hbar^2}{2\mu r^2} + \hat{H}_{HF} 
+    \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{V}_{BO} + \hat{H}_{HF} 
 \end{equation}
 with
 \begin{equation}
     \hat{V}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
 \end{equation}
 
+\begin{equation}
+    
+\end{equation}
 \subsubsection{WKB approximation}
 \begin{figure}[H]
     \centering
