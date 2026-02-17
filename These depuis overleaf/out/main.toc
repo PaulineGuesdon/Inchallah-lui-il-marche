@@ -1,0 +1,63 @@
+\contentsline {chapter}{\numberline {1}Introduction}{}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Fermi gas preparation (+ Bose gas ?)}{}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}TC}{}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Zeeman cooling}{}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Blue MOT}{}{subsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.3.1}The physics}{}{subsubsection.1.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.1.3.2}How to optimize the superposition with the repumper}{}{subsubsection.1.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.1.3.3}Comment on the hyperfine states (+boson 88)}{}{subsubsection.1.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.1.3.4}Optical setup (blue + repump)}{}{subsubsection.1.1.3.4}%
+\contentsline {subsection}{\numberline {1.1.4}Repumper}{}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}BB MOT}{}{subsection.1.1.5}%
+\contentsline {subsubsection}{\numberline {1.1.5.1}First step}{}{subsubsection.1.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.1.5.2}Second step}{}{subsubsection.1.1.5.2}%
+\contentsline {subsection}{\numberline {1.1.6}Stir}{}{subsection.1.1.6}%
+\contentsline {subsection}{\numberline {1.1.7}Narrow MOT}{}{subsection.1.1.7}%
+\contentsline {subsubsection}{\numberline {1.1.7.1}Optimization of the narrow MOT (intensity, frequency, effect on the size of the cloud)}{}{subsubsection.1.1.7.1}%
+\contentsline {subsubsection}{\numberline {1.1.7.2}Optical setup}{}{subsubsection.1.1.7.2}%
+\contentsline {subsection}{\numberline {1.1.8}ODT and evaporation}{1}{subsection.1.1.8}%
+\contentsline {subsubsection}{\numberline {1.1.8.1}Charging the crossing}{1}{subsubsection.1.1.8.1}%
+\contentsline {subsubsection}{\numberline {1.1.8.2}Optimization of the evaporation ramps : Dimple + reservoir, just reservoir, parameter to optimize (number of atoms, temperature)}{1}{subsubsection.1.1.8.2}%
+\contentsline {subsubsection}{\numberline {1.1.8.3}Optical setup}{1}{subsubsection.1.1.8.3}%
+\contentsline {subsection}{\numberline {1.1.9}Optical pumping}{1}{subsection.1.1.9}%
+\contentsline {section}{\numberline {1.2}Spin measurement scheme}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Ramsey interferometers on qudit }{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Preparation of arbitrary dimension Hilbert space}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Raman process}{3}{subsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}$\delta m_F = \pm 1$}{3}{subsubsection.2.1.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}$\delta m_F = \pm 2$}{3}{subsubsection.2.1.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}Moglabs chain without cavity}{3}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Purification of the laser spectrum with a FP cavity}{3}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Interferometric sensing with multiple nuclear spin state}{3}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Driving long coherence time Rabi oscillations}{3}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Rabi oscillations}{3}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Interferometer of su(2) symmetry}{4}{subsubsection.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Discussion on inhomogeneites}{4}{subsubsection.2.2.1.3}%
+\contentsline {subsection}{\numberline {2.2.2}Measuring two quantites at a time}{4}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Physical principle}{4}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Results}{4}{subsubsection.2.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Measuring two non commuting observables}{4}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Principle}{4}{subsubsection.2.2.3.1}%
+\contentsline {section}{\numberline {2.3}SU(N) symmetry (ce qu'il faudrait pr la tester e.g densité gaz, alimentation bobines -> comment faire mieux que les chiffres actuels)}{4}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Engineering highly entangled system of photoassociated 87Sr atoms}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction on photoassociation}{6}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}What is photoassociation}{6}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Molecular formalism/vocabulary (condon radius, optical length...)}{7}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}External energy states}{10}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}WKB approximation}{11}{subsubsection.3.1.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.3.2}}{11}{subsubsection.3.1.3.2}%
+\contentsline {subsection}{\numberline {3.1.4}Internal energy states}{11}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}About photoassociation on other species}{12}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Mass scaling (88Sr)}{12}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Ytterbium: hfs}{13}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Experimental setup}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.4}88Sr Results}{13}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Technical issues of inhabilitation of photoassociation}{14}{subsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.1}Laser width}{14}{subsubsection.3.4.1.1}%
+\contentsline {section}{\numberline {3.5}87Sr molecules}{14}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Physical sources of inhabilitation of photoassociation}{14}{subsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.1.1}On F = 9/2 : predissociation}{14}{subsubsection.3.5.1.1}%
+\contentsline {subsubsection}{\numberline {3.5.1.2}Coupling to more energetic state from the IR}{14}{subsubsection.3.5.1.2}%
+\contentsline {subsubsection}{\numberline {3.5.1.3}Node of wavefunction for some vibrational states}{14}{subsubsection.3.5.1.3}%
+\contentsline {subsection}{\numberline {3.5.2}Energy landscape of 87Sr-87Sr molecules}{14}{subsection.3.5.2}%
+\contentsline {chapter}{\numberline {A}Algorithms}{ii}{appendix.A}%

@@ -127,6 +127,19 @@ The possible values of total angular momentum of the molecule are
 \text{For } R=4, &\quad {T = 1,2 ... 14}
 \end{align}\\
 
+Another element to describe the molecule is the symmetry of the orbital wavefunction. For an
+even wavefunction the exchange of the two atoms $A$ and $B$ does not change the sign of the 
+wavefunction, as in left figures \ref{fig:u-g symmetry}. We say the potential is \textbf{gerade}.
+The probability of finding electrons in between the two atoms is high compared to the 
+\textbf{ungerade} potential where the odd wavefunction cancels the probability of finding electrons in between.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png}
+    \caption{u-g symmetry}
+    \label{fig:u-g symmetry}
+\end{figure}
+
 \subsection{External energy states}
 To describe two-body losses of a photoassociation process, we can change the study basis 
 depending on the distance between the two atoms by approximating dominant couplings 
@@ -142,8 +155,20 @@ with
 \end{equation}
 
 \begin{equation}
-    
+\hat{H}_{\mathrm{hf}} =
+A \, (\mathbf{i}_1 \cdot \mathbf{j}_1)
++
+B \,
+\frac{
+3(\mathbf{i}_1 \cdot \mathbf{j}_1)^2
++ \frac{3}{2}(\mathbf{i}_1 \cdot \mathbf{j}_1)
+- i_1(i_1+1)\, j_1(j_1+1)
+}{
+2 i_1 (2 i_1 - 1)\,
+2 j_1 (2 j_1 - 1)
+}
 \end{equation}
+The hyperfine of the atom in $1S_0$ is zero because its electronic angular momentum is zero.
 \subsubsection{WKB approximation}
 \begin{figure}[H]
     \centering
