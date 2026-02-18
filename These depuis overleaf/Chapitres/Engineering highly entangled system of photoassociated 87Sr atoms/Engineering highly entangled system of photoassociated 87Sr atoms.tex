@@ -1,34 +1,44 @@
+% !TeX root = ../../main.tex
 \chapter{Engineering highly entangled system of photoassociated 87Sr atoms}
 Engineering Dicke states
 
 \section{Introduction on photoassociation}
+\subsection{Apparatus on scattering theory}
 
-\subsection{What is photoassociation}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png}
-    \caption{Caption}
-    \label{fig:PA_concept}
-\end{figure}
+In a potential describing the interaction between two atoms, we can
+discretize different interaction zones depending on the inter-nuclear
+distance. 
+For $k$ the inverse of the De Broglie wavelength, when $r >> 1/k$ the atoms 
+do not feel each other and the potential is reduced to the van der Waals 
+potential $\frac{-C_6}{r^6}$. When they get closer their electronic 
+shell start to overlap and the potential is more complex. The total 
+wavefunction of this system is well described by standing waves that are a 
+superposition of incoming and outgoing waves. It is expressed as
 
-Photoassociating two atoms consists in bounding two colliding atoms with light 
-that occurs mostly with two-body and three body losses. 
+\begin{equation}
+    \psi(r) =  sin(kr - l\frac{\pi}{2}) + tan(\delta_l) cos(kr - l\frac{\pi}{2})
+\end{equation}
 
-The first necessity for photoassociating atoms is collisions. Each species has a 
-specific cross section for which particles can collide with another, which is defined
-as
+where $\delta_l$ is the phase accumulated at this position $r = a$ where the 
+potential appears as a scattering boundary. This distance is called 
+the scattering length and is a key parameter for scattering and photoassociation
+description. At low energies for s-waves, this express as 
+\begin{equation}
+    a = -\lim_{k\to 0} tan(\delta_0)/k
+\end{equation}
 
+A scattering cross section is usually defined from this physical quantity
+as the area of a disk with a radius equal to the scattering length, which 
+gives the formula 
 \begin{equation}
     \sigma = 4\pi a^2
 \end{equation}
-
-with $a$ the scattering length we will describe in the next section. 
 
 In ultracold gases, only s-wave atoms can collide because they do not have 
 enough kinetic energy to pass the potential barrier of higher angular momentum states. It imposes
 that for fermions -by parity of the total wavefunction being antisymetric- 
 only atoms with even angular momentum can collide meaning their spin is in a singlet state as 
-in the case of 87Sr. For bosons it is the contrary : from an even orbital wavefunction,
+in the case of ${87}^Sr$. For bosons it is the contrary : from an even orbital wavefunction,
 the spin wavefunction should be antisymetric to collide.
 
 The second element for PA is a resonant laser. As visible in \ref{fig:PA_concept} : 
@@ -40,6 +50,16 @@ molecular states red detuned from the atomic line.
 PA is mostly used in Feschbach resonance field because determining the exact 
 position of the vibrational states enables by changing the magnetic field
 to tune the scattering length of the atoms and thus the interactions in the system.
+\subsection{What is photoassociation}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png}
+    \caption{Caption}
+    \label{fig:PA_concept}
+\end{figure}
+
+Photoassociating two atoms consists in bounding two colliding atoms with light 
+that occurs mostly with two-body and three body losses. 
 
 
 
@@ -54,13 +74,13 @@ describes the strength of the photoassociation rate
 $n$ the volumic density of the cloud, $\mu$ the reduced mass of the two atoms. This rate represents
 the ratio of the atoms that are lossed by 2-body losses.\\
 
-The Franck Condon factor is the probability to transition from an initial vibrational $i$ state to 
+The Franck Condon factor (\cite{guttridge_photoassociation_2019})
+is the probability to transition from an initial vibrational $i$ state to 
 a final vibrational $f$ state
 
 \begin{equation} 
     F_{FC} = \Bigg|\int_0^{\infty} \psi_i(r) \psi_f(r) dr\Bigg |^2 
 \end{equation}
-
 
 r the inter-nuclear distance.
 It depends directly with the overlap of the wavefunctions of the initial and final states.
@@ -176,7 +196,7 @@ The hyperfine term of the atom in $^1S_0$ is zero because its electronic angular
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png}
     \caption{Caption}
-    \label{fig:placeholder}
+    \label{fig:pa-sakurai-wkb}
 \end{figure}
 
 \subsubsection{}
@@ -189,7 +209,7 @@ Leroy-Bernstein approx
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png}
     \caption{Caption}
-    \label{fig:placeholder}
+    \label{fig:pa-mass-scaling}
 \end{figure}
 
 \subsection{Ytterbium: hfs}
@@ -198,7 +218,7 @@ Leroy-Bernstein approx
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png}
     \caption{Caption}
-    \label{fig:placeholder}
+    \label{fig:pa-ytterbium-potentials}
 \end{figure}
 
 \section{Experimental setup}
@@ -210,7 +230,7 @@ Lopt, power broadening,  thermal broadening...
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png}
     \caption{Caption}
-    \label{fig:placeholder}
+    \label{fig:pa-88sr-potentials}
 \end{figure}
 
 \subsection{Technical issues of inhabilitation of photoassociation}
