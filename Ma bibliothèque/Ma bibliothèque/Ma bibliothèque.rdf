@@ -1,0 +1,3244 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#">
+    <bib:Document rdf:about="https://www.college-de-france.fr/fr/agenda/cours/des-cages-de-lumiere-pour-les-atomes-la-physique-des-pieges-et-des-reseaux-optiques/reseaux-optiques-les-principes-de-base">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_25"/>
+        <dc:title>Réseaux optiques : les principes de base | Collège de France</dc:title>
+        <dc:date>2012-08-31T12:33:07+02:00</dc:date>
+        <z:language>fr</z:language>
+        <z:shortTitle>Réseaux optiques</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.college-de-france.fr/fr/agenda/cours/des-cages-de-lumiere-pour-les-atomes-la-physique-des-pieges-et-des-reseaux-optiques/reseaux-optiques-les-principes-de-base</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-20 07:03:45</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_25">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/25/reseaux-optiques-les-principes-de-base.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.college-de-france.fr/fr/agenda/cours/des-cages-de-lumiere-pour-les-atomes-la-physique-des-pieges-et-des-reseaux-optiques/reseaux-optiques-les-principes-de-base</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-20 07:03:54</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_2">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gerbier</foaf:surname>
+                        <foaf:givenName>Fabrice</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_26"/>
+        <dc:title>Quantum gases in optical lattices</dc:title>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_26">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="/Users/pauline/Desktop/Documents/Fac/MASTER/Stage LPL/Rapport stage/optical_lattice_fabrice_notes.pdf"/>
+        <dc:title>optical_lattice_fabrice_notes.pdf</dc:title>
+        <z:linkMode>2</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://pubs.aip.org/aapt/ajp/article/69/1/79-87/1055569">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0002-9505,%201943-2909"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Black</foaf:surname>
+                        <foaf:givenName>Eric D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_28"/>
+        <dc:title>An introduction to Pound–Drever–Hall laser frequency stabilization</dc:title>
+        <dc:date>01/2001</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pubs.aip.org/aapt/ajp/article/69/1/79-87/1055569</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:11:43</dcterms:dateSubmitted>
+        <bib:pages>79-87</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0002-9505,%201943-2909">
+        <prism:volume>69</prism:volume>
+        <dc:title>American Journal of Physics</dc:title>
+        <dc:identifier>DOI 10.1119/1.1286663</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>American Journal of Physics</dcterms:alternative>
+        <dc:identifier>ISSN 0002-9505, 1943-2909</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_28">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/28/Black - 2001 - An introduction to Pound–Drever–Hall laser frequen.pdf"/>
+        <dc:title>Black - 2001 - An introduction to Pound–Drever–Hall laser frequen.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ew.lens.unifi.it/notes/Pound-Drever-Hall.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:11:40</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_5">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/5/UPL1027923320178546954_cours2_diapos.pdf"/>
+        <dc:title>UPL1027923320178546954_cours2_diapos.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.college-de-france.fr/sites/default/files/documents/jean-dalibard/UPL1027923320178546954_cours2_diapos.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:10:40</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://arxiv.org/abs/2105.10296">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2469-9926,%202469-9934"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Litvinov</foaf:surname>
+                        <foaf:givenName>Andrea</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bataille</foaf:surname>
+                        <foaf:givenName>Pierre</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Maréchal</foaf:surname>
+                        <foaf:givenName>Etienne</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pedri</foaf:surname>
+                        <foaf:givenName>Paolo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gorceix</foaf:surname>
+                        <foaf:givenName>Olivier</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Robert-de-Saint-Vincent</foaf:surname>
+                        <foaf:givenName>Martin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Laburthe-Tolra</foaf:surname>
+                        <foaf:givenName>Bruno</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_31"/>
+        <link:link rdf:resource="#item_30"/>
+        <link:link rdf:resource="#item_29"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Condensed Matter - Quantum Gases</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Measuring densities of cold atomic clouds smaller than the resolution limit</dc:title>
+        <dcterms:abstract>We propose and demonstrate an experimental method to measure by absorption imaging the size and local column density of a cloud of atoms, even when its smallest dimension is smaller than the resolution of the imaging system. To do this, we take advantage of the fact that, for a given total number of atoms, a smaller and denser cloud scatters less photons when the gas is optically thick. The method relies on making an ansatz on the cloud shape along the unresolved dimension(s), and on providing an additional information such as the total number of atoms. We demonstrate the method on \textit{in-situ} absorption images of elongated 87Sr Fermi gases. We find significant non-linear corrections to the estimated size and local density of the cloud compared to a standard analysis. This allows us to recover an un-distorted longitudinal density profile, and to measure transverse sizes as small as one fourth of our imaging resolution. The ultimate limit of our method is the wavelength that is used for imaging.</dcterms:abstract>
+        <dc:date>2021-9-8</dc:date>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2105.10296</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:10:17</dcterms:dateSubmitted>
+        <dc:description>arXiv:2105.10296 [cond-mat]</dc:description>
+        <bib:pages>033309</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2469-9926,%202469-9934">
+        <prism:volume>104</prism:volume>
+        <dc:title>Physical Review A</dc:title>
+        <dc:identifier>DOI 10.1103/PhysRevA.104.033309</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>Phys. Rev. A</dcterms:alternative>
+        <dc:identifier>ISSN 2469-9926, 2469-9934</dc:identifier>
+    </bib:Journal>
+    <bib:Memo rdf:about="#item_31">
+       <rdf:value>Comment: 7 pages, 5 figures</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_30">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/30/Litvinov et al. - 2021 - Measuring densities of cold atomic clouds smaller .pdf"/>
+        <dc:title>arXiv Fulltext PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2105.10296.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:10:19</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_29">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/29/2105.html"/>
+        <dc:title>arXiv.org Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/abs/2105.10296</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:10:25</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/1209.3408">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pyragius</foaf:surname>
+                        <foaf:givenName>Tadas</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_34"/>
+        <link:link rdf:resource="#item_33"/>
+        <link:link rdf:resource="#item_32"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Instrumentation and Detectors</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Optics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Developing and building an absorption imaging system for Ultracold Atoms</dc:title>
+        <dcterms:abstract>In this report I attempt to outline the process of developing and building an absorption imaging system capable of imaging ultracold atoms. In the theory section I will discuss the elements required to estimate the atom number and derive the equations required to determine the temperature of the atom cloud. I will outline the general features of a microscopic - two lens imaging setup via the principles of geometric optics. A discussion of optical design process and its features will be carried out with an example on absorption imaging. The essence of basic optical design process will be given.</dcterms:abstract>
+        <dc:date>2012-09-19</dc:date>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1209.3408</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:09:51</dcterms:dateSubmitted>
+        <dc:description>arXiv:1209.3408 [physics]</dc:description>
+        <dc:identifier>DOI 10.48550/arXiv.1209.3408</dc:identifier>
+        <prism:number>arXiv:1209.3408</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_34">
+       <rdf:value>Comment: 28 pages, 20 figures</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_33">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/33/Pyragius - 2012 - Developing and building an absorption imaging syst.pdf"/>
+        <dc:title>arXiv Fulltext PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1209.3408.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:09:53</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_32">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/32/1209.html"/>
+        <dc:title>arXiv.org Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/abs/1209.3408</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:10:01</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_8">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/8/UPL5106207620119644439_Cours_2013.compressed.pdf"/>
+        <dc:title>UPL5106207620119644439_Cours_2013.compressed.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.college-de-france.fr/sites/default/files/documents/jean-dalibard/UPL5106207620119644439_Cours_2013.compressed.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:09:10</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://acuissot.github.io/Ecole_du_Waist/Cours/Les_faisceaux_gaussiens/adaptation_et_focalisation_des_faisceaux_gaussiens.html">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_35"/>
+        <dc:title>École du Waist - Cours</dc:title>
+        <dcterms:abstract>Cours sur l'optique des LASERS et faisceaux gaussiens</dcterms:abstract>
+        <z:language>fr</z:language>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://acuissot.github.io/Ecole_du_Waist/Cours/Les_faisceaux_gaussiens/adaptation_et_focalisation_des_faisceaux_gaussiens.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:07:24</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_35">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/35/adaptation_et_focalisation_des_faisceaux_gaussiens.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://acuissot.github.io/Ecole_du_Waist/Cours/Les_faisceaux_gaussiens/adaptation_et_focalisation_des_faisceaux_gaussiens.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:07:31</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://www.dropbox.com/s/v1ha7exoi8ng1oz/PierreBataille-PhD.pdf?dl=0">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>Dropbox</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_36"/>
+        <dc:title>PierreBataille-PhD.pdf</dc:title>
+        <dcterms:abstract>Partagé avec Dropbox</dcterms:abstract>
+        <z:language>fr</z:language>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.dropbox.com/s/v1ha7exoi8ng1oz/PierreBataille-PhD.pdf?dl=0</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:06:59</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_36">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/36/PierreBataille-PhD.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.dropbox.com/s/v1ha7exoi8ng1oz/PierreBataille-PhD.pdf?dl=0</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-07-19 16:07:09</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_13">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/13/West,_Elizabeth_thesis.pdf"/>
+        <dc:title>West,_Elizabeth_thesis.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.doylegroup.harvard.edu/wiki/images/a/a2/West%2C_Elizabeth_thesis.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-01-17 07:11:09</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_14">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/14/West,_Elizabeth_thesis.pdf"/>
+        <dc:title>West,_Elizabeth_thesis.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.doylegroup.harvard.edu/wiki/images/a/a2/West%2C_Elizabeth_thesis.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-01-17 07:10:53</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://arxiv.org/abs/1612.09318">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1367-2630"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>ACME Collaboration</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Baron</foaf:surname>
+                        <foaf:givenName>Jacob</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Campbell</foaf:surname>
+                        <foaf:givenName>Wes C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>DeMille</foaf:surname>
+                        <foaf:givenName>David</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Doyle</foaf:surname>
+                        <foaf:givenName>John M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gabrielse</foaf:surname>
+                        <foaf:givenName>Gerald</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gurevich</foaf:surname>
+                        <foaf:givenName>Yulia V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hess</foaf:surname>
+                        <foaf:givenName>Paul W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hutzler</foaf:surname>
+                        <foaf:givenName>Nicholas R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kirilov</foaf:surname>
+                        <foaf:givenName>Emil</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kozyryev</foaf:surname>
+                        <foaf:givenName>Ivan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>O'Leary</foaf:surname>
+                        <foaf:givenName>Brendon R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Panda</foaf:surname>
+                        <foaf:givenName>Cristian D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Parsons</foaf:surname>
+                        <foaf:givenName>Maxwell F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Spaun</foaf:surname>
+                        <foaf:givenName>Benjamin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vutha</foaf:surname>
+                        <foaf:givenName>Amar C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>West</foaf:surname>
+                        <foaf:givenName>Adam D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>West</foaf:surname>
+                        <foaf:givenName>Elizabeth P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_38"/>
+        <link:link rdf:resource="#item_37"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>High Energy Physics - Phenomenology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Methods, Analysis, and the Treatment of Systematic Errors for the Electron Electric Dipole Moment Search in Thorium Monoxide</dc:title>
+        <dcterms:abstract>We recently set a new limit on the electric dipole moment of the electron (eEDM) (J. Baron et al., ACME collaboration, Science 343 (2014), 269–272), which represented an order-of-magnitude improvement on the previous limit and placed more stringent constraints on many CP -violating extensions to the Standard Model. In this paper we discuss the measurement in detail. The experimental method and associated apparatus are described, together with the techniques used to isolate the eEDM signal. In particular, we detail the way experimental switches were used to suppress eﬀects that can mimic the signal of interest. The methods used to search for systematic errors, and models explaining observed systematic errors, are also described. We brieﬂy discuss possible improvements to the experiment.</dcterms:abstract>
+        <dc:date>2017-07-25</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1612.09318</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-01-17 07:10:47</dcterms:dateSubmitted>
+        <dc:description>arXiv:1612.09318 [hep-ph, physics:physics]</dc:description>
+        <bib:pages>073029</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1367-2630">
+        <prism:volume>19</prism:volume>
+        <dc:title>New Journal of Physics</dc:title>
+        <dc:identifier>DOI 10.1088/1367-2630/aa708e</dc:identifier>
+        <prism:number>7</prism:number>
+        <dcterms:alternative>New J. Phys.</dcterms:alternative>
+        <dc:identifier>ISSN 1367-2630</dc:identifier>
+    </bib:Journal>
+    <bib:Memo rdf:about="#item_38">
+       <rdf:value>Comment: 81 pages, 37 figures, submitted to NJP</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_37">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/37/ACME Collaboration et al. - 2017 - Methods, Analysis, and the Treatment of Systematic.pdf"/>
+        <dc:title>ACME Collaboration et al. - 2017 - Methods, Analysis, and the Treatment of Systematic.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1612.09318.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-01-17 07:10:39</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Thesis rdf:about="http://www.doylegroup.harvard.edu/wiki/images/a/a2/West%2C_Elizabeth_thesis.pdf">
+        <z:itemType>thesis</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Massachusetts</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Harvard University Cambridge</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Elizabeth Petrik West</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>A Thermochemical Cryogenic Buffer Gas Beam Source of ThO for Measuring the Electric Dipole Moment of the Electron</dc:title>
+        <dc:date>May 2017</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.doylegroup.harvard.edu/wiki/images/a/a2/West%2C_Elizabeth_thesis.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Thesis>
+    <bib:Document rdf:about="https://projects.iq.harvard.edu/jdoyle/tho-electron-edm">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_40"/>
+        <dc:title>ACME Precision Measurement of the Electron Electric Dipole Moment (EDM)</dc:title>
+        <dcterms:abstract>中文版</dcterms:abstract>
+        <z:language>en</z:language>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://projects.iq.harvard.edu/jdoyle/tho-electron-edm</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-01-12 17:36:15</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_40">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/40/tho-electron-edm.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://projects.iq.harvard.edu/jdoyle/tho-electron-edm</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-01-12 17:36:22</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://sitn.hms.harvard.edu/flash/2018/electron-electric-dipole-moment-shape-electrons-field-hint-new-particles/">
+        <z:itemType>blogPost</z:itemType>
+        <dcterms:isPartOf>
+           <z:Blog><dc:title>Science in the News</dc:title></z:Blog>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                   <foaf:Person><foaf:surname>admin</foaf:surname></foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_41"/>
+        <dc:title>The Electron Electric Dipole Moment: How the Shape of the Electron’s Field could Hint at New Particles</dc:title>
+        <dcterms:abstract>The matter in our universe is made of atoms; atoms are made of protons, neutrons, and electrons; and protons and neutrons are made of quarks. In our current theory of particle physics, electrons and quarks are elementary particles–they are the foundation of everything else. The full catalog of all known elementary particles and their interactions is called the Standard Model (SM). The SM has been …</dcterms:abstract>
+        <dc:date>2018-11-19T06:49:38+00:00</dc:date>
+        <z:language>en-US</z:language>
+        <z:shortTitle>The Electron Electric Dipole Moment</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://sitn.hms.harvard.edu/flash/2018/electron-electric-dipole-moment-shape-electrons-field-hint-new-particles/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-01-08 10:08:27</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_41">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/41/electron-electric-dipole-moment-shape-electrons-field-hint-new-particles.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://sitn.hms.harvard.edu/flash/2018/electron-electric-dipole-moment-shape-electrons-field-hint-new-particles/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-01-08 10:08:35</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://www.nature.com/articles/s41586-018-0599-8">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0028-0836,%201476-4687"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>ACME Collaboration</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_42"/>
+        <dc:title>Improved limit on the electric dipole moment of the electron</dc:title>
+        <dc:date>10/2018</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.nature.com/articles/s41586-018-0599-8</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2022-12-30 16:32:19</dcterms:dateSubmitted>
+        <bib:pages>355-360</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0028-0836,%201476-4687">
+        <prism:volume>562</prism:volume>
+        <dc:title>Nature</dc:title>
+        <dc:identifier>DOI 10.1038/s41586-018-0599-8</dc:identifier>
+        <prism:number>7727</prism:number>
+        <dcterms:alternative>Nature</dcterms:alternative>
+        <dc:identifier>ISSN 0028-0836, 1476-4687</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_42">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/42/ACME Collaboration - 2018 - Improved limit on the electric dipole moment of th.pdf"/>
+        <dc:title>ACME Collaboration - 2018 - Improved limit on the electric dipole moment of th.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2212.11841">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Roussy</foaf:surname>
+                        <foaf:givenName>Tanya S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Caldwell</foaf:surname>
+                        <foaf:givenName>Luke</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wright</foaf:surname>
+                        <foaf:givenName>Trevor</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cairncross</foaf:surname>
+                        <foaf:givenName>William B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shagam</foaf:surname>
+                        <foaf:givenName>Yuval</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ng</foaf:surname>
+                        <foaf:givenName>Kia Boon</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schlossberger</foaf:surname>
+                        <foaf:givenName>Noah</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Park</foaf:surname>
+                        <foaf:givenName>Sun Yool</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wang</foaf:surname>
+                        <foaf:givenName>Anzhou</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ye</foaf:surname>
+                        <foaf:givenName>Jun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cornell</foaf:surname>
+                        <foaf:givenName>Eric A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_44"/>
+        <link:link rdf:resource="#item_43"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>High Energy Physics - Phenomenology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>High Energy Physics - Experiment</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>A new bound on the electron's electric dipole moment</dc:title>
+        <dcterms:abstract>The Standard Model cannot explain the dominance of matter over anti-matter in our universe. This imbalance indicates undiscovered physics that violates combined CP symmetry. Many extensions to the Standard Model seek to explain the imbalance by predicting the existence of new particles. Vacuum fluctuations of the fields associated with these new particles can interact with known particles and make small modifications to their properties; for example, particles which violate CP symmetry will induce an electric dipole moment of the electron (eEDM). The size of the induced eEDM is dependent on the masses of the new particles and their coupling to the Standard Model. To date, no eEDM has been detected, but increasingly precise measurements probe new physics with higher masses and weaker couplings. Here we present the most precise measurement yet of the eEDM using electrons confined inside molecular ions, subjected to a huge intra-molecular electric field, and evolving coherently for up to 3 s. Our result is consistent with zero and improves on the previous best upper bound by a factor $\sim2.4$. Our sensitivity to $10^{-19}$ eV shifts in molecular ions provides constraints on broad classes of new physics above $10^{13}$ eV, well beyond the direct reach of the LHC or any other near- or medium-term particle collider.</dcterms:abstract>
+        <dc:date>2022-12-27</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2212.11841</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2022-12-30 16:32:16</dcterms:dateSubmitted>
+        <dc:description>arXiv:2212.11841 [hep-ex, physics:hep-ph, physics:physics]</dc:description>
+        <prism:number>arXiv:2212.11841</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_44">
+        <rdf:value>Comment: Update to figure 2 which displays better in some pdf viewers</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_43">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/43/Roussy et al. - 2022 - A new bound on the electron's electric dipole mome.pdf"/>
+        <dc:title>Roussy et al. - 2022 - A new bound on the electron's electric dipole mome.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-3-030-63962-4%20978-3-030-63963-1">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:identifier>ISBN 978-3-030-63962-4 978-3-030-63963-1</dc:identifier>
+                <dc:title>Molecular Beams in Physics and Chemistry</dc:title>
+                <dc:identifier>DOI 10.1007/978-3-030-63963-1_22</dc:identifier>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Cham</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer International Publishing</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Friedrich</foaf:surname>
+                        <foaf:givenName>Bretislav</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schmidt-Böcking</foaf:surname>
+                        <foaf:givenName>Horst</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fitch</foaf:surname>
+                        <foaf:givenName>N. J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tarbutt</foaf:surname>
+                        <foaf:givenName>M. R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_45"/>
+        <dc:title>From Hot Beams to Trapped Ultracold Molecules: Motivations, Methods and Future Directions</dc:title>
+        <dcterms:abstract>Over the past century, the molecular beam methods pioneered by Otto Stern have advanced our knowledge and understanding of the world enormously. Stern and his colleagues used these new techniques to measure the magnetic dipole moments of fundamental particles with results that challenged the prevailing ideas in fundamental physics at that time. Similarly, recent measurements of fundamental electric dipole moments challenge our present day theories of what lies beyond the Standard Model of particle physics. Measurements of the electron’s electric dipole moment (eEDM) rely on the techniques invented by Stern and later developed by Rabi and Ramsey. We give a brief review of this historical development and the current status of eEDM measurements. These experiments, and many others, are likely to beneﬁt from ultracold molecules produced by laser cooling. We explain how laser cooling can be applied to molecules, review recent progress in this ﬁeld, and outline some eagerly anticipated applications.</dcterms:abstract>
+        <dc:date>2021</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>From Hot Beams to Trapped Ultracold Molecules</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/10.1007/978-3-030-63963-1_22</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2022-12-30 16:32:12</dcterms:dateSubmitted>
+        <bib:pages>491-516</bib:pages>
+    </bib:BookSection>
+    <z:Attachment rdf:about="#item_45">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/45/Fitch et Tarbutt - 2021 - From Hot Beams to Trapped Ultracold Molecules Mot.pdf"/>
+        <dc:title>Fitch et Tarbutt - 2021 - From Hot Beams to Trapped Ultracold Molecules Mot.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.science.org/doi/10.1126/science.aal3003">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0036-8075,%201095-9203"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>DeMille</foaf:surname>
+                        <foaf:givenName>David</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Doyle</foaf:surname>
+                        <foaf:givenName>John M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sushkov</foaf:surname>
+                        <foaf:givenName>Alexander O.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_46"/>
+        <dc:title>Probing the frontiers of particle physics with tabletop-scale experiments</dc:title>
+        <dcterms:abstract>The field of particle physics is in a peculiar state. The standard model of particle theory successfully describes every fundamental particle and force observed in laboratories, yet fails to explain properties of the universe such as the existence of dark matter, the amount of dark energy, and the preponderance of matter over antimatter. Huge experiments, of increasing scale and cost, continue to search for new particles and forces that might explain these phenomena. However, these frontiers also are explored in certain smaller, laboratory-scale “tabletop” experiments. This approach uses precision measurement techniques and devices from atomic, quantum, and condensed-matter physics to detect tiny signals due to new particles or forces. Discoveries in fundamental physics may well come first from small-scale experiments of this type.</dcterms:abstract>
+        <dc:date>2017-09-08</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.science.org/doi/10.1126/science.aal3003</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2022-12-30 16:31:33</dcterms:dateSubmitted>
+        <bib:pages>990-994</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0036-8075,%201095-9203">
+        <prism:volume>357</prism:volume>
+        <dc:title>Science</dc:title>
+        <dc:identifier>DOI 10.1126/science.aal3003</dc:identifier>
+        <prism:number>6355</prism:number>
+        <dcterms:alternative>Science</dcterms:alternative>
+        <dc:identifier>ISSN 0036-8075, 1095-9203</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_46">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/46/DeMille et al. - 2017 - Probing the frontiers of particle physics with tab.pdf"/>
+        <dc:title>DeMille et al. - 2017 - Probing the frontiers of particle physics with tab.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_261">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Boyd</foaf:surname>
+                        <foaf:givenName>Martin M</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_268"/>
+        <dc:title>High Precision Spectroscopy of Strontium in an Optical Lattice: Towards a New Standard for Frequency and Time</dc:title>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_268">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/268/Boyd - High Precision Spectroscopy of Strontium in an Opt.pdf"/>
+        <dc:title>Boyd - High Precision Spectroscopy of Strontium in an Opt.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://jila.colorado.edu/sites/default/files/2019-05/boyd_thesis.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-03-27 10:17:57</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2406.13907">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chan</foaf:surname>
+                        <foaf:givenName>Ya-Chu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Liu</foaf:surname>
+                        <foaf:givenName>Lee R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Scheck</foaf:surname>
+                        <foaf:givenName>Andrew</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nesbitt</foaf:surname>
+                        <foaf:givenName>David J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ye</foaf:surname>
+                        <foaf:givenName>Jun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rosenberg</foaf:surname>
+                        <foaf:givenName>Dina</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_269"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Quantum Physics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Chemical Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Observation of full contrast icosahedral Bose-Einstein statistics in laser desorbed, buffer gas cooled C$_{60}$</dc:title>
+        <dcterms:abstract>The quantum mechanical nature of spherical top molecules is particularly evident at low angular momentum quantum number J. Using infrared spectroscopy on the 8.4$\mu$m rovibrational band of buffer gas cooled $^{12}$C$_{60}$, we observe the hitherto unseen R(J = 0 - 29) rotational progression, including the complete disappearance of certain transitions due to the molecule's perfect icosahedral symmetry and identical bosonic nuclei. The observation of extremely weak C$_{60}$ absorption is facilitated by a laser desorption C$_{60}$ vapor source, which transfers 1000-fold less heat to the cryogenic buffer gas cell than a traditional oven source. This technique paves the way to cooling C$_{60}$ and other large gas phase molecules to much lower temperatures, providing continued advances for spectral resolution and sensitivity.</dcterms:abstract>
+        <dc:date>2024-06-23</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2406.13907</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-03-27 10:15:28</dcterms:dateSubmitted>
+        <dc:description>arXiv:2406.13907 [physics]</dc:description>
+        <dc:identifier>DOI 10.48550/arXiv.2406.13907</dc:identifier>
+        <prism:number>arXiv:2406.13907</prism:number>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_269">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/269/Chan et al. - 2024 - Observation of full contrast icosahedral Bose-Eins.pdf"/>
+        <dc:title>Chan et al. - 2024 - Observation of full contrast icosahedral Bose-Eins.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2406.13907</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-03-27 10:15:25</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2412.13820">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Marché</foaf:surname>
+                        <foaf:givenName>Alice</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Morettini</foaf:surname>
+                        <foaf:givenName>Gianluca</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mazza</foaf:surname>
+                        <foaf:givenName>Leonardo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gotta</foaf:surname>
+                        <foaf:givenName>Lorenzo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Capizzi</foaf:surname>
+                        <foaf:givenName>Luca</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_273"/>
+        <link:link rdf:resource="#item_270"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Condensed Matter - Quantum Gases</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Quantum Physics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Condensed Matter - Statistical Mechanics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Condensed Matter - Strongly Correlated Electrons</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Exceptional stationary state in a dephasing many-body open quantum system</dc:title>
+        <dcterms:abstract>We study a dephasing many-body open quantum system that hosts, together with the infinite-temperature state, another additional stationary state. The latter is exceptional in many respects, as it is pure and retains memory of the initial condition, whereas any orthogonal state evolves towards the infinite-temperature state erasing any information on the initial state. We discuss the approach to stationarity of the model focusing in particular on the fate of interfaces between the two states; a simple classical model based on a membrane picture helps developing an effective hydrodynamic theory even if the dynamics does not feature any conserved quantity. The fact that the model reaches stationary properties on timescales that depend on the system size while the asymptotic decay rate is finite is duly highlighted. We point out the reasons for considering these exceptional stationary states as quantum many-body scars in the open system framework.</dcterms:abstract>
+        <dc:date>2025-03-20</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2412.13820</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-03-27 10:15:23</dcterms:dateSubmitted>
+        <dc:description>arXiv:2412.13820 [quant-ph]</dc:description>
+        <dc:identifier>DOI 10.48550/arXiv.2412.13820</dc:identifier>
+        <prism:number>arXiv:2412.13820</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_273">
+       <rdf:value>Comment: Minor modifications</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_270">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/270/Marché et al. - 2025 - Exceptional stationary state in a dephasing many-b.pdf"/>
+        <dc:title>Marché et al. - 2025 - Exceptional stationary state in a dephasing many-b.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2412.13820</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-03-27 10:15:19</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://arxiv.org/abs/1710.03072">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>97</prism:volume>
+                <dc:title>Physical Review A</dc:title>
+                <dc:identifier>DOI 10.1103/PhysRevA.97.013401</dc:identifier>
+                <prism:number>1</prism:number>
+                <dcterms:alternative>Phys. Rev. A</dcterms:alternative>
+                <dc:identifier>ISSN 2469-9926, 2469-9934</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Han</foaf:surname>
+                        <foaf:givenName>Jeong Ho</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kang</foaf:surname>
+                        <foaf:givenName>Jin Hyoun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lee</foaf:surname>
+                        <foaf:givenName>Moosong</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shin</foaf:surname>
+                        <foaf:givenName>Yong-il</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_271"/>
+        <link:link rdf:resource="#item_267"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Condensed Matter - Quantum Gases</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Photoassociation spectroscopy of ultracold $^{173}$Yb atoms near the intercombination line</dc:title>
+        <dcterms:abstract>We report on photoassociation (PA) spectroscopy of a degenerate Fermi gas of $^{173}$Yb atoms near the dissociation limit of the spin-forbidden ${^1}S_0-{^3}P_1$ intercombination transition. An atom-loss spectrum is measured from a trapped sample for a spectral range down to $-1$~GHz with respect to the $f=5/2 \rightarrow f^\prime=7/2$ atomic resonance. The spectrum shows eighty PA resonances, revealing the high nuclear spin nature of the system. We investigate the Zeeman effect on the spectrum near a detuning of $-0.8$~GHz, where we examine the quantum numbers of the Zeeman levels using various two-component spin mixture samples. Finally, we measure the atom loss rate under PA light for several pronounced PA resonances.</dcterms:abstract>
+        <dc:date>2018-1-4</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1710.03072</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-03-27 10:15:35</dcterms:dateSubmitted>
+        <dc:description>arXiv:1710.03072 [physics]</dc:description>
+        <bib:pages>013401</bib:pages>
+    </bib:Article>
+    <bib:Memo rdf:about="#item_271">
+       <rdf:value>Comment: 7 pages, 5 figures, 1 table</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_267">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/267/1710.pdf"/>
+        <dc:title>Han et al. - 2018 - Photoassociation spectroscopy of ultracold $^{173}.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1710.03072</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-03-27 10:15:30</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://arxiv.org/abs/1310.2221">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0031-9007,%201079-7114"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhu</foaf:surname>
+                        <foaf:givenName>Bihui</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gadway</foaf:surname>
+                        <foaf:givenName>Bryce</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Foss-Feig</foaf:surname>
+                        <foaf:givenName>Michael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schachenmayer</foaf:surname>
+                        <foaf:givenName>Johannes</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wall</foaf:surname>
+                        <foaf:givenName>Michael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hazzard</foaf:surname>
+                        <foaf:givenName>Kaden R. A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yan</foaf:surname>
+                        <foaf:givenName>Bo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Moses</foaf:surname>
+                        <foaf:givenName>Steven A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Covey</foaf:surname>
+                        <foaf:givenName>Jacob P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jin</foaf:surname>
+                        <foaf:givenName>Deborah S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ye</foaf:surname>
+                        <foaf:givenName>Jun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Holland</foaf:surname>
+                        <foaf:givenName>Murray</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rey</foaf:surname>
+                        <foaf:givenName>Ana Maria</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_272"/>
+        <link:link rdf:resource="#item_266"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Condensed Matter - Quantum Gases</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Quantum Physics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Suppressing the loss of ultracold molecules via the continuous quantum Zeno effect</dc:title>
+        <dcterms:abstract>We investigate theoretically the suppression of two-body losses when the on-site loss rate is larger than all other energy scales in a lattice. This work quantitatively explains the recently observed suppression of chemical reactions between two rotational states of fermionic KRb molecules confined in one-dimensional tubes with a weak lattice along the tubes [Yan et al., Nature 501, 521-525 (2013)]. New loss rate measurements performed for different lattice parameters but under controlled initial conditions allow us to show that the loss suppression is a consequence of the combined effects of lattice confinement and the continuous quantum Zeno effect. A key finding, relevant for generic strongly reactive systems, is that while a single-band theory can qualitatively describe the data, a quantitative analysis must include multiband effects. Accounting for these effects reduces the inferred molecule filling fraction by a factor of five. A rate equation can describe much of the data, but to properly reproduce the loss dynamics with a fixed filling fraction for all lattice parameters we develop a mean-field model and benchmark it with numerically exact time-dependent density matrix renormalization group calculations.</dcterms:abstract>
+        <dc:date>2014-2-20</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1310.2221</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-03-27 10:14:58</dcterms:dateSubmitted>
+        <dc:description>arXiv:1310.2221 [quant-ph]</dc:description>
+        <bib:pages>070404</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0031-9007,%201079-7114">
+        <prism:volume>112</prism:volume>
+        <dc:title>Physical Review Letters</dc:title>
+        <dc:identifier>DOI 10.1103/PhysRevLett.112.070404</dc:identifier>
+        <prism:number>7</prism:number>
+        <dcterms:alternative>Phys. Rev. Lett.</dcterms:alternative>
+        <dc:identifier>ISSN 0031-9007, 1079-7114</dc:identifier>
+    </bib:Journal>
+    <bib:Memo rdf:about="#item_272">
+        <rdf:value>Comment: 4+ pages main text, 4 figures. 3 pages supplementary material, 2 figures</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_266">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/266/Zhu et al. - 2014 - Suppressing the loss of ultracold molecules via th.pdf"/>
+        <dc:title>Zhu et al. - 2014 - Suppressing the loss of ultracold molecules via th.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1310.2221v1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-03-27 10:14:54</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_315">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Brown</foaf:surname>
+                        <foaf:givenName>John M</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Carrington</foaf:surname>
+                        <foaf:givenName>Alan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_321"/>
+        <dc:title>Rotational Spectroscopy of Diatomic Molecules</dc:title>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_321">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/321/Brown et Carrington - Rotational Spectroscopy of Diatomic Molecules.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://arxiv.org/abs/0905.4556">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1050-2947,%201094-1622"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Reichenbach</foaf:surname>
+                        <foaf:givenName>Iris</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Julienne</foaf:surname>
+                        <foaf:givenName>Paul S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Deutsch</foaf:surname>
+                        <foaf:givenName>Ivan H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_323"/>
+        <link:link rdf:resource="#item_322"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Quantum Physics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Controlling nuclear spin exchange via optical Feshbach resonances in ${}^{171}$Yb</dc:title>
+        <dcterms:abstract>Nuclear spin exchange occurs in ultracold collisions of fermionic alkaline-earth-like atoms due to a difference between s- and p-wave phase shifts. We study the use of an optical Feshbach resonance, excited on the ${}^1S_0 \to {}^3P_1$ intercombination line of ${}^{171}$Yb, to affect a large modification of the s-wave scattering phase shift, and thereby optically mediate nuclear exchange forces. We perform a full multichannel calculation of the photoassociation resonances and wave functions and from these calculate the real and imaginary parts of the scattering length. As a figure of merit of this interaction, we estimate the fidelity to implement a $\sqrt{SWAP}$ entangling quantum logic gate for two atoms trapped in the same well of an optical lattice. For moderate parameters one can achieve a gate fidelity of $\sim95% $ in a time of $\sim 50 \mu$s.</dcterms:abstract>
+        <dc:date>2009-8-7</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/0905.4556</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-15 10:14:18</dcterms:dateSubmitted>
+        <dc:description>arXiv:0905.4556 [quant-ph]</dc:description>
+        <bib:pages>020701</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1050-2947,%201094-1622">
+        <prism:volume>80</prism:volume>
+        <dc:title>Physical Review A</dc:title>
+        <dc:identifier>DOI 10.1103/PhysRevA.80.020701</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>Phys. Rev. A</dcterms:alternative>
+        <dc:identifier>ISSN 1050-2947, 1094-1622</dc:identifier>
+    </bib:Journal>
+    <bib:Memo rdf:about="#item_323">
+       <rdf:value>Comment: 5 pages, 1 figure</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_322">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/322/0905.pdf"/>
+        <dc:title>0905.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/0905.4556</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-10-15 10:14:06</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_317">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Reichenbach</foaf:surname>
+                        <foaf:givenName>Iris Evelyn Nicole</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_332"/>
+        <dc:title>Optical control and quantum information processing with ultracold alkaline-earth-like atoms</dc:title>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_332">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/332/Reichenbach - Optical control and quantum information processing with ultracold alkaline-earth-like atoms.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://digitalrepository.unm.edu/cgi/viewcontent.cgi?article=1056&amp;context=phyc_etds</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-03-21 15:19:44</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://arxiv.org/abs/physics/0602135">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>96</prism:volume>
+                <dc:title>Physical Review Letters</dc:title>
+                <dc:identifier>DOI 10.1103/PhysRevLett.96.203201</dc:identifier>
+                <prism:number>20</prism:number>
+                <dcterms:alternative>Phys. Rev. Lett.</dcterms:alternative>
+                <dc:identifier>ISSN 0031-9007, 1079-7114</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zelevinsky</foaf:surname>
+                        <foaf:givenName>T.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Boyd</foaf:surname>
+                        <foaf:givenName>M. M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ludlow</foaf:surname>
+                        <foaf:givenName>A. D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ido</foaf:surname>
+                        <foaf:givenName>T.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ye</foaf:surname>
+                        <foaf:givenName>J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ciurylo</foaf:surname>
+                        <foaf:givenName>R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Naidon</foaf:surname>
+                        <foaf:givenName>P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Julienne</foaf:surname>
+                        <foaf:givenName>P. S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_333"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Optics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Narrow Line Photoassociation in an Optical Lattice</dc:title>
+        <dcterms:abstract>With ultracold $^{88}$Sr in a 1D magic wavelength optical lattice, we performed narrow line photoassociation spectroscopy near the $^1$S$_0 - ^3$P$_1$ intercombination transition. Nine least-bound vibrational molecular levels associated with the long-range $0_u$ and $1_u$ potential energy surfaces were measured and identified. A simple theoretical model accurately describes the level positions and treats the effects of the lattice confinement on the line shapes. The measured resonance strengths show that optical tuning of the ground state scattering length should be possible without significant atom loss.</dcterms:abstract>
+        <dc:date>2006-5-22</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/physics/0602135</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-31 14:18:42</dcterms:dateSubmitted>
+        <dc:description>Number: 20
+arXiv:physics/0602135</dc:description>
+        <bib:pages>203201</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_333">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/333/Zelevinsky et al. - 2006 - Narrow Line Photoassociation in an Optical Lattice.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/physics/0602135</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-31 14:18:39</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://arxiv.org/abs/1104.0210">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>107</prism:volume>
+                <dc:title>Physical Review Letters</dc:title>
+                <dc:identifier>DOI 10.1103/PhysRevLett.107.073202</dc:identifier>
+                <prism:number>7</prism:number>
+                <dcterms:alternative>Phys. Rev. Lett.</dcterms:alternative>
+                <dc:identifier>ISSN 0031-9007, 1079-7114</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Blatt</foaf:surname>
+                        <foaf:givenName>S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nicholson</foaf:surname>
+                        <foaf:givenName>T. L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bloom</foaf:surname>
+                        <foaf:givenName>B. J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Williams</foaf:surname>
+                        <foaf:givenName>J. R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Thomsen</foaf:surname>
+                        <foaf:givenName>J. W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Julienne</foaf:surname>
+                        <foaf:givenName>P. S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ye</foaf:surname>
+                        <foaf:givenName>J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_320"/>
+        <link:link rdf:resource="#item_314"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Condensed Matter - Quantum Gases</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - General Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Systematic study of Optical Feshbach Resonances in an ideal gas</dc:title>
+        <dcterms:abstract>Using a narrow intercombination line in alkaline earth atoms to mitigate large inelastic losses, we explore the Optical Feshbach Resonance (OFR) effect in an ultracold gas of bosonic $^{88}$Sr. A systematic measurement of three resonances allows precise determinations of the OFR strength and scaling law, in agreement with coupled-channels theory. Resonant enhancement of the complex scattering length leads to thermalization mediated by elastic and inelastic collisions in an otherwise ideal gas. OFR could be used to control atomic interactions with high spatial and temporal resolution.</dcterms:abstract>
+        <dc:date>2011-8-12</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1104.0210</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-16 10:49:03</dcterms:dateSubmitted>
+        <dc:description>arXiv:1104.0210 [physics]</dc:description>
+        <bib:pages>073202</bib:pages>
+    </bib:Article>
+    <bib:Memo rdf:about="#item_320">
+        <rdf:value>Comment: Significant changes to text and figure presentation to improve clarity. Extended supplementary material. 4 pages, 4 figures; includes supplementary material 8 pages, 4 figures. Submitted to Physical Review Letters</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_314">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/314/Blatt et al. - 2011 - Systematic study of Optical Feshbach Resonances in an ideal gas.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1104.0210v2</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-16 10:48:53</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://link.aps.org/doi/10.1103/PhysRevA.66.063406">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>66</prism:volume>
+                <dc:title>Physical Review A</dc:title>
+                <dc:identifier>DOI 10.1103/PhysRevA.66.063406</dc:identifier>
+                <prism:number>6</prism:number>
+                <dcterms:alternative>Phys. Rev. A</dcterms:alternative>
+                <dc:identifier>ISSN 1050-2947, 1094-1622</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Simoni</foaf:surname>
+                        <foaf:givenName>A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Julienne</foaf:surname>
+                        <foaf:givenName>P. S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tiesinga</foaf:surname>
+                        <foaf:givenName>E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Williams</foaf:surname>
+                        <foaf:givenName>C. J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_360"/>
+        <dc:title>Intensity effects in ultracold photoassociation line shapes</dc:title>
+        <dc:date>2002-12-13</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.aps.org/doi/10.1103/PhysRevA.66.063406</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-17 10:59:20</dcterms:dateSubmitted>
+        <dc:rights>http://link.aps.org/licenses/aps-default-license</dc:rights>
+        <bib:pages>063406</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_360">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/360/Simoni et al. - 2002 - Intensity effects in ultracold photoassociation line shapes.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.aps.org/pra/pdf/10.1103/PhysRevA.66.063406</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-17 10:59:10</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://link.aps.org/doi/10.1103/PhysRevA.103.023111">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>103</prism:volume>
+                <dc:title>Physical Review A</dc:title>
+                <dc:identifier>DOI 10.1103/PhysRevA.103.023111</dc:identifier>
+                <prism:number>2</prism:number>
+                <dcterms:alternative>Phys. Rev. A</dcterms:alternative>
+                <dc:identifier>ISSN 2469-9926, 2469-9934</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hill</foaf:surname>
+                        <foaf:givenName>J. C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Huie</foaf:surname>
+                        <foaf:givenName>W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lunia</foaf:surname>
+                        <foaf:givenName>P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Whalen</foaf:surname>
+                        <foaf:givenName>J. D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kanungo</foaf:surname>
+                        <foaf:givenName>S. K.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lu</foaf:surname>
+                        <foaf:givenName>Y.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Killian</foaf:surname>
+                        <foaf:givenName>T. C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_388"/>
+        <link:link rdf:resource="#item_363"/>
+        <dc:title>Photoassociative spectroscopy of Sr 87</dc:title>
+        <dc:date>2021-2-17</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.aps.org/doi/10.1103/PhysRevA.103.023111</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-17 14:49:20</dcterms:dateSubmitted>
+        <bib:pages>023111</bib:pages>
+    </bib:Article>
+    <bib:Memo rdf:about="#item_388">
+        <rdf:value>&lt;div data-schema-version=&quot;9&quot;&gt;&lt;p&gt;PA sur la 1S0 - 1P1, raies d’environ 100MHz de large. &lt;/p&gt;
+&lt;p&gt;Premières raies profondes de plusieurs GHz&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_363">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/363/Hill et al. - 2021 - Photoassociative spectroscopy of Sr 87.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.aps.org/pra/pdf/10.1103/PhysRevA.103.023111</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-17 14:49:16</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_364">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ciamei</foaf:surname>
+                        <foaf:givenName>Alessio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_365"/>
+        <dc:title>Taming ultracold RbSr and Sr2</dc:title>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_365">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/365/Ciamei - Taming ultracold RbSr and Sr2.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pure.uva.nl/ws/files/27003367/Thesis.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-22 08:48:00</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://link.aps.org/doi/10.1103/PhysRevA.90.032713">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>90</prism:volume>
+                <dc:title>Physical Review A</dc:title>
+                <dc:identifier>DOI 10.1103/PhysRevA.90.032713</dc:identifier>
+                <prism:number>3</prism:number>
+                <dcterms:alternative>Phys. Rev. A</dcterms:alternative>
+                <dc:identifier>ISSN 1050-2947, 1094-1622</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Borkowski</foaf:surname>
+                        <foaf:givenName>Mateusz</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Morzyński</foaf:surname>
+                        <foaf:givenName>Piotr</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ciuryło</foaf:surname>
+                        <foaf:givenName>Roman</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Julienne</foaf:surname>
+                        <foaf:givenName>Paul S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yan</foaf:surname>
+                        <foaf:givenName>Mi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>DeSalvo</foaf:surname>
+                        <foaf:givenName>Brian J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Killian</foaf:surname>
+                        <foaf:givenName>T. C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_367"/>
+        <dc:title>Mass scaling and nonadiabatic effects in photoassociation spectroscopy of ultracold strontium atoms</dc:title>
+        <dc:date>2014-9-16</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.aps.org/doi/10.1103/PhysRevA.90.032713</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-22 09:21:24</dcterms:dateSubmitted>
+        <dc:rights>http://link.aps.org/licenses/aps-default-license</dc:rights>
+        <bib:pages>032713</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_367">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/367/Borkowski et al. - 2014 - Mass scaling and nonadiabatic effects in photoassociation spectroscopy of ultracold strontium atoms.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.aps.org/pra/pdf/10.1103/PhysRevA.90.032713</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-22 09:21:20</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_370">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>107</prism:volume>
+                <dc:title>Physical Review Letters</dc:title>
+                <dc:identifier>DOI 10.1103/PhysRevLett.107.073202</dc:identifier>
+                <prism:number>7</prism:number>
+                <dcterms:alternative>Phys. Rev. Lett.</dcterms:alternative>
+                <dc:identifier>ISSN 0031-9007, 1079-7114</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Blatt</foaf:surname>
+                        <foaf:givenName>S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nicholson</foaf:surname>
+                        <foaf:givenName>T. L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bloom</foaf:surname>
+                        <foaf:givenName>B. J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Williams</foaf:surname>
+                        <foaf:givenName>J. R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Thomsen</foaf:surname>
+                        <foaf:givenName>J. W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Julienne</foaf:surname>
+                        <foaf:givenName>P. S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ye</foaf:surname>
+                        <foaf:givenName>J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_371"/>
+        <link:link rdf:resource="#item_368"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Condensed Matter - Quantum Gases</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - General Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Systematic study of Optical Feshbach Resonances in an ideal gas</dc:title>
+        <dcterms:abstract>Using a narrow intercombination line in alkaline earth atoms to mitigate large inelastic losses, we explore the Optical Feshbach Resonance (OFR) effect in an ultracold gas of bosonic $^{88}$Sr. A systematic measurement of three resonances allows precise determinations of the OFR strength and scaling law, in agreement with coupled-channels theory. Resonant enhancement of the complex scattering length leads to thermalization mediated by elastic and inelastic collisions in an otherwise ideal gas. OFR could be used to control atomic interactions with high spatial and temporal resolution.</dcterms:abstract>
+        <dc:date>2011-8-12</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1104.0210</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-22 09:21:39</dcterms:dateSubmitted>
+        <dc:description>arXiv:1104.0210 [physics]</dc:description>
+        <bib:pages>073202</bib:pages>
+    </bib:Article>
+    <bib:Memo rdf:about="#item_371">
+        <rdf:value>Comment: Significant changes to text and figure presentation to improve clarity. Extended supplementary material. 4 pages, 4 figures; includes supplementary material 8 pages, 4 figures. Submitted to Physical Review Letters</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_368">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/368/Blatt et al. - 2011 - Systematic study of Optical Feshbach Resonances in an ideal gas.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1104.0210v2</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-22 09:21:33</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Book rdf:about="urn:isbn:978-3-030-21200-1%20978-3-030-21201-8">
+        <z:itemType>book</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Series><dc:title>Springer Theses</dc:title></bib:Series>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Cham</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer International Publishing</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Guttridge</foaf:surname>
+                        <foaf:givenName>Alexander</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_377"/>
+        <link:link rdf:resource="#item_374"/>
+        <dc:title>Photoassociation of Ultracold CsYb Molecules and Determination of Interspecies Scattering Lengths</dc:title>
+        <dc:date>2019</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/10.1007/978-3-030-21201-8</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-30 09:17:19</dcterms:dateSubmitted>
+        <dc:rights>http://www.springer.com/tdm</dc:rights>
+        <dc:identifier>ISBN 978-3-030-21200-1 978-3-030-21201-8</dc:identifier>
+        <dc:identifier>DOI 10.1007/978-3-030-21201-8</dc:identifier>
+    </bib:Book>
+    <bib:Memo rdf:about="#item_377">
+        <rdf:value>&lt;div data-schema-version=&quot;9&quot;&gt;&lt;p&gt;Description pas mal de la physique moléculaire (cas de Hund, approximations utilisées en fonction de r (LRB), force de la transition PA)&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_374">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/374/Guttridge - 2019 - Photoassociation of Ultracold CsYb Molecules and Determination of Interspecies Scattering Lengths.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/1808.06507">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Reschovsky</foaf:surname>
+                        <foaf:givenName>B. J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ruzic</foaf:surname>
+                        <foaf:givenName>B. P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Miyake</foaf:surname>
+                        <foaf:givenName>H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pisenti</foaf:surname>
+                        <foaf:givenName>N. C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Julienne</foaf:surname>
+                        <foaf:givenName>P. S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Campbell</foaf:surname>
+                        <foaf:givenName>G. K.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_378"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Condensed Matter - Quantum Gases</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Quantum Physics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Narrow-line photoassociation spectroscopy and mass-scaling of bosonic strontium</dc:title>
+        <dcterms:abstract>Using new experimental measurements of photoassociation resonances near the $^1\mathrm{S}_0 \rightarrow \phantom{ }^3\mathrm{P}_1$ intercombination transition in $^{84}$Sr and $^{86}$Sr, we present an updated study into the mass-scaling behavior of bosonic strontium dimers. A previous mass-scaling model [Borkowski et al., Phys. Rev. A 90, 032713 (2014)] was able to incorporate a large number of photoassociation resonances for $^{88}$Sr, but at the time only a handful of resonances close to the dissociation limit were known for $^{84}$Sr and $^{86}$Sr. In this work, we perform a more thorough measurement of $^{84}$Sr and $^{86}$Sr bound states, identifying multiple new resonances at deeper binding energies out to $E/h=-5$ GHz. We also identify several previously measured resonances that cannot be experimentally reproduced and provide alternative binding energies instead. With this improved spectrum, we develop a mass-scaled model that reproduces the observed binding energies of $^{86}$Sr and $^{88}$Sr to within 1 MHz. In order to accurately reproduce the deeper bound states, our model includes a second $1_u$ channel and more faithfully reproduces the depth of the potential. As determined by the previous mass-scaling study, $^{84}$Sr $0_u^+$ levels are strongly perturbed by the avoided crossing between the $^1\mathrm{S}_0 + \phantom{ }^3\mathrm{P}_1$ $0_u^+$ $(^3Π_u)$ and $^1\mathrm{S}_0 + \phantom{ }^1\mathrm{D}_2$ $0_u^+$ $(^1Σ_u^+)$ potential curves and therefore are not included in this mass-scaled model, but are accurately reproduced using an isotope-specific model with slightly different quantum defect parameters. In addition, the optical lengths of the $^{84}$Sr $0_u^+,\ ν=-2$ to $ν=-5$ states are measured and compared to numerical estimates to characterize their use as optical Feshbach resonances.</dcterms:abstract>
+        <dc:date>2018-10-23</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1808.06507</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-30 11:06:59</dcterms:dateSubmitted>
+        <dc:description>arXiv:1808.06507 [physics]</dc:description>
+        <dc:identifier>DOI 10.48550/arXiv.1808.06507</dc:identifier>
+        <prism:number>arXiv:1808.06507</prism:number>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_378">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/378/Reschovsky et al. - 2018 - Narrow-line photoassociation spectroscopy and mass-scaling of bosonic strontium.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1808.06507</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-30 11:06:53</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/0905.0958">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Borkowski</foaf:surname>
+                        <foaf:givenName>M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ciurylo</foaf:surname>
+                        <foaf:givenName>R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Julienne</foaf:surname>
+                        <foaf:givenName>P. S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tojo</foaf:surname>
+                        <foaf:givenName>S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Enomoto</foaf:surname>
+                        <foaf:givenName>K.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Takahashi</foaf:surname>
+                        <foaf:givenName>Y.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_381"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Line shapes of optical Feshbach resonances near the intercombination transition of bosonic Ytterbium</dc:title>
+        <dcterms:abstract>The properties of bosonic Ytterbium photoassociation spectra near the intercombination transition $^{1}S_{0}$--$^{3}P_{1}$ are studied theoretically at ultra low temperatures. We demonstrate how the shapes and intensities of rotational components of optical Feshbach resonances are affected by mass tuning of the scattering properties of the two colliding ground state atoms. Particular attention is given to the relationship between the magnitude of the scattering length and the occurrence of shape resonances in higher partial waves of the van der Waals system. We develop a mass scaled model of the excited state potential that represents the experimental data for different isotopes. The shape of the rotational photoassociation spectrum for various bosonic Yb isotopes can be qualitatively different.</dcterms:abstract>
+        <dc:date>2009-05-07</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/0905.0958</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-30 11:10:26</dcterms:dateSubmitted>
+        <dc:description>arXiv:0905.0958 [physics]</dc:description>
+        <dc:identifier>DOI 10.48550/arXiv.0905.0958</dc:identifier>
+        <prism:number>arXiv:0905.0958</prism:number>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_381">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/381/0905.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/0905.0958</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-30 11:10:20</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_392">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bataille</foaf:surname>
+                        <foaf:givenName>Pierre</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_391"/>
+        <dc:title>Réalisation de gaz quantiques de grand spin</dc:title>
+        <z:language>fr</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_391">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/391/Bataille - Réalisation de gaz quantiques de grand spin.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-981-4590-16-7%20978-981-4590-17-4">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <prism:volume>2</prism:volume>
+                <dc:identifier>ISBN 978-981-4590-16-7 978-981-4590-17-4</dc:identifier>
+                <dc:title>Annual Review of Cold Atoms and Molecules</dc:title>
+                <dc:identifier>DOI 10.1142/9789814590174_0001</dc:identifier>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>WORLD SCIENTIFIC</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <z:bookAuthors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Madison</foaf:surname>
+                        <foaf:givenName>Kirk</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bongs</foaf:surname>
+                        <foaf:givenName>Kai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Carr</foaf:surname>
+                        <foaf:givenName>Lincoln D</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rey</foaf:surname>
+                        <foaf:givenName>Ana Maria</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhai</foaf:surname>
+                        <foaf:givenName>Hui</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </z:bookAuthors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stellmer</foaf:surname>
+                        <foaf:givenName>Simon</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schreck</foaf:surname>
+                        <foaf:givenName>Florian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Killian</foaf:surname>
+                        <foaf:givenName>Thomas C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_393"/>
+        <dc:title>DEGENERATE QUANTUM GASES OF STRONTIUM</dc:title>
+        <dc:date>05/2014</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.worldscientific.com/doi/abs/10.1142/9789814590174_0001</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-19 09:43:18</dcterms:dateSubmitted>
+        <bib:pages>1-80</bib:pages>
+    </bib:BookSection>
+    <z:Attachment rdf:about="#item_393">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/393/Stellmer et al. - 2014 - DEGENERATE QUANTUM GASES OF STRONTIUM.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://link.aps.org/doi/10.1103/PhysRevA.78.062708">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>78</prism:volume>
+                <dc:title>Physical Review A</dc:title>
+                <dc:identifier>DOI 10.1103/PhysRevA.78.062708</dc:identifier>
+                <prism:number>6</prism:number>
+                <dcterms:alternative>Phys. Rev. A</dcterms:alternative>
+                <dc:identifier>ISSN 1050-2947, 1094-1622</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Martinez De Escobar</foaf:surname>
+                        <foaf:givenName>Y. N.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mickelson</foaf:surname>
+                        <foaf:givenName>P. G.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pellegrini</foaf:surname>
+                        <foaf:givenName>P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nagel</foaf:surname>
+                        <foaf:givenName>S. B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Traverso</foaf:surname>
+                        <foaf:givenName>A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yan</foaf:surname>
+                        <foaf:givenName>M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Côté</foaf:surname>
+                        <foaf:givenName>R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Killian</foaf:surname>
+                        <foaf:givenName>T. C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_395"/>
+        <dc:title>Two-photon photoassociative spectroscopy of ultracold Sr 88</dc:title>
+        <dc:date>2008-12-10</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.aps.org/doi/10.1103/PhysRevA.78.062708</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-20 13:59:53</dcterms:dateSubmitted>
+        <dc:rights>http://link.aps.org/licenses/aps-default-license</dc:rights>
+        <bib:pages>062708</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_395">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/395/Martinez De Escobar et al. - 2008 - Two-photon photoassociative spectroscopy of ultracold Sr 88.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.aps.org/pra/pdf/10.1103/PhysRevA.78.062708</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-20 13:59:50</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://arxiv.org/abs/1001.2741">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1434-6060,%201434-6079"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stein</foaf:surname>
+                        <foaf:givenName>A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Knöckel</foaf:surname>
+                        <foaf:givenName>H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tiemann</foaf:surname>
+                        <foaf:givenName>E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_399"/>
+        <link:link rdf:resource="#item_397"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Chemical Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>The ^1S+^1S asymptote of Sr_2 studied by Fourier-transform spectroscopy</dc:title>
+        <dcterms:abstract>An experimental study of the long range behavior of the ground state X^1Σ^+_g of Sr_2 is performed by high resolution spectroscopy of asymptotic vibrational levels and the use of available photoassociation data. Ground state levels as high as v&quot;=60 (outer turning point at 23 Åand 0.1 cm^-1 below the asymptote) could be observed by Fourier-transform spectroscopy of fluorescence progressions induced by single frequency laser excitation of the v'=4, J'=9 rovibrational level of the state 2^1Σ^+_u. A precise value of the scattering length for the isotopologue ^88Sr_2 is derived and transferred to all other isotopic combinations by mass scaling with the given potential. The derived potential together with already published information about the state 2^1Σ^+_u directs to promising optical paths for producing cold molecules in the electronic ground state from an ultracold ensemble of Sr atoms.</dcterms:abstract>
+        <dc:date>4/2010</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1001.2741</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-20 14:01:04</dcterms:dateSubmitted>
+        <dc:description>arXiv:1001.2741 [physics]</dc:description>
+        <bib:pages>171-177</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1434-6060,%201434-6079">
+        <prism:volume>57</prism:volume>
+        <dc:title>The European Physical Journal D</dc:title>
+        <dc:identifier>DOI 10.1140/epjd/e2010-00058-y</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>Eur. Phys. J. D</dcterms:alternative>
+        <dc:identifier>ISSN 1434-6060, 1434-6079</dc:identifier>
+    </bib:Journal>
+    <bib:Memo rdf:about="#item_399">
+        <rdf:value>Comment: Minor typing errors corrected and journal reference added.</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_397">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/397/Stein et al. - 2010 - The ^1S+^1S asymptote of Sr_2 studied by Fourier-transform spectroscopy.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1001.2741</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-20 14:01:02</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2507.10487">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pucher</foaf:surname>
+                        <foaf:givenName>Sebastian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kristensen</foaf:surname>
+                        <foaf:givenName>Sofus Laguna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kroeze</foaf:surname>
+                        <foaf:givenName>Ronen M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_402"/>
+        <link:link rdf:resource="#item_400"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Condensed Matter - Quantum Gases</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Quantum Physics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>$^{88}$Sr Reference Data</dc:title>
+        <dcterms:abstract>Strontium-88 is a versatile atomic species often used in quantum optics, precision metrology, and quantum computing. Consolidated atomic data is essential for the planning, execution, and evaluation of experiments. In this reference, we present physical and optical properties of neutral $^{88}$Sr relevant to these applications. Here we focus on experimental results and supplement these with theoretical values. We present equations to convert values and derive important parameters. Tabulated results include key parameters for commonly used transitions in $^{88}$Sr ($^1\mathrm{S}_0 \rightarrow \, ^1\mathrm{P}_1$, $^1\mathrm{S}_0 \rightarrow \, ^3\mathrm{P}_{0,1,2}$, and $^3\mathrm{P}_{0,1,2} \rightarrow \, ^3\mathrm{S}_1$). This dataset serves as an up-to-date reference for studies involving bosonic $^{88}$Sr.</dcterms:abstract>
+        <dc:date>2025-08-18</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2507.10487</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-20 14:01:47</dcterms:dateSubmitted>
+        <dc:description>arXiv:2507.10487 [physics]</dc:description>
+        <dc:identifier>DOI 10.48550/arXiv.2507.10487</dc:identifier>
+        <prism:number>arXiv:2507.10487</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_402">
+        <rdf:value>&lt;div data-schema-version=&quot;9&quot;&gt;&lt;p&gt;Everything about Sr88 (interaction with E so rabi coupling, B, transitions…)&lt;/p&gt;
+&lt;p&gt;+a bit about the other isotopes&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_400">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/400/Pucher et al. - 2025 - $^{88}$Sr Reference Data.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2507.10487</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-20 14:01:45</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://link.aps.org/doi/10.1103/RevModPhys.80.1215">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0034-6861,%201539-0756"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Giorgini</foaf:surname>
+                        <foaf:givenName>Stefano</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pitaevskii</foaf:surname>
+                        <foaf:givenName>Lev P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stringari</foaf:surname>
+                        <foaf:givenName>Sandro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_404"/>
+        <dc:title>Theory of ultracold atomic Fermi gases</dc:title>
+        <dc:date>2008-10-2</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.aps.org/doi/10.1103/RevModPhys.80.1215</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-20 14:07:06</dcterms:dateSubmitted>
+        <dc:rights>http://link.aps.org/licenses/aps-default-license</dc:rights>
+        <bib:pages>1215-1274</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0034-6861,%201539-0756">
+        <prism:volume>80</prism:volume>
+        <dc:title>Reviews of Modern Physics</dc:title>
+        <dc:identifier>DOI 10.1103/RevModPhys.80.1215</dc:identifier>
+        <prism:number>4</prism:number>
+        <dcterms:alternative>Rev. Mod. Phys.</dcterms:alternative>
+        <dc:identifier>ISSN 0034-6861, 1539-0756</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_404">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/404/Giorgini et al. - 2008 - Theory of ultracold atomic Fermi gases.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.80.1215</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-20 14:07:04</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2405.01499">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Claude</foaf:surname>
+                        <foaf:givenName>Ferdinand</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lafforgue</foaf:surname>
+                        <foaf:givenName>Louis</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Houwman</foaf:surname>
+                        <foaf:givenName>J. J. Arfor</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mark</foaf:surname>
+                        <foaf:givenName>Manfred J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ferlaino</foaf:surname>
+                        <foaf:givenName>Francesca</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_406"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Condensed Matter - Quantum Gases</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Optical Manipulation of Spin States in Ultracold Magnetic Atoms via an Inner-Shell Hz Transition</dc:title>
+        <dcterms:abstract>Lanthanides, like erbium and dysprosium, have emerged as powerful platforms for quantum-gas research due to their diverse properties, including a significant large spin manifold in their absolute ground state. However, effectively exploiting the spin richness necessitates precise manipulation of spin populations, a challenge yet to be fully addressed in this class of atomic species. In this work, we present an all-optical method for deterministically controlling the spin composition of a dipolar bosonic erbium gas, based on a clock-like transition in the telecom window at 1299 nm. The atoms can be prepared in just a few tens of microseconds in any spin-state composition using a sequence of Rabi-pulse pairs, selectively coupling Zeeman sublevels of the ground state with those of the long-lived clock-like state. Finally, we demonstrate that this transition can also be used to create spin-selective light shifts, thus fully suppressing spin-exchange collisions. These experimental results unlock exciting possibilities for implementing advanced spin models in isolated, clean and fully controllable lattice systems.</dcterms:abstract>
+        <dc:date>2024-07-16</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2405.01499</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-20 14:08:23</dcterms:dateSubmitted>
+        <dc:description>arXiv:2405.01499 [cond-mat]</dc:description>
+        <dc:identifier>DOI 10.48550/arXiv.2405.01499</dc:identifier>
+        <prism:number>arXiv:2405.01499</prism:number>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_406">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/406/Claude et al. - 2024 - Optical Manipulation of Spin States in Ultracold Magnetic Atoms via an Inner-Shell Hz Transition.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2405.01499</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-20 14:08:21</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://link.aps.org/doi/10.1103/PhysRevA.97.013401">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>97</prism:volume>
+                <dc:title>Physical Review A</dc:title>
+                <dc:identifier>DOI 10.1103/PhysRevA.97.013401</dc:identifier>
+                <prism:number>1</prism:number>
+                <dcterms:alternative>Phys. Rev. A</dcterms:alternative>
+                <dc:identifier>ISSN 2469-9926, 2469-9934</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Han</foaf:surname>
+                        <foaf:givenName>Jeong Ho</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kang</foaf:surname>
+                        <foaf:givenName>Jin Hyoun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lee</foaf:surname>
+                        <foaf:givenName>Moosong</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shin</foaf:surname>
+                        <foaf:givenName>Y.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_408"/>
+        <dc:title>Photoassociation spectroscopy of ultracold Yb 173 atoms near the intercombination line</dc:title>
+        <dc:date>2018-1-4</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.aps.org/doi/10.1103/PhysRevA.97.013401</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-20 14:09:20</dcterms:dateSubmitted>
+        <bib:pages>013401</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_408">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/408/Han et al. - 2018 - Photoassociation spectroscopy of ultracold Yb 173 atoms near the intercombination line.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.aps.org/pra/pdf/10.1103/PhysRevA.97.013401</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-20 14:09:18</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://arxiv.org/abs/1205.4505">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>109</prism:volume>
+                <dc:title>Physical Review Letters</dc:title>
+                <dc:identifier>DOI 10.1103/PhysRevLett.109.115302</dc:identifier>
+                <prism:number>11</prism:number>
+                <dcterms:alternative>Phys. Rev. Lett.</dcterms:alternative>
+                <dc:identifier>ISSN 0031-9007, 1079-7114</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stellmer</foaf:surname>
+                        <foaf:givenName>Simon</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pasquiou</foaf:surname>
+                        <foaf:givenName>Benjamin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Grimm</foaf:surname>
+                        <foaf:givenName>Rudolf</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schreck</foaf:surname>
+                        <foaf:givenName>Florian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_412"/>
+        <link:link rdf:resource="#item_410"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Condensed Matter - Quantum Gases</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Creation of ultracold Sr2 molecules in the electronic ground state</dc:title>
+        <dcterms:abstract>We report on the creation of ultracold 84Sr2 molecules in the electronic ground state. The molecules are formed from atom pairs on sites of an optical lattice using stimulated Raman adiabatic passage (STIRAP). We achieve a transfer efficiency of 30% and obtain 4x10^4 molecules with full control over the external and internal quantum state. STIRAP is performed near the narrow 1S0-3P1 intercombination transition, using a vibrational level of the 0u potential as intermediate state. In preparation of our molecule association scheme, we have determined the binding energies of the last vibrational levels of the 0u, 1u excited-state, and the 1Σ_g^+ ground-state potentials. Our work overcomes the previous limitation of STIRAP schemes to systems with Feshbach resonances, thereby establishing a route that is applicable to many systems beyond bi-alkalis.</dcterms:abstract>
+        <dc:date>2012-9-13</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1205.4505</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-21 13:36:50</dcterms:dateSubmitted>
+        <dc:description>arXiv:1205.4505 [cond-mat]</dc:description>
+        <bib:pages>115302</bib:pages>
+    </bib:Article>
+    <bib:Memo rdf:about="#item_412">
+       <rdf:value>Comment: 7 pages, 7 figures, 3 tables</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_410">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/410/Stellmer et al. - 2012 - Creation of ultracold Sr2 molecules in the electronic ground state.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1205.4505</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-01-21 13:36:47</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://arxiv.org/abs/2501.01731">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2691-3399"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ahmed</foaf:surname>
+                        <foaf:givenName>Husain</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Litvinov</foaf:surname>
+                        <foaf:givenName>Andrea</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Guesdon</foaf:surname>
+                        <foaf:givenName>Pauline</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Maréchal</foaf:surname>
+                        <foaf:givenName>Etienne</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Huckans</foaf:surname>
+                        <foaf:givenName>John H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pasquiou</foaf:surname>
+                        <foaf:givenName>Benjamin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Laburthe-Tolra</foaf:surname>
+                        <foaf:givenName>Bruno</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Robert-de-Saint-Vincent</foaf:surname>
+                        <foaf:givenName>Martin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_413"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Condensed Matter - Quantum Gases</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Physics - Atomic Physics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Quantum Physics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Coherent control over the high-dimensional space of the nuclear spin of alkaline-earth atoms</dc:title>
+        <dcterms:abstract>We demonstrate coherent manipulation of the nuclear degrees of freedom of ultracold ground-state strontium 87 atoms, thus providing a toolkit for fully exploiting the corresponding large Hilbert space as a quantum resource and for quantum simulation experiments with SU(N)-symmetric matter. By controlling the resonance conditions of Raman transitions with a tensor light shift, we can perform rotations within a restricted Hilbert space of two isolated spin states among the 2F+1 = 10 possible states. These manipulations correspond to engineering unitary operations deriving from generators of the SU(N) algebra beyond what can be done by simple spin precession. We present Ramsey interferometers involving an isolated pair of Zeeman states with no measurable decoherence after 3 seconds. We also demonstrate that one can harvest the large spin degrees of freedom as a qudit resource by implementing two interferometer schemes over four states. The first scheme senses in parallel multiple external fields acting on the atoms, and the second scheme simultaneously measures multiple observables of a collective atomic state - including non-commuting ones. Engineering unitary transformations of the large spin driven by other generators than the usual spin-F representation of the SU(2) group offers new possibilities from the point of view of quantum metrology and quantum many-body physics, notably for the quantum simulation of large-spin SU(N)-symmetric quantum magnetism with fermionic alkaline-earth atoms.</dcterms:abstract>
+        <dc:date>2025-6-16</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2501.01731</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-02-02 13:59:30</dcterms:dateSubmitted>
+        <dc:description>arXiv:2501.01731 [quant-ph]</dc:description>
+        <bib:pages>020352</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2691-3399">
+        <prism:volume>6</prism:volume>
+        <dc:title>PRX Quantum</dc:title>
+        <dc:identifier>DOI 10.1103/PRXQuantum.6.020352</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>PRX Quantum</dcterms:alternative>
+        <dc:identifier>ISSN 2691-3399</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_413">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/413/Ahmed et al. - 2025 - Coherent control over the high-dimensional space of the nuclear spin of alkaline-earth atoms.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2501.01731</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-02-02 13:59:12</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_418">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Barbé</foaf:surname>
+                        <foaf:givenName>Vincent</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_419"/>
+        <dc:title>Ultracold RbSr: Optical and magnetic spectroscopy, Feshbach resonances and molecular structure</dc:title>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_419">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/419/Barbé - Ultracold RbSr Optical and magnetic spectroscopy, Feshbach resonances and molecular structure.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://strontiumbec.com/StrontiumLab/Theses/Vincent_Barbe_PhD_thesis.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-02-10 15:25:59</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_420">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Barbé</foaf:surname>
+                        <foaf:givenName>Vincent</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_421"/>
+        <dc:title>Ultracold RbSr: Optical and magnetic spectroscopy, Feshbach resonances and molecular structure</dc:title>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_421">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/421/Barbé - Ultracold RbSr Optical and magnetic spectroscopy, Feshbach resonances and molecular structure.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://strontiumbec.com/StrontiumLab/Theses/Vincent_Barbe_PhD_thesis.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-02-12 09:28:59</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_423">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chin</foaf:surname>
+                        <foaf:givenName>Cheng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Grimm</foaf:surname>
+                        <foaf:givenName>Rudolf</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Julienne</foaf:surname>
+                        <foaf:givenName>Paul</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tiesinga</foaf:surname>
+                        <foaf:givenName>Eite</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_422"/>
+        <dc:title>Feshbach Resonances in Ultracold Gases</dc:title>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_422">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/422/Chin et al. - Feshbach Resonances in Ultracold Gases.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/0812.1496</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-02-18 16:36:01</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_425">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dalibard</foaf:surname>
+                        <foaf:givenName>Jean</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_424"/>
+        <dc:title>Les interactions entre atomes dans les gaz quantiques</dc:title>
+        <z:language>fr</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_424">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/424/Dalibard - Les interactions entre atomes dans les gaz quantiques.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.college-de-france.fr/media/jean-dalibard/UPL1464042088911247918_cours_total_dalibard_2020_2021_fr..pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-02-19 13:43:05</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Collection rdf:about="#collection_26">
+        <dc:title>Foundations (MOT, Fermi gases...)</dc:title>
+        <dcterms:hasPart rdf:resource="#item_392"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-981-4590-16-7%20978-981-4590-17-4"/>
+        <dcterms:hasPart rdf:resource="https://link.aps.org/doi/10.1103/RevModPhys.80.1215"/>
+        <dcterms:hasPart rdf:resource="#item_425"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_29">
+        <dc:title>Interféromètre</dc:title>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/2501.01731"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_25">
+        <dc:title>Photoassociation</dc:title>
+        <dcterms:hasPart rdf:resource="#item_315"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/0905.4556"/>
+        <dcterms:hasPart rdf:resource="#item_317"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/physics/0602135"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/1104.0210"/>
+        <dcterms:hasPart rdf:resource="https://link.aps.org/doi/10.1103/PhysRevA.66.063406"/>
+        <dcterms:hasPart rdf:resource="https://link.aps.org/doi/10.1103/PhysRevA.103.023111"/>
+        <dcterms:hasPart rdf:resource="#item_364"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-3-030-21200-1%20978-3-030-21201-8"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/1808.06507"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/0905.0958"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/1001.2741"/>
+        <dcterms:hasPart rdf:resource="https://link.aps.org/doi/10.1103/PhysRevA.97.013401"/>
+        <dcterms:hasPart rdf:resource="#item_418"/>
+        <dcterms:hasPart rdf:resource="#item_420"/>
+        <dcterms:hasPart rdf:resource="#item_423"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_28">
+        <dc:title>Spin manipulation</dc:title>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/2405.01499"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_27">
+        <dc:title>Sr88</dc:title>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/1808.06507"/>
+        <dcterms:hasPart rdf:resource="https://link.aps.org/doi/10.1103/PhysRevA.78.062708"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/2507.10487"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/1205.4505"/>
+    </z:Collection>
+</rdf:RDF>

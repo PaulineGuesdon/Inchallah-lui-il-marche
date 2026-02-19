@@ -1,1 +1,1 @@
-$bibtex = '/Library/TeX/texbin/bibtex %O %S';
+﻿$bibtex = 'bibtex %O %S';
