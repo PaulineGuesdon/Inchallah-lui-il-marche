@@ -3,7 +3,7 @@
 Engineering Dicke states
 
 \section{Introduction on photoassociation}
-\subsection{Apparatus on scattering theory}
+\subsection{Preamble on scattering theory}
 
 In a potential describing the interaction between two atoms, we can
 discretize different interaction zones depending on the inter-nuclear
@@ -38,18 +38,9 @@ In ultracold gases, only s-wave atoms can collide because they do not have
 enough kinetic energy to pass the potential barrier of higher angular momentum states. It imposes
 that for fermions -by parity of the total wavefunction being antisymetric- 
 only atoms with even angular momentum can collide meaning their spin is in a singlet state as 
-in the case of ${87}^Sr$. For bosons it is the contrary : from an even orbital wavefunction,
+in the case of $^{87}Sr$. For bosons it is the contrary : from an even orbital wavefunction,
 the spin wavefunction should be antisymetric to collide.
 
-The second element for PA is a resonant laser. As visible in \ref{fig:PA_concept} : 
-from a free state of a two-atoms system we couple them via a laser with a molecular 
-vibrationnal state. In the case of spectroscopy we usually start with the least bounded state to have
-the atomic state reference. From that we sweep the atom frequency to adress the
-molecular states red detuned from the atomic line. 
-
-PA is mostly used in Feschbach resonance field because determining the exact 
-position of the vibrational states enables by changing the magnetic field
-to tune the scattering length of the atoms and thus the interactions in the system.
 \subsection{What is photoassociation}
 \begin{figure}[H]
     \centering
@@ -61,28 +52,48 @@ to tune the scattering length of the atoms and thus the interactions in the syst
 Photoassociating two atoms consists in bounding two colliding atoms with light 
 that occurs mostly with two-body and three body losses. 
 
+As visible in \ref{fig:PA_concept} from a free state of a two-atoms system we couple them via a laser with a molecular 
+vibrationnal state. In the case of spectroscopy we usually start with the least bounded state to have
+the atomic state reference. From that we sweep the atom frequency to adress the
+molecular states red detuned from the atomic line. 
+The quantity that will testify there is two-body losses
+is the atom number remaining in the trap after a photoassociation pulse. 
+The molecule leaves the trap by acquiring kinetic energy from the binding energy.
+The experimental proof of photoassociation is given by 
 
+\begin{equation}
+    \frac{dN}{dt} = - \beta N^2 - \Gamma N
+\end{equation}
+
+$\beta$ the fitted parameter of two-body losses ($\beta = \frac{K_2 V_e}{2}$,
+$K_2$ in comparison with \cite{han_photoassociation_2018}) the two-body 
+loss rate, $V_e$ the effective volume of the cloud $(2\pi )^{3/2}\sigma_x 
+\sigma_y \sigma_z$ for a density Gaussian distribution and $\Gamma$ 
+the one-body losses rate. This latter is limited by the vacuum quality and 
+the lifetime of the atoms in the trap. 
+
+PA is mostly used in Feschbach resonance field because determining the exact 
+position of the vibrational states enables by changing the magnetic field
+to tune the scattering length of the atoms and thus the interactions in the system.
 
 \subsection{Molecular formalism/vocabulary (condon radius, optical length...)}
-Optical length is defined as the imaginary part of the scattering length and 
-describes the strength of the photoassociation rate 
+Optical characterizes the strength of the photoassociation rate 
 
 \begin{equation}
     K_2= \frac{4\pi \hbar}{\mu} nl_{opt}
 \end{equation}
 
-$n$ the volumic density of the cloud, $\mu$ the reduced mass of the two atoms. This rate represents
-the ratio of the atoms that are lossed by 2-body losses.\\
+$\mu$ the reduced mass of the two atoms. This rate represents
+the ratio of the atoms that are lossed by 2-body losses. \\
 
-The Franck Condon factor (\cite{guttridge_photoassociation_2019})
-is the probability to transition from an initial vibrational $i$ state to 
-a final vibrational $f$ state
+It contains the probability to transition from an initial vibrational $i$ 
+state to a final vibrational $f$ state : the Franck Condon factor (\cite{guttridge_photoassociation_2019})
 
 \begin{equation} 
     F_{FC} = \Bigg|\int_0^{\infty} \psi_i(r) \psi_f(r) dr\Bigg |^2 
 \end{equation}
 
-r the inter-nuclear distance.
+r the inter-nuclear distance. 
 It depends directly with the overlap of the wavefunctions of the initial and final states.
 The Condon radius is the distance between the atoms for which this factor is maximum
 which also means that in a classical approach the atoms spend the most time at this position.\\
@@ -164,7 +175,7 @@ The probability of finding electrons in between the two atoms is high compared t
 To describe two-body losses of a photoassociation process, we can change the study basis 
 depending on the distance between the two atoms by approximating dominant couplings 
 over others. (Hund's cases) \\
-The hamiltonian of the two-atom system is given by
+The hamiltonian of the two-atom system is given in \cite{han_photoassociation_2018} by 
 
 \begin{equation}
     \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{V}_{BO} + \hat{H}_{HF} 
