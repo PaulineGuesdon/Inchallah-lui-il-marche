@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.5)  19 FEB 2026 14:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.5)  19 FEB 2026 17:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -750,92 +750,96 @@ Overfull \hbox (0.47241pt too wide) in paragraph at lines 98--98
 
 ] [4]
 Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
 [5
 
 ]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png, id=596, 325.96782pt x 479.54156pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png, id=599, 325.96782pt x 479.54156pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png  used on input line 47.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png  used on input line 58.
 (pdftex.def)             Requested size: 298.75262pt x 439.53722pt.
- [6 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
+ [6] [7 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--100
+Underfull \hbox (badness 10000) in paragraph at lines 107--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--106
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 113--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--132
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png, id=618, 291.33844pt x 323.70938pt>
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 139--143
+
+ []
+
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png, id=626, 291.33844pt x 323.70938pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png  used on input line 135.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png  used on input line 146.
 (pdftex.def)             Requested size: 213.39566pt x 237.11101pt.
-[8 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--163
+[9 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 170--174
 
  []
 
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png, id=626, 603.0028pt x 502.12593pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png, id=637, 603.0028pt x 502.12593pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png  used on input line 172.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png  used on input line 183.
 (pdftex.def)             Requested size: 426.79134pt x 355.39328pt.
-[9]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png, id=638, 679.03688pt x 452.4403pt>
+[10 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png>]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png, id=647, 679.03688pt x 452.4403pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png  used on input line 211.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png  used on input line 225.
 (pdftex.def)             Requested size: 298.75262pt x 199.05363pt.
- [10 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png>]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png, id=647, 399.74344pt x 375.65344pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png, id=648, 399.74344pt x 375.65344pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png  used on input line 224.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png  used on input line 238.
 (pdftex.def)             Requested size: 298.75262pt x 280.76494pt.
  [11 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png>]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png, id=654, 407.27156pt x 487.8225pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png, id=658, 407.27156pt x 487.8225pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png  used on input line 233.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png  used on input line 247.
 (pdftex.def)             Requested size: 298.75262pt x 357.8567pt.
  [12 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png>]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png, id=660, 567.62062pt x 371.88937pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png, id=664, 567.62062pt x 371.88937pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png  used on input line 245.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png  used on input line 259.
 (pdftex.def)             Requested size: 298.75262pt x 195.73853pt.
  [13 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png>]) (Chapitres/conclusion/conclusion.tex [14 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png>]) (c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\These depuis overleaf\out\main.bbl [15
 
 ]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 8.
  (C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
 ) (appendix/appendixA.tex [1
 
 ]
@@ -851,17 +855,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 1A267252824CE8B113837E27C142E2D8;14017.
  ) 
 Here is how much of TeX's memory you used:
- 19992 strings out of 467866
- 393245 string characters out of 5413486
- 921924 words of memory out of 5000000
- 48474 multiletter control sequences out of 15000+600000
+ 19998 strings out of 467866
+ 393412 string characters out of 5413486
+ 921939 words of memory out of 5000000
+ 48477 multiletter control sequences out of 15000+600000
  634560 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,12n,79p,2593b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\pauline.guesdon\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\These depuis overleaf\out\main.pdf" (31 pages, 3082659 bytes).
+Output written on "c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\These depuis overleaf\out\main.pdf" (31 pages, 3085248 bytes).
 PDF statistics:
- 771 PDF objects out of 1000 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
+ 775 PDF objects out of 1000 (max. 8388607)
+ 130 named destinations out of 1000 (max. 500000)
  598 words of extra memory for PDF output out of 10000 (max. 10000000)
 

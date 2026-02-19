@@ -5,24 +5,35 @@ Engineering Dicke states
 \section{Introduction on photoassociation}
 \subsection{Preamble on scattering theory}
 
-In a potential describing the interaction between two atoms, we can
-discretize different interaction zones depending on the inter-nuclear
-distance. 
-For $k$ the inverse of the De Broglie wavelength, when $r >> 1/k$ the atoms 
-do not feel each other and the potential is reduced to the van der Waals 
-potential $\frac{-C_6}{r^6}$. When they get closer their electronic 
-shell start to overlap and the potential is more complex. The total 
-wavefunction of this system is well described by standing waves that are a 
-superposition of incoming and outgoing waves. It is expressed as
+In a Born-Oppenheimer approximation the hamiltonian of a two-atom system is
+\begin{equation}
+    \hat{V_{BO}} = -\frac{\hbar^2}{2\mu} \frac{d^2u}{dr^2} + \left(\frac{\hbar^2l(l+1)}{2\mu r^2} 
+    + V(r)\right)u(r) = E u(r)
+\end{equation}
+$V(r) = \frac{-C_n}{r^n}$.\\
+
+As in \cite{dalibard_interactions_nodate} we are going to change the basis of the solution 
+with in different regions of the inter-atomic distance $r$.
+At long distance the kinetic energy of the atoms - fisrt part of the hamiltonian - is dominant.
+For intermediate distances the force that counts is the van der Waals because the electronic shell
+start to overlap. 
+At shorter distance it is the coulomb and van der Waals forces that are dominant.
+
+The solution of the far distance potential is a superposition of incoming wave and a 
+scattered one that acquire a phase $\delta_l$
 
 \begin{equation}
     \psi(r) =  sin(kr - l\frac{\pi}{2}) + tan(\delta_l) cos(kr - l\frac{\pi}{2})
 \end{equation}
+at this position $r = a$ where the potential appears as a scattering boundary. This distance 
+is called the scattering length. At low energies
 
-where $\delta_l$ is the phase accumulated at this position $r = a$ where the 
-potential appears as a scattering boundary. This distance is called 
-the scattering length and is a key parameter for scattering and photoassociation
-description. At low energies for s-waves, this express as 
+Continuity of the wavefunction in every region should be respected. It gives 
+ \begin{equation}
+    tan(\delta_l) \propto k^{2l+1}
+ \end{equation}
+
+ For s-waves, this express as 
 \begin{equation}
     a = -\lim_{k\to 0} tan(\delta_0)/k
 \end{equation}
@@ -205,6 +216,9 @@ B \,
 
 $s=\pm1$ for gerade and ungerade potentials respectively.
 The hyperfine term of the atom in $^1S_0$ is zero because its electronic angular momentum is zero.
+The BO potential do not count the $1/r^2$ potential because we are in the s-wave regime (l=0) 
+so the electronic shell do not repulse the atoms at short distance. 
+
 \subsubsection{WKB approximation}
 \begin{figure}[H]
     \centering
