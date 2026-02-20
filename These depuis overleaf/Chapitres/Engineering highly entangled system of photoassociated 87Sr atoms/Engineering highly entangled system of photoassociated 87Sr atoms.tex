@@ -5,35 +5,45 @@ Engineering Dicke states
 \section{Introduction on photoassociation}
 \subsection{Preamble on scattering theory}
 
-In a Born-Oppenheimer approximation the hamiltonian of a two-atom system is
+It is convenient in the case of the $^{87}Sr$ to approximate the electrons following the movement
+of the nuclei because of the mass ratio. In a Born-Oppenheimer picture we neglect the coupled
+terms between the kinetic energy of the electrons and the kinetic energy of the nuclei.
+The effective hamiltonian is given by
+
 \begin{equation}
-    \hat{V_{BO}} = -\frac{\hbar^2}{2\mu} \frac{d^2u}{dr^2} + \left(\frac{\hbar^2l(l+1)}{2\mu r^2} 
-    + V(r)\right)u(r) = E u(r)
+    \hat{H} = -\frac{\hbar^2}{2\mu}\left(\frac{1}{r^2} \frac{d^2u}{dr^2}r^2 - \frac{l(l+1)}{r^2} 
+    + \hat{V}(r)\right)u(r) = E u(r)
 \end{equation}
-$V(r) = \frac{-C_n}{r^n}$.\\
+$u(r)$ the eigenfunction of the hamiltonian $\hat{H}$.\\
 
-As in \cite{dalibard_interactions_nodate} we are going to change the basis of the solution 
-with in different regions of the inter-atomic distance $r$.
-At long distance the kinetic energy of the atoms - fisrt part of the hamiltonian - is dominant.
-For intermediate distances the force that counts is the van der Waals because the electronic shell
-start to overlap. 
-At shorter distance it is the coulomb and van der Waals forces that are dominant.
+$\hat{V}(r)$ are higher order electronic interactions equals to $-C_n/r^n$. 
+To solve this hamiltonian it is easier to change the basis of study as in 
+\cite{dalibard_interactions_nodate}.
+The major contribution to the potential are $3$rd and $6$th order terms rspectively the dipole-
+dipole and the van der Waals interaction. \\
+At really long distance the interaction that counts is the van der Waals. The neutral atoms
+do not feel any effect on their electronic shell.\\
+For closer distance $r$ of the order of the de De Broglie wavelength the force that counts 
+is the kinetic energy over the potential and centrifugal force. \\
+For medium distance $r_1$ the electronic shell start to overlap and the coulomb force is dominant.\\
+For very short distance around the turning point of the potential higher order terms only
+count ($1/r^2$ and $V(r)$) and the potential is repulsive.\\
 
-The solution of the far distance potential is a superposition of incoming wave and a 
-scattered one that acquire a phase $\delta_l$
+The solution for $r \sim r_1$ potential is a superposition of incoming wave and a scattered one that 
+acquire a phase $\delta_l$
 
 \begin{equation}
     \psi(r) =  sin(kr - l\frac{\pi}{2}) + tan(\delta_l) cos(kr - l\frac{\pi}{2})
 \end{equation}
-at this position $r = a$ where the potential appears as a scattering boundary. This distance 
-is called the scattering length. At low energies
+At this position $r_1 = a$ where the potential appears as a scattering boundary this distance 
+is called the scattering length. 
 
 Continuity of the wavefunction in every region should be respected. It gives 
  \begin{equation}
     tan(\delta_l) \propto k^{2l+1}
  \end{equation}
 
- For s-waves, this express as 
+ For s-waves ($l=0$), this express as 
 \begin{equation}
     a = -\lim_{k\to 0} tan(\delta_0)/k
 \end{equation}
@@ -136,7 +146,6 @@ $\ket{\phi_e}$ and $\ket{\phi_g}$ are the electronic wavefunctions of the two at
 in ground and excited state respectively, $\ket{\chi}$ is the spin wavefunction.
 It gives accessible values $R = 0, 2$ or $4$...
 
-The hamiltonian of the homonuclear molecule 
 For $^1S_0$ - $^3P_1$ molecular state there is a strong spin-orbit coupling that couples its 
 related momentum to the internuclear axis (\ref{fig:hund}), quantified by $\Omega$ and described as Hund's case 
 (c) \\
@@ -171,6 +180,9 @@ The possible values of total angular momentum of the molecule are
 As for atoms there are selection rules for transitions from a free state to a molecular state
 fixed by the angular momentum of the electrons. 
 $\Delta J = 0, \pm 1$ gives $\Delta T = 0, \pm 1$ with $T=0 \rightarrow T=0$ forbidden.\\
+The initial $T^i = 0$ because in s-wave collisions $R=0$ and their is no spin coupling with
+neither the orbital momentum nor the nuclear spin. The possible transitions on the $F=11/2$ 
+hy
 
 Another element to describe the molecule is the symmetry of the orbital wavefunction. For an
 even wavefunction the exchange of the two atoms $A$ and $B$ does not change the sign of the 
@@ -186,10 +198,8 @@ The probability of finding electrons in between the two atoms is high compared t
 \end{figure}
 
 \subsection{External energy states}
-To describe two-body losses of a photoassociation process, we can change the study basis 
-depending on the distance between the two atoms by approximating dominant couplings 
-over others. (Hund's cases) \\
-The hamiltonian of the two-atom system is given in \cite{han_photoassociation_2018} by 
+As seen in the subsection 3.1.1 in a molecular picture the hamiltonian express as 
+in \cite{han_photoassociation_2018} by 
 
 \begin{equation}
     \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{V}_{BO} + \hat{H}_{HF} 
@@ -216,9 +226,7 @@ B \,
 
 $s=\pm1$ for gerade and ungerade potentials respectively.
 The hyperfine term of the atom in $^1S_0$ is zero because its electronic angular momentum is zero.
-The BO potential do not count the $1/r^2$ potential because we are in the s-wave regime (l=0) 
-so the electronic shell do not repulse the atoms at short distance. 
-
+Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts. 
 \subsubsection{WKB approximation}
 \begin{figure}[H]
     \centering
