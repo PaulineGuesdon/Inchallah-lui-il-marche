@@ -16,18 +16,18 @@ The effective hamiltonian is given by
 \end{equation}
 $u(r)$ the eigenfunction of the hamiltonian $\hat{H}$.\\
 
-$\hat{V}(r)$ are higher order electronic interactions equals to $-C_n/r^n$. 
-To solve this hamiltonian it is easier to change the basis of study as in 
-\cite{dalibard_interactions_nodate}.
-The major contribution to the potential are $3$rd and $6$th order terms rspectively the dipole-
-dipole and the van der Waals interaction. \\
-At really long distance the interaction that counts is the van der Waals. The neutral atoms
-do not feel any effect on their electronic shell.\\
-For closer distance $r$ of the order of the de De Broglie wavelength the force that counts 
-is the kinetic energy over the potential and centrifugal force. \\
-For medium distance $r_1$ the electronic shell start to overlap and the coulomb force is dominant.\\
-For very short distance around the turning point of the potential higher order terms only
-count ($1/r^2$ and $V(r)$) and the potential is repulsive.\\
+% $\hat{V}(r)$ are higher order electronic interactions equals to $-C_n/r^n$. 
+% To solve this hamiltonian it is easier to change the basis of study as in 
+% \cite{dalibard_interactions_nodate}.
+% The major contribution to the potential are $3$rd and $6$th order terms rspectively the dipole-
+% dipole and the van der Waals interaction. \\
+% At really long distance the interaction that counts is the van der Waals. The neutral atoms
+% do not feel any effect on their electronic shell.\\
+% For closer distance $r$ of the order of the de De Broglie wavelength the force that counts 
+% is the kinetic energy over the potential and centrifugal force. \\
+% For medium distance $r_1$ the electronic shell start to overlap and the coulomb force is dominant.\\
+% For very short distance around the turning point of the potential higher order terms only
+% count ($1/r^2$ and $V(r)$) and the potential is repulsive.\\
 
 The solution for $r \sim r_1$ potential is a superposition of incoming wave and a scattered one that 
 acquire a phase $\delta_l$
@@ -61,6 +61,22 @@ that for fermions -by parity of the total wavefunction being antisymetric-
 only atoms with even angular momentum can collide meaning their spin is in a singlet state as 
 in the case of $^{87}Sr$. For bosons it is the contrary : from an even orbital wavefunction,
 the spin wavefunction should be antisymetric to collide.
+
+\subsection{New try to rely optical length to scattering length}
+It is convenient in the case of the $^{87}Sr$ to approximate the electrons following the movement
+of the nuclei because of the mass ratio. In a Born-Oppenheimer picture we neglect the coupled
+terms between the kinetic energy of the electrons and the kinetic energy of the nuclei. In this 
+manner we can study separately the radial and the angular part of the electronic movement. \\
+As in the LANDAU-ZENER we will find the solutions of the 1D radial Schrödinger equation of the 
+electrons by approximating the scattering of the atoms as a sum of an incoming plane wave with a 
+spherical scattered one - considered as plane wave at long distance - 
+
+\begin{equation}
+    \Psi = e^{i\mathbf{k}\cdot \mathbf{z}} + f(\theta) \frac{e^{ikr}}{r}
+\end{equation}
+$f(\theta)$ a function that will show the inelasticity and/or elasticity part of the scattering
+by the absorption or not of the wave. $theta$ is the angle between the vector wore by the 
+incoming wave with the vector wore by the scattered wave.\\
 
 \subsection{What is photoassociation}
 \begin{figure}[H]
@@ -245,7 +261,19 @@ Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts.
 Leroy-Bernstein approx
 \section{About photoassociation on other species}
 
-\subsection{Mass scaling (88Sr)}
+\subsection{Mass scaling ($^{88}Sr$)}
+$^{88}Sr$ is a bosonic isotope of strontium with no hyperfine structure. The photoassociation
+spectrum is then simpler than the fermionic ones : only two potentials in the first excited
+molecular state $0_u$ and $1_u$. Results have been presented in \cite{zelevinsky_narrow_2006} 
+where their fitting model gives the following potential expression
+\begin{equation}
+    \hat{V}_{BO} \sim \frac{-C_{6,\Lambda}}{r^6} -\frac{C_3}{r^3} + \frac{C_J}{r^2}
+\end{equation}
+for the two accessible potentials $\Lambda = 0, 1$. 
+
+Mass scaling method presented in \cite{reschovsky_narrow-line_2018} enables to predict the position
+of the vibrational states of the different istopoes of strontium. \\
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png}
@@ -254,6 +282,9 @@ Leroy-Bernstein approx
 \end{figure}
 
 \subsection{Ytterbium: hfs}
+As the $^{87}Sr$ the fermionic \textbf{$^{173}Yb$} has a hyperfine structure that makes its molecular 
+potential landscape more complex than many known species. 
+
 
 \begin{figure}[H]
     \centering
@@ -262,6 +293,9 @@ Leroy-Bernstein approx
     \label{fig:pa-ytterbium-potentials}
 \end{figure}
 
+\textbf{$^{171}Yb$}
+In their fitting model they consider the same interactions 
+as in our case (expressed in equation (3.22)) but without the hyperfine term.
 \section{Experimental setup}
 
 \section{88Sr Results}

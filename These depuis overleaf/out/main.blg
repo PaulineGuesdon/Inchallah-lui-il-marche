@@ -5,47 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
 Reallocating 'name_of_file' (item size: 1) to 4 items.
 Database file #1: ref.bib
-Warning--empty journal in dalibard_interactions_nodate
-Warning--empty year in dalibard_interactions_nodate
-You've used 3 entries,
+You've used 4 entries,
             1876 wiz_defined-function locations,
-            495 strings with 4037 characters,
-and the built_in function-call counts, 623 in all, are:
-= -- 58
-> -- 22
+            506 strings with 4458 characters,
+and the built_in function-call counts, 1073 in all, are:
+= -- 99
+> -- 64
 < -- 0
-+ -- 9
-- -- 6
-* -- 38
-:= -- 95
-add.period$ -- 4
-call.type$ -- 3
-change.case$ -- 2
++ -- 23
+- -- 19
+* -- 74
+:= -- 165
+add.period$ -- 8
+call.type$ -- 4
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 38
-empty$ -- 60
-format.name$ -- 6
-if$ -- 150
+cite$ -- 4
+duplicate$ -- 53
+empty$ -- 83
+format.name$ -- 19
+if$ -- 258
 int.to.chr$ -- 0
-int.to.str$ -- 3
+int.to.str$ -- 4
 missing$ -- 4
-newline$ -- 14
-num.names$ -- 3
-pop$ -- 12
+newline$ -- 19
+num.names$ -- 4
+pop$ -- 13
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 24
+skip$ -- 45
 stack$ -- 0
-substring$ -- 12
-swap$ -- 14
+substring$ -- 24
+swap$ -- 27
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 4
-width$ -- 4
-write$ -- 30
-(There were 2 warnings)
+warning$ -- 0
+while$ -- 6
+width$ -- 5
+write$ -- 45
