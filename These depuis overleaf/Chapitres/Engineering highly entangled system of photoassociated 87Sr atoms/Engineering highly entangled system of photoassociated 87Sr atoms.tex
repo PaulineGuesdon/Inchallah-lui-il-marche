@@ -7,64 +7,6 @@ Engineering Dicke states
 
 It is convenient in the case of the $^{87}Sr$ to approximate the electrons following the movement
 of the nuclei because of the mass ratio. In a Born-Oppenheimer picture we neglect the coupled
-terms between the kinetic energy of the electrons and the kinetic energy of the nuclei.
-The effective hamiltonian is given by
-
-\begin{equation}
-    \hat{H} = -\frac{\hbar^2}{2\mu}\left(\frac{1}{r^2} \frac{d^2u}{dr^2}r^2 - \frac{l(l+1)}{r^2} 
-    + \hat{V}(r)\right)u(r) = E u(r)
-\end{equation}
-$u(r)$ the eigenfunction of the hamiltonian $\hat{H}$.\\
-
-% $\hat{V}(r)$ are higher order electronic interactions equals to $-C_n/r^n$. 
-% To solve this hamiltonian it is easier to change the basis of study as in 
-% \cite{dalibard_interactions_nodate}.
-% The major contribution to the potential are $3$rd and $6$th order terms rspectively the dipole-
-% dipole and the van der Waals interaction. \\
-% At really long distance the interaction that counts is the van der Waals. The neutral atoms
-% do not feel any effect on their electronic shell.\\
-% For closer distance $r$ of the order of the de De Broglie wavelength the force that counts 
-% is the kinetic energy over the potential and centrifugal force. \\
-% For medium distance $r_1$ the electronic shell start to overlap and the coulomb force is dominant.\\
-% For very short distance around the turning point of the potential higher order terms only
-% count ($1/r^2$ and $V(r)$) and the potential is repulsive.\\
-
-The solution for $r \sim r_1$ potential is a superposition of incoming wave and a scattered one that 
-acquire a phase $\delta_l$
-
-\begin{equation}
-    \psi(r) =  sin(kr - l\frac{\pi}{2}) + tan(\delta_l) cos(kr - l\frac{\pi}{2})
-\end{equation}
-At this position $r_1 = a$ where the potential appears as a scattering boundary this distance 
-is called the scattering length. 
-
-Continuity of the wavefunction in every region should be respected. It gives 
- \begin{equation}
-    tan(\delta_l) \propto k^{2l+1}
- \end{equation}
-
- For s-waves ($l=0$), this express as 
-\begin{equation}
-    a = -\lim_{k\to 0} tan(\delta_0)/k
-\end{equation}
-
-A scattering cross section is usually defined from this physical quantity
-as the area of a disk with a radius equal to the scattering length, which 
-gives the formula 
-\begin{equation}
-    \sigma = 4\pi a^2
-\end{equation}
-
-In ultracold gases, only s-wave atoms can collide because they do not have 
-enough kinetic energy to pass the potential barrier of higher angular momentum states. It imposes
-that for fermions -by parity of the total wavefunction being antisymetric- 
-only atoms with even angular momentum can collide meaning their spin is in a singlet state as 
-in the case of $^{87}Sr$. For bosons it is the contrary : from an even orbital wavefunction,
-the spin wavefunction should be antisymetric to collide.
-
-\subsection{New try to rely optical length to scattering length}
-It is convenient in the case of the $^{87}Sr$ to approximate the electrons following the movement
-of the nuclei because of the mass ratio. In a Born-Oppenheimer picture we neglect the coupled
 terms between the kinetic energy of the electrons and the kinetic energy of the nuclei. In this 
 manner we can study separately the radial and the angular part of the electronic movement. \\
 As in the LANDAU-ZENER we will find the solutions of the 1D radial Schrödinger equation of the 
@@ -131,8 +73,10 @@ For the inelastic collisions cross section reads as
 
 The term $1-|S_l|^2$ quantifies the lost part of the incoming wave. 
 
-Equation \ref{inelastic cross section} reveals that the $|S_l|^2$ has to be complex otherwise
-the inelastic cross section would be zero and they would not be any loss. At $l=0$ 
+Equation \ref{inelastic cross section} reveals that we need to introduce a new writing 
+of $|S_l|^2$ with a complex term otherwise the inelastic cross section would be zero. Also
+it has to be inferior to one for losses.\\
+At $l=0$ 
 
 \begin{equation}
     S_0 = e^{2i\delta_0} \simeq 1 + 2i\delta_0
@@ -142,6 +86,15 @@ By using the result of \ref{scattering length}
 \begin{equation}
      1 + 2i\delta_0 \simeq 1 - 2ika
 \end{equation}
+
+A direct result of these equations is that we can write a general scattering length as
+\begin{equation}
+    a = a' + i l_{opt}
+\end{equation}
+
+$a$ is what we call the scattering length and is the radius of the scattering cross 
+section $\sigma_e = 4\pi|a|^2$. $l_opt$ is the optical length, the radius of the 
+inelastic scattering cross section $\sigma_{inel} = 4\pi/k l_{opt}$.\\ 
 
 In ultracold gases, only s-wave atoms can collide because they do not have 
 enough kinetic energy to pass the potential barrier of higher angular momentum states. It imposes
