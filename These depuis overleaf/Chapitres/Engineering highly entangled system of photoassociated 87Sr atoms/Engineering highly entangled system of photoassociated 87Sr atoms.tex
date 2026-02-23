@@ -68,15 +68,87 @@ of the nuclei because of the mass ratio. In a Born-Oppenheimer picture we neglec
 terms between the kinetic energy of the electrons and the kinetic energy of the nuclei. In this 
 manner we can study separately the radial and the angular part of the electronic movement. \\
 As in the LANDAU-ZENER we will find the solutions of the 1D radial Schrödinger equation of the 
-electrons by approximating the scattering of the atoms as a sum of an incoming plane wave with a 
-spherical scattered one - considered as plane wave at long distance - 
+electrons 
 
 \begin{equation}
-    \Psi = e^{i\mathbf{k}\cdot \mathbf{z}} + f(\theta) \frac{e^{ikr}}{r}
+    -\frac{\hbar^2}{2\mu}\left(\frac{1}{r^2} \frac{d^2\Psi_l}{dr^2}r^2 - \frac{l(l+1)}{r^2} 
+    + \hat{V}(r)\right)\Psi_l = E \Psi_l
+    \label{radial equation}
 \end{equation}
-$f(\theta)$ a function that will show the inelasticity and/or elasticity part of the scattering
-by the absorption or not of the wave. $theta$ is the angle between the vector wore by the 
+- $\Psi_l$ the eigenfunction - by approximating the scattering of the atoms as a sum of an 
+incoming plane wave with a spherical scattered one - considered as plane wave at long distance -
+
+\begin{equation}
+    \Psi_l = e^{i\mathbf{k}\cdot \mathbf{z}} + f(\theta) \frac{e^{ikr}}{r}
+    \label{incoming outcoming scattering wave}
+\end{equation}
+
+$f(\theta)$ a function that will tell the absorption of the scattered wave
+if the collision is elastic or inelastic. $\theta$ is the angle between the vector wore by the 
 incoming wave with the vector wore by the scattered wave.\\
+
+The solution at asymptotes contains the scattering part of the phenomenon studied on this subsection. 
+To solve this hamiltonian we will take the results of \cite{dalibard_interactions_nodate} that
+changes the solution basis to find a general solution of the hamiltonian \ref{radial equation}.
+
+\begin{equation}
+    \Psi_l = \frac{a_l}{r}sin(kr-\frac{l\pi}{2} + \delta_l)
+\end{equation}
+
+with $a_l$ a normalization factor and $\delta_l$ the phase acquired by the atoms at the
+distance at which they scatter.\\
+
+Continuity of the wavefunction in every region should be respected. It gives 
+ \begin{equation}
+    \delta_l \propto k^{2l+1}
+ \end{equation}
+
+ For s-waves ($l=0$), this express as 
+\begin{equation}
+    a = -\lim_{k\to 0} \delta_0/k
+    \label{scattering length}
+\end{equation}
+
+To understand how the atoms scatter we are going to express the scattered part of \ref{incoming outcoming scattering wave}
+as $\Psi_l - e^{ikz}$ in a spherical basis where the solutions are a sum on all the partial waves.
+
+\begin{equation}
+    \Psi_l \simeq \frac{i}{2kr}\sum_{l=0}^{\infty}(2l+1)\left((-1)^l e^{-ikr} - S_l e^{ikr}\right)
+\end{equation}
+with $S_l = e^{2i\delta_l}$ the scattering amplitude.
+
+The final elastic cross section that tells the surface area of the scattering is
+
+\begin{equation}
+    \sigma_{el} = \frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)|1-S_l|^2
+\end{equation}
+
+For the inelastic collisions cross section reads as
+\begin{equation}
+    \sigma_{inel} = \frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)(1-|S_l|^2)
+    \label{inelastic cross section}
+\end{equation}
+
+The term $1-|S_l|^2$ quantifies the lost part of the incoming wave. 
+
+Equation \ref{inelastic cross section} reveals that the $|S_l|^2$ has to be complex otherwise
+the inelastic cross section would be zero and they would not be any loss. At $l=0$ 
+
+\begin{equation}
+    S_0 = e^{2i\delta_0} \simeq 1 + 2i\delta_0
+\end{equation}
+
+By using the result of \ref{scattering length}
+\begin{equation}
+     1 + 2i\delta_0 \simeq 1 - 2ika
+\end{equation}
+
+In ultracold gases, only s-wave atoms can collide because they do not have 
+enough kinetic energy to pass the potential barrier of higher angular momentum states. It imposes
+that for fermions -by parity of the total wavefunction being antisymetric- 
+only atoms with even angular momentum can collide meaning their spin is in a singlet state as 
+in the case of $^{87}Sr$. For bosons it is the contrary : from an even orbital wavefunction,
+the spin wavefunction should be antisymetric to collide.
 
 \subsection{What is photoassociation}
 \begin{figure}[H]
@@ -224,6 +296,7 @@ in \cite{han_photoassociation_2018} by
 
 \begin{equation}
     \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{V}_{BO} + \hat{H}_{HF} 
+    \label{general hamiltonian of molecule}
 \end{equation}
 with
 \begin{equation}
@@ -295,7 +368,7 @@ potential landscape more complex than many known species.
 
 \textbf{$^{171}Yb$}
 In their fitting model they consider the same interactions 
-as in our case (expressed in equation (3.22)) but without the hyperfine term.
+as in our case (expressed in equation \ref{general hamiltonian of molecule}) but without the hyperfine term.
 \section{Experimental setup}
 
 \section{88Sr Results}
