@@ -5,34 +5,96 @@ Engineering Dicke states
 \section{Introduction on photoassociation}
 \subsection{Preamble on scattering theory}
 
-In a potential describing the interaction between two atoms, we can
-discretize different interaction zones depending on the inter-nuclear
-distance. 
-For $k$ the inverse of the De Broglie wavelength, when $r >> 1/k$ the atoms 
-do not feel each other and the potential is reduced to the van der Waals 
-potential $\frac{-C_6}{r^6}$. When they get closer their electronic 
-shell start to overlap and the potential is more complex. The total 
-wavefunction of this system is well described by standing waves that are a 
-superposition of incoming and outgoing waves. It is expressed as
+It is convenient in the case of the $^{87}Sr$ to approximate the electrons following the movement
+of the nuclei because of the mass ratio. In a Born-Oppenheimer picture we neglect the coupled
+terms between the kinetic energy of the electrons and the kinetic energy of the nuclei. In this 
+manner we can study separately the radial and the angular part of the electronic movement. \\
+As in the LANDAU-ZENER we will find the solutions of the 1D radial Schrödinger equation of the 
+electrons 
 
 \begin{equation}
-    \psi(r) =  sin(kr - l\frac{\pi}{2}) + tan(\delta_l) cos(kr - l\frac{\pi}{2})
+    -\frac{\hbar^2}{2\mu}\left(\frac{1}{r^2} \frac{d^2\Psi_l}{dr^2}r^2 - \frac{l(l+1)}{r^2} 
+    + \hat{V}(r)\right)\Psi_l = E \Psi_l
+    \label{radial equation}
+\end{equation}
+- $\Psi_l$ the eigenfunction - by approximating the scattering of the atoms as a sum of an 
+incoming plane wave with a spherical scattered one - considered as plane wave at long distance -
+
+\begin{equation}
+    \Psi_l = e^{i\mathbf{k}\cdot \mathbf{z}} + f(\theta) \frac{e^{ikr}}{r}
+    \label{incoming outcoming scattering wave}
 \end{equation}
 
-where $\delta_l$ is the phase accumulated at this position $r = a$ where the 
-potential appears as a scattering boundary. This distance is called 
-the scattering length and is a key parameter for scattering and photoassociation
-description. At low energies for s-waves, this express as 
+$f(\theta)$ a function that will tell the absorption of the scattered wave
+if the collision is elastic or inelastic. $\theta$ is the angle between the vector wore by the 
+incoming wave with the vector wore by the scattered wave.\\
+
+The solution at asymptotes contains the scattering part of the phenomenon studied on this subsection. 
+To solve this hamiltonian we will take the results of \cite{dalibard_interactions_nodate} that
+changes the solution basis to find a general solution of the hamiltonian \ref{radial equation}.
+
 \begin{equation}
-    a = -\lim_{k\to 0} tan(\delta_0)/k
+    \Psi_l = \frac{a_l}{r}sin(kr-\frac{l\pi}{2} + \delta_l)
 \end{equation}
 
-A scattering cross section is usually defined from this physical quantity
-as the area of a disk with a radius equal to the scattering length, which 
-gives the formula 
+with $a_l$ a normalization factor and $\delta_l$ the phase acquired by the atoms at the
+distance at which they scatter.\\
+
+Continuity of the wavefunction in every region should be respected. It gives 
+ \begin{equation}
+    \delta_l \propto k^{2l+1}
+ \end{equation}
+
+ For s-waves ($l=0$), this express as 
 \begin{equation}
-    \sigma = 4\pi a^2
+    a = -\lim_{k\to 0} \delta_0/k
+    \label{scattering length}
 \end{equation}
+
+To understand how the atoms scatter we are going to express the scattered part of \ref{incoming outcoming scattering wave}
+as $\Psi_l - e^{ikz}$ in a spherical basis where the solutions are a sum on all the partial waves.
+
+\begin{equation}
+    \Psi_l \simeq \frac{i}{2kr}\sum_{l=0}^{\infty}(2l+1)\left((-1)^l e^{-ikr} - S_l e^{ikr}\right)
+\end{equation}
+with $S_l = e^{2i\delta_l}$ the scattering amplitude.
+
+The final elastic cross section that tells the surface area of the scattering is
+
+\begin{equation}
+    \sigma_{el} = \frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)|1-S_l|^2
+\end{equation}
+
+For the inelastic collisions cross section reads as
+\begin{equation}
+    \sigma_{inel} = \frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)(1-|S_l|^2)
+    \label{inelastic cross section}
+\end{equation}
+
+The term $1-|S_l|^2$ quantifies the lost part of the incoming wave. 
+
+Equation \ref{inelastic cross section} reveals that we need to introduce a new writing 
+of $|S_l|^2$ with a complex term otherwise the inelastic cross section would be zero. Also
+it has to be inferior to one for losses.\\
+At $l=0$ 
+
+\begin{equation}
+    S_0 = e^{2i\delta_0} \simeq 1 + 2i\delta_0
+\end{equation}
+
+By using the result of \ref{scattering length}
+\begin{equation}
+     1 + 2i\delta_0 \simeq 1 - 2ika
+\end{equation}
+
+A direct result of these equations is that we can write a general scattering length as
+\begin{equation}
+    a = a' + i l_{opt}
+\end{equation}
+
+$a$ is what we call the scattering length and is the radius of the scattering cross 
+section $\sigma_e = 4\pi|a|^2$. $l_opt$ is the optical length, the radius of the 
+inelastic scattering cross section $\sigma_{inel} = 4\pi/k l_{opt}$.\\ 
 
 In ultracold gases, only s-wave atoms can collide because they do not have 
 enough kinetic energy to pass the potential barrier of higher angular momentum states. It imposes
@@ -60,7 +122,6 @@ The quantity that will testify there is two-body losses
 is the atom number remaining in the trap after a photoassociation pulse. 
 The molecule leaves the trap by acquiring kinetic energy from the binding energy.
 The experimental proof of photoassociation is given by 
-
 \begin{equation}
     \frac{dN}{dt} = - \beta N^2 - \Gamma N
 \end{equation}
@@ -77,7 +138,7 @@ position of the vibrational states enables by changing the magnetic field
 to tune the scattering length of the atoms and thus the interactions in the system.
 
 \subsection{Molecular formalism/vocabulary (condon radius, optical length...)}
-Optical characterizes the strength of the photoassociation rate 
+\textbf{Optical length} characterizes the strength of the photoassociation rate 
 
 \begin{equation}
     K_2= \frac{4\pi \hbar}{\mu} nl_{opt}
@@ -87,7 +148,7 @@ $\mu$ the reduced mass of the two atoms. This rate represents
 the ratio of the atoms that are lossed by 2-body losses. \\
 
 It contains the probability to transition from an initial vibrational $i$ 
-state to a final vibrational $f$ state : the Franck Condon factor (\cite{guttridge_photoassociation_2019})
+state to a final vibrational $f$ state : \textbf{the Franck Condon factor} (\cite{guttridge_photoassociation_2019})
 
 \begin{equation} 
     F_{FC} = \Bigg|\int_0^{\infty} \psi_i(r) \psi_f(r) dr\Bigg |^2 
@@ -95,7 +156,7 @@ state to a final vibrational $f$ state : the Franck Condon factor (\cite{guttrid
 
 r the inter-nuclear distance. 
 It depends directly with the overlap of the wavefunctions of the initial and final states.
-The Condon radius is the distance between the atoms for which this factor is maximum
+\textbf{The Condon radius} is the distance between the atoms for which this factor is maximum
 which also means that in a classical approach the atoms spend the most time at this position.\\
 
 
@@ -125,7 +186,6 @@ $\ket{\phi_e}$ and $\ket{\phi_g}$ are the electronic wavefunctions of the two at
 in ground and excited state respectively, $\ket{\chi}$ is the spin wavefunction.
 It gives accessible values $R = 0, 2$ or $4$...
 
-The hamiltonian of the homonuclear molecule 
 For $^1S_0$ - $^3P_1$ molecular state there is a strong spin-orbit coupling that couples its 
 related momentum to the internuclear axis (\ref{fig:hund}), quantified by $\Omega$ and described as Hund's case 
 (c) \\
@@ -151,13 +211,25 @@ or $2$. It gives possible values of total atomic angular momentum F:
 
 We have one atom with $f_1=9/2$ from the $^1S_0$ state and one in the $^3P_1$ state with $f_2=11/2$.
 The possible values of total angular momentum of the molecule are 
-
 \begin{align}
 \text{For } R=0, &\quad {T = 1, 2, 3... 10}\\
 \text{For } R=2, &\quad {T = 1,2... 12}\\
 \text{For } R=4, &\quad {T = 1,2 ... 14}
-\end{align}\\
+\end{align}
 
+The initial $T^i = i_1+i_2$ with $R=0$ because we are in s-wave collisions. In respect with
+the parity $p = +1$ the possible values of $T^i$ are $T^i = 0, 2, 4...$.\\
+As for atoms there are selection rules for transitions from a free state to a molecular state
+fixed by the angular momentum of the electrons. 
+$\Delta J = 0, 1$ gives $\Delta T = 0, 1$ with $T=0 \rightarrow T=0$ forbidden.\\
+In the end the accessible transitions in the first molecular excited state of the $f_1=11/2$ are
+\begin{align}
+\text{For } R=0, &\quad {T^f = 1, 2, 3... 11}\\
+\text{For } R=2, &\quad {T^f = 1,2... 13}\\
+\text{For } R=4, &\quad {T^f = 1,2 ... 15}\\
+...
+\end{align}\\
+There are 981 combinations of accessible $(R,T^f)$ molecular states\\
 Another element to describe the molecule is the symmetry of the orbital wavefunction. For an
 even wavefunction the exchange of the two atoms $A$ and $B$ does not change the sign of the 
 wavefunction, as in left figures \ref{fig:u-g symmetry}. We say the potential is \textbf{gerade}.
@@ -172,13 +244,12 @@ The probability of finding electrons in between the two atoms is high compared t
 \end{figure}
 
 \subsection{External energy states}
-To describe two-body losses of a photoassociation process, we can change the study basis 
-depending on the distance between the two atoms by approximating dominant couplings 
-over others. (Hund's cases) \\
-The hamiltonian of the two-atom system is given in \cite{han_photoassociation_2018} by 
+As seen in the subsection 3.1.1 in a molecular picture the hamiltonian express as 
+in \cite{han_photoassociation_2018} by 
 
 \begin{equation}
     \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{V}_{BO} + \hat{H}_{HF} 
+    \label{general hamiltonian of molecule}
 \end{equation}
 with
 \begin{equation}
@@ -202,6 +273,7 @@ B \,
 
 $s=\pm1$ for gerade and ungerade potentials respectively.
 The hyperfine term of the atom in $^1S_0$ is zero because its electronic angular momentum is zero.
+Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts. 
 \subsubsection{WKB approximation}
 \begin{figure}[H]
     \centering
@@ -215,7 +287,19 @@ The hyperfine term of the atom in $^1S_0$ is zero because its electronic angular
 Leroy-Bernstein approx
 \section{About photoassociation on other species}
 
-\subsection{Mass scaling (88Sr)}
+\subsection{Mass scaling ($^{88}Sr$)}
+$^{88}Sr$ is a bosonic isotope of strontium with no hyperfine structure. The photoassociation
+spectrum is then simpler than the fermionic ones : only two potentials in the first excited
+molecular state $0_u$ and $1_u$. Results have been presented in \cite{zelevinsky_narrow_2006} 
+where their fitting model gives the following potential expression
+\begin{equation}
+    \hat{V}_{BO} \sim \frac{-C_{6,\Lambda}}{r^6} -\frac{C_3}{r^3} + \frac{C_J}{r^2}
+\end{equation}
+for the two accessible potentials $\Lambda = 0, 1$. 
+
+Mass scaling method presented in \cite{reschovsky_narrow-line_2018} enables to predict the position
+of the vibrational states of the different istopoes of strontium. \\
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png}
@@ -224,6 +308,9 @@ Leroy-Bernstein approx
 \end{figure}
 
 \subsection{Ytterbium: hfs}
+As the $^{87}Sr$ the fermionic \textbf{$^{173}Yb$} has a hyperfine structure that makes its molecular 
+potential landscape more complex than many known species. 
+
 
 \begin{figure}[H]
     \centering
@@ -232,6 +319,9 @@ Leroy-Bernstein approx
     \label{fig:pa-ytterbium-potentials}
 \end{figure}
 
+\textbf{$^{171}Yb$}
+In their fitting model they consider the same interactions 
+as in our case (expressed in equation \ref{general hamiltonian of molecule}) but without the hyperfine term.
 \section{Experimental setup}
 
 \section{88Sr Results}
