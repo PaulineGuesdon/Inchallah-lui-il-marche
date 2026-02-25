@@ -14,27 +14,31 @@ electrons
 
 \begin{equation}
     -\frac{\hbar^2}{2\mu}\left(\frac{1}{r^2} \frac{d^2\Psi_l}{dr^2}r^2 - \frac{l(l+1)}{r^2} 
-    + \hat{V}(r)\right)\Psi_l = E \Psi_l
+    + \hat{V}(r)\right)\Psi = E \Psi
     \label{radial equation}
 \end{equation}
-- $\Psi_l$ the eigenfunction - by approximating the scattering of the atoms as a sum of an 
-incoming plane wave with a spherical scattered one - considered as plane wave at long distance -
-
+- $\Psi$ the eigenfunction - by approximating the scattering of the atoms as a sum of an 
+incoming plane wave with a spherical scattered one - considered as plane wave at long distance \ref{fig:scattering_concept}
 \begin{equation}
-    \Psi_l = e^{i\mathbf{k}\cdot \mathbf{z}} + f(\theta) \frac{e^{ikr}}{r}
+    \Psi= e^{i\mathbf{k}\cdot \mathbf{z}} + f(\theta) \frac{e^{ikr}}{r}
     \label{incoming outcoming scattering wave}
 \end{equation}
 
 $f(\theta)$ a function that will tell the absorption of the scattered wave
 if the collision is elastic or inelastic. $\theta$ is the angle between the vector wore by the 
-incoming wave with the vector wore by the scattered wave.\\
-
+incoming wave with the vector worn by the scattered wave.\\
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth,angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg}
+    \caption{Caption}
+    \label{fig:scattering_concept}
+\end{figure}
 The solution at asymptotes contains the scattering part of the phenomenon studied on this subsection. 
 To solve this hamiltonian we will take the results of \cite{dalibard_interactions_nodate} that
 changes the solution basis to find a general solution of the hamiltonian \ref{radial equation}.
 
 \begin{equation}
-    \Psi_l = \frac{a_l}{r}sin(kr-\frac{l\pi}{2} + \delta_l)
+    \Psi = \frac{a_l}{r}sin(kr-\frac{l\pi}{2} + \delta_l)
 \end{equation}
 
 with $a_l$ a normalization factor and $\delta_l$ the phase acquired by the atoms at the
@@ -52,32 +56,39 @@ Continuity of the wavefunction in every region should be respected. It gives
 \end{equation}
 
 To understand how the atoms scatter we are going to express the scattered part of \ref{incoming outcoming scattering wave}
-as $\Psi_l - e^{ikz}$ in a spherical basis where the solutions are a sum on all the partial waves.
+as $\Psi - e^{ikz}$ in a spherical basis where the solutions are a sum on all the partial waves.
 
 \begin{equation}
-    \Psi_l \simeq \frac{i}{2kr}\sum_{l=0}^{\infty}(2l+1)\left((-1)^l e^{-ikr} - S_l e^{ikr}\right)
+    \Psi \simeq \frac{i}{2kr}\sum_{l=0}^{\infty}(2l+1)\left((-1)^l e^{-ikr} - S_l e^{ikr}\right)
+    \label{1D schrodinger solution}
 \end{equation}
-with $S_l = e^{2i\delta_l}$ the scattering amplitude.
 
-The final elastic cross section that tells the surface area of the scattering is
+with $S_l = e^{2i\delta_l}$ the scattering amplitude. \\
 
+For a \textbf{conservative hamiltonian} $|S_l| = 1$ meaning $\delta_l \in \mathbb{R}$.
+In this case the wavefunction is well a sum of incoming and
+outcoming waves of same amplitude.\\
+
+The elastic cross section representing the surface where the scope 
+of the potential is effective writes as
 \begin{equation}
     \sigma_{el} = \frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)|1-S_l|^2
+    \label{sigma elastic}
 \end{equation}
 
-For the inelastic collisions cross section reads as
+But we see in equation \ref{1D schrodinger solution} that
+$|S_l|$ needs to be $<1$ to allow dissipation of the wavefunction.
+Defining $\delta_l$ as a complex number satisfies this condition.
+
+In this case the inelastic collisions cross section reads as
 \begin{equation}
     \sigma_{inel} = \frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)(1-|S_l|^2)
-    \label{inelastic cross section}
+    \label{sigma inelastic}
 \end{equation}
 
-The term $1-|S_l|^2$ quantifies the lost part of the incoming wave. 
-
-Equation \ref{inelastic cross section} reveals that we need to introduce a new writing 
-of $|S_l|^2$ with a complex term otherwise the inelastic cross section would be zero. Also
-it has to be inferior to one for losses.\\
-At $l=0$ 
-
+In ultracold gases, only s-wave atoms can collide because they do not have 
+enough kinetic energy to pass the potential barrier of higher angular momentum states
+so $l=0$ and the scattering amplitude is
 \begin{equation}
     S_0 = e^{2i\delta_0} \simeq 1 + 2i\delta_0
 \end{equation}
@@ -87,21 +98,22 @@ By using the result of \ref{scattering length}
      1 + 2i\delta_0 \simeq 1 - 2ika
 \end{equation}
 
-A direct result of these equations is that we can write a general scattering length as
+Because $\delta_0$ is complex, a direct result of these equations is that we can write a general scattering length as
 \begin{equation}
-    a = a' + i l_{opt}
+    a = a' + i a"
 \end{equation}
 
-$a$ is what we call the scattering length and is the radius of the scattering cross 
-section $\sigma_e = 4\pi|a|^2$. $l_opt$ is the optical length, the radius of the 
-inelastic scattering cross section $\sigma_{inel} = 4\pi/k l_{opt}$.\\ 
+At low temperatures we can re-express equations \ref{sigma elastic} and \ref{sigma inelastic} as
+\begin{equation}
+    \sigma_{el} = 4\pi|a|^2
+\end{equation}
+\begin{equation}
+    \sigma_{inel} = 4\pi|a"|^2
+\end{equation}
 
-In ultracold gases, only s-wave atoms can collide because they do not have 
-enough kinetic energy to pass the potential barrier of higher angular momentum states. It imposes
-that for fermions -by parity of the total wavefunction being antisymetric- 
-only atoms with even angular momentum can collide meaning their spin is in a singlet state as 
-in the case of $^{87}Sr$. For bosons it is the contrary : from an even orbital wavefunction,
-the spin wavefunction should be antisymetric to collide.
+A usual case of the elastic collisions is atoms in the ground 
+state. For inelasticity photoassociation is a good example of
+dissipative process where two atoms in the ground state are coupled to a molecular state by a laser.
 
 \subsection{What is photoassociation}
 \begin{figure}[H]
@@ -325,6 +337,10 @@ as in our case (expressed in equation \ref{general hamiltonian of molecule}) but
 \section{Experimental setup}
 
 \section{88Sr Results}
+The s-wave collisions imposes that for fermions -by parity of the total wavefunction being antisymetric- 
+only atoms with even angular momentum can collide meaning their spin is in a singlet state as 
+in the case of $^{87}Sr$. For bosons it is the contrary : from an even orbital wavefunction,
+the spin wavefunction should be antisymetric to collide.
 Lopt, power broadening,  thermal broadening...
 
 \begin{figure}[H]
@@ -339,6 +355,9 @@ Lopt, power broadening,  thermal broadening...
 
 \section{87Sr molecules}
 
+The s-wave collisions imposes that for fermions -by parity of the total wavefunction being antisymetric- 
+only atoms with even angular momentum can collide meaning their spin is in a singlet state as 
+in the case of $^{87}Sr$. 
 Lopt
 questions sur nb quantique / choix de pompage optique
 

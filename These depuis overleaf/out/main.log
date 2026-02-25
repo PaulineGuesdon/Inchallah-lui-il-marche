@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  24 FEB 2026 14:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  25 FEB 2026 13:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -416,8 +416,15 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box63
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/braket/braket.sty)
-Package hyperref Info: Option `colorlinks' set `true' on input line 35.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 36.
  (./appendix/mis/acronym.tex
 \glswrite=\write3
 \glo@main@file=\write4
@@ -431,24 +438,24 @@ Package glossaries Info: Writing glossary file main.acn on input line 1.
 ) (out/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count341
@@ -520,7 +527,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 59.
+Package hyperref Info: Link coloring ON on input line 60.
  (out/main.out) (out/main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
@@ -557,10 +564,18 @@ l.1 \chapter
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.68 \tableofcontents
+l.69 \tableofcontents
                       [4
 
 ] (out/main.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 Overfull \hbox (9.71126pt too wide) in paragraph at lines 16--16
  [][] [][][]\OT1/cmr/m/n/12 Optimization of the nar-row MOT (in-ten-sity, fre-quency, 
  []
@@ -594,7 +609,7 @@ Overfull \hbox (6.97084pt too wide) in paragraph at lines 46--46
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.69 \listoffigures
+l.70 \listoffigures
                     [6] (out/main.lof)
 \tf@lof=\write8
 \openout8 = `main.lof'.
@@ -605,7 +620,7 @@ l.69 \listoffigures
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.70 \listoftables
+l.71 \listoftables
                    [7
 
 ] (out/main.lot)
@@ -625,12 +640,12 @@ l.3 \end{flushright}\chapter
 
 ]
 Chapter 1.
-<Chapitres/Introduction/repompeur.png, id=408, 722.7pt x 402.75468pt>
+<Chapitres/Introduction/repompeur.png, id=410, 722.7pt x 402.75468pt>
 File: Chapitres/Introduction/repompeur.png Graphic file (type png)
 <use Chapitres/Introduction/repompeur.png>
 Package pdftex.def Info: Chapitres/Introduction/repompeur.png  used on input line 15.
 (pdftex.def)             Requested size: 426.79134pt x 237.85059pt.
-<Chapitres/Introduction/chaine_bleue_actualisée.pdf, id=410, 575.14874pt x 625.33624pt>
+<Chapitres/Introduction/chaine_bleue_actualisée.pdf, id=412, 575.14874pt x 625.33624pt>
 File: Chapitres/Introduction/chaine_bleue_actualisée.pdf Graphic file (type pdf)
 <use Chapitres/Introduction/chaine_bleue_actualisée.pdf>
 Package pdftex.def Info: Chapitres/Introduction/chaine_bleue_actualisée.pdf  used on input line 24.
@@ -645,7 +660,7 @@ l.28 \subsection
                 {Repumper} [9
 
  <./Chapitres/Introduction/repompeur.png>]
-<Chapitres/Introduction/energy_levels_repumper.png, id=415, 242.40562pt x 363.60844pt>
+<Chapitres/Introduction/energy_levels_repumper.png, id=417, 242.40562pt x 363.60844pt>
 File: Chapitres/Introduction/energy_levels_repumper.png Graphic file (type png)
 <use Chapitres/Introduction/energy_levels_repumper.png>
 Package pdftex.def Info: Chapitres/Introduction/energy_levels_repumper.png  used on input line 31.
@@ -658,12 +673,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
                    \relax 
 l.35 \subsection
                 {BB MOT} [10 <./Chapitres/Introduction/chaine_bleue_actualisée.pdf>]
-<Chapitres/Introduction/red_MOT_in_3_steps.pdf, id=527, 2419.3818pt x 1179.34499pt>
+<Chapitres/Introduction/red_MOT_in_3_steps.pdf, id=529, 2419.3818pt x 1179.34499pt>
 File: Chapitres/Introduction/red_MOT_in_3_steps.pdf Graphic file (type pdf)
 <use Chapitres/Introduction/red_MOT_in_3_steps.pdf>
 Package pdftex.def Info: Chapitres/Introduction/red_MOT_in_3_steps.pdf  used on input line 38.
 (pdftex.def)             Requested size: 426.79134pt x 208.02603pt.
-<Chapitres/Introduction/need_for_stir.png, id=528, 293.095pt x 260.975pt>
+<Chapitres/Introduction/need_for_stir.png, id=530, 293.095pt x 260.975pt>
 File: Chapitres/Introduction/need_for_stir.png Graphic file (type png)
 <use Chapitres/Introduction/need_for_stir.png>
 Package pdftex.def Info: Chapitres/Introduction/need_for_stir.png  used on input line 49.
@@ -676,12 +691,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
                    \relax 
 l.52 \end{figure}
                   [11 <./Chapitres/Introduction/energy_levels_repumper.png> <./Chapitres/Introduction/red_MOT_in_3_steps.pdf, page is rotated 270 degrees>]
-<Chapitres/Introduction/randomisation.jpeg, id=558, 2055.68pt x 823.075pt>
+<Chapitres/Introduction/randomisation.jpeg, id=560, 2055.68pt x 823.075pt>
 File: Chapitres/Introduction/randomisation.jpeg Graphic file (type jpg)
 <use Chapitres/Introduction/randomisation.jpeg>
 Package pdftex.def Info: Chapitres/Introduction/randomisation.jpeg  used on input line 56.
 (pdftex.def)             Requested size: 213.39566pt x 85.43953pt.
-<Chapitres/Introduction/chaine_rouge_vieille.png, id=559, 578.91281pt x 557.83406pt>
+<Chapitres/Introduction/chaine_rouge_vieille.png, id=561, 578.91281pt x 557.83406pt>
 File: Chapitres/Introduction/chaine_rouge_vieille.png Graphic file (type png)
 <use Chapitres/Introduction/chaine_rouge_vieille.png>
 Package pdftex.def Info: Chapitres/Introduction/chaine_rouge_vieille.png  used on input line 70.
@@ -694,7 +709,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
                    \relax 
 l.74 
       [12 <./Chapitres/Introduction/need_for_stir.png> <./Chapitres/Introduction/randomisation.jpeg>]
-<Chapitres/Introduction/ODT_loading.png, id=565, 537.50812pt x 371.13657pt>
+<Chapitres/Introduction/ODT_loading.png, id=567, 537.50812pt x 371.13657pt>
 File: Chapitres/Introduction/ODT_loading.png Graphic file (type png)
 <use Chapitres/Introduction/ODT_loading.png>
 Package pdftex.def Info: Chapitres/Introduction/ODT_loading.png  used on input line 79.
@@ -707,12 +722,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
                    \relax 
 l.83 \subsubsection
                    {Optimization of the evaporation ramps : Dimple + reservo... [13 <./Chapitres/Introduction/chaine_rouge_vieille.png>]
-<Chapitres/Introduction/optical_pumping.png, id=570, 682.80093pt x 346.29375pt>
+<Chapitres/Introduction/optical_pumping.png, id=572, 682.80093pt x 346.29375pt>
 File: Chapitres/Introduction/optical_pumping.png Graphic file (type png)
 <use Chapitres/Introduction/optical_pumping.png>
 Package pdftex.def Info: Chapitres/Introduction/optical_pumping.png  used on input line 90.
 (pdftex.def)             Requested size: 426.79134pt x 216.45947pt.
-<Chapitres/Introduction/spin_kick_scheme.png, id=571, 417.81094pt x 304.88907pt>
+<Chapitres/Introduction/spin_kick_scheme.png, id=573, 417.81094pt x 304.88907pt>
 File: Chapitres/Introduction/spin_kick_scheme.png Graphic file (type png)
 <use Chapitres/Introduction/spin_kick_scheme.png>
 Package pdftex.def Info: Chapitres/Introduction/spin_kick_scheme.png  used on input line 97.
@@ -781,135 +796,143 @@ Overfull \hbox (0.47241pt too wide) in paragraph at lines 98--98
 
 [4]
 Chapter 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--31
-
- []
-
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg, id=594, 1541.76pt x 2055.68pt>
+File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg Graphic file (type jpg)
+<use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg>
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg  used on input line 32.
+(pdftex.def)             Requested size: 213.39566pt x 284.4997pt.
 
 
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--71
 
  []
 
 
 
-[6]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png, id=622, 325.96782pt x 479.54156pt>
+[6 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg>]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png, id=623, 325.96782pt x 479.54156pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png  used on input line 109.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png  used on input line 121.
 (pdftex.def)             Requested size: 298.75262pt x 439.53722pt.
 
 
-[7 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 147--149
+[7]
+
+[8 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--161
+Underfull \hbox (badness 10000) in paragraph at lines 169--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--167
+Underfull \hbox (badness 10000) in paragraph at lines 175--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
 
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 201--204
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--192
-
- []
-
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png, id=641, 291.33844pt x 323.70938pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png, id=655, 291.33844pt x 323.70938pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png  used on input line 195.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png  used on input line 207.
 (pdftex.def)             Requested size: 213.39566pt x 237.11101pt.
 
-
-[9 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png, id=650, 603.0028pt x 502.12593pt>
+
+
+[10 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png>]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png, id=666, 603.0028pt x 502.12593pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png  used on input line 241.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png  used on input line 253.
 (pdftex.def)             Requested size: 426.79134pt x 355.39328pt.
 
 
-[10]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png, id=666, 679.03688pt x 452.4403pt>
+[11]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png, id=680, 679.03688pt x 452.4403pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png  used on input line 280.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png  used on input line 292.
 (pdftex.def)             Requested size: 298.75262pt x 199.05363pt.
 
 
-[11 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png>]
+[12 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 290.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 290.
+(hyperref)                removing `math shift' on input line 302.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 290.
+(hyperref)                removing `superscript' on input line 302.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--302
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 302.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--314
 
  []
 
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png, id=678, 399.74344pt x 375.65344pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png, id=691, 399.74344pt x 375.65344pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png  used on input line 305.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png  used on input line 317.
 (pdftex.def)             Requested size: 298.75262pt x 280.76494pt.
 
 
-[12 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png>]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png, id=688, 407.27156pt x 487.8225pt>
+[13 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png>]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png, id=701, 407.27156pt x 487.8225pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png  used on input line 317.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png  used on input line 329.
 (pdftex.def)             Requested size: 298.75262pt x 357.8567pt.
 
 
-[13 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png>]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png, id=695, 567.62062pt x 371.88937pt>
+[14 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png>]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png, id=709, 567.62062pt x 371.88937pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png Graphic file (type png)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png>
-Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png  used on input line 332.
+Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png  used on input line 348.
 (pdftex.def)             Requested size: 298.75262pt x 195.73853pt.
 
 
-[14 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png>]) (./Chapitres/conclusion/conclusion.tex
+[15 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png>]) (./Chapitres/conclusion/conclusion.tex
 
-[15 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png>]) (out/main.bbl
+[16 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/88Sr_molecular_potentials.png>]) (out/main.bbl
 
-[16
+[17
 
 ]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 7.
@@ -937,18 +960,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 1A267252824CE8B113837E27C142E2D8;14017.
  ) 
 Here is how much of TeX's memory you used:
- 19547 strings out of 473190
- 366309 string characters out of 5715801
- 893676 words of memory out of 5000000
- 42381 multiletter control sequences out of 15000+600000
- 567360 words of font info for 65 fonts, out of 8000000 for 9000
+ 19674 strings out of 473190
+ 369016 string characters out of 5715801
+ 893342 words of memory out of 5000000
+ 42490 multiletter control sequences out of 15000+600000
+ 569830 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,12n,93p,2461b,478s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on out/main.pdf (32 pages, 3014528 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on out/main.pdf (33 pages, 3292911 bytes).
 PDF statistics:
- 820 PDF objects out of 1000 (max. 8388607)
- 676 compressed objects within 7 object streams
- 144 named destinations out of 1000 (max. 500000)
- 598 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 839 PDF objects out of 1000 (max. 8388607)
+ 691 compressed objects within 7 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 603 words of extra memory for PDF output out of 10000 (max. 10000000)
 
