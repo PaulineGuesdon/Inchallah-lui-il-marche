@@ -29,7 +29,7 @@ if the collision is elastic or inelastic. $\theta$ is the angle between the vect
 incoming wave with the vector worn by the scattered wave.\\
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\linewidth,angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg}
+    \includegraphics[width=0.6\linewidth,angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg}
     \caption{Caption}
     \label{fig:scattering_concept}
 \end{figure}
@@ -116,6 +116,37 @@ state. For inelasticity photoassociation is a good example of
 dissipative process where two atoms in the ground state are coupled to a molecular state by a laser.
 
 \subsection{What is photoassociation}
+Photoassociating two atoms consists in bounding two colliding atoms with light 
+that occurs mostly with two-body and three body losses : it means adding
+a dissipative part on the interaction. \\
+
+In a first step we can express the equation evolution of a pair of
+atoms without dissipation in the basis $\{\ket{\psi_g}, \ket{\psi_e}\}$ 
+of a non coupled closed channel of free atoms 
+$\psi_g = \ket{g,g}$ and their first molecular state 
+virtual channel $\psi_e = \ket{g,e}$
+
+\begin{equation}
+    i\hbar \frac{d}{dt}
+    \begin{pmatrix}
+        \psi_g\\
+        \psi_e
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        -\frac{\hbar^2}{2\mu}\nabla + V_g & 0\\
+        0 & -\frac{\hbar^2}{2\mu}\nabla + V_e 
+    \end{pmatrix}
+    \begin{pmatrix}
+        \psi_g\\
+        \psi_e
+    \end{pmatrix}.
+    \label{elastic evolution equation}
+\end{equation}\\
+
+In the virtual channel we see in \ref{fig:PA_concept} the presence of
+the internal states of the molecule. It is clear that the atoms
+get more bounded with the increase of the potential amplitude.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png}
@@ -123,18 +154,17 @@ dissipative process where two atoms in the ground state are coupled to a molecul
     \label{fig:PA_concept}
 \end{figure}
 
-Photoassociating two atoms consists in bounding two colliding atoms with light 
-that occurs mostly with two-body and three body losses : it means adding
-a dissipative part on the interaction. \\
+Then at resonance $\Delta = \omega_{at} - \omega_L = 0$ with a 
+bounded molecular state a dissipative term appears on the 
+evolution of the system because of the lifetime $\gamma_{mol}$.
 
-Adding a resonant laser at frequency $\Omega$ couples a closed channel $\ket{g,g}$ to a
-virtual channel $\ket{g,e}$ changing the shape of the
-ground potential $V_g$ (by e.g by Zeeman coupling, Stark...). 
-It also means that the phase 
-$\delta_l$ is modified by the coupling of those
-channel without the creation of a bound state and so the scattering
-length discribing their elastic interaction. The effective hamiltonian
-of this 
+
+It also means that the phase $\delta_l$ of the free state 
+wavefunction is modified by this coupling same as for the scattering
+length. The real part of $a$ encodes two-body losses rate 
+whereas its imaginary part changes the collisions properties.\\ 
+Adding the inelastic collisions of the PA process gives the following
+effective evolution equation 
 
 \begin{equation}
     i\hbar \frac{d}{dt}
@@ -145,28 +175,31 @@ of this
     =
     \begin{pmatrix}
         -\frac{\hbar^2}{2\mu}\nabla + V_g & \Omega/2\\
-        \Omega/2 & -\frac{\hbar^2}{2\mu}\nabla + V_e - i\hbar\Gamma/2
+        \Omega/2 & -\frac{\hbar^2}{2\mu}\nabla + V_e + \hbar \Delta -i\frac{\gamma_{mol}}{2} 
     \end{pmatrix}
     \begin{pmatrix}
         \psi_g\\
         \psi_e
     \end{pmatrix}.
+    \label{elastic evolution equation}
+\end{equation}\\
+
+This quantity rates the decay of the number of atoms in time as
+
+\begin{equation}
+    \frac{dN}{dt} = - \beta N^2 - \Gamma N
 \end{equation}
 
-at resonance. 
 
 
-As visible in \ref{fig:PA_concept} from a free state of a two-atoms system we couple them via a laser with a molecular 
-vibrationnal state. In the case of spectroscopy we usually start with the least bounded state to have
+
+In the case of spectroscopy we usually start with the least bounded state to have
 the atomic state reference. From that we sweep the atom frequency to adress the
 molecular states red detuned from the atomic line. 
 The quantity that will testify there is two-body losses
 is the atom number remaining in the trap after a photoassociation pulse. 
 The molecule leaves the trap by acquiring kinetic energy from the binding energy.
-The experimental proof of photoassociation is given by 
-\begin{equation}
-    \frac{dN}{dt} = - \beta N^2 - \Gamma N
-\end{equation}
+
 
 $\beta$ the fitted parameter of two-body losses ($\beta = \frac{K_2 V_e}{2}$,
 $K_2$ in comparison with \cite{han_photoassociation_2018}) the two-body 
