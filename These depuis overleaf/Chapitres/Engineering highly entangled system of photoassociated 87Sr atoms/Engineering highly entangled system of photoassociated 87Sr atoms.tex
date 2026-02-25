@@ -124,7 +124,37 @@ dissipative process where two atoms in the ground state are coupled to a molecul
 \end{figure}
 
 Photoassociating two atoms consists in bounding two colliding atoms with light 
-that occurs mostly with two-body and three body losses. 
+that occurs mostly with two-body and three body losses : it means adding
+a dissipative part on the interaction. \\
+
+Adding a resonant laser at frequency $\Omega$ couples a closed channel $\ket{g,g}$ to a
+virtual channel $\ket{g,e}$ changing the shape of the
+ground potential $V_g$ (by e.g by Zeeman coupling, Stark...). 
+It also means that the phase 
+$\delta_l$ is modified by the coupling of those
+channel without the creation of a bound state and so the scattering
+length discribing their elastic interaction. The effective hamiltonian
+of this 
+
+\begin{equation}
+    i\hbar \frac{d}{dt}
+    \begin{pmatrix}
+        \psi_g\\
+        \psi_e
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        -\frac{\hbar^2}{2\mu}\nabla + V_g & \Omega/2\\
+        \Omega/2 & -\frac{\hbar^2}{2\mu}\nabla + V_e - i\hbar\Gamma/2
+    \end{pmatrix}
+    \begin{pmatrix}
+        \psi_g\\
+        \psi_e
+    \end{pmatrix}.
+\end{equation}
+
+at resonance. 
+
 
 As visible in \ref{fig:PA_concept} from a free state of a two-atoms system we couple them via a laser with a molecular 
 vibrationnal state. In the case of spectroscopy we usually start with the least bounded state to have
