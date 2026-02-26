@@ -157,12 +157,20 @@ get more bounded with the increase of the potential amplitude.
 
 Then at resonance $\Delta = \omega_{at} - \omega_L = 0$ with a 
 bounded molecular state a dissipative term appears on the 
-evolution of the system because of the lifetime $\gamma_{mol}$.\\
-This quantity takes a role in the atom number decay rate that evolves as
+evolution of the system because of the molecular spontaneous
+emission linewidth $\gamma_{mol}$.\\
+The evolution of the atom number evolves 
 
 \begin{equation}
     \frac{dN}{dt} = - \beta N^2 - \Gamma N
 \end{equation}
+
+where the 2-body losses express as $\beta \propto \gamma_{mol}$ (we are going to comment more in the next section). 
+In comparison with \cite{han_photoassociation_2018}), $\beta = \frac{K_2 V_e}{2}$,
+where $V_e$ is the effective volume of the cloud $(2\pi )^{3/2}\sigma_x 
+\sigma_y \sigma_z$ for a density Gaussian distribution and $\Gamma$ 
+the one-body losses rate. This latter is limited by the vacuum quality and 
+the lifetime of the atoms in the trap. \\
 
 Adding the inelastic collisions of the PA process gives the following
 effective evolution equation 
@@ -184,7 +192,7 @@ effective evolution equation
     \end{pmatrix}.
     \label{elastic evolution equation}
 \end{equation}\\
-The eigenvector of the ground state $\psi_g$ is then modified by this coupling.
+The eigenvector of the ground state $\ket{\psi_g}$ is then modified by this coupling.
 It also means that the phase $\delta_l$ (see \ref{solution at long r}) of the free state 
 wavefunction is modified so the scattering length. The real part of $a$ encodes two-body 
 losses rate whereas its imaginary part changes the collisions properties. In this 
@@ -196,6 +204,8 @@ modification of it because of the coupling and still the inelastic part of it
     a = a_{bg} + \delta a + ia"
 \end{equation}
 
+
+
 In the case of spectroscopy we usually start with the least bounded state to have
 the atomic state reference. From that we sweep the atom frequency to adress the
 molecular states red detuned from the atomic line. 
@@ -203,40 +213,49 @@ The quantity that will testify there is two-body losses
 is the atom number remaining in the trap after a photoassociation pulse. 
 The molecule leaves the trap by acquiring kinetic energy from the binding energy.
 
-
-$\beta$ the fitted parameter of two-body losses ($\beta = \frac{K_2 V_e}{2}$,
-$K_2$ in comparison with \cite{han_photoassociation_2018}) the two-body 
-loss rate, $V_e$ the effective volume of the cloud $(2\pi )^{3/2}\sigma_x 
-\sigma_y \sigma_z$ for a density Gaussian distribution and $\Gamma$ 
-the one-body losses rate. This latter is limited by the vacuum quality and 
-the lifetime of the atoms in the trap. 
-
 PA is mostly used in Feschbach resonance field because determining the exact 
 position of the vibrational states enables by changing the magnetic field
 to tune the scattering length of the atoms and thus the interactions in the system.
 
-\subsection{Molecular formalism/vocabulary (condon radius, optical length...)}
-\textbf{Optical length} characterizes the strength of the photoassociation rate 
-
+\subsection{Parameters for PA study}
+In this subsection we are going to admit the expression of 
+the two-body losses rate we introduced above but we will take
+a look on its dependencies.\\
+This rate writes as
 \begin{equation}
-    K_2= \frac{4\pi \hbar}{\mu} nl_{opt}
+    K_2 = \frac{\pi \hbar^2}{k}n\frac{\gamma_{stim}\gamma_{mol}}{\Delta^2 +(\gamma_{stim} + \gamma_{mol})^2}
 \end{equation}
 
-$\mu$ the reduced mass of the two atoms. This rate represents
-the ratio of the atoms that are lossed by 2-body losses. \\
-
-It contains the probability to transition from an initial vibrational $i$ 
-state to a final vibrational $f$ state : \textbf{the Franck Condon factor} (\cite{guttridge_photoassociation_2019})
+$\gamma_{stim}$ is linear with the intensity of the PA laser, proportionnal
+to the 3D density $n$, and the probability to transit from $\psi_g$ to $\psi_e$ that we call 
+\textbf{Franck-Condon factor }
 
 \begin{equation} 
-    F_{FC} = \Bigg|\int_0^{\infty} \psi_i(r) \psi_f(r) dr\Bigg |^2 
+    F_{FC} = \Bigg|\int_0^{\infty} \psi_g(r) \psi_e(r) dr\Bigg |^2 
 \end{equation}
 
-r the inter-nuclear distance. 
 It depends directly with the overlap of the wavefunctions of the initial and final states.
 \textbf{The Condon radius} is the distance between the atoms for which this factor is maximum
 which also means that in a classical approach the atoms spend the most time at this position.\\
 
+In the molecular community it is conventional to characterize 
+the strength of the photoassociation rate with the \textbf{optical length}
+
+\begin{equation}
+    K_2(I)= \frac{4\pi \hbar}{\mu} nl_{opt}(I)
+\end{equation}
+
+$\mu$ the reduced mass of the two atoms. From this formula we
+can say that the major experimental changes enabling the increase 
+of the PA rate is the density of the cloud and the intensity 
+if the. PA beam as we are going to test in the experimental results.\\
+
+Exciting an atom from a ground state to a single excited state
+is straightforward and quite easy to do precisely. It is not 
+as easy for moleculesb because there exist a big number molecular
+potentials and internal states for each potential. These internal
+and external accesible states of the molecule are presented in
+the following via the introduction of the molecular quantum numbers.
 
 \textbf{The good quantum numbers}\\
 We write the total angular momentum of the molecule $T = R + F = R + I + J$, $F$ being the 

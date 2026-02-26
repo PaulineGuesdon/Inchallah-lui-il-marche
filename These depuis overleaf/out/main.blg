@@ -1,51 +1,49 @@
-This is BibTeX, Version 0.99e
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
-Reallocating 'name_of_file' (item size: 1) to 4 items.
 Database file #1: ref.bib
 Warning--empty journal in dalibard_interactions_nodate
 Warning--empty year in dalibard_interactions_nodate
-You've used 5 entries,
+You've used 4 entries,
             1876 wiz_defined-function locations,
-            509 strings with 4553 characters,
-and the built_in function-call counts, 1201 in all, are:
-= -- 107
-> -- 68
+            502 strings with 4333 characters,
+and the built_in function-call counts, 1050 in all, are:
+= -- 92
+> -- 64
 < -- 0
-+ -- 25
-- -- 20
-* -- 83
-:= -- 184
-add.period$ -- 8
-call.type$ -- 5
++ -- 23
+- -- 19
+* -- 76
+:= -- 162
+add.period$ -- 6
+call.type$ -- 4
 change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 62
-empty$ -- 100
-format.name$ -- 20
-if$ -- 286
+cite$ -- 6
+duplicate$ -- 53
+empty$ -- 80
+format.name$ -- 19
+if$ -- 247
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 5
-newline$ -- 22
-num.names$ -- 5
-pop$ -- 20
+int.to.str$ -- 4
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 4
+pop$ -- 16
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 47
+skip$ -- 45
 stack$ -- 0
 substring$ -- 24
-swap$ -- 27
+swap$ -- 26
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 7
-width$ -- 6
-write$ -- 51
+while$ -- 6
+width$ -- 5
+write$ -- 41
 (There were 2 warnings)
