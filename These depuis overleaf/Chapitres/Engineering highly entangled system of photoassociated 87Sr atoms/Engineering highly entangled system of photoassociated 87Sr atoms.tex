@@ -39,6 +39,7 @@ changes the solution basis to find a general solution of the hamiltonian \ref{ra
 
 \begin{equation}
     \Psi = \frac{a_l}{r}sin(kr-\frac{l\pi}{2} + \delta_l)
+    \label{solution at long r}
 \end{equation}
 
 with $a_l$ a normalization factor and $\delta_l$ the phase acquired by the atoms at the
@@ -100,7 +101,7 @@ By using the result of \ref{scattering length}
 
 Because $\delta_0$ is complex, a direct result of these equations is that we can write a general scattering length as
 \begin{equation}
-    a = a' + i a"
+    a = a_{bg} + i a"
 \end{equation}
 
 At low temperatures we can re-express equations \ref{sigma elastic} and \ref{sigma inelastic} as
@@ -156,13 +157,13 @@ get more bounded with the increase of the potential amplitude.
 
 Then at resonance $\Delta = \omega_{at} - \omega_L = 0$ with a 
 bounded molecular state a dissipative term appears on the 
-evolution of the system because of the lifetime $\gamma_{mol}$.
+evolution of the system because of the lifetime $\gamma_{mol}$.\\
+This quantity takes a role in the atom number decay rate that evolves as
 
+\begin{equation}
+    \frac{dN}{dt} = - \beta N^2 - \Gamma N
+\end{equation}
 
-It also means that the phase $\delta_l$ of the free state 
-wavefunction is modified by this coupling same as for the scattering
-length. The real part of $a$ encodes two-body losses rate 
-whereas its imaginary part changes the collisions properties.\\ 
 Adding the inelastic collisions of the PA process gives the following
 effective evolution equation 
 
@@ -183,15 +184,17 @@ effective evolution equation
     \end{pmatrix}.
     \label{elastic evolution equation}
 \end{equation}\\
-
-This quantity rates the decay of the number of atoms in time as
+The eigenvector of the ground state $\psi_g$ is then modified by this coupling.
+It also means that the phase $\delta_l$ (see \ref{solution at long r}) of the free state 
+wavefunction is modified so the scattering length. The real part of $a$ encodes two-body 
+losses rate whereas its imaginary part changes the collisions properties. In this 
+case we can write an effective scattering length enclosing the background scattering
+length $a_{bg}$ standing for elastic collisions without any coupling, $\delta a$ a
+modification of it because of the coupling and still the inelastic part of it
 
 \begin{equation}
-    \frac{dN}{dt} = - \beta N^2 - \Gamma N
+    a = a_{bg} + \delta a + ia"
 \end{equation}
-
-
-
 
 In the case of spectroscopy we usually start with the least bounded state to have
 the atomic state reference. From that we sweep the atom frequency to adress the
