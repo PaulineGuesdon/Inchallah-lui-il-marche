@@ -162,7 +162,7 @@ emission linewidth $\gamma_{mol}$.\\
 The evolution of the atom number evolves 
 
 \begin{equation}
-    \frac{dN}{dt} = - \beta N^2 - \Gamma N
+    \frac{dN}{dt} = - \beta Nn - \Gamma N
 \end{equation}
 
 where the 2-body losses express as $\beta \propto \gamma_{mol}$ (we are going to comment more in the next section). 
@@ -192,6 +192,7 @@ effective evolution equation
     \end{pmatrix}.
     \label{elastic evolution equation}
 \end{equation}\\
+
 The eigenvector of the ground state $\ket{\psi_g}$ is then modified by this coupling.
 It also means that the phase $\delta_l$ (see \ref{solution at long r}) of the free state 
 wavefunction is modified so the scattering length. The real part of $a$ encodes two-body 
@@ -222,9 +223,10 @@ In this subsection we are going to admit the expression of
 the two-body losses rate we introduced above but we will take
 a look on its dependencies.\\
 This rate writes as
+
 \begin{equation}
-    K_2 = \frac{\pi \hbar^2}{k}n\frac{\gamma_{stim}\gamma_{mol}}{\Delta^2 +(\gamma_{stim} + \gamma_{mol})^2}
-\end{equation}
+    K_2 = \frac{1}{k}\frac{\frac{1}{4}\gamma_{stim}\gamma_{mol}}{\Delta^2 +(\frac{1}{2}(\gamma_{stim} + \gamma_{mol})^2)}
+\end{equation}\\
 
 $\gamma_{stim}$ is linear with the intensity of the PA laser, proportionnal
 to the 3D density $n$, and the probability to transit from $\psi_g$ to $\psi_e$ that we call 
@@ -242,7 +244,7 @@ In the molecular community it is conventional to characterize
 the strength of the photoassociation rate with the \textbf{optical length}
 
 \begin{equation}
-    K_2(I)= \frac{4\pi \hbar}{\mu} nl_{opt}(I)
+    K_2(I)= \frac{4\pi \hbar}{\mu} l_{opt}(I)
 \end{equation}
 
 $\mu$ the reduced mass of the two atoms. From this formula we
@@ -275,6 +277,7 @@ $M_T$ is the projection of the total angular momentum $T$ onto a defined quantiz
 For the rotational quantum number there is a parity of the total wavefunction that needs to 
 be fulfilled. In addition there are only s-wave collisions in cold gases then the part of the 
 wavefunction should be odd the spin one antisymetric
+
 \begin{equation}
     \ket{\Psi} = \left(\ket{\phi_e}_A \ket{\phi_g}_B + (-1)^R \ket{\phi_e}_B \ket{\phi_g}_A\right)
      \otimes\ket{\chi}
@@ -371,7 +374,11 @@ B \,
 $s=\pm1$ for gerade and ungerade potentials respectively.
 The hyperfine term of the atom in $^1S_0$ is zero because its electronic angular momentum is zero.
 Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts. 
+
 \subsubsection{WKB approximation}
+A semi-classical approach enables to find the eigenvectors of atoms in a molecular potential.
+We separate the interaction zones considering the condition $\frac{1}{2\pi}|\frac{d\lambda}{dx}|\ll 1$
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png}
@@ -381,7 +388,36 @@ Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts.
 
 \subsubsection{}
 \subsection{Internal energy states}
+WKB approximation is a semi-classical approach where plane waves $\psi(x) = \frac{C}{\sqrt(k(x))}e^{i\int_0^{\infty} k(x) dx}$ are solutions of the 1D Schrödinger equation
+for two particles of eigenenergie $E$ in a potential $V(x)$
+
+\begin{equation}
+    \frac{-\hbar^2}{2\mu}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi
+\end{equation}
+
+giving the expression of the wavevector $k$
+\begin{equation}
+    k = \frac{p}{\hbar} = \sqrt{2\mu(E-V(x))}
+\end{equation}
+
+The condition of validity $\frac{d\lambda}{dx} \ll 1$ tells that the atoms must follow adiabatically the potential
+to adapt their movement to its variation. It means at really small $x$ of region 1 \ref{fig:pa-sakurai-wkb} 
+this approximation is not valid.\\
+At position $x=x_1$ and $x_2$ the momentum diverges which means that the plane wave approximation is not valid anymore.
+In the region $I$ and $III$ the wave is evanescent with a phase $k = i\sqrt{2\mu(|E-V(x)|)}$. It is then usual the
+average the potential as linear with $x$ around these turning points. \\
+
+By reflexion with the left barrier of the potential at $x=x_1$ the stationnary wave must come back with a $2\pi$ at 
+$x_2$. By continuity of the solutions in $[0, +\infty[$ the phase tends to
+\begin{equation}
+    \int_{x_1}^{x_2} k(x)dx = (n+\frac{1}{2})\pi 
+\end{equation}
+
+Then this formula enables to identify the position of the vibrationnal states of the molecular potential by solving
+it for $E=V(x)$
 Leroy-Bernstein approx
+
+
 \section{About photoassociation on other species}
 
 \subsection{Mass scaling ($^{88}Sr$)}
