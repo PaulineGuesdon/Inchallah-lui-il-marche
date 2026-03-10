@@ -392,14 +392,22 @@ of a molecular potential.
 \subsubsection{Leroy-Bernstein theory}
 Leroy-Bernstein theory enables to identify the position of the less bounded states close to
 the dissociation limit occuring at long distance. Then the potential express as
-
 \begin{equation}
-    V(r) 
+    V(r) \xrightarrow[r \to \infty]{} D_e - \frac{C_n}{r^n}
 \end{equation}
  
-While the queue of the potential $C_n/r^n$ dominates the potential interaction we can approximate
+with $D_e$ the dissociation energy. For a vibrational energy state $\nu$ of energy $E_{\nu}$
+we express the energy difference $\epsilon = D_e - E_{\nu}$ to inject it in \ref{wkb surfaces}
+and find solutions of
 
+\begin{equation}
+    \int_{x_1}^{x_2} \sqrt{2\mu(\frac{C_n}{r^n}-\epsilon)} dr = (\nu +\frac{1}{2})\hbar\pi 
+\end{equation}
+After few calculations we finally obtain
 
+\begin{equation}
+    E_\nu = \left(\frac{\sqrt{\pi}}{\sqrt{2}\mu}\frac{\hbar(\nu-2)}{C_n^{1/n}}\frac{\Gamma(1+\frac{1}{\nu})}{\Gamma(\frac{1}{2}+\frac{1}{\nu})} \right)^\frac{2\nu}{\nu-2}
+\end{equation}
 \subsection{External energy states}
 As seen in the subsection 3.1.1 in a molecular picture the hamiltonian express as 
 in \cite{han_photoassociation_2018} by 
