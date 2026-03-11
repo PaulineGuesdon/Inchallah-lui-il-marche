@@ -1,6 +1,11 @@
 % !TeX root = ../../main.tex
 \chapter{Engineering highly entangled system of photoassociated 87Sr atoms}
-Engineering Dicke states
+In metrology the major error source of measuring a parameter $\phi$ is the quantum shot noise $\delta \phi \simeq \frac{1}{\sqrt{N}}$.
+In the second chapter of this thesis we presented Ramsey interferometers for which a applied generators for qubit
+enhancement. The phase $\phi$ from this pulse was limited by the shot noise.
+
+Engineering Dicke state would makes possible to go beyond this limitation. For such system variance express as $\delta \phi \simeq \frac{1}{N}$
+which is called the Heisenberg limit being the best accuracy we afford in atomic science.
 
 \section{Introduction on photoassociation}
 \subsection{Preamble on scattering theory}
@@ -345,19 +350,8 @@ The probability of finding electrons in between the two atoms is high compared t
 \end{figure}
 
 \subsection{Internal energy states}
+
 \subsubsection{WKB approximation}
-A semi-classical approach enables to find the eigenvectors of atoms in a molecular potential.
-We separate the interaction zones considering the condition $\frac{1}{2\pi}|\frac{d\lambda}{dx}|\ll 1$
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png}
-    \caption{Caption}
-    \label{fig:pa-sakurai-wkb}
-\end{figure}
-\cite{ahmed_coherent_2025}
-
-
 WKB approximation is a semi-classical approach where plane waves $\psi(x) = \frac{C}{\sqrt(k(x))}e^{i\int_0^{\infty} k(x) dx}$ are solutions of the 1D Schrödinger equation
 for two particles of eigenenergie $E$ in a potential $V(x)$
 
@@ -371,9 +365,17 @@ giving the expression of the wavevector $k$
     k = \frac{p}{\hbar} = \sqrt{2\mu(E-V(x))}
 \end{equation}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png}
+    \caption{Caption}
+    \label{fig:pa-sakurai-wkb}
+\end{figure}
+
+
 The condition of validity $\frac{d\lambda}{dx} \ll 1$ tells that the atoms must follow adiabatically the potential
-to adapt their movement to its variation. It means at really small $x$ of region 1 \ref{fig:pa-sakurai-wkb} 
-this approximation is not valid.\\
+to adapt their movement to its variation. It means at really small $x$ of region I of figure
+\ref{fig:pa-sakurai-wkb} this approximation is not valid.\\
 At position $x=x_1$ and $x_2$ the momentum diverges which means that the plane wave approximation is not valid anymore.
 In the region $I$ and $III$ the wave is evanescent with a phase $k = i\sqrt{2\mu(|E-V(x)|)}$. It is then usual the
 average the potential as linear with $x$ around these turning points. \\
@@ -390,8 +392,9 @@ the condition $(n+\frac{1}{2})\pi $. These values are what we call the vibration
 of a molecular potential.
 
 \subsubsection{Leroy-Bernstein theory}
-Leroy-Bernstein theory enables to identify the position of the less bounded states close to
-the dissociation limit occuring at long distance. Then the potential express as
+Leroy-Bernstein theory enables to identify the position of the less bounded states without knowing the behaviour
+of the potential that could be complicated to estimate and solve numerically. This model is valid only close to
+the dissociation limit occuring at long distance. Then we can approximate the potential as
 \begin{equation}
     V(r) \xrightarrow[r \to \infty]{} D_e - \frac{C_n}{r^n}
 \end{equation}
@@ -406,14 +409,16 @@ and find solutions of
 with $\nu_D$ the dissociation number. After few calculations we finally obtain
 
 \begin{equation}
-    E_\nu = \left(\frac{\sqrt{\pi}}{\sqrt{2}\mu}\frac{\hbar(\nu-2)}{C_n^{1/n}}\frac{\Gamma(1+\frac{1}{\nu})}{\Gamma(\frac{1}{2}+\frac{1}{\nu})} \right)^\frac{2\nu}{\nu-2}
+    \epsilon = \left((\nu_D-\nu)\frac{\sqrt{\pi }\hbar\nu}{\sqrt{2\mu C_n^{2/n}}}\frac{\Gamma(\frac{3}{2} - \frac{1}{\nu})}{\Gamma(1-\frac{1}{\nu})} \right)^\frac{2\nu}{\nu-2}
 \end{equation}
-which also writes as
+
+$\Gamma$ being the Beta Euler functions. This energy also writes as
 \begin{equation}
-    \frac{E_\nu - D_e}{\nu_D - \nu} = \left(\frac{\sqrt{\pi}}{\sqrt{2}\mu}\frac{\hbar(\nu-2)}{C_n^{1/n}}\frac{\Gamma(1+\frac{1}{\nu})}{\Gamma(\frac{1}{2}+\frac{1}{\nu})} \right)^\frac{2\nu}{\nu-2}
+    \frac{E_\nu - D_e}{\nu_D - \nu} = \left(\frac{\sqrt{\pi }\hbar\nu}{\sqrt{2\mu C_n^{2/n}}}\frac{\Gamma(\frac{3}{2} - \frac{1}{\nu})}{\Gamma(1-\frac{1}{\nu})} \right)^\frac{2\nu}{\nu-2}
 \end{equation}
-We find there that we can determine the energy difference between the dissociation limit and
-a the least bounded states of the molecule. 
+
+from which we determine the energy difference between the dissociation limit and one of the least bounded states $\nu$
+of the molecule. 
 
 \subsection{External energy states}
 As seen in the subsection 3.1.1 in a molecular picture the hamiltonian express as 
