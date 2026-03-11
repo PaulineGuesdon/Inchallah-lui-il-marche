@@ -6,6 +6,9 @@ enhancement. The phase $\phi$ from this pulse was limited by the shot noise.
 
 Engineering Dicke state would makes possible to go beyond this limitation. For such system variance express as $\delta \phi \simeq \frac{1}{N}$
 which is called the Heisenberg limit being the best accuracy we afford in atomic science.
+${87}^Sr$ large Hilbert space enables to improve even more the accuracy of the measurement because this phase depend
+directly on the maximum value of $J$
+
 
 \section{Introduction on photoassociation}
 \subsection{Preamble on scattering theory}
@@ -257,9 +260,22 @@ can say that the major experimental changes enabling the increase
 of the PA rate is the density of the cloud and the intensity 
 if the. PA beam as we are going to test in the experimental results.\\
 
+A first element we need to introduce to describe molecules is the symmetry of the orbital wavefunction. For an
+even wavefunction the exchange of the two atoms $A$ and $B$ does not change the sign of the 
+wavefunction, as in left figures \ref{fig:u-g symmetry}. The potential is then qualified \textbf{gerade}.
+The probability of finding electrons in between the two atoms is high compared to the 
+\textbf{ungerade} potential where the odd wavefunction cancels the probability of finding electrons in between.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png}
+    \caption{u-g symmetry}
+    \label{fig:u-g symmetry}
+\end{figure}
+
 Exciting an atom from a ground state to a single excited state
 is straightforward and quite easy to do precisely. It is not 
-as easy for moleculesb because there exist a big number molecular
+as easy for molecules because there exist a big number molecular
 potentials and internal states for each potential. These internal
 and external accesible states of the molecule are presented in
 the following via the introduction of the molecular quantum numbers.
@@ -335,19 +351,8 @@ In the end the accessible transitions in the first molecular excited state of th
 \text{For } R=4, &\quad {T^f = 1,2 ... 15}\\
 ...
 \end{align}\\
-There are 981 combinations of accessible $(R,T^f)$ molecular states\\
-Another element to describe the molecule is the symmetry of the orbital wavefunction. For an
-even wavefunction the exchange of the two atoms $A$ and $B$ does not change the sign of the 
-wavefunction, as in left figures \ref{fig:u-g symmetry}. We say the potential is \textbf{gerade}.
-The probability of finding electrons in between the two atoms is high compared to the 
-\textbf{ungerade} potential where the odd wavefunction cancels the probability of finding electrons in between.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png}
-    \caption{u-g symmetry}
-    \label{fig:u-g symmetry}
-\end{figure}
+There are 981 combinations of accessible $(R,T^f)$ molecular external states and for each potential a numerous
+internal state we are going to demonstrate briefly in the following.\\
 
 \subsection{Internal energy states}
 
@@ -365,6 +370,10 @@ giving the expression of the wavevector $k$
     k = \frac{p}{\hbar} = \sqrt{2\mu(E-V(x))}
 \end{equation}
 
+The condition of validity $\frac{d\lambda}{dx} \ll 1$ tells that the atoms must follow adiabatically the potential
+to adapt their movement to its variation. It means at really small $x$ of region I of figure
+\ref{fig:pa-sakurai-wkb} this approximation is not valid.\\
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png}
@@ -372,10 +381,6 @@ giving the expression of the wavevector $k$
     \label{fig:pa-sakurai-wkb}
 \end{figure}
 
-
-The condition of validity $\frac{d\lambda}{dx} \ll 1$ tells that the atoms must follow adiabatically the potential
-to adapt their movement to its variation. It means at really small $x$ of region I of figure
-\ref{fig:pa-sakurai-wkb} this approximation is not valid.\\
 At position $x=x_1$ and $x_2$ the momentum diverges which means that the plane wave approximation is not valid anymore.
 In the region $I$ and $III$ the wave is evanescent with a phase $k = i\sqrt{2\mu(|E-V(x)|)}$. It is then usual the
 average the potential as linear with $x$ around these turning points. \\
@@ -422,16 +427,18 @@ of the molecule.
 
 \subsection{External energy states}
 As seen in the subsection 3.1.1 in a molecular picture the hamiltonian express as 
-in \cite{han_photoassociation_2018} by 
 
 \begin{equation}
     \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{V}_{BO} + \hat{H}_{HF} 
     \label{general hamiltonian of molecule}
 \end{equation}
-with
+It is possible to neglect some orders of electronic interactions depending on the Hund's case and the distance region
+between the atoms.
+In our case we approximate the potential to be as for $^{173}Yb$ in \cite{han_photoassociation_2018}
 \begin{equation}
     \hat{V}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
 \end{equation}
+
 
 \begin{equation}
 \hat{H}_{\mathrm{hf}} =
@@ -465,7 +472,20 @@ where their fitting model gives the following potential expression
 for the two accessible potentials $\Lambda = 0, 1$. 
 
 Mass scaling method presented in \cite{reschovsky_narrow-line_2018} enables to predict the position
-of the vibrational states of the different istopoes of strontium. \\
+of the vibrational states of the different isotopes of strontium. The authors consider the potential is the
+same for all the isotopes because we can validate the Born-Oppenheimer estimation for all isotopes. Then in the 
+integral
+
+\begin{equation}
+    \int_{x_1}^{x_2} k(x)dx = (n+\frac{1}{2})\pi 
+\end{equation}
+
+only the reduced mass will change upon the isotope. Then with respect with the condition on the phase the energies $E$ 
+will be modified. The experimental positions of the first vibrationnal states of the $O_u^+$ potential for $^{84}Sr$,
+$^{86}Sr$ and $^{88}Sr$ are represented by the red crosses in figure \ref{fig:pa-mass-scaling} and enables to adjust
+$V(r)$ shape. In blue lines the fitted functions are plotted from this model : it is then possible to deduct the position of the $^{87}Sr$ 
+vibrationnal states thanks to the other isotopes lines.
+\\
 
 \begin{figure}[H]
     \centering
