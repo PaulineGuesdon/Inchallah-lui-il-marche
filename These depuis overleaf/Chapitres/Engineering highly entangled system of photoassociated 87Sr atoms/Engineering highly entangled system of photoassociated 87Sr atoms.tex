@@ -6,7 +6,7 @@ enhancement. The phase $\phi$ from this pulse was limited by the shot noise.
 
 Engineering Dicke state would makes possible to go beyond this limitation. For such system variance express as $\delta \phi \simeq \frac{1}{N}$
 which is called the Heisenberg limit being the best accuracy we afford in atomic science.
-${87}^Sr$ large Hilbert space enables to improve even more the accuracy of the measurement because this phase depend
+$^{87}Sr$ large Hilbert space enables to improve even more the accuracy of the measurement because this phase depend
 directly on the maximum value of $J$
 
 
@@ -179,7 +179,6 @@ where $V_e$ is the effective volume of the cloud $(2\pi )^{3/2}\sigma_x
 \sigma_y \sigma_z$ for a density Gaussian distribution and $\Gamma$ 
 the one-body losses rate. This latter is limited by the vacuum quality and 
 the lifetime of the atoms in the trap. \\
-
 Adding the inelastic collisions of the PA process gives the following
 effective evolution equation 
 
@@ -437,6 +436,7 @@ between the atoms.
 In our case we approximate the potential to be as for $^{173}Yb$ in \cite{han_photoassociation_2018}
 \begin{equation}
     \hat{V}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
+    \label{ytt potential}
 \end{equation}
 
 
@@ -477,27 +477,31 @@ same for all the isotopes because we can validate the Born-Oppenheimer estimatio
 integral
 
 \begin{equation}
-    \int_{x_1}^{x_2} k(x)dx = (n+\frac{1}{2})\pi 
+    \int_{x_1}^{x_2} \sqrt{2\mu(E-V(x))} dx = (n+\frac{1}{2})\pi 
 \end{equation}
 
 only the reduced mass will change upon the isotope. Then with respect with the condition on the phase the energies $E$ 
 will be modified. The experimental positions of the first vibrationnal states of the $O_u^+$ potential for $^{84}Sr$,
 $^{86}Sr$ and $^{88}Sr$ are represented by the red crosses in figure \ref{fig:pa-mass-scaling} and enables to adjust
 $V(r)$ shape. In blue lines the fitted functions are plotted from this model : it is then possible to deduct the position of the $^{87}Sr$ 
-vibrationnal states thanks to the other isotopes lines.
+vibrationnal states thanks to the other isotopes lines.\\
+We see discontinuites at the $84$ isotope: these are avoided crossing coming from a coupling
+with the ground state potential.
 \\
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png}
+    \includegraphics[width=0.6\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png}
     \caption{Caption}
     \label{fig:pa-mass-scaling}
 \end{figure}
 
 \subsection{Ytterbium: hfs}
-As the $^{87}Sr$ the fermionic \textbf{$^{173}Yb$} has a hyperfine structure that makes its molecular 
-potential landscape more complex than many known species. 
-
+Whereas the Strontium bosonic isotope $^{88}Sr$ has only two molecular channel $0_u$ and $1_u$ on the intercombination line it is more convenient
+to refer to species with a hyperfine structure such as \textbf{$^{173}Yb$}. Its molecular potential landscape is more
+complex (see figure \ref{fig:pa-ytterbium-potentials}) than many species that have been studied and for which the spectroscopy is well tested. It is indeed expected 
+to count 205 different configurations of $(T, F, R)$ for the excited molecular state on intercombination line with an
+atomic potential written as \ref{ytt potential} considering an hyperfine term. 
 
 \begin{figure}[H]
     \centering
@@ -506,7 +510,22 @@ potential landscape more complex than many known species.
     \label{fig:pa-ytterbium-potentials}
 \end{figure}
 
-\textbf{$^{171}Yb$}
+They have been capable of measuring around $80$ lines visible in figure \ref{173Yb spectro} that they could not identify to the associated molecular potential.
+The atom loss plotted on the detuning of the PA indicates the position of the bounded states 
+starting from the atomic resonance $\ket{^{1}S_0, F=5/2} \rightarrow \ket{^{3}P_1, F=7/2}$. 
+Around this latter they do shine the atoms for $30$ms with really low intensity $I = 37$mW/cm² to avoided
+power broadening of the transition so they can see the nearest bounded state from the dissociation
+limit. Then while they are getting more red detuned they do increase this intensity and optimize
+the contrast of the transition with the illumination time.\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/173Yb_spectro_lines.png}
+    \caption{Caption}
+    \label{173Yb spectro}
+\end{figure}
+
+\textbf{$^{171}Yb$}\\
 In their fitting model they consider the same interactions 
 as in our case (expressed in equation \ref{general hamiltonian of molecule}) but without the hyperfine term.
 \section{Experimental setup}
