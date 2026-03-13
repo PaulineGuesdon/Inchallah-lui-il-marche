@@ -4,7 +4,7 @@ In metrology the major error source of measuring a parameter $\phi$ is the quant
 In the second chapter of this thesis we presented Ramsey interferometers for which a applied generators for qubit
 enhancement. The phase $\phi$ from this pulse was limited by the shot noise.
 
-Engineering Dicke state would makes possible to go beyond this limitation. For such system variance express as $\delta \phi \simeq \frac{1}{N}$
+Engineering Dicke state would make possible to go beyond this limitation. For such system variance express as $\delta \phi \simeq \frac{1}{N}$
 which is called the Heisenberg limit being the best accuracy we afford in atomic science.
 $^{87}Sr$ large Hilbert space enables to improve even more the accuracy of the measurement because this phase depend
 directly on the maximum value of $J$
@@ -473,14 +473,16 @@ for the two accessible potentials $\Lambda = 0, 1$.
 
 Mass scaling method presented in \cite{reschovsky_narrow-line_2018} enables to predict the position
 of the vibrational states of the different isotopes of strontium. The authors consider the potential is the
-same for all the isotopes because we can validate the Born-Oppenheimer estimation for all isotopes. Then in the 
-integral
+same for all the isotopes because we can validate the Born-Oppenheimer estimation for all isotopes.
+It is actually wrong to make this approximation in the case of ${87}^Sr$ because the hyperfine structure
+modifies the expression of the potential. It is still giving an average position of the vibrational
+states. Then for this method only the reduced mass in the integral
 
 \begin{equation}
     \int_{x_1}^{x_2} \sqrt{2\mu(E-V(x))} dx = (n+\frac{1}{2})\pi 
 \end{equation}
 
-only the reduced mass will change upon the isotope. Then with respect with the condition on the phase the energies $E$ 
+will change upon the isotope. Then with respect with the condition on the phase the energies $E$ 
 will be modified. The experimental positions of the first vibrationnal states of the $O_u^+$ potential for $^{84}Sr$,
 $^{86}Sr$ and $^{88}Sr$ are represented by the red crosses in figure \ref{fig:pa-mass-scaling} and enables to adjust
 $V(r)$ shape. In blue lines the fitted functions are plotted from this model : it is then possible to deduct the position of the $^{87}Sr$ 
@@ -499,43 +501,38 @@ with the ground state potential.
 \subsection{Ytterbium: hfs}
 Whereas the Strontium bosonic isotope $^{88}Sr$ has only two molecular channel $0_u$ and $1_u$ on the intercombination line it is more convenient
 to refer to species with a hyperfine structure such as \textbf{$^{173}Yb$}. Its molecular potential landscape is more
-complex (see figure \ref{fig:pa-ytterbium-potentials}) than many species that have been studied and for which the spectroscopy is well tested. It is indeed expected 
-to count 205 different configurations of $(T, F, R)$ for the excited molecular state on intercombination line with an
-atomic potential written as \ref{ytt potential} considering an hyperfine term. 
+complex (see figure \ref{fig:pa-ytterbium-potentials}) than many species that have been studied and the density of each 
+momentum projection $0_u, 1_g, 1_u, 0_g$ comes from the hyperfine structure. It is indeed expected 
+to count 205 different configurations of $(T, F, R)$ for the excited molecular states on intercombination line with an
+atomic potential written as \ref{ytt potential}. 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png}
     \caption{Caption}
     \label{fig:pa-ytterbium-potentials}
 \end{figure}
 
-They have been capable of measuring around $80$ lines visible in figure \ref{173Yb spectro} that they could not identify to the associated molecular potential.
-The atom loss plotted on the detuning of the PA indicates the position of the bounded states 
-starting from the atomic resonance $\ket{^{1}S_0, F=5/2} \rightarrow \ket{^{3}P_1, F=7/2}$. 
-Around this latter they do shine the atoms for $30$ms with really low intensity $I = 37$mW/cm² to avoided
-power broadening of the transition so they can see the nearest bounded state from the dissociation
-limit. Then while they are getting more red detuned they do increase this intensity and optimize
-the contrast of the transition with the illumination time.\\
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/173Yb_spectro_lines.png}
-    \caption{Caption}
-    \label{173Yb spectro}
-\end{figure}
-
-\textbf{$^{171}Yb$}\\
-In their fitting model they consider the same interactions 
-as in our case (expressed in equation \ref{general hamiltonian of molecule}) but without the hyperfine term.
-\section{Experimental setup}
+Around $80$ lines were measured without being identified to the associated molecular potential.
+Atom loss spectra as a function of PA laser detuning reveal the position of the bound states 
+relative to the atomic resonance $\ket{^{1}S_0, F=5/2} \rightarrow \ket{^{3}P_1, F=7/2}$. 
+Near this resonance atoms are illuminated for $30$ms at low intensity $I = 37$mW/cm² to avoid
+power broadening, allowing the nearest bound state to the dissociation to be resolved.
+At larger red detunings the intensity is increased and the illumination time optimized to maximize 
+contrast.\\
 
 \section{88Sr Results}
-The s-wave collisions imposes that for fermions -by parity of the total wavefunction being antisymetric- 
-only atoms with even angular momentum can collide meaning their spin is in a singlet state as 
-in the case of $^{87}Sr$. For bosons it is the contrary : from an even orbital wavefunction,
-the spin wavefunction should be antisymetric to collide.
-Lopt, power broadening,  thermal broadening...
+\subsection{Protocol}
+To induce Dicke state through PA process resulting in a high dimension 
+Dicke states of N atoms of antisymetric spin wavefuncton.\\
+
+The aim is to induce Dicke state on a gas of fermions with a precision that goes beyond quantum 
+shot-noise limit. Two-body losses on ultracold trapped atoms in the ground state will result in 
+
+
+In a first time we did calibrated our spectroscopic method on isotope $^{88}Sr$.
+
+
 
 \begin{figure}[H]
     \centering
