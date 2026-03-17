@@ -26,7 +26,6 @@ This allows the total wavefunction to be factorized into a radial and angular pa
 where the spherical harmonics $Y^m_l(\theta, \phi)$ encode the angular dependance.
 The Schrödinger equation then reduces to a one-dimensional problem which can be treated for each
 partial wave l:
-
 \begin{equation}
     -\frac{\hbar^2}{2\mu}\left(\frac{1}{r^2} \frac{d^2 R_l(r)}{dr^2}r^2 - \frac{l(l+1)}{r^2} 
     + \hat{V}(r)\right)R_l(r) = E R_l(r)
@@ -35,23 +34,26 @@ partial wave l:
 This one-dimensional structure allows an analogy with the Landau-Zener framework, as will be 
 discussed below. To extract the scattering properties of the system, one studies the asymptotic 
 behavior of the solutions to this equation. At large distances, where the potential $\hat{V}(r)$
-vanishes, the general solution for each partial wave $l$ takes the form:
-
+vanishes, the general solution for each partial wave $l$ takes the form \cite{dalibard_interactions_nodate}:
 \begin{equation}
     R_l(r) \xrightarrow{r\to\infty} \frac{a_l}{r}sin(kr-\frac{l\pi}{2} + \delta_l)
     \label{solution at long r}
 \end{equation}
 
-as demonstrated in \cite{dalibard_interactions_nodate}.
+where $a_l$ is a normalization factor and $\delta_l$ the phase acquired by the l-th partial wave 
+due to the interaction potential.\\
+
+The full wavefunction is recovered by summing over all partial waves. At large distances, this
+superposition can be rewritten as an incoming plane wave and an outgoing scattered spherical wave:
 
 \begin{equation}
-    \Psi= e^{i\mathbf{k}\cdot \mathbf{z}} + f(\theta) \frac{e^{ikr}}{r}
+    \Psi \xrightarrow{r\to\infty} e^{i\mathbf{k}\cdot \mathbf{z}} + f(\theta) \frac{e^{ikr}}{r}
     \label{incoming outcoming scattering wave}
 \end{equation}
 
-$f(\theta)$ a function that will tell the absorption of the scattered wave
-if the collision is elastic or inelastic. $\theta$ is the angle between the vector wore by the 
-incoming wave with the vector worn by the scattered wave.\\
+where $f(\theta)$ is the scattering amplitude which determines wheter the collision is elastic or
+inelastic and $\theta$ is the angle between the incident and scattered wavevectors.\\
+
 \begin{figure}
     \centering
     \includegraphics[width=0.6\linewidth,angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg}
@@ -59,22 +61,21 @@ incoming wave with the vector worn by the scattered wave.\\
     \label{fig:scattering_concept}
 \end{figure}
 
-with $a_l$ a normalization factor and $\delta_l$ the phase acquired by the atoms at the
-distance at which they scatter.\\
+Requiring continuity of the wavefunction across all regions imposes a constraint on the phase shifts.
+At low momenta $k$ one finds:
 
-Continuity of the wavefunction in every region should be respected. It gives 
  \begin{equation}
     \delta_l \propto k^{2l+1}
  \end{equation}
 
- For s-waves ($l=0$), this express as 
+For s-waves ($l=0$), this leads to the definition of the scattering length:
 \begin{equation}
     a = -\lim_{k\to 0} \delta_0/k
     \label{scattering length}
 \end{equation}
-
-To understand how the atoms scatter we are going to express the scattered part of \ref{incoming outcoming scattering wave}
-as $\Psi - e^{ikz}$ in a spherical basis where the solutions are a sum on all the partial waves.
+which characterizes the effective range of the interaction in the low-energy limit.
+To further understand how the atoms scatter, the scattered part $\Psi - e^{ikz}$ on \ref{incoming outcoming scattering wave}
+is expressed in a spherical basis as a sum over all the partial waves:
 
 \begin{equation}
     \Psi \simeq \frac{i}{2kr}\sum_{l=0}^{\infty}(2l+1)\left((-1)^l e^{-ikr} - S_l e^{ikr}\right)
@@ -134,15 +135,19 @@ state. For inelasticity photoassociation is a good example of
 dissipative process where two atoms in the ground state are coupled to a molecular state by a laser.
 
 \subsection{What is photoassociation}
-Photoassociating two atoms consists in bounding two colliding atoms with light 
-that occurs mostly with two-body and three body losses : it means adding
-a dissipative part on the interaction. \\
+Figure \ref{fig:PA_concept} illustrates the photoassociation (PA) process where the free atoms 
+are coupled to a molecular internal state via a laser. This process occurs mostly with two-body and three body losses : it means adding
+a dissipative part on the interaction.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png}
+    \caption{Caption}
+    \label{fig:PA_concept}
+\end{figure}
 
-In a first step we can express the equation evolution of a pair of
-atoms without dissipation in the basis $\{\ket{\psi_g}, \ket{\psi_e}\}$ 
-of a non coupled closed channel of free atoms 
-$\psi_g = \ket{g,g}$ and their first molecular state 
-virtual channel $\psi_e = \ket{g,e}$
+The equation evolution of an atoms pair without dissipation expresses in the basis 
+$\{\ket{\psi_g}, \ket{\psi_e}\}$ of a non coupled closed channel of free atoms 
+$\psi_g = \ket{g,g}$ and their first molecular state $\psi_e = \ket{g,e}$ as
 
 \begin{equation}
     i\hbar \frac{d}{dt}
@@ -162,21 +167,14 @@ virtual channel $\psi_e = \ket{g,e}$
     \label{elastic evolution equation}
 \end{equation}\\
 
-In the virtual channel we see in \ref{fig:PA_concept} the presence of
+In the molecular channel we see in \ref{fig:PA_concept} the presence of
 the internal states of the molecule. It is clear that the atoms
 get more bounded with the increase of the potential amplitude.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png}
-    \caption{Caption}
-    \label{fig:PA_concept}
-\end{figure}
 
 Then at resonance $\Delta = \omega_{at} - \omega_L = 0$ with a 
 bounded molecular state a dissipative term appears on the 
 evolution of the system because of the molecular spontaneous
-emission linewidth $\gamma_{mol}$.\\
-The evolution of the atom number evolves 
+emission linewidth $\gamma_{mol}$. The atom number then evolved depending on this linewidth as
 
 \begin{equation}
     \frac{dN}{dt} = - \beta Nn - \Gamma N
