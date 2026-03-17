@@ -1,32 +1,49 @@
 % !TeX root = ../../main.tex
 \chapter{Engineering highly entangled system of photoassociated 87Sr atoms}
-In metrology the major error source of measuring a parameter $\phi$ is the quantum shot noise $\delta \phi \simeq \frac{1}{\sqrt{N}}$.
-In the second chapter of this thesis we presented Ramsey interferometers for which a applied generators for qubit
-enhancement. The phase $\phi$ from this pulse was limited by the shot noise.
-
-Engineering Dicke state would make possible to go beyond this limitation. For such system variance express as $\delta \phi \simeq \frac{1}{N}$
-which is called the Heisenberg limit being the best accuracy we afford in atomic science.
-$^{87}Sr$ large Hilbert space enables to improve even more the accuracy of the measurement because this phase depend
-directly on the maximum value of $J$
+In metrology the current limiting error source of measuring a parameter $\phi$ is the quantum shot noise $\delta \phi \simeq \frac{1}{\sqrt{N}}$.
+In the chapter on Ramsey interferometers the phase $\phi$ acquired by the qubit enhanced by $\frac{\pi}{2}$ pulses was limited by this boundary.\\
+Engineering Dicke states would make possible to go beyond this limitation. For such system variance express as $\delta \phi \simeq \frac{1}{N}$ from
+the Heisenberg principle being the best accuracy we attempt in metrology.
+$^{87}Sr$ accessible large Hilbert spaces enable to improve even more the accuracy of the measurement.\\
+Compléter avec ref \cite{pezze_quantum_2014} et autres
 
 
 \section{Introduction on photoassociation}
 \subsection{Preamble on scattering theory}
 
-It is convenient in the case of the $^{87}Sr$ to approximate the electrons following the movement
-of the nuclei because of the mass ratio. In a Born-Oppenheimer picture we neglect the coupled
-terms between the kinetic energy of the electrons and the kinetic energy of the nuclei. In this 
-manner we can study separately the radial and the angular part of the electronic movement. \\
-As in the LANDAU-ZENER we will find the solutions of the 1D radial Schrödinger equation of the 
-electrons 
+In the study of electron-nuclei interactions, the Born-Oppenheimer approximation provides a natural 
+simplification. Due to the large mass ratio $\mu = m_p/m_e \simeq 1000$, the nuclei move on a much 
+slower timescale than the electrons. One can therefore neglect the coupling terms between the nuclear 
+and electronic kinetic energies, and solve the electronic problem on spherical coordinate system centered
+in nucleus.\\
+Once the nuclear coordinates are fixed, the effective potential experienced by the electrons inherits the spherical symmetry of the problem. 
+This allows the total wavefunction to be factorized into a radial and angular part:
 
 \begin{equation}
-    -\frac{\hbar^2}{2\mu}\left(\frac{1}{r^2} \frac{d^2\Psi_l}{dr^2}r^2 - \frac{l(l+1)}{r^2} 
-    + \hat{V}(r)\right)\Psi = E \Psi
+    \psi(r, \theta,\phi) = R_l(r) Y^m_l(\theta, \phi)
+\end{equation}
+
+where the spherical harmonics $Y^m_l(\theta, \phi)$ encode the angular dependance.
+The Schrödinger equation then reduces to a one-dimensional problem which can be treated for each
+partial wave l:
+
+\begin{equation}
+    -\frac{\hbar^2}{2\mu}\left(\frac{1}{r^2} \frac{d^2 R_l(r)}{dr^2}r^2 - \frac{l(l+1)}{r^2} 
+    + \hat{V}(r)\right)R_l(r) = E R_l(r)
     \label{radial equation}
 \end{equation}
-- $\Psi$ the eigenfunction - by approximating the scattering of the atoms as a sum of an 
-incoming plane wave with a spherical scattered one - considered as plane wave at long distance \ref{fig:scattering_concept}
+This one-dimensional structure allows an analogy with the Landau-Zener framework, as will be 
+discussed below. To extract the scattering properties of the system, one studies the asymptotic 
+behavior of the solutions to this equation. At large distances, where the potential $\hat{V}(r)$
+vanishes, the general solution for each partial wave $l$ takes the form:
+
+\begin{equation}
+    R_l(r) \xrightarrow{r\to\infty} \frac{a_l}{r}sin(kr-\frac{l\pi}{2} + \delta_l)
+    \label{solution at long r}
+\end{equation}
+
+as demonstrated in \cite{dalibard_interactions_nodate}.
+
 \begin{equation}
     \Psi= e^{i\mathbf{k}\cdot \mathbf{z}} + f(\theta) \frac{e^{ikr}}{r}
     \label{incoming outcoming scattering wave}
@@ -41,14 +58,6 @@ incoming wave with the vector worn by the scattered wave.\\
     \caption{Caption}
     \label{fig:scattering_concept}
 \end{figure}
-The solution at asymptotes contains the scattering part of the phenomenon studied on this subsection. 
-To solve this hamiltonian we will take the results of \cite{dalibard_interactions_nodate} that
-changes the solution basis to find a general solution of the hamiltonian \ref{radial equation}.
-
-\begin{equation}
-    \Psi = \frac{a_l}{r}sin(kr-\frac{l\pi}{2} + \delta_l)
-    \label{solution at long r}
-\end{equation}
 
 with $a_l$ a normalization factor and $\delta_l$ the phase acquired by the atoms at the
 distance at which they scatter.\\
