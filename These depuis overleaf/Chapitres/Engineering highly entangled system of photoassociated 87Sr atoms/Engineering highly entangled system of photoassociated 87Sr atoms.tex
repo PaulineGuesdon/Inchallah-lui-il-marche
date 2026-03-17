@@ -177,15 +177,13 @@ evolution of the system because of the molecular spontaneous
 emission linewidth $\gamma_{mol}$. The atom number then evolved depending on this linewidth as
 
 \begin{equation}
-    \frac{dN}{dt} = - \beta Nn - \Gamma N
+    \frac{dN}{dt} = - \frac{\beta N^2}{V_e} - \Gamma N
 \end{equation}
 
-where the 2-body losses express as $\beta \propto \gamma_{mol}$ (we are going to comment more in the next section). 
-In comparison with \cite{han_photoassociation_2018}), $\beta = \frac{K_2 V_e}{2}$,
 where $V_e$ is the effective volume of the cloud $(2\pi )^{3/2}\sigma_x 
-\sigma_y \sigma_z$ for a density Gaussian distribution and $\Gamma$ 
-the one-body losses rate. This latter is limited by the vacuum quality and 
-the lifetime of the atoms in the trap. \\
+\sigma_y \sigma_z$ for a density Gaussian distribution, $\Gamma$ 
+the one-body loss rate limited by vacuum quality and 2-body losses express as $\beta \propto \gamma_{mol}$
+and is possible to determine by a fit.\\
 Adding the inelastic collisions of the PA process gives the following
 effective evolution equation 
 
@@ -254,14 +252,14 @@ It depends directly with the overlap of the wavefunctions of the initial and fin
 \textbf{The Condon radius} is the distance between the atoms for which this factor is maximum
 which also means that in a classical approach the atoms spend the most time at this position.\\
 
-In the molecular community it is conventional to characterize 
-the strength of the photoassociation rate with the \textbf{optical length}
+Photoassociation rate is currently characterized by an \textbf{optical length} in molecular community.
+In order to easily compare the $l_opt$ values one re-express
 
 \begin{equation}
-    K_2(I)= \frac{4\pi \hbar}{\mu} l_{opt}(I)
+    l_{opt} = \frac{\beta m}{16 h }
 \end{equation}
 
-$\mu$ the reduced mass of the two atoms. From this formula we
+$\mu$ the atomic mass of the atom. From this formula we
 can say that the major experimental changes enabling the increase 
 of the PA rate is the density of the cloud and the intensity 
 if the. PA beam as we are going to test in the experimental results.\\
