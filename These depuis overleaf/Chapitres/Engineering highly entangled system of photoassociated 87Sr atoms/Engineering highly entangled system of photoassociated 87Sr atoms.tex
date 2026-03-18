@@ -135,19 +135,10 @@ state. For inelasticity photoassociation is a good example of
 dissipative process where two atoms in the ground state are coupled to a molecular state by a laser.
 
 \subsection{What is photoassociation}
-Figure \ref{fig:PA_concept} illustrates the photoassociation (PA) process where the free atoms 
-are coupled to a molecular internal state via a laser. This process occurs mostly with two-body and three body losses : it means adding
-a dissipative part on the interaction.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png}
-    \caption{Caption}
-    \label{fig:PA_concept}
-\end{figure}
-
-The equation evolution of an atoms pair without dissipation expresses in the basis 
-$\{\ket{\psi_g}, \ket{\psi_e}\}$ of a non coupled closed channel of free atoms 
-$\psi_g = \ket{g,g}$ and their first molecular state $\psi_e = \ket{g,e}$ as
+Photoassociation (PA) is a process from which free atoms pair our bounded to each other through two-body
+and three-body losses via a resonant laser. \\
+In the basis $\{\ket{\psi_g}, \ket{\psi_e}\}$ of free atoms in a radial potential $V_g(r)$ and first molecular state 
+$V_e(r)$ in the absence of the resonant laser the equation evolution of the system express as
 
 \begin{equation}
     i\hbar \frac{d}{dt}
@@ -165,27 +156,19 @@ $\psi_g = \ket{g,g}$ and their first molecular state $\psi_e = \ket{g,e}$ as
         \psi_e
     \end{pmatrix}.
     \label{elastic evolution equation}
-\end{equation}\\
-
-In the molecular channel we see in \ref{fig:PA_concept} the presence of
-the internal states of the molecule. It is clear that the atoms
-get more bounded with the increase of the potential amplitude.
-
-Then at resonance $\Delta = \omega_{at} - \omega_L = 0$ with a 
-bounded molecular state a dissipative term appears on the 
-evolution of the system because of the molecular spontaneous
-emission linewidth $\gamma_{mol}$. The atom number then evolved depending on this linewidth as
-
-\begin{equation}
-    \frac{dN}{dt} = - \frac{\beta N^2}{V_e} - \Gamma N
 \end{equation}
 
-where $V_e$ is the effective volume of the cloud $(2\pi )^{3/2}\sigma_x 
-\sigma_y \sigma_z$ for a density Gaussian distribution, $\Gamma$ 
-the one-body loss rate limited by vacuum quality and 2-body losses express as $\beta \propto \gamma_{mol}$
-and is possible to determine by a fit.\\
-Adding the inelastic collisions of the PA process gives the following
-effective evolution equation 
+Then a resonant laser is tuned to an internal state of $V_e(r)$ to bound the atoms
+pair as presented in figure \ref{fig:PA_concept}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png}
+    \caption{Caption}
+    \label{fig:PA_concept}
+\end{figure}
+
+This operation consists in adding inelastic collisions to the system. Then the
+effective evolution equation of the coupled atoms is
 
 \begin{equation}
     i\hbar \frac{d}{dt}
@@ -204,24 +187,32 @@ effective evolution equation
     \end{pmatrix}.
     \label{elastic evolution equation}
 \end{equation}\\
+with $\gamma_{mol}$ the molecular spontaneous emission linewidth.\\
 
-The eigenvector of the ground state $\ket{\psi_g}$ is then modified by this coupling.
-It also means that the phase $\delta_l$ (see \ref{solution at long r}) of the free state 
-wavefunction is modified so the scattering length. The real part of $a$ encodes two-body 
-losses rate whereas its imaginary part changes the collisions properties. In this 
+Then sum of partial waves determined in \ref{1D schrodinger solution}. are solutions of this hamiltonian.
+We can deduce the phase $\delta_l$ (see \ref{solution at long r}) and so the scattering length are then modified.
+The real part of $a$ encodes two-body losses rate whereas its imaginary part changes the collisions properties. In this 
 case we can write an effective scattering length enclosing the background scattering
 length $a_{bg}$ standing for elastic collisions without any coupling, $\delta a$ a
 modification of it because of the coupling and still the inelastic part of it
-
 \begin{equation}
     a = a_{bg} + \delta a + ia"
 \end{equation}
 
+One can express the atom number evolution depending on this linewidth as
+
+\begin{equation}
+    \frac{dN}{dt} = - \frac{\beta N^2}{V_e} - \Gamma N
+\end{equation}
+
+where $V_e$ is the effective volume of the cloud $(2\pi )^{3/2}\sigma_x 
+\sigma_y \sigma_z$ for a density Gaussian distribution, $\Gamma$ 
+the one-body loss rate limited by vacuum quality and 2-body losses express as $\beta \propto \gamma_{mol}$
+and is possible to determine by a fit.\\
 
 
-In the case of spectroscopy we usually start with the least bounded state to have
-the atomic state reference. From that we sweep the atom frequency to adress the
-molecular states red detuned from the atomic line. 
+Finally in a context of spectroscopy, to adress more bound states
+one sweep the laser frequency from the free-atomic line to red detuned frequencies. 
 The quantity that will testify there is two-body losses
 is the atom number remaining in the trap after a photoassociation pulse. 
 The molecule leaves the trap by acquiring kinetic energy from the binding energy.
@@ -231,40 +222,51 @@ position of the vibrational states enables by changing the magnetic field
 to tune the scattering length of the atoms and thus the interactions in the system.
 
 \subsection{Parameters for PA study}
-In this subsection we are going to admit the expression of 
-the two-body losses rate we introduced above but we will take
-a look on its dependencies.\\
-This rate writes as
-
+Many experimental parameters enable to maximize the two-body loss rate of the
+photoassociated atoms. This rate $K_2$ introduced above can express
+as
 \begin{equation}
-    K_2 = \frac{1}{k}\frac{\frac{1}{4}\gamma_{stim}\gamma_{mol}}{\Delta^2 +(\frac{1}{2}(\gamma_{stim} + \gamma_{mol})^2)}
+    K_2 = \frac{\beta}{V_e} = \frac{1}{k}\frac{\frac{1}{4}\gamma_{stim}\gamma_{mol}}{\Delta^2 +(\frac{1}{2}(\gamma_{stim} + \gamma_{mol})^2)}
 \end{equation}\\
 
-$\gamma_{stim}$ is linear with the intensity of the PA laser, proportionnal
-to the 3D density $n$, and the probability to transit from $\psi_g$ to $\psi_e$ that we call 
-\textbf{Franck-Condon factor }
+To understand what governs $K_2$, we need to look more closely at $\gamma_\text{stim}$
+which encodes the coupling between the colliding atom pair and the PA laser. This rate is linear with the laser intensity, proportional to the 3D density $n$,
+and to the probability of transitioning from $\ket{\psi_g}$ to
+$\ket{\psi_e}$ the Franck-Condon factor:
 
 \begin{equation} 
     F_{FC} = \Bigg|\int_0^{\infty} \psi_g(r) \psi_e(r) dr\Bigg |^2 
 \end{equation}
 
-It depends directly with the overlap of the wavefunctions of the initial and final states.
-\textbf{The Condon radius} is the distance between the atoms for which this factor is maximum
-which also means that in a classical approach the atoms spend the most time at this position.\\
-
-Photoassociation rate is currently characterized by an \textbf{optical length} in molecular community.
-In order to easily compare the $l_opt$ values one re-express
+This factor directly measures the overlap between the initial and final 
+state wavefunctions, and therefore quantifies how efficiently the PA laser 
+can drive the transition. The Condon radius is the internuclear distance at 
+which this overlap is maximum, meaning in a classical picture this is where 
+the atoms spend the most time — and thus where the photoassociation is most 
+likely to occur.\\
+Since $\gamma_{stim}$ depends on both the laser intensity and 
+the density, these become the key experimental knobs to tune $K_2$. 
+To make this more concrete and allow comparison with other experiments, 
+the photoassociation rate is commonly re-expressed in the molecular 
+community through an optical length:
 
 \begin{equation}
     l_{opt} = \frac{\beta m}{16 h }
 \end{equation}
 
-$\mu$ the atomic mass of the atom. From this formula we
-can say that the major experimental changes enabling the increase 
-of the PA rate is the density of the cloud and the intensity 
-if the. PA beam as we are going to test in the experimental results.\\
+$m$ the atomic mass of the atom. This single quantity captures the overall 
+PA efficiency, and from this formula it is clear that the main experimental 
+levers to increase the PA rate are the cloud density and the PA beam 
+intensity — precisely what we will test in the experimental results section.\\
 
-A first element we need to introduce to describe molecules is the symmetry of the orbital wavefunction. For an
+\textbf{From loss rate to molecular structure}\\
+So far we have described the PA process from the perspective of atom losses.
+But the molecules formed in this process have a rich internal structure that 
+determines which transitions are accessible and how efficiently they can be 
+driven — in particular through the Franck-Condon factor. Understanding this 
+structure is therefore essential to optimise $K_2$ experimentally.\\
+
+A first key property is the symmetry of the orbital wavefunction. For an
 even wavefunction the exchange of the two atoms $A$ and $B$ does not change the sign of the 
 wavefunction, as in left figures \ref{fig:u-g symmetry}. The potential is then qualified \textbf{gerade}.
 The probability of finding electrons in between the two atoms is high compared to the 
@@ -277,27 +279,24 @@ The probability of finding electrons in between the two atoms is high compared t
     \label{fig:u-g symmetry}
 \end{figure}
 
-Exciting an atom from a ground state to a single excited state
-is straightforward and quite easy to do precisely. It is not 
-as easy for molecules because there exist a big number molecular
-potentials and internal states for each potential. These internal
-and external accesible states of the molecule are presented in
-the following via the introduction of the molecular quantum numbers.
+While exciting a single atom is straightforward, identifying the correct 
+molecular state to target is considerably more involved, since a large 
+number of potentials and internal states coexist. To navigate this complexity, 
+we now introduce the molecular quantum numbers that label these states and 
+determine their accessibility.\\
 
 \textbf{The good quantum numbers}\\
-We write the total angular momentum of the molecule $T = R + F = R + I + J$, $F$ being the 
-total spin of the two atoms $f_1 + f_2$, $J = j_1+j_2$ is the angular momentum
-of the molecule that describes the spin-orbit coupling, and R the rotational angular momentum of the molecule. \\
-
-We define the projection of the different angular momentum on the inter-nuclear axis as
+The total angular momentum of the molecule is $T = R + F = R + I + J$, $F$ being the 
+total spin of the two atoms $f_1 + f_2$, $J = j_1+j_2$ encodes the spin-orbit 
+coupling, and R is the rotational angular momentum of the molecule. 
+The projection of the angular momenta onto the internuclear axis is:
 \begin{equation}
     \Omega = \Lambda + \Sigma
 \end{equation}
 
-with $\Lambda$ the projection of the orbital momentum of the molecule on the internuclear axis
+where $\Lambda$ is the projection of the orbital momentum of the molecule on the internuclear axis
 and $\Sigma$ the projection of the momentum spin.
-
-$M_T$ is the projection of the total angular momentum $T$ onto a defined quantization axis.\\
+$M_T$ denotes the projection of $T$ onto a chosen quantization axis.\\
 
 For the rotational quantum number there is a parity of the total wavefunction that needs to 
 be fulfilled. In addition there are only s-wave collisions in cold gases then the part of the 
@@ -310,7 +309,7 @@ wavefunction should be odd the spin one antisymetric\\
 
 $\ket{\phi_e}$ and $\ket{\phi_g}$ are the electronic wavefunctions of the two atoms A and B 
 in ground and excited state respectively, $\ket{\chi}$ is the spin wavefunction.
-It gives accessible values $R = 0, 2$ or $4$...
+This restricts the accessible values $R = 0, 2$ or $4$... which directly limits the number of rotational states that can be populated during photoassociation.
 
 For $^1S_0$ - $^3P_1$ molecular state there is a strong spin-orbit coupling that couples its 
 related momentum to the internuclear axis (\ref{fig:hund}), quantified by $\Omega$ and described as Hund's case 
