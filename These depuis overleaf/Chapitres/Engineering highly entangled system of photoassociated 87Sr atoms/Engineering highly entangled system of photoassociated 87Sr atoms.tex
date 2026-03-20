@@ -524,8 +524,8 @@ Near this resonance atoms are illuminated for $30$ms at low intensity $I = 37$mW
 power broadening, allowing the nearest bound state to the dissociation to be resolved.
 At larger red detunings the intensity is increased and the illumination time optimized to maximize 
 contrast.\\
-\section{Protocol for PA process}
-
+\section{PA in practice}
+\subsection{Protocol}
 Dicke states are particularly interesting to engineer for metrology because it is possible to go
 beyond quantum shot-noise limit on a specific parameter $\phi$. The strategy we performed
 to attempt this high precision is to photoassociate atoms to induce two-body losses resulting
@@ -562,37 +562,70 @@ measurement of atoms loss at fixed frequency but various illumination time verif
 \subsection{Setup}
 Changing the locking system of the MOGlabs enabled us to adress resonances $1.7$GHz under the 
 frequencies previously targeted in Chapter 2. This procedure conserves the set-up
-presented in \ref{} so it still serves for Raman manipulation or PA.\\
-While we were injecting a fiber at the output of the "AOM PompOpt" at frequency $f_{PompOpt}$
-featured in \ref{frequences 88sr 87sr} that was directly sent to the vacuum cell
-the red chain at this level has been modified. The tuned beam assures then the optical pumping and MOGlabs beating
-at $-1.75$GHz from $F=9/2$ hyperfine state. These frequency changes appears in figure \ref{frequences 88sr 87sr}
-where in blue we have the ancient scheme for $F=9/2$ experiments and in red the actual one.\\
+presented in \ref{} so it serves for Raman manipulation or PA.\\
+We were injecting a fiber at the output of the "AOM PompOpt" at frequency $f_{PompOpt}$
+featured in \ref{frequences 88sr 87sr} that was directly sent to the vacuum cell. The output 
+of this fiber is now sent to another optical table to assure at the same time the optical pumping and 
+MOGlabs beating at $-1.75$GHz from $F=9/2$ hyperfine state. 
+
+The right part of this scheme is the same as presented in introduction but the fiber is connected to the 
+left part of the optical set-up where the beam is overlaped on a $50/50$ plate with a beam at $f_{MOG}$. 
+Before the co-propagation part the $11/2$ beam is split for optical pumping part : this 
+last fiber is sent to the cell.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/frequences_87Sr_88Sr.jpeg}
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/new_beating_chain.jpeg}
+    \caption{Caption}
+    \label{nouveau battement}    
+\end{figure}
+
+
+The sign of the slave 1 AOM diffraction order depends on the isotope being addressed: for bosonic species, we use the
+$+1$ order to address the $^{88}Sr, ^3P_1$ resonance at $f_{slave 1} = 319.4$MHz with 
+$f_{11/2}=220.75$MHz, while for fermionic $^{87}Sr$ we exploit the $-1$ order to account 
+the hyperfine state $F=11/2$ as in \ref{fig:intro-chaine-rouge}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/frequences_87Sr_88Sr.jpeg}
     \caption{Caption}
     \label{frequences 88sr 87sr}
 \end{figure}
 
+These frequency appears in figure \ref{frequences 88sr 87sr} where in blue we have the 
+ancient scheme for $F=9/2$ experiments and in red the actual one. The final frequency of 
+the PA beam sent to the atoms is
+
+\begin{equation}
+    f_{PA} = f^{RF}_{beating} - f_{Raman} \pm 2\times f_{slave 1} - 2\times f_{11/2}
+\end{equation}
+
+
 \section{88Sr Results}
-For PA process on strontium 88 the beam line currently used for strontium 87 red MOT and 11/2 hyperfine
-state was modified. Figure \ref{frequences 88sr 87sr} shows in red the frequency detunings for 
-adressing the hyperfine state $^{3}P_1, F=11/2$ used on the red MOT stages
-and the optical pumping. The beam for these two is tuned via a first double pass AOM called "Inj 
-slave 1" at center frequency $f_{Inj Slave 1}=\pm 300$MHz and a second one at $f_{11/2} = \pm 200$: 
-"AOM PompOpt" in a case, "AOM MOT 87" in the other case, both in double pass configuration.
 
-
-\subsection{Technical issues of inhabilitation of photoassociation}
-\subsubsection{Laser width}
 
 \section{87Sr molecules}
 
+\subsection{Technical issues of inhabilitation of photoassociation}
+\subsubsection{Laser width}
+The spectrum of the beating \ref{} measured at the spectrum analyzer shows a frequency 
+broadening at $RBW$ of the time response order of the the excited molecule at 
+$\Gamma \simeq 15$kHz linewidth.\\ 
 
-Lopt
-questions sur nb quantique / choix de pompage optique
+For this same signal decreasing the RBW parameter - increasing the resolution at which we
+measure the signal perturbations - reveals a loss of almost half the power of the carrier
+in the background. It is important for our experiment to calibrate this loss resulting in 
+less power in the PA beam that adresses the vibrational state when at resonance.\\
+
+\subsubsection{PDH Sidebands}
+The laser beam sent to the atoms on PA process passes through the FP cavity presented in
+section ??? which has a PDH locking system. 
+\subsubsection{Calibrating the laser width with another laser}
+A strategy to verify the effect of the spectral laser broadening was not critical on 
+two-losses observation has been to measure atomic transition and vibrational lines for
+similar intensities and time and compare their broadening.
+
 
 \subsection{Physical sources of inhabilitation of photoassociation}
 \subsubsection{On F = 9/2 : predissociation}
