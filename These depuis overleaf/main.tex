@@ -8,7 +8,7 @@
 \usepackage{fancyhdr}
 \usepackage[skip=6pt]{parskip}
 \usepackage[square,numbers]{natbib}
-\usepackage{hyperref}
+\usepackage[pdfpagelabels,hypertexnames=false]{hyperref}
 \usepackage{amsmath}
 \usepackage[acronym]{glossaries}
 \usepackage{lipsum} %DUMMY TEXT
@@ -44,6 +44,91 @@
 \newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}  % makes writing units simpler
 \renewcommand{\thefootnote}{\emph{\alph{footnote}}} % italic letters footnote
 
+\makeatletter
+\let\origl@section\l@section
+\let\origl@subsection\l@subsection
+\let\origl@subsubsection\l@subsubsection
+\let\origl@chapter\l@chapter
+\newcommand{\lasttocpage}{}
+\newcommand{\resettocpagededup}{%
+    \gdef\lasttocpage{}%
+}
+\newcommand{\tocwithoutpagechapter}[1]{%
+    \ifnum \c@tocdepth >\m@ne
+        \addpenalty{-\@highpenalty}%
+        \vskip 1.0em \@plus\p@
+        \setlength\@tempdima{1.5em}%
+        \begingroup
+            \parindent \z@
+            \rightskip \z@ \@plus 1fil
+            \parfillskip \z@
+            \leavevmode \bfseries
+            \advance\leftskip\@tempdima
+            \hskip -\leftskip
+            #1\par
+            \penalty\@highpenalty
+        \endgroup
+    \fi
+}
+\newcommand{\tocwithoutpagedotted}[4]{%
+    \ifnum #1>\c@tocdepth \else
+        \vskip \z@ \@plus.2\p@
+        {\leftskip #2\relax \rightskip \z@ \@plus 1fil
+         \parfillskip \z@
+         \parindent #2\relax\@afterindenttrue
+         \interlinepenalty\@M
+         \leavevmode
+         \@tempdima #3\relax
+         \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+         {#4}\par}%
+    \fi
+}
+\renewcommand*\l@chapter[2]{%
+    \begingroup
+        \edef\currenttocpage{#2}%
+        \ifx\currenttocpage\lasttocpage
+            \tocwithoutpagechapter{#1}%
+        \else
+            \origl@chapter{#1}{#2}%
+            \xdef\lasttocpage{#2}%
+        \fi
+    \endgroup
+}
+\renewcommand*\l@subsection[2]{%
+    \begingroup
+        \edef\currenttocpage{#2}%
+        \ifx\currenttocpage\lasttocpage
+            \tocwithoutpagedotted{2}{3.8em}{3.2em}{#1}%
+        \else
+            \origl@subsection{#1}{#2}%
+            \xdef\lasttocpage{#2}%
+        \fi
+    \endgroup
+}
+\renewcommand*\l@subsubsection[2]{%
+    \begingroup
+        \edef\currenttocpage{#2}%
+        \ifx\currenttocpage\lasttocpage
+            \tocwithoutpagedotted{3}{7.0em}{4.1em}{#1}%
+        \else
+            \origl@subsubsection{#1}{#2}%
+            \xdef\lasttocpage{#2}%
+        \fi
+    \endgroup
+}
+\renewcommand*\l@section[2]{%
+    \begingroup
+        \edef\currenttocpage{#2}%
+        \ifx\currenttocpage\lasttocpage
+            \tocwithoutpagedotted{1}{1.5em}{2.3em}{#1}%
+        \else
+            \origl@section{#1}{#2}%
+            \xdef\lasttocpage{#2}%
+        \fi
+    \endgroup
+}
+\makeatother
+
 % PATHS
 \graphicspath{ {img/} }
 \input{appendix/mis/acronym}
@@ -60,25 +145,29 @@
 \begin{document}
 
 \input{appendix/titlepage}
+\clearpage
+\pagenumbering{roman}
 \input{appendix/abstract}
-\pagenumbering{gobble}
 \input{appendix/mis/dedication}
 \input{appendix/mis/declaration}
 \input{appendix/mis/acknowledgements}
 
+\resettocpagededup
 \tableofcontents
 \listoffigures
 \listoftables
 \printglossary[type=\acronymtype]
 
-\input{Chapitres/Introduction/Introduction}
+\clearpage
 \pagenumbering{arabic}
+\input{Chapitres/Introduction/Introduction}
 \input{Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit}
 \input{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms}
 \input{Chapitres/conclusion/conclusion}
 
+\cleardoublepage
 \bibliography{ref}
-\pagenumbering{roman}
+\cleardoublepage
 \appendix
 \input{appendix/appendixA}
 

@@ -279,56 +279,56 @@ INPUT ./Chapitres/Introduction/Introduction.tex
 INPUT Chapitres/Introduction/Introduction.tex
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./Chapitres/Introduction/repompeur.png
-INPUT ./Chapitres/Introduction/repompeur.png
-INPUT ./Chapitres/Introduction/repompeur.png
-INPUT ./Chapitres/Introduction/repompeur.png
-INPUT ./Chapitres/Introduction/repompeur.png
-INPUT ./Chapitres/Introduction/chaine_bleue_actualisée.pdf
-INPUT ./Chapitres/Introduction/chaine_bleue_actualisée.pdf
-INPUT ./Chapitres/Introduction/chaine_bleue_actualisée.pdf
-INPUT ./Chapitres/Introduction/chaine_bleue_actualisée.pdf
-INPUT ./Chapitres/Introduction/chaine_bleue_actualisée.pdf
-INPUT ./Chapitres/Introduction/energy_levels_repumper.png
-INPUT ./Chapitres/Introduction/energy_levels_repumper.png
-INPUT ./Chapitres/Introduction/energy_levels_repumper.png
-INPUT ./Chapitres/Introduction/energy_levels_repumper.png
-INPUT ./Chapitres/Introduction/energy_levels_repumper.png
-INPUT ./Chapitres/Introduction/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/need_for_stir.png
-INPUT ./Chapitres/Introduction/need_for_stir.png
-INPUT ./Chapitres/Introduction/need_for_stir.png
-INPUT ./Chapitres/Introduction/need_for_stir.png
-INPUT ./Chapitres/Introduction/need_for_stir.png
-INPUT ./Chapitres/Introduction/randomisation.jpeg
-INPUT ./Chapitres/Introduction/randomisation.jpeg
-INPUT ./Chapitres/Introduction/randomisation.jpeg
-INPUT ./Chapitres/Introduction/randomisation.jpeg
-INPUT ./Chapitres/Introduction/randomisation.jpeg
-INPUT ./Chapitres/Introduction/chaine_rouge_vieille.png
-INPUT ./Chapitres/Introduction/chaine_rouge_vieille.png
-INPUT ./Chapitres/Introduction/chaine_rouge_vieille.png
-INPUT ./Chapitres/Introduction/chaine_rouge_vieille.png
-INPUT ./Chapitres/Introduction/chaine_rouge_vieille.png
-INPUT ./Chapitres/Introduction/ODT_loading.png
-INPUT ./Chapitres/Introduction/ODT_loading.png
-INPUT ./Chapitres/Introduction/ODT_loading.png
-INPUT ./Chapitres/Introduction/ODT_loading.png
-INPUT ./Chapitres/Introduction/ODT_loading.png
-INPUT ./Chapitres/Introduction/optical_pumping.png
-INPUT ./Chapitres/Introduction/optical_pumping.png
-INPUT ./Chapitres/Introduction/optical_pumping.png
-INPUT ./Chapitres/Introduction/optical_pumping.png
-INPUT ./Chapitres/Introduction/optical_pumping.png
-INPUT ./Chapitres/Introduction/spin_kick_scheme.png
-INPUT ./Chapitres/Introduction/spin_kick_scheme.png
-INPUT ./Chapitres/Introduction/spin_kick_scheme.png
-INPUT ./Chapitres/Introduction/spin_kick_scheme.png
-INPUT ./Chapitres/Introduction/spin_kick_scheme.png
+INPUT ./Chapitres/Introduction/images/repompeur.png
+INPUT ./Chapitres/Introduction/images/repompeur.png
+INPUT ./Chapitres/Introduction/images/repompeur.png
+INPUT ./Chapitres/Introduction/images/repompeur.png
+INPUT ./Chapitres/Introduction/images/repompeur.png
+INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
+INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
+INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
+INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
+INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
+INPUT ./Chapitres/Introduction/images/energy_levels_repumper.png
+INPUT ./Chapitres/Introduction/images/energy_levels_repumper.png
+INPUT ./Chapitres/Introduction/images/energy_levels_repumper.png
+INPUT ./Chapitres/Introduction/images/energy_levels_repumper.png
+INPUT ./Chapitres/Introduction/images/energy_levels_repumper.png
+INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/images/need_for_stir.png
+INPUT ./Chapitres/Introduction/images/need_for_stir.png
+INPUT ./Chapitres/Introduction/images/need_for_stir.png
+INPUT ./Chapitres/Introduction/images/need_for_stir.png
+INPUT ./Chapitres/Introduction/images/need_for_stir.png
+INPUT ./Chapitres/Introduction/images/randomisation.jpeg
+INPUT ./Chapitres/Introduction/images/randomisation.jpeg
+INPUT ./Chapitres/Introduction/images/randomisation.jpeg
+INPUT ./Chapitres/Introduction/images/randomisation.jpeg
+INPUT ./Chapitres/Introduction/images/randomisation.jpeg
+INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
+INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
+INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
+INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
+INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
+INPUT ./Chapitres/Introduction/images/ODT_loading.png
+INPUT ./Chapitres/Introduction/images/ODT_loading.png
+INPUT ./Chapitres/Introduction/images/ODT_loading.png
+INPUT ./Chapitres/Introduction/images/ODT_loading.png
+INPUT ./Chapitres/Introduction/images/ODT_loading.png
+INPUT ./Chapitres/Introduction/images/optical_pumping.png
+INPUT ./Chapitres/Introduction/images/optical_pumping.png
+INPUT ./Chapitres/Introduction/images/optical_pumping.png
+INPUT ./Chapitres/Introduction/images/optical_pumping.png
+INPUT ./Chapitres/Introduction/images/optical_pumping.png
+INPUT ./Chapitres/Introduction/images/spin_kick_scheme.png
+INPUT ./Chapitres/Introduction/images/spin_kick_scheme.png
+INPUT ./Chapitres/Introduction/images/spin_kick_scheme.png
+INPUT ./Chapitres/Introduction/images/spin_kick_scheme.png
+INPUT ./Chapitres/Introduction/images/spin_kick_scheme.png
 INPUT ./Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex
 INPUT ./Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex
 INPUT ./Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex
@@ -341,31 +341,31 @@ INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr at
 INPUT Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/incident_and_scattered_wave.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/PA_concept.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/gerade_ungerade.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Hund_case_c.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sakurai_WKB.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/incident_and_scattered_wave.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/incident_and_scattered_wave.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/incident_and_scattered_wave.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/incident_and_scattered_wave.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/incident_and_scattered_wave.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/PA_concept.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/PA_concept.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/PA_concept.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/PA_concept.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/PA_concept.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/gerade_ungerade.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/gerade_ungerade.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/gerade_ungerade.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/gerade_ungerade.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/gerade_ungerade.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Hund_case_c.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Hund_case_c.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Hund_case_c.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Hund_case_c.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Hund_case_c.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sakurai_WKB.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sakurai_WKB.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sakurai_WKB.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sakurai_WKB.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sakurai_WKB.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -378,28 +378,38 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/mass_scaling.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Ytterbium_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/mass_scaling.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/mass_scaling.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/mass_scaling.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/mass_scaling.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/mass_scaling.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Ytterbium_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Ytterbium_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Ytterbium_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Ytterbium_molecular_potentials.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Ytterbium_molecular_potentials.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/new_beating_chain.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/new_beating_chain.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/new_beating_chain.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/new_beating_chain.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/new_beating_chain.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/frequences_87Sr_88Sr.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/frequences_87Sr_88Sr.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/frequences_87Sr_88Sr.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/frequences_87Sr_88Sr.jpeg
-INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/frequences_87Sr_88Sr.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/new_beating_chain.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/new_beating_chain.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/new_beating_chain.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/new_beating_chain.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/new_beating_chain.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_87Sr_88Sr.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_87Sr_88Sr.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_87Sr_88Sr.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_87Sr_88Sr.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_87Sr_88Sr.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sidebands.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sidebands.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sidebands.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sidebands.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sidebands.jpeg
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/predissociation.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/predissociation.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/predissociation.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/predissociation.png
+INPUT ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/predissociation.png
 INPUT ./Chapitres/conclusion/conclusion.tex
 INPUT ./Chapitres/conclusion/conclusion.tex
 INPUT ./Chapitres/conclusion/conclusion.tex
