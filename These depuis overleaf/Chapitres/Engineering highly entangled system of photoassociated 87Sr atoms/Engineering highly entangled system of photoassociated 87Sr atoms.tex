@@ -606,7 +606,7 @@ the PA beam sent to the atoms is
 
 
 \section{87Sr molecules}
-
+\subsection{Results}
 \subsection{Technical issues of inhabilitation of photoassociation}
 \subsubsection{Laser width}
 The spectrum of the beating \ref{} measured at the spectrum analyzer shows a frequency 
@@ -642,7 +642,8 @@ mistakely consider it as PA line.\\
     \label{sidebands}
 \end{figure}
 
-These effect occurs currently and could be a real mistake on spectroscopy interpretation.
+These effect occurs currently and could be a real mistake on spectroscopy interpretation. As for every PA data measurement of $dN/dt$ at 
+this frequency testifies the presence of only one-body losses.
 
 \subsubsection{Calibrating the laser width with another laser}
 A strategy to verify the effect of the spectral laser broadening was not critical on 
@@ -655,13 +656,31 @@ we measured atomic transition broadening on figure \ref{} $???$ times less broad
 
 \subsection{Physical sources of inhabilitation of photoassociation}
 \subsubsection{On F = 9/2 : predissociation}
+On some cases PA process fails because of a phenomenon called pre-dissociation. 
+When photoassociating a pair of free atoms from a potential X on a vibrational 
+state from potential A it is possible that this last potential crosses another 
+potential curve B, (e.g molecular potentials of other hyperfine states). Then it is possible that the excited molecule decays 
+to a pair of quasi free-bound atoms in a potential B.\\
+Considering it, it is reasonable to do PA on the lowest hyperfine state as in \ref{fig:pa-ytterbium-potentials},
+in our case and in most of complex fermionic specie. 
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/predissociation.png}
-    \caption{Peut être combiner ce graphe avec la mesure de la raie atomique en rajoutant la position des sidebands}
+    \caption{}
     \label{predissociation}
 \end{figure}
 
 \subsubsection{Coupling to more energetic state from the IR}
+ODT can be a distructive source of PA process if it is resonant with high energy levels of existant potential at $\lambda = 1064$nm from bound state.
+The experimental sequence of \ref{} implements a chirp of optical trap in opposite phase with PA laser that suppresses eventual coupling to much higher levels.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth, angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/chirp_sequence.jpeg}
+    \caption{}
+    \label{predissociation}
+\end{figure}
+
 \subsubsection{Node of wavefunction for some vibrational states}
-\subsection{Energy landscape of 87Sr-87Sr molecules}
+Vibrational states whose wavefunction has a node at the Condon radius cannot be excited by the PA laser.

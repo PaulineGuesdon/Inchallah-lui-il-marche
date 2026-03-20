@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex out/main"] 1774026060.25857 "out/main.aux" "out/main.bbl" "out/main" 1774026068.78519 0
+["bibtex out/main"] 1774029491.54948 "out/main.aux" "out/main.bbl" "out/main" 1774029497.0754 0
   "./ref.bib" 1773825535.14351 56898 0688b0c7c0717df7b9faf27a1f048c15 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/main.aux" 1774026067.2144 16857 3ee429677d88ae6acb24664c9bb4f899 "pdflatex"
+  "out/main.aux" 1774029496.06426 16835 76ea42dc050496878fd23c53d19c6745 "pdflatex"
   (generated)
   "out/main.bbl"
   "out/main.blg"
   (rewritten before read)
-["pdflatex"] 1774026060.98547 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/These depuis overleaf/main.tex" "out/main.pdf" "main" 1774026068.786 0
+["pdflatex"] 1774029492.01599 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/These depuis overleaf/main.tex" "out/main.pdf" "main" 1774029497.07584 0
   "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/These depuis overleaf/main.tex" 1774019090.94005 4694 ac1d0d189975d318ea2f629cd71d2d2c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -144,10 +144,11 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1770486403 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1770486061 3345734 73c3e0ab3e3452bd60acd93a512a4193 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1774026059.27745 32673 26c8802b565e6e678c54cb2fb046935b ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1774029485.45315 33910 897d8050a4003c96d66e192fcb6c1ead ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Hund_case_c.png" 1771340222.82641 32887 b46cd689fa9d56a6a60d90514a2a50a5 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/PA_concept.png" 1770627578.94052 45523 812e252f8349e03fe0d78e0113998ac5 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Ytterbium_molecular_potentials.png" 1770627579.07145 159775 795877fd972a8f96fd8feed556d61a54 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/chirp_sequence.jpeg" 1774028329.96588 124862 1c1bf9333db643444b6224594461072f ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_87Sr_88Sr.jpeg" 1773825534.98347 197121 4848e66e0ee9a11ccf0ebc9692b59a43 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/gerade_ungerade.png" 1771401256.71152 57207 cef9b08880db033c295cc530132c0e86 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/incident_and_scattered_wave.jpeg" 1772020022.56403 272902 8d5e6a77fe9021ac94fbc38d1f69a33c ""
@@ -179,12 +180,12 @@
   "main.acr" 0 -1 0 ""
   "main.tex" 1774019090.94005 4694 ac1d0d189975d318ea2f629cd71d2d2c ""
   "out/main.acr" 0 -1 0 ""
-  "out/main.aux" 1774026067.2144 16857 3ee429677d88ae6acb24664c9bb4f899 "pdflatex"
-  "out/main.bbl" 1774026060.97629 1464 6ebc8cc3ee878d56715b5481f49f49a2 "bibtex out/main"
-  "out/main.lof" 1774026067.22118 2143 28b1df5c5aa77326207dcb2c732d5220 "pdflatex"
-  "out/main.lot" 1774026067.22177 80 8ef3760424b18d5315040b0f3a94f59e "pdflatex"
-  "out/main.out" 1774026067.21889 14251 060e1b1ae18ba2402f25855dd23a9845 "pdflatex"
-  "out/main.toc" 1774026067.22089 6643 a1db9478fafba02710af5f30b9b6a928 "pdflatex"
+  "out/main.aux" 1774029496.06426 16835 76ea42dc050496878fd23c53d19c6745 "pdflatex"
+  "out/main.bbl" 1774029491.99851 1464 6ebc8cc3ee878d56715b5481f49f49a2 "bibtex out/main"
+  "out/main.lof" 1774029496.06944 2138 6e6f9f70bd12fa00f127c0a03b133f44 "pdflatex"
+  "out/main.lot" 1774029496.06954 80 8ef3760424b18d5315040b0f3a94f59e "pdflatex"
+  "out/main.out" 1774029496.06848 14079 231324a27299952fd1994d37692b4b89 "pdflatex"
+  "out/main.toc" 1774029496.06929 6611 caef02509a92a18d5011ae1ddc114f75 "pdflatex"
   (generated)
   "out/main.acn"
   "out/main.aux"
