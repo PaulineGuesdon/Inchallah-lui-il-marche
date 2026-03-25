@@ -604,11 +604,11 @@ the PA beam sent to the atoms is
 
 \section{88Sr Results}
 \subsection{Atomic line}
-As introduced in this chapter the PA experiment starts in the case of $^{88}Sr$ with a $350 000$ atoms gas at $T=1.7$uK.
-The spectroscopy measurement starts at atomic transition for $f^{RF}_{beating} = f_{Raman}$. The intensity sent to the 
-atoms in figure \ref{atomic line 88sr} is $I = 100 I_{sat}$ at waist $w_0 = 340 \mu$m for $800$ms. Figure \ref{atomic line 88sr} 
-shows the atom loss at this reference frequency with an effective 
-of $200$kHz incounting a power broadening of $74kHz$ and thermal broadening is of the order of
+As introduced in this chapter the PA experiment starts in the case of $^{88}Sr$ at density $n_0=5\times 10^{13}$ atoms$/cm^3$ 
+at $T=%1.7uK. 
+$. The atomic transition is adressed for $f^{RF}_{beating} = f_{Raman}$ by a laser beam of intensity $I = 100 I_{sat}$ at 
+waist $w_0 = 340 \mu$m for $800$ms. Figure \ref{atomic line 88sr} shows the atom loss at this reference frequency with an 
+effective linewidth of $200$kHz incounting a power broadening of $74kHz$ and thermal broadening of the order of
 $17$kHz. Expecting a molecular linewidth of about $\Gamma_{mol} \simeq 2\times \Gamma_{at} \simeq 15kHz$ we suppose an
 additional source of broadening coming from the laser itself detailed in 3.5.2.1. 
 
@@ -619,15 +619,13 @@ additional source of broadening coming from the laser itself detailed in 3.5.2.1
     \label{atomic line 88sr}
 \end{figure}
 
-Then MOGlabs robustly locked, we change $f^{RF}_{beating}$ to search the two first vibrational states visible in figure
-\ref{n=2 vibrational state}. 
-
-The first one has been detected at $f = 23.99\pm$MHz from the atomic transition
-The conditions of this result are a $1000$ms exposition of a $\omega_0 
-= 340 \mu $m laser beam at intensity $826mW/cm^2$ in a $T=1.8\mu$K bosonic gas.\\
-
-The second one $I = 7mW/cm^2$, $10$ms, $f = 102.62$MHz, $\omega_0 
-= 210 \mu $m
+Then the laser MOGlabs robustly locked, we change $f^{RF}_{beating}$ to search the two first vibrational states visible in figure
+\ref{n=2 vibrational state}. \\
+Datas may have been obtained for different waist size in an effort to increase two-body losses. \\
+The first molecular state has been detected for $t=1000$ ms exposure time at intensity $826$ mW/cm$^2$, $f = -23.99\pm$ MHz from the atomic transition.\\ 
+%of a $\omega_0 = 340 \mu $m laser beam
+Then we did detected a second one at $f = -222.3\pm $ MHz for laser beam of intensity $I = 7$ mW/cm$^2$
+for $10$ ms. We estimate the linewidth $\Gamma = $  with power broadening of $357$kHz and thermal broadening $???$ kHz.
 
 
 \begin{figure}[H]
@@ -645,7 +643,32 @@ The second one $I = 7mW/cm^2$, $10$ms, $f = 102.62$MHz, $\omega_0
     \label{n=2 vibrational state}
 \end{figure}
 
+These results are consistent with \cite{zelevinsky_narrow_2006} that presented vibrational states $f_{\nu=1} = -23.932(33)$
+and $f_{\nu=2}=-222.161(35)$ that corresponds to $0_u$ potential. Then we want to verify the two tendencies of \ref{equation one 
+and two-body losses} where we expect to see a first rapid decay that breaks at the dominancy of the one-body loss linear with $N$.
+Figure \ref{88sr exponential decay} shows these two fashions from which the lorentzian fit gives the $K_2$ value : the deduced 
+$l_{opt}$ is $l_{opt} = 13a_0$W/cm$^2$ for $f_{\nu=2}=-222.161(35)$, while in \cite{zelevinsky_narrow_2006} $l_{opt} = 1a_0$W/cm$^2$. 
+For the second line we measure $l_{opt} = 7.6\times 10^3 a_0$ W/cm$^2$ which is also consistent with the theoretical value of \cite{blatt_systematic_2011}.
 
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data94_28_01_26_sr88__exponential_decay.png}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data141_04_03_26_sr88_expoential_decay.png}
+    \end{subfigure}
+    \caption{Caption}
+    \label{88sr exponential decay}
+\end{figure}
+
+\textbf{faire une petite partie analyse power broadening avec datas 116, 117, 18 ?}\\
+
+The aim of these calibration was to be sure about our experimental protocol to be applied on the $87^Sr$ that presents different possible sources of PA failure we explain in the 
+following subsection 3.5.2.
 
 \section{87Sr molecules}
 \subsection{Results}
@@ -653,7 +676,7 @@ The second one $I = 7mW/cm^2$, $10$ms, $f = 102.62$MHz, $\omega_0
 \subsubsection{Laser width (cf 29/01/26)}
 The spectrum of the beating \ref{} measured at the spectrum analyzer shows a frequency 
 broadening at $RBW$ of the time response order of the the excited molecule at 
-$\Gamma \simeq 15$kHz linewidth.\\ 
+$\Gamma \simeq 15$ kHz linewidth.\\ 
 
 For this same signal decreasing the RBW parameter - increasing the resolution at which we
 measure the signal perturbations - reveals a loss of almost half the power of the carrier
