@@ -25,45 +25,45 @@
 \contentsline {section}{\numberline {2.1}Preparation of arbitrary dimension Hilbert space}{9}{section.41}%
 \contentsline {subsection}{\numberline {2.1.1}Raman process}{9}{subsection.42}%
 \contentsline {subsubsection}{\numberline {2.1.1.1}$\delta m_F = \pm 1$}{9}{subsubsection.43}%
-\contentsline {subsubsection}{\numberline {2.1.1.2}$\delta m_F = \pm 2$}{9}{subsubsection.44}%
-\contentsline {subsection}{\numberline {2.1.2}Moglabs chain without cavity}{9}{subsection.45}%
-\contentsline {subsection}{\numberline {2.1.3}Purification of the laser spectrum with a FP cavity}{9}{subsection.46}%
-\contentsline {section}{\numberline {2.2}Interferometric sensing with multiple nuclear spin state}{9}{section.47}%
-\contentsline {subsection}{\numberline {2.2.1}Driving long coherence time Rabi oscillations}{9}{subsection.48}%
-\contentsline {subsubsection}{\numberline {2.2.1.1}Rabi oscillations}{9}{subsubsection.49}%
-\contentsline {subsubsection}{\numberline {2.2.1.2}Interferometer of su(2) symmetry}{10}{subsubsection.50}%
-\contentsline {subsubsection}{\numberline {2.2.1.3}Discussion on inhomogeneites}{10}{subsubsection.51}%
-\contentsline {subsection}{\numberline {2.2.2}Measuring two quantites at a time}{10}{subsection.52}%
-\contentsline {subsubsection}{\numberline {2.2.2.1}Physical principle}{10}{subsubsection.53}%
-\contentsline {subsubsection}{\numberline {2.2.2.2}Results}{10}{subsubsection.54}%
-\contentsline {subsection}{\numberline {2.2.3}Measuring two non commuting observables}{10}{subsection.55}%
-\contentsline {subsubsection}{\numberline {2.2.3.1}Principle}{10}{subsubsection.56}%
-\contentsline {section}{\numberline {2.3}SU(N) symmetry (ce qu'il faudrait pr la tester e.g densité gaz, alimentation bobines -> comment faire mieux que les chiffres actuels)}{10}{section.57}%
-\contentsline {chapter}{\numberline {3}Engineering highly entangled system of photoassociated 87Sr atoms}{11}{chapter.58}%
-\contentsline {section}{\numberline {3.1}Introduction on photoassociation}{11}{section.59}%
-\contentsline {subsection}{\numberline {3.1.1}Preamble on scattering theory}{11}{subsection.60}%
-\contentsline {subsection}{\numberline {3.1.2}What is photoassociation}{14}{subsection.76}%
-\contentsline {subsection}{\numberline {3.1.3}Parameters for PA study}{15}{subsection.82}%
-\contentsline {subsection}{\numberline {3.1.4}Internal energy states}{19}{subsection.100}%
-\contentsline {subsubsection}{\numberline {3.1.4.1}WKB approximation}{19}{subsubsection.101}%
-\contentsline {subsubsection}{\numberline {3.1.4.2}Leroy-Bernstein theory}{20}{subsubsection.106}%
-\contentsline {subsection}{\numberline {3.1.5}External energy states}{21}{subsection.111}%
-\contentsline {section}{\numberline {3.2}About photoassociation on other species}{21}{section.115}%
-\contentsline {subsection}{\numberline {3.2.1}Mass scaling ($^{88}Sr$)}{21}{subsection.116}%
-\contentsline {subsection}{\numberline {3.2.2}Ytterbium: hfs}{22}{subsection.120}%
-\contentsline {section}{\numberline {3.3}PA in practice}{23}{section.122}%
-\contentsline {subsection}{\numberline {3.3.1}Protocol}{23}{subsection.123}%
-\contentsline {subsection}{\numberline {3.3.2}Setup}{24}{subsection.124}%
-\contentsline {section}{\numberline {3.4}88Sr Results}{26}{section.128}%
-\contentsline {subsection}{\numberline {3.4.1}Atomic line}{26}{subsection.129}%
-\contentsline {section}{\numberline {3.5}87Sr molecules}{28}{section.133}%
-\contentsline {subsection}{\numberline {3.5.1}Results}{28}{subsection.134}%
-\contentsline {subsection}{\numberline {3.5.2}Technical issues of inhabilitation of photoassociation}{28}{subsection.135}%
-\contentsline {subsubsection}{\numberline {3.5.2.1}Laser width (cf 29/01/26)}{28}{subsubsection.136}%
-\contentsline {subsubsection}{\numberline {3.5.2.2}PDH sidebands}{29}{subsubsection.137}%
-\contentsline {subsubsection}{\numberline {3.5.2.3}Calibrating the laser width with another laser}{30}{subsubsection.139}%
-\contentsline {subsection}{\numberline {3.5.3}Physical sources of inhabilitation of photoassociation}{30}{subsection.140}%
-\contentsline {subsubsection}{\numberline {3.5.3.1}On F = 9/2 : predissociation}{30}{subsubsection.141}%
-\contentsline {subsubsection}{\numberline {3.5.3.2}Coupling to more energetic state from the IR}{30}{subsubsection.143}%
-\contentsline {subsubsection}{\numberline {3.5.3.3}Node of wavefunction for some vibrational states}{31}{subsubsection.145}%
-\contentsline {chapter}{\numberline {A}Algorithms}{35}{appendix.148}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}$\delta m_F = \pm 2$}{10}{subsubsection.45}%
+\contentsline {subsection}{\numberline {2.1.2}Moglabs chain without cavity}{11}{subsection.47}%
+\contentsline {subsection}{\numberline {2.1.3}Purification of the laser spectrum with a FP cavity}{12}{subsection.49}%
+\contentsline {section}{\numberline {2.2}Interferometric sensing with multiple nuclear spin state}{13}{section.51}%
+\contentsline {subsection}{\numberline {2.2.1}Driving long coherence time Rabi oscillations}{13}{subsection.52}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Rabi oscillations}{13}{subsubsection.53}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Interferometer of su(2) symmetry}{13}{subsubsection.55}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Discussion on inhomogeneites}{14}{subsubsection.57}%
+\contentsline {subsection}{\numberline {2.2.2}Measuring two quantites at a time}{14}{subsection.59}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Physical principle}{14}{subsubsection.60}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Results}{15}{subsubsection.62}%
+\contentsline {subsection}{\numberline {2.2.3}Measuring two non commuting observables}{15}{subsection.64}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Principle}{15}{subsubsection.65}%
+\contentsline {section}{\numberline {2.3}SU(N) symmetry (ce qu'il faudrait pr la tester e.g densité gaz, alimentation bobines -> comment faire mieux que les chiffres actuels)}{15}{section.67}%
+\contentsline {chapter}{\numberline {3}Engineering highly entangled system of photoassociated 87Sr atoms}{16}{chapter.68}%
+\contentsline {section}{\numberline {3.1}Introduction on photoassociation}{16}{section.69}%
+\contentsline {subsection}{\numberline {3.1.1}Preamble on scattering theory}{16}{subsection.70}%
+\contentsline {subsection}{\numberline {3.1.2}What is photoassociation}{19}{subsection.86}%
+\contentsline {subsection}{\numberline {3.1.3}Parameters for PA study}{20}{subsection.92}%
+\contentsline {subsection}{\numberline {3.1.4}Internal energy states}{24}{subsection.110}%
+\contentsline {subsubsection}{\numberline {3.1.4.1}WKB approximation}{24}{subsubsection.111}%
+\contentsline {subsubsection}{\numberline {3.1.4.2}Leroy-Bernstein theory}{25}{subsubsection.116}%
+\contentsline {subsection}{\numberline {3.1.5}External energy states}{26}{subsection.121}%
+\contentsline {section}{\numberline {3.2}About photoassociation on other species}{26}{section.125}%
+\contentsline {subsection}{\numberline {3.2.1}Mass scaling ($^{88}Sr$)}{26}{subsection.126}%
+\contentsline {subsection}{\numberline {3.2.2}Ytterbium: hfs}{27}{subsection.130}%
+\contentsline {section}{\numberline {3.3}PA in practice}{28}{section.132}%
+\contentsline {subsection}{\numberline {3.3.1}Protocol}{28}{subsection.133}%
+\contentsline {subsection}{\numberline {3.3.2}Setup}{29}{subsection.134}%
+\contentsline {section}{\numberline {3.4}88Sr Results}{31}{section.138}%
+\contentsline {subsection}{\numberline {3.4.1}Atomic line}{31}{subsection.139}%
+\contentsline {section}{\numberline {3.5}87Sr molecules}{33}{section.143}%
+\contentsline {subsection}{\numberline {3.5.1}Results}{33}{subsection.144}%
+\contentsline {subsection}{\numberline {3.5.2}Technical issues of inhabilitation of photoassociation}{33}{subsection.145}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}Laser width (cf 29/01/26)}{33}{subsubsection.146}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}PDH sidebands}{34}{subsubsection.148}%
+\contentsline {subsubsection}{\numberline {3.5.2.3}Calibrating the laser width with another laser}{36}{subsubsection.152}%
+\contentsline {subsection}{\numberline {3.5.3}Physical sources of inhabilitation of photoassociation}{37}{subsection.154}%
+\contentsline {subsubsection}{\numberline {3.5.3.1}On F = 9/2 : predissociation}{37}{subsubsection.155}%
+\contentsline {subsubsection}{\numberline {3.5.3.2}Coupling to more energetic state from the IR}{38}{subsubsection.157}%
+\contentsline {subsubsection}{\numberline {3.5.3.3}Node of wavefunction for some vibrational states}{39}{subsubsection.159}%
+\contentsline {chapter}{\numberline {A}Algorithms}{43}{appendix.162}%
