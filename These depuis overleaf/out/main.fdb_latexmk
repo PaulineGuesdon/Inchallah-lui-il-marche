@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex out/main"] 1774611862.71932 "out/main.aux" "out/main.bbl" "out/main" 1774611881.20958 0
+["bibtex out/main"] 1774634367.71841 "out/main.aux" "out/main.bbl" "out/main" 1774634378.24295 0
   "./ref.bib" 1773825535.14351 56898 0688b0c7c0717df7b9faf27a1f048c15 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/main.aux" 1774611879.00225 20584 477be62ca8f6abae863e5e1f39687131 "pdflatex"
+  "out/main.aux" 1774634376.99213 21107 09618eecb480d30fb0e5470cb10f1c84 "pdflatex"
   (generated)
   "out/main.bbl"
   "out/main.blg"
   (rewritten before read)
-["pdflatex"] 1774611863.9792 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/These depuis overleaf/main.tex" "out/main.pdf" "main" 1774611881.21019 0
+["pdflatex"] 1774634368.71891 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/These depuis overleaf/main.tex" "out/main.pdf" "main" 1774634378.24349 0
   "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/These depuis overleaf/main.tex" 1774019090.94005 4694 ac1d0d189975d318ea2f629cd71d2d2c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -144,9 +144,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1770486403 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1770486061 3345734 73c3e0ab3e3452bd60acd93a512a4193 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1774611757.50428 40111 122554b5d5a3e5bd59cfcba9197462a8 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1774634367.01964 40388 84021ee24d1532a84cbd228863bd5a46 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Guttridge_PA_process.pdf" 1774633072.88442 51626 4710a9fa913b33da773e14938cabb2bd ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Hund_case_c.png" 1771340222.82641 32887 b46cd689fa9d56a6a60d90514a2a50a5 ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/PA_concept.png" 1770627578.94052 45523 812e252f8349e03fe0d78e0113998ac5 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Ytterbium_molecular_potentials.png" 1770627579.07145 159775 795877fd972a8f96fd8feed556d61a54 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/beating_analysis.png" 1774599831.59917 843833 530823a9614fa9dc1ddd8df007af89f9 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/chirp_sequence.jpeg" 1774028329.96588 124862 1c1bf9333db643444b6224594461072f ""
@@ -198,12 +198,12 @@
   "main.acr" 0 -1 0 ""
   "main.tex" 1774019090.94005 4694 ac1d0d189975d318ea2f629cd71d2d2c ""
   "out/main.acr" 0 -1 0 ""
-  "out/main.aux" 1774611879.00225 20584 477be62ca8f6abae863e5e1f39687131 "pdflatex"
-  "out/main.bbl" 1774611863.96438 1967 a270470699c75078755f67cc2be19031 "bibtex out/main"
-  "out/main.lof" 1774611879.0176 3652 93b3ebb12f67f6e43cb5269b610cb464 "pdflatex"
-  "out/main.lot" 1774611879.01778 80 8ef3760424b18d5315040b0f3a94f59e "pdflatex"
-  "out/main.out" 1774611879.01523 14279 0c003257b0766f27ac43a6b38db01a44 "pdflatex"
-  "out/main.toc" 1774611879.01739 6711 4b150be9e0c4ebca93fd945ff7d2a409 "pdflatex"
+  "out/main.aux" 1774634376.99213 21107 09618eecb480d30fb0e5470cb10f1c84 "pdflatex"
+  "out/main.bbl" 1774634368.70801 1967 a270470699c75078755f67cc2be19031 "bibtex out/main"
+  "out/main.lof" 1774634377.00051 3914 72a72b09b614a52d355e2a1dce744a0d "pdflatex"
+  "out/main.lot" 1774634377.00112 80 8ef3760424b18d5315040b0f3a94f59e "pdflatex"
+  "out/main.out" 1774634376.99918 14279 0c003257b0766f27ac43a6b38db01a44 "pdflatex"
+  "out/main.toc" 1774634377.00023 6711 4b150be9e0c4ebca93fd945ff7d2a409 "pdflatex"
   (generated)
   "out/main.acn"
   "out/main.aux"
