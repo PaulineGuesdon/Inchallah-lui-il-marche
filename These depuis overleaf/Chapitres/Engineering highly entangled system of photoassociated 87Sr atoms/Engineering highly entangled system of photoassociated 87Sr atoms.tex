@@ -1,37 +1,48 @@
 % !TeX root = ../../main.tex
-\chapter{Engineering highly entangled system of photoassociated 87Sr atoms}
-In metrology the current limiting error source of measuring a parameter $\phi$ is the quantum shot noise $\delta \phi \simeq \frac{1}{\sqrt{N}}$.
-In the chapter on Ramsey interferometers the phase $\phi$ acquired by the qubit enhanced by $\frac{\pi}{2}$ pulses was limited by this boundary.\\
-Engineering Dicke states would make possible to go beyond this limitation. For such system variance express as $\delta \phi \simeq \frac{1}{N}$ from
+\chapter{Engineering entangled ensembles $^{87}Sr$ by photoassociation}
+In metrology a common limiting experimental source on a parameter $\phi$ is the quantum shot noise $\delta \phi \simeq \frac{1}{\sqrt{N}}$ \cite{pezze_quantum_2014}.
+We presented in chapter on Ramsey interferometers an accuracy going beyond this limit: the variance of $<\sigma_Z>$ 
+tends to quantum shot-noise limit $1/\sqrt{2N_{atoms}}$ when limiting atoms leak to other $m_F$ states. \\
+Entangled states like Dicke states would make possible to go beyond this limitation. For such system variance 
+express as $\delta \phi \simeq \frac{1}{N}$ from
 the Heisenberg principle being the best accuracy we attempt in metrology.
-$^{87}Sr$ accessible large Hilbert spaces enable to improve even more the accuracy of the measurement.\\
-Compléter avec ref \cite{pezze_quantum_2014} et autres
+Ultracold gases of entangled fermionic strontium enable to extend the dimension of the Hilbert space which will 
+also be a great increase of the phase sensitivity. \\
 
+This chapter opens with elements of scattering theory: at large interatomic separations, the 1D Schrödinger equation 
+yields a solution that naturally defines the scattering length. These elements lay the groundwork for 
+introducing the concept of photoassociation and the associated atomic equation evolution through one and two-body losses.
+Afterwards a discussion on the molecular potentials will give an estimation of the bound energy where we will enhance
+two-body losses. We will finally present the experimental results and discuss technical and physical issues that could
+lead to wrong interpretation or absence of signal.
 
 \section{Introduction on photoassociation}
 \subsection{Preamble on scattering theory}
-
-In the study of electron-nuclei interactions, the Born-Oppenheimer approximation provides a natural 
+Understanding PA process with two atoms necessits an introduction on scattering theory to bring out quantites such 
+as optical length and scattering length.\\
+In the study of inter-atomic interactions, the Born-Oppenheimer approximation provides a natural 
 simplification. Due to the large mass ratio $\mu = m_p/m_e \simeq 1000$, the nuclei move on a much 
 slower timescale than the electrons. One can therefore neglect the coupling terms between the nuclear 
 and electronic kinetic energies, and solve the electronic problem on spherical coordinate system centered
 in nucleus.\\
-Once the nuclear coordinates are fixed, the effective potential experienced by the electrons inherits the spherical symmetry of the problem. 
 This allows the total wavefunction to be factorized into a radial and angular part:
 
 \begin{equation}
     \psi(r, \theta,\phi) = R_l(r) Y^m_l(\theta, \phi)
 \end{equation}
-
+\\
 where the spherical harmonics $Y^m_l(\theta, \phi)$ encode the angular dependance.
+$R_l(r)$ is the function describing the radial movement of the bound atoms well described in the frame centered 
+in its center of mass. The potential experienced by the atoms inherits the spherical symmetry of the problem. 
 The Schrödinger equation then reduces to a one-dimensional problem which can be treated for each
 partial wave l:
 \begin{equation}
-    -\frac{\hbar^2}{2\mu}\left(\frac{1}{r^2} \frac{d^2 R_l(r)}{dr^2}r^2 - \frac{l(l+1)}{r^2} 
+    -\frac{\hbar^2}{2m_p}\left(\frac{1}{r^2} \frac{d^2 R_l(r)}{dr^2}r^2 - \frac{l(l+1)}{r^2} 
     + \hat{V}(r)\right)R_l(r) = E R_l(r)
     \label{radial equation}
 \end{equation}
-This one-dimensional structure allows an analogy with the Landau-Zener framework, as will be 
+
+This one-dimensional structure allows an analogy with the \cite{Landau} framework, as will be 
 discussed below. To extract the scattering properties of the system, one studies the asymptotic 
 behavior of the solutions to this equation. At large distances, where the potential $\hat{V}(r)$
 vanishes, the general solution for each partial wave $l$ takes the form \cite{dalibard_interactions_nodate}:
@@ -42,6 +53,20 @@ vanishes, the general solution for each partial wave $l$ takes the form \cite{da
 
 where $a_l$ is a normalization factor and $\delta_l$ the phase acquired by the l-th partial wave 
 due to the interaction potential.\\
+
+Continuity of wavefunction for all inter-atomic distances imposes a constraint on the phase
+shifts which at low momenta $k$ finds:
+
+ \begin{equation}
+    \delta_l \propto k^{2l+1}
+ \end{equation}
+
+For s-waves ($l=0$), this leads to the definition of the scattering length:
+\begin{equation}
+    a = -\lim_{k\to 0} \delta_0/k
+    \label{scattering length}
+\end{equation}
+which characterizes the range of the interaction in the low-energy limit.
 
 The full wavefunction is recovered by summing over all partial waves. At large distances, this
 superposition can be rewritten as an incoming plane wave and an outgoing scattered spherical wave:
@@ -60,29 +85,16 @@ inelastic and $\theta$ is the angle between the incident and scattered wavevecto
     \caption{Caption}
     \label{fig:scattering_concept}
 \end{figure}
-
-Requiring continuity of the wavefunction across all regions imposes a constraint on the phase shifts.
-At low momenta $k$ one finds:
-
- \begin{equation}
-    \delta_l \propto k^{2l+1}
- \end{equation}
-
-For s-waves ($l=0$), this leads to the definition of the scattering length:
-\begin{equation}
-    a = -\lim_{k\to 0} \delta_0/k
-    \label{scattering length}
-\end{equation}
-which characterizes the effective range of the interaction in the low-energy limit.
-To further understand how the atoms scatter, the scattered part $\Psi - e^{ikz}$ on \ref{incoming outcoming scattering wave}
-is expressed in a spherical basis as a sum over all the partial waves:
+The assymptotical expression of $\Psi$ and $e^{ikz}$ is expressed in a spherical basis as a sum 
+over all the partial waves enable to further understand how the atoms scatter. We can give a 
+decomposition of $\Psi$ as in \ref{incoming outcoming scattering wave}
 
 \begin{equation}
     \Psi \simeq \frac{i}{2kr}\sum_{l=0}^{\infty}(2l+1)\left((-1)^l e^{-ikr} - S_l e^{ikr}\right)
     \label{1D schrodinger solution}
 \end{equation}
 
-with $S_l = e^{2i\delta_l}$ the scattering amplitude. \\
+that give rise to a spherical part and a scattering term with $S_l = e^{2i\delta_l}$ the scattering amplitude.\\
 
 For a \textbf{conservative hamiltonian} $|S_l| = 1$ meaning $\delta_l \in \mathbb{R}$.
 In this case the wavefunction is well a sum of incoming and
@@ -96,7 +108,7 @@ of the potential is effective writes as
 \end{equation}
 
 But we see in equation \ref{1D schrodinger solution} that
-$|S_l|$ needs to be $<1$ to allow dissipation of the wavefunction.
+$|S_l|$ needs to be $<1$ to describe dissipation of the wavefunction.
 Defining $\delta_l$ as a complex number satisfies this condition.
 
 In this case the inelastic collisions cross section reads as
