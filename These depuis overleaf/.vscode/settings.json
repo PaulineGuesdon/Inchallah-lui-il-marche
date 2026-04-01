@@ -10,6 +10,12 @@
   "latex-workshop.latex.outDir": "./out",
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.search.rootFiles.include": [
+    "main.tex"
+  ],
+  "latex-workshop.latex.search.rootFiles.exclude": [
+    "**/out/**"
+  ],
   "latex-workshop.latex.rootFile.doNotPrompt": true,
   "latex-workshop.latex.tools": [
     {

@@ -94,37 +94,42 @@ decomposition of $\Psi$ as in \ref{incoming outcoming scattering wave}
     \label{1D schrodinger solution}
 \end{equation}
 
-that give rise to a spherical part and a scattering term with $S_l = e^{2i\delta_l}$ the scattering amplitude.\\
+that gives rise to a spherical part and a scattering term with $S_l = e^{2i\delta_l}$ the scattering amplitude.\\
 
-For a \textbf{conservative hamiltonian} $|S_l| = 1$ meaning $\delta_l \in \mathbb{R}$.
-In this case the wavefunction is well a sum of incoming and
-outcoming waves of same amplitude.\\
+In the presence of inelastic processes such as photoassociation, the colliding atom pair can be irreversibly lost 
+from the scattering channel — either by forming a bound molecular 
+state or by releasing kinetic energy. This loss of flux from the
+incoming channel cannot be captured by a purely real phase shift, 
+as $S_l = 1$ implies full conservation of the wavefunction 
+amplitude. To account for this absorption of flux, $\delta_l$ 
+must be extended to the complex plane, allowing $S_l < 1$
+and introducing the possibility of inelastic scattering.\\
 
-The elastic cross section representing the surface where the scope 
+The associated elastic cross section representing the surface where the scope 
 of the potential is effective writes as
 \begin{equation}
     \sigma_{el} = \frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)|1-S_l|^2
     \label{sigma elastic}
 \end{equation}
+But we see in equation \ref{1D schrodinger solution} that $|S_l|$ needs to be < 1 to allow dissipation of the
+wavefunction. Defining $\delta_l$ as a complex number satisfies this condition and the inelastic cross section
+is
 
-But we see in equation \ref{1D schrodinger solution} that
-$|S_l|$ needs to be $<1$ to describe dissipation of the wavefunction.
-Defining $\delta_l$ as a complex number satisfies this condition.
-
-In this case the inelastic collisions cross section reads as
 \begin{equation}
     \sigma_{inel} = \frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)(1-|S_l|^2)
     \label{sigma inelastic}
 \end{equation}
 
-In ultracold gases, only s-wave atoms can collide because they do not have 
-enough kinetic energy to pass the potential barrier of higher angular momentum states
-so $l=0$ and the scattering amplitude is
+In ultracold gases, only collisions in s-wave are impacted by the interaction potential, because partial waves
+of higher $l$ mostly are reflected by the centrifugal barrier before crossing regions of lower interaction orders.
+For the rest of the discussion we will focus only on s-wave collisions.\\
+Then from the condition $|S_l| < 1$ we deduce an approximated scattering amplitude $S_0$
+
 \begin{equation}
     S_0 = e^{2i\delta_0} \simeq 1 + 2i\delta_0
 \end{equation}
 
-By using the result of \ref{scattering length}
+Added to the result of \ref{scattering length},
 \begin{equation}
      1 + 2i\delta_0 \simeq 1 - 2ika
 \end{equation}
