@@ -20,10 +20,7 @@
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk (pdfLaTeX)",
-      "command": "/Library/TeX/texbin/latexmk",
-      "env": {
-        "PATH": "/Library/TeX/texbin:/usr/bin:/bin:/usr/sbin:/sbin"
-      },
+      "command": "latexmk",
       "args": [
         "-synctex=1",
         "-interaction=nonstopmode",

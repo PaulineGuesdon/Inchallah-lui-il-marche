@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "Ma bibliothèque/Ma bibliothèque/files"
+		}
+	],
+	"settings": {
+		"latex-workshop.synctex.afterBuild.enabled": true,
+		"latex-workshop.view.pdf.viewer": "tab",
+		"latex-workshop.view.pdf.internal.synctex.keybinding": "double-click"
+	}
+}

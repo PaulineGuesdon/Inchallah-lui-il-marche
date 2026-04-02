@@ -111,7 +111,7 @@ of the potential is effective writes as
     \sigma_{el} = \frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)|1-S_l|^2
     \label{sigma elastic}
 \end{equation}
-But we see in equation \ref{1D schrodinger solution} that $|S_l|$ needs to be < 1 to allow dissipation of the
+But we see in equation \ref{1D schrodinger solution} that $|S_l|$ needs to be $<1$ to allow dissipation of the
 wavefunction. Defining $\delta_l$ as a complex number satisfies this condition and the inelastic cross section
 is
 
@@ -120,9 +120,7 @@ is
     \label{sigma inelastic}
 \end{equation}
 
-In ultracold gases, only collisions in s-wave are impacted by the interaction potential, because partial waves
-of higher $l$ mostly are reflected by the centrifugal barrier before crossing regions of lower interaction orders.
-For the rest of the discussion we will focus only on s-wave collisions.\\
+
 Then from the condition $|S_l| < 1$ we deduce an approximated scattering amplitude $S_0$
 
 \begin{equation}
@@ -152,10 +150,11 @@ state. For inelasticity photoassociation is a good example of
 dissipative process where two atoms in the ground state are coupled to a molecular state by a laser.
 
 \subsection{Photoassociation and collisions}
-Photoassociation (PA) is a process from which free atoms pair our bounded to each other through two-body
-and three-body losses via a resonant laser. \\
-In the basis $\{\ket{\psi_g}, \ket{\psi_e}\}$ of free atoms in a radial potential $V_g(r)$ and first molecular state 
-$V_e(r)$ in the absence of the resonant laser the equation evolution of the system express as
+Photoassociation (PA) is a process from which free atoms pair are bound to each other. Effectively, the bound 
+molecule is typically seen as lost, and perceived as a two-body loss effect. \\
+In the atomic pair frame, the electric dipole interaction drives the system from the ground electronic state
+$\psi_g$ of potential $V_g(r)$ to the excited state $\psi_e$ of $V_e(r)$. \\
+In the absence of the resonant laser the equation evolution of the system express as
 
 \begin{equation}
     i\hbar \frac{d}{dt}
@@ -165,8 +164,8 @@ $V_e(r)$ in the absence of the resonant laser the equation evolution of the syst
     \end{pmatrix}
     =
     \begin{pmatrix}
-        -\frac{\hbar^2}{2\mu}\nabla + V_g & 0\\
-        0 & -\frac{\hbar^2}{2\mu}\nabla + V_e 
+        -\frac{\hbar^2}{2\mu}\nabla^2 + V_g & 0\\
+        0 & -\frac{\hbar^2}{2\mu}\nabla^2 + V_e 
     \end{pmatrix}
     \begin{pmatrix}
         \psi_g\\
@@ -196,20 +195,22 @@ effective evolution equation of the coupled atoms is
     \end{pmatrix}
     =
     \begin{pmatrix}
-        -\frac{\hbar^2}{2\mu}\nabla + V_g & \Omega/2\\
-        \Omega/2 & -\frac{\hbar^2}{2\mu}\nabla + V_e + \hbar \Delta -i\frac{\gamma_{mol}}{2} 
+        -\frac{\hbar^2}{2\mu}\nabla^2 + V_g & \Omega/2\\
+        \Omega/2 & -\frac{\hbar^2}{2\mu}\nabla^2 + V_e + \hbar \Delta -i\frac{\gamma_{mol}}{2} 
     \end{pmatrix}
     \begin{pmatrix}
         \psi_g\\
         \psi_e
     \end{pmatrix}.
-    \label{elastic evolution equation}
+    \label{inelastic evolution equation}
 \end{equation}\\
 with $\gamma_{mol}$ the molecular spontaneous emission linewidth.\\
 
-Then sum of partial waves determined in \ref{1D schrodinger solution}. are solutions of this hamiltonian.
-We can deduce the phase $\delta_l$ (see \ref{solution at long r}) and so the scattering length are then modified.
-The real part of $a$ encodes two-body losses rate whereas its imaginary part changes the collisions properties. In this 
+At large distance the solution of this hamiltonian takes the form of a spinor $\ket{\psi_g} + \epsilon \ket{\psi_e}$
+where the excited channel is weakly populated far from resonance. The sum of partial waves determined in \ref{1D schrodinger solution} 
+are a representation of $\ket{\psi _g}$ at long distance.
+From this asymptotic form one extracts the scattering phase shift $\delta_l$ (see \ref{solution at long r}) and so the scattering length are then modified.
+The imaginary part of $a$ encodes two-body losses rate whereas its real part changes the collisions properties. In this 
 case we can write an effective scattering length enclosing the background scattering
 length $a_{bg}$ standing for elastic collisions without any coupling, $\delta a$ a
 modification of it because of the coupling and still the inelastic part of it
@@ -294,45 +295,30 @@ While exciting a single atom is straightforward, identifying the correct
 molecular state to target is considerably more involved, since a large 
 number of potentials and internal states coexist. To navigate this complexity, 
 we now want to determine and enumerate the molecular potentials $V_e$ by introducing the molecular quantum 
-numbers that label these states and determine their accessibility.\\
+numbers that label these states and determine their possible transitions.\\
 
 \subsubsection{Molecular potentials }
-\textbf{RAPPELS SUR BO}\\
-\textbf{Determination of eigenvectors: stable quantum numbers}\\
+Confirming to the atomic case, the Born-Oppenheimer approximation allows to describe the movement of the electrons
+separately from the nuclei, then \ref{1D schrodinger solution} is valid for bound atoms. The aim of this part of the
+exposé is to determine the shape of $V_e$ on what equation \ref{1D schrodinger solution} depends.\\
 
-A first quantum number to introduce is the rotational quantum number $R$ that desbribes the molecular internal 
-energy associated to the rotationnal motion of the molecule around its center of mass. There is a parity of the total wavefunction that needs to 
-be fulfilled. In addition there are only s-wave collisions in cold gases then the part of the 
-wavefunction should be odd the spin one antisymetric
-
-\begin{equation}
-    \ket{\Psi} = \left(\ket{\phi_e}_A \ket{\phi_g}_B + (-1)^R \ket{\phi_e}_B \ket{\phi_g}_A\right)
-     \otimes\ket{\chi}
-\end{equation}
-
-$\ket{\phi_e}$ and $\ket{\phi_g}$ are the electronic wavefunctions of the two atoms A and B 
-in ground and excited state respectively, $\ket{\chi}$ is the spin wavefunction.
-This restricts the accessible values $R = 0, 2$ or $4$... which directly limits the number of rotational states that can be populated during photoassociation.
-
-As seen in the subsection 3.1.1 in a molecular picture the hamiltonian expresses as 
+In ultracold gases, only collisions in s-wave are impacted by the interaction potential, 
+because partial waves of higher $l$ mostly are reflected by the centrifugal barrier before crossing regions of 
+lower interaction orders. Then in respect with Pauli statistics the orbital wavefunction $\ket{\phi}$ being even 
+the spin wavefunction should be odd to conserve the non-symmetric nature of the total wavefunction $\ket{\psi}$.
+For two atoms A and B possibly in spin state $\beta_1$ or $\beta_2$ the expression of total wavefunction  
 
 \begin{equation}
-    \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{V}_{BO} + \hat{H}_{HF} 
-    \label{general hamiltonian of molecule}
+    \ket{\Psi} = \left(\ket{\beta_1}_A \ket{\beta_2}_B + (-1)^R \ket{\beta_1}_B \ket{\beta_2}_A\right)
+     \otimes\ket{\phi}
 \end{equation}
 
-It is possible to neglect some orders of electronic interactions depending on the Hund's case and the distance region
-between the atoms.
-In our case we approximate the potential to be as for $^{173}Yb$ in \cite{han_photoassociation_2018}
-\begin{equation}
-    \hat{V}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
-    \label{ytt potential}
-\end{equation}
-A first key property is the symmetry of the orbital wavefunction. For an
-even wavefunction the exchange of the two atoms $A$ and $B$ does not change the sign of the 
-wavefunction, as in left figures \ref{fig:u-g symmetry}. The potential is then qualified \textbf{gerade}.
-The probability of finding electrons in between the two atoms is high compared to the 
-\textbf{ungerade} potential where the odd wavefunction cancels the probability of finding electrons in between.
+constrains the \textbf{rotational quantum number $R$} to values $R = 0, 2$ or $4$... \cite{reichenbach_optical_nodate}
+This first intrinsic molecular quantum number describes the rotational motion of the molecule on its center of mass.
+For even $R$ the molecular potential associated is called \textbf{gerade}. Symmetrically odd value of $R$ gives the
+denomination of \textbf{ungerade} potential. It means that the probability of finding electrons in between the two 
+atoms is high compared to the \textbf{ungerade} potential where the odd wavefunction cancels the probability of finding 
+electrons in between as reveals the figure \ref{fig:u-g symmetry}
 
 \begin{figure}[H]
     \centering
@@ -341,25 +327,21 @@ The probability of finding electrons in between the two atoms is high compared t
     \label{fig:u-g symmetry}
 \end{figure}
 
+Another interaction playing a crucial role in determining the molecular structure is the spin-orbit coupling. In this context, the total angular 
+momentum of the molecule is defined as $T = R + F = R + I + J$, where $F$ denotesthe total spin of the two atoms $f_1 + f_2$, $J = j_1+j_2$ 
+accounts for the spin-orbit coupling, and R is the rotational angular momentum of the molecule. \\
 
-
-\textbf{The good quantum numbers}\\
-The total angular momentum of the molecule is $T = R + F = R + I + J$, $F$ being the 
-total spin of the two atoms $f_1 + f_2$, $J = j_1+j_2$ encodes the spin-orbit 
-coupling, and R is the rotational angular momentum of the molecule. 
-The projection of the angular momenta onto the internuclear axis is:
+The projections of these angular momenta onto the internuclear axis are characterised by
 \begin{equation}
     \Omega = \Lambda + \Sigma
 \end{equation}
 
-where $\Lambda$ is the projection of the orbital momentum of the molecule on the internuclear axis
-and $\Sigma$ the projection of the momentum spin.
-$M_T$ denotes the projection of $T$ onto a chosen quantization axis.\\
+where $\Lambda$ represents the projection of the orbital momentum of the molecule on the internuclear axis
+and $\Sigma$ the projection of the momentum spin. Furthermore,$M_T$ denotes the projection of $T$ onto a chosen quantization axis.\\
 
+In particular case of the $^1S_0$ - $^3P_1$ molecular state, the spin-orbit interaction is sufficiently strong to couple the elctronic angular momentum
+to the internuclear axis. This regime is quantified bt $\Omega$ and is appropriately described within the framework of Hund's case (c).
 
-For $^1S_0$ - $^3P_1$ molecular state there is a strong spin-orbit coupling that couples its 
-related momentum to the internuclear axis (\ref{fig:hund}), quantified by $\Omega$ and described as Hund's case 
-(c) \\
 
 \begin{figure}[H]
     \centering
@@ -369,15 +351,15 @@ related momentum to the internuclear axis (\ref{fig:hund}), quantified by $\Omeg
     \label{fig:hund}
 \end{figure}
 
-The experiment presented in the following section is photoassociation in the $F=11/2$ hyperfine
-state. We will focus in this state to simplify the discussion.\\
+Now all the specificites of molecular potential states exposed such as the u-g symmetry and the stable quantum number for bound atoms
+I can apply to case of $^{87}Sr$ for which we will photoassociate atoms in the $F=11/2$ hyperfine state. \\
+
 Say we have one atome in the $^1S_0$ state and one in the $^3P_1$ state: we can have a total spin of $J = 0, 1$ 
 or $2$. It gives possible values of total atomic angular momentum F:
 
 \begin{align}
-\text{For } J=1, &\quad F=\frac{7}{2},\frac{9}{2},\frac{11}{2} \\
-\end{align}\\
-
+\text{For } J=1, &\quad F=\frac{7}{2},\frac{9}{2},\frac{11}{2} 
+\end{align}
 
 We have one atom with $f_1=9/2$ from the $^1S_0$ state and one in the $^3P_1$ state with $f_2=11/2$.
 The possible values of total angular momentum of the molecule are 
@@ -424,6 +406,21 @@ Near this resonance atoms are illuminated for $30$ms at low intensity $I = 37$mW
 power broadening, allowing the nearest bound state to the dissociation to be resolved.
 At larger red detunings the intensity is increased and the illumination time optimized to maximize 
 contrast.\\
+
+As seen in the subsection 3.1.1 in a molecular picture the hamiltonian expresses as 
+
+\begin{equation}
+    \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{V}_{BO} + \hat{H}_{HF} 
+    \label{general hamiltonian of molecule}
+\end{equation}
+
+It is possible to neglect some orders of electronic interactions depending on the Hund's case and the distance region
+between the atoms.
+In our case we approximate the potential to be as for $^{173}Yb$ in \cite{han_photoassociation_2018}
+\begin{equation}
+    \hat{V}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
+    \label{ytt potential}
+\end{equation}
 \subsection{Internal energy states}
 
 \subsubsection{WKB approximation}
