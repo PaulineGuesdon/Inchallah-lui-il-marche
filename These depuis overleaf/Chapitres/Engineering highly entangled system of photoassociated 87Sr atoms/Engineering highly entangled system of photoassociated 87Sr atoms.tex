@@ -227,8 +227,7 @@ One can express the atom number evolution depending on this linewidth as
 
 where $\beta = K_2/V_e$ in comparison with \cite{han_photoassociation_2018}. $V_e$ is the effective volume of the cloud $(2\pi )^{3/2}\sigma_x 
 \sigma_y \sigma_z$ for a density Gaussian distribution, $\Gamma$ 
-the one-body loss rate limited by vacuum quality and 2-body losses express as $\beta \propto \gamma_{mol}$
-and is possible to determine by a fit.\\
+the one-body loss rate limited by vacuum quality and 2-body losses\\
 
 
 Finally in a context of spectroscopy, to adress more bound states
@@ -246,48 +245,45 @@ to tune the scattering length of the atoms and thus the interactions in the syst
 
 \subsection{General scaling laws for PA}
 We will discuss in this subsection the dependence of the PA rate on different parameters 
-of the two-body losses rate $K_2$. This latter introduced above can express as
-\cite{reschovsky_narrow-line_2018}
+of the two-body losses rate $K_2$. This latter introduced above can express as \cite{blatt_systematic_2011}
+
 
 \begin{equation}
     K_2 = \beta \times V_e = \frac{4\pi \hbar}{2m_p}\times \frac{l_{opt}}{\Delta^2 +\frac{1}{4}(1+2k l_{opt})^2}
-\end{equation}
+\end{equation}\\
 
 where $\Delta$ is the detuning of the laser from the molecular resonance and $m_p$ the mass of the nucleus.
-For low temperature the De Broglie wavelength settle the negligibility of wavector $k$. Then the PA rate for
-a tuned laser depends only on the experimental parameter $l_{opt}$ 
+For low temperature the De Broglie wavelength $\lambda_{dB} = \frac{h}{\sqrt{2m k_B T}}$ settles the negligibility of wavector $k$. Then the PA rate for
+a tuned laser  
 \begin{equation}
     K_2 = \frac{16h }{m_p}l_{opt}
 \end{equation}
-To understand what governs $K_2$, we need to look more closely at $\gamma_\text{stim}$
-which encodes the coupling between the colliding atom pair and the PA laser. This rate is linear with the laser intensity, proportional to the 3D density $n$,
-and to the probability of transitioning from $\ket{\psi_g}$ to
-$\ket{\psi_e}$ the Franck-Condon factor:
+depends only on the \textbf{optical length} $l_{opt}$ which caracterizes the strength of the coupling between the
+the scattered atoms and the bound molecular state. Experimentally this quantity is tunable by the laser intensity I
+since it is linear with 
+\begin{equation}
+    l_{opt} = \frac{\lambda^3}{16\pi c}\frac{f_{FC}}{k}f_{rot}I
+\end{equation}
+
+with $f_{rot} = 1$ for $0_u^+$ resonances and $f_{rot} = 2$ for $1_u$ resonances and $\lambda=689.45$ nm the wavelength 
+of the transition \cite{reschovsky_narrow-line_2018}. The amplitude of the PA rate also varies with the recovery of the 
+initial $\psi_g$ and final state $\psi_e$ wavefunctions through the Franck-Condon factor $f_{FC}$ 
 
 \begin{equation} 
     F_{FC} = \Bigg|\int_0^{\infty} \psi_g(r) \psi_e(r) dr\Bigg |^2 
 \end{equation}
 
-This factor directly measures the overlap between the initial and final 
-state wavefunctions, and therefore quantifies how efficiently the PA laser 
-can drive the transition. The Condon radius is the internuclear distance at 
-which this overlap is maximum, meaning in a classical picture this is where 
+PA rate is maximized when at the Condon radius this recovery is maximum. In a classical picture this is where 
 the atoms spend the most time — and thus where the photoassociation is most 
 likely to occur.\\
-Since $\gamma_{stim}$ depends on both the laser intensity and 
-the density, these become the key experimental knobs to tune $K_2$. 
-To make this more concrete and allow comparison with other experiments, 
-the photoassociation rate is commonly re-expressed in the molecular 
-community through an optical length:
+
+From this discussion we deduce an atomic evolution 
 
 \begin{equation}
-    l_{opt} = \frac{\beta m}{16 h }
+    \frac{dN}{dt} =  -\frac{16h }{V_e m_p}l_{opt}N^2 - \Gamma N
 \end{equation}
 
-$m$ the atomic mass of the atom. This single quantity captures the overall 
-PA efficiency, and from this formula it is clear that the main experimental 
-levers to increase the PA rate are the cloud density and the PA beam 
-intensity — precisely what we will test in the experimental results section.\\
+depending on the parameter $l_{opt}$ maximum for high laser intensity and atomic density $n_0= 1/V_e$.
 
 \subsection{Handling multiple molecular potentials}
 So far we have described the PA process as if there was only one molecular potential.
@@ -303,7 +299,6 @@ number of potentials and internal states coexist. To navigate this complexity,
 we now want to determine and enumerate the molecular potentials $V_e$ by introducing the molecular quantum 
 numbers that label these states and determine their possible transitions.\\
 
-\subsubsection{Molecular potentials }
 Confirming to the atomic case, the Born-Oppenheimer approximation allows to describe the movement of the electrons
 separately from the nuclei, then \ref{1D schrodinger solution} is valid for bound atoms. The aim of this part of the
 exposé is to determine the shape of $V_e$ on what equation \ref{1D schrodinger solution} depends.\\
@@ -317,6 +312,7 @@ For two atoms A and B possibly in spin state $\beta_1$ or $\beta_2$ the expressi
 \begin{equation}
     \ket{\Psi} = \left(\ket{\beta_1}_A \ket{\beta_2}_B + (-1)^R \ket{\beta_1}_B \ket{\beta_2}_A\right)
      \otimes\ket{\phi}
+     \label{wavefunction parity}
 \end{equation}
 
 constrains the \textbf{rotational quantum number $R$} to values $R = 0, 2$ or $4$... \cite{reichenbach_optical_nodate}
@@ -335,7 +331,7 @@ electrons in between as reveals the figure \ref{fig:u-g symmetry}
 
 Another interaction playing a crucial role in determining the molecular structure is the spin-orbit coupling. In this context, the total angular 
 momentum of the molecule is defined as $T = R + F = R + I + J$, where $F$ denotes the total spin of the two atoms $f_1 + f_2$, $J = j_1+j_2$ 
-accounts for the spin-orbit coupling, and R is the rotational angular momentum of the molecule. \\
+accounts for the total electronic angular momentum and R is the rotational angular momentum of the molecule. \\
 
 The projections of these angular momenta onto the internuclear axis are characterised by
 \begin{equation}
@@ -343,9 +339,9 @@ The projections of these angular momenta onto the internuclear axis are characte
 \end{equation}
 
 where $\Lambda$ represents the projection of the orbital momentum of the molecule on the internuclear axis
-and $\Sigma$ the projection of the momentum spin. Furthermore, $M_T$ denotes the projection of $T$ onto a chosen quantization axis.\\
+and $\Sigma$ the projection of the spin angular momentum. Furthermore, $M_T$ denotes the projection of $T$ onto a chosen quantization axis.\\
 
-In particular case of the $^1S_0$ - $^3P_1$ molecular state, the spin-orbit interaction is sufficiently strong to couple the elctronic angular momentum
+In particular case of the $^1S_0$ - $^3P_1$ molecular state of $^{87}Sr$, the spin-orbit interaction is sufficiently strong to couple the elctronic angular momentum
 to the internuclear axis. This regime is quantified bt $\Omega$ and is appropriately described within the framework of Hund's case (c).
 
 
@@ -366,16 +362,13 @@ a total spin of $J = 1$ and possible values of total atomic angular momentum F:
 \text{For } J=1, &\quad {F = 1, 2, 3... 10}
 \end{align}
 
-We have one atom with $f_1=9/2$ from the $^1S_0$ state and one in the $^3P_1$ state with $f_2=11/2$.
-The possible values of total angular momentum of the molecule are 
+The possible values of total angular momentum of the excited molecule are 
 \begin{align}
 \text{For } R=0, &\quad {T = 1, 2, 3... 10}\\
 \text{For } R=2, &\quad {T = 1,2... 12}\\
 \text{For } R=4, &\quad {T = 1,2 ... 14}
 \end{align}
 
-The initial $T^i = i_1+i_2$ with $R=0$ because we are in s-wave collisions. In respect with
-the parity $p = +1$ the possible values of $T^i$ are $T^i = 0, 2, 4...$.\\
 As for atoms there are selection rules for transitions from a free state to a molecular state
 fixed by the angular momentum of the electrons. 
 $\Delta J = 0, 1$ gives $\Delta T = 0, 1$ with $T=0 \rightarrow T=0$ forbidden.\\
@@ -384,66 +377,91 @@ In the end the accessible transitions in the first molecular excited state of th
 \text{For } R=0, &\quad {T^f = 1, 2, 3... 10}\\
 \text{For } R=2, &\quad {T^f = 1,2... 10}\\
 \text{For } R=4, &\quad {T^f = 1,2 ... 10}\\
-...
-\end{align}\\
+\end{align}
 
-There are 981 combinations of accessible $(R,T^f)$ molecular external states and for each potential a numerous
-internal state we are going to demonstrate briefly in the following.\\
-
-\textbf{Ytterbium: hfs}\\
-
-On the intercombination line it is convenient to refer to species with a hyperfine structure such as \textbf{$^{173}Yb$}. Its molecular potential landscape is more
-complex (see figure \ref{fig:pa-ytterbium-potentials}) than many species that have been studied and the density of each 
-momentum projection $0_u, 1_g, 1_u, 0_g$ comes from the hyperfine structure. It is indeed expected 
+with only even values of R in respect with wavefunction parity of \ref{wavefunction parity}.
+Finally we estimate about 981 combinations of accessible $(R,T^f)$ molecular external states
+which is a complex number of potentials to explore experimentally. We expect to have a spectrum
+similar to the experiment on $^{173}Ytt$ \cite{han_photoassociation_2018} realised in the intercombination
+line where themomentum projection $0_u, 1_g, 1_u, 0_g$ comes from the hyperfine structure. It is indeed expected 
 to count 205 different configurations of $(T, F, R)$ for the excited molecular states on intercombination line with an
 atomic potential written as \ref{ytt potential}. 
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Ytterbium_molecular_potentials.png}
     \caption{Caption}
     \label{fig:pa-ytterbium-potentials}
 \end{figure}
 
-Around $80$ lines were measured. Atom loss spectra as a function of PA laser detuning reveal the position of the bound states 
-relative to the atomic resonance $\ket{^{1}S_0, F=5/2} \rightarrow \ket{^{3}P_1, F=7/2}$. 
-Near this resonance atoms are illuminated for $30$ms at low intensity $I = 37$mW/cm² to avoid
-power broadening, allowing the nearest bound state to the dissociation to be resolved.
-At larger red detunings the intensity is increased and the illumination time optimized to maximize 
-contrast.\\
-
-As seen in the subsection 3.1.1 in a molecular picture the hamiltonian expresses as 
+As seen in the subsection 3.1.1 in a molecular picture the hamiltonian expresses as \cite{han_photoassociation_2018}
 
 \begin{equation}
     \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{V}_{BO} + \hat{H}_{HF} 
     \label{general hamiltonian of molecule}
 \end{equation}
 
-It is possible to neglect some orders of electronic interactions depending on the Hund's case and the distance region
-between the atoms.
-In our case we approximate the potential to be as for $^{173}Yb$ in \cite{han_photoassociation_2018}
+where some electronic interactions orders has been neglected depending on the Hund's case. For $^{87}Sr$ 
+we approximate the potential to be as for $^{173}Yb$ in 
 \begin{equation}
     \hat{V}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
     \label{ytt potential}
 \end{equation}
+
+
+\begin{equation}
+\hat{H}_{\mathrm{hf}} =
+A \, (\mathbf{i}_1 \cdot \mathbf{j}_1)
++
+B \,
+\frac{
+3(\mathbf{i}_1 \cdot \mathbf{j}_1)^2
++ \frac{3}{2}(\mathbf{i}_1 \cdot \mathbf{j}_1)
+- i_1(i_1+1)\, j_1(j_1+1)
+}{
+2 i_1 (2 i_1 - 1)\,
+2 j_1 (2 j_1 - 1)
+}
+\end{equation}
+
+$s=\pm1$ for gerade and ungerade potentials respectively.
+The hyperfine term of the atom in $^1S_0$ is zero because its electronic angular momentum is zero.
+Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts. \\
+
+Amidst these potentials around $80$ internal states were measured. Atom loss spectra as a function of PA laser detuning reveals the position of the bound states 
+relative to the atomic resonance $\ket{^{1}S_0, F=5/2} \rightarrow \ket{^{3}P_1, F=7/2}$. 
+Near this resonance atoms are illuminated for $30$ms at low intensity $I = 37$mW/cm² to avoid
+power broadening, allowing the nearest bound state to the dissociation to be resolved.
+At larger red detunings the intensity is increased and the illumination time optimized to maximize 
+contrast.\\
+
+Multiple approximation and scaling help to predict the position of these molecular line: WKB approximation 
+rely on $V_e$ estimation we did presented above. Leroy-Bernstein scaling is a great approach to predict consecutive
+lines close to the dissociation limit without knowing the exact shape of the potential. Finally a mass sclaling on 
+strontium isotopes has been demonstrated in \cite{borkowski_mass_2014} to predict the position of the lines.
+We will see in the following how to benefit from these predictions.\\
+
 \subsection{Internal energy states}
 
 \subsubsection{WKB approximation}
-WKB approximation is a semi-classical approach where plane waves $\psi(x) = \frac{C}{\sqrt(k(x))}e^{i\int_0^{\infty} k(x) dx}$ are solutions of the 1D Schrödinger equation
-for two particles of eigenenergie $E$ in a potential $V(x)$
+WKB approximation will enable us in this section to estimate eigenvalues of an estimated pair of atoms in a harmonic
+potential. The position of a first bound state for each internuclear 
+value enhance a deduction of the next lines. \\
+This is a semi-classical approach where plane waves $\psi(x) = \frac{C}{\sqrt{k(x)}}e^{i\int_{x_0}^{x} k(x') dx'}$ 
+are solutions of the 1D Schrödinger equation for two particles of eigenenergie $E$ in a potential $V(x)$
 
 \begin{equation}
     \frac{-\hbar^2}{2\mu}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi
     \label{basic bitch schrodinger}
 \end{equation}
 
-giving the expression of the wavevector $k$
+giving the expression of the wavevector $k(x)$
 \begin{equation}
     k = \frac{p}{\hbar} = \sqrt{2\mu(E-V(x))}
 \end{equation}
 
 The condition of validity $\frac{d\lambda}{dx} \ll 1$ tells that the atoms must follow adiabatically the potential
-to adapt their movement to its variation. It means at really small $x$ of region I of figure
+to adapt their movement to its variation \cite{atkins}. It means at really small $x$ of region I of figure
 \ref{fig:pa-sakurai-wkb} this approximation is not valid.\\
 
 \begin{figure}[H]
@@ -453,7 +471,7 @@ to adapt their movement to its variation. It means at really small $x$ of region
     \label{fig:pa-sakurai-wkb}
 \end{figure}
 
-At position $x=x_1$ and $x_2$ the momentum diverges which means that the plane wave approximation is not valid anymore.
+At position $x=x_1$ and $x_2$ the momentum reaches zero then turnd imaginary.
 In the region $I$ and $III$ the wave is evanescent with a phase $k = i\sqrt{2\mu(|E-V(x)|)}$. It is then usual the
 average the potential as linear with $x$ around these turning points. \\
 
@@ -498,25 +516,6 @@ from which we determine the energy difference between the dissociation limit and
 of the molecule. 
 
 
-
-\begin{equation}
-\hat{H}_{\mathrm{hf}} =
-A \, (\mathbf{i}_1 \cdot \mathbf{j}_1)
-+
-B \,
-\frac{
-3(\mathbf{i}_1 \cdot \mathbf{j}_1)^2
-+ \frac{3}{2}(\mathbf{i}_1 \cdot \mathbf{j}_1)
-- i_1(i_1+1)\, j_1(j_1+1)
-}{
-2 i_1 (2 i_1 - 1)\,
-2 j_1 (2 j_1 - 1)
-}
-\end{equation}
-
-$s=\pm1$ for gerade and ungerade potentials respectively.
-The hyperfine term of the atom in $^1S_0$ is zero because its electronic angular momentum is zero.
-Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts. 
 
 \section{About photoassociation on other species}
 
