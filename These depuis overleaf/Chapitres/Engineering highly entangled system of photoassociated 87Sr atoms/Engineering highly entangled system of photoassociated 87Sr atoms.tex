@@ -250,9 +250,15 @@ of the two-body losses rate $K_2$. This latter introduced above can express as
 \cite{reschovsky_narrow-line_2018}
 
 \begin{equation}
-    K_2 = \beta \times V_e = \frac{1}{k}\frac{\frac{1}{4}\gamma_{stim}\gamma_{mol}}{\Delta^2 +(\frac{1}{2}(\gamma_{stim} + \gamma_{mol})^2)}
-\end{equation}\\
+    K_2 = \beta \times V_e = \frac{4\pi \hbar}{2m_p}\times \frac{l_{opt}}{\Delta^2 +\frac{1}{4}(1+2k l_{opt})^2}
+\end{equation}
 
+where $\Delta$ is the detuning of the laser from the molecular resonance and $m_p$ the mass of the nucleus.
+For low temperature the De Broglie wavelength settle the negligibility of wavector $k$. Then the PA rate for
+a tuned laser depends only on the experimental parameter $l_{opt}$ 
+\begin{equation}
+    K_2 = \frac{16h }{m_p}l_{opt}
+\end{equation}
 To understand what governs $K_2$, we need to look more closely at $\gamma_\text{stim}$
 which encodes the coupling between the colliding atom pair and the PA laser. This rate is linear with the laser intensity, proportional to the 3D density $n$,
 and to the probability of transitioning from $\ket{\psi_g}$ to
@@ -328,7 +334,7 @@ electrons in between as reveals the figure \ref{fig:u-g symmetry}
 \end{figure}
 
 Another interaction playing a crucial role in determining the molecular structure is the spin-orbit coupling. In this context, the total angular 
-momentum of the molecule is defined as $T = R + F = R + I + J$, where $F$ denotesthe total spin of the two atoms $f_1 + f_2$, $J = j_1+j_2$ 
+momentum of the molecule is defined as $T = R + F = R + I + J$, where $F$ denotes the total spin of the two atoms $f_1 + f_2$, $J = j_1+j_2$ 
 accounts for the spin-orbit coupling, and R is the rotational angular momentum of the molecule. \\
 
 The projections of these angular momenta onto the internuclear axis are characterised by
@@ -337,7 +343,7 @@ The projections of these angular momenta onto the internuclear axis are characte
 \end{equation}
 
 where $\Lambda$ represents the projection of the orbital momentum of the molecule on the internuclear axis
-and $\Sigma$ the projection of the momentum spin. Furthermore,$M_T$ denotes the projection of $T$ onto a chosen quantization axis.\\
+and $\Sigma$ the projection of the momentum spin. Furthermore, $M_T$ denotes the projection of $T$ onto a chosen quantization axis.\\
 
 In particular case of the $^1S_0$ - $^3P_1$ molecular state, the spin-orbit interaction is sufficiently strong to couple the elctronic angular momentum
 to the internuclear axis. This regime is quantified bt $\Omega$ and is appropriately described within the framework of Hund's case (c).
@@ -354,11 +360,10 @@ to the internuclear axis. This regime is quantified bt $\Omega$ and is appropria
 Now all the specificites of molecular potential states exposed such as the u-g symmetry and the stable quantum number for bound atoms
 I can apply to case of $^{87}Sr$ for which we will photoassociate atoms in the $F=11/2$ hyperfine state. \\
 
-Say we have one atome in the $^1S_0$ state and one in the $^3P_1$ state: we can have a total spin of $J = 0, 1$ 
-or $2$. It gives possible values of total atomic angular momentum F:
-
+Say we have one atome in the $^1S_0$ state with maximum value $f_1=9/2$ and one in the $^3P_1$ state at maximum $f_2=11/2$: we can have 
+a total spin of $J = 1$ and possible values of total atomic angular momentum F:
 \begin{align}
-\text{For } J=1, &\quad F=\frac{7}{2},\frac{9}{2},\frac{11}{2} 
+\text{For } J=1, &\quad {F = 1, 2, 3... 10}
 \end{align}
 
 We have one atom with $f_1=9/2$ from the $^1S_0$ state and one in the $^3P_1$ state with $f_2=11/2$.
