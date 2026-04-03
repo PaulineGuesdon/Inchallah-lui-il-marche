@@ -486,10 +486,11 @@ Then this formula enables to identify the solutions $E$ that satisfies
 the condition $(n+\frac{1}{2})\pi $. These values are what we call the vibrationnal states
 of a molecular potential.
 
-\subsubsection{Leroy-Bernstein theory}
-Leroy-Bernstein theory enables to identify the position of the less bounded states without knowing the behaviour
-of the potential that could be complicated to estimate and solve numerically. This model is valid only close to
-the dissociation limit occuring at long distance. Then we can approximate the potential as
+\subsubsection{Leroy-Bernstein scaling}
+Leroy-Bernstein scaling profits from the WKB approximation to identify the position of the less 
+bound states without knowing the behaviour of the potential that could be complicated to estimate.
+This model is valid only close to the dissociation limit occuring at long distance. Then we can 
+approximate the potential as
 \begin{equation}
     V(r) \xrightarrow[r \to \infty]{} D_e - \frac{C_n}{r^n}
 \end{equation}
@@ -501,7 +502,7 @@ and find solutions of
 \begin{equation}
     \int_{x_1}^{x_2} \sqrt{2\mu(\frac{C_n}{r^n}-\epsilon)} dr = (\nu_D-\nu +\frac{1}{2})\hbar\pi 
 \end{equation}
-with $\nu_D$ the dissociation number. After few calculations we finally obtain
+with $\nu_D$ the dissociation number of the very first bound state \cite{brown_rotational_nodate}. After few calculations we finally obtain
 
 \begin{equation}
     \epsilon = \left((\nu_D-\nu)\frac{\sqrt{\pi }\hbar\nu}{\sqrt{2\mu C_n^{2/n}}}\frac{\Gamma(\frac{3}{2} - \frac{1}{\nu})}{\Gamma(1-\frac{1}{\nu})} \right)^\frac{2\nu}{\nu-2}
@@ -513,38 +514,38 @@ $\Gamma$ being the Beta Euler functions. This energy also writes as
 \end{equation}
 
 from which we determine the energy difference between the dissociation limit and one of the least bounded states $\nu$
-of the molecule. 
+of the molecule. We see from this formula the facility to predict the position of the vibrational state $\nu$ without 
+knowing anything except the long-range behaviour of the potential. 
 
-
-
-\section{About photoassociation on other species}
-
-\subsection{Mass scaling ($^{88}Sr$)}
-$^{88}Sr$ is a bosonic isotope of strontium with no hyperfine structure. The photoassociation
-spectrum is then simpler than the fermionic ones : only two potentials in the first excited
+\subsubsection{Mass scaling ($^{88}Sr$)}
+Mass scaling is a method to predict from a know potential the position of the phase constraint 
+vibrational states by adjusting the reduced mass with the isotope considered. The hyperfine structure neglected, it is still a good estimation of the position 
+range of the vibrational.\\
+$^{88}Sr$ is one of the bosonic isotope experimentally observed that presents no hyperfine 
+structure. The photoassociation spectrum is then simpler than the fermionic one alike the 
+$^{173}Yb$ (see figure \ref{ytt potential}): only two potentials in the first excited
 molecular state $0_u$ and $1_u$. Results have been presented in \cite{zelevinsky_narrow_2006} 
 where their fitting model gives the following potential expression
+
 \begin{equation}
     \hat{V}_{BO} \sim \frac{-C_{6,\Lambda}}{r^6} -\frac{C_3}{r^3} + \frac{C_J}{r^2}
 \end{equation}
+
 for the two accessible potentials $\Lambda = 0, 1$. 
 
-Mass scaling method presented in \cite{reschovsky_narrow-line_2018} enables to predict the position
-of the vibrational states of the different isotopes of strontium. The authors consider the potential is the
-same for all the isotopes because we can validate the Born-Oppenheimer estimation for all isotopes.
-It is actually wrong to make this approximation in the case of ${87}^Sr$ because the hyperfine structure
-modifies the expression of the potential. It is still giving an average position of the vibrational
-states. Then for this method only the reduced mass in the integral
-
+The authors consider the potential is the
+same for all the isotopes because we can validate the Born-Oppenheimer estimation for $^{84}Sr$,
+$^{86}Sr$ and $^{88}Sr$.
+Then only the reduced mass in the integral
 \begin{equation}
     \int_{x_1}^{x_2} \sqrt{2\mu(E-V(x))} dx = (n+\frac{1}{2})\pi 
 \end{equation}
 
-will change upon the isotope. Then with respect with the condition on the phase the energies $E$ 
+will change upon the isotope. In respect with the condition on the phase, the energies $E$ 
 will be modified. The experimental positions of the first vibrationnal states of the $O_u^+$ potential for $^{84}Sr$,
 $^{86}Sr$ and $^{88}Sr$ are represented by the red crosses in figure \ref{fig:pa-mass-scaling} and enables to adjust
-$V(r)$ shape. In blue lines the fitted functions are plotted from this model : it is then possible to deduce the position of the $^{87}Sr$ 
-vibrationnal states thanks to the other isotopes lines.\\
+$V(r)$ shape. In blue lines the fitted functions are plotted from this model : it is then possible to deduce the frequency
+ranges we expect to find the resonances of the $^{87}Sr$.\\
 We see discontinuites at the $84$ isotope: these are avoided crossing coming from a coupling
 with the ground state potential.
 \\
