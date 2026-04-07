@@ -1,4 +1,21 @@
 % !TeX root = ../../main.tex
+\ifdefined\fromroot
+\else
+    \IfFileExists{main.tex}{%
+        \input{main.tex}%
+    }{%
+        \IfFileExists{These depuis overleaf/main.tex}{%
+            \input{These depuis overleaf/main.tex}%
+        }{%
+            \IfFileExists{../../main.tex}{%
+                \input{../../main.tex}%
+            }{%
+                \errmessage{Unable to locate main.tex for this chapter build}%
+            }%
+        }%
+    }%
+    \endinput
+\fi
 \chapter{Engineering entangled ensembles $^{87}Sr$ by photoassociation}
 In metrology a common limiting experimental source on a parameter $\phi$ is the quantum shot noise $\delta \phi \simeq \frac{1}{\sqrt{N}}$ \cite{pezze_quantum_2014}.
 We presented in chapter on Ramsey interferometers an accuracy going beyond this limit: the variance of $<\sigma_Z>$ 
@@ -557,24 +574,12 @@ with the ground state potential.
     \label{fig:pa-mass-scaling}
 \end{figure}
 
+Through all these methods we can predict the average position of the vibrational states of the first excited molecular state on the intercombination 
+line. We will demonstrate in the next section how to use these predictions to target with the right parameters PA lines on isotopes 88 and 87 of
+strontium.
 
-\section{PA in practice}
-\subsection{Protocol}
-Dicke states are particularly interesting to engineer for metrology because it is possible to go
-beyond quantum shot-noise limit on a specific parameter $\phi$. The strategy we performed
-to attempt this high precision is to photoassociate atoms to induce two-body losses resulting
-in single atoms entangled to the $N-1$ other.
-The aim is to induce Dicke state on a gas of fermions with a precision that goes beyond quantum 
-shot-noise limit. \\
-As introduced in the preamble on scattering theory only s-wave collisions occur in ultracold gases.
-It enforce that for fermions -by parity of the total wavefunction being antisymetric- 
-only atoms with even angular momentum can collide meaning for PA process their spin state must be
-antisymetric so is the case of $^{87}Sr$. For bosons it is the contrary: only atoms in triplet states
-will be photoassociated by symetry of the total wavefunction.\\
-Prior to the main experiment on $^{87}Sr$, we calibrated our protocol on the
-$^{88}Sr$ isotope, whose photoassociation spectrum is well established in 
-the literature \cite{borkowski_mass_2014}, \cite{reschovsky_narrow-line_2018}, \cite{zelevinsky_narrow_2006}.\\
-
+\section{PA experiments}
+\subsection{Gas preparation}
 PA rate highly depending on cloud density as discussed in 3.1.3 the first step for Dicke state 
 engineering is to produce highly dense cloud managed differently depending on the fermionic or 
 bosonic nature. \\
@@ -583,24 +588,54 @@ on a cloud already well charged in the ODT crossing.\\
 The near-vanishing scattering length of bosonic strontium 88 is detrimental to evaporative 
 cooling, as it severely limits the elastic collision rate required to thermalize the gas. Then
 only the previous cooling and trapping step count on the density improvement.\\
+Once we have a dense cloud the PA process starts by making the atoms interact with a beam of PA
+laser that we manage with two different sources to compare and limit the broadening sources.\\
 
-Once we have a dense cloud the PA process starts by making the atoms interact with a beam 
-of size $w_0=$ we tune the frequency by an ensemble of AOMs detailed in the next subsection.
-From the atomic reference $^3P_1, F=11/2$ we change the RF frequency delivered by a DDS9852 of the 
-demodulating signal used in beating lock. Doubler frequency module commit to adress lines down to $600$MHz
-from the atomic resonance.\\
-Having find loss peaks with constrast better than the rms value of base cloud the 
+Once we obtain loss peaks with constrast better than the rms value of base cloud, the 
 measurement of atoms loss at fixed frequency but various illumination time verifies \ref{equation one and two-body losses}.
 
+\subsection{Caracterisation of PA beam}
+A strategy to verify that the effect of the spectral laser broadening was not critical on 
+two-losses observation has been measuring the atomic transition and vibrational lines
+with different illumation sources to compare their broadening for similar intensities.\\
 
-\subsection{Setup}
-Changing the locking system of the MOGlabs enabled us to adress resonances $1.7$GHz under the 
-frequencies previously targeted in Chapter 2. This procedure conserves the set-up
-presented in \ref{} so it serves for Raman manipulation or PA.\\
-We were injecting a fiber at the output of the "AOM PompOpt" at frequency $f_{PompOpt}$
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/PA_with_slave1.png}
+    \caption{Caption}
+    \label{PA slave 1}
+\end{figure}
+
+Optical pumping beam experimentally settled at the same frequency as the beam after Raman AOM
+we tested the atomic line with this beam.
+AJOUTER GRAPHE ATOMIC SUR SR87
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data144_atomic_res_with_pompopt.png}
+    \caption{}
+    \label{linewidth avec pompopt}
+\end{figure}
+
+The measurement of the atomic lines of $^{88}Sr$ (left) and $^{87}Sr$ (right)in figure \ref{linewidth avec pompopt} reveals a spectral broadening for an intensity $I=$ mw/cm$^2$ of ???.\\
+Atom loss measurement for red shifted frequencies also shows from \ref{} that the diode spectrum comes with a noise at $\pm 6$ MHz with 
+harmonics also measured at $\pm 12$ MHz. A second verification by beating between direct light from slave 1 and the MOGlabs beam. confirms this 
+perturbative components we considered on our spectrum analysis.\\
+
+These tests on slave 1 laser for PA were only in an approach of broadening analysis because our experimental setup do not allow us to go far from
+atomic resonance where we expect measuring PA lines: the light from MOGlabs chain does.
+
+\subsection{PA realised with light source tuned by beating }
+The results presented in next section were obtained with light coming from the head of the laser MOGlabs. This laser tuning detailed in \ref{frequences 88sr 87sr} 
+relies on beating with light propagating in a first AOM $Slave 1 AOM$ that has been optimized in the opposite diffracted order $+1$ contrarely to the setup \ref{} 
+for Raman transitions. Then the frequency is as previously settled by the $\simeq +300$ MHz double pass $AOM PompOpt$ then injected in a fiber that serves for the 
+new beating scheme of \ref{nouveau battement} left part.\\
+We were previously injecting the same fiber at the output of the "AOM PompOpt" at frequency $f_{PompOpt}$
 featured in \ref{frequences 88sr 87sr} that was directly sent to the vacuum cell. The output 
-of this fiber is now sent to another optical table to assure at the same time the optical pumping and 
+of this fiber is now sent to this other optical table to assure at the same time the optical pumping and 
 MOGlabs beating at $-1.75$GHz from $F=9/2$ hyperfine state. 
+To adress deeply bound vibrational states we use a doubler frequency module down to $600$MHz
+from the atomic resonance.\\
+
 
 The right part of this scheme is the same as presented in introduction but the fiber is connected to the 
 left part of the optical set-up where the beam is overlaped on a $50/50$ plate with a beam at $f_{MOG}$. 
@@ -745,7 +780,7 @@ $f_0$ while there is still a little amplitude is the two sidebands indispensable
 Nevertheless the sideband at $f_0 - f_M$ adresses the atomic resonance when 
 the carrier is around $40.48$MHz red detuned from $f_{atomic}$ as represented in figure \ref{sidebands}.
 The opposite sideband of frequency $f_0 + f_M$ excites identically the atoms when the carrier is $40.48$MHz above the atomic
-transition. A measurement of the atomic line at $\beta \simeq 1$ obtained with this sideband component is presented in figure \ref{raie 40MHz}.
+transition. A measurement of the atomic line at $\beta \simeq 1$ obtained with this sideband component is presented in figure \ref{fig:raie-40mhz}.
 
 
 \begin{center}
@@ -760,7 +795,7 @@ transition. A measurement of the atomic line at $\beta \simeq 1$ obtained with t
         \centering
         \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data397_sidebands_PDH_23_10_25.png}
         \captionof{figure}{raie 40MHz}
-        \label{}
+        \label{fig:raie-40mhz}
     \end{minipage}
 \end{center}
 Decreasing the $\beta$ enables to reduce this unvoluntary effect but we were not capable of canceling it completly while keeping the PDH lock.\\
@@ -768,21 +803,6 @@ Decreasing the $\beta$ enables to reduce this unvoluntary effect but we were not
 These effect can lead to mistakely interpret it as a molecular line. As for every PA data, measurement of $dN/dt$ at 
 this frequency testifies the presence of only one-body losses for a thermalized gas.
 
-\subsubsection{Calibrating the laser width with another laser}
-A strategy to verify that the effect of the spectral laser broadening was not critical on 
-two-losses observation has been measuring the atomic transition and vibrational lines
-to compare their broadening for similar intensities: we expect to have the same power
-broadening on both situations.\\
-Optical pumping beam being at the same frequency as the beam after Raman AOM
-we measured from \ref{linewidth avec pompopt} the molecular broadening. The linewith differ
-from ??? that we took into account in our spectroscopy analysis.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data144_atomic_res_with_pompopt.png}
-    \caption{}
-    \label{linewidth avec pompopt}
-\end{figure}
 
 \subsection{Physical sources of inhabilitation of photoassociation}
 \subsubsection{On F = 9/2 : predissociation}

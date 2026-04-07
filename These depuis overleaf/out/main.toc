@@ -49,19 +49,19 @@
 \contentsline {subsubsection}{\numberline {3.1.5.1}WKB approximation}{26}{subsubsection.116}%
 \contentsline {subsubsection}{\numberline {3.1.5.2}Leroy-Bernstein scaling}{27}{subsubsection.121}%
 \contentsline {subsubsection}{\numberline {3.1.5.3}Mass scaling ($^{88}Sr$)}{28}{subsubsection.126}%
-\contentsline {section}{\numberline {3.2}PA in practice}{29}{section.130}%
-\contentsline {subsection}{\numberline {3.2.1}Protocol}{29}{subsection.131}%
-\contentsline {subsection}{\numberline {3.2.2}Setup}{30}{subsection.132}%
-\contentsline {section}{\numberline {3.3}88Sr Results}{31}{section.136}%
-\contentsline {subsection}{\numberline {3.3.1}Atomic line}{31}{subsection.137}%
-\contentsline {section}{\numberline {3.4}87Sr molecules}{34}{section.141}%
-\contentsline {subsection}{\numberline {3.4.1}Results}{34}{subsection.142}%
-\contentsline {subsection}{\numberline {3.4.2}Technical issues of inhabilitation of photoassociation}{34}{subsection.143}%
-\contentsline {subsubsection}{\numberline {3.4.2.1}Laser width (cf 29/01/26)}{34}{subsubsection.144}%
-\contentsline {subsubsection}{\numberline {3.4.2.2}PDH sidebands}{34}{subsubsection.146}%
-\contentsline {subsubsection}{\numberline {3.4.2.3}Calibrating the laser width with another laser}{36}{subsubsection.151}%
-\contentsline {subsection}{\numberline {3.4.3}Physical sources of inhabilitation of photoassociation}{36}{subsection.153}%
-\contentsline {subsubsection}{\numberline {3.4.3.1}On F = 9/2 : predissociation}{36}{subsubsection.154}%
-\contentsline {subsubsection}{\numberline {3.4.3.2}Coupling to more energetic state from the IR}{37}{subsubsection.156}%
-\contentsline {subsubsection}{\numberline {3.4.3.3}Node of wavefunction for some vibrational states}{38}{subsubsection.158}%
-\contentsline {chapter}{\numberline {A}Algorithms}{43}{appendix.161}%
+\contentsline {section}{\numberline {3.2}PA experiments}{29}{section.130}%
+\contentsline {subsection}{\numberline {3.2.1}Gas preparation}{29}{subsection.131}%
+\contentsline {subsection}{\numberline {3.2.2}Caracterisation of PA beam}{30}{subsection.132}%
+\contentsline {subsection}{\numberline {3.2.3}PA realised with light source tuned by beating }{31}{subsection.135}%
+\contentsline {section}{\numberline {3.3}88Sr Results}{33}{section.139}%
+\contentsline {subsection}{\numberline {3.3.1}Atomic line}{33}{subsection.140}%
+\contentsline {section}{\numberline {3.4}87Sr molecules}{36}{section.144}%
+\contentsline {subsection}{\numberline {3.4.1}Results}{36}{subsection.145}%
+\contentsline {subsection}{\numberline {3.4.2}Technical issues of inhabilitation of photoassociation}{36}{subsection.146}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}Laser width (cf 29/01/26)}{36}{subsubsection.147}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}PDH sidebands}{36}{subsubsection.149}%
+\contentsline {subsection}{\numberline {3.4.3}Physical sources of inhabilitation of photoassociation}{38}{subsection.154}%
+\contentsline {subsubsection}{\numberline {3.4.3.1}On F = 9/2 : predissociation}{38}{subsubsection.155}%
+\contentsline {subsubsection}{\numberline {3.4.3.2}Coupling to more energetic state from the IR}{38}{subsubsection.157}%
+\contentsline {subsubsection}{\numberline {3.4.3.3}Node of wavefunction for some vibrational states}{39}{subsubsection.159}%
+\contentsline {chapter}{\numberline {A}Algorithms}{43}{appendix.162}%

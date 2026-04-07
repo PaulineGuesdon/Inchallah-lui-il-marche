@@ -9,6 +9,8 @@
   "latex-workshop.synctex.afterBuild.enabled": true,
   "latex-workshop.latex.outDir": "./out",
   "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.watch.usePolling": true,
+  "latex-workshop.latex.watch.pdf.delay": 1000,
   "latex-workshop.latex.recipe.default": "first",
   "latex-workshop.latex.search.rootFiles.include": [
     "main.tex"
@@ -20,15 +22,10 @@
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk (pdfLaTeX)",
-      "command": "latexmk",
+      "command": "/bin/bash",
       "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-g",
-        "-pdf",
-        "-outdir=%OUTDIR%",
-        "%DOC%"
+        "-lc",
+        "cd '/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/These depuis overleaf' && /Library/TeX/texbin/latexmk -g -synctex=1 -interaction=nonstopmode -file-line-error -pdf -outdir=out main.tex"
       ]
     }
   ],

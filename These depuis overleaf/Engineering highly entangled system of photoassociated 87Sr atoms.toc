@@ -1,0 +1,68 @@
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.7}%
+\contentsline {section}{\numberline {1.1}Fermi gas preparation (+ Bose gas ?)}{2}{section.8}%
+\contentsline {subsection}{\numberline {1.1.1}TC}{2}{subsection.9}%
+\contentsline {subsection}{\numberline {1.1.2}Zeeman cooling}{2}{subsection.10}%
+\contentsline {subsection}{\numberline {1.1.3}Blue MOT}{2}{subsection.11}%
+\contentsline {subsubsection}{\numberline {1.1.3.1}The physics}{2}{subsubsection.12}%
+\contentsline {subsubsection}{\numberline {1.1.3.2}How to optimize the superposition with the repumper}{2}{subsubsection.13}%
+\contentsline {subsubsection}{\numberline {1.1.3.3}Comment on the hyperfine states (+boson 88)}{3}{subsubsection.15}%
+\contentsline {subsubsection}{\numberline {1.1.3.4}Optical setup (blue + repump)}{3}{subsubsection.16}%
+\contentsline {subsection}{\numberline {1.1.4}Repumper}{4}{subsection.18}%
+\contentsline {subsection}{\numberline {1.1.5}BB MOT}{4}{subsection.20}%
+\contentsline {subsubsection}{\numberline {1.1.5.1}First step}{5}{subsubsection.22}%
+\contentsline {subsubsection}{\numberline {1.1.5.2}Second step}{5}{subsubsection.23}%
+\contentsline {subsection}{\numberline {1.1.6}Stir}{5}{subsection.24}%
+\contentsline {subsection}{\numberline {1.1.7}Narrow MOT}{5}{subsection.27}%
+\contentsline {subsubsection}{\numberline {1.1.7.1}Optimization of the narrow MOT (intensity, frequency, effect on the size of the cloud)}{5}{subsubsection.28}%
+\contentsline {subsubsection}{\numberline {1.1.7.2}Optical setup}{6}{subsubsection.29}%
+\contentsline {subsection}{\numberline {1.1.8}ODT and evaporation}{7}{subsection.31}%
+\contentsline {subsubsection}{\numberline {1.1.8.1}Charging the crossing}{7}{subsubsection.32}%
+\contentsline {subsubsection}{\numberline {1.1.8.2}Optimization of the evaporation ramps : Dimple + reservoir, just reservoir, parameter to optimize (number of atoms, temperature)}{7}{subsubsection.34}%
+\contentsline {subsubsection}{\numberline {1.1.8.3}Optical setup}{7}{subsubsection.35}%
+\contentsline {subsection}{\numberline {1.1.9}Optical pumping}{7}{subsection.36}%
+\contentsline {section}{\numberline {1.2}Spin measurement scheme}{8}{section.38}%
+\contentsline {chapter}{\numberline {2}Ramsey interferometers on qudit }{9}{chapter.40}%
+\contentsline {section}{\numberline {2.1}Preparation of arbitrary dimension Hilbert space}{9}{section.41}%
+\contentsline {subsection}{\numberline {2.1.1}Raman process}{9}{subsection.42}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}$\delta m_F = \pm 1$}{9}{subsubsection.43}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}$\delta m_F = \pm 2$}{10}{subsubsection.45}%
+\contentsline {subsection}{\numberline {2.1.2}Moglabs chain without cavity}{11}{subsection.47}%
+\contentsline {subsection}{\numberline {2.1.3}Purification of the laser spectrum with a FP cavity}{12}{subsection.49}%
+\contentsline {section}{\numberline {2.2}Interferometric sensing with multiple nuclear spin state}{13}{section.51}%
+\contentsline {subsection}{\numberline {2.2.1}Driving long coherence time Rabi oscillations}{13}{subsection.52}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Rabi oscillations}{13}{subsubsection.53}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Interferometer of su(2) symmetry}{13}{subsubsection.55}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Discussion on inhomogeneites}{14}{subsubsection.57}%
+\contentsline {subsection}{\numberline {2.2.2}Measuring two quantites at a time}{14}{subsection.59}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Physical principle}{14}{subsubsection.60}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Results}{15}{subsubsection.62}%
+\contentsline {subsection}{\numberline {2.2.3}Measuring two non commuting observables}{15}{subsection.64}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Principle}{15}{subsubsection.65}%
+\contentsline {section}{\numberline {2.3}SU(N) symmetry (ce qu'il faudrait pr la tester e.g densité gaz, alimentation bobines -> comment faire mieux que les chiffres actuels)}{15}{section.67}%
+\contentsline {chapter}{\numberline {3}Engineering entangled ensembles $^{87}Sr$ by photoassociation}{16}{chapter.68}%
+\contentsline {section}{\numberline {3.1}Introduction on photoassociation}{16}{section.69}%
+\contentsline {subsection}{\numberline {3.1.1}Preamble on scattering theory}{16}{subsection.70}%
+\contentsline {subsection}{\numberline {3.1.2}Photoassociation and collisions}{19}{subsection.86}%
+\contentsline {subsection}{\numberline {3.1.3}General scaling laws for PA}{21}{subsection.92}%
+\contentsline {subsection}{\numberline {3.1.4}Handling multiple molecular potentials}{22}{subsection.98}%
+\contentsline {subsection}{\numberline {3.1.5}Internal energy states}{26}{subsection.115}%
+\contentsline {subsubsection}{\numberline {3.1.5.1}WKB approximation}{26}{subsubsection.116}%
+\contentsline {subsubsection}{\numberline {3.1.5.2}Leroy-Bernstein scaling}{27}{subsubsection.121}%
+\contentsline {subsubsection}{\numberline {3.1.5.3}Mass scaling ($^{88}Sr$)}{28}{subsubsection.126}%
+\contentsline {section}{\numberline {3.2}PA experiments}{29}{section.130}%
+\contentsline {subsection}{\numberline {3.2.1}Gas preparation}{29}{subsection.131}%
+\contentsline {subsection}{\numberline {3.2.2}PA with slave 1 laser}{29}{subsection.132}%
+\contentsline {subsection}{\numberline {3.2.3}Setup}{30}{subsection.133}%
+\contentsline {section}{\numberline {3.3}88Sr Results}{31}{section.137}%
+\contentsline {subsection}{\numberline {3.3.1}Atomic line}{31}{subsection.138}%
+\contentsline {section}{\numberline {3.4}87Sr molecules}{34}{section.142}%
+\contentsline {subsection}{\numberline {3.4.1}Results}{34}{subsection.143}%
+\contentsline {subsection}{\numberline {3.4.2}Technical issues of inhabilitation of photoassociation}{34}{subsection.144}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}Laser width (cf 29/01/26)}{34}{subsubsection.145}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}PDH sidebands}{34}{subsubsection.147}%
+\contentsline {subsubsection}{\numberline {3.4.2.3}Calibrating the laser width with another laser}{36}{subsubsection.152}%
+\contentsline {subsection}{\numberline {3.4.3}Physical sources of inhabilitation of photoassociation}{36}{subsection.154}%
+\contentsline {subsubsection}{\numberline {3.4.3.1}On F = 9/2 : predissociation}{36}{subsubsection.155}%
+\contentsline {subsubsection}{\numberline {3.4.3.2}Coupling to more energetic state from the IR}{37}{subsubsection.157}%
+\contentsline {subsubsection}{\numberline {3.4.3.3}Node of wavefunction for some vibrational states}{38}{subsubsection.159}%
+\contentsline {chapter}{\numberline {A}Algorithms}{41}{appendix.161}%
