@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex out/main"] 1775579127.39354 "out/main.aux" "out/main.bbl" "out/main" 1775579138.43383 0
+["bibtex out/main"] 1775637654.71519 "out/main.aux" "out/main.bbl" "out/main" 1775637663.04723 0
   "./ref.bib" 1775478473.61157 57165 b68e54c157d4e5c2c6dc4ee03f33e482 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/main.aux" 1775579136.86982 22111 0906960d85e4cd3d5285a977826329e3 "pdflatex"
+  "out/main.aux" 1775637661.96112 22925 953870950cb6cc0dd0b0c1aef1f90068 "pdflatex"
   (generated)
   "out/main.bbl"
   "out/main.blg"
   (rewritten before read)
-["pdflatex"] 1775579127.82534 "main.tex" "out/main.pdf" "main" 1775579138.43451 0
+["pdflatex"] 1775637655.33952 "main.tex" "out/main.pdf" "main" 1775637663.0477 0
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -143,7 +143,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1770486403 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1770486061 3345734 73c3e0ab3e3452bd60acd93a512a4193 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1775579123.18777 45740 ecf8caca8d4df43fab3becb3396497e9 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1775637642.07191 46117 4244eaa02ab113995f786240ce68945f ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/diffusion_sinus.pdf" 1775636902.41801 15792 c95d37372dec895918cfe955fab59e81 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Guttridge_PA_process.pdf" 1774633072.88442 51626 4710a9fa913b33da773e14938cabb2bd ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/PA_with_slave1.png" 1775550485.06729 34066 b002af944d757377598cf0ebed37f30f ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Ytterbium_molecular_potentials.png" 1770627579.07145 159775 795877fd972a8f96fd8feed556d61a54 ""
@@ -160,7 +161,6 @@
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_87Sr_88Sr.jpeg" 1773825534.98347 197121 4848e66e0ee9a11ccf0ebc9692b59a43 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/gerade_ungerade.png" 1771401256.71152 57207 cef9b08880db033c295cc530132c0e86 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/hund_case_c.pdf" 1775030585.7118 17842 832e0e476f1bc5a5f084897dbb8e3278 ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/incident_and_scattered_wave.jpeg" 1772020022.56403 272902 8d5e6a77fe9021ac94fbc38d1f69a33c ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/mass_scaling.png" 1770627578.89221 40363 4aee96f1dc13b670fab75c76cad87b8b ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/new_beating_chain.jpeg" 1774003891.51394 267946 139f5739d45d4145329e3b0cd7b0c87a ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/predissociation.png" 1774023703.3389 11350 97c4b231e7987cc0a089ad5087b87038 ""
@@ -198,12 +198,12 @@
   "main.acr" 0 -1 0 ""
   "main.tex" 1775483525.63019 4723 0574d4d354df0a869f16f920569f2d71 ""
   "out/main.acr" 0 -1 0 ""
-  "out/main.aux" 1775579136.86982 22111 0906960d85e4cd3d5285a977826329e3 "pdflatex"
-  "out/main.bbl" 1775579127.81785 2715 6e97244442254eedb01d500c7c4aebcf "bibtex out/main"
-  "out/main.lof" 1775579136.87824 4210 2cdf9389ed056488838ac5e9c1e65992 "pdflatex"
-  "out/main.lot" 1775579136.87834 80 8ef3760424b18d5315040b0f3a94f59e "pdflatex"
-  "out/main.out" 1775579136.87725 13844 d7f2a7fb2dc9426b94d2cd26186c8468 "pdflatex"
-  "out/main.toc" 1775579136.87813 6470 5fe961bc9a838a0dfa0dd9997ad52011 "pdflatex"
+  "out/main.aux" 1775637661.96112 22925 953870950cb6cc0dd0b0c1aef1f90068 "pdflatex"
+  "out/main.bbl" 1775637655.29941 2715 6e97244442254eedb01d500c7c4aebcf "bibtex out/main"
+  "out/main.lof" 1775637661.97155 4618 b393da517e9c36592622d2e94923dd35 "pdflatex"
+  "out/main.lot" 1775637661.97179 80 8ef3760424b18d5315040b0f3a94f59e "pdflatex"
+  "out/main.out" 1775637661.97057 13844 d7f2a7fb2dc9426b94d2cd26186c8468 "pdflatex"
+  "out/main.toc" 1775637661.97137 6470 519b381dfbf6ef941eb892a107d866c2 "pdflatex"
   (generated)
   "out/main.acn"
   "out/main.aux"
