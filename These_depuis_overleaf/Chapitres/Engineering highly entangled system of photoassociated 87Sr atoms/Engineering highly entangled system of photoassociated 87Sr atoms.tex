@@ -1,29 +1,18 @@
-﻿% !TeX root = ../../main.tex
-\ifdefined\fromroot
-\else
-    \IfFileExists{main.tex}{%
-        \input{main.tex}%
-    }{%
-        \IfFileExists{These depuis overleaf/main.tex}{%
-            \input{These depuis overleaf/main.tex}%
-        }{%
-            \IfFileExists{../../main.tex}{%
-                \input{../../main.tex}%
-            }{%
-                \errmessage{Unable to locate main.tex for this chapter build}%
-            }%
-        }%
-    }%
-    \endinput
-\fi
+﻿%! TEX root = ../main.tex
 
 \chapter{Engineering entangled ensembles $^{87}Sr$ by photoassociation}
 In metrology a common limiting experimental source on a parameter $\phi$ is the quantum shot noise $\delta \phi \simeq \frac{1}{\sqrt{N}}$ \cite{pezze_quantum_2014}.
 We presented in chapter on Ramsey interferometers an accuracy going beyond this limit: the variance of $<\sigma_Z>$ 
 tends to quantum shot-noise limit $1/\sqrt{2N_{atoms}}$ when limiting atoms leak to other $m_F$ states. \\
 Entangled states like Dicke states would make possible to go beyond this limitation. For such system variance 
-express as $\delta \phi \simeq \frac{1}{N}$ from
+express as $\Delta \phi \simeq \frac{1}{N}$ from
 the Heisenberg principle being the best accuracy we attempt in metrology.
+The Quantum Fisher Information (QFI) defines the precision on $\phi$ a system can afford. For a pure system $F_Q=4Var(\hat{J_z})$:
+the large spin of the $^{87}Sr$ makes this isotope a great material for metrology as the maximum value $\hat{J_z}$ is much high than
+for spin $1/2$ atoms.  
+
+In supplement  having a large nuclear spin it minimizes the Quantum Fisher Information (QFI) that caracterizes the
+
 Ultracold gases of entangled fermionic strontium enable to extend the dimension of the Hilbert space which will 
 also be a great increase of the phase sensitivity. \\
 
