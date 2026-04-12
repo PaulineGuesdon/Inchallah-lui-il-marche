@@ -1,11 +1,6 @@
 # Fdb version 4
-<<<<<<< HEAD
-["pdflatex"] 1775835222.55858 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/main.tex" "out/main.pdf" "main" 1775835225.24746 2
+["pdflatex"] 1775835440.77833 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/main.tex" "out/main.pdf" "main" 1775835442.29316 2
   "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/main.tex" 1775835140.41174 4723 0574d4d354df0a869f16f920569f2d71 ""
-=======
-["pdflatex"] 1775835060.08097 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/main.tex" "out/main.pdf" "main" 1775835061.90114 2
-  "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/main.tex" 1775821197.36492 4723 0574d4d354df0a869f16f920569f2d71 ""
->>>>>>> 4784c13882b0de27d8194babdf01303cb0426734
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -89,15 +84,9 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1770486061 3345734 73c3e0ab3e3452bd60acd93a512a4193 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "appendix/mis/acronym.tex" 0 -1 0 ""
-<<<<<<< HEAD
   "main.tex" 1775835140.41174 4723 0574d4d354df0a869f16f920569f2d71 ""
   "out/appendix/mis/acronym.tex" 0 -1 0 ""
-  "out/main.aux" 1775835222.5548 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-=======
-  "main.tex" 1775821197.36492 4723 0574d4d354df0a869f16f920569f2d71 ""
-  "out/appendix/mis/acronym.tex" 0 -1 0 ""
-  "out/main.aux" 0 -1 0 "pdflatex"
->>>>>>> 4784c13882b0de27d8194babdf01303cb0426734
+  "out/main.aux" 1775835440.77457 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   (generated)
   "out/main.aux"
   "out/main.log"
