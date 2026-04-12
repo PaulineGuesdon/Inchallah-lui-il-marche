@@ -1,0 +1,942 @@
+﻿%! TEX root = ../main.tex
+
+\chapter{Engineering entangled ensembles $^{87}Sr$ by photoassociation}
+In metrology a common limiting experimental source on a parameter $\phi$ is the quantum shot noise $\delta \phi \simeq \frac{1}{\sqrt{N}}$ \cite{pezze_quantum_2014}.
+We presented in chapter on Ramsey interferometers an accuracy going beyond this limit: the variance of $<\sigma_Z>$ 
+tends to quantum shot-noise limit $1/\sqrt{2N_{atoms}}$ when limiting atoms leak to other $m_F$ states. \\
+Entangled states like Dicke states would make possible to go beyond this limitation. For such system variance 
+express as $\Delta \phi \simeq \frac{1}{N}$ from
+the Heisenberg principle being the best accuracy we attempt in metrology.
+The Quantum Fisher Information (QFI) defines the precision on $\phi$ a system can afford. For a pure system $F_Q=4Var(\hat{J_z})$:
+the large spin of the $^{87}Sr$ makes this isotope a great material for metrology as the maximum value $\hat{J_z}$ is much high than
+for spin $1/2$ atoms.  
+
+In supplement  having a large nuclear spin it minimizes the Quantum Fisher Information (QFI) that caracterizes the
+
+Ultracold gases of entangled fermionic strontium enable to extend the dimension of the Hilbert space which will 
+also be a great increase of the phase sensitivity. \\
+
+This chapter opens with elements of scattering theory: at large interatomic separations, the 1D Schr\"odinger equation 
+yields a solution that naturally defines the scattering length. These elements lay the groundwork for 
+introducing the concept of photoassociation and the associated atomic equation evolution through one and two-body losses.
+Afterwards a discussion on the molecular potentials - which I will refer to as external states - will permit an estimation of 
+the bound energy - internal states to the molecule- where we will enhance two-body losses. We will finally present the experimental results and discuss technical and physical issues that could
+lead to wrong interpretation or absence of signal.
+
+\section{Introduction on photoassociation}
+\subsection{Preamble on scattering theory}
+Understanding PA process with two atoms necessits an introduction on scattering theory to bring out quantites such 
+as optical length and scattering length.\\
+In the study of inter-atomic interactions, the Born-Oppenheimer approximation provides a natural 
+simplification. Due to the large mass ratio $\mu = m_p/m_e \simeq 1000$, the nuclei move on a much 
+slower timescale than the electrons. One can therefore neglect the coupling terms between the nuclear 
+and electronic kinetic energies, and solve the electronic problem on spherical coordinate system centered
+in nucleus.\\
+This allows the total wavefunction to be factorized into a radial and angular part:
+
+\begin{equation}
+    \psi(r, \theta,\phi) = R_l(r) Y^m_l(\theta, \phi)
+\end{equation}
+\\
+where the spherical harmonics $Y^m_l(\theta, \phi)$ encode the angular dependance.
+$R_l(r)$ is the function describing the radial movement of the bound atoms well described in the frame centered 
+in its center of mass. The potential experienced by the atoms inherits the spherical symmetry of the problem. 
+The Schr\"odinger equation then reduces to a one-dimensional problem which can be treated for each
+partial wave l:
+\begin{equation}
+    -\frac{\hbar^2}{2m_p}\left(\frac{1}{r^2} \frac{d^2 R_l(r)}{dr^2}r^2 - \frac{l(l+1)}{r^2} 
+    + \hat{V}(r)\right)R_l(r) = E R_l(r)
+    \label{radial equation}
+\end{equation}
+
+This one-dimensional structure allows an analogy with the \cite{Landau} framework, as will be 
+discussed below. To extract the scattering properties of the system, one studies the asymptotic 
+behavior of the solutions to this equation. At large distances, where the potential $\hat{V}(r)$
+vanishes, the general solution for each partial wave $l$ takes the form \cite{dalibard_interactions_nodate}:
+\begin{equation}
+    R_l(r) \xrightarrow{r\to\infty} \frac{a_l}{r}sin(kr-\frac{l\pi}{2} + \delta_l)
+    \label{solution at long r}
+\end{equation}
+
+where $a_l$ is a normalization factor and $\delta_l$ the phase acquired by the l-th partial wave 
+due to the interaction potential.\\
+
+Continuity of wavefunction for all inter-atomic distances imposes a constraint on the phase
+shifts which at low momenta $k$ finds:
+
+ \begin{equation}
+    \delta_l \propto k^{2l+1}
+ \end{equation}
+
+For s-waves ($l=0$), this leads to the definition of the scattering length:
+\begin{equation}
+    a = -\lim_{k\to 0} \delta_0/k
+    \label{scattering length}
+\end{equation}
+which characterizes the range of the interaction in the low-energy limit.
+
+The full wavefunction is recovered by summing over all partial waves. At large distances, this
+superposition can be rewritten as an incoming plane wave and an outgoing scattered spherical wave:
+
+\begin{equation}
+    \Psi \xrightarrow{r\to\infty} e^{i\mathbf{k}\cdot \mathbf{z}} + f(\theta) \frac{e^{ikr}}{r}
+    \label{incoming outcoming scattering wave}
+\end{equation}
+
+where $f(\theta)$ is the scattering amplitude which determines wheter the collision is elastic or
+inelastic and $\theta$ is the angle between the incident and scattered wavevectors.
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/diffusion_sinus.pdf}
+    \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances $R(a_0)$ behaves as a summation of an incoming plane wave 
+    and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave 
+    collisions at $l=0$. The scattering occurs at background scattering length $R(a_o) = a_{bg}$ the distance
+    where the potential is effective in absence of external coupling. }
+    \label{fig:scattering_concept}
+\end{figure}
+The assymptotical expression of $\Psi$ and $e^{ikz}$ is expressed in a spherical basis as a sum 
+over all the partial waves enable to further understand how the atoms scatter. We can give a 
+decomposition of $\Psi$ as in \ref{incoming outcoming scattering wave}
+
+\begin{equation}
+    \Psi \simeq \frac{i}{2kr}\sum_{l=0}^{\infty}(2l+1)\left((-1)^l e^{-ikr} - S_l e^{ikr}\right)
+    \label{1D schrodinger solution}
+\end{equation}
+
+that gives rise to a spherical part and a scattering term with $S_l = e^{2i\delta_l}$ the scattering amplitude.\\
+
+In the presence of inelastic processes such as photoassociation, the colliding atom pair can be irreversibly lost 
+from the scattering channel---either by forming a bound molecular 
+state or by releasing kinetic energy. This loss of flux from the
+incoming channel cannot be captured by a purely real phase shift, 
+as $S_l = 1$ implies full conservation of the wavefunction 
+amplitude. To account for this absorption of flux, $\delta_l$ 
+must be extended to the complex plane, allowing $S_l < 1$
+and introducing the possibility of inelastic scattering.\\
+
+The associated elastic cross section representing the surface where the scope 
+of the potential is effective writes as
+\begin{equation}
+    \sigma_{el} = \frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)|1-S_l|^2
+    \label{sigma elastic}
+\end{equation}
+But we see in equation \ref{1D schrodinger solution} that $|S_l|$ needs to be $<1$ to allow dissipation of the
+wavefunction. Defining $\delta_l$ as a complex number satisfies this condition and the inelastic cross section
+is
+
+\begin{equation}
+    \sigma_{inel} = \frac{\pi}{k^2}\sum_{l=0}^{\infty}(2l+1)(1-|S_l|^2)
+    \label{sigma inelastic}
+\end{equation}
+
+
+Then from the condition $|S_l| < 1$ we deduce an approximated scattering amplitude $S_0$
+
+\begin{equation}
+    S_0 = e^{2i\delta_0} \simeq 1 + 2i\delta_0
+\end{equation}
+
+Added to the result of \ref{scattering length},
+\begin{equation}
+     1 + 2i\delta_0 \simeq 1 - 2ika
+\end{equation}
+
+Because $\delta_0$ is complex, a direct result of these equations is that we can write a general scattering length as
+\begin{equation}
+    a = a_{bg} + i a''
+\end{equation}
+
+At low temperatures we can re-express equations \ref{sigma elastic} and \ref{sigma inelastic} as
+\begin{equation}
+    \sigma_{el} = 4\pi|a|^2
+\end{equation}
+\begin{equation}
+    \sigma_{inel} = 4\pi|a''|^2
+\end{equation}
+
+A usual case of the elastic collisions is atoms in the ground 
+state. For inelasticity photoassociation is a good example of
+dissipative process where two atoms in the ground state are coupled to a molecular state by a laser.
+
+\subsection{Photoassociation and collisions}
+Photoassociation (PA) is a process from which free atoms pair are bound to each other. Effectively, the bound 
+molecule is typically seen as lost, and perceived as a two-body loss effect. \\
+In the atomic pair frame, the electric dipole interaction drives the system from the ground electronic state
+$\psi_g$ of potential $V_g(r)$ to the excited state $\psi_e$ of $V_e(r)$. \\
+In the absence of the resonant laser the equation evolution of the system express as
+
+\begin{equation}
+    i\hbar \frac{d}{dt}
+    \begin{pmatrix}
+        \psi_g\\
+        \psi_e
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        -\frac{\hbar^2}{2\mu}\nabla^2 + V_g & 0\\
+        0 & -\frac{\hbar^2}{2\mu}\nabla^2 + V_e 
+    \end{pmatrix}
+    \begin{pmatrix}
+        \psi_g\\
+        \psi_e
+    \end{pmatrix}.
+    \label{elastic evolution equation}
+\end{equation}
+
+Then a resonant laser is tuned to an internal state of $V_e(r)$ to bound the atoms
+pair as presented in figure \ref{fig:PA_concept}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Guttridge_PA_process.pdf}
+<<<<<<< HEAD
+    \caption{General concept of photoassociation from a free-atoms potential to an excited molecular state coupled by a resonant laser. Bound, the atoms have 
+    quantized accessible internal state described by the solution of 1D Schr\"odinger equation plotted of each vibrational state.}
+=======
+    \caption[fig:PA\_concept]{General concept of photoassociation from a free-atoms potential to an excited molecular state coupled by a resonant laser. Bound, the atoms have 
+    quantized accessible internal state described by the solution of 1D Schrödinger equation plotted of each vibrational state.}
+>>>>>>> b44323dd98dc329923092813dbe7432174da8982
+    \label{fig:PA_concept}
+\end{figure}
+
+This operation consists in adding inelastic collisions to the system. Then the
+effective evolution equation of the coupled atoms is
+
+\begin{equation}
+    i\hbar \frac{d}{dt}
+    \begin{pmatrix}
+        \psi_g\\
+        \psi_e
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        -\frac{\hbar^2}{2\mu}\nabla^2 + V_g & \Omega/2\\
+        \Omega/2 & -\frac{\hbar^2}{2\mu}\nabla^2 + V_e + \hbar \Delta -i\frac{\gamma_{mol}}{2} 
+    \end{pmatrix}
+    \begin{pmatrix}
+        \psi_g\\
+        \psi_e
+    \end{pmatrix}.
+    \label{inelastic evolution equation}
+\end{equation}\\
+with $\gamma_{mol}$ the molecular spontaneous emission linewidth.\\
+
+At large distance the solution of this hamiltonian takes the form of a spinor $\ket{\psi_g} + \epsilon \ket{\psi_e}$
+where the excited channel is weakly populated far from resonance. The sum of partial waves determined in \ref{1D schrodinger solution} 
+are a representation of $\ket{\psi _g}$ at long distance.
+From this asymptotic form one extracts the scattering phase shift $\delta_l$ (see \ref{solution at long r}) and so the scattering length are then modified.
+The imaginary part of $a$ encodes two-body losses rate whereas its real part changes the collisions properties. In this 
+case we can write an effective scattering length enclosing the background scattering
+length $a_{bg}$ standing for elastic collisions without any coupling, $\delta a$ a
+modification of it because of the coupling and still the inelastic part of it
+\begin{equation}
+    a = a_{bg} + \delta a + ia''
+\end{equation}
+
+One can express the atom number evolution depending on this linewidth as
+
+\begin{equation}
+    \frac{dN}{dt} = - \beta N^2- \Gamma N
+    \label{equation one and two-body losses}
+\end{equation}
+
+where $\beta = K_2/V_e$ in comparison with \cite{han_photoassociation_2018}. $V_e$ is the effective volume of the cloud $(2\pi )^{3/2}\sigma_x 
+\sigma_y \sigma_z$ for a density Gaussian distribution, $\Gamma$ 
+the one-body loss rate limited by vacuum quality and 2-body losses\\
+
+
+Finally in a context of spectroscopy, to adress more bound states
+one sweep the laser frequency from the free-atomic line to red detuned frequencies. 
+The quantity that will testify there is two-body losses
+is the atom number remaining in the trap after a photoassociation pulse. 
+Different process can occur for the molecule to leave the trap: by spontaneous emission
+it can come back to a scattering channel by spontaneous emission and gain enough kinetic 
+energy to leave the trap. Spontaneous emission can also lead to a deeply bound state in
+the ground state potential.\\
+
+PA is mostly used in Feschbach resonance field because determining the exact 
+position of the vibrational states enables by changing the magnetic field
+to tune the scattering length of the atoms and thus the interactions in the system.
+
+\subsection{General scaling laws for PA}
+We will discuss in this subsection the dependence of the PA rate on different parameters 
+of the two-body losses rate $K_2$. This latter introduced above can express as \cite{blatt_systematic_2011}
+
+
+\begin{equation}
+    K_2 = \beta \times V_e = \frac{4\pi \hbar}{2m_p}\times \frac{l_{opt}}{\Delta^2 +\frac{1}{4}(1+2k l_{opt})^2}
+\end{equation}\\
+
+where $\Delta$ is the detuning of the laser from the molecular resonance and $m_p$ the mass of the nucleus.
+For low temperature the De Broglie wavelength $\lambda_{dB} = \frac{h}{\sqrt{2m k_B T}}$ settles the negligibility of wavector $k$. Then the PA rate for
+a tuned laser  
+\begin{equation}
+    K_2 = \frac{16h }{m_p}l_{opt}
+\end{equation}
+depends only on the \textbf{optical length} $l_{opt}$ which caracterizes the strength of the coupling between the
+the scattered atoms and the bound molecular state. Experimentally this quantity is tunable by the laser intensity I
+since it is linear with 
+\begin{equation}
+    l_{opt} = \frac{\lambda^3}{16\pi c}\frac{f_{FC}}{k}f_{rot}I
+\end{equation}
+
+with $f_{rot} = 1$ for $0_u^+$ resonances and $f_{rot} = 2$ for $1_u$ resonances and $\lambda=689.45$ nm the wavelength 
+of the transition \cite{reschovsky_narrow-line_2018}. The amplitude of the PA rate also varies with the recovery of the 
+initial $\psi_g$ and final state $\psi_e$ wavefunctions through the Franck-Condon factor $f_{FC}$ 
+
+\begin{equation} 
+    F_{FC} = \Bigg|\int_0^{\infty} \psi_g(r) \psi_e(r) dr\Bigg |^2 
+\end{equation}
+
+PA rate is maximized when at the Condon radius this recovery is maximum. In a classical picture this is where 
+the atoms spend the most time â€” and thus where the photoassociation is most 
+likely to occur.\\
+
+From this discussion we deduce an atomic evolution 
+
+\begin{equation}
+    \frac{dN}{dt} =  -\frac{16h }{V_e m_p}l_{opt}N^2 - \Gamma N
+\end{equation}
+
+depending on the parameter $l_{opt}$ maximum for high laser intensity and atomic density $n_0= 1/V_e$.
+
+\subsection{Handling multiple molecular potentials}
+So far we have described the PA process as if there was only one molecular potential.
+from the perspective of atom losses.
+But the molecules formed in this process have a rich internal structure that 
+determines which transitions are accessible and how efficiently they can be 
+driven â€” in particular through the Franck-Condon factor. Understanding this 
+structure is therefore essential to optimise $K_2$ experimentally.\\
+
+While exciting a single atom is straightforward, identifying the correct 
+molecular state to target is considerably more involved, since a large 
+number of potentials and internal states coexist. To navigate this complexity, 
+we now want to determine and enumerate the molecular potentials $V_e$ by introducing the molecular quantum 
+numbers that label these states and determine their possible transitions.\\
+
+Confirming to the atomic case, the Born-Oppenheimer approximation allows to describe the movement of the electrons
+separately from the nuclei, then \ref{1D schrodinger solution} is valid for bound atoms. The aim of this part of the
+exposÃ© is to determine the shape of $V_e$ on what equation \ref{1D schrodinger solution} depends.\\
+
+In ultracold gases, only collisions in s-wave are impacted by the interaction potential, 
+because partial waves of higher $l$ mostly are reflected by the centrifugal barrier before crossing regions of 
+lower interaction orders. Then in respect with Pauli statistics the orbital wavefunction $\ket{\phi}$ being even 
+the spin wavefunction should be odd to conserve the non-symmetric nature of the total wavefunction $\ket{\psi}$.
+For two atoms A and B possibly in spin state $\beta_1$ or $\beta_2$ the expression of total wavefunction  
+
+\begin{equation}
+    \ket{\Psi} = \left(\ket{\beta_1}_A \ket{\beta_2}_B + (-1)^R \ket{\beta_1}_B \ket{\beta_2}_A\right)
+     \otimes\ket{\phi}
+     \label{wavefunction parity}
+\end{equation}
+
+constrains the \textbf{rotational quantum number $R$} to values $R = 0, 2$ or $4$... \cite{reichenbach_optical_nodate}
+This first intrinsic molecular quantum number describes the rotational motion of the molecule on its center of mass.
+For even $R$ the molecular potential associated is called \textbf{gerade}. Symmetrically odd value of $R$ gives the
+denomination of \textbf{ungerade} potential. It means that the probability of finding electrons in between the two 
+atoms is high compared to the \textbf{ungerade} potential where the odd wavefunction cancels the probability of finding 
+electrons in between as reveals the figure \ref{fig:u-g symmetry}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/gerade_ungerade.png}
+    \caption[fig:u-g symmetry]{u-g symmetry}
+    \label{fig:u-g symmetry}
+\end{figure}
+
+Another interaction playing a crucial role in determining the molecular structure is the spin-orbit coupling. In this context, the total angular 
+momentum of the molecule is defined as $T = R + F = R + I + J$, where $F$ denotes the total spin of the two atoms $f_1 + f_2$, $J = j_1+j_2$ 
+accounts for the total electronic angular momentum and R is the rotational angular momentum of the molecule. \\
+
+The projections of these angular momenta onto the internuclear axis are characterised by
+\begin{equation}
+    \Omega = \Lambda + \Sigma
+\end{equation}
+
+where $\Lambda$ represents the projection of the orbital momentum of the molecule on the internuclear axis
+and $\Sigma$ the projection of the spin angular momentum. Furthermore, $M_T$ denotes the projection of $T$ onto a chosen quantization axis.\\
+
+In particular case of the $^1S_0$ - $^3P_1$ molecular state of $^{87}Sr$, the spin-orbit interaction is sufficiently strong to couple the elctronic angular momentum
+to the internuclear axis. This regime is quantified bt $\Omega$ and is appropriately described within the framework of Hund's case (c).
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/hund_case_c.pdf}
+    \caption[fig:hund]{Hund case (c) is a case where spin-orbit coupling dominates the interaction, resulting in a angular momenta of projection 
+    $\hbar \Omega$ in internuclear axis. In this case we took $R = 0$ as in many cases. }
+    \label{fig:hund}
+\end{figure}
+
+Now all the specificites of molecular potential states exposed such as the u-g symmetry and the stable quantum number for bound atoms
+I can apply to case of $^{87}Sr$ for which we will photoassociate atoms in the $F=11/2$ hyperfine state. \\
+
+Say we have one atome in the $^1S_0$ state with maximum value $f_1=9/2$ and one in the $^3P_1$ state at maximum $f_2=11/2$: we can have 
+a total spin of $J = 1$ and possible values of total atomic angular momentum F:
+\begin{align}
+\text{For } J=1, &\quad {F = 1, 2, 3... 10}
+\end{align}
+
+The possible values of total angular momentum of the excited molecule are 
+\begin{align}
+\text{For } R=0, &\quad {T = 1, 2, 3... 10}\\
+\text{For } R=2, &\quad {T = 1,2... 12}\\
+\text{For } R=4, &\quad {T = 1,2 ... 14}
+\end{align}
+
+As for atoms there are selection rules for transitions from a free state to a molecular state
+fixed by the angular momentum of the electrons. 
+$\Delta J = 0, 1$ gives $\Delta T = 0, 1$ with $T=0 \rightarrow T=0$ forbidden.\\
+In the end the accessible transitions in the first molecular excited state of the $f_1=11/2$ are
+\begin{align}
+\text{For } R=0, &\quad {T^f = 1, 2, 3... 10}\\
+\text{For } R=2, &\quad {T^f = 1,2... 10}\\
+\text{For } R=4, &\quad {T^f = 1,2 ... 10}\\
+\end{align}
+
+with only even values of R in respect with wavefunction parity of \ref{wavefunction parity}.
+Finally we estimate about 981 combinations of accessible $(R,T^f)$ molecular external states
+which is a complex number of potentials to explore experimentally. We expect to have a spectrum
+similar to the experiment on $^{173}Ytt$ \cite{han_photoassociation_2018} realised in the intercombination
+line where themomentum projection $0_u, 1_g, 1_u, 0_g$ comes from the hyperfine structure. It is indeed expected 
+to count 205 different configurations of $(T, F, R)$ for the excited molecular states on intercombination line with an
+atomic potential written as \ref{ytt potential}. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Ytterbium_molecular_potentials.png}
+    \caption[fig:pa-ytterbium-potentials]{Caption}
+    \label{fig:pa-ytterbium-potentials}
+\end{figure}
+
+As seen in the subsection 3.1.1 in a molecular picture the hamiltonian expresses as \cite{han_photoassociation_2018}
+
+\begin{equation}
+    \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{V}_{BO} + \hat{H}_{HF} 
+    \label{general hamiltonian of molecule}
+\end{equation}
+
+where some electronic interactions orders has been neglected depending on the Hund's case. For $^{87}Sr$ 
+we approximate the potential to be as for $^{173}Yb$ in 
+\begin{equation}
+    \hat{V}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
+    \label{ytt potential}
+\end{equation}
+
+
+\begin{equation}
+\hat{H}_{\mathrm{hf}} =
+A \, (\mathbf{i}_1 \cdot \mathbf{j}_1)
++
+B \,
+\frac{
+3(\mathbf{i}_1 \cdot \mathbf{j}_1)^2
++ \frac{3}{2}(\mathbf{i}_1 \cdot \mathbf{j}_1)
+- i_1(i_1+1)\, j_1(j_1+1)
+}{
+2 i_1 (2 i_1 - 1)\,
+2 j_1 (2 j_1 - 1)
+}
+\end{equation}
+
+$s=\pm1$ for gerade and ungerade potentials respectively.
+The hyperfine term of the atom in $^1S_0$ is zero because its electronic angular momentum is zero.
+Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts. \\
+
+Amidst these potentials around $80$ internal states were measured. Atom loss spectra as a function of PA laser detuning reveals the position of the bound states 
+relative to the atomic resonance $\ket{^{1}S_0, F=5/2} \rightarrow \ket{^{3}P_1, F=7/2}$. 
+Near this resonance atoms are illuminated for $30$ms at low intensity $I = 37$mW/cmÂ² to avoid
+power broadening, allowing the nearest bound state to the dissociation to be resolved.
+At larger red detunings the intensity is increased and the illumination time optimized to maximize 
+contrast.\\
+
+Multiple approximation and scaling help to predict the position of these molecular line: WKB approximation 
+rely on $V_e$ estimation we did presented above. Leroy-Bernstein scaling is a great approach to predict consecutive
+lines close to the dissociation limit without knowing the exact shape of the potential. Finally a mass sclaling on 
+strontium isotopes has been demonstrated in \cite{borkowski_mass_2014} to predict the position of the lines.
+We will see in the following how to benefit from these predictions.\\
+
+\subsection{Internal energy states}
+
+\subsubsection{WKB approximation}
+WKB approximation will enable us in this section to estimate eigenvalues of an estimated pair of atoms in a harmonic
+potential. The position of a first bound state for each internuclear 
+value enhance a deduction of the next lines. \\
+This is a semi-classical approach where plane waves $\psi(x) = \frac{C}{\sqrt{k(x)}}e^{i\int_{x_0}^{x} k(x') dx'}$ 
+are solutions of the 1D SchrÃ¶dinger equation for two particles of eigenenergie $E$ in a potential $V(x)$
+
+\begin{equation}
+    \frac{-\hbar^2}{2\mu}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi
+    \label{basic bitch schrodinger}
+\end{equation}
+
+giving the expression of the wavevector $k(x)$
+\begin{equation}
+    k = \frac{p}{\hbar} = \sqrt{2\mu(E-V(x))}
+\end{equation}
+
+The condition of validity $\frac{d\lambda}{dx} \ll 1$ tells that the atoms must follow adiabatically the potential
+to adapt their movement to its variation \cite{atkins}. It means at really small $x$ of region I of figure
+\ref{fig:pa-sakurai-wkb} this approximation is not valid.\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/WKB_sakurai.pdf}
+    \caption[fig:pa-sakurai-wkb]{Semi-classical approximation enables to find eigen energies $E$ of a hamiltonian describing a pair of atoms 
+    in an harmonical potential $V(x)$ of region II. From a solution it is possible to deduce the next vibrational states of this known 
+    potential.}
+    \label{fig:pa-sakurai-wkb}
+\end{figure}
+
+At position $x=x_1$ and $x_2$ the momentum reaches zero then turnd imaginary.
+In the region $I$ and $III$ the wave is evanescent with a phase $k = i\sqrt{2\mu(|E-V(x)|)}$. It is then usual the
+average the potential as linear with $x$ around these turning points. \\
+
+By reflection with the left barrier of the potential at $x=x_1$ the stationnary wave must come back with a $2\pi$ at 
+$x_2$. By continuity of the solutions in $[0, +\infty[$ the phase tends to
+\begin{equation}
+    \int_{x_1}^{x_2} k(x)dx = (n+\frac{1}{2})\pi 
+    \label{wkb surfaces}
+\end{equation}
+
+Then this formula enables to identify the solutions $E$ that satisfies
+the condition $(n+\frac{1}{2})\pi $. These values are what we call the vibrationnal states
+of a molecular potential.
+
+\subsubsection{Leroy-Bernstein scaling}
+Leroy-Bernstein scaling profits from the WKB approximation to identify the position of the less 
+bound states without knowing the behaviour of the potential that could be complicated to estimate.
+This model is valid only close to the dissociation limit occuring at long distance. Then we can 
+approximate the potential as
+\begin{equation}
+    V(r) \xrightarrow[r \to \infty]{} D_e - \frac{C_n}{r^n}
+\end{equation}
+ 
+with $D_e$ the dissociation energy. For a vibrational energy state $\nu$ of energy $E_{\nu}$
+we express the energy difference $\epsilon = D_e - E_{\nu}$ to inject it in \ref{wkb surfaces}
+and find solutions of
+
+\begin{equation}
+    \int_{x_1}^{x_2} \sqrt{2\mu(\frac{C_n}{r^n}-\epsilon)} dr = (\nu_D-\nu +\frac{1}{2})\hbar\pi 
+\end{equation}
+with $\nu_D$ the dissociation number of the very first bound state \cite{brown_rotational_nodate}. After few calculations we finally obtain
+
+\begin{equation}
+    \epsilon = \left((\nu_D-\nu)\frac{\sqrt{\pi }\hbar\nu}{\sqrt{2\mu C_n^{2/n}}}\frac{\Gamma(\frac{3}{2} - \frac{1}{\nu})}{\Gamma(1-\frac{1}{\nu})} \right)^\frac{2\nu}{\nu-2}
+\end{equation}
+
+$\Gamma$ being the Beta Euler functions. This energy also writes as
+\begin{equation}
+    \frac{E_\nu - D_e}{\nu_D - \nu} = \left(\frac{\sqrt{\pi }\hbar\nu}{\sqrt{2\mu C_n^{2/n}}}\frac{\Gamma(\frac{3}{2} - \frac{1}{\nu})}{\Gamma(1-\frac{1}{\nu})} \right)^\frac{2\nu}{\nu-2}
+\end{equation}
+
+from which we determine the energy difference between the dissociation limit and one of the least bounded states $\nu$
+of the molecule. We see from this formula the facility to predict the position of the vibrational state $\nu$ without 
+knowing anything except the long-range behaviour of the potential. 
+
+\subsubsection{Mass scaling ($^{88}Sr$)}
+Mass scaling is a method to predict from a know potential the position of the phase constraint 
+vibrational states by adjusting the reduced mass with the isotope considered. The hyperfine structure neglected, it is still a good estimation of the position 
+range of the vibrational.\\
+$^{88}Sr$ is one of the bosonic isotope experimentally observed that presents no hyperfine 
+structure. The photoassociation spectrum is then simpler than the fermionic one alike the 
+$^{173}Yb$ (see figure \ref{ytt potential}): only two potentials in the first excited
+molecular state $0_u$ and $1_u$. Results have been presented in \cite{zelevinsky_narrow_2006} 
+where their fitting model gives the following potential expression
+
+\begin{equation}
+    \hat{V}_{BO} \sim \frac{-C_{6,\Lambda}}{r^6} -\frac{C_3}{r^3} + \frac{C_J}{r^2}
+\end{equation}
+
+for the two accessible potentials $\Lambda = 0, 1$. 
+
+The authors consider the potential is the
+same for all the isotopes because we can validate the Born-Oppenheimer estimation for $^{84}Sr$,
+$^{86}Sr$ and $^{88}Sr$.
+Then only the reduced mass in the integral
+\begin{equation}
+    \int_{x_1}^{x_2} \sqrt{2\mu(E-V(x))} dx = (n+\frac{1}{2})\pi 
+\end{equation}
+
+will change upon the isotope. In respect with the condition on the phase, the energies $E$ 
+will be modified. The experimental positions of the first vibrationnal states of the $O_u^+$ potential for $^{84}Sr$,
+$^{86}Sr$ and $^{88}Sr$ are represented by the red crosses in figure \ref{fig:pa-mass-scaling} and enables to adjust
+$V(r)$ shape. In blue lines the fitted functions are plotted from this model : it is then possible to deduce the frequency
+ranges we expect to find the resonances of the $^{87}Sr$.\\
+We see discontinuites at the $84$ isotope: these are avoided crossing coming from a coupling
+with the ground state potential.
+\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/mass_scaling.pdf}
+    \caption[fig:pa-mass-scaling]{This graph - extracted from \cite{borkowski_mass_2014}- confronts the experimental internal states in red crosses to their 
+    theoretical predictions for different reduced mass of strontium isopes. The theoretical model guarantees approximated scales 
+    for molecular lines of $^{87}Sr$ but not precisely because this model neglects the hyperfine interaction of the species.}
+    \label{fig:pa-mass-scaling}
+\end{figure}
+
+Through all these methods we can predict the average position of the vibrational states of the first excited molecular state on the intercombination 
+line. We will demonstrate in the next section how to use these predictions to target with the right parameters PA lines on isotopes 88 and 87 of
+strontium.
+
+\section{PA experiments}
+\subsection{Gas preparation}
+PA rate highly depending on cloud density as discussed in 3.1.3 the first step for Dicke state 
+engineering is to produce highly dense cloud managed differently depending on the fermionic or 
+bosonic nature. \\
+For fermions the convention to produce dense cloud is to optimize the evaporation ramps 
+on a cloud already well charged in the ODT crossing.\\
+The near-vanishing scattering length of bosonic strontium 88 is detrimental to evaporative 
+cooling, as it severely limits the elastic collision rate required to thermalize the gas. Then
+only the previous cooling and trapping step count on the density improvement.\\
+Once we have a dense cloud the PA process starts by making the atoms interact with a beam of PA
+laser that we manage with two different sources to compare and limit the broadening sources.\\
+
+Once we obtain loss peaks with constrast better than the rms value of base cloud, the 
+measurement of atoms loss at fixed frequency but various illumination time verifies \ref{equation one and two-body losses}.
+
+\subsection{Caracterisation of PA beam}
+A strategy to verify that the effect of the spectral laser broadening was not critical on 
+two-losses observation has been measuring the atomic transition and vibrational lines
+with different illumation sources to compare their broadening for similar intensities.\\
+
+Optical pumping beam experimentally settled at the same frequency as the beam after Raman AOM
+we tested the atomic line with this beam.
+AJOUTER GRAPHE ATOMIC SUR SR87
+\textbf{faire une petite partie analyse power broadening avec datas 116, 117, 18 ?}\\
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data144_atomic_res_with_pompopt.png}
+    \caption[linewidth avec pompopt]{}
+    \label{linewidth avec pompopt}
+\end{figure}
+
+<<<<<<< HEAD
+The measurement of the atomic lines of $^{88}Sr$ (left) and $^{87}Sr$ (right)in figure \ref{linewidth avec pompopt} reveals a spectral broadening for an intensity $I=$ mw/cm$^2$ of ???.\\
+<<<<<<< HEAD
+Atom loss measurement for red shifted frequencies also shows that the diode spectrum comes with a noise at $\pm 6$ MHz with 
+harmonics also measured at $\pm 12$ MHz. A second verification by beating between direct light from slave 1 and the MOGlabs beam. confirms this 
+=======
+=======
+The measurement of the atomic lines of $^{88}Sr$ (\ref{PA slave 1}) and $^{87}Sr$ (figure \ref{zoom red chain battement}) in \ref{linewidth avec pompopt} reveals a spectral broadening for an intensity $I=$ mw/cm$^2$ of ???.\\
+>>>>>>> b44323dd98dc329923092813dbe7432174da8982
+Atom loss measurement for red shifted frequencies also shows from \ref{} that the diode spectrum comes with a noise at $\pm 6$ MHz  of centered frequency of the beating $f_0$ with 
+harmonics also measured at $\pm 12$ MHz. A second verification on the beating spectrum between direct light from slave 1 and the MOGlabs beam confirms this 
+>>>>>>> ce092e04ce263ce52c11a47f3fe93637e5586a35
+perturbative components we considered on our spectrum analysis.\\
+
+These tests on slave 1 laser for PA were only in an approach of broadening analysis because our experimental setup do not allows us to go far from
+atomic resonance where we expect measuring PA lines: the light from MOGlabs chain does.
+
+\subsection{PA realised with light source tuned by beating }
+<<<<<<< HEAD
+The results presented in next section were obtained with light coming from the head of the laser MOGlabs. This laser tuning detailed in \ref{frequences 88sr 87sr} 
+relies on beating with light propagating in a first AOM $Slave 1 AOM$ that has been optimized in the opposite diffracted order $+1$, contrary to the setup used 
+for Raman transitions. Then the frequency is as previously settled by the $\simeq +300$ MHz double pass $AOM PompOpt$ then injected in a fiber that serves for the 
+new beating scheme of \ref{nouveau battement} left part.\\
+We were previously injecting the same fiber at the output of the "AOM PompOpt" at frequency $f_{PompOpt}$
+featured in \ref{frequences 88sr 87sr} that was directly sent to the vacuum cell. The output 
+of this fiber is now sent to this other optical table to assure at the same time the optical pumping and 
+MOGlabs beating at $-1.75$GHz from $F=9/2$ hyperfine state. 
+To adress deeply bound vibrational states we use a doubler frequency module down to $600$MHz
+from the atomic resonance.\\
+=======
+\subsubsection{Tuning the PA beam frequency}
+The results presented in the next section were obtained with light coming from the head of the laser MOGlabs. This laser scheme detailed (see figure \ref{zoom red chain battement})
+relies on beating with light propagating in a first AOM "$Slave$ $1$" that is optimized on a specific diffracted order depending on the strontiumic species targeted 
+(see \ref{frequences 88sr 87sr}). Then the frequency is as previously settled by the $\simeq +300$ MHz double pass AOM $PompOpt$ then injected in a fiber that serves for the 
+new beating scheme of \ref{nouveau battement} left part. The final frequency of the PA beam sent to the atoms is
+\begin{equation}
+    f_{PA} = f^{RF}_{beating} - f_{Raman} \pm 2\times f_{slave 1} - 2\times f_{11/2}
+\end{equation}
+>>>>>>> ce092e04ce263ce52c11a47f3fe93637e5586a35
+
+To adress deeply bound vibrational states we use a doubler frequency module at maximum entrance frequency $f_{max}=300$ MHz to go down to $600$ MHz on this AOMs configuration. It is 
+possible to go further by inverting $Raman$ AOM diffracted order as we will expose in the following for deep vibrational states of $^{87}Sr$. \\
+This light is injected in the fiber that was previously sending light to the atoms directly after "AOM 11/2". This fiber now ends to another optical table that is composed as in 
+\ref{PA slave 1} to assure at the same time the optical pumping and 
+MOGlabs beating at $-1.75$GHz from $F=9/2$ hyperfine state.
+
+Before the co-propagation part the $F = 11/2$ beam is split for optical pumping : this 
+last fiber is sent to the cell.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/zoom_red_chain_beating.pdf}
+    \caption[nouveau battement]{Zoom on the part of the red chain used for PA process.  The frequency in both laser beam cases are tuned by
+    "AOM Inj Slave 1", optimized in the $-1$ order for $^{88}Sr$ and in the $+1$ order for $^{87}Sr$: only a need of realignement of the beam after 
+    this double pass AOM has to be done. Then the frequency is changed by "AOM 11/2" to the end of PA process, going to the beating table or directly to
+    the atoms. }
+    \label{zoom red chain battement}    
+\end{figure}
+
+
+
+\subsubsection{Spectral properties (cf 29/01/26)}
+\textbf{Spectral broadening}\\
+Measuring the beating at spectrum analyzer enables to visualize the spectrum from the molecular frame with an RBW parameter at the order of its 
+lifetime $\Gamma_{mol}\simeq 15$ kHz. This measurement \ref{beating broadening} shows two side components at $\pm 50$ kHz: we see that
+we lose half the power in these components that broaden the molecular line when we do photoassociate. Also it means that the calibration of 
+intensity sent to the atoms at the carrier frequency is in reality half the measured one from powermeter. \\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/beating_analysis.png}
+    \caption[beating broadening]{}
+    \label{beating broadening}
+\end{figure}
+
+
+\textbf{PDH sidebands}\\
+The laser beam sent to the atoms on PA process passes through the FP cavity presented in
+section ??? which has a PDH locking system. The incident electric field of frequency $f_0$ is phase modulated by an EOM at $f_M=40.48$ MHz.
+The electric field expressing as in \cite{black_introduction_2001}
+
+\begin{equation}
+    E_{inc}^{mod} = E_0 \left(J_0(\beta)e^{if_0t}+J_1(\beta)e^{i(f_0 + f_M)t}-J_1(\beta)e^{i(f_0-f_M)t}\right)
+\end{equation}
+
+depends on modulation depth parameter $\beta$ that is controled by the RF amplitude sent to the EOM. 
+As we see in \ref{Bessel function} the amplitude ratio between the carrier and the sidebands is described
+by Bessel function. There is an optimal value at $\beta =1$ for which most of the amplitude is at frequency
+$f_0$ while there is still a little amplitude is the two sidebands indispensable for the locking.\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/fonctions_bessel_PDH_sidebands.png}
+    \caption[Bessel function]{}
+    \label{Bessel function}
+\end{figure}
+
+Nevertheless the sideband at $f_0 - f_M$ adresses the atomic resonance when 
+the carrier is around $40.48$MHz red detuned from $f_{atomic}$ as represented in figure \ref{sidebands}.
+The opposite sideband of frequency $f_0 + f_M$ excites identically the atoms when the carrier is $40.48$MHz above the atomic
+transition. A measurement of the atomic line at $\beta \simeq 1$ obtained with this sideband component is presented in figure \ref{fig:raie-40mhz}.
+
+
+\begin{center}
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.8\linewidth,angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sidebands.jpeg}
+        \captionof{figure}[sidebands]{Peut être combiner ce graphe avec la mesure de la raie atomique en rajoutant la position des sidebands}
+        \label{sidebands}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data397_sidebands_PDH_23_10_25.png}
+        \captionof{figure}[fig:raie-40mhz]{raie 40MHz}
+        \label{fig:raie-40mhz}
+    \end{minipage}
+\end{center}
+Decreasing the $\beta$ enables to reduce this unvoluntary effect but we were not capable of canceling it completly while keeping the PDH lock.\\
+
+\textbf{dN/dt behaviour}\\
+While the nature of this reasonance reveals atomic we have been tricked by the atom number decrease presenting as expected for molecules, two 
+decay fashion. \\
+The double-shape of the supposed molecular line led us to think is it different projections of a $T$: increasing $B$ field should seperate them.
+This experiment did not have any effect on this line, which led us to conclude that our initial gas was not copmpletly thermalised.
+
+After all these verifications we were able to search for PA lines considering the spectral broadening
+of the laser and the spectral components coming from experimental devices. These 
+effects can lead to mistakely interpret it as a molecular line. As for every PA data, measurement of $dN/dt$ at 
+this frequency testifies the presence of only one-body losses for a thermalized gas.
+
+\section{Photoassociation on $^{88}Sr$}
+As a calibration of our experimental protocol the PA lines search on $^{87}Sr$ starts with a verification of few
+molecular lines of $^{88}Sr$ that has been studied in \cite{borkowski_line_2009}, \cite{zelevinsky_narrow_2006}, \cite{reschovsky_narrow-line_2018}.\\
+\subsection{Setup}
+For bosonic species, we are using the MOGlabs beating for PA to adress lines unaccessible with the direct light from "AOM 11/2 " whereas it has a 
+less broaden spectrum. We optimize the $+1$ order to address the $^{88}Sr$,$^{3}P_1$ resonance at $f_{slave 1} = 319.4$MHz with 
+$f_{11/2}=220.75$MHz. This order leads to the bosonic line we attempt as in \ref{frequences 88sr 87sr} : the change of diffracted order leads in the
+red case to bosonic gas whereas the blue one is for the fermionic strontium - as for Raman transition scheme - for PA.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA.pdf}
+    \caption[frequences 88sr 87sr]{Frequencies scheme for PA depending on the isotope we experiment. In blue, the scheme for $^{88}Sr$ and in red
+    the one for $^{87}Sr$. The change of diffracted order on "AOM Slave 1" enables to pass from one isotope to another contrainting us only to
+    realign the injection of the beam after the AOM.}
+    \label{frequences 88sr 87sr}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/g90078-4.pdf}
+    \caption[PA slave 1]{Modified beating scheme for PA process between the light from "AOM 11/2" and MOGlabs. The light is coming from \ref{zoom red chain battement} 
+    to split in two arms: optical pumping and PA. This last one serves for MOGlabs locking in a beating procedure where the beam is recombined by the 50/50 waveplate
+    superposing with slave 1 beam.}
+    \label{PA slave 1}
+\end{figure}
+
+\subsection{Atomic and molecular lines}
+As introduced in this chapter the PA experiment starts in the case of $^{88}Sr$ at density $n_0=5\times 10^{13}$ atoms$/cm^3$ 
+at $T=%1.7uK. 
+$. The atomic transition is adressed for $f^{RF}_{beating} = f_{Raman}$ by a laser beam of intensity $I = 100 I_{sat}$ at 
+waist $w_0 = 340 \mu$m for $800$ms. Figure \ref{atomic line 88sr} shows the atom loss at this reference frequency with an 
+effective linewidth of $200$kHz incounting a power broadening of $74kHz$ and thermal broadening of the order of
+$17$kHz. Expecting a molecular linewidth of about $\Gamma_{mol} \simeq 2\times \Gamma_{at} \simeq 15kHz$ we suppose an
+additional source of broadening coming from the laser itself detailed in 3.5.2.1. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data88_26_01_26_sr88_atomic_line.png}
+    \caption[atomic line 88sr]{Caption}
+    \label{atomic line 88sr}
+\end{figure}
+
+Then the laser MOGlabs robustly locked, we change $f^{RF}_{beating}$ to search the two first vibrational states visible in figure
+\ref{n=2 vibrational state}. \\
+Datas may have been obtained for different waist size in an effort to increase two-body losses. \\
+The first molecular state has been detected for $t=1000$ ms exposure time at intensity $826$ mW/cm$^2$, $f = -23.99\pm$ MHz from the atomic transition.\\ 
+%of a $\omega_0 = 340 \mu $m laser beam
+Then we did detected a second one at $f = -222.3\pm $ MHz for laser beam of intensity $I = 7$ mW/cm$^2$
+for $10$ ms. We estimate the linewidth $\Gamma = $  with power broadening of $357$kHz and thermal broadening $???$ kHz.
+
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data91_27_01_26_n2_PA_line_sr88.png}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data146_06_06_26_sr88_n2_PA.png}
+    \end{subfigure}
+    \caption[n=2 vibrational state]{Caption}
+    \label{n=2 vibrational state}
+\end{figure}
+
+These results are consistent with \cite{zelevinsky_narrow_2006} that presented vibrational states $f_{\nu=1} = -23.932(33)$
+and $f_{\nu=2}=-222.161(35)$ that corresponds to $0_u$ potential. Then we want to verify the two tendencies of \ref{equation one 
+and two-body losses} where we expect to see a first rapid decay that breaks at the dominancy of the one-body loss linear with $N$.
+Figure \ref{88sr exponential decay} shows these two fashions from which the lorentzian fit gives the $K_2$ value : the deduced 
+$l_{opt}$ is $l_{opt} = 13a_0$W/cm$^2$ for $f_{\nu=2}=-222.161(35)$, while in \cite{zelevinsky_narrow_2006} $l_{opt} = 1a_0$W/cm$^2$. 
+For the second line we measure $l_{opt} = 7.6\times 10^3 a_0$ W/cm$^2$ which is also consistent with the theoretical value of \cite{blatt_systematic_2011}.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data94_28_01_26_sr88__exponential_decay.png}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data141_04_03_26_sr88_expoential_decay.png}
+    \end{subfigure}
+    \caption[88sr exponential decay]{Caption}
+    \label{88sr exponential decay}
+\end{figure}
+
+
+The aim of these calibrations was to be sure about our experimental protocol to be applied on the $^{87}Sr$ we present in the following.
+
+\section{87Sr molecules}
+For $^{87}Sr$ we exploit the $-1$ order to account 
+the hyperfine state $F=11/2$ as in \ref{fig:intro-chaine-rouge}.
+
+<<<<<<< HEAD
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/beating_analysis.png}
+    \caption{}
+    \label{beating broadening}
+\end{figure}
+
+
+\subsubsection{PDH sidebands}
+The laser beam sent to the atoms on PA process passes through the FP cavity presented in
+section ??? which has a PDH locking system. The incident electric field of frequency $f_0$ is phase modulated by an EOM at $f_M=40.48$ MHz.
+The electric field expressing as in \cite{black_introduction_2001}
+
+\begin{equation}
+    E_{inc}^{mod} = E_0 \left(J_0(\beta)e^{if_0t}+J_1(\beta)e^{i(f_0 + f_M)t}-J_1(\beta)e^{i(f_0-f_M)t}\right)
+\end{equation}
+
+depends on modulation depth parameter $\beta$ that is controled by the RF amplitude sent to the EOM. 
+As we see in \ref{Bessel function} the amplitude ratio between the carrier and the sidebands is described
+by Bessel function. There is an optimal value at $\beta =1$ for which most of the amplitude is at frequency
+$f_0$ while there is still a little amplitude is the two sidebands indispensable for the locking.\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/fonctions_bessel_PDH_sidebands.png}
+    \caption{}
+    \label{Bessel function}
+\end{figure}
+
+Nevertheless the sideband at $f_0 - f_M$ adresses the atomic resonance when 
+the carrier is around $40.48$MHz red detuned from $f_{atomic}$ as represented in figure \ref{sidebands}.
+The opposite sideband of frequency $f_0 + f_M$ excites identically the atoms when the carrier is $40.48$MHz above the atomic
+transition. A measurement of the atomic line at $\beta \simeq 1$ obtained with this sideband component is presented in figure \ref{fig:raie-40mhz}.
+
+
+\begin{center}
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.8\linewidth,angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sidebands.jpeg}
+        \captionof{figure}{Peut Ãªtre combiner ce graphe avec la mesure de la raie atomique en rajoutant la position des sidebands}
+        \label{sidebands}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data397_sidebands_PDH_23_10_25.png}
+        \captionof{figure}{raie 40MHz}
+        \label{fig:raie-40mhz}
+    \end{minipage}
+\end{center}
+Decreasing the $\beta$ enables to reduce this unvoluntary effect but we were not capable of canceling it completly while keeping the PDH lock.\\
+
+These effect can lead to mistakely interpret it as a molecular line. As for every PA data, measurement of $dN/dt$ at 
+this frequency testifies the presence of only one-body losses for a thermalized gas.
+
+
+\subsection{Physical sources of inhabilitation of photoassociation}
+=======
+\subsection{Results on $^{87}Sr$}
+<<<<<<< HEAD
+>>>>>>> ce092e04ce263ce52c11a47f3fe93637e5586a35
+\subsubsection{On F = 9/2 : predissociation}
+=======
+
+\subsection{Interpretation of low contrast}
+\textbf{On F = 9/2 : predissociation}
+>>>>>>> b44323dd98dc329923092813dbe7432174da8982
+On some cases PA process fails because of pre-dissociation phenomenon. 
+When photoassociating a pair of free atoms from a potential X on a vibrational 
+state from potential A it is possible that this last potential crosses another 
+potential curve B, (e.g molecular potentials of other hyperfine states). Then it is possible that the excited molecule decays 
+to a pair of quasi free-bound atoms in a potential B.\\
+Considering it, it is reasonable to do PA on the lowest hyperfine state as in \ref{fig:pa-ytterbium-potentials},
+in our case and in most of complex fermionic specie. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/predissociation.png}
+    \caption[predissociation]{}
+    \label{predissociation}
+\end{figure}
+
+\subsubsection{Coupling to more energetic state from the IR}
+ODT can be a distructive source of PA process if it is resonant with high energy levels at $\lambda = 1064$nm from the target state
+of the first molecular excited state.
+The experimental sequence of \ref{sequence chirp} implements a chopping of optical trap in opposite phase with PA laser that suppresses eventual coupling to much higher levels.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth, angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/chirp_sequence.jpeg}
+    \caption[sequence chirp]{}
+    \label{sequence chirp}
+\end{figure}
+
+\textbf{data 91 et 92 comparaison of second PA line with and without chopping}
+\subsubsection{Node of wavefunction for some vibrational states}
+
+Vibrational states whose wavefunction has a node at the Condon radius cannot be excited by the PA laser.
+In figure \ref{fig:PA_concept} the wavefunction of the second bound state crosses the molecular potential
+at a node. It means that if we try to PA atoms from the free atoms to this molecular state we would not see
+any atom loss.

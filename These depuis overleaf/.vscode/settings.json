@@ -1,0 +1,42 @@
+{
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "latex-workshop.latex.build.forceRecipeUsage": true,
+  "latex-workshop.latex.build.enableMagicComments": true,
+  "latex-workshop.latex.build.fromWorkspaceFolder": true,
+  "latex-workshop.latex.build.rootfileInStatus": true,
+  "latex-workshop.synctex.afterBuild.enabled": false,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+  "latex-workshop.latex.outDir": "./out",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.watch.usePolling": true,
+  "latex-workshop.latex.watch.pdf.delay": 1000,
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.search.rootFiles.include": [
+    "main.tex"
+  ],
+  "latex-workshop.latex.search.rootFiles.exclude": [
+    "**/out/**"
+  ],
+  "latex-workshop.latex.rootFile.doNotPrompt": true,
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk main via PowerShell",
+      "command": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-Command",
+        "& \"C:\\Users\\pauline.guesdon\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\latexmk.exe\" -pdf -synctex=1 -interaction=nonstopmode -halt-on-error -file-line-error -outdir=out main.tex"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "Build main.tex",
+      "tools": [
+        "latexmk main via PowerShell"
+      ]
+    }
+  ]
+}
