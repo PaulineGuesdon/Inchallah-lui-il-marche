@@ -2,6 +2,12 @@
   "folders": [
     {
       "path": "These depuis overleaf"
+    },
+    {
+      "path": "."
     }
-  ]
+  ],
+  "settings": {
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click"
+  }
 }
