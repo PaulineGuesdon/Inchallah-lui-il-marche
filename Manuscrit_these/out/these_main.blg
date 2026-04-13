@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: these_main.aux
+The style file: ieeetr.bst
+Database file #1: ref.bib
+Warning--I didn't find a database entry for "Landau"
+Warning--I didn't find a database entry for "atkins"
+Warning--empty journal in dalibard_interactions_nodate
+Warning--empty year in dalibard_interactions_nodate
+Warning--empty journal in reichenbach_optical_nodate
+Warning--empty year in reichenbach_optical_nodate
+Warning--empty journal in brown_rotational_nodate
+Warning--empty year in brown_rotational_nodate
+You've used 11 entries,
+            1876 wiz_defined-function locations,
+            541 strings with 5640 characters,
+and the built_in function-call counts, 2661 in all, are:
+= -- 235
+> -- 154
+< -- 0
++ -- 56
+- -- 45
+* -- 192
+:= -- 399
+add.period$ -- 14
+call.type$ -- 11
+change.case$ -- 11
+chr.to.int$ -- 0
+cite$ -- 17
+duplicate$ -- 133
+empty$ -- 219
+format.name$ -- 45
+if$ -- 630
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 8
+newline$ -- 42
+num.names$ -- 11
+pop$ -- 48
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 108
+stack$ -- 0
+substring$ -- 72
+swap$ -- 59
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 6
+while$ -- 18
+width$ -- 13
+write$ -- 103
+(There were 8 warnings)
