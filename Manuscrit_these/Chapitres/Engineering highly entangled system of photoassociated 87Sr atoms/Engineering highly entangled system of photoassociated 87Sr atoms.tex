@@ -764,7 +764,7 @@ As introduced in this chapter the PA experiment starts in the case of $^{88}Sr$ 
 at $T~1.7uK$.
 The atomic transition is adressed for $f^{RF}_{beating} = f_{Raman}$ by a laser beam of intensity $I = 100 I_{sat}$ at
 waist $w_0 = 340 \mu$m for $800$ms. Figure \ref{atomic line 88sr} shows the atom loss at this reference frequency with an
-effective linewidth of $192(9)$kHz incounting a power broadening of $74kHz$ and thermal broadening of the order of
+effective linewidth of $\sigma = 192(9)$kHz incounting a power broadening of $74kHz$ and thermal broadening of the order of
 $17$kHz. Expecting a molecular linewidth of about $\Gamma_{mol} \simeq 2\times \Gamma_{at} \simeq 15kHz$ we suppose an
 additional source of broadening coming from the laser itself detailed in 3.5.2.1.
 
@@ -788,12 +788,12 @@ for $10$ ms. We estimate the linewidth $\Gamma = $  with power broadening of $35
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[t]{0.48\linewidth}
+    \begin{subfigure}[t]{0.5\linewidth}
         \centering
         \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data91_finale.pdf}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[t]{0.48\linewidth}
+    \begin{subfigure}[t]{0.5\linewidth}
         \centering
         \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data146_finale.pdf}
     \end{subfigure}
@@ -831,64 +831,6 @@ Ajouter une partie sur l'estimation des incertitudes, sur les modèles de fit ?
 \section{87Sr molecules}
 For $^{87}Sr$ we exploit the $-1$ order to account
 the hyperfine state $F=11/2$ as in \ref{fig:intro-chaine-rouge}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/beating_analysis.png}
-    \caption{oh}
-    \label{beating broadening}
-\end{figure}
-
-
-\subsubsection{PDH sidebands}
-The laser beam sent to the atoms on PA process passes through the FP cavity presented in
-section ??? which has a PDH locking system. The incident electric field of frequency $f_0$ is phase modulated by an EOM at $f_M=40.48$ MHz.
-The electric field expressing as in \cite{black_introduction_2001}
-
-\begin{equation}
-    E_{inc}^{mod} = E_0 \left(J_0(\beta)e^{if_0t}+J_1(\beta)e^{i(f_0 + f_M)t}-J_1(\beta)e^{i(f_0-f_M)t}\right)
-\end{equation}
-
-depends on modulation depth parameter $\beta$ that is controled by the RF amplitude sent to the EOM.
-As we see in \ref{Bessel function} the amplitude ratio between the carrier and the sidebands is described
-by Bessel function. There is an optimal value at $\beta =1$ for which most of the amplitude is at frequency
-$f_0$ while there is still a little amplitude is the two sidebands indispensable for the locking.\\
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/fonctions_bessel_PDH_sidebands.png}
-    \caption{}
-    \label{Bessel function}
-\end{figure}
-
-Nevertheless the sideband at $f_0 - f_M$ adresses the atomic resonance when
-the carrier is around $40.48$MHz red detuned from $f_{atomic}$ as represented in figure \ref{sidebands}.
-The opposite sideband of frequency $f_0 + f_M$ excites identically the atoms when the carrier is $40.48$MHz above the atomic
-transition. A measurement of the atomic line at $\beta \simeq 1$ obtained with this sideband component is presented in figure \ref{fig:raie-40mhz}.
-
-
-\begin{center}
-    \begin{minipage}[t]{0.48\textwidth}
-        \centering
-        \includegraphics[width=0.8\linewidth,angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sidebands.jpeg}
-        \captionof{figure}{Peut Ãªtre combiner ce graphe avec la mesure de la raie atomique en rajoutant la position des sidebands}
-        \label{sidebands}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.48\textwidth}
-        \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data397_sidebands_PDH_23_10_25.png}
-        \captionof{figure}{raie 40MHz}
-        \label{fig:raie-40mhz}
-    \end{minipage}
-\end{center}
-Decreasing the $\beta$ enables to reduce this unvoluntary effect but we were not capable of canceling it completly while keeping the PDH lock.\\
-
-These effect can lead to mistakely interpret it as a molecular line. As for every PA data, measurement of $dN/dt$ at
-this frequency testifies the presence of only one-body losses for a thermalized gas.
-
-
-\subsection{Physical sources of inhabilitation of photoassociation}
 
 \subsection{Results on $^{87}Sr$}
 
