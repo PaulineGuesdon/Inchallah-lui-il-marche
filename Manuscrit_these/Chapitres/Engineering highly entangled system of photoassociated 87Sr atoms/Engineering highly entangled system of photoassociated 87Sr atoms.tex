@@ -184,8 +184,7 @@ Then a resonant laser is tuned to an internal state of $V_e(r)$ to bound the ato
 pair as presented in figure \ref{fig:PA_concept}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Guttridge_PA_process.pdf}
-
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Guttridge_PA_process.pdf}
     \caption{General concept of photoassociation from a free-atoms potential to an excited molecular state coupled by a resonant laser. Bound, the atoms have
     quantized accessible internal state described by the solution of 1D Schr\"odinger equation plotted of each vibrational state.}
 
@@ -332,8 +331,11 @@ electrons in between as reveals the figure \ref{fig:u-g symmetry}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/gerade_ungerade.png}
-    \caption[fig:u-g symmetry]{u-g symmetry}
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/proba_presence.pdf}
+    \caption[fig:u-g symmetry]{Gerade/ungerade specificitie of the electronic wavefunction of electrons orbiting around nucleus A and B.
+    Left : modulus square of the wavefunction $\left|\psi_-(z)\right|^2$ for odd parity of $R=1,3,5...$. The electrons have a non-zero
+    probability of being found in between the two atoms contrarely to Right: for even parity of $R=0,2,4...$ the density probability is zero 
+    in between the two atoms.}
     \label{fig:u-g symmetry}
 \end{figure}
 
@@ -397,8 +399,10 @@ atomic potential written as \ref{ytt potential}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Ytterbium_molecular_potentials.png}
-    \caption[fig:pa-ytterbium-potentials]{Caption}
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/ytterbium.pdf}
+    \caption[fig:pa-ytterbium-potentials]{Density of molecular potentials for $^{173}Yb$ with three hyperfine states inhancing numerous
+    triplet of quantum numbers $(T,F,R)$. The spectral lines are identified by $S_{u/g}$ with $S$ the total orbital momentum of the molecule
+    and $u/g$ the parity of the electronic wavefunction (see \ref{fig:u-g symmetry}).}
     \label{fig:pa-ytterbium-potentials}
 \end{figure}
 
@@ -438,7 +442,7 @@ Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts. \\
 
 Amidst these potentials around $80$ internal states were measured. Atom loss spectra as a function of PA laser detuning reveals the position of the bound states
 relative to the atomic resonance $\ket{^{1}S_0, F=5/2} \rightarrow \ket{^{3}P_1, F=7/2}$.
-Near this resonance atoms are illuminated for $30$ms at low intensity $I = 37$mW/cmÂ² to avoid
+Near this resonance atoms are illuminated for $30$ms at low intensity $I = 37$mW/cm² to avoid
 power broadening, allowing the nearest bound state to the dissociation to be resolved.
 At larger red detunings the intensity is increased and the illumination time optimized to maximize
 contrast.\\
@@ -456,7 +460,7 @@ WKB approximation will enable us in this section to estimate eigenvalues of an e
 potential. The position of a first bound state for each internuclear
 value enhance a deduction of the next lines. \\
 This is a semi-classical approach where plane waves $\psi(x) = \frac{C}{\sqrt{k(x)}}e^{i\int_{x_0}^{x} k(x') dx'}$
-are solutions of the 1D SchrÃ¶dinger equation for two particles of eigenenergie $E$ in a potential $V(x)$
+are solutions of the 1D Schrödinger equation for two particles of eigenenergie $E$ in a potential $V(x)$
 
 \begin{equation}
     \frac{-\hbar^2}{2\mu}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi
@@ -882,32 +886,40 @@ the hyperfine state $F=11/2$ as in \ref{fig:intro-chaine-rouge}.
 
 
 \subsection{Interpretation of low contrast}
-\textbf{On F = 9/2 : predissociation}
+\textbf{On F = 9/2 : predissociation}\\
+The spectroscopy of $^{87}Sr$ reveals a really important linewidth coupled to a low contrast. A way to interpret this surprising contrast is the predissociation.
+This concept illustrated in \ref{predissociation} is a phenomenon that occurs when dissociation limit of an excited molecular potential
+C is under the closed channel of the excited molecule of potential B. Then the $\nu_ B$ state is coupled to a density of states of potential
+C that modifies the linewidth $\Gamma_mol$ of the molecular state as 
 
-On some cases PA process fails because of pre-dissociation phenomenon.
-When photoassociating a pair of free atoms from a potential X on a vibrational
-state from potential A it is possible that this last potential crosses another
-potential curve B, (e.g molecular potentials of other hyperfine states). Then it is possible that the excited molecule decays
-to a pair of quasi free-bound atoms in a potential B.\\
-Considering it, it is reasonable to do PA on the lowest hyperfine state as in \ref{fig:pa-ytterbium-potentials},
-in our case and in most of complex fermionic specie.
+\begin{equation}
+    \Gamma_{mol} \propto \rho(\epsilon_f)
+\end{equation}
+
+In \ref{fig:pa-ytterbium-potentials} the curves do not seem to be affected by the predissociation from the linewidth values. We were thinking that PA on the lowest
+hyperfine state as for $Yb$ would avoid this effect but the data on $^{87}Sr$ show the contrary: for a reason we ignore this atom is affected by this process but the 
+$Yb$ with hyperfine structure is not.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/predissociation.png}
-    \caption[predissociation]{}
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/predissociation.pdf}
+    \caption[predissociation]{Scheme of predissociation which is a phenomenon that occurs when dissociation limit of an excited molecular potential
+C is under the closed channel of the excited molecule of potential B. Then the $\nu_ B$ state is coupled to a density of states of potential
+C that modifies the linewidth $\Gamma_mol$ of the molecular state}
     \label{predissociation}
 \end{figure}
 
 \subsubsection{Coupling to more energetic state from the IR}
 ODT can be a distructive source of PA process if it is resonant with high energy levels at $\lambda = 1064$nm from the target state
 of the first molecular excited state.
-The experimental sequence of \ref{sequence chirp} implements a chopping of optical trap in opposite phase with PA laser that suppresses eventual coupling to much higher levels.
+The experimental sequence of \ref{sequence chirp} implements a chopping of optical trap in opposite phase with PA laser that suppresses eventual coupling to much higher levels.\\
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\linewidth, angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/chirp_sequence.jpeg}
-    \caption[sequence chirp]{}
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sequence_chopping.pdf}
+    \caption[sequence chirp]{Experimental sequence of IR and PA laser chopping to cancel possible coupling to higher energy levels around 
+    $\lambda = 1064nm$ that would destruct or decrease collision process. The RF signal of ODT and Raman AOMs is modulated by a GBF at 
+    frequency $25$ kHz in opposite phaseso the atoms in the trap are not lost during the $100\mu$ s falling time when photoassociated.}
     \label{sequence chirp}
 \end{figure}
 
