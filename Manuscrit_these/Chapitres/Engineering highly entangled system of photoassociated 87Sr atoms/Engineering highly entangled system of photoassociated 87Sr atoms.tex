@@ -184,8 +184,7 @@ Then a resonant laser is tuned to an internal state of $V_e(r)$ to bound the ato
 pair as presented in figure \ref{fig:PA_concept}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Guttridge_PA_process.pdf}
-
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Guttridge_PA_process.pdf}
     \caption{General concept of photoassociation from a free-atoms potential to an excited molecular state coupled by a resonant laser. Bound, the atoms have
     quantized accessible internal state described by the solution of 1D Schr\"odinger equation plotted of each vibrational state.}
 
@@ -332,8 +331,11 @@ electrons in between as reveals the figure \ref{fig:u-g symmetry}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/gerade_ungerade.png}
-    \caption[fig:u-g symmetry]{u-g symmetry}
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/proba_presence.pdf}
+    \caption[fig:u-g symmetry]{Gerade/ungerade specificitie of the electronic wavefunction of electrons orbiting around nucleus A and B.
+    Left : modulus square of the wavefunction $\left|\psi_-(z)\right|^2$ for odd parity of $R=1,3,5...$. The electrons have a non-zero
+    probability of being found in between the two atoms contrarely to Right: for even parity of $R=0,2,4...$ the density probability is zero 
+    in between the two atoms.}
     \label{fig:u-g symmetry}
 \end{figure}
 
@@ -397,8 +399,10 @@ atomic potential written as \ref{ytt potential}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Ytterbium_molecular_potentials.png}
-    \caption[fig:pa-ytterbium-potentials]{Caption}
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/ytterbium.pdf}
+    \caption[fig:pa-ytterbium-potentials]{Density of molecular potentials for $^{173}Yb$ with three hyperfine states inhancing numerous
+    triplet of quantum numbers $(T,F,R)$. The spectral lines are identified by $S_{u/g}$ with $S$ the total orbital momentum of the molecule
+    and $u/g$ the parity of the electronic wavefunction (see \ref{fig:u-g symmetry}).}
     \label{fig:pa-ytterbium-potentials}
 \end{figure}
 
@@ -438,7 +442,7 @@ Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts. \\
 
 Amidst these potentials around $80$ internal states were measured. Atom loss spectra as a function of PA laser detuning reveals the position of the bound states
 relative to the atomic resonance $\ket{^{1}S_0, F=5/2} \rightarrow \ket{^{3}P_1, F=7/2}$.
-Near this resonance atoms are illuminated for $30$ms at low intensity $I = 37$mW/cmÂ² to avoid
+Near this resonance atoms are illuminated for $30$ms at low intensity $I = 37$mW/cm² to avoid
 power broadening, allowing the nearest bound state to the dissociation to be resolved.
 At larger red detunings the intensity is increased and the illumination time optimized to maximize
 contrast.\\
@@ -456,7 +460,7 @@ WKB approximation will enable us in this section to estimate eigenvalues of an e
 potential. The position of a first bound state for each internuclear
 value enhance a deduction of the next lines. \\
 This is a semi-classical approach where plane waves $\psi(x) = \frac{C}{\sqrt{k(x)}}e^{i\int_{x_0}^{x} k(x') dx'}$
-are solutions of the 1D SchrÃ¶dinger equation for two particles of eigenenergie $E$ in a potential $V(x)$
+are solutions of the 1D Schrödinger equation for two particles of eigenenergie $E$ in a potential $V(x)$
 
 \begin{equation}
     \frac{-\hbar^2}{2\mu}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi
@@ -596,22 +600,27 @@ with different illumation sources to compare their broadening for similar intens
 
 Optical pumping beam experimentally settled at the same frequency as the beam after Raman AOM
 we tested the atomic line with this beam.
-AJOUTER GRAPHE ATOMIC SUR SR87
-\textbf{faire une petite partie analyse power broadening avec datas 116, 117, 18 ?}\\
-\begin{figure}
+
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data144_atomic_res_with_pompopt.png}
-    \caption[linewidth avec pompopt]{}
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data144_finale.pdf}
+    \caption[linewidth avec pompopt]{$\nu = 2$ molecular line of $^{88}Sr$ measured with to different laser sources at different intensities.
+    The blurried experimental points and curve fitting corresponds to the data with the beam from the MOGLabs beating, at intensity $2.3$ mW/cm$^2$.
+    The sharper curve corresponds to the data with the beam after "AOM 11/2" at intensity $7$mW/cm$^2$. 
+    to compare with MOGlabs beam
+    broadening. There is a}
     \label{linewidth avec pompopt}
 \end{figure}
 
-
-The measurement of the atomic lines of $^{88}Sr$ (left) and $^{87}Sr$ (right)in figure \ref{linewidth avec pompopt} reveals a spectral broadening for an intensity $I=$ mw/cm$^2$ of ???.\\
+In figure \ref{linewidth avec pompopt} the comparison of the linedwidth of the same molecular state $\nu =2 $ is plotted to detect broadening sources on 
+the experiment. The sharp plots correspond to the data obtained with the beam after "AOM 11/2" at intensity $0.8$mW/cm$^2$. The linewidth of this line is 
+$\sigma_{11/2} = 60.39 ± 4.01$ kHz by deducing $P_{broadening} = 74.36$kHz and $T_{broadening} = 17.04$kHz.\\
+For the blurred line the data and the fitting correspond to the beam from the MOGlabs beating locking system. The substraction of the broadening sources
+$P_{broadening} = 125$kHz and $T_{broadening} = 19$kHz to $\sigma_{MOGlabs} $ gives a linewith of $41.32 \pm 10.0$ kHz.\\
+ATTENTION PROBLEME DANS LE CALCUL DES VALEURS --> PAS COHERENT POUR DATA 144
 
 Atom loss measurement for red shifted frequencies also shows that the diode spectrum comes with a noise at $\pm 6$ MHz with
 harmonics also measured at $\pm 12$ MHz. A second verification by beating between direct light from slave 1 and the MOGlabs beam. confirms this
-
-The measurement of the atomic lines of $^{88}Sr$ (\ref{PA slave 1}) and $^{87}Sr$ (figure \ref{zoom red chain battement}) in \ref{linewidth avec pompopt} reveals a spectral broadening for an intensity $I=$ mw/cm$^2$ of ???.\\
 
 Atom loss measurement for red shifted frequencies also shows from \ref{} that the diode spectrum comes with a noise at $\pm 6$ MHz  of centered frequency of the beating $f_0$ with
 harmonics also measured at $\pm 12$ MHz. A second verification on the beating spectrum between direct light from slave 1 and the MOGlabs beam confirms this
@@ -693,8 +702,10 @@ $f_0$ while there is still a little amplitude is the two sidebands indispensable
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/fonctions_bessel_PDH_sidebands.png}
-    \caption[Bessel function]{}
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/bessel_functions_finale.pdf}
+    \caption[Bessel function]{Order 0 and one modulus square of Bessel functions. $\left|J_0\right|^2$ holds for the carrier amplitude that needs to be 
+    dominant. The picked value of $\beta $ should be under the unit to avoid losing too much power in the sidebands that still need to be present for
+    the PDH lock.}
     \label{Bessel function}
 \end{figure}
 
@@ -705,16 +716,16 @@ transition. A measurement of the atomic line at $\beta \simeq 1$ obtained with t
 
 
 \begin{center}
-    \begin{minipage}[t]{0.48\textwidth}
+    \begin{minipage}[t]{0.7\textwidth}
         \centering
-        \includegraphics[width=0.8\linewidth,angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sidebands.jpeg}
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/erreur_40MHz.pdf}
         \captionof{figure}[sidebands]{Peut être combiner ce graphe avec la mesure de la raie atomique en rajoutant la position des sidebands}
         \label{sidebands}
     \end{minipage}
     \hfill
-    \begin{minipage}[t]{0.48\textwidth}
+    \begin{minipage}[t]{0.7\textwidth}
         \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data397_sidebands_PDH_23_10_25.png}
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf}
         \captionof{figure}[fig:raie-40mhz]{raie 40MHz}
         \label{fig:raie-40mhz}
     \end{minipage}
@@ -764,7 +775,7 @@ As introduced in this chapter the PA experiment starts in the case of $^{88}Sr$ 
 at $T~1.7uK$.
 The atomic transition is adressed for $f^{RF}_{beating} = f_{Raman}$ by a laser beam of intensity $I = 100 I_{sat}$ at
 waist $w_0 = 340 \mu$m for $800$ms. Figure \ref{atomic line 88sr} shows the atom loss at this reference frequency with an
-effective linewidth of $192(9)$kHz incounting a power broadening of $74kHz$ and thermal broadening of the order of
+effective linewidth of $\sigma = 192(9)$kHz incounting a power broadening of $74kHz$ and thermal broadening of the order of
 $17$kHz. Expecting a molecular linewidth of about $\Gamma_{mol} \simeq 2\times \Gamma_{at} \simeq 15kHz$ we suppose an
 additional source of broadening coming from the laser itself detailed in 3.5.2.1.
 
@@ -788,14 +799,14 @@ for $10$ ms. We estimate the linewidth $\Gamma = $  with power broadening of $35
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[t]{0.48\linewidth}
+    \begin{subfigure}[t]{1\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data91_finale.pdf}
+        \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data91_finale.pdf}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[t]{0.48\linewidth}
+    \begin{subfigure}[t]{1\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data146_finale.pdf}
+        \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data146_finale.pdf}
     \end{subfigure}
     \caption[n=2 vibrational state]{}
     \label{n=2 vibrational state}
@@ -812,14 +823,14 @@ For the second line we measure $l_{opt} = 7.6\times 10^3 a_0$ W/cm$^2$ which is 
     \centering
     \begin{subfigure}[t]{0.48\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data94_28_01_26_sr88__exponential_decay.png}
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data149_n2_88sr_moglabs.png}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.48\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data141_04_03_26_sr88_expoential_decay.png}
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data148_n3_88sr_moglabs.png}
     \end{subfigure}
-    \caption[88sr exponential decay]{Caption}
+    \caption[88sr exponential decay]{Needs to be replaced with data }
     \label{88sr exponential decay}
 \end{figure}
 
@@ -832,97 +843,84 @@ Ajouter une partie sur l'estimation des incertitudes, sur les modèles de fit ?
 For $^{87}Sr$ we exploit the $-1$ order to account
 the hyperfine state $F=11/2$ as in \ref{fig:intro-chaine-rouge}.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/beating_analysis.png}
-    \caption{oh}
-    \label{beating broadening}
-\end{figure}
-
-
-\subsubsection{PDH sidebands}
-The laser beam sent to the atoms on PA process passes through the FP cavity presented in
-section ??? which has a PDH locking system. The incident electric field of frequency $f_0$ is phase modulated by an EOM at $f_M=40.48$ MHz.
-The electric field expressing as in \cite{black_introduction_2001}
-
-\begin{equation}
-    E_{inc}^{mod} = E_0 \left(J_0(\beta)e^{if_0t}+J_1(\beta)e^{i(f_0 + f_M)t}-J_1(\beta)e^{i(f_0-f_M)t}\right)
-\end{equation}
-
-depends on modulation depth parameter $\beta$ that is controled by the RF amplitude sent to the EOM.
-As we see in \ref{Bessel function} the amplitude ratio between the carrier and the sidebands is described
-by Bessel function. There is an optimal value at $\beta =1$ for which most of the amplitude is at frequency
-$f_0$ while there is still a little amplitude is the two sidebands indispensable for the locking.\\
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/fonctions_bessel_PDH_sidebands.png}
-    \caption{}
-    \label{Bessel function}
-\end{figure}
-
-Nevertheless the sideband at $f_0 - f_M$ adresses the atomic resonance when
-the carrier is around $40.48$MHz red detuned from $f_{atomic}$ as represented in figure \ref{sidebands}.
-The opposite sideband of frequency $f_0 + f_M$ excites identically the atoms when the carrier is $40.48$MHz above the atomic
-transition. A measurement of the atomic line at $\beta \simeq 1$ obtained with this sideband component is presented in figure \ref{fig:raie-40mhz}.
-
-
-\begin{center}
-    \begin{minipage}[t]{0.48\textwidth}
-        \centering
-        \includegraphics[width=0.8\linewidth,angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/sidebands.jpeg}
-        \captionof{figure}{Peut Ãªtre combiner ce graphe avec la mesure de la raie atomique en rajoutant la position des sidebands}
-        \label{sidebands}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.48\textwidth}
-        \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/datas PA/data397_sidebands_PDH_23_10_25.png}
-        \captionof{figure}{raie 40MHz}
-        \label{fig:raie-40mhz}
-    \end{minipage}
-\end{center}
-Decreasing the $\beta$ enables to reduce this unvoluntary effect but we were not capable of canceling it completly while keeping the PDH lock.\\
-
-These effect can lead to mistakely interpret it as a molecular line. As for every PA data, measurement of $dN/dt$ at
-this frequency testifies the presence of only one-body losses for a thermalized gas.
-
-
-\subsection{Physical sources of inhabilitation of photoassociation}
-
 \subsection{Results on $^{87}Sr$}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data195.pdf}
+    \caption[]{Molecular line of unidentified molecular potential at $259.01\pm$ MHz from atomic resonance of $^{87}Sr$, obtained at $19$W/cm$^2$.}
+    \label{}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data171.pdf}
+    \caption[]{Molecular line of unidentified molecular potential at $274.83\pm$ MHz from atomic resonance of $^{87}Sr$, obtained at $5.2$W/cm$^2$.}
+    \label{}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data184.pdf}
+    \caption[]{Molecular line of unidentified molecular potential at $375.74 \pm$ MHz from atomic resonance of $^{87}Sr$, obtained at $5.2$W/cm$^2$.}
+    \label{}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.7\linewidth}
+        \centering
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data190_exp.pdf}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.7\linewidth}
+        \centering
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data_194_exp.pdf}
+    \end{subfigure}
+    \caption[]{Atomic evolution time for one and two-body losses measurement. Left : exponential decay on $f = 276$ MHz molecular line from atomic 
+    transition on $^{87}Sr$. Right : $376$ MHz molecular line on $^{87}Sr$.}
+    \label{}
+
+\end{figure}
 
 
 \subsubsection{On F = 9/2 : predissociation}
 
 
 \subsection{Interpretation of low contrast}
-\textbf{On F = 9/2 : predissociation}
+\textbf{On F = 9/2 : predissociation}\\
+The spectroscopy of $^{87}Sr$ reveals a really important linewidth coupled to a low contrast. A way to interpret this surprising contrast is the predissociation.
+This concept illustrated in \ref{predissociation} is a phenomenon that occurs when dissociation limit of an excited molecular potential
+C is under the closed channel of the excited molecule of potential B. Then the $\nu_ B$ state is coupled to a density of states of potential
+C that modifies the linewidth $\Gamma_mol$ of the molecular state as 
 
-On some cases PA process fails because of pre-dissociation phenomenon.
-When photoassociating a pair of free atoms from a potential X on a vibrational
-state from potential A it is possible that this last potential crosses another
-potential curve B, (e.g molecular potentials of other hyperfine states). Then it is possible that the excited molecule decays
-to a pair of quasi free-bound atoms in a potential B.\\
-Considering it, it is reasonable to do PA on the lowest hyperfine state as in \ref{fig:pa-ytterbium-potentials},
-in our case and in most of complex fermionic specie.
+\begin{equation}
+    \Gamma_{mol} \propto \rho(\epsilon_f)
+\end{equation}
+
+In \ref{fig:pa-ytterbium-potentials} the curves do not seem to be affected by the predissociation from the linewidth values. We were thinking that PA on the lowest
+hyperfine state as for $Yb$ would avoid this effect but the data on $^{87}Sr$ show the contrary: for a reason we ignore this atom is affected by this process but the 
+$Yb$ with hyperfine structure is not.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/predissociation.png}
-    \caption[predissociation]{}
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/predissociation.pdf}
+    \caption[predissociation]{Scheme of predissociation which is a phenomenon that occurs when dissociation limit of an excited molecular potential
+C is under the closed channel of the excited molecule of potential B. Then the $\nu_ B$ state is coupled to a density of states of potential
+C that modifies the linewidth $\Gamma_mol$ of the molecular state}
     \label{predissociation}
 \end{figure}
 
 \subsubsection{Coupling to more energetic state from the IR}
 ODT can be a distructive source of PA process if it is resonant with high energy levels at $\lambda = 1064$nm from the target state
 of the first molecular excited state.
-The experimental sequence of \ref{sequence chirp} implements a chopping of optical trap in opposite phase with PA laser that suppresses eventual coupling to much higher levels.
+The experimental sequence of \ref{sequence chirp} implements a chopping of optical trap in opposite phase with PA laser that suppresses eventual coupling to much higher levels.\\
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\linewidth, angle=90,origin=c]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/chirp_sequence.jpeg}
-    \caption[sequence chirp]{}
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/sequence_chopping.pdf}
+    \caption[sequence chirp]{Experimental sequence of IR and PA laser chopping to cancel possible coupling to higher energy levels around 
+    $\lambda = 1064nm$ that would destruct or decrease collision process. The RF signal of ODT and Raman AOMs is modulated by a GBF at 
+    frequency $25$ kHz in opposite phaseso the atoms in the trap are not lost during the $100\mu$ s falling time when photoassociated.}
     \label{sequence chirp}
 \end{figure}
 
