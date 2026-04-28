@@ -1,6 +1,6 @@
 ﻿
 \chapter{Engineering entangled ensembles $^{87}Sr$ by photoassociation}
-In quantum metrology, a fundamental limit to the precision of a phase parameter $\phi$ is the \textbf{Standard Quantum Limit} (SQL), often referred to as quantum shot noise, defined as $\Delta\phi \simeq 1/\sqrt{N}$ \cite{pezze_quantum_2014}. In the previous chapter on Ramsey interferometry, we discussed how the achievable accuracy is often limited by experimental sources, such as atom leaking to other $m_F$ states affecting the signal-to-noise ratio.
+In quantum metrology, a fundamental limit to the precision of a phase parameter $\phi$ is the \textbf{Standard Quantum Limit} (SQL), often referred to as quantum shot noise, defined as $\Delta\phi = 1/\sqrt{2Ns}$ \cite{pezze_quantum_2014}. In the previous chapter on Ramsey interferometry, we discussed how the achievable accuracy is often limited by experimental sources, such as atom leaking to other $m_F$ states affecting the signal-to-noise ratio.
 
 To overpass this threshold, one must exploit non-classical states with specific correlations. For a collective spin state $|J, m\rangle$ the variance of one of the transverse spin components $\hat{J}_x, \hat{J}_y$ provides noise information of the enhanced interferometer.
 The variance 
@@ -8,15 +8,15 @@ The variance
     \text{Var}(\hat{J}_x) = \frac{1}{2} \left( J(J+1) - m^2 \right)
 \end{equation}
 
-is maximized for the projection $m = 0$ with $J = N/2$. This configuration defines the \textbf{Dicke states}, powerful resources for quantum-enhanced metrology. The sensitivity of such a state is quantified by the \textbf{Quantum Fisher Information} (QFI). For a $m=0$ Dicke state, the QFI reaches:
+is maximized for the projection $m = 0$ with $J = NS$, $S$ the total spin. This configuration defines the \textbf{Dicke states}, powerful resources for quantum-enhanced metrology. The sensitivity of such a state is quantified by the \textbf{Quantum Fisher Information} (QFI). For a $m=0$ Dicke state, the QFI reaches:
 \begin{equation}
-    F_Q = 4 \text{Var}(\hat{J}_x) = \frac{N(N+2)}{2}
+    F_Q = 4 \text{Var}(\hat{J}_x) = 2NS(NS+1)
 \end{equation}
 According to the \textbf{Cramér-Rao inequality}, which relates the phase uncertainty $\Delta \phi$ to the QFI:
 \begin{equation}
     \Delta \phi \geq \frac{1}{\sqrt{F_Q}}
 \end{equation}
-it becomes evident that the precision on $\phi$ is improved by a factor of approximately $\sqrt{N}$ compared to the SQL, scaling as $1/N$, and approaching the \textbf{Heisenberg Limit}. This represents the ultimate precision allowed by the laws of quantum mechanics.
+it becomes evident that the precision on $\phi$ is improved by a factor of approximately $\sqrt{N}$ compared to the SQL, scaling as $1/NS$, and approaching the \textbf{Heisenberg Limit}. This represents the ultimate precision allowed by the laws of quantum mechanics.
 
 This chapter will demonstrate the generation and enhancement of Dicke states via the \textbf{photoassociation} (PA) process in $^{87}$Sr. This isotope is an ideal candidate for metrology due to its large nuclear spin and the high degree of control over its collective spin states. 
 
@@ -24,8 +24,9 @@ The discussion opens with fundamental elements of scattering theory. At large in
 
 \section{Introduction on photoassociation}
 \subsection{Preamble on scattering theory}
-Understanding PA process on two bodys necessits an introduction on scattering theory to bring out quantites such
-as optical length and scattering length.\\
+Understanding the PA process necessitates an introduction to scattering theory to define key quantities such 
+as the scattering length and the optical length. These parameters emerge naturally from the asymptotic analysis 
+of the radial Schrödinger equation.\\
 In the study of inter-atomic interactions, the Born-Oppenheimer approximation provides a natural
 simplification. Due to the large mass ratio $\mu = m_p/m_e \simeq 1000$, the nuclei move on a much
 slower timescale than the electrons. One can therefore neglect the coupling terms between the nuclear
@@ -41,7 +42,8 @@ where the spherical harmonics $Y^m_l(\theta, \phi)$ encode the angular dependanc
 $R_l(r)$ is the function describing the radial movement of the bound atoms well described in the frame centered
 in its center of mass. The potential experienced by the atoms inherits the spherical symmetry of the problem.
 The Schr\"odinger equation then reduces to a one-dimensional problem which can be treated for each
-partial wave l:
+partial wave $l$:
+
 \begin{equation}
     -\frac{\hbar^2}{2m_p}\left(\frac{1}{r^2} \frac{d^2 R_l(r)}{dr^2}r^2 - \frac{l(l+1)}{r^2}
     + \hat{V}(r)\right)R_l(r) = E R_l(r)
@@ -59,7 +61,7 @@ vanishes, the general solution for each partial wave $l$ takes the form \cite{da
 
 where $a_l$ is a normalization factor and $\delta_l$ the phase acquired by the l-th partial wave
 due to the interaction potential.\\
-
+\newpage
 Continuity of wavefunction for all inter-atomic distances imposes a constraint on the phase
 shifts which at low momenta $k$ finds:
 
@@ -86,7 +88,7 @@ where $f(\theta)$ is the scattering amplitude which determines wheter the collis
 inelastic and $\theta$ is the angle between the incident and scattered wavevectors.
 \begin{figure}
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/diffusion_sinus.pdf}
+    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/diffusion_sinus.pdf}
     \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances $R(a_0)$ behaves as a summation of an incoming plane wave
     and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave
     collisions at $l=0$. The scattering occurs at background scattering length $R(a_o) = a_{bg}$ the distance
@@ -94,15 +96,13 @@ inelastic and $\theta$ is the angle between the incident and scattered wavevecto
     \label{fig:scattering_concept}
 \end{figure}
 The assymptotical expression of $\Psi$ and $e^{ikz}$ is expressed in a spherical basis as a sum
-over all the partial waves enable to further understand how the atoms scatter. We can give a
-decomposition of $\Psi$ as in \ref{incoming outcoming scattering wave}
-
+over all the partial waves. Then we can give as in \ref{incoming outcoming scattering wave} a decomposition of $\Psi$:
 \begin{equation}
     \Psi \simeq \frac{i}{2kr}\sum_{l=0}^{\infty}(2l+1)\left((-1)^l e^{-ikr} - S_l e^{ikr}\right)
     \label{1D schrodinger solution}
 \end{equation}
 
-that gives rise to a spherical part and a scattering term with $S_l = e^{2i\delta_l}$ the scattering amplitude.\\
+where we identify a spherical part and a scattering term, with $S_l = e^{2i\delta_l}$ the scattering amplitude.\\
 
 In the presence of inelastic processes such as photoassociation, the colliding atom pair can be irreversibly lost
 from the scattering channel---either by forming a bound molecular
@@ -130,7 +130,6 @@ is
 
 
 Then from the condition $|S_l| < 1$ we deduce an approximated scattering amplitude $S_0$
-
 \begin{equation}
     S_0 = e^{2i\delta_0} \simeq 1 + 2i\delta_0
 \end{equation}
@@ -153,12 +152,12 @@ At low temperatures we can re-express equations \ref{sigma elastic} and \ref{sig
     \sigma_{inel} = 4\pi|a''|^2
 \end{equation}
 
-A usual case of the elastic collisions is atoms in the ground
+As an illustration a usual case of the elastic collisions is atoms in the ground
 state. For inelasticity photoassociation is a good example of
 dissipative process where two atoms in the ground state are coupled to a molecular state by a laser.
 
 \subsection{Photoassociation and collisions}
-Photoassociation (PA) is a process from which free atoms pair are bound to each other. Effectively, the bound
+PA is a process from which free atoms pair are bound to each other. Effectively, the bound
 molecule is typically seen as lost, and perceived as a two-body loss effect. \\
 In the atomic pair frame, the electric dipole interaction drives the system from the ground electronic state
 $\psi_g$ of potential $V_g(r)$ to the excited state $\psi_e$ of $V_e(r)$. \\
@@ -182,11 +181,11 @@ In the absence of the resonant laser the equation evolution of the system expres
     \label{elastic evolution equation}
 \end{equation}
 
-Then a resonant laser is tuned to an internal state of $V_e(r)$ to bound the atoms
+Then a resonant laser can be tuned to an internal state of $V_e(r)$ to bound the atoms
 pair as presented in figure \ref{fig:PA_concept}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Guttridge_PA_process.pdf}
+    \includegraphics[width=0.7\linewidth,trim=49.8mm 59.3mm 35.9mm 69.4mm,clip]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Guttridge_PA_process.pdf}
     \caption{General concept of photoassociation from a free-atoms potential to an excited molecular state coupled by a resonant laser. Bound, the atoms have
     quantized accessible internal state described by the solution of 1D Schr\"odinger equation plotted of each vibrational state.}
 
@@ -194,7 +193,7 @@ pair as presented in figure \ref{fig:PA_concept}
 \end{figure}
 
 This operation consists in adding inelastic collisions to the system. Then the
-effective evolution equation of the coupled atoms is
+effective equation evolution of the coupled atoms is
 
 \begin{equation}
     i\hbar \frac{d}{dt}
@@ -204,8 +203,8 @@ effective evolution equation of the coupled atoms is
     \end{pmatrix}
     =
     \begin{pmatrix}
-        -\frac{\hbar^2}{2\mu}\nabla^2 + V_g & \Omega/2\\
-        \Omega/2 & -\frac{\hbar^2}{2\mu}\nabla^2 + V_e + \hbar \Delta -i\frac{\gamma_{mol}}{2}
+        -\frac{\hbar^2}{2\mu}\nabla^2 + V_g & \hbar\Omega/2\\
+        \hbar\Omega/2 & -\frac{\hbar^2}{2\mu}\nabla^2 + V_e + \hbar \Delta -i\frac{\gamma_{mol}}{2}
     \end{pmatrix}
     \begin{pmatrix}
         \psi_g\\
@@ -213,7 +212,8 @@ effective evolution equation of the coupled atoms is
     \end{pmatrix}.
     \label{inelastic evolution equation}
 \end{equation}\\
-with $\gamma_{mol}$ the molecular spontaneous emission linewidth.\\
+with $\gamma_{mol}$ the molecular spontaneous emission linewidth, $\delta = \omega_e-\omega_L$ the 
+detuning of the laser from the excited state and $\hbar \Omega/2$ the coupling.\\
 
 At large distance the solution of this hamiltonian takes the form of a spinor $\ket{\psi_g} + \epsilon \ket{\psi_e}$
 where the excited channel is weakly populated far from resonance. The sum of partial waves determined in \ref{1D schrodinger solution}
@@ -222,7 +222,7 @@ From this asymptotic form one extracts the scattering phase shift $\delta_l$ (se
 The imaginary part of $a$ encodes two-body losses rate whereas its real part changes the collisions properties. In this
 case we can write an effective scattering length enclosing the background scattering
 length $a_{bg}$ standing for elastic collisions without any coupling, $\delta a$ a
-modification of it because of the coupling and still the inelastic part of it
+modification of it because of the coupling and still the inelastic part of it:
 \begin{equation}
     a = a_{bg} + \delta a + ia''
 \end{equation}
@@ -236,7 +236,7 @@ One can express the atom number evolution depending on this linewidth as
 
 where $\beta = K_2/V_e$ in comparison with \cite{han_photoassociation_2018}. $V_e$ is the effective volume of the cloud $(2\pi )^{3/2}\sigma_x
 \sigma_y \sigma_z$ for a density Gaussian distribution, $\Gamma$
-the one-body loss rate limited by vacuum quality and 2-body losses\\
+the one-body loss rate limited by vacuum quality and 2-body losses.\\
 
 
 Finally in a context of spectroscopy, to adress more bound states
@@ -248,9 +248,14 @@ it can come back to a scattering channel by spontaneous emission and gain enough
 energy to leave the trap. Spontaneous emission can also lead to a deeply bound state in
 the ground state potential.\\
 
-PA is mostly used in Feschbach resonance field because determining the exact
-position of the vibrational states enables by changing the magnetic field
-to tune the scattering length of the atoms and thus the interactions in the system.
+PA process is mostly used in Optical Feshbach Resonance (OFR) experiments to control the type
+of interaction in a Bose-Einstein Condensate that depends on the scattering length \cite{yan_controlling_2013}:
+$a<0$ induce interactive interactions and $a>0$ repulsive. This interaction is modified by changing the 
+the laser intensity $I$ and/or the detuning $\Delta$ of the laser with the bound molecular state knowing that $\delta a$ expresses as
+
+\begin{equation}
+    \delta a \propto \frac{I\gamma_{mol}\Delta}{\Delta^2 + (\gamma_{mol}^2)/4}
+\end{equation}
 
 \subsection{General scaling laws for PA}
 We will discuss in this subsection the dependence of the PA rate on different parameters
