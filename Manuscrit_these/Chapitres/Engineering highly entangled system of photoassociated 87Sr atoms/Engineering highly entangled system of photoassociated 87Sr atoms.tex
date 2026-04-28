@@ -1,12 +1,14 @@
 ﻿
 \chapter{Engineering entangled ensembles $^{87}Sr$ by photoassociation}
-In quantum metrology, a fundamental limit to the precision of a phase parameter $\phi$ is the \textbf{Standard Quantum Limit} (SQL), often referred to as quantum shot noise, defined as $\Delta\phi \simeq 1/\sqrt{N}$. In the previous chapter on Ramsey interferometry, we discussed how the achievable accuracy is often limited by experimental factors, such as atom losses to other $m_F$ states, which can degrade the signal-to-noise ratio.
+In quantum metrology, a fundamental limit to the precision of a phase parameter $\phi$ is the \textbf{Standard Quantum Limit} (SQL), often referred to as quantum shot noise, defined as $\Delta\phi \simeq 1/\sqrt{N}$ \cite{pezze_quantum_2014}. In the previous chapter on Ramsey interferometry, we discussed how the achievable accuracy is often limited by experimental sources, such as atom leaking to other $m_F$ states affecting the signal-to-noise ratio.
 
-To surpass this classical threshold, one must exploit non-classical states with specific correlations. For a collective spin state $|J, m\rangle$ of $N$ atoms, the variance of the transverse spin component $\hat{J}_x$ is given by \cite{pezze_quantum_2014}:
+To overpass this threshold, one must exploit non-classical states with specific correlations. For a collective spin state $|J, m\rangle$ the variance of one of the transverse spin components $\hat{J}_x, \hat{J}_y$ provides noise information of the enhanced interferometer.
+The variance 
 \begin{equation}
     \text{Var}(\hat{J}_x) = \frac{1}{2} \left( J(J+1) - m^2 \right)
 \end{equation}
-This variance is maximized for the projection $m = 0$ with $J = N/2$. This configuration defines the \textbf{Dicke states}, which serve as a powerful resource for quantum-enhanced metrology. The sensitivity of such a state to a phase shift is quantified by the \textbf{Quantum Fisher Information} (QFI). For a $m=0$ Dicke state, the QFI reaches:
+
+is maximized for the projection $m = 0$ with $J = N/2$. This configuration defines the \textbf{Dicke states}, powerful resources for quantum-enhanced metrology. The sensitivity of such a state is quantified by the \textbf{Quantum Fisher Information} (QFI). For a $m=0$ Dicke state, the QFI reaches:
 \begin{equation}
     F_Q = 4 \text{Var}(\hat{J}_x) = \frac{N(N+2)}{2}
 \end{equation}
@@ -14,15 +16,15 @@ According to the \textbf{Cramér-Rao inequality}, which relates the phase uncert
 \begin{equation}
     \Delta \phi \geq \frac{1}{\sqrt{F_Q}}
 \end{equation}
-it becomes evident that the precision on $\phi$ is improved by a factor of approximately $\sqrt{N}$ compared to the SQL, scales as $1/N$, and approaches the \textbf{Heisenberg Limit}. This represents the ultimate precision allowed by the laws of quantum mechanics for such a system.
+it becomes evident that the precision on $\phi$ is improved by a factor of approximately $\sqrt{N}$ compared to the SQL, scaling as $1/N$, and approaching the \textbf{Heisenberg Limit}. This represents the ultimate precision allowed by the laws of quantum mechanics.
 
-This chapter demonstrates the generation and enhancement of Dicke states via the \textbf{photoassociation} (PA) process in $^{87}$Sr. This isotope is an ideal candidate for metrology due to its large nuclear spin and the high degree of control over its collective spin states. 
+This chapter will demonstrate the generation and enhancement of Dicke states via the \textbf{photoassociation} (PA) process in $^{87}$Sr. This isotope is an ideal candidate for metrology due to its large nuclear spin and the high degree of control over its collective spin states. 
 
-The discussion opens with fundamental elements of scattering theory. At large interatomic separations, the 1D Schrödinger equation yields solutions that naturally define the scattering length, a key parameter for cold atom interactions. These concepts lay the groundwork for introducing photoassociation and the resulting atomic density evolution through one- and two-body losses. Subsequently, an analysis of molecular potentials—referred to here as external states—permits an estimation of the binding energies of the internal molecular states where two-body losses are enhanced. Finally, we present the experimental results and discuss the technical and physical challenges that could impact signal interpretation or lead to misidentification of the quantum enhancement.
+The discussion opens with fundamental elements of scattering theory. At large interatomic separations, the 1D Schrödinger equation yields to solutions that naturally define the scattering length, a key parameter for cold atom interactions. These concepts lay the groundwork for introducing photoassociation and the resulting atomic density evolution through one- and two-body losses. Subsequently, an analysis of molecular potentials—referred to here as external states—permits an estimation of the binding energies of the internal molecular states where two-body losses are enhanced. Finally, we present the experimental results and discuss the technical and physical challenges that could impact signal interpretation or lead to misidentification of the quantum enhancement.
 
 \section{Introduction on photoassociation}
 \subsection{Preamble on scattering theory}
-Understanding PA process with two atoms necessits an introduction on scattering theory to bring out quantites such
+Understanding PA process on two bodys necessits an introduction on scattering theory to bring out quantites such
 as optical length and scattering length.\\
 In the study of inter-atomic interactions, the Born-Oppenheimer approximation provides a natural
 simplification. Due to the large mass ratio $\mu = m_p/m_e \simeq 1000$, the nuclei move on a much
