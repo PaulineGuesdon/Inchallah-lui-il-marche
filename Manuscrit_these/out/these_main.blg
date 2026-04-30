@@ -13,45 +13,45 @@ Warning--empty year in reichenbach_optical_nodate
 Warning--empty publisher in atkins
 Warning--empty journal in brown_rotational_nodate
 Warning--empty year in brown_rotational_nodate
-You've used 14 entries,
+You've used 13 entries,
             1876 wiz_defined-function locations,
-            555 strings with 6005 characters,
-and the built_in function-call counts, 3284 in all, are:
-= -- 296
-> -- 179
+            548 strings with 5853 characters,
+and the built_in function-call counts, 3016 in all, are:
+= -- 265
+> -- 175
 < -- 0
-+ -- 66
-- -- 52
-* -- 226
-:= -- 485
-add.period$ -- 20
-call.type$ -- 14
-change.case$ -- 12
++ -- 64
+- -- 51
+* -- 207
+:= -- 449
+add.period$ -- 19
+call.type$ -- 13
+change.case$ -- 11
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 171
-empty$ -- 279
-format.name$ -- 52
-if$ -- 786
+cite$ -- 21
+duplicate$ -- 157
+empty$ -- 254
+format.name$ -- 51
+if$ -- 720
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 13
-newline$ -- 54
-num.names$ -- 14
-pop$ -- 63
+int.to.str$ -- 13
+missing$ -- 12
+newline$ -- 51
+num.names$ -- 13
+pop$ -- 62
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 130
+skip$ -- 118
 stack$ -- 0
-substring$ -- 84
-swap$ -- 74
+substring$ -- 60
+swap$ -- 67
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 8
-while$ -- 22
-width$ -- 16
-write$ -- 131
+while$ -- 18
+width$ -- 15
+write$ -- 121
 (There were 8 warnings)

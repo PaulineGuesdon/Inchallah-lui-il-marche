@@ -49,20 +49,22 @@
 \contentsline {subsubsection}{\numberline {3.1.5.1}WKB approximation}{27}{subsubsection.120}%
 \contentsline {subsubsection}{\numberline {3.1.5.2}Leroy-Bernstein scaling}{28}{subsubsection.125}%
 \contentsline {subsubsection}{\numberline {3.1.5.3}Mass scaling ($^{88}Sr$)}{29}{subsubsection.130}%
-\contentsline {section}{\numberline {3.2}PA experiments}{30}{section.134}%
-\contentsline {subsection}{\numberline {3.2.1}Gas preparation}{30}{subsection.135}%
-\contentsline {subsection}{\numberline {3.2.2}Characterization of PA beam}{31}{subsection.136}%
-\contentsline {subsection}{\numberline {3.2.3}PA realised with light source tuned by beating }{32}{subsection.139}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}Tuning the PA beam frequency}{33}{subsubsection.141}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}Spectral properties}{34}{subsubsection.143}%
-\contentsline {section}{\numberline {3.3}Photoassociation on $^{88}Sr$}{36}{section.149}%
-\contentsline {subsection}{\numberline {3.3.1}Setup}{36}{subsection.150}%
-\contentsline {subsection}{\numberline {3.3.2}Atomic and molecular lines}{38}{subsection.153}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Analyse}{40}{subsubsection.157}%
-\contentsline {section}{\numberline {3.4}87Sr molecules}{40}{section.158}%
-\contentsline {subsection}{\numberline {3.4.1}Results on $^{87}Sr$}{40}{subsection.159}%
-\contentsline {subsubsection}{\numberline {3.4.1.1}On F = 9/2 : predissociation}{42}{subsubsection.164}%
-\contentsline {subsection}{\numberline {3.4.2}Interpretation of low contrast}{42}{subsection.165}%
-\contentsline {subsubsection}{\numberline {3.4.2.1}Coupling to more energetic state from the IR}{43}{subsubsection.168}%
-\contentsline {subsubsection}{\numberline {3.4.2.2}Node of wavefunction for some vibrational states}{44}{subsubsection.170}%
-\contentsline {chapter}{\numberline {A}Algorithms}{49}{appendix.173}%
+\contentsline {section}{\numberline {3.2}Photoassociation Experiments}{30}{section.134}%
+\contentsline {subsection}{\numberline {3.2.1}Gas Preparation and Isotope Specificities}{30}{subsection.135}%
+\contentsline {subsection}{\numberline {3.2.2}Implementation: Beating Scheme and Frequency Tuning}{31}{subsection.136}%
+\contentsline {subsection}{\numberline {3.2.3}Technical Artifacts and Spectral Noise}{32}{subsection.139}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}PDH Sidebands Induced Artifacts}{32}{subsubsection.140}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Laser Linewidth and Beating Noise}{33}{subsubsection.145}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}Interpretation of Decay Dynamics ($dN/dt$)}{33}{subsubsection.147}%
+\contentsline {subsection}{\numberline {3.2.4}Validation: Linewidth Comparison with a Stable Source}{34}{subsection.148}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}Comparative Results}{34}{subsubsection.149}%
+\contentsline {section}{\numberline {3.3}Photoassociation on $^{88}Sr$}{35}{section.154}%
+\contentsline {subsection}{\numberline {3.3.1}Setup}{35}{subsection.155}%
+\contentsline {subsection}{\numberline {3.3.2}Atomic and molecular lines}{36}{subsection.158}%
+\contentsline {section}{\numberline {3.4}87Sr molecules}{39}{section.163}%
+\contentsline {subsection}{\numberline {3.4.1}Results on $^{87}Sr$}{39}{subsection.164}%
+\contentsline {subsubsection}{\numberline {3.4.1.1}On F = 9/2 : predissociation}{41}{subsubsection.169}%
+\contentsline {subsection}{\numberline {3.4.2}Interpretation of low contrast}{41}{subsection.170}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}Coupling to more energetic state from the IR}{42}{subsubsection.173}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}Node of wavefunction for some vibrational states}{43}{subsubsection.175}%
+\contentsline {chapter}{\numberline {A}Algorithms}{47}{appendix.178}%
