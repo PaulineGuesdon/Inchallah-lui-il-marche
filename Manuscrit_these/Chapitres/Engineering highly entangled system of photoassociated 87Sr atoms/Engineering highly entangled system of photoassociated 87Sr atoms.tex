@@ -235,6 +235,7 @@ One can express the atom number evolution depending on this linewidth as
 \end{equation}
 
 where $\beta = K_2/V_e$ in comparison with \cite{han_photoassociation_2018}. $V_e$ is the effective volume of the cloud $(2\pi )^{3/2}\sigma_x
+$V_e$ is the effective volume of the cloud $(2\pi )^{3/2}\sigma_x
 \sigma_y \sigma_z$ for a density Gaussian distribution, $\Gamma$
 the one-body loss rate limited by vacuum quality and 2-body losses.\\
 
@@ -258,70 +259,81 @@ the laser intensity $I$ and/or the detuning $\Delta$ of the laser with the bound
 \end{equation}
 
 \subsection{General scaling laws for PA}
-We will discuss in this subsection the dependence of the PA rate on different parameters
-of the two-body losses rate $K_2$. This latter introduced above can express as \cite{blatt_systematic_2011}
-
-
+We will discuss in this subsection the dependence of the PA rate $K_2$ on different parameters. This latter introduced above can express as \cite{blatt_systematic_2011}
 \begin{equation}
-    K_2 = \beta \times V_e = \frac{4\pi \hbar}{2m_p}\times \frac{l_{opt}}{\Delta^2 +\frac{1}{4}(1+2k l_{opt})^2}
-\end{equation}\\
+    K_2 = \beta \times V_e = \frac{8\pi \hbar}{m_p}\times \frac{l_{opt}}{\Delta^2 +\frac{1}{4}(1+2k l_{opt})^2}
+    \label{K2 complet}
+\end{equation}
 
 where $\Delta$ is the detuning of the laser from the molecular resonance and $m_p$ the mass of the nucleus.
-For low temperature the De Broglie wavelength $\lambda_{dB} = \frac{h}{\sqrt{2m k_B T}}$ settles the negligibility of wavector $k$. Then the PA rate for
-a tuned laser
+The relation between the two-body rate $K_2$ and the fitting parameter $\beta$ demonstrates as:
+
+\begin{gather}
+    \frac{dN}{dt} = -\beta \iiint n^2(x,y,z) \, d^3r \label{eq:3.24} \\[1.5ex]
+    \text{with } n(x,y,z) = n_0 \exp\left( -\frac{x^2}{2\sigma_x^2} - \frac{y^2}{2\sigma_y^2} - \frac{z^2}{2\sigma_z^2} \right) \label{eq:3.25} \\[1.5ex]
+    \frac{dN}{dt} = -\beta n_0^2 \pi^{3/2} \sigma_x \sigma_y \sigma_z = -\beta \frac{N^2}{2\sqrt{2}V_e} \label{eq:3.26} \\[1.5ex]
+    \text{where } V_e = (2\pi)^{3/2} \sigma_x \sigma_y \sigma_z \label{eq:3.27} \\[1.5ex]
+    \text{Then } K_2 = \frac{\beta}{2\sqrt{2}V_e} \label{eq:3.28}
+\end{gather}
+
+
+in comparison with \cite{han_photoassociation_2018}.
+For low temperature the De Broglie wavelength $\lambda_{dB} = \frac{h}{\sqrt{2m k_B T}}$ settles the negligibility of wavector $k$ in \ref{K2 complet}. 
+Then the PA rate for a tuned laser
 \begin{equation}
     K_2 = \frac{16h }{m_p}l_{opt}
 \end{equation}
-depends only on the \textbf{optical length} $l_{opt}$ which caracterizes the strength of the coupling between the
+depends only on the \textbf{optical length} $l_{opt}$ which caracterizes the strength of the coupling between
 the scattered atoms and the bound molecular state. Experimentally this quantity is tunable by the laser intensity I
-since it is linear with
+since it is linear with:
 \begin{equation}
     l_{opt} = \frac{\lambda^3}{16\pi c}\frac{f_{FC}}{k}f_{rot}I
 \end{equation}
 
-with $f_{rot} = 1$ for $0_u^+$ resonances and $f_{rot} = 2$ for $1_u$ resonances and $\lambda=689.45$ nm the wavelength
-of the transition \cite{reschovsky_narrow-line_2018}. The amplitude of the PA rate also varies with the recovery of the
+where $f_{rot} = 1$ for $0_u^+$ resonances and $f_{rot} = 2$ for $1_u$ resonances  \cite{reschovsky_narrow-line_2018}, 
+$\lambda=689.45$ nm the wavelength of the transition. The amplitude of the PA rate also varies with the recovery of the
 initial $\psi_g$ and final state $\psi_e$ wavefunctions through the Franck-Condon factor $f_{FC}$
 
 \begin{equation}
     F_{FC} = \Bigg|\int_0^{\infty} \psi_g(r) \psi_e(r) dr\Bigg |^2
 \end{equation}
+\newpage
 
-PA rate is maximized when at the Condon radius this recovery is maximum. In a classical picture this is where
-the atoms spend the most time â€” and thus where the photoassociation is most
-likely to occur.\\
+$K_2$ is maximized when at the Condon radius this recovery is maximum. In a classical picture 
+this distance corresponds to the region wherethe atoms spend the most time and thus where the 
+photoassociation is most likely to occur.
 
 From this discussion we deduce an atomic evolution
 
 \begin{equation}
-    \frac{dN}{dt} =  -\frac{16h }{V_e m_p}l_{opt}N^2 - \Gamma N
+    \frac{dN}{dt} =  -\frac{2^{11/2} h }{V_e m_p}l_{opt}N^2 - \Gamma N
 \end{equation}
 
 depending on the parameter $l_{opt}$ maximum for high laser intensity and atomic density $n_0= 1/V_e$.
 
 \subsection{Handling multiple molecular potentials}
-So far we have described the PA process as if there was only one molecular potential.
+So far we have described the PA process as if there was only one molecular potential
 from the perspective of atom losses.
 But the molecules formed in this process have a rich internal structure that
 determines which transitions are accessible and how efficiently they can be
-driven â€” in particular through the Franck-Condon factor. Understanding this
+driven in particular through the Franck-Condon factor. Understanding this
 structure is therefore essential to optimise $K_2$ experimentally.\\
 
 While exciting a single atom is straightforward, identifying the correct
-molecular state to target is considerably more involved, since a large
+molecular state to target is considerably more involving, since a large
 number of potentials and internal states coexist. To navigate this complexity,
 we now want to determine and enumerate the molecular potentials $V_e$ by introducing the molecular quantum
-numbers that label these states and determine their possible transitions.\\
+numbers that label these states to finally determine their possible transitions.\\
 
 Confirming to the atomic case, the Born-Oppenheimer approximation allows to describe the movement of the electrons
-separately from the nuclei, then \ref{1D schrodinger solution} is valid for bound atoms. The aim of this part of the
-exposÃ© is to determine the shape of $V_e$ on what equation \ref{1D schrodinger solution} depends.\\
+separately from the nuclei, then \ref{radial equation} is valid for bound atoms. The aim of this part of the
+exposé is to determine the shape of $V_e$ on what equation \ref{radial equation} depends.\\
 
 In ultracold gases, only collisions in s-wave are impacted by the interaction potential,
 because partial waves of higher $l$ mostly are reflected by the centrifugal barrier before crossing regions of
 lower interaction orders. Then in respect with Pauli statistics the orbital wavefunction $\ket{\phi}$ being even
 the spin wavefunction should be odd to conserve the non-symmetric nature of the total wavefunction $\ket{\psi}$.
-For two atoms A and B possibly in spin state $\beta_1$ or $\beta_2$ the expression of total wavefunction
+For two atoms A and B possibly in spin state $\ket{\beta_1}$ or $\ket{\beta_2}$ the expression of total wavefunction
 
 \begin{equation}
     \ket{\Psi} = \left(\ket{\beta_1}_A \ket{\beta_2}_B + (-1)^R \ket{\beta_1}_B \ket{\beta_2}_A\right)
@@ -358,11 +370,11 @@ The projections of these angular momenta onto the internuclear axis are characte
 where $\Lambda$ represents the projection of the orbital momentum of the molecule on the internuclear axis
 and $\Sigma$ the projection of the spin angular momentum. Furthermore, $M_T$ denotes the projection of $T$ onto a chosen quantization axis.\\
 
-In particular case of the $^1S_0$ - $^3P_1$ molecular state of $^{87}Sr$, the spin-orbit interaction is sufficiently strong to couple the elctronic angular momentum
-to the internuclear axis. This regime is quantified bt $\Omega$ and is appropriately described within the framework of Hund's case (c).
+In particular case of the $^1S_0$ - $^3P_1$ molecular state of $^{87}Sr$, the spin-orbit interaction is sufficiently strong to couple the electronic angular momentum
+to the internuclear axis. This regime is quantified by $\Omega$ and is appropriately described within the framework of Hund's case (c) \ref{fig:hund}.\\
 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/hund_case_c.pdf}
     \caption[fig:hund]{Hund case (c) is a case where spin-orbit coupling dominates the interaction, resulting in a angular momenta of projection
@@ -370,8 +382,9 @@ to the internuclear axis. This regime is quantified bt $\Omega$ and is appropria
     \label{fig:hund}
 \end{figure}
 
+
 Now all the specificites of molecular potential states exposed such as the u-g symmetry and the stable quantum number for bound atoms
-I can apply to case of $^{87}Sr$ for which we will photoassociate atoms in the $F=11/2$ hyperfine state. \\
+I can \textbf{apply to the case of $^{87}Sr$} for which we will photoassociate atoms in the $F=11/2$ hyperfine state. \\
 
 Say we have one atome in the $^1S_0$ state with maximum value $f_1=9/2$ and one in the $^3P_1$ state at maximum $f_2=11/2$: we can have
 a total spin of $J = 1$ and possible values of total atomic angular momentum F:
@@ -386,8 +399,8 @@ The possible values of total angular momentum of the excited molecule are
 \text{For } R=4, &\quad {T = 1,2 ... 14}
 \end{align}
 
-As for atoms there are selection rules for transitions from a free state to a molecular state
-fixed by the angular momentum of the electrons.
+As for atoms there are selection rules for transitions from a collisional state to a molecular excited 
+state fixed by the angular momentum of the electrons.
 $\Delta J = 0, 1$ gives $\Delta T = 0, 1$ with $T=0 \rightarrow T=0$ forbidden.\\
 In the end the accessible transitions in the first molecular excited state of the $f_1=11/2$ are
 \begin{align}
@@ -399,8 +412,9 @@ In the end the accessible transitions in the first molecular excited state of th
 with only even values of R in respect with wavefunction parity of \ref{wavefunction parity}.
 Finally we estimate about 981 combinations of accessible $(R,T^f)$ molecular external states
 which is a complex number of potentials to explore experimentally. We expect to have a spectrum
-similar to the experiment on $^{173}Ytt$ \cite{han_photoassociation_2018} realised in the intercombination
-line where themomentum projection $0_u, 1_g, 1_u, 0_g$ comes from the hyperfine structure. It is indeed expected
+similar to the experiment on $^{173}Yb$ \cite{han_photoassociation_2018} realised in the intercombination
+line where the momentum projection associated to the molecular potentials $0_u, 1_g, 1_u, 0_g$ (see figure \ref{fig:pa-ytterbium-potentials})
+comes from the hyperfine structure. For this species it is indeed expected
 to count 205 different configurations of $(T, F, R)$ for the excited molecular states on intercombination line with an
 atomic potential written as \ref{ytt potential}.
 
@@ -413,20 +427,24 @@ atomic potential written as \ref{ytt potential}.
     \label{fig:pa-ytterbium-potentials}
 \end{figure}
 
-As seen in the subsection 3.1.1 in a molecular picture the hamiltonian expresses as \cite{han_photoassociation_2018}
-
+The high density of states expected for $^{87}Sr$ makes the task of spectral assignment particularly challenging. To move beyond a purely statistical 
+estimation and accurately predict the energy levels of these 981 configurations, a precise modeling of the molecular interaction is required. 
+This involves a description of the coupling between the rotation of the nuclear frame, the electronic degrees of freedom, and the hyperfine structure.
+Following the molecular picture introduced in section 3.1.1, the energy of these states is governed by the Hamiltonian $\hat{H}$ which, for a Sr-Sr system, 
+can be expressed as:
 \begin{equation}
     \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{V}_{BO} + \hat{H}_{HF}
     \label{general hamiltonian of molecule}
 \end{equation}
 
 where some electronic interactions orders has been neglected depending on the Hund's case. For $^{87}Sr$
-we approximate the potential to be as for $^{173}Yb$ in
+we approximate the potential to be as for $^{173}Yb$:
+
 \begin{equation}
     \hat{V}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
     \label{ytt potential}
 \end{equation}
-
+\newpage
 
 \begin{equation}
 \hat{H}_{\mathrm{hf}} =
@@ -447,142 +465,181 @@ $s=\pm1$ for gerade and ungerade potentials respectively.
 The hyperfine term of the atom in $^1S_0$ is zero because its electronic angular momentum is zero.
 Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts. \\
 
-Amidst these potentials around $80$ internal states were measured. Atom loss spectra as a function of PA laser detuning reveals the position of the bound states
-relative to the atomic resonance $\ket{^{1}S_0, F=5/2} \rightarrow \ket{^{3}P_1, F=7/2}$.
-Near this resonance atoms are illuminated for $30$ms at low intensity $I = 37$mW/cm² to avoid
-power broadening, allowing the nearest bound state to the dissociation to be resolved.
-At larger red detunings the intensity is increased and the illumination time optimized to maximize
-contrast.\\
+Among these potentials, approximately 80 internal states of $^{173}Yb$ were measured. Atom loss 
+spectra, recorded as a function of PA laser detuning, reveal the position of bound states relative 
+to the atomic resonance $|^1S_0, F=5/2\rangle \to |^3P_1, F=7/2\rangle$. Near this resonance, atoms 
+are illuminated for 30 ms at a low intensity ($I = 37$ mW/cm$^2$) to avoid power broadening, thus 
+allowing the bound states closest to the dissociation limit to be resolved. At larger red detunings, 
+the intensity is increased and the illumination time is optimized to maximize the depth of the loss.
 
-Multiple approximation and scaling help to predict the position of these molecular line: WKB approximation
-rely on $V_e$ estimation we did presented above. Leroy-Bernstein scaling is a great approach to predict consecutive
-lines close to the dissociation limit without knowing the exact shape of the potential. Finally a mass sclaling on
-strontium isotopes has been demonstrated in \cite{borkowski_mass_2014} to predict the position of the lines.
-We will see in the following how to benefit from these predictions.\\
+Theoretically, these results are analyzed by plotting the approximated potentials and adjusting 
+parameters such as the $C_n$ coefficients to match the observed vibrational states. Several scaling 
+laws and approximations assist in this assignment: the WKB approximation provides a semi-classical 
+description of the bound states, while the LeRoy-Bernstein scaling is a powerful approach to predict 
+the position of consecutive lines near the dissociation limit without requiring the full knowledge of 
+the potential shape. Finally, mass scaling across strontium isotopes, as demonstrated in \cite{borkowski_mass_2014}, 
+serves as a robust tool to cross-check these predictions.
 
 \subsection{Internal energy states}
-
 \subsubsection{WKB approximation}
-WKB approximation will enable us in this section to estimate eigenvalues of an estimated pair of atoms in a harmonic
-potential. The position of a first bound state for each internuclear
-value enhance a deduction of the next lines. \\
-This is a semi-classical approach where plane waves $\psi(x) = \frac{C}{\sqrt{k(x)}}e^{i\int_{x_0}^{x} k(x') dx'}$
-are solutions of the 1D Schrödinger equation for two particles of eigenenergie $E$ in a potential $V(x)$
+
+The Wentzel-Kramers-Brillouin (WKB) approximation is a semi-classical method used to estimate the 
+vibrational eigenvalues of a diatomic system. By modeling the interatomic potential, the position 
+of a first bound state can be determined, which subsequently enables the deduction of the following 
+vibrational levels.
+
+In this approach, the wavefunction is assumed to take the form of a modified plane wave 
+$\psi(x) = \frac{C}{\sqrt{k(x)}}e^{i\int_{x_0}^{x} k(x') dx'}$. These waves are solutions 
+to the one-dimensional Schrödinger equation for two particles with reduced mass $\mu$ and 
+eigenenergy $E$:
 
 \begin{equation}
-    \frac{-\hbar^2}{2\mu}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi
-    \label{basic bitch schrodinger}
+    -\frac{\hbar^2}{2\mu}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi
+    \label{eq:schrodinger_1d}
 \end{equation}
 
-giving the expression of the wavevector $k(x)$
+This leads to the expression of the local wavevector $k(x)$:
 \begin{equation}
-    k = \frac{p}{\hbar} = \sqrt{2\mu(E-V(x))}
+    k(x) = \frac{p(x)}{\hbar} = \frac{\sqrt{2\mu(E-V(x))}}{\hbar}
 \end{equation}
 
-The condition of validity $\frac{d\lambda}{dx} \ll 1$ tells that the atoms must follow adiabatically the potential
-to adapt their movement to its variation \cite{atkins}. It means at really small $x$ of region I of figure
-\ref{fig:pa-sakurai-wkb} this approximation is not valid.\\
+The validity of this approximation is governed by the condition $\frac{d\lambda}{dx} \ll 1$, 
+implying that the local de Broglie wavelength must vary slowly compared to the scale of the 
+atoms' motion. This can be explicitly rewritten in terms of the potential gradient:
+
+\begin{equation}
+    \left| \frac{\mu \hbar \frac{dV}{dx}}{\left[2\mu(E-V(x))\right]^{3/2}} \right| \ll 1
+    \label{eq:wkb_validity}
+\end{equation}
+
+This expression highlights two critical regimes where the semi-classical approach fails. 
+First, near the classical turning points where $E \approx V(x)$, the kinetic 
+energy vanishes and the wavelength diverges. Second, at short internuclear distances
+(Region I in Fig. \ref{fig:pa-sakurai-wkb}), the steepness of the repulsive wall $|dV/dx|$ 
+becomes too large for the atoms to follow the potential variations adiabatically. In these 
+regions, connection formulas, typically using Airy functions, are required to match the 
+solutions across the turning points.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/WKB_sakurai.pdf}
-    \caption[fig:pa-sakurai-wkb]{Semi-classical approximation enables to find eigen energies $E$ of a hamiltonian describing a pair of atoms
-    in an harmonical potential $V(x)$ of region II. From a solution it is possible to deduce the next vibrational states of this known
-    potential.}
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of 
+    photoassociated 87Sr atoms/images/WKB_sakurai.pdf}
+    \caption[fig:pa-sakurai-wkb]{Semi-classical approximation in an interatomic potential 
+    $V(x)$. The energy level $E$ intersects the potential at the turning points $x_1$ and 
+    $x_2$. In the classically allowed Region II, the wavefunction oscillates with an amplitude 
+    proportional to $1/\sqrt{k(x)}$. In the forbidden Regions I and III, the wavefunction is 
+    evanescent.}
     \label{fig:pa-sakurai-wkb}
 \end{figure}
 
-At position $x=x_1$ and $x_2$ the momentum reaches zero then turnd imaginary.
-In the region $I$ and $III$ the wave is evanescent with a phase $k = i\sqrt{2\mu(|E-V(x)|)}$. It is then usual the
-average the potential as linear with $x$ around these turning points. \\
+At positions $x=x_1$ and $x_2$, the momentum reaches zero and becomes imaginary as the energy 
+level $E$ crosses the potential $V(x)$. In the classically forbidden regions I and III, the 
+wavefunction is evanescent and characterized by the decay constant $\kappa(x) = \sqrt{2\mu(V(x)-E)}/\hbar$. 
+Around the turning points, it is standard to linearize the potential to connect the oscillatory 
+and evanescent solutions. Region I is generally not studied in detail for photoassociation since 
+the repulsive wall of the potential is extremely steep and diverges at very short distances.
 
-By reflection with the left barrier of the potential at $x=x_1$ the stationnary wave must come back with a $2\pi$ at
-$x_2$. By continuity of the solutions in $[0, +\infty[$ the phase tends to
+To ensure a physical stationary state, the phase accumulated by the wave as it reflects between 
+the barriers at $x_1$ and $x_2$ must satisfy a quantization condition. By ensuring the continuity 
+of the solutions over $[0, +\infty[$, the phase integral must follow:
 \begin{equation}
-    \int_{x_1}^{x_2} k(x)dx = (n+\frac{1}{2})\pi
-    \label{wkb surfaces}
+    \int_{x_1}^{x_2} k(x)dx = \left(n+\frac{1}{2}\right)\pi
+    \label{eq:wkb_quantization}
 \end{equation}
 
-Then this formula enables to identify the solutions $E$ that satisfies
-the condition $(n+\frac{1}{2})\pi $. These values are what we call the vibrationnal states
-of a molecular potential.
+This formula, known as the Bohr-Sommerfeld quantization condition, enables the identification of 
+the discrete energy eigenvalues $E_n$ that satisfy the integral. these values correspond to the 
+vibrational states of the molecular potential.
 
 \subsubsection{Leroy-Bernstein scaling}
-Leroy-Bernstein scaling profits from the WKB approximation to identify the position of the less
-bound states without knowing the behaviour of the potential that could be complicated to estimate.
-This model is valid only close to the dissociation limit occuring at long distance. Then we can
-approximate the potential as
+
+
+The LeRoy-Bernstein scaling law builds upon the WKB approximation to identify the position of the 
+high-lying vibrational states near the dissociation limit. This model is particularly powerful as 
+it relies solely on the long-range behavior of the potential, bypassing the need for a detailed 
+description of the complex short-range interactions. 
+
+Near the dissociation limit $D_e$, occurring at large internuclear distances $r$, the potential 
+can be approximated by its leading long-range term:
 \begin{equation}
-    V(r) \xrightarrow[r \to \infty]{} D_e - \frac{C_n}{r^n}
+    V(r) \approx D_e - \frac{C_n}{r^n}
 \end{equation}
 
-with $D_e$ the dissociation energy. For a vibrational energy state $\nu$ of energy $E_{\nu}$
-we express the energy difference $\epsilon = D_e - E_{\nu}$ to inject it in \ref{wkb surfaces}
-and find solutions of
+where $C_n$ is the long-range coefficient (typically $n=6$ for Van der Waals or $n=3$ for resonant 
+dipole-dipole interactions). For a vibrational state $\nu$ with energy $E_{\nu}$, we define the 
+binding energy as $\epsilon_{\nu} = D_e - E_{\nu}$. Substituting this into the Bohr-Sommerfeld 
+quantization condition (Eq. \ref{eq:wkb_quantization}), we seek solutions for:
 
 \begin{equation}
-    \int_{x_1}^{x_2} \sqrt{2\mu(\frac{C_n}{r^n}-\epsilon)} dr = (\nu_D-\nu +\frac{1}{2})\hbar\pi
+    \int_{r_{min}}^{r_{max}} \frac{\sqrt{2\mu}}{\hbar} \sqrt{\frac{C_n}{r^n} - \epsilon_{\nu}} \, dr = (\nu_D - \nu) \pi
 \end{equation}
-with $\nu_D$ the dissociation number of the very first bound state \cite{brown_rotational_nodate}. After few calculations we finally obtain
+
+where $\nu_D$ is a non-integer parameter representing the effective vibrational index at the 
+dissociation limit. After integration, the relationship between the binding energy and the 
+vibrational quantum number is given by:
 
 \begin{equation}
-    \epsilon = \left((\nu_D-\nu)\frac{\sqrt{\pi }\hbar\nu}{\sqrt{2\mu C_n^{2/n}}}\frac{\Gamma(\frac{3}{2} - \frac{1}{\nu})}{\Gamma(1-\frac{1}{\nu})} \right)^\frac{2\nu}{\nu-2}
+    \epsilon_{\nu} = \left[ (\nu_D - \nu) \frac{\hbar n}{2\mu^{1/2} C_n^{1/n}} \frac{\sqrt{\pi} 
+    \Gamma(1/n + 1/2)}{\Gamma(1/n)} \right]^{\frac{2n}{n-2}}
 \end{equation}
 
-$\Gamma$ being the Beta Euler functions. This energy also writes as
+Here, $\Gamma$ denotes the Euler Gamma function. This expression is often rearranged to show the 
+scaling of the vibrational spacing:
 \begin{equation}
-    \frac{E_\nu - D_e}{\nu_D - \nu} = \left(\frac{\sqrt{\pi }\hbar\nu}{\sqrt{2\mu C_n^{2/n}}}\frac{\Gamma(\frac{3}{2} - \frac{1}{\nu})}{\Gamma(1-\frac{1}{\nu})} \right)^\frac{2\nu}{\nu-2}
+    E_{\nu} = D_e - \left[ (\nu_D - \nu) H_n \right]^{\frac{2n}{n-2}}
 \end{equation}
-
-from which we determine the energy difference between the dissociation limit and one of the least bounded states $\nu$
-of the molecule. We see from this formula the facility to predict the position of the vibrational state $\nu$ without
-knowing anything except the long-range behaviour of the potential.
-
-\subsubsection{Mass scaling ($^{88}Sr$)}
-Mass scaling is a method to predict from a know potential the position of the phase constraint
-vibrational states by adjusting the reduced mass with the isotope considered. The hyperfine structure neglected, it is still a good estimation of the position
-range of the vibrational.\\
-$^{88}Sr$ is one of the bosonic isotope experimentally observed that presents no hyperfine
-structure. The photoassociation spectrum is then simpler than the fermionic one alike the
-$^{173}Yb$ (see figure \ref{ytt potential}): only two potentials in the first excited
-molecular state $0_u$ and $1_u$. Results have been presented in \cite{zelevinsky_narrow_2006}
-where their fitting model gives the following potential expression
+where $H_n$ is defined as:
 
 \begin{equation}
-    \hat{V}_{BO} \sim \frac{-C_{6,\Lambda}}{r^6} -\frac{C_3}{r^3} + \frac{C_J}{r^2}
+    H_n = \frac{\hbar n \sqrt{\pi}}{2\mu^{1/2} C_n^{1/n}} \frac{\Gamma(1/n + 1/2)}{\Gamma(1/n)}
 \end{equation}
 
-for the two accessible potentials $\Lambda = 0, 1$.
+This notation highlights that the binding energy follows a power law relative to the "distance" 
+from the dissociation limit, where the exponent is purely determined by the nature of the long-range 
+interaction.
 
-The authors consider the potential is the
-same for all the isotopes because we can validate the Born-Oppenheimer estimation for $^{84}Sr$,
-$^{86}Sr$ and $^{88}Sr$.
-Then only the reduced mass in the integral
+\subsubsection{Mass scaling and isotopic shifts}
+
+Mass scaling is a powerful method used to predict the vibrational energy levels of different isotopes 
+from a single known potential. By adjusting the reduced mass $\mu$ corresponding to the isotope considered, 
+one can determine the phase constraint on the vibrational states. While this approach neglects the hyperfine 
+structure, it provides a reliable estimation of the spectral range where vibrational resonances are expected.
+
+In particular, $^{88}Sr$ is a bosonic isotope with a nuclear spin $I=0$, meaning it possesses no hyperfine 
+structure. Its photoassociation spectrum is significantly simpler than that of fermionic $^{173}Yb$ (see Fig. 
+\ref{fig:pa-ytterbium-potentials}), involving only two accessible potentials in the first excited molecular 
+state: $0_u$ and $1_u$. Based on the results presented in \cite{zelevinsky_narrow_2006}, the potential can be 
+modeled as:
+
 \begin{equation}
-    \int_{x_1}^{x_2} \sqrt{2\mu(E-V(x))} dx = (n+\frac{1}{2})\pi
+    V(r) \approx -\frac{C_{6,\Lambda}}{r^6} -\frac{C_3}{r^3} + \frac{\hbar^2 R(R+1)}{2\mu r^2}
 \end{equation}
 
-will change upon the isotope. In respect with the condition on the phase, the energies $E$
-will be modified. The experimental positions of the first vibrationnal states of the $O_u^+$ potential for $^{84}Sr$,
-$^{86}Sr$ and $^{88}Sr$ are represented by the red crosses in figure \ref{fig:pa-mass-scaling} and enables to adjust
-$V(r)$ shape. In blue lines the fitted functions are plotted from this model : it is then possible to deduce the frequency
-ranges we expect to find the resonances of the $^{87}Sr$.\\
-We see discontinuites at the $84$ isotope: these are avoided crossing coming from a coupling
-with the ground state potential.
-\\
+for the two molecular symmetries $\Lambda = 0, 1$. Since the Born-Oppenheimer approximation remains valid 
+across the strontium isotopes ($^{84}Sr, ^{86}Sr, ^{88}Sr$), the electronic potential $V_{BO}(r)$ is assumed 
+to be identical for all species. Consequently, only the reduced mass $\mu$ in the WKB phase integral varies:
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/mass_scaling.pdf}
-    \caption[fig:pa-mass-scaling]{This graph - extracted from \cite{borkowski_mass_2014}- confronts the experimental internal states in red crosses to their
-    theoretical predictions for different reduced mass of strontium isopes. The theoretical model guarantees approximated scales
-    for molecular lines of $^{87}Sr$ but not precisely because this model neglects the hyperfine interaction of the species.}
-    \label{fig:pa-mass-scaling}
-\end{figure}
+\begin{equation}
+    \int_{x_1}^{x_2} \frac{\sqrt{2\mu(E-V(x))}}{\hbar} dx = \left(n+\frac{1}{2}\right)\pi
+\end{equation}
 
-Through all these methods we can predict the average position of the vibrational states of the first excited molecular state on the intercombination
-line. We will demonstrate in the next section how to use these predictions to target with the right parameters PA lines on isotopes 88 and 87 of
-strontium.
+The experimental positions of the first vibrational states for the $0_u^+$ potential in $^{84}Sr, ^{86}Sr$, 
+and $^{88}Sr$ are shown as red crosses in Fig. \ref{fig:pa-mass-scaling}. These data points allow for the 
+refinement of the potential shape $V(r)$. The fitted functions (blue lines) then enable the prediction of 
+the frequency ranges where $^{87}Sr$ resonances should occur. Notably, discontinuities observed for the 
+$^{84}Sr$ isotope correspond to avoided crossings resulting from couplings with the ground-state potential.
+\begin{figure}
+\centering
+\includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/mass_scaling.pdf}
+\caption[fig:pa-mass-scaling]{This graph - extracted from \cite{borkowski_mass_2014}- confronts the experimental internal states in red crosses to their 
+theoretical predictions for different reduced mass of strontium isopes. The theoretical model guarantees approximated scales
+for molecular lines of $^{87}Sr$ but not precisely because this model neglects the hyperfine interaction of the species.}
+\label{fig:pa-mass-scaling}
+\end{figure} 
+In conclusion with this theoretical content combining these scaling laws with WKB and LeRoy-Bernstein models 
+enable to predict the average positions of the vibrational states on the intercombination line. In the 
+following section, we will demonstrate how these predictions are used to target the PA lines of $^{88}Sr$ 
+and $^{87}Sr$ with the appropriate experimental parameters.
 
 \section{PA experiments}
 \subsection{Gas preparation}
@@ -598,7 +655,8 @@ Once we have a dense cloud the PA process starts by making the atoms interact wi
 laser that we manage with two different sources to compare and limit the broadening sources.\\
 
 Once we obtain loss peaks with constrast better than the rms value of base cloud, the
-measurement of atoms loss at fixed frequency but various illumination time verifies \ref{equation one and two-body losses}.
+measurement of atoms loss at fixed frequency but various illumination time verifies 
+\ref{equation one and two-body losses}.
 
 \subsection{Caracterisation of PA beam}
 A strategy to verify that the effect of the spectral laser broadening was not critical on
