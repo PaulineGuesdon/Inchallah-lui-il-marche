@@ -586,27 +586,52 @@ strontium.
 
 \section{PA experiments}
 \subsection{Gas preparation}
-PA rate highly depending on cloud density as discussed in 3.1.3 the first step for Dicke state
-engineering is to produce highly dense cloud managed differently depending on the fermionic or
-bosonic nature. \\
-For fermions the convention to produce dense cloud is to optimize the evaporation ramps
-on a cloud already well charged in the ODT crossing.\\
-The near-vanishing scattering length of bosonic strontium 88 is detrimental to evaporative
-cooling, as it severely limits the elastic collision rate required to thermalize the gas. Then
-only the previous cooling and trapping step count on the density improvement.\\
-Once we have a dense cloud the PA process starts by making the atoms interact with a beam of PA
-laser that we manage with two different sources to compare and limit the broadening sources.\\
+The PA rate is strongly density-dependent, as discussed in Section 3.1.3. Consequently, the primary step for Dicke state engineering is the production 
+of a high-density atomic cloud. The experimental approach differs according to the quantum statistics of the isotope.
 
-Once we obtain loss peaks with constrast better than the rms value of base cloud, the
-measurement of atoms loss at fixed frequency but various illumination time verifies \ref{equation one and two-body losses}.
+For fermions ($^{87}$Sr), high densities are achieved by optimizing evaporative cooling ramps once the atoms are loaded into the crossed ODT. In contrast, 
+the near-zero scattering length of bosonic $^{88}$Sr is detrimental to evaporative cooling, as it suppresses the elastic collisions necessary for 
+thermalization. In this case, the final density relies almost exclusively on the efficiency of the preceding cooling and trapping stages (e.g., the MOT).
 
-\subsection{Caracterisation of PA beam}
-A strategy to verify that the effect of the spectral laser broadening was not critical on
-two-losses observation has been measuring the atomic transition and vibrational lines
-with different illumation sources to compare their broadening for similar intensities.\\
+Once a dense cloud is obtained, the PA process is initiated by illuminating the atoms with a dedicated laser beam. We utilize two different laser sources 
+to characterize and mitigate various broadening mechanisms. Finally, once loss peaks are identified with a contrast exceeding the RMS noise of the unperturbed 
+cloud, we verify the loss dynamics (Eq. \ref{equation one and two-body losses}) by measuring the atom number as a function of illumination time at a fixed 
+frequency.
 
-Optical pumping beam experimentally settled at the same frequency as the beam after Raman AOM
-we tested the atomic line with this beam.
+
+\subsection{Characterization of PA beam}
+The experimental results on atomic and molecular resonances revealed a power broadening source on the MOGlabs laser 
+that is described in the following. This observation brought us to test these same lines with another laser 
+to verify that the effect of this broadening was not critical on two-losses observation to compare their broadening 
+for similar intensities.\\
+
+A suitable tunable laser beam for PA process on $F = 11/2$ line is coming from the "$11/2$ AOM" (see figure \ref{zoom red chain battement}) 
+that was initially used for optical pumping only. 
+
+The measured linewidth of $\nu =2 $ molecular state is presented in figure \ref{linewidth avec pompopt} for the two different laser sources. 
+The sharp plot corresponds to the data obtained with this beam after "AOM $11/2$" and the blurred one with the beam tuned by beating (see following section)
+between MOGlabs and $11/2$ beam. 
+
+\begin{table}[ht]
+\centering
+\caption{Experimental comparison of $\nu=2$ at $f = 102.61\pm $ measured with two different laser sources}
+\label{tab:comparaison_lasers}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Measured parameters} & \textbf{AOM 11/2 beam} & \textbf{MOGlabs laser} \\ \hline
+Intensity ($I$) & $2.3$ mW/cm$^2$ & $7.0$mW/cm$^2$ \\ \hline
+$\sigma_{total} $(measured) & $120.78 \pm 8.02$ kHz & $231.06 \pm 10.0$ kHz\\ \hline
+$P_{broadening}$ & $-$ & $-$ \\ \hline
+$T_{broadening}$ & $19.30$ kHz & $19.30$ kHz \\ \hline
+\textbf{Effective linewidth} & $101.46\pm 8.02$ kHz & $212.06 \pm 10.0$ kHz \\ \hline
+\end{tabular}
+\end{table}
+
+The results on the broadening sources are presented in \ref{tab:comparaison_lasers} where only the thermal broadening expressing as 
+$\frac{1}{\lambda}\sqrt{\frac{k_BT}{m_{87}}}$. In the case of molecules it is hard to saturate the resonance because of the really
+small FC factors that increase strongly the saturating intensity \cite{zelevinsky_narrow_2006}: then $P_{broadening} = 
+\Gamma_{1S_0-3P_1}\sqrt{1+\frac{I}{I_{sat}}}\simeq \Gamma_{1S_0-3P_1}$. We see that the spectrum of the molecular line obtained with
+the MOGlabs beam is broaden by a factor $0.48$.
 
 \begin{figure}[H]
     \centering
@@ -619,17 +644,8 @@ we tested the atomic line with this beam.
     \label{linewidth avec pompopt}
 \end{figure}
 
-In figure \ref{linewidth avec pompopt} the comparison of the linedwidth of the same molecular state $\nu =2 $ is plotted to detect broadening sources on 
-the experiment. The sharp plots correspond to the data obtained with the beam after "AOM 11/2" at intensity $0.8$mW/cm$^2$. The linewidth of this line is 
-$\sigma_{11/2} = 60.39 ± 4.01$ kHz by deducing $P_{broadening} = 74.36$kHz and $T_{broadening} = 17.04$kHz.\\
-For the blurred line the data and the fitting correspond to the beam from the MOGlabs beating locking system. The substraction of the broadening sources
-$P_{broadening} = 125$kHz and $T_{broadening} = 19$kHz to $\sigma_{MOGlabs} $ gives a linewith of $41.32 \pm 10.0$ kHz.\\
-ATTENTION PROBLEME DANS LE CALCUL DES VALEURS --> PAS COHERENT POUR DATA 144
 
-Atom loss measurement for red shifted frequencies also shows that the diode spectrum comes with a noise at $\pm 6$ MHz with
-harmonics also measured at $\pm 12$ MHz. A second verification by beating between direct light from slave 1 and the MOGlabs beam. confirms this
-
-Atom loss measurement for red shifted frequencies also shows from \ref{} that the diode spectrum comes with a noise at $\pm 6$ MHz  of centered frequency of the beating $f_0$ with
+Atom loss measurement for red shifted frequencies also shows from ??? that the diode spectrum comes with a noise at $\pm 6$ MHz  of centered frequency of the beating $f_0$ with
 harmonics also measured at $\pm 12$ MHz. A second verification on the beating spectrum between direct light from slave 1 and the MOGlabs beam confirms this
 perturbative components we considered on our spectrum analysis.\\
 
@@ -637,38 +653,18 @@ These tests on slave 1 laser for PA were only in an approach of broadening analy
 atomic resonance where we expect measuring PA lines: the light from MOGlabs chain does.
 
 \subsection{PA realised with light source tuned by beating }
-The results presented in next section were obtained with light coming from the head of the laser MOGlabs. This laser tuning detailed in \ref{frequences 88sr 87sr}
-relies on beating with light propagating in a first AOM $Slave 1 AOM$ that has been optimized in the opposite diffracted order $+1$, contrary to the setup used
-for Raman transitions. Then the frequency is as previously settled by the $\simeq +300$ MHz double pass $AOM PompOpt$ then injected in a fiber that serves for the
-new beating scheme of \ref{nouveau battement} left part.\\
+Most of the results presented in next section were obtained with light coming from the head of the laser MOGlabs. This laser tuning detailed in \ref{frequences 88sr 87sr}
+relies on beating with light propagating in a first AOM "Slave 1 AOM" that has been optimized in the opposite diffracted order $+1$ (see \ref{zoom red chain battement}), contrary to the setup used
+for Raman transitions. Then the frequency is as previously settled by the $\simeq +300$ MHz double pass "AOM PompOpt" then injected in a fiber that serves for the
+new beating scheme \ref{PA slave 1}.\\
 We were previously injecting the same fiber at the output of the "AOM PompOpt" at frequency $f_{PompOpt}$
 featured in \ref{frequences 88sr 87sr} that was directly sent to the vacuum cell. The output
 of this fiber is now sent to this other optical table to assure at the same time the optical pumping and
 MOGlabs beating at $-1.75$GHz from $F=9/2$ hyperfine state.
-To adress deeply bound vibrational states we use a doubler frequency module down to $600$MHz
-from the atomic resonance.\\
-
-\subsubsection{Tuning the PA beam frequency}
-The results presented in the next section were obtained with light coming from the head of the laser MOGlabs. This laser scheme detailed (see figure \ref{zoom red chain battement})
-relies on beating with light propagating in a first AOM "$Slave$ $1$" that is optimized on a specific diffracted order depending on the strontiumic species targeted
-(see \ref{frequences 88sr 87sr}). Then the frequency is as previously settled by the $\simeq +300$ MHz double pass AOM $PompOpt$ then injected in a fiber that serves for the
-new beating scheme of \ref{nouveau battement} left part. The final frequency of the PA beam sent to the atoms is
-\begin{equation}
-    f_{PA} = f^{RF}_{beating} - f_{Raman} \pm 2\times f_{slave 1} - 2\times f_{11/2}
-\end{equation}
-
-To adress deeply bound vibrational states we use a doubler frequency module at maximum entrance frequency $f_{max}=300$ MHz to go down to $600$ MHz on this AOMs configuration. It is
-possible to go further by inverting $Raman$ AOM diffracted order as we will expose in the following for deep vibrational states of $^{87}Sr$. \\
-This light is injected in the fiber that was previously sending light to the atoms directly after "AOM 11/2". This fiber now ends to another optical table that is composed as in
-\ref{PA slave 1} to assure at the same time the optical pumping and
-MOGlabs beating at $-1.75$GHz from $F=9/2$ hyperfine state.
-
-Before the co-propagation part the $F = 11/2$ beam is split for optical pumping : this
-last fiber is sent to the cell.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/zoom_red_chain_beating.pdf}
+    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/zoom_red_chain_beating.pdf}
     \caption[nouveau battement]{Zoom on the part of the red chain used for PA process.  The frequency in both laser beam cases are tuned by
     "AOM Inj Slave 1", optimized in the $-1$ order for $^{88}Sr$ and in the $+1$ order for $^{87}Sr$: only a need of realignement of the beam after
     this double pass AOM has to be done. Then the frequency is changed by "AOM 11/2" to the end of PA process, going to the beating table or directly to
@@ -676,18 +672,30 @@ last fiber is sent to the cell.
     \label{zoom red chain battement}
 \end{figure}
 
+\subsubsection{Tuning the PA beam frequency}
+To realize PA this laser tuning detailed in (see figure \ref{zoom red chain battement})
+relies on beating with light propagating in a first AOM "Slave 1" that is optimized on a specific diffracted order depending on the strontiumic species targeted
+(see \ref{frequences 88sr 87sr}). Then the frequency is as previously settled by the $\simeq +300$ MHz double pass AOM "PompOpt" then injected in a fiber that serves for the
+new beating scheme of \ref{PA slave 1}. The final frequency of the PA beam sent to the atoms is
+\begin{equation}
+    f_{PA} = f^{RF}_{beating} - f_{Raman} \pm 2\times f_{slave 1} - 2\times f_{11/2}
+\end{equation}
+
+Adressing deeply bound vibrational states necessitates a doubler frequency module: the maximum entrance frequency $f_{max}=300$ MHz enables to go down to $600$ MHz on this AOMs 
+configuration. It is possible to go further by inverting "Raman AOM" diffracted order as we will expose
+in the following for deep vibrational states of $^{87}Sr$. \\
 
 
-\subsubsection{Spectral properties (cf 29/01/26)}
-\textbf{Spectral broadening}\\
+\subsubsection{Spectral properties}
+\textbf{Laser width}\\
 Measuring the beating at spectrum analyzer enables to visualize the spectrum from the molecular frame with an RBW parameter at the order of its
-lifetime $\Gamma_{mol}\simeq 15$ kHz. This measurement \ref{beating broadening} shows two side components at $\pm 50$ kHz: we see that
+lifetime $\Gamma_{mol}\simeq 15$ kHz. \ref{beating broadening} shows two side components at $\pm 50$ kHz: we see that
 we lose half the power in these components that broaden the molecular line when we do photoassociate. Also it means that the calibration of
 intensity sent to the atoms at the carrier frequency is in reality half the measured one from powermeter. \\
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/battement.pdf}
+    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/battement.pdf}
     \caption[beating broadening]{Beating spectrum between the light of the MOGlabs and the light after "AOM 11/2". The central frequency at $0$MHz
     has neighours components where almost half of the power is lost. }
     \label{beating broadening}
@@ -699,14 +707,16 @@ The laser beam sent to the atoms on PA process passes through the FP cavity pres
 section ??? which has a PDH locking system. The incident electric field of frequency $f_0$ is phase modulated by an EOM at $f_M=40.48$ MHz.
 The electric field expressing as in \cite{black_introduction_2001}
 
+
 \begin{equation}
     E_{inc}^{mod} = E_0 \left(J_0(\beta)e^{if_0t}+J_1(\beta)e^{i(f_0 + f_M)t}-J_1(\beta)e^{i(f_0-f_M)t}\right)
 \end{equation}
 
+
 depends on modulation depth parameter $\beta$ that is controled by the RF amplitude sent to the EOM.
 As we see in \ref{Bessel function} the amplitude ratio between the carrier and the sidebands is described
 by Bessel function. There is an optimal value at $\beta =1$ for which most of the amplitude is at frequency
-$f_0$ while there is still a little amplitude is the two sidebands indispensable for the locking.\\
+$f_0$ while there is still a little amplitude in the two sidebands indispensable for the locking.\\
 
 \begin{figure}[H]
     \centering
@@ -727,7 +737,8 @@ transition. A measurement of the atomic line at $\beta \simeq 1$ obtained with t
     \begin{minipage}[t]{0.7\textwidth}
         \centering
         \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/erreur_40MHz.pdf}
-        \captionof{figure}[sidebands]{Peut être combiner ce graphe avec la mesure de la raie atomique en rajoutant la position des sidebands}
+        \captionof{figure}[sidebands]{Illustration of the atomic resonance adressed by PDH locking system induced sidebands $f_0\pm f_M$ 
+        at $f_M=40.48$ MHz from centered frequency.}
         \label{sidebands}
     \end{minipage}
     \hfill
@@ -741,7 +752,7 @@ transition. A measurement of the atomic line at $\beta \simeq 1$ obtained with t
 Decreasing the $\beta$ enables to reduce this unvoluntary effect but we were not capable of canceling it completly while keeping the PDH lock.\\
 
 \textbf{dN/dt behaviour}\\
-While the nature of this reasonance reveals atomic we have been tricked by the atom number decrease presenting as expected for molecules, two
+While the nature of this resonance reveals one-body losses we have been tricked by the atom number decrease presenting as expected for molecules, two
 decay fashion. \\
 The double-shape of the supposed molecular line led us to think is it different projections of a $T$: increasing $B$ field should seperate them.
 This experiment did not have any effect on this line, which led us to conclude that our initial gas was not copmpletly thermalised.
