@@ -22,9 +22,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import pandas as pd
-import glob
 import os
 import re
+from pathlib import Path
 
 # =============================================================================
 # --- 1. CONFIGURATION À MODIFIER ---
@@ -83,9 +83,10 @@ def load_picture(path, size):
     except: return None
 
 def load_data(path, size):
-    m_at = load_picture(path + "Atoms.dat", size)
-    m_no = load_picture(path + "NoAtoms.dat", size)
-    m_dk = load_picture(path + "Dark.dat", size)
+    path = Path(path)
+    m_at = load_picture(path.parent / f"{path.name}Atoms.dat", size)
+    m_no = load_picture(path.parent / f"{path.name}NoAtoms.dat", size)
+    m_dk = load_picture(path.parent / f"{path.name}Dark.dat", size)
     if m_at is None or m_no is None or m_dk is None: return None
     diff_at = np.maximum(m_at.astype(float) - m_dk, 1)
     diff_no = np.maximum(m_no.astype(float) - m_dk, 1)
@@ -96,25 +97,43 @@ def load_data(path, size):
 # =============================================================================
 
 if __name__ == "__main__":
-    dir_data ='/Volumes/Elements/datas_PA/data146_spectro_5µW_10ms_MOG/data146'
-    # dir_data = 'C:/Users/pauline.guesdon/Pictures/Figures_thèses/datas_PA/data94_atomloss_f_time/data94/'
-    # excel_path = 'C:/Users/pauline.guesdon/Pictures/Figures_thèses/datas_PA/datasPA_waves.xlsx'
-    excel_path = '/Volumes/Elements/datas_PA/datasPA_waves.xlsx'
+    # Override these with environment variables when moving between machines:
+    #   THESIS_DATA_DIR=/path/to/data
+    #   THESIS_EXCEL_PATH=/path/to/datasPA_waves.xlsx
+    dir_data = Path(os.environ.get(
+        "THESIS_DATA_DIR",
+        "/Volumes/Elements/datas_PA/data146_spectro_5µW_10ms_MOG/data146",
+    )).expanduser()
+    excel_path = Path(os.environ.get(
+        "THESIS_EXCEL_PATH",
+        "/Volumes/Elements/datas_PA/datasPA_waves.xlsx",
+    )).expanduser()
+
+    if not dir_data.exists():
+        raise FileNotFoundError(
+            f"Data directory not found: {dir_data}. "
+            "Set THESIS_DATA_DIR to the folder containing the *Atoms.dat files."
+        )
+    if not excel_path.exists():
+        raise FileNotFoundError(
+            f"Excel file not found: {excel_path}. "
+            "Set THESIS_EXCEL_PATH to the workbook with the frequency/time column."
+        )
     
     df_excel = pd.read_excel(excel_path)
     # Colonne 2 pour Fréquence (Spectre), Colonne 3 pour Temps (Decay)
     col_index = 3 if TYPE_ANALYSE_FINALE == 'DECAY' else 4
     valeurs_physiques = df_excel.iloc[:, col_index].values.astype(float)
     
-    files_atoms = sorted(glob.glob(os.path.join(dir_data, "*Atoms.dat")))
+    files_atoms = sorted(dir_data.glob("*Atoms.dat"))
     indices_sets, nb_atomes_brut, erreurs_brut = [], [], []
     func_2d = gaussian_2d_no_rot if MODE_FIT_IMAGE == 'gauss' else lorentzian_2d
 
     print(f"--- Analyse de {len(files_atoms)} images ---")
 
     for f_path in files_atoms:
-        prefix = f_path.replace("Atoms.dat", "")
-        n_match = re.search(r'RAW_(\d+)_', os.path.basename(f_path))
+        prefix = f_path.with_name(f_path.name.replace("Atoms.dat", ""))
+        n_match = re.search(r'RAW_(\d+)_', f_path.name)
         n_data = int(n_match.group(1)) if n_match else 0
 
         mat_do = load_data(prefix, SIZE)
