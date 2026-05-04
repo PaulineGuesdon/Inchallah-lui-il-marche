@@ -591,10 +591,6 @@ INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr at
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\87Sr\normalisation_data184.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\87Sr\normalisation_data184.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\87Sr\normalisation_data184.pdf
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\data190_exp.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\data190_exp.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\data190_exp.pdf
@@ -607,6 +603,13 @@ INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr at
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\data_194_exp.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\data_194_exp.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\data_194_exp.pdf
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\predissociation.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\predissociation.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\predissociation.pdf
@@ -641,6 +644,8 @@ INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscri
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.out
 INPUT C:\Users\pauline.guesdon\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\pauline.guesdon\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
@@ -649,6 +654,8 @@ INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmex8.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmex8.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
@@ -669,8 +676,6 @@ INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
