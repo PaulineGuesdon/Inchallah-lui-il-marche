@@ -521,7 +521,7 @@ solutions across the turning points.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of 
+    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of 
     photoassociated 87Sr atoms/images/WKB_sakurai.pdf}
     \caption[fig:pa-sakurai-wkb]{Semi-classical approximation in an interatomic potential 
     $V(x)$. The energy level $E$ intersects the potential at the turning points $x_1$ and 
@@ -642,7 +642,7 @@ and $^{87}Sr$ with the appropriate experimental parameters.
 
 \section{Photoassociation Experiments}
 
-\subsection{Gas Preparation and Isotope Specificities}
+\subsection{Gas preparation and isotope Specificities}
 The Photoassociation (PA) rate is strongly density-dependent, as detailed in Section 3.1.3. Consequently, the primary step for Dicke state engineering is the production of a high-density atomic cloud. The experimental approach differs according to the quantum statistics of the isotope:
 
 \begin{itemize}
@@ -652,7 +652,7 @@ The Photoassociation (PA) rate is strongly density-dependent, as detailed in Sec
 
 Once a dense cloud is obtained, the PA process is initiated by illuminating the atoms with a dedicated laser beam.
 
-\subsection{Implementation: Beating Scheme and Frequency Tuning}
+\subsection{Implementation: beating scheme and frequency tuning}
 The PA beam is primarily generated using a MOGlabs laser head. As detailed in Figure \ref{frequences 88sr 87sr}, its frequency tuning relies on a beating scheme with a reference beam from the "Slave 1 AOM". This specific optical arrangement, designed to ensure simultaneously the optical pumping and the MOGlabs beating, is illustrated in the global scheme of Figure \ref{PA slave 1}.
 
 \begin{figure}[H]
@@ -671,10 +671,10 @@ The final frequency of the PA beam sent to the atoms is given by:
 
 Addressing deeply bound vibrational states requires a frequency doubler module ($f_{max}=300$ MHz), allowing detunings up to $600$ MHz. Further detunings can be achieved by inverting the "Raman AOM" diffracted order.
 
-\subsection{Technical Artifacts and Spectral Noise}
+\subsection{Technical artifacts and spectral noise}
 The use of the MOGlabs laser and the optical stabilization system introduced several spectral artifacts that had to be characterized to avoid misinterpreting the loss signals.
 
-\subsubsection{PDH Sidebands Induced Artifacts}
+\subsubsection{PDH sidebands induced artifacts}
 The laser passes through a Fabry-Perot cavity stabilized by a Pound-Drever-Hall (PDH) locking system ($f_M=40.48$ MHz). The field is expressed as:
 \begin{equation}
     E_{inc}^{mod} = E_0 \left(J_0(\beta)e^{if_0t}+J_1(\beta)e^{i(f_0 + f_M)t}-J_1(\beta)e^{i(f_0-f_M)t}\right)
@@ -690,40 +690,43 @@ The power ratio depends on the modulation depth $\beta$, as shown by the Bessel 
 
 These sidebands trigger "ghost" resonances when the carrier is detuned by $\pm 40.48$ MHz from the atomic transition, leading to spurious one-body losses (Figures \ref{sidebands} and \ref{fig:raie-40mhz}).
 
-\begin{center}
-    \begin{minipage}[t]{0.48\textwidth}
-        \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/erreur_40MHz.pdf}
-        \captionof{figure}{PDH sidebands addressing the atomic resonance.}
-        \label{sidebands}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.48\textwidth}
-        \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/40MHz_resonance.pdf}
-        \captionof{figure}{Experimental measurement of the 40MHz sideband resonance.}
-        \label{fig:raie-40mhz}
-    \end{minipage}
-\end{center}
 
-\subsubsection{Laser Linewidth and Beating Noise}
-The beating spectrum (Figure \ref{beating broadening}) reveals side components at $\pm 50$ kHz carrying nearly half the power. Additionally, measurements for red-shifted frequencies show diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. This noise effectively broadens the PA lines and reduces the actual intensity at the carrier frequency.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/battement.pdf}
+        \includegraphics[width=0.6\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/erreur_40MHz.pdf}
+        \captionof{figure}{PDH sidebands addressing the atomic resonance.}
+        \label{sidebands}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/40MHz_resonance.pdf}
+        \captionof{figure}{Experimental measurement of the 40MHz sideband resonance.}
+        \label{fig:raie-40mhz}
+\end{figure}
+
+
+\subsubsection{Laser Linewidth and Beating Noise}
+The beating spectrum (Figure \ref{beating broadening}) reveals side components around $\pm 50$ kHz carrying nearly half the power. Additionally, measurements for red-shifted frequencies show diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. This noise effectively broadens the PA lines and reduces the actual intensity at the carrier frequency.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/battement.pdf}
     \caption[Beating spectrum]{Beating spectrum between the MOGlabs laser and the "AOM 11/2" reference.}
     \label{beating broadening}
 \end{figure}
 
-\subsubsection{Interpretation of Decay Dynamics ($dN/dt$)}
-We observed atom loss signals exhibiting a "double decay" slope—a fast two-body decay followed by a slow one-body regime as the density drops. While this is usually a signature of molecular formation, some of these resonances showed no Zeeman splitting under a magnetic field, suggesting they were artifacts of spectral noise or non-thermalized gas rather than true PA lines.
+\subsubsection{Interpretation of decay dynamics ($dN/dt$)}
+We observed atom loss signals exhibiting a "double decay" slope -a fast two-body decay followed by a slow one-body regime as the density drops. While this is usually a signature of molecular formation, some of these resonances showed no Zeeman splitting under a magnetic field, suggesting they were artifacts of spectral noise or non-thermalized gas rather than true PA lines.
 
-\subsection{Validation: Linewidth Comparison with a Stable Source}
+\subsection{Linewidth comparison with a stable source}
 To confirm that the observed broadening was technical, we compared the MOGlabs results with a more stable source: the "$11/2$ AOM" beam.
 
 \subsubsection{Comparative Results}
-The measured linewidth of the $\nu = 2$ molecular state is compared in Figure \ref{linewidth avec pompopt} and Table \ref{tab:comparaison_lasers}. Due to small Franck-Condon factors \cite{zelevinsky_narrow_2006}, power broadening remains negligible:
+The measured linewidth of the $\nu = 2$ molecular state is compared in Figure \ref{linewidth avec pompopt} and Table \ref{tab:comparaison_lasers}. Due to small Franck-Condon factors \cite{zelevinsky_narrow_2006}, power broadening remains negligible
+since the $I_{sat}$ for molecules is way bigger than for atoms:
+
 \begin{equation}
     P_{broadening} = \Gamma_{1S_0-3P_1}\sqrt{1+\frac{I}{I_{sat}^{eff}}} \simeq \Gamma_{1S_0-3P_1}
 \end{equation}
@@ -749,12 +752,15 @@ $\gamma_{thermal}$ (calc.) & $19.30$ kHz & $19.30$ kHz \\ \hline
     \label{linewidth avec pompopt}
 \end{figure}
 
-\subsection*{Conclusion: Validation of the PA Spectroscopic Protocol}
+\subsection*{Conclusion: validation of the PA spectroscopic protocol}
 In summary, the characterization of our PA sources has highlighted two major technical constraints: the PDH-locking sidebands at $\pm 40.48$ MHz and the MOGlabs technical broadening (noise at $\pm 50$ kHz and $\pm 6$ MHz). However, the systematic analysis of $dN/dt$ dynamics and the cross-comparison with the "$11/2$ AOM" beam provide a robust diagnostic to isolate genuine molecular signals. With these technical limits established and the broadening mechanisms understood, we can now reliably analyze the molecular spectra for both $^{88}$Sr and $^{87}$Sr.
 
 \section{Photoassociation on $^{88}Sr$}
 As a calibration of our experimental protocol the PA lines search on $^{87}Sr$ starts with a verification of few
 molecular lines of $^{88}Sr$ that has been studied in \cite{borkowski_line_2009}, \cite{zelevinsky_narrow_2006}, \cite{reschovsky_narrow-line_2018}.
+Tests on lighting times and intensites of the same known molecular lines enable to understand our system and validate the experimental procedure at which
+we expect to obtain two-body losses for similar parameters on $^{87}Sr$.
+
 
 \subsection{Setup}
 For bosonic species, we are using the MOGlabs beating for PA to adress lines unaccessible with the direct light from "AOM 11/2 " whereas it has a
@@ -784,14 +790,14 @@ at $T\simeq 1.7uK$.
 The atomic transition is adressed for $f^{RF}_{beating} = f_{Raman}$ by a laser beam of intensity $I = 100I_{sat}$ at
 waist $w_0 = 340 \mu$m for $800$ms. Figure \ref{atomic line 88sr} shows the atom loss at this reference frequency with an
 effective linewidth of $\sigma = 192(9)$kHz incounting a power broadening of $74kHz$ and thermal broadening of the order of
-$17$kHz. Expecting an atomic linewidth of about $\Gamma_{at} \simeq 7.4kHz$ we suppose an
+$19$kHz. Expecting an atomic linewidth of about $\Gamma_{at} \simeq 7.4kHz$ we suppose an
 additional source of broadening coming from the laser itself detailed in 3.5.2.1.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data88_finale.pdf}
     \caption[atomic line 88sr]{Atoms number normalized in a PA configuration on $^{88}Sr$ atomic resonance measured in intercombinatinon line. 
-    This atomic line is the reference for the PA lines that are presented in the following. The fitting modele is a lorentzian and the error are
+    This atomic line is the reference for the PA lines that are presented in the following. The fitting model is a lorentzian and the error are
     estimated by the covariance matrix added to a systematic error coming from the fluctuation of the gas.}
     \label{atomic line 88sr}
 \end{figure}
@@ -829,9 +835,11 @@ for $10$ ms. We estimate the linewidth $\Gamma = 101.46 \pm 8.02$ kHz  with ther
     \label{n=2 vibrational state}
 \end{figure}
 
-These results are almost consistent with \cite{zelevinsky_narrow_2006} that presented vibrational states $f_{\nu=1} = -23.932(33)$
-and $f_{\nu=2}=-222.161(35)$ that corresponds to $0_u$ potential. The values could defer from a different uncertainty estimation. 
+These results are close to be consistent with \cite{zelevinsky_narrow_2006} that presented vibrational states $f_{\nu=1} = -23.932(33)$
+and $f_{\nu=2}=-222.161(35)$ that corresponds to $0_u$ potential. Tensorial light shift from 
 
+The values could defer from a different uncertainty estimation. 
+The contrast of those curves 
 Then we want to verify the two tendencies of \ref{equation one
 and two-body losses} where we expect to see a first rapid decay that breaks at the dominancy of the one-body loss linear with $N$.
 Figure \ref{88sr exponential decay} shows these two fashions from which the lorentzian fit gives the $K_2$ value : the deduced
@@ -857,30 +865,58 @@ For the second line we measure $l_{opt} = 7.6\times 10^3 a_0$ W/cm$^2$ which is 
 The aim of these calibrations was to be sure about our experimental protocol to be applied on the $^{87}Sr$ we present in the following.
 
 \section{87Sr molecules}
-For $^{87}Sr$ we exploit the $-1$ order to account
-the hyperfine state $F=11/2$ as in \ref{fig:intro-chaine-rouge}.
-
 \subsection{Results on $^{87}Sr$}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data195.pdf}
-    \caption[]{Molecular line of unidentified molecular potential at $259.01\pm$ MHz from atomic resonance of $^{87}Sr$, obtained at $19$W/cm$^2$.}
-    \label{}
-\end{figure}
+The first molecular lines on $^{87}Sr$ are presented in the following plots reached only with the MOGlabs source. They have been 
+experimentaly engineered by changing the maximized diffracted order of "AOM Inj Slave 1" for $-1$ order (see Setup 
+\ref{zoom red chain battement}) to account the hyperfine state $F=11/2$ as in \ref{fig:intro-chaine-rouge}.\\
+The first detected molecular s
+
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data171.pdf}
-    \caption[]{Molecular line of unidentified molecular potential at $274.83\pm$ MHz from atomic resonance of $^{87}Sr$, obtained at $5.2$W/cm$^2$.}
-    \label{}
+    \begin{subfigure}{1\linewidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data195.pdf}
+        \label{subfig:259MHz}
+    \end{subfigure}
+
+    \vspace{0.5cm} 
+
+    \begin{subfigure}{1\linewidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data171.pdf}
+        \label{subfig:274MHz}
+    \end{subfigure}
+
+    \vspace{0.5cm}
+
+    \begin{subfigure}{1\linewidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data184.pdf}
+        \label{subfig:375MHz}
+    \end{subfigure}
+\caption{Experimental observation of three unidentified molecular lines in $^{87}$Sr. (Top) Data 195 showing a resonance at $259.01 \pm \dots$ MHz ($I = 19$ W/cm$^2$). (Middle) Data 171 showing a resonance at $274.83 \pm \dots$ MHz ($I = 5.2$ W/cm$^2$). (Bottom) Data 184 showing a resonance at $375.74 \pm \dots$ MHz ($I = 5.2$ W/cm$^2$). All detunings are measured from the $^{87}$Sr atomic resonance.}
+    \label{fig:unidentified_molecular_lines}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data184.pdf}
-    \caption[]{Molecular line of unidentified molecular potential at $375.74 \pm$ MHz from atomic resonance of $^{87}Sr$, obtained at $5.2$W/cm$^2$.}
-    \label{}
-\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{Summary of fit parameters and experimental conditions for data series 171, 195, and 184. The center $x_0$ and width $\Gamma$ are expressed in frequency units relative to the laser scan.}
+\label{tab:summary_fits_PA_final}
+\begin{tabular}{lccc}
+\textbf{Molecular line frequency} & \textbf{$f = 259.01 \pm \dots$} & \textbf{$274.83 \pm \dots$} & \textbf{$375.74 \pm \dots$} \\ 
+Depth & $-0.307 \pm 0.010$ & $-0.364 \pm 0.019$ & $-0.083 \pm 0.009$ \\
+Measured width $\Gamma$ [MHz] & $2.53 \pm 0.17$ & $7.48 \pm 0.77$ & $10.96 \pm 2.68^*$ \\
+Intensity $I$ (W/cm$^2$) & 19 & 5.2 & 5.2 \\
+Illumination time $t$ (ms) & [Value] & [Value] & [Value] \\ 
+Optical path $L_{opt}$ & [Value] & [Value] & [Value] \\ 
+Systematic Error & $2.22\%$ & $5.54\%$ & $6.67\%$ \\ 
+\end{tabular}
+\begin{flushleft}
+\footnotesize $^*$ Note: The absolute value of $\Gamma$ is reported for Data 184 for physical consistency.
+\end{flushleft}
+\end{table}
 
 \begin{figure}[H]
     \centering
