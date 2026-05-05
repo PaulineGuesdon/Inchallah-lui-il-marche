@@ -649,7 +649,7 @@ The Photoassociation (PA) rate is strongly density-dependent, as detailed in Sec
     \item \textbf{Bosons ($^{88}$Sr):} The near-zero scattering length of $^{88}$Sr is detrimental to evaporative cooling, as it suppresses the elastic collisions necessary for thermalization. In this case, the final density relies almost exclusively on the efficiency of the preceding cooling and trapping stages (e.g., the MOT).
 \end{itemize}
 
-Once a dense cloud is obtained, the PA process is initiated by illuminating the atoms with a dedicated laser beam.
+Once a dense cloud is obtained, the PA process is initiated by illuminating the atoms with a dedicated laser beam and all these datas are realised with a magnetic field of $B = 1.6 \pm$.
 
 \subsection{Implementation: beating scheme and frequency tuning}
 The PA beam is primarily generated using a MOGlabs laser head. As detailed in Figure \ref{frequences 88sr 87sr}, its frequency tuning relies on a beating scheme with a reference beam from the "Slave 1 AOM". This specific optical arrangement, designed to ensure simultaneously the optical pumping and the MOGlabs beating, is illustrated in the global scheme of Figure \ref{PA slave 1}.
@@ -737,19 +737,23 @@ since the $I_{sat}$ for molecules is way bigger than for atoms:
 \begin{tabular}{|l|c|c|}
 \hline
 \textbf{Measured parameters} & \textbf{AOM 11/2 beam} & \textbf{MOGlabs laser} \\ \hline
-Intensity ($I$) & $2.3$ mW/cm$^2$ & $7.0$ mW/cm$^2$ \\ \hline
-$\sigma_{total}$ (measured) & $120.78 \pm 8.02$ kHz & $231.06 \pm 10.0$ kHz \\ \hline
+Frequency [MHz] (measured) & $24.14 \pm 0.01$ kHz & $23.99 \pm 0.01$ kHz \\ \hline
+Intensity ($I$) & $2.3$ mW/cm$^2$ & $826.0$ mW/cm$^2$ \\ \hline
+$\sigma_{total}$ (measured) & $115.5 \pm 8.8$ kHz & $344.5 \pm 27.3$ kHz \\ \hline
 $\gamma_{thermal}$ (calc.) & $19.30$ kHz & $19.30$ kHz \\ \hline
-\textbf{Effective linewidth} & $101.46 \pm 8.02$ kHz & $212.06 \pm 10.0$ kHz \\ \hline
+\textbf{Effective linewidth} & $96.37 \pm 29.24$ kHz & $325.37 \pm 13.6$ kHz \\ \hline
 \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data144_finale.pdf}
-    \caption[PROBLEME SUR LES VALEURS DE FREQUENCE Linewidth comparison]{Comparison of the $\nu = 2$ molecular line. The blurred data (MOGlabs) is broader by a factor of 2 compared to the stable "AOM 11/2" source.}
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/comparaison_raie_24MHz_88_jolie.pdf}
+    \caption[]{Comparison of the $\nu = 2$ molecular line. The deep purple data (MOGlabs) is broader by a factor of 3 compared to the stable "AOM 11/2" source in light purple. The frequencies of MOGlabs experiment have been shifted for figure reading facilites. }
     \label{linewidth avec pompopt}
 \end{figure}
+
+The molecular line measured with the MOGlabs has been frequency shifted in this figure to simplify the comparision lecture of the graphe. The real frequency of this resonance is $+152.0 \pm 5.0$ kHz from the centered frequency of the light purple points at $f = 23.99 \pm 0.01$ MHz. The frequency shift comes partially from the tensorial light shift induced by the PA beam on the molecular line that is different for both of them because of an intensity difference. 
+
 
 \subsection*{Conclusion: validation of the PA spectroscopic protocol}
 In summary, the characterization of our PA sources has highlighted two major technical constraints: the PDH-locking sidebands at $\pm 40.48$ MHz and the MOGlabs technical broadening (noise at $\pm 50$ kHz and $\pm 6$ MHz). However, the systematic analysis of $dN/dt$ dynamics and the cross-comparison with the "$11/2$ AOM" beam provide a robust diagnostic to isolate genuine molecular signals. With these technical limits established and the broadening mechanisms understood, we can now reliably analyze the molecular spectra for both $^{88}$Sr and $^{87}$Sr.
@@ -788,27 +792,17 @@ red case to bosonic gas whereas the blue one is for the fermionic strontium - as
 As introduced in this chapter the PA experiment starts in the case of $^{88}Sr$ at density $n_0=5\times 10^{13}$ atoms$/cm^3$
 at $T\simeq 1.7uK$.
 The atomic transition is adressed for $f^{RF}_{beating} = f_{Raman}$ by a laser beam of intensity $I = 100I_{sat}$ at
-waist $w_0 = 340 \mu$m for $800$ms. Figure \ref{atomic line 88sr} shows the atom loss at this reference frequency with an
+waist $w_0 = 340 \mu$m for $800$ms. Figure \ref{88Sr resonance} top shows the atom loss at this reference frequency with an
 effective linewidth of $\sigma = 192(9)$kHz incounting a power broadening of $74kHz$ and thermal broadening of the order of
 $19$kHz. Expecting an atomic linewidth of about $\Gamma_{at} \simeq 7.4kHz$ we suppose an
 additional source of broadening coming from the laser itself detailed in 3.5.2.1.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data88_finale.pdf}
-    \caption[atomic line 88sr]{Atoms number normalized in a PA configuration on $^{88}Sr$ atomic resonance measured in intercombinatinon line. 
-    This atomic line is the reference for the PA lines that are presented in the following. The fitting model is a lorentzian and the error are
-    estimated by the covariance matrix added to a systematic error coming from the fluctuation of the gas.}
-    \label{atomic line 88sr}
-\end{figure}
 
 Then the laser MOGlabs robustly locked, we change $f^{RF}_{beating}$ to search the two first vibrational states visible in figure
-\ref{n=2 vibrational state}. \\
-Datas may have been obtained for different waist size in an effort to increase two-body losses. \\
+\ref{88Sr resonance}. \\
 
-The first molecular state plotted in \ref{n=2 vibrational state} top has been detected for $t=1000$ ms exposure time at intensity $826$ mW/cm$^2$, 
-$f = -23.99(1)$ MHz from the atomic transition by the MOGlabs. All the resonances have been fitted by a lorentzian function:
 
+All the resonances have been fitted by a lorentzian function:
 \begin{equation}
     f(x) = y_0 + \frac{A}{(x-x_0)^2 + (\frac{\Gamma}{2})^2}
 \end{equation}
@@ -816,27 +810,40 @@ $f = -23.99(1)$ MHz from the atomic transition by the MOGlabs. All the resonance
 and the uncertaintes are estimated by the diagonal terms of the covariance matrix added to a systematic error being the RMS value of the atomic 
 number without the PA beam.\\
 
-Then we did detected a second resonance with the "AOM 11/2" laser beam at $f = -223.93(1) $ MHz for laser beam of intensity $I = 2.3$ mW/cm$^2$
-for $10$ ms. We estimate the linewidth $\Gamma = 101.46 \pm 8.02$ kHz  with thermal broadening $\sigma_{broadening} = 19$ kHz.
-
-
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}[t]{1\linewidth}
-        \centering
-        \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data91_finale.pdf}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{1\linewidth}
-        \centering
-        \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data146_finale.pdf}
-    \end{subfigure}
-    \caption[n=2 vibrational state]{Erreur sur les valeurs de fréquences graphe du bas ... Fréq centrale : 223.93}
-    \label{n=2 vibrational state}
-\end{figure}
+The first molecular state plotted in \ref{88Sr resonance} middle has been detected for $t=1000$ ms exposure time at intensity $I = 826$ mW/cm$^2$, 
+$f = -23.99 \pm 0.01$ MHz from the atomic transition by the MOGlabs. \\
+Then we did detected a second resonance still with the MOGlabs laser beam at $f = -222.70 \pm 0.01 $ MHz for laser beam of intensity $I = 303.2$ mW/cm$^2$
+during $50$ ms. We estimate the linewidth $330.14 \pm 13.00$ kHz inluding thermal broadening $\sigma_{broadening} = 21$ kHz.
 
 These results are close to be consistent with \cite{zelevinsky_narrow_2006} that presented vibrational states $f_{\nu=1} = -23.932(33)$
-and $f_{\nu=2}=-222.161(35)$ that corresponds to $0_u$ potential. Tensorial light shift from the PA beam induces a frequency shift on the molecular states that is experimentally measured in \cite{blatt_measurement_2011} where the frequency of $\nu = -2$ is red shifted of $200$ kHz for an increase of around 800 mW/cm$^2$.\\
+and $f_{\nu=2}=-222.161(35)$ that corresponds to $0_u$ potential. Tensorial light shift from the PA beam induces a frequency shift on the molecular states that is experimentally measured in \cite{blatt_measurement_2011} where the frequency of $\nu = -2$ is red shifted of $200$ kHz for an increase of around 800 mW/cm$^2$.
+
+
+\begin{figure}[htbp]
+    \centering
+
+    \begin{subfigure}[b]{0.8\linewidth}
+        \centering
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data88_finale.pdf}
+    \end{subfigure}
+    
+
+    \begin{subfigure}[b]{0.7\linewidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data91_corrigee.pdf}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.7\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/data147_222.3MHz_modifiee_ink.pdf}
+    \end{subfigure}
+
+    \caption[Resonances in $^{88}Sr$]{$^{88}Sr$ resonances measured in the intercombination line. (Top) Atoms number normalized in a PA configuration on $^{88}Sr$ atomic resonance measured in intercombinatinon line.
+    This atomic line is the reference for the PA lines that are presented in the following. The fitting model is a lorentzian and the error are
+    estimated by the covariance matrix added to a systematic error coming from the fluctuation of the gas. (Middle) $\nu = 2$ vibrational state at $I=826.0$ mW/cm$^2$ for $1000$ ms. (Bottom) $\nu = 3$ vibrational state at $I=303.0$ mW/cm$^2$ for $50$ ms. The fitting models are Lorentzians with errors estimated from the covariance matrix and systematic gas fluctuations.}
+    \label{88Sr resonance}
+\end{figure}
+
 
 Then I present a verification of the two tendencies of \ref{equation one
 and two-body losses} where we expect to see a first rapid decay that breaks at the dominancy of the one-body loss linear with $N$.
@@ -864,7 +871,9 @@ The results on the $^{88}Sr$ isotope are consistent with the litterature and ena
 \section{87Sr molecules}
 \subsection{Results on $^{87}Sr$}
 The molecular lines on $^{87}Sr$ have been reached only with the MOGlabs source. We have been experimentally engineer it by changing the maximized diffracted order of "AOM Inj Slave 1" for $-1$ order (see Setup 
-\ref{zoom red chain battement}) to account the hyperfine state $F=11/2$ as in \ref{fig:intro-chaine-rouge}.\\
+\ref{zoom red chain battement}) to account the hyperfine state $F=11/2$ as in \ref{fig:intro-chaine-rouge}. \\
+Datas have been obtained for different waist size in an effort to increase two-body losses, same for the density of the cloud. \\
+
 The first molecular states have been detected at $f_1 = 259.01\pm 0.12$ MHz, $f_2 = 274.83\pm 0.03$ MHz and $f_3 = 375.74\pm 0.48$ MHz for experimental and fitted parameters refered in \ref{tab:summary_fits_PA_final}.
 
 
@@ -892,15 +901,15 @@ The first molecular states have been detected at $f_1 = 259.01\pm 0.12$ MHz, $f_
     \label{87Sr molecular lines}
 \end{figure}
 
-A validation of the two-body losses nature of the collisions repsonsible for these molecular lines is -as dicussed in the introduction of this chapter- to measure $dN/dt$. The two-tendencies exponential decay has been tested for line $f = 274.01$ MHz in Fig.\ref{exponential decay 87Sr} top: this plot reveals a gap between experiment and fitting function 
-\newpage
+A validation of the two-body losses nature of the collisions repsonsible for these molecular lines is -as dicussed in the introduction of this chapter- to measure $dN/dt$. The two-tendencies exponential decay has been tested for line $f = 274.01$ MHz in Fig. \ref{exponential decay 87Sr} top: this plot reveals a gap between experiment and fitting function 
 
 \begin{equation}
     f(t) = e^{-\Gamma t}\frac{N_0}{1-(\frac{\beta N_0}{\gamma})e^{-\gamma t -1}}
 \end{equation}
 
-This fitting fail that could come from the presence of three-body losses that would break the $-\beta N^2$ decay at short exposure time: it is the case of the top small window of the plot where the data is zoomed on the first exposure times under a second. \\
-The PA rate $\beta$ obtained experimentally gives an optical length $l_{opt} = $ 
+This fitting fail that could come from the presence of three-body losses that would break the $-\beta N^2$ decay at short exposure time. The gas could also not be thermalized at the PA moment of the sequence which will induce collisions between the different spin components. We see at the top small window of the plot where the data is zoomed on the first exposure times under a second the presence of different tendencies. \\
+A last reason mostly probable for the wrong fitting is the presence of another sideband at around $176$ MHz from this molecular line that would induce atomic losses.
+
 
 \begin{figure}[H]
     \centering
