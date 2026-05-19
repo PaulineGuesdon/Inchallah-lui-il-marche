@@ -12,6 +12,7 @@
 \usepackage[square,numbers]{natbib}
 \usepackage[pdfpagelabels,hypertexnames=false]{hyperref}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage[acronym]{glossaries}
 \usepackage{lipsum} %DUMMY TEXT
 \usepackage{float}
@@ -19,6 +20,7 @@
 \usepackage[section]{placeins}
 \usepackage{braket}
 \usepackage{amsfonts}
+\usepackage{siunitx}
 % CONFIGS
 \pagestyle{fancy}
 \setlength{\headheight}{14.49998pt}
@@ -43,7 +45,6 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 % non-essentials (some examples)
-\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}  % makes writing units simpler
 \renewcommand{\thefootnote}{\emph{\alph{footnote}}} % italic letters footnote
 \providecommand{\fromroot}{}
 
@@ -169,7 +170,7 @@
 \input{Chapitres/conclusion/conclusion}
 
 \cleardoublepage
-\bibliography{ref}
+\bibliography{ref,spincontrol_refs}
 \cleardoublepage
 \appendix
 \input{appendix/appendixA}

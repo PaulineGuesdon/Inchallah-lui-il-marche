@@ -4,51 +4,55 @@ The top-level auxiliary file: these_main.aux
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
 Reallocating 'name_of_file' (item size: 1) to 4 items.
+Reallocating 'name_of_file' (item size: 1) to 17 items.
 Database file #1: ref.bib
+Database file #2: spincontrol_refs.bib
+Warning--entry type for "notemixture" isn't style-file defined
+--line 63 of file spincontrol_refs.bib
 Warning--empty publisher in Landau
 Warning--empty journal in dalibard_interactions_nodate
 Warning--empty year in dalibard_interactions_nodate
 Warning--empty journal in reichenbach_optical_nodate
 Warning--empty year in reichenbach_optical_nodate
-You've used 12 entries,
+You've used 85 entries,
             1876 wiz_defined-function locations,
-            544 strings with 5769 characters,
-and the built_in function-call counts, 3076 in all, are:
-= -- 275
-> -- 186
+            1012 strings with 22210 characters,
+and the built_in function-call counts, 28101 in all, are:
+= -- 2637
+> -- 1639
 < -- 0
-+ -- 67
-- -- 55
-* -- 216
-:= -- 457
-add.period$ -- 18
-call.type$ -- 12
-change.case$ -- 11
++ -- 577
+- -- 492
+* -- 2052
+:= -- 3992
+add.period$ -- 91
+call.type$ -- 85
+change.case$ -- 83
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 159
-empty$ -- 240
-format.name$ -- 55
-if$ -- 737
+cite$ -- 90
+duplicate$ -- 1534
+empty$ -- 2012
+format.name$ -- 492
+if$ -- 6844
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 10
-newline$ -- 47
-num.names$ -- 12
-pop$ -- 50
+int.to.str$ -- 85
+missing$ -- 82
+newline$ -- 266
+num.names$ -- 84
+pop$ -- 206
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 134
+skip$ -- 1418
 stack$ -- 0
-substring$ -- 72
-swap$ -- 79
+substring$ -- 1288
+swap$ -- 913
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 18
-width$ -- 14
-write$ -- 117
-(There were 5 warnings)
+while$ -- 193
+width$ -- 87
+write$ -- 853
+(There were 6 warnings)

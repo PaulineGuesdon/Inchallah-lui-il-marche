@@ -102,6 +102,10 @@ INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\a
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries.sty
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries.sty
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
@@ -160,8 +164,12 @@ INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\placeins\
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\placeins\placeins.sty
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\braket\braket.sty
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\braket\braket.sty
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\siunitx\siunitx.sty
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\siunitx\siunitx.sty
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\translations\translations.sty
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\translations\translations.sty
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
 INPUT .\appendix\mis\acronym.tex
 INPUT .\appendix\mis\acronym.tex
 INPUT .\appendix\mis\acronym.tex
@@ -169,6 +177,14 @@ INPUT .\appendix\mis\acronym.tex
 INPUT appendix\mis\acronym.tex
 OUTPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.glo
 OUTPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.acn
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.aux
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.aux
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.aux
@@ -183,14 +199,6 @@ INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.out
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.out
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.out
@@ -199,6 +207,9 @@ OUTPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscr
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.out
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.out
 OUTPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.out
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
 INPUT .\appendix\titlepage.tex
 INPUT .\appendix\titlepage.tex
 INPUT .\appendix\titlepage.tex
@@ -257,6 +268,12 @@ INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\ueuf.fd
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\ueuf.fd
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\ueuf.fd
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm7.tfm
 OUTPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.toc
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.lof
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.lof
@@ -349,72 +366,59 @@ INPUT .\Chapitres\Ramsey interferometers on qudit\Ramsey_interferometers_on_qudi
 INPUT .\Chapitres\Ramsey interferometers on qudit\Ramsey_interferometers_on_qudit.tex
 INPUT .\Chapitres\Ramsey interferometers on qudit\Ramsey_interferometers_on_qudit.tex
 INPUT Chapitres\Ramsey interferometers on qudit\Ramsey_interferometers_on_qudit.tex
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\raman_scheme.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\raman_scheme.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\raman_scheme.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\raman_scheme.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\raman_scheme.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\raman_scheme.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\raman_scheme.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\sigma_sigma_raman_transition.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\sigma_sigma_raman_transition.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\sigma_sigma_raman_transition.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\sigma_sigma_raman_transition.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\sigma_sigma_raman_transition.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\sigma_sigma_raman_transition.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\sigma_sigma_raman_transition.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\raman_scheme.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\raman_scheme.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\raman_scheme.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\raman_scheme.png
-INPUT .\Chapitres\Introduction\images\moglab.pdf
-INPUT .\Chapitres\Introduction\images\moglab.pdf
-INPUT .\Chapitres\Introduction\images\moglab.pdf
-INPUT .\Chapitres\Introduction\images\moglab.pdf
-INPUT .\Chapitres\Introduction\images\moglab.pdf
-INPUT .\Chapitres\Introduction\images\moglab.pdf
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\long_coherence_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\long_coherence_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\long_coherence_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\long_coherence_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\long_coherence_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\long_coherence_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\long_coherence_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\qubit_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\qubit_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\qubit_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\qubit_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\qubit_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\qubit_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\qubit_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\noise_analysis_on_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\noise_analysis_on_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\noise_analysis_on_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\noise_analysis_on_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\noise_analysis_on_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\noise_analysis_on_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\noise_analysis_on_qubit.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_results.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_results.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_results.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_results.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_results.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_results.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\field_results.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\observables_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\observables_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\observables_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\observables_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\observables_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\observables_interf.png
-INPUT .\Chapitres\Ramsey interferometers on qudit\images\observables_interf.png
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\SpinControl.tex
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\SpinControl.tex
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\SpinControl.tex
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\SpinControl.tex
+INPUT Chapitres\Ramsey interferometers on qudit\article Coherent Manip\SpinControl.tex
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig1.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig1.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig1.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig1.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig1.pdf
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0800.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0600.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti8.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm7.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm5.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti7.tfm
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig2.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig2.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig2.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig2.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig2.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig3.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig3.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig3.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig3.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig3.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig4.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig4.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig4.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig4.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig4.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig5_v2.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig5_v2.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig5_v2.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig5_v2.pdf
+INPUT .\Chapitres\Ramsey interferometers on qudit\article Coherent Manip\Fig5_v2.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\Engineering highly entangled system of photoassociated 87Sr atoms.tex
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\Engineering highly entangled system of photoassociated 87Sr atoms.tex
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\Engineering highly entangled system of photoassociated 87Sr atoms.tex
@@ -423,19 +427,16 @@ INPUT Chapitres\Engineering highly entangled system of photoassociated 87Sr atom
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\diffusion_sinus.pdf
@@ -480,7 +481,6 @@ INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr at
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\Figures_pour_theorie\mass_scaling.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\Figures_pour_theorie\mass_scaling.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\Figures_pour_theorie\mass_scaling.pdf
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\Schemas_optiques\g90078-4.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\Schemas_optiques\g90078-4.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\Schemas_optiques\g90078-4.pdf
@@ -518,8 +518,6 @@ INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr at
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\88Sr\comparaison_raie_24MHz_88_jolie.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\88Sr\comparaison_raie_24MHz_88_jolie.pdf
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\frequences_PA.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\frequences_PA.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\frequences_PA.pdf
@@ -567,12 +565,10 @@ INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr at
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\87Sr\normalisation_data195.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\87Sr\normalisation_data195.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\87Sr\normalisation_data195.pdf
@@ -610,6 +606,7 @@ INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\Figures_pour_theorie\predissociation.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\Figures_pour_theorie\predissociation.pdf
 INPUT .\Chapitres\Engineering highly entangled system of photoassociated 87Sr atoms\images\Figures_pour_theorie\predissociation.pdf
@@ -630,7 +627,6 @@ INPUT Chapitres\conclusion\conclusion.tex
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.bbl
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.bbl
 INPUT c:\Users\pauline.guesdon\Documents\GitHub\Inchallah-lui-il-marche\Manuscrit_these\out\these_main.bbl
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
@@ -660,6 +656,8 @@ INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
@@ -680,5 +678,13 @@ INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti7.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti7.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti8.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti8.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\euler\eufm10.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\euler\eufm10.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
