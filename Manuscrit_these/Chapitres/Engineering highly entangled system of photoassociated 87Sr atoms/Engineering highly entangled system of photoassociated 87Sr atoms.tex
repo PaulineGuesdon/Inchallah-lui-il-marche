@@ -1,5 +1,5 @@
 ﻿
-\chapter{Engineering entangled ensembles $^{87}Sr$ by photoassociation}
+\chapter{Photoassociation : concept and spectroscopy of $^{87}Sr$ calibrated on $^{88}Sr$}
 In quantum metrology, a fundamental limit to the precision of a phase parameter $\phi$ is the \textbf{Standard Quantum Limit} (SQL), often referred to as quantum shot noise, defined as $\Delta\phi = 1/\sqrt{2Ns}$ \cite{pezze_quantum_2014}. In the previous chapter on Ramsey interferometry, we discussed how the achievable accuracy is often limited by experimental sources, such as atom leaking to other $m_F$ states affecting the signal-to-noise ratio.
 
 To overpass this threshold, one must exploit non-classical states with specific correlations. For a collective spin state $|J, m\rangle$ the variance of one of the transverse spin components $\hat{J}_x, \hat{J}_y$ provides noise information of the enhanced interferometer.
@@ -23,7 +23,7 @@ This chapter will demonstrate the generation and enhancement of Dicke states via
 The discussion opens with fundamental elements of scattering theory. At large interatomic separations, the 1D Schrödinger equation yields to solutions that naturally define the scattering length, a key parameter for cold atom interactions. These concepts lay the groundwork for introducing photoassociation and the resulting atomic density evolution through one- and two-body losses. Subsequently, an analysis of molecular potentials—referred to here as external states—permits an estimation of the binding energies of the internal molecular states where two-body losses are enhanced. Finally, we present the experimental results and discuss the technical and physical challenges that could impact signal interpretation or lead to misidentification of the quantum enhancement.
 
 \section{Introduction on photoassociation}
-\subsection{Preamble on scattering theory}
+\subsection{Scattering theory}
 Understanding the PA process necessitates an introduction to scattering theory to define key quantities such 
 as the scattering length and the optical length. These parameters emerge naturally from the asymptotic analysis 
 of the radial Schrödinger equation.\\
@@ -156,7 +156,7 @@ As an illustration a usual case of the elastic collisions is atoms in the ground
 state. For inelasticity photoassociation is a good example of
 dissipative process where two atoms in the ground state are coupled to a molecular state by a laser.
 
-\subsection{Photoassociation and collisions}
+\subsection{}
 PA is a process from which free atoms pair are bound to each other. Effectively, the bound
 molecule is typically seen as lost, and perceived as a two-body loss effect. \\
 In the atomic pair frame, the electric dipole interaction drives the system from the ground electronic state
@@ -629,7 +629,7 @@ $^{84}Sr$ isotope correspond to avoided crossings resulting from couplings with 
 \centering
 \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf}
 \caption[fig:pa-mass-scaling]{This graph - extracted from \cite{borkowski_mass_2014}- confronts the experimental internal states in red crosses to their 
-theoretical predictions for different reduced mass of strontium isopes. The theoretical model guarantees approximated scales
+theoretical predictions for different reduced mass of strontium isotopes. The theoretical model guarantees approximated scales
 for molecular lines of $^{87}Sr$ but not precisely because this model neglects the hyperfine interaction of the species.}
 \label{fig:pa-mass-scaling}
 \end{figure} 
@@ -638,9 +638,9 @@ enable to predict the average positions of the vibrational states on the interco
 following section, we will demonstrate how these predictions are used to target the PA lines of $^{88}Sr$ 
 and $^{87}Sr$ with the appropriate experimental parameters.
 
-\section{Photoassociation Experiments}
+\section{Spectroscopy protocol and calibration of the PA laser}
 
-\subsection{Gas preparation and isotope Specificities}
+\subsection{Gas preparation and isotope specificities}
 The Photoassociation (PA) rate is strongly density-dependent, as detailed in Section 3.1.3. Consequently, the primary step for Dicke state engineering is the production of a high-density atomic cloud. The experimental approach differs according to the quantum statistics of the isotope:
 
 \begin{itemize}
@@ -705,7 +705,7 @@ These sidebands trigger "ghost" resonances when the carrier is detuned by $\pm 4
 \end{figure}
 
 
-\subsubsection{Laser Linewidth and Beating Noise}
+\subsubsection{Discussion on noise source of spectral broadening }
 The beating spectrum (Figure \ref{beating broadening}) reveals side components around $\pm 50$ kHz carrying nearly half the power. Additionally, measurements for red-shifted frequencies show diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. This noise effectively broadens the PA lines and reduces the actual intensity at the carrier frequency.
 
 \begin{figure}[H]
