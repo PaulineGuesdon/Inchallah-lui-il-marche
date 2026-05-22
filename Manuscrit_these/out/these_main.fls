@@ -221,12 +221,12 @@ INPUT ./appendix/titlepage.tex
 INPUT ./appendix/titlepage.tex
 INPUT ./appendix/titlepage.tex
 INPUT appendix/titlepage.tex
+INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT out/these_main.ist
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-OUTPUT out/these_main.ist
-INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./appendix/abstract.tex
 INPUT ./appendix/abstract.tex
 INPUT ./appendix/abstract.tex
