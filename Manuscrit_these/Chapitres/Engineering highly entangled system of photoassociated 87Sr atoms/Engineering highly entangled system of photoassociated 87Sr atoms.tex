@@ -61,6 +61,7 @@ vanishes, the general solution for each partial wave $l$ takes the form \cite{da
 
 where $a_l$ is a normalization factor and $\delta_l$ the phase acquired by the l-th partial wave
 due to the interaction potential.\\
+
 Continuity of wavefunction for all inter-atomic distances imposes a constraint on the phase
 shifts which at low momenta $k$ finds:
 
@@ -100,7 +101,7 @@ over all the partial waves. Then we can give as in \ref{incoming outcoming scatt
     \Psi \simeq \frac{i}{2kr}\sum_{l=0}^{\infty}(2l+1)\left((-1)^l e^{-ikr} - S_l e^{ikr}\right)
     \label{1D schrodinger solution}
 \end{equation}
-
+²²²
 where we identify a spherical part and a scattering term, with $S_l = e^{2i\delta_l}$ the scattering amplitude.\\
 
 In the presence of inelastic processes such as photoassociation, the colliding atom pair can be irreversibly lost
@@ -644,15 +645,14 @@ I will now present our experiments consisting in identification of the photoasso
 starting from a characterization of $^{88}Sr$ molecular lines abundantly published.\\
 The photoassociation (PA) rate is strongly density-dependent, as detailed in Section 3.1.3. 
 The experimental approach differs according to the quantum statistics of the isotope:
-
 \begin{itemize}
     \item \textbf{Fermions ($^{87}$Sr):} High densities are achieved by optimizing evaporative cooling ramps once the atoms are loaded into the crossed Optical Dipole Trap (ODT).
     \item \textbf{Bosons ($^{88}$Sr):} The near-zero scattering length of $^{88}$Sr is detrimental to evaporative cooling, as it suppresses the elastic collisions necessary for thermalization. In this case, the final density relies almost exclusively on the efficiency of the preceding cooling and trapping stages (e.g., the MOT).
 \end{itemize}
 
 Once a dense cloud is obtained, the PA process is initiated by illuminating the atoms with a dedicated laser beam and all these datas are realised with a magnetic field of $B = 1.6 \pm$.
-
-\subsection{Implementation: beating scheme and frequency tuning}
+\subsection{Photoassociation lasers and their spectral characteristics}
+\subsubsection{ECDL locking and frequency referencing}
 The PA beam is primarily generated using a MOGlabs laser head. As detailed in Figure \ref{frequences 88sr 87sr}, its frequency tuning relies on a beating scheme with a reference beam from the "Slave 1 AOM". This specific optical arrangement, designed to ensure simultaneously the optical pumping and the MOGlabs beating, is illustrated in the global scheme of Figure \ref{PA slave 1}.
 
 \begin{figure}
@@ -671,10 +671,10 @@ The final frequency of the PA beam sent to the atoms is given by:
 
 Addressing deeply bound vibrational states requires a frequency doubler module ($f_{max}=300$ MHz), allowing detunings up to $600$ MHz. Further detunings can be achieved by inverting the "Raman AOM" diffracted order.
 
-\subsection{Technical artifacts and spectral noise}
+
 The use of the MOGlabs laser and the optical stabilization system introduced several spectral artifacts that had to be characterized to avoid misinterpreting the loss signals.
 
-\subsubsection{PDH sidebands induced artifacts}
+\subsubsection{Spectral imperfections from the filter cavity system}
 The laser passes through a Fabry-Perot cavity stabilized by a Pound-Drever-Hall (PDH) locking system ($f_M=40.48$ MHz). The field is expressed as:
 \begin{equation}
     E_{inc}^{mod} = E_0 \left(J_0(\beta)e^{if_0t}+J_1(\beta)e^{i(f_0 + f_M)t}-J_1(\beta)e^{i(f_0-f_M)t}\right)
@@ -716,8 +716,6 @@ The beating spectrum (Figure \ref{beating broadening}) reveals side components a
     \caption[Beating spectrum]{Beating spectrum between the MOGlabs laser and the "AOM 11/2" reference.}
     \label{beating broadening}
 \end{figure}
-
-\subsubsection{Spectral imperfections from the filter cavity system}
 
 \subsubsection{Alternative source: the injection-locked laser}
 To confirm that the observed broadening was technical, we compared the MOGlabs results with a more stable source: the "$11/2$ AOM" beam.\\
