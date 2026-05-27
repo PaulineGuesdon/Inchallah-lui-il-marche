@@ -88,7 +88,7 @@ where $f(\theta)$ is the scattering amplitude which determines wheter the collis
 inelastic and $\theta$ is the angle between the incident and scattered wavevectors.
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf}
+    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/diffusion_sinus.pdf}
     \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances $R(a_0)$ behaves as a summation of an incoming plane wave
     and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave
     collisions at $l=0$. The scattering occurs at background scattering length $R(a_o) = a_{bg}$ the distance
@@ -101,7 +101,7 @@ over all the partial waves. Then we can give as in \ref{incoming outcoming scatt
     \Psi \simeq \frac{i}{2kr}\sum_{l=0}^{\infty}(2l+1)\left((-1)^l e^{-ikr} - S_l e^{ikr}\right)
     \label{1D schrodinger solution}
 \end{equation}
-²²²
+
 where we identify a spherical part and a scattering term, with $S_l = e^{2i\delta_l}$ the scattering amplitude.\\
 
 In the presence of inelastic processes such as photoassociation, the colliding atom pair can be irreversibly lost
@@ -703,6 +703,24 @@ and/or invert the diffracted order of the "Raman AOM" that allows to shift the P
 \end{figure}
 
 
+\subsubsection{Spectral imperfections from the locking scheme}
+The beating spectrum is presented in figure \ref{beating broadening} at a resonant bandwith $RBW = 10$ kHz characterizing the frequency step for which
+the signal will be detected associated to a chosen video bandwith $VBW = 300$ Hz enabling to simulate the signal seen by the molecules of $\Gamma = 15kHz = 1/\tau $
+$\tau$ corresponding to the RBW of the spectrum analyzer. 
+
+This signal reveals side components around $\pm 50$ kHz carrying nearly half the power. 
+
+Additionally, measurements for red-shifted frequencies show diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. 
+
+This noise effectively broadens the PA lines and reduces the actual intensity at the carrier frequency.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf}
+    \caption[Beating spectrum]{Beating spectrum between the MOGlabs laser and the "AOM 11/2" reference.}
+    \label{beating broadening}
+\end{figure}
+
 \subsubsection{Spectral imperfections from the filter cavity system}
 The laser passes through a Fabry-Perot cavity stabilized by a Pound-Drever-Hall (PDH) locking system ($f_M=40.48$ MHz). The field is expressed as:
 \begin{equation}
@@ -736,15 +754,6 @@ These sidebands trigger "ghost" resonances when the carrier is detuned by $\pm 4
 \end{figure}
 
 
-\subsubsection{Spectral imperfections from the locking scheme }
-The beating spectrum (Figure \ref{beating broadening}) reveals side components around $\pm 50$ kHz carrying nearly half the power. Additionally, measurements for red-shifted frequencies show diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. This noise effectively broadens the PA lines and reduces the actual intensity at the carrier frequency.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf}
-    \caption[Beating spectrum]{Beating spectrum between the MOGlabs laser and the "AOM 11/2" reference.}
-    \label{beating broadening}
-\end{figure}
 
 \subsubsection{Alternative source: the injection-locked laser}
 To confirm that the observed broadening was technical, we compared the MOGlabs results with a more stable source: the "$11/2$ AOM" beam.\\
