@@ -87,7 +87,7 @@ where $f(\theta)$ is the scattering amplitude which determines wheter the collis
 inelastic and $\theta$ is the angle between the incident and scattered wavevectors.
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/diffusion_sinus.pdf}
+    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf}
     \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances $R(a_0)$ behaves as a summation of an incoming plane wave
     and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave
     collisions at $l=0$. The scattering occurs at background scattering length $R(a_o) = a_{bg}$ the distance
@@ -637,7 +637,7 @@ enable to predict the average positions of the vibrational states on the interco
 following section, we will demonstrate how these predictions are used to target the PA lines of $^{88}Sr$ 
 and $^{87}Sr$ with the appropriate experimental parameters.
 
-\section{Spectroscopy protocol and setup}
+\section{Spectroscopy protocol and calibration of the PA laser}
 
 \subsection{Gas preparation and isotope specificities}
 I will now present our experiments consisting in identification of the photoassociation lines of $^{87}Sr$ yet unexplored,
@@ -707,7 +707,7 @@ These sidebands trigger "ghost" resonances when the carrier is detuned by $\pm 4
 \end{figure}
 
 
-\subsubsection{Discussion on noise source of spectral broadening }
+\subsubsection{Spectral imperfections from the locking scheme }
 The beating spectrum (Figure \ref{beating broadening}) reveals side components around $\pm 50$ kHz carrying nearly half the power. Additionally, measurements for red-shifted frequencies show diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. This noise effectively broadens the PA lines and reduces the actual intensity at the carrier frequency.
 
 \begin{figure}[H]
@@ -717,13 +717,10 @@ The beating spectrum (Figure \ref{beating broadening}) reveals side components a
     \label{beating broadening}
 \end{figure}
 
-\subsubsection{Interpretation of decay dynamics ($dN/dt$)}
-We observed atom loss signals exhibiting a "double decay" slope -a fast two-body decay followed by a slow one-body regime as the density drops. While this is usually a signature of molecular formation, some of these resonances showed no Zeeman splitting under a magnetic field, suggesting they were artifacts of spectral noise or non-thermalized gas rather than true PA lines.
+\subsubsection{Spectral imperfections from the filter cavity system}
 
-\subsection{Linewidth comparison with a stable source}
-To confirm that the observed broadening was technical, we compared the MOGlabs results with a more stable source: the "$11/2$ AOM" beam.
-
-\subsubsection{Comparative Results}
+\subsubsection{Alternative source: the injection-locked laser}
+To confirm that the observed broadening was technical, we compared the MOGlabs results with a more stable source: the "$11/2$ AOM" beam.\\
 The measured linewidth $\Gamma_{effective}$ of the $\nu = 2$ molecular state is compared in Figure \ref{linewidth avec pompopt} and Table \ref{tab:comparaison_lasers}. Due to small Franck-Condon factors \cite{zelevinsky_narrow_2006}, power broadening 
 of the linewidth remains negligible since the $I_{sat}$ for molecules is way bigger than for atoms:
 
@@ -755,6 +752,8 @@ $\gamma_{thermal}$ (calc.) & $19.30$ kHz & $19.30$ kHz \\ \hline
 
 The molecular line measured with the MOGlabs has been frequency shifted in this figure to simplify the comparision lecture of the graphe. The real frequency of this resonance is $+152.0 \pm 5.0$ kHz from the centered frequency of the light purple points at $f = 23.99 \pm 0.01$ MHz. The frequency shift comes partially from the tensorial light shift induced by the PA beam on the molecular line that is different for both of them because of an intensity difference. 
 
+\subsubsection{Interpretation of decay dynamics ($dN/dt$)}
+We observed atom loss signals exhibiting a "double decay" slope -a fast two-body decay followed by a slow one-body regime as the density drops. While this is usually a signature of molecular formation, some of these resonances showed no Zeeman splitting under a magnetic field, suggesting they were artifacts of spectral noise or non-thermalized gas rather than true PA lines.
 
 \subsection*{Conclusion: validation of the PA spectroscopic protocol}
 In summary, the characterization of our PA sources has highlighted two major technical constraints: the PDH-locking sidebands at $\pm 40.48$ MHz and the MOGlabs technical broadening (noise at $\pm 50$ kHz and $\pm 6$ MHz). However, the systematic analysis of $dN/dt$ dynamics and the cross-comparison with the "$11/2$ AOM" beam provide a robust diagnostic to isolate genuine molecular signals. With these technical limits established and the broadening mechanisms understood, we can now reliably analyze the molecular spectra for both $^{88}$Sr and $^{87}$Sr.
