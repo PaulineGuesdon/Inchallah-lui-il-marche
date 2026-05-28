@@ -704,56 +704,63 @@ and/or invert the diffracted order of the "Raman AOM" that allows to shift the P
 
 
 \subsubsection{Spectral imperfections from the locking scheme}
-The beating spectrum is presented in figure \ref{beating broadening} at a resonant bandwith $RBW = 10$ kHz characterizing the frequency step for which
-the signal will be detected associated to a chosen video bandwith $VBW = 300$ Hz enabling to simulate the signal seen by the molecules of $\Gamma = 15kHz = 1/\tau $
-$\tau$ corresponding to the RBW of the spectrum analyzer. 
-
-This signal reveals side components around $\pm 50$ kHz carrying nearly half the power. 
-
-Additionally, measurements for red-shifted frequencies show diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. 
-
-This noise effectively broadens the PA lines and reduces the actual intensity at the carrier frequency.
+The beating spectrum is presented in figure \ref{beating broadening} at a resonant bandwith RBW = 10kHz associated to a chosen video bandwith 
+VBW = 300Hz. Expecting the molecular lifetime of $^{87}Sr$ to be $\Gamma_{mol} \simeq 15$ kHz this signal simulates the spectrum seen by the molecules.
+Side components around $\pm 50$ kHz carry nearly half the measured electrical power of the beating signal: then only half the measured optical power is 
+adressing the particules at the beating center frequency. 
+This observation limits the power at which one can photoassociate the atoms. It also means that the linewidth of the molecule or the atoms - depending on 
+the frequency of the PA laser- is broaden by the beating spectrum with side components.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf}
-    \caption[Beating spectrum]{Beating spectrum between the MOGlabs laser and the "AOM 11/2" reference.}
+    \caption[Beating spectrum]{Beating spectrum between the MOGlabs laser and the "AOM 11/2" measured at the spectrum analyzer at RBW = 10 kHz and 
+    VBW = 300 Hz. The side components at around $\pm 50$ kHz induce a broadening of the natural linewidth of atoms/molecules adressed by the PA beam
+    coming from the MOGlabs head beat locked.}
     \label{beating broadening}
 \end{figure}
 
 \subsubsection{Spectral imperfections from the filter cavity system}
-The laser passes through a Fabry-Perot cavity stabilized by a Pound-Drever-Hall (PDH) locking system ($f_M=40.48$ MHz). The field is expressed as:
+The laser passes through a Fabry-Perot cavity (see section 1.3.2) stabilized by a Pound-Drever-Hall (PDH) locking system containing an EOM that modulates the incident
+electric field of frequency $f_0$ fixed at $f_M=40.48$ MHz. The phase modulation of this field by the EOM gives rise to an electric resulting
+from interferences between the carrier at central frequency $f_0$ and the modulating signal at $f_M$:
+
 \begin{equation}
     E_{inc}^{mod} = E_0 \left(J_0(\beta)e^{if_0t}+J_1(\beta)e^{i(f_0 + f_M)t}-J_1(\beta)e^{i(f_0-f_M)t}\right)
 \end{equation}
-The power ratio depends on the modulation depth $\beta$, as shown by the Bessel functions in Figure \ref{Bessel function}.
+
+The first term at amplitude $J_0(\beta)$ the $0^{th}$ order Bessel function is the incident electric field at frequency $f_0$ with effective amplitude $E_0 J_0(\beta)$. 
+The second and third terms come from the interference of the carrier with the RF signal giving rise to two sidebands at $f_0\pm f_M$ with amplitude $J_1(\beta)$ the first order Bessel function.
+Figure \ref{Bessel function} shows the ratio between the carrier and sidebands depending on the settled $\beta$.
+Experimentally the modulation depth $\beta=1$ is convenient to these constraints and is directly tunable by the amplitude of the RF signal.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/bessel_functions_finale.pdf}
-    \caption[Bessel functions]{Order 0 and 1 Bessel function squares $|J_n|^2$ governing the power distribution between the carrier and PDH sidebands.}
+    \caption[Bessel functions]{Modulus square of the $0^{th}$ and $1^{st}$ Bessel functions $J_n$ governing the power distribution between the carrier and PDH sidebands.}
     \label{Bessel function}
 \end{figure}
 
-These sidebands trigger "ghost" resonances when the carrier is detuned by $\pm 40.48$ MHz from the atomic transition, leading to spurious one-body losses (Figures \ref{sidebands} and \ref{fig:raie-40mhz}).
-
-
+We measured the effect of these sidebands in the atomic cloud: plot \ref{fig:raie-40mhz} is the number of atoms adressed by the positive sideband.
+As schematized in \ref{sidebands} the presence of the sidebands triggers "ghost" resonances when the carrier is detuned by $f_0' = f_0 + f_M = f_0 \pm 40.48$ MHz 
+from the atomic transition, leading to spurious one-body losses. When the PA signal is red detuned by $f_0'= f_0 + f_M$ the interfering components are also displaced by the same frequency.
+Then the sideband at $f_0'-f_M$ visible in the purple signal is adressing the atomic transition at $f_0$ with a reduced amplitude comparing to the dark signal
+previously centered in $f_0$.
 
 \begin{figure}[H]
     \centering
-        \includegraphics[width=0.6\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/erreur_40MHz.pdf}
-        \captionof{figure}{PDH sidebands addressing the atomic resonance.}
+        \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/erreur_40MHz.pdf}
+        \captionof{figure}{Scheme of the PDH sidebands addressing the atomic resonance. The purple plot represents the modulated signal -with the three interfering components
+        between the carrier and first order- shifted by a frequency $f_0'$.}
         \label{sidebands}
 \end{figure}
 
 \begin{figure}[H]
     \centering
         \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf}
-        \captionof{figure}{Experimental measurement of the 40MHz sideband resonance.}
+        \captionof{figure}{}
         \label{fig:raie-40mhz}
 \end{figure}
-
-
 
 \subsubsection{Alternative source: the injection-locked laser}
 To confirm that the observed broadening was technical, we compared the MOGlabs results with a more stable source: the "$11/2$ AOM" beam.\\
@@ -787,6 +794,8 @@ $\gamma_{thermal}$ (calc.) & $19.30$ kHz & $19.30$ kHz \\ \hline
 \end{figure}
 
 The molecular line measured with the MOGlabs has been frequency shifted in this figure to simplify the comparision lecture of the graphe. The real frequency of this resonance is $+152.0 \pm 5.0$ kHz from the centered frequency of the light purple points at $f = 23.99 \pm 0.01$ MHz. The frequency shift comes partially from the tensorial light shift induced by the PA beam on the molecular line that is different for both of them because of an intensity difference. 
+\subsubsection{Noise of the diode}
+Additionally, measurements for red-shifted frequencies show diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. 
 
 \subsubsection{Interpretation of decay dynamics ($dN/dt$)}
 We observed atom loss signals exhibiting a "double decay" slope -a fast two-body decay followed by a slow one-body regime as the density drops. While this is usually a signature of molecular formation, some of these resonances showed no Zeeman splitting under a magnetic field, suggesting they were artifacts of spectral noise or non-thermalized gas rather than true PA lines.

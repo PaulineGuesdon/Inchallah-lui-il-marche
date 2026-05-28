@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1779898235.23896 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1779898240.86659 0
+["bibtex out/these_main"] 1779989478.10242 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1779989483.70519 0
   "./ref.bib" 1776338428 60028 b19cdb0939ddb1edb15d33c56b581bc0 ""
   "./spincontrol_refs.bib" 1779203640 549367 6b3bd591fb7a36bddef0122884a01a8a ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/ieeetr.bst" 1291864344 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1779898239 43855 78b164ebc569959af88d636c5c4f6d6f "pdflatex"
+  "out/these_main.aux" 1779989482 44230 768a1165212e72cfe935c8d789bae627 "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1779898235.57543 "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1779898240.86737 0
+["pdflatex"] 1779989478.42143 "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1779989483.70604 0
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1779883527 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1771496879 14064 48988c15252745ffb24fd32721a2820d ""
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1775563748 13338688 9fd0248c43254865fc857a8837d50457 ""
@@ -165,8 +165,8 @@
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1779898228 65562 e5bfda697cac47d3c0911c4b7833189a ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf" 1778141807 506918 e3702011c0f0be3f59ebe048495b105b ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1779989471 67401 3767df113b8b186a3921f63ae9bc5372 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf" 1779987768 517423 2d2177328b6283a03c1c736012350bdc ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data171.pdf" 1777293181 387775 1809a1bc8f6fde0a7102f89cb4b334fc ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data_194_exp.pdf" 1778141807 264600 9de8f478fd7bd0b0efe7f47189ab6faa ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data184.pdf" 1777300744 2203705 4963ce02c3236a6665462714dfc6fd8b ""
@@ -181,8 +181,8 @@
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf" 1778141807 124489 5a75674c5fe497beee76e3460db943c9 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/WKB_sakurai.pdf" 1778141807 16078 82ab77087fbaa1e809577348c43a3c0d ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf" 1778141807 13771 3b771f7972cca87759151b2cde02c423 ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/bessel_functions_finale.pdf" 1778141807 41021 ddd0f6501bf0089c90779fce95aebf7a ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/erreur_40MHz.pdf" 1778141807 12186 c6f151e6dbfd30c37819239263d343c2 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/bessel_functions_finale.pdf" 1779986192 35261 4d5f1e50b8b5707edf0a7ebf0ea4722a ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/erreur_40MHz.pdf" 1779988695 14464 be7abef5a638ebd86fb375cb3aa17bf9 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/hund_case_c.pdf" 1778141807 17842 832e0e476f1bc5a5f084897dbb8e3278 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf" 1778141807 62776 8a58f142641aa506a3c63e7d3a7bf79a ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf" 1778141807 14208 f1780291c51a41c7c7972eb14081ce73 ""
@@ -221,12 +221,12 @@
   "appendix/titlepage.tex" 1776070351 867 bb7073512633b892c0cc21646372f930 ""
   "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1779883516 4919 dc0f22de9474e0a6cba95111f4c20025 ""
   "out/these_main.acr" 1777880373 7 9f404503043ec80c08484be9f659189e ""
-  "out/these_main.aux" 1779898239 43855 78b164ebc569959af88d636c5c4f6d6f "pdflatex"
-  "out/these_main.bbl" 1779898235 20770 85eb4b8ee10136c975c0c05f74c65969 "bibtex out/these_main"
-  "out/these_main.lof" 1779898239 11690 a7a7f69bb8be779774005abec41b37c6 "pdflatex"
-  "out/these_main.lot" 1779898239 408 3360d46c2f305651639664debff1e08a "pdflatex"
-  "out/these_main.out" 1779898239 13369 9a009fdb46ea6e530a7bed59502267cf "pdflatex"
-  "out/these_main.toc" 1779898239 6085 1d69d1c5c9034736fbf51df1b38e6676 "pdflatex"
+  "out/these_main.aux" 1779989482 44230 768a1165212e72cfe935c8d789bae627 "pdflatex"
+  "out/these_main.bbl" 1779989478 20770 85eb4b8ee10136c975c0c05f74c65969 "bibtex out/these_main"
+  "out/these_main.lof" 1779989482 11809 f92fc61fd7bc57149693230e2810ccdb "pdflatex"
+  "out/these_main.lot" 1779989482 408 e9e49d5cb5f21e5250a120745d586bd8 "pdflatex"
+  "out/these_main.out" 1779989482 13534 0112439c0cc196426e9c1df34d7e67a6 "pdflatex"
+  "out/these_main.toc" 1779989482 6180 e8c029f74bb353212008c2d7ed0b3d8a "pdflatex"
   "these_main.tex" 1779883516 4919 dc0f22de9474e0a6cba95111f4c20025 ""
   (generated)
   "out/these_main.acn"
