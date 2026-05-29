@@ -1,5 +1,8 @@
 ﻿
 \chapter{Photoassociation : concept and spectroscopy of $^{87}Sr$ calibrated on $^{88}Sr$}
+% Centralized path for the theory figures used in this chapter.
+\newcommand{\PATheoryFigDir}{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/}
+\newcommand{\PATheoryFig}[1]{\PATheoryFigDir#1}
 In quantum metrology, a fundamental limit to the precision of a phase parameter $\phi$ is the \textbf{Standard Quantum Limit} (SQL), often referred to as quantum shot noise, defined as $\Delta\phi = 1/\sqrt{2Ns}$ \cite{pezze_quantum_2014}. In the previous chapter on Ramsey interferometry, we discussed how the achievable accuracy is often limited by experimental sources, such as atom leaking to other $m_F$ states affecting the signal-to-noise ratio.
 
 To overpass this threshold, one must exploit non-classical states with specific correlations. For a collective spin state $|J, m\rangle$ the variance of one of the transverse spin components $\hat{J}_x, \hat{J}_y$ provides noise information of the enhanced interferometer.
@@ -88,7 +91,7 @@ where $f(\theta)$ is the scattering amplitude which determines wheter the collis
 inelastic and $\theta$ is the angle between the incident and scattered wavevectors.
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/diffusion_sinus.pdf}
+    \includegraphics[width=0.9\linewidth]{\PATheoryFig{diffusion_sinus.pdf}}
     \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances $R(a_0)$ behaves as a summation of an incoming plane wave
     and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave
     collisions at $l=0$. The scattering occurs at background scattering length $R(a_o) = a_{bg}$ the distance
@@ -741,8 +744,9 @@ Experimentally the modulation depth $\beta=1$ is convenient to these constraints
     \label{Bessel function}
 \end{figure}
 
-We measured the effect of these sidebands in the atomic cloud: plot \ref{fig:raie-40mhz} is the number of atoms adressed by the positive sideband.
-As schematized in \ref{sidebands} the presence of the sidebands triggers "ghost" resonances when the carrier is detuned by $f_0' = f_0 + f_M = f_0 \pm 40.48$ MHz 
+We measured the effect of these sidebands on a $500.000$ atoms SU(2) gas of components $m_F = 9/2, +9/2$ at temperature $T = 4\mu$K with evaporation and recompression. 
+Plot \ref{fig:raie-40mhz} shows the number of atoms adressed by the positive sideband:
+as schematized in \ref{sidebands} the presence of the sidebands triggers "ghost" resonances when the carrier is detuned by $f_0' = f_0 \pm f_M = f_0 \pm 40.48$ MHz 
 from the atomic transition, leading to spurious one-body losses. When the PA signal is red detuned by $f_0'= f_0 + f_M$ the interfering components are also displaced by the same frequency.
 Then the sideband at $f_0'-f_M$ visible in the purple signal is adressing the atomic transition at $f_0$ with a reduced amplitude comparing to the dark signal
 previously centered in $f_0$.
@@ -750,17 +754,25 @@ previously centered in $f_0$.
 \begin{figure}[H]
     \centering
         \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/erreur_40MHz.pdf}
-        \captionof{figure}{Scheme of the PDH sidebands addressing the atomic resonance. The purple plot represents the modulated signal -with the three interfering components
-        between the carrier and first order- shifted by a frequency $f_0'$.}
+        \captionof{figure}{Scheme of the PDH sidebands addressing the atomic resonance. The purple plot is the dark signal -with the three interfering components
+        between the carrier and the first harmonics- shifted by $f_0'-f_0$.}
         \label{sidebands}
 \end{figure}
 
 \begin{figure}[H]
     \centering
         \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf}
-        \captionof{figure}{}
+        \captionof{figure}{Atomic loss due to FP cavity PDH sideband that is adressing the $^1S_0 - ^3P_1$ line at $\Delta = f_0 - f_M$ with $f_M$ the 
+        modulation frequency of the PDH EOM.}
         \label{fig:raie-40mhz}
 \end{figure}
+
+The double-peak shape of this resonance comes from the recovering of the ten different $m_F$ state that are populated by the PA laser imperfectly
+polarized: a small purcentage of $\sigma$ polarization induces transitions to neighboring $m_F$ states. Measurement of the same data for different magnetic 
+field values confirmed this hypothesis since the splitting evolved with. 
+
+Settling lower modulation depth $\beta$ decreased the absolute amplitude of this curve but it was not possible to completly cancel this effect: molecular line
+with small amplitude could be hiden in this signal.
 
 \subsubsection{Alternative source: the injection-locked laser}
 To confirm that the observed broadening was technical, we compared the MOGlabs results with a more stable source: the "$11/2$ AOM" beam.\\
@@ -768,7 +780,7 @@ The measured linewidth $\Gamma_{effective}$ of the $\nu = 2$ molecular state is 
 of the linewidth remains negligible since the $I_{sat}$ for molecules is way bigger than for atoms:
 
 \begin{equation}
-    \Gamma_{effective} = \Gamma_{1S_0-3P_1}\sqrt{1+\frac{I}{I_{sat}^{eff}}} \simeq \Gamma_{1S_0-3P_1}
+    \Gamma_{effective} = \Gamma_{1S_0-3P_1}\sqrt{1+\frac{I}{I_{sat}^{eff}}} \simeq \Gamma_{^1S_0-^3P_1}
 \end{equation}
 
 \begin{table}[ht]
