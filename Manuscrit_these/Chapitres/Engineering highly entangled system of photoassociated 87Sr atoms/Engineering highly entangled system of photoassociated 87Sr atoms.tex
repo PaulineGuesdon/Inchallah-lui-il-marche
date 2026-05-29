@@ -724,9 +724,9 @@ the frequency of the PA laser- is broaden by the beating spectrum with side comp
 \end{figure}
 
 \subsubsection{Spectral imperfections from the filter cavity system}
-The laser passes through a Fabry-Perot cavity (see section 1.3.2) stabilized by a Pound-Drever-Hall (PDH) locking system containing an EOM that modulates the incident
-electric field of frequency $f_0$ fixed at $f_M=40.48$ MHz. The phase modulation of this field by the EOM gives rise to an electric resulting
-from interferences between the carrier at central frequency $f_0$ and the modulating signal at $f_M$:
+The laser passes through a Fabry-Perot cavity (see section 1.3.2) stabilized by a Pound-Drever-Hall (PDH) locking system containing an EOM. This latter modulates 
+the incident electric field of frequency $f_0$ fixed at $f_M=40.48$ MHz. The phase modulation gives rise to interferences between the carrier at central frequency 
+$f_0$ and the modulating signal at $f_M$:
 
 \begin{equation}
     E_{inc}^{mod} = E_0 \left(J_0(\beta)e^{if_0t}+J_1(\beta)e^{i(f_0 + f_M)t}-J_1(\beta)e^{i(f_0-f_M)t}\right)
@@ -735,7 +735,8 @@ from interferences between the carrier at central frequency $f_0$ and the modula
 The first term at amplitude $J_0(\beta)$ the $0^{th}$ order Bessel function is the incident electric field at frequency $f_0$ with effective amplitude $E_0 J_0(\beta)$. 
 The second and third terms come from the interference of the carrier with the RF signal giving rise to two sidebands at $f_0\pm f_M$ with amplitude $J_1(\beta)$ the first order Bessel function.
 Figure \ref{Bessel function} shows the ratio between the carrier and sidebands depending on the settled $\beta$.
-Experimentally the modulation depth $\beta=1$ is convenient to these constraints and is directly tunable by the amplitude of the RF signal.
+Experimentally the modulation depth $\beta=1$ gives five times more intensity in the carrier relative to the sidebands which is convenient to these constraints and directly tunable by the amplitude 
+of the RF signal. 
 
 \begin{figure}[H]
     \centering
@@ -744,7 +745,9 @@ Experimentally the modulation depth $\beta=1$ is convenient to these constraints
     \label{Bessel function}
 \end{figure}
 
-We measured the effect of these sidebands on a $500.000$ atoms SU(2) gas of components $m_F = 9/2, +9/2$ at temperature $T = 4\mu$K with evaporation and recompression. 
+
+We measured the effect of these sidebands on $500.000$ atoms gas evaporated and recompressed to a temperature $T = 4.1\mu K$. It is tested on the two spin components $m_f=-9/2, +9/2$ 
+optically pumped gas during $2$ sec at optical power $I = 385$mW/cm$^2$ with the ECDL laser.
 Plot \ref{fig:raie-40mhz} shows the number of atoms adressed by the positive sideband:
 as schematized in \ref{sidebands} the presence of the sidebands triggers "ghost" resonances when the carrier is detuned by $f_0' = f_0 \pm f_M = f_0 \pm 40.48$ MHz 
 from the atomic transition, leading to spurious one-body losses. When the PA signal is red detuned by $f_0'= f_0 + f_M$ the interfering components are also displaced by the same frequency.
