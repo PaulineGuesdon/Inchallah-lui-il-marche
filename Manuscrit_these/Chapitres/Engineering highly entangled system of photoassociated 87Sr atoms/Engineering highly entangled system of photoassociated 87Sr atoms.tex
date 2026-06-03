@@ -689,7 +689,7 @@ and/or invert the diffracted order of the "Raman AOM" that allows to shift the P
 \newpage
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/g90078-4.pdf}
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/nouveau_beating.pdf}
     \caption[PA slave 1]{Beating scheme for PA process between the light from "AOM 11/2" and MOGlabs. The light is coming from \ref{zoom red chain battement}
     to split in two arms: optical pumping and PA. This last one serves for MOGlabs locking in a beating procedure where the beam is recombined by the 50/50 waveplate
     superposing with slave 1 beam.}
@@ -698,9 +698,11 @@ and/or invert the diffracted order of the "Raman AOM" that allows to shift the P
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA.pdf}
-    \caption[frequences 88sr 87sr]{Frequencies scheme for PA depending on the isotope we experiment. In blue, the scheme for $^{88}Sr$ and in red
-    the one for $^{87}Sr$. The change of diffracted order on "AOM Slave 1" enables to pass from one isotope to another contrainting us only to
+    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf}
+    \par\medskip
+    \includegraphics[width=0.85\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf}
+    \caption[frequences 88sr 87sr]{Frequences scheme for PA depending on the isotope we experiment. (top) the scheme for $^{88}Sr$
+    (bottom) the one for $^{87}Sr$. The change of diffracted order on "AOM Slave 1" enables to pass from one isotope to another contrainting us only to
     realign the injection of the beam after the AOM.}
     \label{frequences 88sr 87sr}
 \end{figure}
@@ -716,7 +718,7 @@ the frequency of the PA laser- is broaden by the beating spectrum with side comp
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf}
+    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf}
     \caption[Beating spectrum]{Beating spectrum between the MOGlabs laser and the "AOM 11/2" measured at the spectrum analyzer at RBW = 10 kHz and 
     VBW = 300 Hz. The side components at around $\pm 50$ kHz induce a broadening of the natural linewidth of atoms/molecules adressed by the PA beam
     coming from the MOGlabs head beat locked.}
@@ -777,43 +779,6 @@ field values confirmed this hypothesis since the splitting evolved with.
 Settling lower modulation depth $\beta$ decreased the absolute amplitude of this curve but it was not possible to completly cancel this effect: molecular line
 with small amplitude could be hiden in this signal.
 
-\subsubsection{Alternative source: the injection-locked laser}
-To confirm that the observed broadening was technical, we compared the MOGlabs results with a more stable source: the "$11/2$ AOM" beam.\\
-The measured linewidth $\Gamma_{effective}$ of the $\nu = 2$ molecular state is compared in Figure \ref{linewidth avec pompopt} and Table \ref{tab:comparaison_lasers}. Due to small Franck-Condon factors \cite{zelevinsky_narrow_2006}, power broadening 
-of the linewidth remains negligible since the $I_{sat}$ for molecules is way bigger than for atoms:
-
-\begin{equation}
-    \Gamma_{effective} = \Gamma_{1S_0-3P_1}\sqrt{1+\frac{I}{I_{sat}^{eff}}} \simeq \Gamma_{^1S_0-^3P_1}
-\end{equation}
-
-\begin{table}[ht]
-\centering
-\caption{Experimental comparison of $\nu=2$ measured with two different laser sources.}
-\label{tab:comparaison_lasers}
-\begin{tabular}{|l|c|c|}
-\hline
-\textbf{Measured parameters} & \textbf{AOM 11/2 beam} & \textbf{MOGlabs laser} \\ \hline
-Frequency [MHz] (measured) & $24.14 \pm 0.01$ kHz & $23.99 \pm 0.01$ kHz \\ \hline
-Intensity ($I$) & $2.3$ mW/cm$^2$ & $826.0$ mW/cm$^2$ \\ \hline
-$\sigma_{total}$ (measured) & $115.5 \pm 8.8$ kHz & $344.5 \pm 27.3$ kHz \\ \hline
-$\gamma_{thermal}$ (calc.) & $19.30$ kHz & $19.30$ kHz \\ \hline
-\textbf{Effective linewidth} & $96.37 \pm 29.24$ kHz & $325.37 \pm 13.6$ kHz \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf}
-    \caption[]{Comparison of the $\nu = 2$ molecular line. The deep purple data (MOGlabs) is broader by a factor of 3 compared to the stable "AOM 11/2" source in light purple. The frequencies of MOGlabs experiment have been shifted for figure reading facilites. }
-    \label{linewidth avec pompopt}
-\end{figure}
-
-The molecular line measured with the MOGlabs has been frequency shifted in this figure to simplify the comparision lecture of the graphe. The real frequency of this resonance is $+152.0 \pm 5.0$ kHz from the centered frequency of the light purple points at $f = 23.99 \pm 0.01$ MHz. The frequency shift comes partially from the tensorial light shift induced by the PA beam on the molecular line that is different for both of them because of an intensity difference. 
-\subsubsection{Noise of the diode}
-Additionally, measurements for red-shifted frequencies show diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. 
-
-\subsubsection{Interpretation of decay dynamics ($dN/dt$)}
-We observed atom loss signals exhibiting a "double decay" slope -a fast two-body decay followed by a slow one-body regime as the density drops. While this is usually a signature of molecular formation, some of these resonances showed no Zeeman splitting under a magnetic field, suggesting they were artifacts of spectral noise or non-thermalized gas rather than true PA lines.
 
 \subsection*{Conclusion: validation of the PA spectroscopic protocol}
 In summary, the characterization of our PA sources has highlighted two major technical constraints: the PDH-locking sidebands at $\pm 40.48$ MHz and the MOGlabs technical broadening (noise at $\pm 50$ kHz and $\pm 6$ MHz). However, the systematic analysis of $dN/dt$ dynamics and the cross-comparison with the "$11/2$ AOM" beam provide a robust diagnostic to isolate genuine molecular signals. With these technical limits established and the broadening mechanisms understood, we can now reliably analyze the molecular spectra for both $^{88}$Sr and $^{87}$Sr.
@@ -864,10 +829,11 @@ number without the PA beam.\\
 The first molecular state plotted in \ref{88Sr resonance} middle has been detected for $t=1000$ ms exposure time at intensity $I = 826$ mW/cm$^2$, 
 $f = -23.99 \pm 0.01$ MHz from the atomic transition by the MOGlabs. \\
 Then we did detected a second resonance still with the MOGlabs laser beam at $f = -222.70 \pm 0.01 $ MHz for laser beam of intensity $I = 303.2$ mW/cm$^2$
-during $50$ ms. We estimate the linewidth $330.14 \pm 13.00$ kHz inluding thermal broadening $\sigma_{broadening} = 21$ kHz.
+during $50$ ms. We estimate the linewidth $330.14 \pm 13.00$ kHz including thermal broadening $\sigma_{broadening} = 21$ kHz.
 
 These results are close to be consistent with \cite{zelevinsky_narrow_2006} that presented vibrational states $f_{\nu=1} = -23.932(33)$
 and $f_{\nu=2}=-222.161(35)$ that corresponds to $0_u$ potential. Tensorial light shift from the PA beam induces a frequency shift on the molecular states that is experimentally measured in \cite{blatt_measurement_2011} where the frequency of $\nu = -2$ is red shifted of $200$ kHz for an increase of around 800 mW/cm$^2$.
+Also the linewidth of the $f = 222.161(35)$ is comparable to the one published in this article. Still there is an additional source of broadening non-identified on these resonances that we explored by comparing a molecular linewidth for different laser sources.
 
 
 \begin{figure}[htbp]
@@ -895,6 +861,44 @@ and $f_{\nu=2}=-222.161(35)$ that corresponds to $0_u$ potential. Tensorial ligh
     \label{88Sr resonance}
 \end{figure}
 
+\subsubsection{Alternative source: the injection-locked laser}
+ spectroscopy experiments betrayed the broadening of the To confirm that the observed broadening was technical, we compared the MOGlabs results with a more stable source: the "$11/2$ AOM" beam.\\
+The measured linewidth $\Gamma_{effective}$ of the $\nu = 2$ molecular state is compared in Figure \ref{linewidth avec pompopt} and Table \ref{tab:comparaison_lasers}. Due to small Franck-Condon factors \cite{zelevinsky_narrow_2006}, power broadening 
+of the linewidth remains negligible since the $I_{sat}$ for molecules is way bigger than for atoms:
+
+\begin{equation}
+    \Gamma_{effective} = \Gamma_{1S_0-3P_1}\sqrt{1+\frac{I}{I_{sat}^{eff}}} \simeq \Gamma_{^1S_0-^3P_1}
+\end{equation}
+
+\begin{table}[ht]
+\centering
+\caption{Experimental comparison of $\nu=2$ measured with two different laser sources.}
+\label{tab:comparaison_lasers}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Measured parameters} & \textbf{AOM 11/2 beam} & \textbf{MOGlabs laser} \\ \hline
+Frequency [MHz] (measured) & $24.14 \pm 0.01$ kHz & $23.99 \pm 0.01$ kHz \\ \hline
+Intensity ($I$) & $2.3$ mW/cm$^2$ & $826.0$ mW/cm$^2$ \\ \hline
+$\sigma_{total}$ (measured) & $115.5 \pm 8.8$ kHz & $344.5 \pm 27.3$ kHz \\ \hline
+$\gamma_{thermal}$ (calc.) & $19.30$ kHz & $19.30$ kHz \\ \hline
+\textbf{Effective linewidth} & $96.37 \pm 29.24$ kHz & $325.37 \pm 13.6$ kHz \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf}
+    \caption[]{Comparison of the $\nu = 2$ molecular line. The deep purple data (MOGlabs) is broader by a factor of 3 compared to the stable "AOM 11/2" source in light purple. The frequencies of MOGlabs experiment have been shifted for figure reading facilites. }
+    \label{linewidth avec pompopt}
+\end{figure}
+
+The molecular line measured with the MOGlabs has been frequency shifted in this figure to simplify the comparision lecture of the graphe. The real frequency of this resonance is $+152.0 \pm 5.0$ kHz from the centered frequency of the light purple points at $f = 23.99 \pm 0.01$ MHz. The frequency shift comes partially from the tensorial light shift induced by the PA beam on the molecular line that is different for both of them because of an intensity difference. 
+\subsubsection{Noise of the diode}
+Additionally, measurements for red-shifted frequencies show diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. 
+
+
+\subsubsection{Interpretation of decay dynamics ($dN/dt$)}
+We observed atom loss signals exhibiting a "double decay" slope -a fast two-body decay followed by a slow one-body regime as the density drops. While this is usually a signature of molecular formation, some of these resonances showed no Zeeman splitting under a magnetic field, suggesting they were artifacts of spectral noise or non-thermalized gas rather than true PA lines.
 
 Then I present a verification of the two tendencies of \ref{equation one
 and two-body losses} where we expect to see a first rapid decay that breaks at the dominancy of the one-body loss linear with $N$.
@@ -948,7 +952,7 @@ The first molecular states have been detected at $f_1 = 259.01\pm 0.12$ MHz, $f_
         \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data184.pdf}
         \label{subfig:375MHz}
     \end{subfigure}
-\caption{Experimental observation of three unidentified molecular lines in $^{87}$Sr. (Top) Data 195 showing a resonance at $259.01 \pm 0.12$ MHz ($I = 19$ W/cm$^2$). (Middle) Data 171 showing a resonance at $274.83 \pm 0.03$ MHz ($I = 5.2$ W/cm$^2$). (Bottom) Data 184 showing a resonance at $375.74 \pm 0.48$ MHz ($I = 5.2$ W/cm$^2$). All detunings are measured from the $^{87}$Sr atomic resonance.}
+\caption{Experimental observation of three unidentified molecular lines in $^{87}$Sr. (Top) showing a resonance at $259.01 \pm 0.12$ MHz ($I = 19$ W/cm$^2$). (Middle) showing a resonance at $274.83 \pm 0.03$ MHz ($I = 5.2$ W/cm$^2$). (Bottom) showing a resonance at $375.74 \pm 0.48$ MHz ($I = 5.2$ W/cm$^2$). All detunings are measured from the $^{87}$Sr atomic resonance.}
     \label{87Sr molecular lines}
 \end{figure}
 
