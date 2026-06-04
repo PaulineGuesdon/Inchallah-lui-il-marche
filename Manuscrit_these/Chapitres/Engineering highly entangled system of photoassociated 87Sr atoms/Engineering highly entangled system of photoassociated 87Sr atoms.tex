@@ -91,7 +91,7 @@ where $f(\theta)$ is the scattering amplitude which determines wheter the collis
 inelastic and $\theta$ is the angle between the incident and scattered wavevectors.
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\linewidth]{\PATheoryFig{diffusion_sinus.pdf}}
+    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/diffusion_sinus.pdf}
     \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances $R(a_0)$ behaves as a summation of an incoming plane wave
     and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave
     collisions at $l=0$. The scattering occurs at background scattering length $R(a_o) = a_{bg}$ the distance
@@ -817,6 +817,18 @@ additional source of broadening coming from the laser itself detailed in 3.5.2.1
 Then the laser MOGlabs robustly locked, we change $f^{RF}_{beating}$ to search the two first vibrational states visible in figure
 \ref{88Sr resonance}. \\
 
+\textbf{Fitting model}
+I deduced the number of atoms I plot in the following figures from the integration of the optical density in two-dimension as demonstrated in the article \cite{litvinov_measuring_2021}. 
+Each point of the presented atomic and molecular lines is obtained by fitting absorption images of the atomic cloud with a 2D-gaussian model estimated with an error:
+
+\begin{equation}
+    \sigma_{gaussian} = \sqrt{\left(\frac{\sigma_A}{A}\right)^2 + \left(\frac{\sigma_{\sigma_x}}{\sigma_x}\right)^2 + \left(\frac{\sigma_{\sigma_y}}{\sigma_y}\right)^2}
+\end{equation}
+
+to which I choose to add a systematic error calculated by the standard deviation of ten values of the measured atomic number out of resonance:
+\begin{equation}
+    \sigma_{tot} = \sqrt{\sigma_{gaussian}^2 + \sigma_{systematic}}
+\end{equation}
 
 All the resonances have been fitted by a lorentzian function:
 \begin{equation}
