@@ -92,7 +92,7 @@ inelastic and $\theta$ is the angle between the incident and scattered wavevecto
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf}
+    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/diffusion_sinus.pdf}
     \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances $R(a_0)$ behaves as a summation of an incoming plane wave
     and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave
     collisions at $l=0$. The scattering occurs at background scattering length $R(a_o) = a_{bg}$ the distance
@@ -914,10 +914,14 @@ The molecular line measured with the MOGlabs has been frequency shifted in this 
 Additionally, measurements for red-shifted frequencies show diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. 
 \hl{data 15 pour resonance atomique dans le rouge, data 19 dans le bleu}
 
-\subsubsection{Interpretation of decay dynamics ($dN/dt$)}
+\subsubsection{Decay dynamics ($dN/dt$)}
 The ultimate verification of inelastic collisions is the $dN/dt$ discussed in 3.1.3. This curve enables to (i) verify the two-body loss presence and (ii) determine the value of $l_{opt}/I$ that characterizes the stength of the loss rate $K_2$.
-We observed atom loss signals exhibiting two diffrent slopes: a first one with fast two-body decay followed by a slow one-body regime as the density drops.
-
+As dicussed in the introduction of this chapter to measure $dN/dt$ for unvariant temperature the fitting function is
+\begin{equation}
+    f(t) = e^{-\Gamma t}\frac{N_0}{1-(\frac{\beta N_0}{\gamma})e^{-\gamma t -1}}
+    \label{fitting function exp}
+\end{equation}
+From this equation one expect two slopes on the curve: a first one with fast two-body decay followed by a slow one-body regime as the density drops.
 Figure \ref{88sr exponential decay} shows these two fashions from which the lorentzian fit gives the $K_2$ value : the deduced
 optical length is $l_{opt} = 13a_0$/(W/cm$^2)$ for $f_{\nu=2}=-222.161(35)$, while in \cite{zelevinsky_narrow_2006} $l_{opt} = 1a_0$/(W/cm$^2)$.
 For the second line we measure $l_{opt} = 7.6\times 10^3 a_0$ /(W/cm$^2)$ which is also consistent with the theoretical value of \cite{blatt_systematic_2011}.
@@ -938,12 +942,8 @@ For the second line we measure $l_{opt} = 7.6\times 10^3 a_0$ /(W/cm$^2)$ which 
     \label{88sr exponential decay}
 \end{figure}
 
-While these two slopes are usually a signature of two-body losses we observed the same behavior for an atomic resonance that is clearly unexpected: it appears 
-that for non-recompressed gas it is possible to still have thermalisation that affects the two-body losses rate fashion. For recompressed gas as in ??? collisions 
-occur for atoms in a relative smaller volume.\\
-
 The results on the $^{88}Sr$ isotope are consistent with the litterature and enable us to reliably expect molecular spectroscopy on $^{87}Sr$.
-\hl{ data 16 pour exp decay alors que resonance atomique}
+
 \section{87Sr molecules}
 \subsection{Results on $^{87}Sr$}
 The molecular lines on $^{87}Sr$ have been reached only with the MOGlabs source. We have been experimentally engineer it by changing the maximized diffracted order of "AOM Inj Slave 1" for $-1$ order (see Setup 
@@ -977,13 +977,7 @@ The first molecular states have been detected at $f_1 = 259.01\pm 0.12$ MHz, $f_
     \label{87Sr molecular lines}
 \end{figure}
 
-A validation of the two-body losses nature of the collisions repsonsible for these molecular lines is -as dicussed in the introduction of this chapter- to measure $dN/dt$. The two-tendencies exponential decay has been tested for line $f = 274.01$ MHz in Fig. \ref{exponential decay 87Sr} top: this plot reveals a gap between experiment and fitting function 
-
-\begin{equation}
-    f(t) = e^{-\Gamma t}\frac{N_0}{1-(\frac{\beta N_0}{\gamma})e^{-\gamma t -1}}
-\end{equation}
-
-This fitting fail that could come from the presence of three-body losses that would break the $-\beta N^2$ decay at short exposure time. The gas could also not be thermalized at the PA moment of the sequence which will induce collisions between the different spin components. We see at the top small window of the plot where the data is zoomed on the first exposure times under a second the presence of different tendencies. \\
+A validation of the two-body losses nature of the collisions repsonsible for these molecular lines failed: that could come from the presence of three-body losses that would break the $-\beta N^2$ decay at short exposure time. The gas could also not be thermalized at the PA moment of the sequence which will induce collisions between the different spin components. We see at the top small window of the plot where the data is zoomed on the first exposure times under a second the presence of different tendencies. \\
 A last reason mostly probable for the wrong fitting is the presence of another sideband at around $176$ MHz from this molecular line that would induce atomic losses.
 
 
@@ -1006,6 +1000,25 @@ A last reason mostly probable for the wrong fitting is the presence of another s
 
 The exponential decay of the second molecular line at $f = 274.83$ MHz is presented at the bottom \ref{exponential decay 87Sr}: this data is well fitted by the two and one-body collisions function.
 
+\subsubsection{Interpretation of dN/dt decay}
+While these two slopes are usually a signature of two-body losses we observed the same behavior for the atomic resonance obtained with the red diode noise at 
+6 MHz as visible in \ref{exp decay 6 MHz noise} in dark purple. This experiment has been obtained on a red detune signal from $F=9/2$ hyperfine state of $^{87}Sr$.
+The atoms have been evaporated during $500$ ms recompressed and they are illuminated during $T = 2000$ms. In this figure the atom decay is clearly well described 
+by equation \ref{equation one and two-body losses} and presents a change of slope around 3s: the fit of this data done leads to a misinterpretation of the situation. 
+The same data in the absence of the PA laser is plotted in the same figure and shows a different behavior of the atomic decay but as presented in 3.3.2.2 the exponential 
+decay test is done in atomic resonance: this measurement is not reliable to identify with certainty the nature of the losses.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf}
+    \caption[Two-body losses decay on atomic resonance: artifact for molecular analysis]{}
+    \label{exp decay 6 MHz noise}
+\end{figure}
+
+It appears that for non-recompressed gas it is possible to still have thermalization when the evaporation is not well optimized and 
+that affects the two-body losses rate. For recompressed gas as in \ref{exp decay 6 MHz noise} collisions keep occuring for atoms contained in a smaller volume.\\
+A last trustworthy test is the measurement of the temperature of the gas: \hl{when PA occurs we expect the gas to be hotter because of}
 
 \begin{table}[htbp]
 \centering
