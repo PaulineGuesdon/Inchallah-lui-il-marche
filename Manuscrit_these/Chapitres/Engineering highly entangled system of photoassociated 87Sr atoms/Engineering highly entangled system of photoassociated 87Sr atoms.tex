@@ -91,8 +91,8 @@ where $f(\theta)$ is the scattering amplitude which determines wheter the collis
 inelastic and $\theta$ is the angle between the incident and scattered wavevectors.
 
 \begin{figure}
-    \centering
-    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf}
+    \centering    
+    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/diffusion_sinus.pdf}
     \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances $R(a_0)$ behaves as a summation of an incoming plane wave
     and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave
     collisions at $l=0$. The scattering occurs at background scattering length $R(a_o) = a_{bg}$ the distance
@@ -830,6 +830,23 @@ Then the total error for each atom measurement is:
     \sigma^{tot}_N = N \sqrt{\sigma_{gaussian}^2 + \sigma_{systematic}^2}
 \end{equation}
 
+I also present resonances with an effective linewidth coming from broadening sources : on the atomic lines the intensity of the laser induces a \textbf{power broadening} of the resonance:
+
+\begin{equation}
+    \Gamma_{power} = \Gamma_{1S_0-3P_1}\sqrt{1+\frac{I}{I_{sat}^{eff}}} \simeq \Gamma_{^1S_0-^3P_1}
+\end{equation}
+
+Due to small Franck-Condon factors \cite{zelevinsky_narrow_2006}, power broadening 
+of the linewidth remains negligible since the $I_{sat}$ for molecules is way bigger than for atoms.\\
+Added to the ensemble of thermal distribution of doppler shifted atoms when the gas in hot, the final broadening of a spectroscopic line is given by:
+
+\begin{gather*}
+    \Gamma{\text{tot}} = \sqrt{\Gamma_{mol/at}^2 + \Gamma_{\text{thermal}}^2 + \Gamma_{\text{power}}^2 + \Gamma_{\text{remainder}}^2} \\
+    \text{with } \Gamma_{\text{thermal}} = \frac{1}{\lambda}\sqrt{\frac{k_B T}{\mu}} 
+\end{gather*}
+$\mu = m_{at}/2$ for the molecular resonance, $\mu = m_{at}$ for a single atom, $\lambda$ the laser wavelength, T the temperature of the gas and $k_B$ 
+the bolztmann constant. There are still a residual broadening $\Gamma_{remainder}$ we did not identified for now.\\
+
 \textbf{Experimental results}\\
 The first molecular state plotted in \ref{88Sr resonance} middle has been detected for $t=1000$ ms exposure time at intensity $I = 826$ mW/cm$^2$, 
 $f = -23.99 \pm 0.01$ MHz from the atomic transition by the MOGlabs. \\
@@ -866,16 +883,9 @@ Also the linewidth of the $f = 222.161(35)$ is comparable to the one published i
     \label{88Sr resonance}
 \end{figure}
 
-\newpage
 \subsubsection{Alternative source: the injection-locked laser}
  spectroscopy experiments betrayed the broadening of the To confirm that the observed broadening was technical, we compared the MOGlabs results with a more stable source: the "$11/2$ AOM" beam.\\
-The measured linewidth $\Gamma_{effective}$ of the $\nu = 2$ molecular state is compared in Figure \ref{linewidth avec pompopt} and Table \ref{tab:comparaison_lasers}. Due to small Franck-Condon factors \cite{zelevinsky_narrow_2006}, power broadening 
-of the linewidth remains negligible since the $I_{sat}$ for molecules is way bigger than for atoms:
-
-\begin{equation}
-    \Gamma_{effective} = \Gamma_{1S_0-3P_1}\sqrt{1+\frac{I}{I_{sat}^{eff}}} \simeq \Gamma_{^1S_0-^3P_1}
-\end{equation}
-
+The measured linewidth $\Gamma_{effective}$ of the $\nu = 2$ molecular state is compared in Figure \ref{linewidth avec pompopt} and Table \ref{tab:comparaison_lasers}. 
 \begin{table}[ht]
 \centering
 \caption{Experimental comparison of $\nu=2$ measured with two different laser sources.}
@@ -940,8 +950,18 @@ The molecular lines on $^{87}Sr$ have been reached only with the MOGlabs source.
 Datas have been obtained for different waist size in an effort to increase two-body losses, same for the density of the cloud. \\
 
 The first molecular states have been detected at $f_1 = 259.01\pm 0.12$ MHz, $f_2 = 274.83\pm 0.03$ MHz and $f_3 = 375.74\pm 0.48$ MHz for experimental and fitted parameters refered in \ref{tab:summary_fits_PA_final}.
+A validation of the two-body losses nature of the collisions repsonsible for these molecular lines failed: that could come from the presence of three-body losses that would break the $-\beta N^2$ decay at short exposure time. The gas could also not be thermalized at the PA moment of the sequence which will induce collisions between the different spin components. We see at the top small window of the plot where the data is zoomed on the first exposure times under a second the presence of different tendencies. \\
+A last reason mostly probable for the wrong fitting is the presence of another sideband at around $176$ MHz from this molecular line that would induce atomic losses.
 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/zoom_red_chain_beating.pdf}
+    \caption[]{Zoom on the section of the red chain dedicated to the PA process. The
+frequency for both laser configurations is tuned by ”AOM Inj Slave 1”, adjusted by
+”AOM 11/2” before being sent to the atoms.}
+    \label{zoom red chain battement}
+\end{figure}
 
 \begin{figure}
     \centering
@@ -965,9 +985,6 @@ The first molecular states have been detected at $f_1 = 259.01\pm 0.12$ MHz, $f_
 \caption{Experimental observation of three unidentified molecular lines in $^{87}$Sr. (Top) showing a resonance at $259.01 \pm 0.12$ MHz ($I = 19$ W/cm$^2$). (Middle) showing a resonance at $274.83 \pm 0.03$ MHz ($I = 5.2$ W/cm$^2$). (Bottom) showing a resonance at $375.74 \pm 0.48$ MHz ($I = 5.2$ W/cm$^2$). All detunings are measured from the $^{87}$Sr atomic resonance.}
     \label{87Sr molecular lines}
 \end{figure}
-
-A validation of the two-body losses nature of the collisions repsonsible for these molecular lines failed: that could come from the presence of three-body losses that would break the $-\beta N^2$ decay at short exposure time. The gas could also not be thermalized at the PA moment of the sequence which will induce collisions between the different spin components. We see at the top small window of the plot where the data is zoomed on the first exposure times under a second the presence of different tendencies. \\
-A last reason mostly probable for the wrong fitting is the presence of another sideband at around $176$ MHz from this molecular line that would induce atomic losses.
 
 
 \begin{figure}[H]
