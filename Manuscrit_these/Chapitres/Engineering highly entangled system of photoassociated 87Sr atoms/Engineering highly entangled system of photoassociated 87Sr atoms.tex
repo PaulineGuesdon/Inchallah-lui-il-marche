@@ -92,7 +92,7 @@ inelastic and $\theta$ is the angle between the incident and scattered wavevecto
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/diffusion_sinus.pdf}
+    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf}
     \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances $R(a_0)$ behaves as a summation of an incoming plane wave
     and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave
     collisions at $l=0$. The scattering occurs at background scattering length $R(a_o) = a_{bg}$ the distance
@@ -110,7 +110,7 @@ over all the partial waves. Then we can give as in \ref{incoming outcoming scatt
 where we identify a spherical part and a scattering term, with $S_l = e^{2i\delta_l}$ the scattering amplitude.\\
 
 In the presence of inelastic processes such as photoassociation, the colliding atom pair can be irreversibly lost
-from the scattering channel---either by forming a bound molecular
+from the scattering channel-either by forming a bound molecular
 state or by releasing kinetic energy. This loss of flux from the
 incoming channel cannot be captured by a purely real phase shift,
 as $S_l = 1$ implies full conservation of the wavefunction
@@ -703,9 +703,7 @@ and/or invert the diffracted order of the "Raman AOM" that allows to shift the P
     \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf}
     \par\medskip
     \includegraphics[width=0.85\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf}
-    \caption[frequences 88sr 87sr]{Frequences scheme for PA depending on the isotope we experiment. (top) the scheme for $^{88}Sr$
-    (bottom) the one for $^{87}Sr$. The change of diffracted order on "AOM Slave 1" enables to pass from one isotope to another contrainting us only to
-    realign the injection of the beam after the AOM.}
+    \caption[frequences 88sr 87sr]{Frequency schemes for photoassociation (PA) depending on the targeted isotope: (top) scheme for $^{88}\text{Sr}$ and (bottom) scheme for $^{87}\text{Sr}$. Switching the diffracted order of 'AOM Slave 1' allows for a seamless transition between isotopes, requiring only a minor realignment of the beam injection downstream of the AOM.}
     \label{frequences 88sr 87sr}
 \end{figure}
 
@@ -785,37 +783,28 @@ with small amplitude could be hiden in this signal.
 \subsection*{Conclusion: validation of the PA spectroscopic protocol}
 In summary, the characterization of our PA sources has highlighted two major technical constraints: the PDH-locking sidebands at $\pm 40.48$ MHz and the MOGlabs technical broadening (noise at $\pm 50$ kHz and $\pm 6$ MHz). However, the systematic analysis of $dN/dt$ dynamics and the cross-comparison with the "$11/2$ AOM" beam provide a robust diagnostic to isolate genuine molecular signals. With these technical limits established and the broadening mechanisms understood, we can now reliably analyze the molecular spectra for both $^{88}$Sr and $^{87}$Sr.
 
-\section{Photoassociation on $^{88}Sr$}
-As a calibration of our experimental protocol the PA lines search on $^{87}Sr$ starts with a verification of few
-molecular lines of $^{88}Sr$ that has been studied in \cite{borkowski_line_2009}, \cite{zelevinsky_narrow_2006}, \cite{reschovsky_narrow-line_2018}.
-Tests on lighting times and intensites of the same known molecular lines enable to understand our system and validate the experimental procedure at which
-we expect to obtain two-body losses for similar parameters on $^{87}Sr$.
-
-
-\subsection{Setup}
-For bosonic species, we are using the MOGlabs beating for PA to adress lines unaccessible with the direct light from "AOM 11/2 " whereas it has a
-less broaden spectrum. We optimize the $+1$ order to address the $^{88}Sr$,$^{3}P_1$ resonance at $f_{slave 1} = 319.4$MHz with
-$f_{11/2}=220.75$MHz. This order leads to the bosonic line we attempt as in \ref{frequences 88sr 87sr} : the change of diffracted order leads in the
-red case to bosonic gas whereas the blue one is for the fermionic strontium - as for Raman transition scheme - for PA.
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/zoom_red_chain_beating.pdf}
-    \caption[Tuning of the red chain]{Zoom on the section of the red chain dedicated to the PA process. The frequency for both laser configurations is tuned by "AOM Inj Slave 1", adjusted by "AOM 11/2" before being sent to the atoms.}
-    \label{zoom red chain battement}
-\end{figure}
-
 \subsection{Atomic and molecular lines}
-As introduced in this chapter the PA experiment starts in the case of $^{88}Sr$ at density $n_0=5\times 10^{13}$ atoms$/cm^3$
-at $T\simeq 1.7uK$.
-The atomic transition is adressed for $f^{RF}_{beating} = f_{Raman}$ by a laser beam of intensity $I = 100I_{sat}$ at
-waist $w_0 = 340 \mu$m for $800$ms. Figure \ref{88Sr resonance} top shows the atom loss at this reference frequency with an
-effective linewidth of $\sigma = 192(9)$kHz incounting a power broadening of $74kHz$ and thermal broadening of the order of
-$19$kHz. Expecting an atomic linewidth of about $\Gamma_{at} \simeq 7.4kHz$ we suppose an
-additional source of broadening coming from the laser itself detailed in 3.5.2.1.
+As introduced in this chapter, the PA experiment for $^{88}\text{Sr}$ begins at an initial density of $n_0 = 5 \times 10^{13}\text{ atoms/cm}^3$ and a temperature of $T \simeq 1.7\text{ }\mu\text{K}$. 
+The atomic transition is addressed at $f^{\text{RF}}_{\text{beating}} = f_{\text{Raman}}$ using a laser beam with an intensity of $I = 100 I_{\text{sat}}$ and a waist of $w_0 = 340\text{ }\mu\text{m}$. The expected characteristic timescale for the illumination is defined by isolating the two-body loss term in Eq. \ref{equation one and two-body losses}:
 
+\begin{gather*}
+    \frac{dn(t)}{dt} = -K_2 n(t)^2 \\
+    \int_{n_0}^{n(t)} \frac{dn}{n^2} = -K_2 \int_{0}^{t} dt \\
+    \left[ -\frac{1}{n} \right]_{n_0}^{n(t)} = -K_2 t \\
+    \frac{1}{n(t)} - \frac{1}{n_0} = K_2 t \\
+    t = \frac{1}{K_2} \frac{n_0 - n(t)}{n(t) n_0}
+\end{gather*}
 
+At half the initial density, the characteristic loss time $\tau$ is given by:
+\begin{equation}
+    \tau = \frac{1}{K_2 n_0}
+\end{equation}
+
+Most of the spectroscopic lines presented below exhibit a two-body loss rate coefficient in the range of $10^{-12} < K_2 < 10^{-8}\text{ cm}^3\cdot\text{s}^{-1}$, implying that $\tau$ should typically be on the order of a few milliseconds or less. However, due to an unexpectedly low atom loss at resonance, it was subsequently determined that a spatial misalignment of the PA beam relative to the atomic cloud induced a significant spatial inhomogeneity. Consequently, all the data presented for $^{88}\text{Sr}$ were obtained with a prolonged illumination time of approximately $800\text{ ms}$.
+
+Furthermore, an illumination time of $800\text{ ms}$ corresponds to roughly $10^4$ scattered photons per atom. This induces severe heating of the atomic cloud, leading to a significant thermal broadening of the molecular resonances.
+
+The top panel of Fig. \ref{88Sr resonance} displays the atom loss at this reference frequency, revealing an effective linewidth of $\sigma = 192(9)\text{ kHz}$. This includes a power broadening contribution of $74\text{ kHz}$ (due to the $100 I_{\text{sat}}$ illumination) and a thermal broadening estimated at $19\text{ kHz}$. Given that the bare atomic linewidth is only $\Gamma_{\text{at}} \simeq 7.4\text{ kHz}$, the remaining discrepancy points toward an additional source of broadening stemming from the laser system itself, as detailed in Section 3.5.2.1.
 Then the laser MOGlabs robustly locked, we change $f^{RF}_{beating}$ to search the two first vibrational states visible in figure
 \ref{88Sr resonance}. \\
 
@@ -1002,11 +991,12 @@ The exponential decay of the second molecular line at $f = 274.83$ MHz is presen
 
 \subsubsection{Interpretation of dN/dt decay}
 While these two slopes are usually a signature of two-body losses we observed the same behavior for the atomic resonance obtained with the red diode noise at 
-6 MHz as visible in \ref{exp decay 6 MHz noise} in dark purple. This experiment has been obtained on a red detune signal from $F=9/2$ hyperfine state of $^{87}Sr$.
-The atoms have been evaporated during $500$ ms recompressed and they are illuminated during $T = 2000$ms. In this figure the atom decay is clearly well described 
-by equation \ref{equation one and two-body losses} and presents a change of slope around 3s: the fit of this data done leads to a misinterpretation of the situation. 
-The same data in the absence of the PA laser is plotted in the same figure and shows a different behavior of the atomic decay but as presented in 3.3.2.2 the exponential 
-decay test is done in atomic resonance: this measurement is not reliable to identify with certainty the nature of the losses.
+6 MHz as visible in \ref{exp decay 6 MHz noise} in dark purple. This experiment has been obtained on a red detuned signal from $F=9/2$ hyperfine state of $^{87}Sr$.
+The atoms have been evaporated during $500$ ms, recompressed and illuminated during $T = 2000$ms. In this figure the atom decay is clearly well described 
+by equation \ref{equation one and two-body losses} and presents a change of slope around 3s: the fit of this data leads to a misinterpretation of the collision nature. 
+The same data in the absence of the PA laser plotted in the same figure shows a linear behavior on the atomic decay. As presented in 3.3.2.2 the exponential 
+decay test is done in atomic resonance: this measurement is not reliable to identify with certainty the nature of the losses while no molecule has been enhanced on this
+experiment.
 
 
 \begin{figure}[H]
@@ -1017,7 +1007,8 @@ decay test is done in atomic resonance: this measurement is not reliable to iden
 \end{figure}
 
 It appears that for non-recompressed gas it is possible to still have thermalization when the evaporation is not well optimized and 
-that affects the two-body losses rate. For recompressed gas as in \ref{exp decay 6 MHz noise} collisions keep occuring for atoms contained in a smaller volume.\\
+that affects the two-body losses rate. For recompressed gas as in \ref{exp decay 6 MHz noise} collisions keep occuring for atoms contained 
+in a smaller volume which explains the slope break on the plot.\\
 A last trustworthy test is the measurement of the temperature of the gas: \hl{when PA occurs we expect the gas to be hotter because of}
 
 \begin{table}[htbp]
