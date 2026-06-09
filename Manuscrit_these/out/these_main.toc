@@ -44,19 +44,22 @@
 \contentsline {subsubsection}{\numberline {3.1.5.2}Leroy-Bernstein scaling}{42}{subsubsection.134}%
 \contentsline {subsubsection}{\numberline {3.1.5.3}Mass scaling and isotopic shifts}{43}{subsubsection.140}%
 \contentsline {section}{\numberline {3.2}Spectroscopy protocol and calibration of the PA laser}{45}{section.144}%
-\contentsline {subsection}{\numberline {3.2.1}Gas preparation and isotope specificities}{45}{subsection.145}%
+\contentsline {subsection}{\numberline {3.2.1}Gas preparation and isotope specificites}{45}{subsection.145}%
 \contentsline {subsection}{\numberline {3.2.2}Photoassociation lasers and their spectral characteristics}{45}{subsection.146}%
 \contentsline {subsubsection}{\numberline {3.2.2.1}ECDL locking and frequency referencing}{45}{subsubsection.147}%
 \contentsline {subsubsection}{\numberline {3.2.2.2}Spectral imperfections from the locking scheme}{48}{subsubsection.151}%
 \contentsline {subsubsection}{\numberline {3.2.2.3}Spectral imperfections from the filter cavity system}{48}{subsubsection.153}%
 \contentsline {subsection}{\numberline {3.2.3}Atomic and molecular lines}{51}{subsection.159}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}Alternative source: the injection-locked laser}{53}{subsubsection.166}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}Noise of the diode}{55}{subsubsection.169}%
-\contentsline {subsubsection}{\numberline {3.2.3.3}Decay dynamics ($dN/dt$)}{56}{subsubsection.170}%
-\contentsline {section}{\numberline {3.3}87Sr molecules}{56}{section.173}%
-\contentsline {subsection}{\numberline {3.3.1}Results on $^{87}Sr$}{56}{subsection.174}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}Interpretation of dN/dt decay}{59}{subsubsection.178}%
-\contentsline {subsection}{\numberline {3.3.2}Interpretation of low contrast}{61}{subsection.181}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Coupling to more energetic state from the IR}{62}{subsubsection.184}%
-\contentsline {subsection}{\numberline {3.3.3}Conclusion and outlook}{63}{subsection.186}%
-\contentsline {chapter}{\numberline {A}Algorithms}{73}{appendix.189}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}General experimental framework and baseline parameters}{51}{subsubsection.160}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Fitting model}{52}{subsubsection.162}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}Experimental results}{53}{subsubsection.167}%
+\contentsline {subsubsection}{\numberline {3.2.3.4}Alternative source: the injection-locked laser}{53}{subsubsection.169}%
+\contentsline {subsubsection}{\numberline {3.2.3.5}Noise of the diode}{55}{subsubsection.172}%
+\contentsline {subsubsection}{\numberline {3.2.3.6}Decay dynamics ($dN/dt$)}{56}{subsubsection.173}%
+\contentsline {section}{\numberline {3.3}87Sr molecules}{57}{section.176}%
+\contentsline {subsection}{\numberline {3.3.1}Results on $^{87}Sr$}{57}{subsection.177}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}Interpretation of dN/dt decay}{60}{subsubsection.181}%
+\contentsline {subsection}{\numberline {3.3.2}Interpretation of low contrast}{62}{subsection.184}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Coupling to more energetic state from the IR}{63}{subsubsection.187}%
+\contentsline {subsection}{\numberline {3.3.3}Conclusion and outlook}{64}{subsection.189}%
+\contentsline {chapter}{\numberline {A}Algorithms}{75}{appendix.192}%
