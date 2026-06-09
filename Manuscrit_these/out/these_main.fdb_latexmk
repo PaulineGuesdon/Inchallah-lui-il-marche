@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1781012042.31736 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1781012048.52286 0
+["bibtex out/these_main"] 1781023492.78715 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1781023499.7995 0
   "./ref.bib" 1776338428 60028 b19cdb0939ddb1edb15d33c56b581bc0 ""
   "./spincontrol_refs.bib" 1779203640 549367 6b3bd591fb7a36bddef0122884a01a8a ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/ieeetr.bst" 1291864344 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1781012047 44970 3beca25cd509d126c3784053a421b1ee "pdflatex"
+  "out/these_main.aux" 1781023498 45137 c9980c00c326b0214d1f3e27a066ce61 "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1781012042.67835 "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1781012048.52366 0
+["pdflatex"] 1781023493.27456 "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1781023499.80026 0
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1779883527 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1771496879 14064 48988c15252745ffb24fd32721a2820d ""
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1775563748 13338688 9fd0248c43254865fc857a8837d50457 ""
@@ -165,8 +165,10 @@
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1781012036 74797 675d21e6ded57b033d86b177fbc67dff ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1781023485 75774 5261d5a7c53fff2f0bc93890e3fb7f91 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf" 1779987768 517423 2d2177328b6283a03c1c736012350bdc ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf" 1781023280 1454812 949711a5770bab5f452c2a8b131fc13e ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf" 1781022213 352833 104bd9d650681449e10523424cce80f9 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf" 1780670106 998563 5d67aba77ed21d690877d998c342ae2c ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data171.pdf" 1777293181 387775 1809a1bc8f6fde0a7102f89cb4b334fc ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data_194_exp.pdf" 1778141807 264600 9de8f478fd7bd0b0efe7f47189ab6faa ""
@@ -221,12 +223,12 @@
   "appendix/titlepage.tex" 1776070351 867 bb7073512633b892c0cc21646372f930 ""
   "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1779883516 4919 dc0f22de9474e0a6cba95111f4c20025 ""
   "out/these_main.acr" 1777880373 7 9f404503043ec80c08484be9f659189e ""
-  "out/these_main.aux" 1781012047 44970 3beca25cd509d126c3784053a421b1ee "pdflatex"
-  "out/these_main.bbl" 1781012042 20830 bfa5465881e854da8b56ad7cddec0927 "bibtex out/these_main"
-  "out/these_main.lof" 1781012047 11973 01104a2be0f3b812ff38593b2f022c2c "pdflatex"
-  "out/these_main.lot" 1781012047 408 b4cad358360d6322fadd8ad982e887d7 "pdflatex"
-  "out/these_main.out" 1781012047 14040 183652725156a6775db8cf4443a816d2 "pdflatex"
-  "out/these_main.toc" 1781012047 6421 d2ee5322bd5f190f62c7b6d8070a0c7c "pdflatex"
+  "out/these_main.aux" 1781023498 45137 c9980c00c326b0214d1f3e27a066ce61 "pdflatex"
+  "out/these_main.bbl" 1781023493 20830 bfa5465881e854da8b56ad7cddec0927 "bibtex out/these_main"
+  "out/these_main.lof" 1781023498 11973 a702aaf52664d102e2519ed637f5cf83 "pdflatex"
+  "out/these_main.lot" 1781023498 408 86c90eba19b1acdf1a0e30d7e778068a "pdflatex"
+  "out/these_main.out" 1781023498 14149 2ef958dc064e100cf242559f0b339384 "pdflatex"
+  "out/these_main.toc" 1781023498 6446 4e1f196c89c55c36ebc6462d0b45465f "pdflatex"
   "these_main.tex" 1779883516 4919 dc0f22de9474e0a6cba95111f4c20025 ""
   (generated)
   "out/these_main.acn"

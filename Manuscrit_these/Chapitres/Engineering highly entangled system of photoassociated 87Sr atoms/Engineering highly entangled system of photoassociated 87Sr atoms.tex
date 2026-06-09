@@ -795,7 +795,7 @@ highlighted two critical experimental insights:
     acousto-optic modulators (AOMs).
 \end{itemize}
 
-\subsection{Atomic and molecular lines}
+\subsection{Atomic and molecular lines calibration}
 \subsubsection{General experimental framework and baseline parameters}
 As introduced in this chapter, the PA experiment for $^{88}\text{Sr}$ begins at an initial density of $n_0 = 5 \times 10^{13}\text{ atoms/cm}^3$ and a temperature of $T \simeq 1.7\text{ }\mu\text{K}$. 
 The atomic transition is addressed at $f^{\text{RF}}_{\text{beating}} = f_{\text{Raman}}$ using a laser beam with an intensity of $I = 100 I_{\text{sat}}$ and a waist of $w_0 = 340\text{ }\mu\text{m}$. The expected characteristic timescale for the illumination is defined by isolating the two-body loss term in Eq. \ref{equation one and two-body losses}:
@@ -858,7 +858,7 @@ Added to the ensemble of thermal distribution of doppler shifted atoms when the 
 $\mu = m_{at}/2$ for the molecular resonance, $\mu = m_{at}$ for a single atom, $\lambda$ the laser wavelength, T the temperature of the gas and $k_B$ 
 the boltzmann constant. There are still a residual broadening $\Gamma_{remainder}$ we did not identified for now.
 
-\subsubsection{Experimental results}
+\subsubsection{Experimental results on $^{88}Sr$}
 The first molecular state shown in the middle panel of Fig.~\ref{88Sr resonance} was detected using an exposure time of $t = 1000$~ms and an intensity of $I = 826$~mW/cm$^2$. This state is located at a detuning of $f = -23.99 \pm 0.01$~MHz from the atomic transition, as measured with the MOGlabs laser system. 
 , revealing an \hl{effective linewidth of $\sigma = 192(9)\text{ kHz}$. This includes a power broadening contribution of $74\text{ kHz}$ (due to the $100 I_{\text{sat}}$ illumination) and a thermal broadening estimated at $19\text{ kHz}$.}
 Subsequently, a second resonance was observed using the same laser system at a detuning of $f = -222.70 \pm 0.01$~MHz, with a beam intensity of $I = 303$~mW/cm$^2$ and an exposure time of $50$~ms. \hl{The linewidth of this second resonance was estimated to be $330 \pm 13$~kHz, which includes a thermal broadening contribution of $\sigma_{\text{broadening}} = 21$~kHz.}
@@ -905,9 +905,26 @@ $\gamma_{thermal}$ (calc.) & $19.30$ kHz & $19.30$ kHz \\ \hline
 \end{figure}
 
 The molecular line measured with the MOGlabs has been frequency shifted in this figure to simplify the comparison lecture of the graph. The real frequency of this resonance is $+152.0 \pm 5.0$ kHz from the centered frequency of the light purple points at $f = 23.99 \pm 0.01$ MHz. The frequency shift comes partially from the tensorial light shift induced by the PA beam on the molecular line that is different for both of them because of an intensity difference. 
+
 \subsubsection{Noise of the diode}
-While comparing the broadening of the molecular line with two different lasers measurements for red-shifted frequencies show diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. 
-\hl{data 15 pour resonance atomique dans le rouge, data 19 dans le bleu}
+While comparing the broadening of the molecular line with two different lasers the spectroscopy revealed from the red diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. 
+This effect has been observed on the $F = 11/2$ hyperfine state of $^{87}Sr$ that has twelve states from total spin projection $-11/2 < m_F < 11/2$ and that we were capable of resolving them as visible in
+\ref{6MHz noise red detuned}. The same measurement blue detuned from the atomic resonance confirmed in fig. \ref{6MHz noise blue detuned} the atomic nature of the atomic loss. Centered in around 6~MHz and 
+12~MHz we see the presence of around twelve peaks that corresponds to the hyperfine state targeted.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf}
+    \caption[]{ }
+    \label{6MHz noise red detuned}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf}
+    \caption[]{ }
+    \label{6MHz noise blue detuned}
+\end{figure}
 
 \subsubsection{Decay dynamics ($dN/dt$)}
 The ultimate verification of inelastic collisions is the $dN/dt$ discussed in 3.1.3. This curve enables to (i) verify the two-body loss presence and (ii) determine the value of $l_{opt}/I$ that characterizes the stength of the loss rate $K_2$.
@@ -1078,7 +1095,7 @@ $Yb$ with hyperfine structure is not.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf}
+    \includegraphics[width=0.5\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf}
     \caption[predissociation]{Scheme of predissociation which is a phenomenon that occurs when dissociation limit of an excited molecular potential
 C is under the closed channel of the excited molecule of potential B. Then the $\nu_ B$ state is coupled to a density of states of potential
 C that modifies the linewidth $\Gamma_mol$ of the molecular state}
