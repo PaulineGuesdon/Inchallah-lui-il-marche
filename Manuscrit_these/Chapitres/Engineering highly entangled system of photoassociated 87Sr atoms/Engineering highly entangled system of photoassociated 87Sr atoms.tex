@@ -92,7 +92,7 @@ inelastic and $\theta$ is the angle between the incident and scattered wavevecto
 
 \begin{figure}
     \centering    
-    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/diffusion_sinus.pdf}
+    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf}
     \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances $R(a_0)$ behaves as a summation of an incoming plane wave
     and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave
     collisions at $l=0$. The scattering occurs at background scattering length $R(a_o) = a_{bg}$ the distance
@@ -909,12 +909,15 @@ The molecular line measured with the MOGlabs has been frequency shifted in this 
 \subsubsection{Noise of the diode}
 While comparing the broadening of the molecular line with two different lasers the spectroscopy revealed from the red diode noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. 
 This effect has been observed on the $F = 11/2$ hyperfine state of $^{87}Sr$ that has twelve states from total spin projection $-11/2 < m_F < 11/2$ and that we were capable of resolving them as visible in
-\ref{6MHz noise red detuned}. The same measurement blue detuned from the atomic resonance confirmed in fig. \ref{6MHz noise blue detuned} the atomic nature of the atomic loss. Centered in around 6~MHz and 
-12~MHz we see the presence of around twelve peaks that corresponds to the hyperfine state targeted.
+\ref{6MHz noise red detuned}. The same measurement blue detuned from the atomic resonance confirmed in fig. \ref{6MHz noise blue detuned} the atomic nature of the losses. Starting from the atomic resonance 
+at 0~MHz one decrease the frequency of the beating-note: centered in around -6~MHz and 
+-12~MHz we see the presence of around twelve peaks that corresponds to the hyperfine state targeted.
+\hl{mean temperature of the gas, SU(10)...}
+Looking for molecular lines around +6~MHz and +12~MHz with the 11/2 beam is then compromised by the presence of these peaks.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf}
+    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf}
     \caption[]{ }
     \label{6MHz noise red detuned}
 \end{figure}
@@ -972,8 +975,6 @@ The molecular lines on $^{87}Sr$ have been reached only with the MOGlabs source.
 Datas have been obtained for different waist size in an effort to increase two-body losses, same for the density of the cloud. \\
 
 The first molecular states have been detected at $f_1 = 259.01\pm 0.12$ MHz, $f_2 = 274.83\pm 0.03$ MHz and $f_3 = 375.74\pm 0.48$ MHz for experimental and fitted parameters refered in \ref{tab:summary_fits_PA_final}.
-A validation of the two-body losses nature of the collisions repsonsible for these molecular lines failed: that could come from the presence of three-body losses that would break the $-\beta N^2$ decay at short exposure time. The gas could also not be thermalized at the PA moment of the sequence which will induce collisions between the different spin components. We see at the top small window of the plot where the data is zoomed on the first exposure times under a second the presence of different tendencies. \\
-A last reason mostly probable for the wrong fitting is the presence of another sideband at around $176$ MHz from this molecular line that would induce atomic losses.
 
 
 \begin{figure}[H]
@@ -985,7 +986,7 @@ frequency for both laser configurations is tuned by ”AOM Inj Slave 1”, adjus
     \label{zoom red chain battement}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \begin{subfigure}{1\linewidth}
         \centering
@@ -1009,26 +1010,8 @@ frequency for both laser configurations is tuned by ”AOM Inj Slave 1”, adjus
 \end{figure}
 
 
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}[t]{0.7\linewidth}
-        \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/data190_exp.pdf}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{0.7\linewidth}
-        \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data_194_exp.pdf}
-    \end{subfigure}
-    \caption[]{Atomic evolution time for one and two-body losses measurement. Left : exponential decay on $f = 276$ MHz molecular line from atomic 
-    transition on $^{87}Sr$. Right : $376$ MHz molecular line on $^{87}Sr$.}
-    \label{exponential decay 87Sr}
-
-\end{figure}
-
-The exponential decay of the second molecular line at $f = 274.83$ MHz is presented at the bottom \ref{exponential decay 87Sr}: this data is well fitted by the two and one-body collisions function.
-
-\subsubsection{Interpretation of dN/dt decay}
+\subsection{Verification of the molecular nature of the lines}
+\subsubsection{dN/dt decay interpretation}
 While these two slopes are usually a signature of two-body losses we observed the same behavior for the atomic resonance obtained with the red diode noise at 
 6 MHz as visible in \ref{exp decay 6 MHz noise} in dark purple. This experiment has been obtained on a red detuned signal from $F=9/2$ hyperfine state of $^{87}Sr$.
 The atoms have been evaporated during $500$ ms, recompressed and illuminated during $T = 2000$ms. In this figure the atom decay is clearly well described 
@@ -1048,7 +1031,48 @@ experiment.
 It appears that for non-recompressed gas it is possible to still have thermalization when the evaporation is not well optimized and 
 that affects the two-body losses rate. For recompressed gas as in \ref{exp decay 6 MHz noise} collisions keep occuring for atoms contained 
 in a smaller volume which explains the slope break on the plot.\\
-A last trustworthy test is the measurement of the temperature of the gas: \hl{when PA occurs we expect the gas to be hotter because of}
+
+\subsubsection{Temperature as an ultimate proof}
+A last trustworthy test is the measurement of the temperature of the gas: when PA occurs we expect the gas to be hotter. The coldest atoms
+at the bottom of the trap are most likely to photoassociate. Then the resting atoms redistribute by elastic collisions leading to a hotter gas
+with a mean temperature per atom increased. \\
+Figure \ref{temp 6MHz noise} is a representation of the temperature of the gas during the same experiment as \ref{6MHz noise red detuned}.
+The mean temperature of the gas in the absence of the PA being \hl{temp} we see from the graphe that appart the few points way above the 
+mean temperature we would expect a full tendency of the temperature with the width of the transitions which is not here.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_16.pdf}
+    \caption[]{Temperature of the gas during the experiment described in \ref{6MHz noise red detuned} where we observe a number of atoms decaying 
+    with a two-body loss-like behavior while it is not the case. The temperature of the gas does not show any increase which is a proof of the elastic
+    collisions only and the absence of molecule formation.}
+    \label{temp 6MHz noise}
+\end{figure}
+
+\subsubsection{Exponential decay and temperature increase: molecular lines with unexpected shape}
+A validation of the two-body losses nature of the collisions repsonsible for these molecular lines failed: that could come from the presence of three-body losses that would break the $-\beta N^2$ decay at short exposure time. The gas could also not be thermalized at the PA moment of the sequence which will induce collisions between the different spin components. We see at the top small window of the plot where the data is zoomed on the first exposure times under a second the presence of different tendencies. \\
+A last reason mostly probable for the wrong fitting is the presence of another sideband at around $176$ MHz from this molecular line that would induce atomic losses.
+
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.7\linewidth}
+        \centering
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/data190_exp.pdf}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.7\linewidth}
+        \centering
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data_194_exp.pdf}
+    \end{subfigure}
+    \caption[]{Atomic evolution time for one and two-body losses measurement. Left : exponential decay on $f = 276$ MHz molecular line from atomic 
+    transition on $^{87}Sr$. Right : $376$ MHz molecular line on $^{87}Sr$.}
+    \label{exponential decay 87Sr}
+
+\end{figure}
+
+The exponential decay of the second molecular line at $f = 274.83$ MHz is presented at the bottom \ref{exponential decay 87Sr}: this data is well fitted by the two and one-body collisions function.
+
 
 \begin{table}[htbp]
 \centering
