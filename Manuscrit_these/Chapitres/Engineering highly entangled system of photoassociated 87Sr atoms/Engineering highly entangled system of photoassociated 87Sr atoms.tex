@@ -92,7 +92,7 @@ inelastic and $\theta$ is the angle between the incident and scattered wavevecto
 
 \begin{figure}
     \centering    
-    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf}
+    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/diffusion_sinus.pdf}
     \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances $R(a_0)$ behaves as a summation of an incoming plane wave
     and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave
     collisions at $l=0$. The scattering occurs at background scattering length $R(a_o) = a_{bg}$ the distance
@@ -265,21 +265,22 @@ the laser intensity $I$ and/or the detuning $\Delta$ of the laser with the bound
 \subsection{General scaling laws for PA}
 We will discuss in this subsection the dependence of the PA rate $K_2$ on different parameters. This latter introduced above can express as \cite{blatt_systematic_2011}
 \begin{equation}
-    K_2 = \beta \times V_e = \frac{8\pi \hbar}{m_p}\times \frac{l_{opt}}{\Delta^2 +\frac{1}{4}(1+2k l_{opt})^2}
+    K_2 = \frac{8\pi \hbar}{m_p}\times \frac{l_{opt}}{\Delta^2 +\frac{1}{4}(1+2k l_{opt})^2}
     \label{K2 complet}
 \end{equation}
 
 where $\Delta$ is the detuning of the laser from the molecular resonance and $m_p$ the mass of the nucleus.
 The relation between the two-body rate $K_2$ and the fitting parameter $\beta$ demonstrates as:
 
-\begin{gather}
-    \frac{dN}{dt} = -\beta \iiint n^2(x,y,z) \, d^3r \label{eq:3.24} \\[1.5ex]
-    \text{with } n(x,y,z) = n_0 \exp\left( -\frac{x^2}{2\sigma_x^2} - \frac{y^2}{2\sigma_y^2} - \frac{z^2}{2\sigma_z^2} \right) \label{eq:3.25} \\[1.5ex]
-    \frac{dN}{dt} = -\beta n_0^2 \pi^{3/2} \sigma_x \sigma_y \sigma_z = -\beta \frac{N^2}{2\sqrt{2}V_e} \label{eq:3.26} \\[1.5ex]
-    \text{where } V_e = (2\pi)^{3/2} \sigma_x \sigma_y \sigma_z \label{eq:3.27} \\[1.5ex]
-    \text{Then } K_2 = \frac{\beta}{2\sqrt{2}V_e} \label{eq:3.28}
-\end{gather}
 
+\begin{gather}
+\frac{dN(t,T)}{dt} = -K_2 \iiint n^2(x,y,z,t,T) , d^3r \label{eq:3.24}\\[1.5ex]
+\text{with } n(x,y,z,t,T) = n_0 \exp\left( -\frac{x^2}{2\sigma_x(T)^2} - \frac{y^2}{2\sigma_y(T)^2} - \frac{z^2}{2\sigma_z(T)^2} \right) \label{eq:3.25} \\[1.5ex]
+\text{and } n_0 = \frac{N(t,T)}{(2\pi)^{3/2}\sigma_x(T)\sigma_y(T)\sigma_z(T)}\label{eq:3.25bis} \\[1.5ex]
+\frac{dN(t,T)}{dt} = -K_2 \frac{N(t,T)^2}{2\sqrt{2}V_e(T)} = -\beta(T) N(t,T)^2 \label{eq:3.26} \\[1.5ex]
+\text{where } V_e(T) = (2\pi)^{3/2} \sigma_x(T) \sigma_y(T) \sigma_z(T) \label{eq:3.27} \\[1.5ex]
+\text{Then } \beta(T) = \frac{K_2}{2\sqrt{2}V_e(T)} \label{eq:3.28}
+\end{gather}
 
 in comparison with \cite{han_photoassociation_2018}.
 For low temperature the De Broglie wavelength $\lambda_{dB} = \frac{h}{\sqrt{2m k_B T}}$ settles the negligibility of wavector $k$ in \ref{K2 complet}. 
@@ -297,7 +298,6 @@ since it is linear with:
 where $f_{rot} = 1$ for $0_u^+$ resonances and $f_{rot} = 2$ for $1_u$ resonances  \cite{reschovsky_narrow-line_2018}, 
 $\lambda=689.45$ nm the wavelength of the transition. The amplitude of the PA rate also varies with the recovery of the
 initial $\psi_g$ and final state $\psi_e$ wavefunctions through the Franck-Condon factor $f_{FC}$
-
 \begin{equation}
     F_{FC} = \Bigg|\int_0^{\infty} \psi_g(r) \psi_e(r) dr\Bigg |^2
 \end{equation}
@@ -799,7 +799,6 @@ highlighted two critical experimental insights:
 \subsubsection{General experimental framework and baseline parameters}
 As introduced in this chapter, the PA experiment for $^{88}\text{Sr}$ begins at an initial density of $n_0 = 5 \times 10^{13}\text{ atoms/cm}^3$ and a temperature of $T \simeq 1.7\text{ }\mu\text{K}$. 
 The atomic transition is addressed at $f^{\text{RF}}_{\text{beating}} = f_{\text{Raman}}$ using a laser beam with an intensity of $I = 100 I_{\text{sat}}$ and a waist of $w_0 = 340\text{ }\mu\text{m}$. The expected characteristic timescale for the illumination is defined by isolating the two-body loss term in Eq. \ref{equation one and two-body losses}:
-
 \begin{gather*}
     \frac{dn(t)}{dt} = -K_2 n(t)^2 \\
     \int_{n_0}^{n(t)} \frac{dn}{n^2} = -K_2 \int_{0}^{t} dt \\
@@ -933,18 +932,31 @@ Looking for molecular lines around +6~MHz and +12~MHz with the 11/2 beam is then
 \end{figure}
 
 \subsubsection{Decay dynamics ($dN/dt$)}
-The ultimate verification of inelastic collisions is the $dN/dt$ discussed in 3.1.3. This curve enables to (i) verify the two-body loss presence and (ii) determine the value of $l_{opt}/I$ that characterizes the stength of the loss rate $K_2$.
-As dicussed in the introduction of this chapter to measure $dN/dt$ for unvariant temperature the fitting function is
+The ultimate verification of inelastic collisions is the time evolution of the atom number $dN/dt$ discussed in Section~3.1.3. This curve allows one to (i) verify the presence of two-body losses and (ii) determine the value of $l_{\text{opt}}/I$ which characterizes the strength of the loss rate $K_2$. The fitting function is obtained by integrating the rate equation:
+\begin{gather}
+    \frac{dN(t,T)}{dt} = -\beta(T) N(t,T)^2 - \Gamma N(t,T) \label{eq:start} \\[1.5ex]
+    \text{Setting } M(t,T) = N(t,T)e^{\Gamma t} \iff N(t,T) = M(t,T)e^{-\Gamma t} \label{eq:change_var} \\[1.5ex]
+    \dot{M}(t,T)e^{-\Gamma t} - \Gamma M(t,T) e^{-\Gamma t} = -\beta(T) M(t,T)^2 e^{-2\Gamma t} - \Gamma M(t,T) e^{-\Gamma t} \label{eq:diff} \\[1.5ex]
+    \int_{0}^{t} \frac{\dot{M}(t',T)}{M(t',T)^2} \, dt' = -\int_{0}^{t} \beta(T) e^{-\Gamma t'} \, dt' \label{eq:integ} \\[1.5ex]
+    -\frac{1}{M(t,T)} + \frac{1}{N_0} = \frac{\beta(T)}{\Gamma} \left( e^{-\Gamma t} - 1 \right) \label{eq:inv_M} \\[1.5ex]
+    M(t,T) = \frac{N_0 \Gamma}{\Gamma + \beta(T) N_0 \left( 1 - e^{-\Gamma t} \right)} \label{eq:sol_M} \\[1.5ex]
+    N(t,T) = \frac{N_0 e^{-\Gamma t}}{1 + \frac{\beta(T) N_0}{\Gamma} \left( 1 - e^{-\Gamma t} \right)} \label{eq:final_fit}
+\end{gather}
+
+Because $N(t,T)$ depends on the temperature, one wants to re-express Eq.~\ref{eq:final_fit} by explicitly showing the $T$-dependence of $\beta(T)$. The atoms are trapped in an ODT with a mean trapping frequency $\bar{\omega} = (\omega_x \omega_y \omega_z)^{1/3}$. According to the equipartition theorem, the spatial width $\sigma_{i}$ (with $i=\{x,y,z\}$) of the Gaussian distribution relates to the temperature $T$ via $\frac{1}{2}m_{\text{at}}\omega_{i}^2\sigma_{i}^2 = \frac{1}{2}k_B T$. This yields the effective volume:
+
 \begin{equation}
-    f(t) = e^{-\Gamma t}\frac{N_0}{1-(\frac{\beta N_0}{\gamma})e^{-\gamma t -1}}
-    \label{fitting function exp}
+    V_e(T) = (2\pi)^{3/2}\left(\frac{k_B T}{m_{\text{at}}}\right)^{3/2} \frac{1}{\omega_x\omega_y\omega_z} = (2\pi)^{3/2}\left(\frac{k_B T}{m_{\text{at}}\bar{\omega}^2}\right)^{3/2}
 \end{equation}
-From this equation one expect two slopes on the curve: a first one with fast two-body decay followed by a slow one-body regime as the density drops.
-Figure \ref{88sr exponential decay} shows these two fashions from which the lorentzian fit gives the $K_2$ value : the deduced
-optical length is $l_{opt} = 13a_0$/(W/cm$^2)$ for $f_{\nu=2}=-222.161(35)$, while in \cite{zelevinsky_narrow_2006} $l_{opt} = 1a_0$/(W/cm$^2)$.
-For the second line we measure $l_{opt} = 7.6\times 10^3 a_0$ /(W/cm$^2)$ which is also consistent with the theoretical value of \cite{blatt_systematic_2011}.
 
+with $\bar{\omega}=2\pi 50$~rad/s. By substituting $\beta(T) = \frac{K_2}{2\sqrt{2}V_e(T)}$ into the population evolution law, the final fitting equation becomes:
 
+\begin{equation}
+    N(t,T) = \frac{N_0 e^{-\Gamma t}}{1 + \left[ \frac{K_2}{8\pi^{3/2}} \left( \frac{m_{\text{at}}}{k_B T} \right)^{3/2} \omega_x\omega_y\omega_z \right] 
+    \frac{N_0}{\Gamma} \left( 1 - e^{-\Gamma t} \right)}
+\end{equation}
+
+From this equation, one expects two distinct slopes on the decay curve: an initial fast two-body decay regime followed by a slow one-body regime as the atomic density drops. Figure~\ref{88sr exponential decay} illustrates these two regimes. The experimental data are adjusted using this model, from which the $K_2$ value is extracted. For the resonance $f_{\nu=2}=-222.161(35)$~GHz, the deduced optical length is $l_{\text{opt}} = 13 \, a_0/(\text{W/cm}^2)$, which can be compared to the value of $l_{\text{opt}} = 1 \, a_0/(\text{W/cm}^2)$ reported in \cite{zelevinsky_narrow_2006}. For the second line, we measure $l_{\text{opt}} = 7.6\times 10^3 \, a_0/(\text{W/cm}^2)$, which is consistent with the theoretical predictions from \cite{blatt_systematic_2011}.
 \begin{figure}[H]
     \centering
     \begin{subfigure}[t]{0.48\linewidth}

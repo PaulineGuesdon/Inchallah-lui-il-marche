@@ -134,34 +134,16 @@ ATOMIC RES : 65.631*2 = 131.262
 
 
 
-[DATA 91]
-[DATA 91]
-  Amplitude (A)        : -7.99e-01 ± 3.17e-02
-  Centre (x0 - 131.26) : 23.9876 ± 0.0051 MHz
-  Largeur (Gamma)      : 0.3445 ± 0.0273 MHz
-  Offset               : 1.1855 ± 0.0318
+Fréq réelle : f = 222.69606 
+
+[DATA 144]
+  Amplitude (A)        : -6.92e+05 ± 3.30e+04
+  Centre (x0 - 131.26) : 24.1454 ± 0.0034 MHz
+  Largeur (Gamma)      : 0.1220 ± 0.0127 MHz
+  Offset               : 1151455.7945 ± 13633.8230
 
 [DATA 146]
-  Amplitude (A)        : -7.28e-01 ± 2.33e-02
-  Centre (x0 - 131.26) : 24.1399 ± 0.0020 MHz
-  Largeur (Gamma)      : 0.1155 ± 0.0088 MHz
-  Offset               : 1.0854 ± 0.0170
-
-[ÉCART PHYSIQUE RÉEL]
-  Delta(f) entre les deux raies : 1.2045 ± 0.00547 MHz
-============================================================
-
-
-==============================
-   RÉSULTATS DU FIT LORENTZ 146
-==============================
-Amplitude : -1.147e+06 ± 2.714e+04
-Centre x0 : 232.09803 ± 0.00186
-Largeur Γ : -0.33014 ± 0.01312
-Offset    : 1.472e+06 ± 2.875e+04
-------------------------------
-Erreur syst. : 7.38%
-Chi2 réduit  : 122.39
-==============================
-
-Fréq réelle : f = 222.69606 
+  Amplitude (A)        : -7.67e+05 ± 2.46e+04
+  Centre (x0 - 131.26) : 24.1470 ± 0.0041 MHz
+  Largeur (Gamma)      : 0.2309 ± 0.0177 MHz
+  Offset               : 1143097.8576 ± 17914.5528
