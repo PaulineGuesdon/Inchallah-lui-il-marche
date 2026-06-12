@@ -1,11 +1,36 @@
 \chapter{Ramsey interferometers on qudit \label{cha:litreivew}}
-Positive-Operator-Valued Measures (POVM) respond to an impossibility of Projective Valued Measure (PVM) to have information on the associated Hilbert space from one measurement. For example for ensemble $\left\{ \ket{\psi_1} = \ket{0}, \quad \ket{\psi_2} = \frac{1}{2}\ket{0} + \frac{\sqrt{3}}{2}\ket{1} \right\}$ because $\bra{\psi_1}\ket{\psi_2} = 1/2 \neq 0$ the measurement $P(\bra{\psi_1}|\ket{\psi_2})$ gives a probability of $25\‰$ to be initially in $\ket{
-  \psi_2}$ but it is not possible to deduce the probability of being in $\ket{\psi_1}$ since the states are non-orthogonal: then some information is completely lost. 
+This chapter is dedicated to the experimental and theoretical results published in our paper, "Coherent control over the high-dimensional space of the nuclear spin of alkaline-earth atoms" \cite{ahmed_coherent_2025}. In this work, we harness the large, 10-dimensional nuclear spin Hilbert space ($2F+1 = 10$) of $^{87}\text{Sr}$ atoms to implement advanced quantum sensing and manipulation protocols. By utilizing a tensor light shift to isolate two specific spin states, we engineered a highly robust pseudo-spin qubit. This pristine qudit resource exhibits an exceptionally long coherence time, showing no measurable signs of decoherence even after 3 seconds of free evolution. Building upon this platform, we designed multi-state interferometric schemes operating over four nuclear states, opening new avenues for multi-parameter quantum metrology and quantum information.
 
-  
+In traditional quantum metrology, standard interferometers are bounded by Projective Valued Measurements (PVM), which restrict the device to sensing a single physical quantity per experimental run. Tracking multiple environmental parameters or reconstructing the full state usually requires sequential measurements across different configurations, heavily increasing the statistical overhead and cycle times. The high-dimensional manifold of $^{87}\text{Sr}$ allows us to bypass these rigid constraints through parallelized architectures. Specifically, we demonstrated a parallel quantum sensor designed to simultaneously extract both the linear and the quadratic components of an external degeneracy-lifting field in a single shot. In the context of magnetic or optical field sensing, this capability is highly powerful: it enables the simultaneous measurement of a physical quantity (such as a magnetic field vector) and its associated noise or fluctuations, separating tracking signatures that would otherwise require separate, destructive measurement cycles.
+
+To formally understand how a quantum system can extract such complementary pieces of information simultaneously, one must look at the generalization of the measurement postulate via Positive-Operator-Valued Measures (POVM). Indeed, standard PVMs face a fundamental impossibility when trying to obtain complete information on a Hilbert space from a single outcome. For instance, considering a non-orthogonal state ensemble:
+\[
+\left\{ \ket{\psi_1} = \ket{0}, \quad \ket{\psi_2} = \frac{1}{2}\ket{0} + \frac{\sqrt{3}}{2}\ket{1} \right\}
+\]
+because $\langle\psi_1\vert\psi_2\rangle = 1/2 \neq 0$, a projection-based measurement in the $\{\ket{\psi_1}, \ket{\psi_1^\perp}\}$ basis yields a conditional probability of $P(\psi_1|\psi_2) = |\langle\psi_1\vert\psi_2\rangle|^2 = 0.25$. Because of this non-orthogonality, a single PVM outcome cannot deduce with certainty which state was prepared, and crucial information is completely lost.
+
+A POVM overcomes this by defining an ensemble of positive hermitian operators $\{E_1, E_2, E_3\}$ ($E_i \ge 0$) that are not constrained by the dimensionality of the Hilbert space. This forms the basis of Unambiguous State Discrimination (USD) \cite{ivanovic1987, dieks1988, peres1988}, where zero false positives are guaranteed by enforcing orthogonality conditions:
+\begin{gather}
+  \bra{\psi_2} E_1 \ket{\psi_2} = 0 \label{USD condition 1}\\
+  \bra{\psi_1} E_2 \ket{\psi_1} = 0 \label{USD condition 2}
+\end{gather}
+Probability conservation requires an inconclusive operator $E_3$ such that $\mathbb{I} = E_1 + E_2 + E_3$. Combined with semi-positivity, these constraints force the operators to be proportional to the dual basis projectors:
+\begin{gather}
+  E_1 = \lambda \ket{\psi_2^\perp}\bra{\psi_2^\perp} \\
+  E_2 = \lambda \ket{\psi_1^\perp}\bra{\psi_1^\perp}
+\end{gather}
+where the optimal weight $\lambda = 2/3$ saturates the $E_3 \ge 0$ condition (the Ivanovic-Dieks-Peres upper bound). This leads to a success probability of $P(E_1|\psi_1) = \lambda |\langle\psi_1\vert\psi_2^\perp\rangle|^2 = 1/2$, while the remaining $50\%$ is routed to the inconclusive outcome $E_3$.
+
+Our second interferometric scheme, detailed in Section \ref{Sec:BeyondPseduoSpin}, constitutes a direct physical realization of this POVM framework through multiplexed joint tomography. The protocol prepares a target qubit state $\ket{\psi} = \alpha \ket{-5/2} + \beta \ket{-7/2}$, and uses targeted coherent pulses to map a controlled fraction of these populations into two auxiliary ancillary states ($\ket{-9/2}$ and $\ket{-3/2}$). 
+
+This architecture maps beautifully onto the $\{E_1, E_2, E_3\}$ operator structure through a dual interpretation:
+\begin{itemize}
+    \item \textbf{Under the USD framework:} The ancillary populations ($\ket{-9/2}$ and $\ket{-3/2}$) act as the unambiguous channels ($E_1$ and $E_2$), extracting directional information with zero cross-talk, while the population remaining in the main interferometer ($\ket{-5/2}$ and $\ket{-7/2}$) embodies the inconclusive operator $E_3$, absorbing the non-orthogonal overlap.
+    \item \textbf{Under the Multiplexed Tomography framework:} The role of the $E_3$ residue is dynamically modulated by the pulse sequence. Across different experimental runs, the ancillary channels sequentially capture $S_z$ then $S_x$, while the main interferometer's residual population systematically monitors the complementary $S_y$ projection.
+\end{itemize}
+By unifying these concepts, our platform demonstrates how high-dimensional nuclear spins can be leveraged to minimize statistical overhead, offering a low-latency, powerful toolkit for high-fidelity state reconstruction and advanced quantum metrology.
+
 \section{Introduction}
-
-
 
 \label{Sec:Introduction}
 
