@@ -1,2 +1,16 @@
 \chapter{Algorithms}
 \label{cha:appendix}
+The variance 
+\begin{equation}
+    \text{Var}(\hat{J}_x) = \frac{1}{2} \left( J(J+1) - m^2 \right)
+\end{equation}
+
+is maximized for the projection $m = 0$ with $J = NS$, $S$ the total spin, $N$ the atomic number. This configuration defines the \textbf{Dicke states}, powerful resources for quantum-enhanced metrology. The sensitivity of such a state is quantified by the \textbf{Quantum Fisher Information} (QFI). For a $m=0$ Dicke state, the QFI reaches:
+\begin{equation}
+    F_Q = 4 \text{Var}(\hat{J}_x) = 2NS(NS+1)
+\end{equation}
+According to the \textbf{Cramér-Rao inequality}, which relates the phase uncertainty $\Delta \phi$ to the QFI:
+\begin{equation}
+    \Delta \phi \geq \frac{1}{\sqrt{F_Q}}
+\end{equation}
+it becomes evident that the precision on $\phi$ is improved by a factor of approximately $\sqrt{N}$ compared to the SQL, scaling as $1/NS$, and approaching the \textbf{Heisenberg Limit}. This represents the ultimate precision allowed by the laws of quantum mechanics.

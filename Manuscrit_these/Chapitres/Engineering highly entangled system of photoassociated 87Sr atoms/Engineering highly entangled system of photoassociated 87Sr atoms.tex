@@ -3,62 +3,49 @@
 % Centralized path for the theory figures used in this chapter.
 \newcommand{\PATheoryFigDir}{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/}
 \newcommand{\PATheoryFig}[1]{\PATheoryFigDir#1}
-In quantum metrology, a fundamental limit to the precision of a phase parameter $\phi$ is the \textbf{Standard Quantum Limit} (SQL), often referred to as quantum shot noise, defined as $\Delta\phi = 1/\sqrt{2Ns}$ \cite{pezze_quantum_2014}. In the previous chapter on Ramsey interferometry, we discussed how the achievable accuracy is often limited by experimental sources, such as atom leaking to other $m_F$ states affecting the signal-to-noise ratio.
+In quantum metrology, a fundamental limit to the precision of a phase parameter $\phi$ is the \textbf{Standard Quantum Limit} (SQL), often referred to as quantum shot noise, defined as $\Delta\phi = 1/\sqrt{2Ns}$ \cite{pezze_quantum_2014} for N atoms of individual spin s. In the previous chapter on Ramsey interferometry, we discussed how the achievable accuracy is often limited by experimental sources, such as atom leaking to other $m_F$ states affecting the signal-to-noise ratio.
 
-To overpass this threshold, one must exploit non-classical states with specific correlations. For a collective spin state $|J, m\rangle$ the variance of one of the transverse spin components $\hat{J}_x, \hat{J}_y$ provides noise information of the enhanced interferometer.
-The variance 
-\begin{equation}
-    \text{Var}(\hat{J}_x) = \frac{1}{2} \left( J(J+1) - m^2 \right)
-\end{equation}
+To mitigate these experimental limitations and restore a clean interferometric signal, one approach is to filter out the unwanted spin components. Beyond simply recovering the classical shot-noise limit, a long-term prospect of such state-purification techniques is to access non-classical collective states, such as \textbf{Dicke states} $|J, m=0\rangle$. In these highly entangled manifolds, specific spin correlations optimize the Quantum Fisher Information (QFI), conceptually allowing the phase sensitivity to overcome the SQL and approach the \textbf{Heisenberg Limit}. 
 
-is maximized for the projection $m = 0$ with $J = NS$, $S$ the total spin, $N$ the atomic number. This configuration defines the \textbf{Dicke states}, powerful resources for quantum-enhanced metrology. The sensitivity of such a state is quantified by the \textbf{Quantum Fisher Information} (QFI). For a $m=0$ Dicke state, the QFI reaches:
-\begin{equation}
-    F_Q = 4 \text{Var}(\hat{J}_x) = 2NS(NS+1)
-\end{equation}
-According to the \textbf{Cramér-Rao inequality}, which relates the phase uncertainty $\Delta \phi$ to the QFI:
-\begin{equation}
-    \Delta \phi \geq \frac{1}{\sqrt{F_Q}}
-\end{equation}
-it becomes evident that the precision on $\phi$ is improved by a factor of approximately $\sqrt{N}$ compared to the SQL, scaling as $1/NS$, and approaching the \textbf{Heisenberg Limit}. This represents the ultimate precision allowed by the laws of quantum mechanics.
+While the deterministic generation of such large-scale entangled states remains a major open challenge, a promising bottom-up method relies on spin-selective photoassociation. By leveraging cold collisions to selectively remove pairs within the singlet channel, one can conceptually isolate a sub-ensemble of atoms with symmetric triplet correlations, which serves as a necessary precursor for a Dicke manifold.
 
-This chapter will demonstrate the generation and enhancement of Dicke states via the \textbf{photoassociation} (PA) process in $^{87}$Sr. This isotope is an ideal candidate for metrology due to its large nuclear spin and the high degree of control over its collective spin states. 
+Moving toward this goal, the work presented in this chapter focuses on the essential preliminary step: the spectroscopic identification of the molecular states involved in this spin-selective process. At this stage of the experiment, our system is characterized by the resolution of three distinct spectroscopic lines, meaning we are still far from generating collective quantum correlations. However, the precise mapping of these three lines provides the first direct evidence of the underlying molecular structure and the spin-selection rules at play. The objective of this chapter is thus to benchmark the photoassociation mechanism itself, establishing the necessary spectroscopic foundations required for future spin-manipulation and state-purification protocols.\\
 
-The discussion opens with fundamental elements of scattering theory. At large interatomic separations, the 1D Schrödinger equation yields to solutions that naturally define the scattering length, a key parameter for cold atom interactions. These concepts lay the groundwork for introducing photoassociation and the resulting atomic density evolution through one- and two-body losses. Subsequently, an analysis of molecular potentials—referred to here as external states—permits an estimation of the binding energies of the internal molecular states where two-body losses are enhanced. Finally, we present the experimental results and discuss the technical and physical challenges that could impact signal interpretation or lead to misidentification of the quantum enhancement.
-
+This chapter opens with the fundamental concepts of scattering theory required to understand the mechanisms of photoassociation, which drives the evolution of atomic density through one- and two-body loss processes. Next, we present preliminary experimental results obtained with $^{88}\text{Sr}$. Leveraging the well-documented molecular potentials of this bosonic species allows us to benchmark and calibrate our experimental setup. Building upon these foundations, we then focus on the fermionic isotope, $^{87}\text{Sr}$. We provide a detailed presentation of the experimental data, accompanied by a thorough analysis of the technical challenges and systematic issues that could account for the low contrast observed in the molecular lines. Finally, the chapter concludes with a discussion regarding the surprising number of detected lines and their specific profiles, which may hint at the existence of yet unexplained physical phenomena.
 \section{Introduction on photoassociation}
 \subsection{Scattering theory}
 Understanding the PA process necessitates an introduction to scattering theory to define key quantities such 
 as the scattering length and the optical length. These parameters emerge naturally from the asymptotic analysis 
 of the radial Schrödinger equation.\\
 In the study of inter-atomic interactions, the Born-Oppenheimer approximation provides a natural
-simplification. Due to the large mass ratio $\mu = m_p/m_e \simeq 1000$ -$m_p$ the proton mass and $m_e$ the electron mass-
+simplification. Due to the large mass ratio $\mu = m_n/m_e \simeq 1000$ -$m_n$ the nucleus mass and $m_e$ the electron mass-
 the nuclei move on a much slower timescale than the electrons. One can therefore neglect the coupling terms between the nuclear
 and electronic kinetic energies, and solve the electronic problem on spherical coordinate system centered
 in nucleus.\\
 This allows the total wavefunction to be factorized into a radial and angular part:
 
 \begin{equation}
-    \psi(r, \theta,\phi) = R_l(r) Y^m_l(\theta, \phi)
+    \psi(r, \theta,\phi) = U_l(r) Y^m_l(\theta, \phi)
 \end{equation}
 \\
 where the spherical harmonics $Y^m_l(\theta, \phi)$ encode the angular dependance.
-$R_l(r)$ is the function describing the radial movement of the bound atoms well described in the frame centered
+$U_l(r)$ is the function describing the radial movement of the bound atoms well described in the frame centered
 in its center of mass. The potential experienced by the atoms inherits the spherical symmetry of the problem.
 The Schr\"odinger equation then reduces to a one-dimensional problem which can be treated for each
 partial wave $l$:
 
 \begin{equation}
-    -\frac{\hbar^2}{2m_p}\left(\frac{1}{r^2} \frac{d^2 R_l(r)}{dr^2}r^2 - \frac{l(l+1)}{r^2}
-    + \hat{V}(r)\right)R_l(r) = E R_l(r)
+    -\frac{\hbar^2}{2\mu_N}\left(\frac{1}{r^2} \frac{d^2 U_l(r)}{dr^2}r^2 - \frac{l(l+1)}{r^2}
+    + \hat{V}(r)\right)U_l(r) = E U_l(r)
     \label{radial equation}
 \end{equation}
-
+$\mu_N = \frac{m_N^2}{2m_N} = \frac{1}{2m_N}$ and $V(r)$ is the electronic potential.
 This one-dimensional structure allows an analogy with the \cite{Landau} framework, as will be
 discussed below. To extract the scattering properties of the system, one studies the asymptotic
 behavior of the solutions to this equation. At large distances, where the potential $\hat{V}(r)$
 vanishes, the general solution for each partial wave $l$ takes the form \cite{dalibard_interactions_nodate}:
 \begin{equation}
-    R_l(r) \xrightarrow{r\to\infty} \frac{a_l}{r}sin(kr-\frac{l\pi}{2} + \delta_l)
+    U_l(r) \xrightarrow{r\to\infty} \frac{a_l}{r}sin(kr-\frac{l\pi}{2} + \delta_l)
     \label{solution at long r}
 \end{equation}
 
@@ -71,7 +58,7 @@ shifts which at low momenta $k$ finds:
  \begin{equation}
     \delta_l \propto k^{2l+1}
  \end{equation}
-
+\hl{regarder les hypothèses dans le Landau }
 For s-waves ($l=0$), this leads to the definition of the scattering length:
 \begin{equation}
     a = -\lim_{k\to 0} \delta_0/k
@@ -86,17 +73,18 @@ superposition can be rewritten as an incoming plane wave and an outgoing scatter
     \Psi \xrightarrow{r\to\infty} e^{i\mathbf{k}\cdot \mathbf{z}} + f(\theta) \frac{e^{ikr}}{r}
     \label{incoming outcoming scattering wave}
 \end{equation}
+\hl{donner lien entre f(theta)et delta}
 
-where $f(\theta)$ is the scattering amplitude which determines wheter the collision is elastic or
-inelastic and $\theta$ is the angle between the incident and scattered wavevectors.
+where $f(\theta)$ is the scattering amplitude which determines whether there are 
+inelastic collisions and $\theta$ is the angle between the incident and scattered wavevectors.
 
 \begin{figure}
    \centering    
     \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf}
-    \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances $R(a_0)$ behaves as a summation of an incoming plane wave
+    \caption[fig:scattering\_concept]{The wavefunction $\Psi$ at large inter-atomic distances r behaves as a summation of an incoming plane wave
     and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave
-    collisions at $l=0$. The scattering occurs at background scattering length $R(a_o) = a_{bg}$ the distance
-    where the potential is effective in absence of external coupling. }
+    collisions at $l=0$. The scattering occurs at background scattering length $r = a_{bg}$ the distance
+    where the elastic collisions properties start to be modified.}
     \label{fig:scattering_concept}
 \end{figure}
 
@@ -113,9 +101,9 @@ In the presence of inelastic processes such as photoassociation, the colliding a
 from the scattering channel-either by forming a bound molecular
 state or by releasing kinetic energy. This loss of flux from the
 incoming channel cannot be captured by a purely real phase shift,
-as $S_l = 1$ implies full conservation of the wavefunction
+as $|S_l|= 1$ implies full conservation of the wavefunction
 amplitude. To account for this absorption of flux, $\delta_l$
-must be extended to the complex plane, allowing $S_l < 1$
+must be extended to the complex plane, allowing $|S_l < 1$
 and introducing the possibility of inelastic scattering.\\
 
 The associated elastic cross section representing the surface where the scope
@@ -134,7 +122,7 @@ is
 \end{equation}
 
 
-Then from the condition $|S_l| < 1$ we deduce an approximated scattering amplitude $S_0$
+Then from the condition $\delta_0 << 1$ we deduce an approximated scattering amplitude $S_0$
 \begin{equation}
     S_0 = e^{2i\delta_0} \simeq 1 + 2i\delta_0
 \end{equation}
