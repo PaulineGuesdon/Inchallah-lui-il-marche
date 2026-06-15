@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: these_main.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+Database file #1: ref.bib
+Database file #2: spincontrol_refs.bib
+Warning--entry type for "notemixture" isn't style-file defined
+--line 63 of file spincontrol_refs.bib
+Warning--empty publisher in Landau
+Warning--empty journal in dalibard_interactions_nodate
+Warning--empty year in dalibard_interactions_nodate
+Warning--empty journal in reichenbach_optical_nodate
+Warning--empty year in reichenbach_optical_nodate
+You've used 90 entries,
+            1876 wiz_defined-function locations,
+            1043 strings with 23032 characters,
+and the built_in function-call counts, 29606 in all, are:
+= -- 2802
+> -- 1684
+< -- 0
++ -- 595
+- -- 505
+* -- 2151
+:= -- 4196
+add.period$ -- 98
+call.type$ -- 90
+change.case$ -- 87
+chr.to.int$ -- 0
+cite$ -- 95
+duplicate$ -- 1626
+empty$ -- 2138
+format.name$ -- 505
+if$ -- 7223
+int.to.chr$ -- 0
+int.to.str$ -- 90
+missing$ -- 89
+newline$ -- 283
+num.names$ -- 89
+pop$ -- 209
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1492
+stack$ -- 0
+substring$ -- 1380
+swap$ -- 963
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 5
+while$ -- 207
+width$ -- 92
+write$ -- 911
+(There were 6 warnings)
