@@ -1,58 +1,55 @@
-This is BibTeX, Version 0.99e
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: these_main.aux
-Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
-Reallocating 'name_of_file' (item size: 1) to 4 items.
-Reallocating 'name_of_file' (item size: 1) to 17 items.
 Database file #1: ref.bib
 Database file #2: spincontrol_refs.bib
 Warning--entry type for "notemixture" isn't style-file defined
---line 63 of file spincontrol_refs.bib
+--line 62 of file spincontrol_refs.bib
 Warning--empty publisher in Landau
 Warning--empty journal in dalibard_interactions_nodate
 Warning--empty year in dalibard_interactions_nodate
 Warning--empty journal in reichenbach_optical_nodate
 Warning--empty year in reichenbach_optical_nodate
-You've used 90 entries,
+You've used 91 entries,
             1876 wiz_defined-function locations,
-            1043 strings with 23032 characters,
-and the built_in function-call counts, 29606 in all, are:
-= -- 2802
-> -- 1684
+            1051 strings with 23185 characters,
+and the built_in function-call counts, 30109 in all, are:
+= -- 2863
+> -- 1692
 < -- 0
-+ -- 595
-- -- 505
-* -- 2151
-:= -- 4196
++ -- 598
+- -- 507
+* -- 2183
+:= -- 4255
 add.period$ -- 98
-call.type$ -- 90
-change.case$ -- 87
+call.type$ -- 91
+change.case$ -- 88
 chr.to.int$ -- 0
-cite$ -- 95
-duplicate$ -- 1626
-empty$ -- 2138
-format.name$ -- 505
-if$ -- 7223
+cite$ -- 96
+duplicate$ -- 1661
+empty$ -- 2175
+format.name$ -- 507
+if$ -- 7353
 int.to.chr$ -- 0
-int.to.str$ -- 90
-missing$ -- 89
-newline$ -- 283
-num.names$ -- 89
-pop$ -- 209
+int.to.str$ -- 91
+missing$ -- 91
+newline$ -- 285
+num.names$ -- 90
+pop$ -- 205
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1492
+skip$ -- 1527
 stack$ -- 0
-substring$ -- 1380
-swap$ -- 963
+substring$ -- 1432
+swap$ -- 987
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 207
-width$ -- 92
-write$ -- 911
+while$ -- 212
+width$ -- 93
+write$ -- 923
 (There were 6 warnings)

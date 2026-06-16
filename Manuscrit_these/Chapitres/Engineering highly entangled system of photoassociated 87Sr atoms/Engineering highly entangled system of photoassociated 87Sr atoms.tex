@@ -135,14 +135,10 @@ At low temperatures we can re-express equations \ref{sigma elastic} and \ref{sig
 As an illustration a usual case of the elastic collisions is atoms in the ground
 state. For inelasticity photoassociation is a good example of
 dissipative process where two atoms in the ground state are coupled to a molecular state by a laser.
-
 \subsection{PA and complex scattering length}
-PA is a process from which free atoms pair are bound to each other at the same time that they absorb one photon. 
-Effectively, the bound molecule is typically seen as lost, and perceived as a two-body loss effect. \\
-In the atomic pair frame, the electric dipole interaction drives the system from the ground electronic state
-$\psi_g$ of potential $V_g(r)$ to the excited state $\psi_e$ of $V_e(r)$. \\
-In the absence of the resonant laser the equation evolution of the system express as
+Photoassociation (PA) is a process in which a pair of colliding free atoms absorbs a photon to form a bound molecule in an excited electronic state. Effectively, because the short-lived molecule quickly decays into deeply bound states or dissociates with high kinetic energy, it escapes the optical trap. Consequently, the bound molecule is typically seen as lost, and the process is perceived as a macroscopic two-body loss effect.
 
+In the atomic pair frame, the electric dipole interaction drives the system from the ground electronic state $\psi_g$ of potential $V_g(r)$ to the excited molecular state $\psi_e$ of potential $V_e(r)$. In the absence of a resonant laser, the internal evolution of the system is purely elastic and expresses as:
 \begin{equation}
     i\hbar \frac{d}{dt}
     \begin{pmatrix}
@@ -161,8 +157,7 @@ In the absence of the resonant laser the equation evolution of the system expres
     \label{elastic evolution equation}
 \end{equation}
 
-Then a resonant laser can be tuned to an internal state of $V_e(r)$ to bound the atoms
-pair as presented in figure \ref{fig:PA_concept}
+When a laser is tuned near a specific vibrational level of the excited potential $V_e(r)$, it couples the free-atom continuum to the bound molecular state, as illustrated in Fig.~\ref{fig:PA_concept}.
 \begin{figure}
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf}
@@ -170,7 +165,7 @@ pair as presented in figure \ref{fig:PA_concept}
     \label{fig:PA_concept}
 \end{figure}
 
-This manipulation consists in adding inelastic collisions to the system. Then the effective equation evolution of the coupled atoms is
+This coupling introduces inelastic channels into the system. The effective coupled-channel equation becomes:
 \begin{equation}
     i\hbar \frac{d}{dt}
     \begin{pmatrix}
@@ -180,7 +175,7 @@ This manipulation consists in adding inelastic collisions to the system. Then th
     =
     \begin{pmatrix}
         -\frac{\hbar^2}{2\mu}\nabla^2 + V_g & \hbar\Omega/2\\
-        \hbar\Omega/2 & -\frac{\hbar^2}{2\mu}\nabla^2 + V_e + \hbar \Delta -i\hbar\frac{\Gamma_{mol}}{2}
+        \hbar\Omega/2 & -\frac{\hbar^2}{2\mu}\nabla^2 + V_e + \hbar \Delta -i\hbar\frac{\Gamma_{\text{mol}}}{2}
     \end{pmatrix}
     \begin{pmatrix}
         \psi_g\\
@@ -188,53 +183,40 @@ This manipulation consists in adding inelastic collisions to the system. Then th
     \end{pmatrix}
     \label{inelastic evolution equation}
 \end{equation}
-with $\Gamma_{mol}$ the molecular spontaneous emission linewidth, $\Delta = \omega_e-\omega_L$ the detuning of the laser from the excited state and $\hbar \Omega/2$ the coupling.
+where $\Gamma_{\text{mol}}$ is the natural molecular spontaneous emission linewidth, $\Delta = \omega_e-\omega_L$ is the laser detuning from the excited bound state, and $\hbar \Omega/2$ represents the coherent optical coupling.
 
-This matrix equation shows that the laser creates a bridge between the two states. During a collision, two atoms approaching each other on the ground potential $V_g(r)$ have a certain probability to absorb a photon and jump to the excited molecular potential $V_e(r)$. Once the system is in this excited state, it can decay via spontaneous emission at a rate $\gamma_{mol}$. The resulting molecule either falls into a deeply bound state or dissociates by emitting a photon, gaining enough kinetic energy to escape the optical trap. In both scenarios, these two atoms are permanently lost from the experiment. 
+This matrix equation shows that the laser creates a bridge between the two manifolds. During a collision, two atoms approaching each other on the ground potential $V_g(r)$ have a non-zero probability to absorb a photon and transition to the excited molecular potential $V_e(r)$. Once populated, this state decays via spontaneous emission at a rate $\Gamma_{\text{mol}}$. To account for this particle loss within the quantum mechanical framework, the molecular decay appears as an imaginary term $-i\hbar\frac{\Gamma_{\text{mol}}}{2}$ in the Hamiltonian matrix. In quantum scattering theory, such an imaginary component acts as a sink that absorbs probability flux, directly translating the physical disappearance of the atoms from the elastic channel.
 
-To account for this loss of particles within the quantum mechanical framework, the molecular decay appears as an imaginary term $-i\hbar\frac{\gamma_{mol}}{2}$ in the Hamiltonian matrix. In quantum scattering theory, such an imaginary component acts as a sink that absorbs probability flux, directly translating the physical disappearance of the atoms.
+Since the laser is tuned far from any bare atomic resonance, the excited molecular state remains weakly populated, meaning the atoms spend most of their time interacting on the ground-state potential. We can therefore project the effect of the excited state directly onto the ground state. Consequently, at large distances, the stationary solution takes the form of a spinor $\ket{\psi_g} + \epsilon \ket{\psi_e}$ with $\epsilon \ll 1$. The asymptotic wavefunctions carry the signatures of the loss events that occurred at short distance, forcing the scattering phase shift $\delta_l$ to become a complex number. 
 
-Since the laser is tuned far from the atomic resonance, the excited molecular state remains very weakly populated, meaning the atoms spend most of their time interacting on the ground state potential. We can therefore project the effect of the excited state directly onto the ground state. This effective ground potential is no longer purely real: it becomes a complex potential that incorporates both the laser coupling and the molecular losses.
+Following the foundational framework of Breit-Wigner parameters adapted to laser-assisted collisions \cite{bohn1997_prospects}, this complex phase shift allows one to naturally define a unified complex effective scattering length $a(k, \Delta)$ that explicitly accounts for the light-induced coupling width:
+\begin{equation}
+    a(k, \Delta) = a_{\text{bg}} + \frac{1}{k} \frac{\frac{1}{2}\Gamma_{\text{stim}}(k)}{\Delta + i \frac{\Gamma_{\text{mol}} + \Gamma_{\text{stim}}(k)}{2}}
+    \label{eq:complex_a_with_Gammastim}
+\end{equation}
+where $a_{\text{bg}}$ is the real background scattering length representing native elastic collisions, and $\Gamma_{\text{mol}}$ is the natural molecular decay width. The light-induced stimulated linewidth $\Gamma_{\text{stim}}(k)$ accounts for the coherent laser coupling and scales linearly with the collision wavevector $k$ at low temperature according to \cite{tiesinga2005measurement}:
+\begin{equation}
+    \Gamma_{\text{stim}}(k) = 2 k l_{\text{opt}} \Gamma_{\text{mol}}
+    \label{eq:gamma_stim_definition}
+\end{equation}
+Here, $l_{\text{opt}}$ is the temperature-independent optical scattering length, which acts as the central parameter characterizing the strength of the coupling and scales strictly linearly with the laser intensity $I$.
 
-Consequently, at large distances, the stationary solution of this system takes the form of a spinor $\ket{\psi_g} + \epsilon \ket{\psi_e}$ with $\epsilon \ll 1$ where $\ket{\psi_g}$ is modified by collisions. The wavefunctions carry the signatures of the loss events that occurred at short distance. As a result, the scattering phase shift $\delta_l$ extracted from the asymptotic form (see \ref{solution at long r}) becomes a complex number. From this complex phase shift, one naturally defines a complex effective scattering length $a$:
-\begin{equation}
-    a = a_{bg} + \delta a + i a''
-\end{equation}
-where the real background scattering length $a_{bg}$ represents the native elastic collisions, $\delta a$ is the light-induced shift of the elastic properties, and the imaginary part $a''$ directly quantifies the rate of inelastic two-body losses.
-
-To connect this scattering amplitude to observable quantities, one must translate these individual collision events into a population decay. Since the photoassociation process requires two atoms to collide, the local loss rate scales quadratically with the atomic density $n(\mathbf{r},t)$. Integrating this local behavior over the trap volume yields the rate equation for the total atom number:
-\begin{equation}
-    \frac{dN}{dt} = - \beta N^2 - \Gamma N
-    \label{equation one and two-body losses}
-\end{equation}
-Here, the linear term $\Gamma N$ accounts for independent one-body collisions with the residual background gas, while the quadratic term driven by the experimental two-body loss coefficient $\beta$ directly reflects the light-induced losses.
-
-Finally, in the context of spectroscopy, to address more bound states, one sweeps the laser frequency from the free-atomic line to red-detuned frequencies. The quantity that testifies to the presence of two-body interactions is the atom number remaining in the trap after a photoassociation pulse. Different processes can occur for the molecule to leave the trap: by spontaneous emission, it can decay back into a scattering channel and gain enough kinetic energy to escape the trap depth, or it can transition to a deeply bound state in the ground-state potential \hl{ajouter ref}
-PA process is used in Optical Feshbach Resonance (OFR) experiments to control the type of interaction in a Bose-Einstein Condensate that depends on the scattering length. This interaction is modified by changing the laser intensity $I$ and/or the detuning $\Delta$ of the laser with the bound molecular state. The light-induced shift $\delta a$ expresses as \cite{yan_controlling_2013}:
-\begin{equation}
-    \delta a = \frac{l_{\text{opt}}\Gamma_{\text{mol}}\Delta}{\Delta ^2 + \frac{(\eta\Gamma_{\text{mol}})^2}{4}}
-\end{equation}
-Here, $l_{\text{opt}}$ is the \textbf{optical length}, a central parameter characterizing the strength of the coupling between the scattering atoms and the bound molecular state. It scales linearly with the laser intensity $I$ according to \cite{reschovsky_narrow-line_2018}:
-\begin{equation}
-    l_{\text{opt}} = \frac{\lambda^3}{16\pi c}\frac{f_{\text{FC}}}{k}f_{\text{rot}}I = A I
-    \label{eq:lopt_definition}
-\end{equation}
-where $\lambda = 689.45$~nm is the transition wavelength, $f_{\text{rot}}$ is a rotational factor ($f_{\text{rot}} = 1$ for $0_u^+$ resonances and $f_{\text{rot}} = 2$ for $1_u$ resonances), and $A$ is an experimental constant. Crucially, the coupling amplitude depends on the spatial overlap between the initial ground state $\psi_g(r)$ and final excited state $\psi_e(r)$ wavefunctions through the Franck-Condon factor:
-\begin{equation}
-    f_{\text{FC}} = \Bigg|\int_0^{\infty} \psi_g(r) \psi_e(r) dr\Bigg |^2
-\end{equation}
-From this definition, one can easily deduce the direct dependence of $\delta a$ on $I$ and $\Delta$:
-\begin{equation}
-    \delta a \propto \frac{I\Gamma_{\text{mol}}\Delta}{\Delta^2 + (\eta \Gamma_{\text{mol}})^2/4}
-\end{equation}
+By multiplying Eq.~\ref{eq:complex_a_with_Gammastim} by the complex conjugate of its denominator, we can decouple the scattering length into its real and imaginary parts, $a(k, \Delta) = a_{\text{bg}} + \delta a(k, \Delta) + i a''(k, \Delta)$. In the limit where the stimulated width remains small compared to the natural decay ($\Gamma_{\text{stim}} \ll \Gamma_{\text{mol}}$ at the numetator), this algebraic separation yields the standard dispersive and absorptive profiles used in modern Optical Feshbach Resonance (OFR) descriptions \cite{yan_controlling_2013}:
+\begin{gather}
+    \delta a(k, \Delta) = \frac{l_{\text{opt}}\Gamma_{\text{mol}}\Delta}{\Delta ^2 + \frac{1}{4}\big(\Gamma_{\text{mol}} + \Gamma_{\text{stim}}(k)\big)^2} \label{eq:delta_a_OFR_final} \\
+    a''(k, \Delta) = \frac{l_{\text{opt}}\Gamma_{\text{mol}}\frac{\Gamma_{\text{mol}}}{2}}{\Delta ^2 + \frac{1}{4}\big(\Gamma_{\text{mol}} + \Gamma_{\text{stim}}(k)\big)^2} \label{eq:a_prime_prime_OFR_final}
+\end{gather}
+The real part $\delta a$ represents the light-induced shift of the elastic properties, whereas the imaginary part $a''$ directly quantifies the rate of inelastic two-body losses.
 
 \subsection{General scaling laws for PA}
-We will discuss in this subsection the dependence of the PA rate coefficient $K_2$ on the laser and experimental parameters. Following the systematic study of optical Feshbach resonances from Blatt et al. \cite{blatt_systematic_2011}, the two-body loss rate coefficient as a function of the collision wavevector $k$ is given by:
+To connect this microscopic scattering amplitude to observable experimental quantities, one must translate these individual collision events into a population decay. In quantum scattering theory, the fundamental two-body loss rate coefficient $K_2(k)$ is directly driven by the absorptive part of the scattering length through the relation $K_2(k) = \frac{8\pi\hbar}{m_{\text{at}}} a''(k, \Delta)$. Grounded on the systematic study of optical Feshbach resonances by Blatt et al. \cite{blatt_systematic_2011}, substituting Eq.~\ref{eq:a_prime_prime_OFR_final} into this relation yields the complete expression for the loss coefficient as a function of the collision wavevector $k$:
 \begin{equation}
     K_2(k) = \frac{8\pi \hbar}{m_{\text{at}} k} \times \frac{\Gamma_{\text{mol}} \Gamma_{\text{stim}}(k)}{\Delta^2 + \frac{1}{4}\big(\Gamma_{\text{mol}} + \Gamma_{\text{stim}}(k)\big)^2}
     \label{K2 complet Blatt}
 \end{equation}
-where $m_{\text{at}}$ is the atomic mass, $\Delta = \omega_{\text{L}} - \omega_{\text{mol}}$ is the laser detuning from the molecular resonance, and $\Gamma_{\text{mol}}$ is the natural molecular linewidth. The light-induced stimulated linewidth $\Gamma_{\text{stim}}(k)$ accounts for the laser coupling and scales linearly with the wavevector $k$ at low temperature according to:
+
+
+where $m_{\text{at}}$ is the atomic mass, $\Delta = \omega_{\text{L}} - \omega_{\text{mol}}$ is the laser detuning from the molecular resonance, and $\Gamma_{\text{mol}}$ is the natural molecular linewidth. The light-induced stimulated linewidth $\Gamma_{\text{stim}}(k)$ accounts for the laser coupling and scales linearly with the wavevector $k$ at low temperature according to \cite{tiesinga2005measurement}:
 \begin{equation}
     \Gamma_{\text{stim}}(k) = 2 k l_{\text{opt}} \Gamma_{\text{mol}}
     \label{eq:gamma_stim_blatt}
@@ -263,6 +245,8 @@ Finally, by combining Eq.~\ref{eq:3.28} and the low-temperature limit of $K_2$, 
     \frac{dN}{dt} = -\frac{4\sqrt{2} h }{V_{\text{e}} m_{\text{at}}}l_{\text{opt}}N^2 - \Gamma N
 \end{equation}
 which highlights that the global loss process is driven by the tunable optical length $l_{\text{opt}}$ and enhanced by the peak atomic density $n_0 \propto 1/V_{\text{e}}$.
+
+
 \subsection{Handling multiple molecular potentials}
 So far we have described the PA process as if there was only one molecular potential
 from the perspective of atom losses.
