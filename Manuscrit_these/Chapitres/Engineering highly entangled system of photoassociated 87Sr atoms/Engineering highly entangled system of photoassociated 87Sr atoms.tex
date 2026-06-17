@@ -3,12 +3,7 @@
 % Centralized path for the theory figures used in this chapter.
 \newcommand{\PATheoryFigDir}{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/}
 \newcommand{\PATheoryFig}[1]{\PATheoryFigDir#1}
-In quantum metrology, a fundamental limit to the precision of a phase parameter $\phi$ is the \textbf{Standard Quantum Limit} (SQL), often referred to as quantum shot noise, defined as $\Delta\phi = 1/\sqrt{2Ns}$ \cite{pezze_quantum_2014} for N atoms of individual spin s. In the previous chapter on Ramsey interferometry, we discussed how the achievable accuracy is often limited by experimental sources, such as atom leaking to other $m_F$ states affecting the signal-to-noise ratio.
-
-To mitigate these experimental limitations and restore a clean interferometric signal, one approach is to filter out the unwanted spin components. Beyond simply recovering the classical shot-noise limit, a long-term prospect of such state-purification techniques is to access non-classical collective states, such as \textbf{Dicke states} $|J, m=0\rangle$. In these highly entangled manifolds, specific spin correlations optimize the Quantum Fisher Information (QFI), conceptually allowing the phase sensitivity to overcome the SQL and approach the \textbf{Heisenberg Limit}. 
-
-While the deterministic generation of such large-scale entangled states remains a major open challenge, a promising bottom-up method relies on spin-selective photoassociation. By leveraging cold collisions to selectively remove pairs within the singlet channel, one can conceptually isolate a sub-ensemble of atoms with symmetric triplet correlations, which serves as a necessary precursor for a Dicke manifold.
-
+In quantum metrology, a fundamental limit to the precision of a phase parameter $\phi$ measured with $N$ independent particles is the \textbf{Standard Quantum Limit} (SQL), often referred to as the quantum shot noise, defined as $\Delta\phi_{\text{SQL}} = 1/\sqrt{N}$ \cite{pezze_quantum_2014}. For an ensemble of atoms characterized by an effective individual spin $s$ where interferometry is performed on the extreme projection states, this limit scales as $\Delta\phi_{\text{SQL}} = 1/\sqrt{2Ns}$.
 Moving toward this goal, the work presented in this chapter focuses on the essential preliminary step: the spectroscopic identification of the molecular states involved in this spin-selective process. At this stage of the experiment, our system is characterized by the resolution of three distinct spectroscopic lines, meaning we are still far from generating collective quantum correlations. However, the precise mapping of these three lines provides the first direct evidence of the underlying molecular structure and the spin-selection rules at play. The objective of this chapter is thus to benchmark the photoassociation mechanism itself, establishing the necessary spectroscopic foundations required for future spin-manipulation and state-purification protocols.\\
 
 This chapter opens with the fundamental concepts of scattering theory required to understand the mechanisms of photoassociation, which drives the evolution of atomic density through one- and two-body loss processes. Next, we present preliminary experimental results obtained with $^{88}\text{Sr}$. Leveraging the well-documented molecular potentials of this bosonic species allows us to benchmark and calibrate our experimental setup. Building upon these foundations, we then focus on the fermionic isotope, $^{87}\text{Sr}$. We provide a detailed presentation of the experimental data, accompanied by a thorough analysis of the technical challenges and systematic issues that could account for the low contrast observed in the molecular lines. Finally, the chapter concludes with a discussion regarding the surprising number of detected lines and their specific profiles, which may hint at the existence of yet unexplained physical phenomena.
@@ -29,7 +24,7 @@ where the spherical harmonics $Y^m_l(\theta, \phi)$ encode the angular dependenc
     \label{radial equation}
 \end{equation}
 This one-dimensional structure allows a direct analogy with the 1D quantum framework \cite{Landau}. To extract the scattering properties of the system, one studies the asymptotic behavior of the solutions at large distances. Where the inter-atomic potential $\hat{V}(r)$ vanishes, the general solution for $u_l(r)$ takes the form \cite{dalibard_interactions_nodate}:
-\newpage
+\
 \begin{equation}
     u_l(r) \xrightarrow{r\to\infty} a_l \sin\left(kr - \frac{l\pi}{2} + \delta_l\right)
     \label{solution at long r}
@@ -187,38 +182,31 @@ where $\Gamma_{\text{mol}}$ is the natural molecular spontaneous emission linewi
 
 This matrix equation shows that the laser creates a bridge between the two manifolds. During a collision, two atoms approaching each other on the ground potential $V_g(r)$ have a non-zero probability to absorb a photon and transition to the excited molecular potential $V_e(r)$. Once populated, this state decays via spontaneous emission at a rate $\Gamma_{\text{mol}}$. To account for this particle loss within the quantum mechanical framework, the molecular decay appears as an imaginary term $-i\hbar\frac{\Gamma_{\text{mol}}}{2}$ in the Hamiltonian matrix. In quantum scattering theory, such an imaginary component acts as a sink that absorbs probability flux, directly translating the physical disappearance of the atoms from the elastic channel.
 
-Since the laser is tuned far from any bare atomic resonance, the excited molecular state remains weakly populated, meaning the atoms spend most of their time interacting on the ground-state potential. We can therefore project the effect of the excited state directly onto the ground state. Consequently, at large distances, the stationary solution takes the form of a spinor $\ket{\psi_g} + \epsilon \ket{\psi_e}$ with $\epsilon \ll 1$. The asymptotic wavefunctions carry the signatures of the loss events that occurred at short distance, forcing the scattering phase shift $\delta_l$ to become a complex number. 
-
-The second line of the coupled equations yields the expression for the excited bound-state wavefunction $\psi_e$:
-\begin{gather}
-    \frac{\hbar \Omega}{2}\psi_g + \left(-\frac{\hbar^2\nabla^2}{2\mu} + V_e - \hbar \Delta - i\hbar\frac{\Gamma_{\text{mol}}}{2}\right)\psi_e = E\psi_e \\[1.5ex]
-    \psi_e = \frac{\frac{\hbar\Omega}{2}}{E + \frac{\hbar^2 \nabla^2}{2\mu} - V_e + \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}}\psi_g
-\end{gather}
-When injected back into the first coupled equation, one obtains the effective single-channel Schrödinger equation for the ground state:
-\begin{gather}
-    \left(-\frac{\hbar^2\nabla^2}{2\mu} + V_g \right)\psi_g = E\psi_g - \frac{\hbar\Omega}{2}\psi_e\\[1.5ex]
-    \left(-\frac{\hbar^2\nabla^2}{2\mu} + V_g \right)\psi_g = \left( E - \frac{\left(\frac{\hbar\Omega}{2}\right)^2}{E + \frac{\hbar^2\nabla^2}{2\mu} - V_e + \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}} \right)\psi_g
-    \label{psi e dans psi g}
-\end{gather}
-Because in scattering theory $\delta a$ is induced by projecting what we call the optical potential - one identify by the second member of right part of \ref{psi e dans psi g} - in the ground wavefunction $\psi_g$.
-Then at resonance $E + \frac{\hbar^2\nabla^2}{2\mu} - V_e = 0$ and $a(\Delta)$ is:
+Since the laser is tuned far from any bare atomic resonance, the excited molecular state remains weakly populated, meaning the atoms spend most of their time interacting on the ground-state potential. We can therefore project the effect of the excited state directly onto the ground state. Mathematically, isolating $\psi_e$ from the second line of Eq.~\ref{inelastic evolution equation} yields:
 \begin{equation}
-    a(\Delta) = a_{bg} + \frac{l_{opt}\Gamma_{mol}}{\Delta + i\frac{\Gamma_{mol}}{2}}
+    \psi_e = \frac{\frac{\hbar\Omega}{2}}{E - \left(-\frac{\hbar^2 \nabla^2}{2\mu} + V_e\right) - \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}}\psi_g
+\end{equation}
+Substituting this expression back into the first line of the coupled-channel system leads to an effective single-channel Schrödinger equation for the ground state:
+\begin{equation}
+    \left(-\frac{\hbar^2\nabla^2}{2\mu} + V_g \right)\psi_g = \left( E - \frac{\left(\frac{\hbar\Omega}{2}\right)^2}{E - \left(-\frac{\hbar^2 \nabla^2}{2\mu} + V_e\right) - \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}} \right)\psi_g
+    \label{psi e dans psi g}
+\end{equation}
+The secondary term on the right-hand side acts as a complex, energy-dependent optical potential $V_{\text{opt}}$. In quantum scattering theory, the modification of the scattering length $\Delta a$ is directly driven by the projection of this optical potential onto the ground state wavefunction $\psi_g$. Near the molecular resonance, where the relative kinetic energy satisfies $E - \left(-\frac{\hbar^2\nabla^2}{2\mu} + V_e\right) \approx 0$, the integration of this localized coupling yields the unities-normalized complex scattering length originally formulated by Bohn and Julienne \cite{bohn1997_prospects}:
+\begin{equation}
+    a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}}{\Delta + i\frac{\eta\Gamma_{\text{mol}}}{2}}
     \label{a(delta)}
 \end{equation}
-also demonstrated in \cite{bohn1997_prospects}, where $a_{\text{bg}}$ is the real background scattering length representing native elastic collisions, and $\Gamma_{\text{mol}}$ is the natural molecular decay width. The light-induced stimulated linewidth $\Gamma_{\text{stim}}(k)$ accounts for the coherent laser coupling and scales linearly with the collision wavevector $k$ at low temperature according to \cite{tiesinga2005measurement}:
+where $a_{\text{bg}}$ is the real background scattering length representing native elastic collisions, and $\eta$ is a dimensionless phenomenological parameter introduced to account for additional technical broadening or loss channels observed experimentally \cite{yan_controlling_2013}. The parameter $l_{\text{opt}}$ is the temperature-independent optical scattering length, which encapsulates the strength of the light-induced interaction and scales strictly linearly with the laser intensity $I$. At low temperatures, it can be directly related to the stimulated linewidth $\Gamma_{\text{stim}}(k)$ through the Wigner law scaling \cite{tiesinga2005measurement}:
 \begin{equation}
-    \Gamma_{\text{mol}} = \frac{\Gamma_{\text{stim}}(k)} {2 k l_{\text{opt}}}
+    \Gamma_{\text{stim}}(k) = 2 k l_{\text{opt}} \Gamma_{\text{mol}}
     \label{eq:gamma_stim_definition}
 \end{equation}
-Here, $l_{\text{opt}}$ is the temperature-independent optical scattering length, which acts as the central parameter characterizing the strength of the coupling and scales strictly linearly with the laser intensity $I$.
 
-By multiplying Eq.~\ref{a(delta)} by the complex conjugate of its denominator, we can decouple the scattering length into its real and imaginary parts
-\begin{gather}
-    a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}\left(\Delta - i\frac{\eta \Gamma_{\text{mol}}}{2}\right)}{\Delta^2 + \left(\frac{\eta \Gamma_{\text{mol}}}{2}\right)^2}\\[1.5ex]
-    a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}\Delta}{\Delta^2 + \left(\frac{\eta \Gamma_{\text{mol}}}{2}\right)^2} - i \frac{\frac{1}{2} l_{\text{opt}}\Gamma_{\text{mol}}^2 \eta}{\Delta^2 + \left(\frac{\eta \Gamma_{\text{mol}}}{2}\right)^2}
-\end{gather}
-
+To distinguish how the laser independently alters the elastic interactions and the loss mechanisms, we multiply the resonant fraction in Eq.~\ref{a(delta)} by the complex conjugate of its denominator. This algebraic separation successfully decouples the scattering length into its real (dispersive) and imaginary (absorptive) components, $a(\Delta) = a_{\text{bg}} + \delta a(\Delta) + i a''(\Delta)$:
+\begin{equation}
+    a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}\Delta}{\Delta^2 + \left(\frac{\eta \Gamma_{\text{mol}}}{2}\right)^2} - i \frac{l_{\text{opt}}\Gamma_{\text{mol}}\frac{\eta\Gamma_{\text{mol}}}{2}}{\Delta^2 + \left(\frac{\eta \Gamma_{\text{mol}}}{2}\right)^2}
+\end{equation}
+The real light-induced shift $\delta a(\Delta)$ governs the modification of the elastic properties of the gas, whereas the imaginary part $a''(\Delta)$ directly quantifies the rate of inelastic two-body losses.
 \subsection{General scaling laws for PA}
 To connect this microscopic scattering amplitude to observable experimental quantities, one must translate these individual collision events into a population decay. In quantum scattering theory, the fundamental two-body loss rate coefficient $K_2(k)$ is directly driven by the absorptive part of the scattering length through the relation $K_2(k) = \frac{8\pi\hbar}{m_{\text{at}}} a''(k, \Delta)$. Grounded on the systematic study of optical Feshbach resonances by Blatt et al. \cite{blatt_systematic_2011}, substituting Eq.~\ref{eq:a_prime_prime_OFR_final} into this relation yields the complete expression for the loss coefficient as a function of the collision wavevector $k$:
 \begin{equation}
