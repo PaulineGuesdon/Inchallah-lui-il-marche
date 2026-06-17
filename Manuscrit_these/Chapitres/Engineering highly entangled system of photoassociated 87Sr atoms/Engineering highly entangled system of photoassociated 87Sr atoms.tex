@@ -11,18 +11,19 @@ This chapter opens with the fundamental concepts of scattering theory required t
 \subsection{Scattering theory}
 Understanding the PA process necessitates an introduction to scattering theory to define key quantities such as the scattering length and the optical length. These parameters emerge naturally from the asymptotic analysis of the radial Schrödinger equation describing the relative motion of two colliding atoms.
 
-In the study of inter-atomic interactions, the Born-Oppenheimer approximation provides a natural simplification. Due to the large mass ratio between the nuclei and the electrons, the nuclei move on a much slower timescale. One can therefore solve the electronic problem for fixed nuclear positions. The resulting electronic energy curve as a function of the inter-nuclear distance $r$ defines the adiabatic potential $\hat{V}(r)$ experienced by the two atoms. 
+In the study of inter-atomic interactions, the Born-Oppenheimer approximation provides a natural simplification. Due to the large mass ratio between the nuclei and the electrons, the nuclei move on a much slower timescale. One can therefore solve the electronic problem for fixed nuclear positions. The resulting electronic energy curve as a function of the inter-nuclear distance $r$ defines the adiabatic potential $\hat{U}(r)$ experienced by the two atoms. 
 
-Assuming a spherically symmetric potential $\hat{V}(r)$, the treatment of the two-body collision in the center-of-mass frame allows the total relative wavefunction to be factorized into radial and angular parts:
+Assuming a spherically symmetric potential $\hat{U}(r)$, the treatment of the two-body collision in the center-of-mass frame allows the total relative wavefunction to be factorized into radial and angular parts:
 \begin{equation}
     \psi(r, \theta,\phi) = \frac{u_l(r)}{r} Y^m_l(\theta, \phi)
 \end{equation}
 where the spherical harmonics $Y^m_l(\theta, \phi)$ encode the angular dependence and $l$ denotes the partial wave quantum number. By introducing the reduced mass of the two-atom system $\mu_N = m_{\text{at}}/2$, the Schrödinger equation reduces to a one-dimensional radial equation for each partial wave $l$:
 
 \begin{equation}
-    \left( -\frac{\hbar^2}{2\mu_N} \frac{d^2}{dr^2} + \frac{\hbar^2 l(l+1)}{2\mu_N r^2} + \hat{V}(r) \right) u_l(r) = E u_l(r)
+    \left( -\frac{\hbar^2}{2\mu_N} \frac{d^2}{dr^2} + \frac{\hbar^2 l(l+1)}{2\mu_N r^2} + \hat{U}(r) \right) u_l(r) = E u_l(r)
     \label{radial equation}
 \end{equation}
+E the eigenvalue associated to the eigenfunction $u(r)$.
 This one-dimensional structure allows a direct analogy with the 1D quantum framework \cite{Landau}. To extract the scattering properties of the system, one studies the asymptotic behavior of the solutions at large distances. Where the inter-atomic potential $\hat{V}(r)$ vanishes, the general solution for $u_l(r)$ takes the form \cite{dalibard_interactions_nodate}:
 \
 \begin{equation}
@@ -133,7 +134,7 @@ dissipative process where two atoms in the ground state are coupled to a molecul
 \subsection{PA and complex scattering length}
 Photoassociation (PA) is a process in which a pair of colliding free atoms absorbs a photon to form a bound molecule in an excited electronic state. Effectively, because the short-lived molecule quickly decays into deeply bound states or dissociates with high kinetic energy, it escapes the optical trap. Consequently, the bound molecule is typically seen as lost, and the process is perceived as a macroscopic two-body loss effect.
 
-In the atomic pair frame, the electric dipole interaction drives the system from the ground electronic state $\psi_g$ of potential $V_g(r)$ to the excited molecular state $\psi_e$ of potential $V_e(r)$. In the absence of a resonant laser, the internal evolution of the system is purely elastic and expresses as:
+In the atomic pair frame, the electric dipole interaction drives the system from the ground electronic state $\psi_g$ of potential $U_g(r)$ to the excited molecular state $\psi_e$ of potential $U_e(r)$. In the absence of a resonant laser, the internal evolution of the system is purely elastic and expresses as:
 \begin{equation}
     i\hbar \frac{d}{dt}
     \begin{pmatrix}
@@ -142,8 +143,8 @@ In the atomic pair frame, the electric dipole interaction drives the system from
     \end{pmatrix}
     =
     \begin{pmatrix}
-        -\frac{\hbar^2}{2\mu}\nabla^2 + V_g & 0\\
-        0 & -\frac{\hbar^2}{2\mu}\nabla^2 + V_e
+        -\frac{\hbar^2}{2\mu}\nabla^2 + U_g & 0\\
+        0 & -\frac{\hbar^2}{2\mu}\nabla^2 + U_e
     \end{pmatrix}
     \begin{pmatrix}
         \psi_g\\
@@ -152,7 +153,7 @@ In the atomic pair frame, the electric dipole interaction drives the system from
     \label{elastic evolution equation}
 \end{equation}
 
-When a laser is tuned near a specific vibrational level of the excited potential $V_e(r)$, it couples the free-atom continuum to the bound molecular state, as illustrated in Fig.~\ref{fig:PA_concept}.
+When a laser is tuned near a specific vibrational level of the excited potential $U_e(r)$, it couples the free-atom continuum to the bound molecular state, as illustrated in Fig.~\ref{fig:PA_concept}.
 \begin{figure}
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf}
@@ -169,8 +170,8 @@ This coupling introduces inelastic channels into the system. The effective coupl
     \end{pmatrix}
     =
     \begin{pmatrix}
-        -\frac{\hbar^2}{2\mu}\nabla^2 + V_g & \hbar\Omega/2\\
-        \hbar\Omega/2 & -\frac{\hbar^2}{2\mu}\nabla^2 + V_e + \hbar \Delta -i\hbar\frac{\Gamma_{\text{mol}}}{2}
+        -\frac{\hbar^2}{2\mu}\nabla^2 + U_g & \hbar\Omega/2\\
+        \hbar\Omega/2 & -\frac{\hbar^2}{2\mu}\nabla^2 + U_e + \hbar \Delta -i\hbar\frac{\Gamma_{\text{mol}}}{2}
     \end{pmatrix}
     \begin{pmatrix}
         \psi_g\\
@@ -180,18 +181,18 @@ This coupling introduces inelastic channels into the system. The effective coupl
 \end{equation}
 where $\Gamma_{\text{mol}}$ is the natural molecular spontaneous emission linewidth, $\Delta = \omega_e-\omega_L$ is the laser detuning from the excited bound state, and $\hbar \Omega/2$ represents the coherent optical coupling.
 
-This matrix equation shows that the laser creates a bridge between the two manifolds. During a collision, two atoms approaching each other on the ground potential $V_g(r)$ have a non-zero probability to absorb a photon and transition to the excited molecular potential $V_e(r)$. Once populated, this state decays via spontaneous emission at a rate $\Gamma_{\text{mol}}$. To account for this particle loss within the quantum mechanical framework, the molecular decay appears as an imaginary term $-i\hbar\frac{\Gamma_{\text{mol}}}{2}$ in the Hamiltonian matrix. In quantum scattering theory, such an imaginary component acts as a sink that absorbs probability flux, directly translating the physical disappearance of the atoms from the elastic channel.
+This matrix equation shows that the laser creates a bridge between the two manifolds. During a collision, two atoms approaching each other on the ground potential $U_g(r)$ have a non-zero probability to absorb a photon and transition to the excited molecular potential $U_e(r)$. Once populated, this state decays via spontaneous emission at a rate $\Gamma_{\text{mol}}$. To account for this particle loss within the quantum mechanical framework, the molecular decay appears as an imaginary term $-i\hbar\frac{\Gamma_{\text{mol}}}{2}$ in the Hamiltonian matrix. In quantum scattering theory, such an imaginary component acts as a sink that absorbs probability flux, directly translating the physical disappearance of the atoms from the elastic channel.
 
 Since the laser is tuned far from any bare atomic resonance, the excited molecular state remains weakly populated, meaning the atoms spend most of their time interacting on the ground-state potential. We can therefore project the effect of the excited state directly onto the ground state. Mathematically, isolating $\psi_e$ from the second line of Eq.~\ref{inelastic evolution equation} yields:
 \begin{equation}
-    \psi_e = \frac{\frac{\hbar\Omega}{2}}{E - \left(-\frac{\hbar^2 \nabla^2}{2\mu} + V_e\right) - \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}}\psi_g
+    \psi_e = \frac{\frac{\hbar\Omega}{2}}{E - \left(-\frac{\hbar^2 \nabla^2}{2\mu} + U_e\right) - \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}}\psi_g
 \end{equation}
 Substituting this expression back into the first line of the coupled-channel system leads to an effective single-channel Schrödinger equation for the ground state:
 \begin{equation}
-    \left(-\frac{\hbar^2\nabla^2}{2\mu} + V_g \right)\psi_g = \left( E - \frac{\left(\frac{\hbar\Omega}{2}\right)^2}{E - \left(-\frac{\hbar^2 \nabla^2}{2\mu} + V_e\right) - \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}} \right)\psi_g
+    \left(-\frac{\hbar^2\nabla^2}{2\mu} + U_g \right)\psi_g = \left( E - \frac{\left(\frac{\hbar\Omega}{2}\right)^2}{E - \left(-\frac{\hbar^2 \nabla^2}{2\mu} + U_e\right) - \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}} \right)\psi_g
     \label{psi e dans psi g}
 \end{equation}
-The secondary term on the right-hand side acts as a complex, energy-dependent optical potential $V_{\text{opt}}$. In quantum scattering theory, the modification of the scattering length $\Delta a$ is directly driven by the projection of this optical potential onto the ground state wavefunction $\psi_g$. Near the molecular resonance, where the relative kinetic energy satisfies $E - \left(-\frac{\hbar^2\nabla^2}{2\mu} + V_e\right) \approx 0$, the integration of this localized coupling yields the unities-normalized complex scattering length originally formulated by Bohn and Julienne \cite{bohn1997_prospects}:
+The secondary term on the right-hand side acts as a complex, energy-dependent optical potential $U_{\text{opt}}$. In quantum scattering theory, the modsification of the scattering length $\Delta a$ is directly driven by the projection of this optical potential onto the ground state wavefunction $\psi_g$. Near the molecular resonance, where the relative kinetic energy satisfies $E - \left(-\frac{\hbar^2\nabla^2}{2\mu} + U_e\right) \approx 0$, the integration of this localized coupling yields the unities-normalized complex scattering length originally formulated by Bohn and Julienne \cite{bohn1997_prospects}:
 \begin{equation}
     a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}}{\Delta + i\frac{\eta\Gamma_{\text{mol}}}{2}}
     \label{a(delta)}
@@ -208,21 +209,20 @@ To distinguish how the laser independently alters the elastic interactions and t
 \end{equation}
 The real light-induced shift $\delta a(\Delta)$ governs the modification of the elastic properties of the gas, whereas the imaginary part $a''(\Delta)$ directly quantifies the rate of inelastic two-body losses.
 \subsection{General scaling laws for PA}
-To connect this microscopic scattering amplitude to observable experimental quantities, one must translate these individual collision events into a population decay. In quantum scattering theory, the fundamental two-body loss rate coefficient $K_2(k)$ is directly driven by the absorptive part of the scattering length through the relation $K_2(k) = \frac{8\pi\hbar}{m_{\text{at}}} a''(k, \Delta)$. Grounded on the systematic study of optical Feshbach resonances by Blatt et al. \cite{blatt_systematic_2011}, substituting Eq.~\ref{eq:a_prime_prime_OFR_final} into this relation yields the complete expression for the loss coefficient as a function of the collision wavevector $k$:
+To connect this microscopic scattering amplitude to observable experimental quantities, one must translate these individual collision events into a population decay. In quantum scattering theory, the fundamental two-body loss rate coefficient $K_2(k)$ is directly driven by the absorptive part of the scattering length through the relation $K_2(k) = \frac{8\pi\hbar}{m_{\text{at}}} a''(k, \Delta)$. 
+Grounded on the systematic study of optical Feshbach resonances by Blatt et al. \cite{blatt_systematic_2011}, substituting the expression of $a''$ into this relation yields the complete expression for the loss coefficient as a function of the collision wavevector $k$:
 \begin{equation}
     K_2(k) = \frac{8\pi \hbar}{m_{\text{at}} k} \times \frac{\Gamma_{\text{mol}} \Gamma_{\text{stim}}(k)}{\Delta^2 + \frac{1}{4}\big(\Gamma_{\text{mol}} + \Gamma_{\text{stim}}(k)\big)^2}
     \label{K2 complet Blatt}
 \end{equation}
-
-
 where $m_{\text{at}}$ is the atomic mass, $\Delta = \omega_{\text{L}} - \omega_{\text{mol}}$ is the laser detuning from the molecular resonance, and $\Gamma_{\text{mol}}$ is the natural molecular linewidth. The light-induced stimulated linewidth $\Gamma_{\text{stim}}(k)$ accounts for the laser coupling and scales linearly with the wavevector $k$ at low temperature according to \cite{tiesinga2005measurement}:
 \begin{equation}
     \Gamma_{\text{stim}}(k) = 2 k l_{\text{opt}} \Gamma_{\text{mol}}
     \label{eq:gamma_stim_blatt}
 \end{equation}
-where $l_{\text{opt}}$ is the temperature-independent optical length which is strictly linear with the laser intensity $I$.
+where $l_{\text{opt}}$ is the temperature-independent \textbf{optical length}, a central parameter characterizing the strength of the light-matter coupling which scales linearly with the laser intensity $I$.
 
-While $K_2$ characterizes the fundamental two-body collision process, the experimentally observed decay coefficient $\beta$ depends on the spatial density distribution of the atomic cloud. The relation between $K_2$ and $\beta$ is derived by integrating the local loss over a Gaussian density profile:
+While $K_2$ characterizes the fundamental two-body collision process, the experimentally observed decay coefficient $\beta$ depends on the spatial density distribution of the atomic cloud of width $\sigma_x, \sigma_y, \sigma_z$. The relation between $K_2$ and $\beta$ is derived by integrating the local loss over a Gaussian density profile:
 \begin{gather}
 \frac{dN(t,T)}{dt} = -K_2 \iiint n^2(x,y,z,t,T) \, d^3r \label{eq:3.24}\\[1.5ex]
 \text{with } n(x,y,z,t,T) = n_0 \exp\left( -\frac{x^2}{2\sigma_x(T)^2} - \frac{y^2}{2\sigma_y(T)^2} - \frac{z^2}{2\sigma_z(T)^2} \right) \label{eq:3.25} \\[1.5ex]
@@ -233,11 +233,11 @@ While $K_2$ characterizes the fundamental two-body collision process, the experi
 \end{gather}
 consistent with the definitions found in \cite{han_photoassociation_2018}.
 
-For low temperatures, the de Broglie wavelength settles the negligibility of the wavevector $k$ ($k \to 0$), which simplifies Eq.~\ref{K2 complet Blatt}. On resonance ($\Delta = 0$), the microscopic PA rate coefficient reduces to:
+For low temperatures, the de Broglie wavelength settles the negligibility of the wavevector ($k \to 0$). In this threshold regime, the light-induced linewidth becomes negligible compared to the natural molecular width ($\Gamma_{\text{stim}}(k) \ll \Gamma_{\text{mol}}$). On resonance ($\Delta = 0$), substituting Eq.~\ref{eq:gamma_stim_blatt} into Eq.~\ref{K2 complet Blatt} allows the wavevector $k$ to cancel out from the prefactor, and the microscopic PA rate coefficient simplifies to:
 \begin{equation}
     K_2 = \frac{16h}{m_{\text{at}}}l_{\text{opt}}
 \end{equation}
-As established in Eq.~\ref{eq:lopt_definition}, this shows that at low temperatures, the maximum photoassociation rate becomes purely linear with the laser intensity $I$. Structurally, $K_2$ is maximized when the ground- and excited-state wavefunctions exhibit maximum overlap at the Condon radius. In a classical picture, this distance corresponds to the turning point where the colliding atoms spend the most time, maximizing the transition probability.
+This fundamental result demonstrates that at low temperatures, the maximum photoassociation rate becomes independent of the temperature and scales purely linearly with the laser intensity $I$ through its dependence on $l_{\text{opt}}$. Structurally, $K_2$ is maximized when the ground- and excited-state wavefunctions exhibit maximum overlap at the Condon radius. In a classical picture, this distance corresponds to the turning point where the colliding atoms spend the most time, maximizing the transition probability.
 
 Finally, by combining Eq.~\ref{eq:3.28} and the low-temperature limit of $K_2$, we obtain the total macroscopic evolution equation of the trapped population:
 \begin{equation}
@@ -247,36 +247,38 @@ which highlights that the global loss process is driven by the tunable optical l
 
 
 \subsection{Handling multiple molecular potentials}
-So far we have described the PA process as if there was only one molecular potential
+So far we have described the PA process as if there was only one excited-state molecular potential $U_e$
 from the perspective of atom losses.
-But the molecules formed in this process have a rich internal structure that
-determines which transitions are accessible and how efficiently they can be
-driven in particular through the Franck-Condon factor. Understanding this
-structure is therefore essential to optimise $K_2$ experimentally.\\
+But the molecules formed in this process have a rich internal structure. Understanding this
+structure is therefore essential to optimise $\beta(T)$ experimentally.\\
 
 While exciting a single atom is straightforward, identifying the correct
 molecular state to target is considerably more involving, since a large
 number of potentials and internal states coexist. To navigate this complexity,
-we now want to determine and enumerate the molecular potentials $V_e$ by introducing the molecular quantum
-numbers that label these states to finally determine their possible transitions.\\
+we now want to determine and enumerate the molecular potentials $U_e$ by introducing the molecular quantum
+numbers that label these potentials to finally determine their possible transition excited states.\\
 
-Confirming to the atomic case, the Born-Oppenheimer approximation allows to describe the movement of the electrons
-separately from the nuclei, then \ref{radial equation} is valid for bound atoms. The aim of this part of the
-exposé is to determine the shape of $V_e$ on what equation \ref{radial equation} depends.\\
+In analogy to the atomic case, the Born-Oppenheimer approximation allows for the separation of electronic and 
+nuclear motions. Consequently, each specific molecular electronic configuration—defined by its relevant molecular
+quantum numbers—gives rise to a distinct adiabatic potential energy curve $U_e(r)$. The primary objective of this 
+section is to identify and characterize these molecular potentials, upon which the bound-state wavefunctions 
+$\psi_e(r)$ and the overall photoassociation dynamics crucially depend. This framework provides the essential 
+foundation for mapping and enumerating the excited vibrational states probed during our spectroscopic measurements.\\
 
 In ultracold gases, only collisions in s-wave are impacted by the interaction potential,
-because partial waves of higher $l$ mostly are reflected by the centrifugal barrier before crossing regions of
-lower interaction orders. Then in respect with Pauli statistics the orbital wavefunction $\ket{\phi}$ being even
-the spin wavefunction should be odd to conserve the non-symmetric nature of the total wavefunction $\ket{\psi}$.
-For two atoms A and B possibly in spin state $\ket{\beta_1}$ or $\ket{\beta_2}$ the expression of total wavefunction
-
+because partial waves of higher $l$ mostly are reflected by the centrifugal barrier before crossing regions where interactions 
+are not negligeable. Then in respect with Fermi statistics (related to the Pauli principle) the orbital wavefunction $\ket{\phi}$ 
+being symmetric the spin wavefunction should be odd to conserve the antisymmetric nature of the total wavefunction $\ket{\psi}$
+for fermions. For two atoms A and B possibly in spin state $\ket{\beta_1}$ or $\ket{\beta_2}$ the expression of total wavefunction
 \begin{equation}
-    \ket{\Psi} = \left(\ket{\beta_1}_A \ket{\beta_2}_B + (-1)^R \ket{\beta_1}_B \ket{\beta_2}_A\right)
+    \ket{\Psi} = \left(\ket{\beta_1}_A \ket{\beta_2}_B - (-1)^R \ket{\beta_1}_B \ket{\beta_2}_A\right)
      \otimes\ket{\phi}
      \label{wavefunction parity}
 \end{equation}
 
-constrains the \textbf{rotational quantum number $R$} to values $R = 0, 2$ or $4$... \cite{reichenbach_optical_nodate}
+constrains the \textbf{rotational quantum number $R$} to values $R = 1, 3$ or $5$... \cite{reichenbach_optical_nodate}
+
+
 This first intrinsic molecular quantum number describes the rotational motion of the molecule on its center of mass.
 For even $R$ the molecular potential associated is called \textbf{gerade}. Symmetrically odd value of $R$ gives the
 denomination of \textbf{ungerade} potential. It means that the probability of finding electrons in between the two
@@ -329,9 +331,9 @@ a total spin of $J = 1$ and possible values of total atomic angular momentum F:
 
 The possible values of total angular momentum of the excited molecule are
 \begin{align}
-\text{For } R=0, &\quad {T = 1, 2, 3... 10}\\
-\text{For } R=2, &\quad {T = 1,2... 12}\\
-\text{For } R=4, &\quad {T = 1,2 ... 14}
+\text{For } R=1, &\quad {T = 1, 2, 3... 11}\\
+\text{For } R=3, &\quad {T = 1,2... 12}\\
+\text{For } R=5, &\quad {T = 1,2 ... 14}
 \end{align}
 
 As for atoms there are selection rules for transitions from a collisional state to a molecular excited 
@@ -368,7 +370,7 @@ This involves a description of the coupling between the rotation of the nuclear 
 Following the molecular picture introduced in section 3.1.1, the energy of these states is governed by the Hamiltonian $\hat{H}$ which, for a Sr-Sr system, 
 can be expressed as:
 \begin{equation}
-    \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{V}_{BO} + \hat{H}_{HF}
+    \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{U}_{BO} + \hat{H}_{HF}
     \label{general hamiltonian of molecule}
 \end{equation}
 
@@ -376,7 +378,7 @@ where some electronic interactions orders has been neglected depending on the Hu
 we approximate the potential to be as for $^{173}Yb$:
 
 \begin{equation}
-    \hat{V}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
+    \hat{U}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
     \label{ytt potential}
 \end{equation}
 
@@ -428,13 +430,13 @@ to the one-dimensional Schrödinger equation for two particles with reduced mass
 eigenenergy $E$:
 
 \begin{equation}
-    -\frac{\hbar^2}{2\mu}\frac{d^2\psi}{dx^2} + V(x)\psi = E\psi
+    -\frac{\hbar^2}{2\mu}\frac{d^2\psi}{dx^2} + U(x)\psi = E\psi
     \label{eq:schrodinger_1d}
 \end{equation}
 
 This leads to the expression of the local wavevector $k(x)$:
 \begin{equation}
-    k(x) = \frac{p(x)}{\hbar} = \frac{\sqrt{2\mu(E-V(x))}}{\hbar}
+    k(x) = \frac{p(x)}{\hbar} = \frac{\sqrt{2\mu(E-U(x))}}{\hbar}
 \end{equation}
 
 The validity of this approximation is governed by the condition $\frac{d\lambda}{dx} \ll 1$, 
@@ -442,14 +444,14 @@ implying that the local de Broglie wavelength must vary slowly compared to the s
 atoms' motion. This can be explicitly rewritten in terms of the potential gradient:
 
 \begin{equation}
-    \left| \frac{\mu \hbar \frac{dV}{dx}}{\left[2\mu(E-V(x))\right]^{3/2}} \right| \ll 1
+    \left| \frac{\mu \hbar \frac{dU}{dx}}{\left[2\mu(E-U(x))\right]^{3/2}} \right| \ll 1
     \label{eq:wkb_validity}
 \end{equation}
 
 This expression highlights two critical regimes where the semi-classical approach fails. 
-First, near the classical turning points where $E \approx V(x)$, the kinetic 
+First, near the classical turning points where $E \approx U(x)$, the kinetic 
 energy vanishes and the wavelength diverges. Second, at short internuclear distances
-(Region I in Fig. \ref{fig:pa-sakurai-wkb}), the steepness of the repulsive wall $|dV/dx|$ 
+(Region I in Fig. \ref{fig:pa-sakurai-wkb}), the steepness of the repulsive wall $|dU/dx|$ 
 becomes too large for the atoms to follow the potential variations adiabatically. In these 
 regions, connection formulas, typically using Airy functions, are required to match the 
 solutions across the turning points.
@@ -458,7 +460,7 @@ solutions across the turning points.
     \centering
     \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/WKB_sakurai.pdf}
     \caption[fig:pa-sakurai-wkb]{Semi-classical approximation in an interatomic potential 
-    $V(x)$. The energy level $E$ intersects the potential at the turning points $x_1$ and 
+    $U(x)$. The energy level $E$ intersects the potential at the turning points $x_1$ and 
     $x_2$. In the classically allowed Region II, the wavefunction oscillates with an amplitude 
     proportional to $1/\sqrt{k(x)}$. In the forbidden Regions I and III, the wavefunction is 
     evanescent.}
@@ -466,8 +468,8 @@ solutions across the turning points.
 \end{figure}
 
 At positions $x=x_1$ and $x_2$, the momentum reaches zero and becomes imaginary as the energy 
-level $E$ crosses the potential $V(x)$. In the classically forbidden regions I and III, the 
-wavefunction is evanescent and characterized by the decay constant $\kappa(x) = \sqrt{2\mu(V(x)-E)}/\hbar$. 
+level $E$ crosses the potential $U(x)$. In the classically forbidden regions I and III, the 
+wavefunction is evanescent and characterized by the decay constant $\kappa(x) = \sqrt{2\mu(U(x)-E)}/\hbar$. 
 Around the turning points, it is standard to linearize the potential to connect the oscillatory 
 and evanescent solutions. Region I is generally not studied in detail for photoassociation since 
 the repulsive wall of the potential is extremely steep and diverges at very short distances.
@@ -495,7 +497,7 @@ description of the complex short-range interactions.
 Near the dissociation limit $D_e$, occurring at large internuclear distances $r$, the potential 
 can be approximated by its leading long-range term:
 \begin{equation}
-    V(r) \approx D_e - \frac{C_n}{r^n}
+    U(r) \approx D_e - \frac{C_n}{r^n}
 \end{equation}
 
 where $C_n$ is the long-range coefficient (typically $n=6$ for Van der Waals or $n=3$ for resonant 
@@ -545,7 +547,7 @@ state: $0_u$ and $1_u$. Based on the results presented in \cite{zelevinsky_narro
 modeled as:
 
 \begin{equation}
-    V(r) \approx -\frac{C_{6,\Lambda}}{r^6} -\frac{C_3}{r^3} + \frac{\hbar^2 R(R+1)}{2\mu r^2}
+    U(r) \approx -\frac{C_{6,\Lambda}}{r^6} -\frac{C_3}{r^3} + \frac{\hbar^2 R(R+1)}{2\mu r^2}
 \end{equation}
 
 for the two molecular symmetries $\Lambda = 0, 1$. Since the Born-Oppenheimer approximation remains valid 
@@ -553,12 +555,12 @@ across the strontium isotopes ($^{84}Sr, ^{86}Sr, ^{88}Sr$), the electronic pote
 to be identical for all species. Consequently, only the reduced mass $\mu$ in the WKB phase integral varies:
 
 \begin{equation}
-    \int_{x_1}^{x_2} \frac{\sqrt{2\mu(E-V(x))}}{\hbar} dx = \left(n+\frac{1}{2}\right)\pi
+    \int_{x_1}^{x_2} \frac{\sqrt{2\mu(E-U(x))}}{\hbar} dx = \left(n+\frac{1}{2}\right)\pi
 \end{equation}
 
 The experimental positions of the first vibrational states for the $0_u^+$ potential in $^{84}Sr, ^{86}Sr$, 
 and $^{88}Sr$ are shown as red crosses in Fig. \ref{fig:pa-mass-scaling}. These data points allow for the 
-refinement of the potential shape $V(r)$. The fitted functions (blue lines) then enable the prediction of 
+refinement of the potential shape $U(r)$. The fitted functions (blue lines) then enable the prediction of 
 the frequency ranges where $^{87}Sr$ resonances should occur. Notably, discontinuities observed for the 
 $^{84}Sr$ isotope correspond to avoided crossings resulting from couplings with the ground-state potential.
 \begin{figure}
@@ -874,10 +876,11 @@ The ultimate verification of inelastic collisions is the time evolution of the a
     N(t,T) = \frac{N_0 e^{-\Gamma t}}{1 + \frac{\beta(T) N_0}{\Gamma} \left( 1 - e^{-\Gamma t} \right)} \label{eq:final_fit}
 \end{gather}
 
-Because $N(t,T)$ depends on the temperature, one wants to re-express Eq.~\ref{eq:final_fit} by explicitly showing the $T$-dependence of $\beta(T)$. The atoms are trapped in an ODT with a mean trapping frequency $\bar{\omega} = (\omega_x \omega_y \omega_z)^{1/3}$. According to the equipartition theorem, the spatial width $\sigma_{i}$ (with $i=\{x,y,z\}$) of the Gaussian distribution relates to the temperature $T$ via $\frac{1}{2}m_{\text{at}}\omega_{i}^2\sigma_{i}^2 = \frac{1}{2}k_B T$. This yields the effective volume:
+Because $N(t,T)$ depends on the temperature, one wants to re-express Eq.~\ref{eq:final_fit} by explicitly showing the $T$-dependence of $\beta(T)$. The atoms are trapped in an ODT with a mean trapping frequency $\bar{\omega} = (\omega_x \omega_y \omega_z)^{1/3}$. According to the equipartition theorem, the spatial width $\sigma_{i}$ (with $i=\{x,y,z\}$) of the Gaussian 
+distribution relates to the temperature $T$ via $\frac{1}{2}m_{\text{at}}\omega_{i}^2\sigma_{i}^2 = \frac{1}{2}k_B T$. This yields the effective volume:
 
 \begin{equation}
-    V_e(T) = (2\pi)^{3/2}\left(\frac{k_B T}{m_{\text{at}}}\right)^{3/2} \frac{1}{\omega_x\omega_y\omega_z} = (2\pi)^{3/2}\left(\frac{k_B T}{m_{\text{at}}\bar{\omega}^2}\right)^{3/2}
+    U_e(T) = (2\pi)^{3/2}\left(\frac{k_B T}{m_{\text{at}}}\right)^{3/2} \frac{1}{\omega_x\omega_y\omega_z} = (2\pi)^{3/2}\left(\frac{k_B T}{m_{\text{at}}\bar{\omega}^2}\right)^{3/2}
 \end{equation}
 
 with $\bar{\omega}=2\pi 50$~rad/s. By substituting $\beta(T) = \frac{K_2}{2\sqrt{2}V_e(T)}$ into the population evolution law, the final fitting equation becomes:
@@ -943,7 +946,7 @@ experiment.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf}
-    \caption[Two-body losses decay on atomic resonance: artifact for molecular analysis]{}
+    \caption[Evolution of the atom number as a function of the illumination time at $f = -6$~MHz]{Evolution of the atom number (on a logarithmic scale) as a function of the illumination time, measured at a fixed laser detuning of $f = -6$~MHz from the atomic resonance (see Section 3.2.3.5). Filled circles represent the data in the presence of the photoassociation (PA) laser, adjusted with the fit function (Eq.~\ref{eq:final_fit}) accounting for combined one- and two-body losses. Open circles display the reference measurement at the same frequency in the absence of the PA laser. The distinct decay behaviors observed between the two datasets highlight that relying solely on a single $dN/dt$ decay measurement is insufficient to unambiguously characterize the loss mechanisms.}
     \label{exp decay 6 MHz noise}
 \end{figure}
 
