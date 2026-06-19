@@ -1063,7 +1063,7 @@ is short : \hl{t?}
     \begin{subfigure}{1\linewidth}
         \centering
         \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data184.pdf}
-        \caption{Resonance spectrum at $375.74 \pm 0.48$ MHz ($I = 5.2$ W/cm$^2$).}
+        \caption{\hl{attention premier trait 360 au lieu de 340}Resonance spectrum at $375.74 \pm 0.48$ MHz ($I = 5.2$ W/cm$^2$).}
         \label{subfig:375MHz_spectrum}
     \end{subfigure}
 
@@ -1110,6 +1110,36 @@ $l_{opt}/I$ ($10^{-6} a_0$) & --- & $1.92 \pm 0.44$ & $2.60 \pm 0.88$ \\
 
 The plots of molecular lines in \ref{87Sr molecular lines} added to the really low estimated $l_{opt}$ values for high intensity expose multiple unexpected behaviours.\\
 
+\noindent\textbf{Defining $l_{\text{opt}}$}\\
+There are two ways to determine the optical length. 
+One is to use the Lorentzian fit of the resonance. Following the formulation from \cite{zelevinsky_narrow_2006}, the inelastic two-body loss rate coefficient is expressed as:
+\begin{equation}
+    K_2(\Delta) = \frac{4\pi\hbar}{\mu} \frac{\Gamma_{\text{mol}}^2 l_{\text{opt}}}{\left(\frac{E}{\hbar} + 2\pi\Delta\right)^2 + \frac{(\Gamma_{\text{stim}} + \Gamma_{\text{mol}})^2}{4}}
+    \label{eq:zelevinsky_K2}
+\end{equation}
+where $\mu$ is the reduced mass $m_{at}/2$, $\Gamma_{\text{mol}}$ is the natural molecular linewidth, and $\Gamma_{\text{stim}}$ is the light-induced stimulated width. 
+
+Experimentally, the loss profile is fitted using a standard empirical Lorentzian function where the frequency offset is explicitly written to match the resonance condition:
+\begin{equation}
+    f(\Delta) = \frac{A}{1+\left(\frac{\Delta + \frac{E}{2\pi\hbar}}{\Gamma_{\text{fit}}/2}\right)^2} = \frac{A (\Gamma_{\text{fit}}/2)^2}{(\Gamma_{\text{fit}}/2)^2 + \left(\Delta + \frac{E}{2\pi\hbar}\right)^2}
+    \label{eq:lorentzian_fit_standard}
+\end{equation}
+where $A$ is the peak amplitude and $\Gamma_{\text{fit}}$ is the full-width at half-maximum (FWHM) extracted by the fitting software.
+
+By dividing both the numerator and denominator of Eq.~\ref{eq:zelevinsky_K2} by $(2\pi)^2$, the identity with Eq.~\ref{eq:lorentzian_fit_standard} becomes direct and allows us to map the physical parameters to our fit observables:
+\begin{align}
+    \Gamma_{\text{fit}} &= \frac{\Gamma_{\text{stim}} + \Gamma_{\text{mol}}}{2\pi} \\[1.5ex]
+    A &= \frac{4\hbar}{\pi\mu} \frac{\Gamma_{\text{mol}}^2 l_{\text{opt}}}{\Gamma_{\text{fit}}^2}
+\end{align}
+
+Remarkably, the product of the amplitude and the square of the linewidth eliminates the temperature-dependent broadening terms. The optical scattering length $l_{\text{opt}}$ can therefore be straightforwardly extracted from the experimental fit parameters via:
+\begin{equation}
+    l_{\text{opt}} = \frac{\pi m_{at}}{8\hbar\Gamma_{\text{mol}}^2} \times \left( A \cdot \Gamma_{\text{fit}}^2 \right)
+\end{equation}
+
+The second way to define $l_{opt}$ is straightforward : $dN/dt$ fit gives an estimation of $K_2$ that is related with $l_{opt}$ as $K_2 = \frac{16 h}{m_{at}l_{opt}}$.
+\hl{calculs lopt avec les valeurs d'ammplitude NON NORMALISEES car valeurs actuelles relevées pour 87 fausses }
+\textbf{PA lines found on $87Sr$}\\
 First, we have not been able to detect two-body losses before $259.01$ MHz which is surprising taking into acount the expect frequency ranges on $87$ isotope from mass scaling discussion of \cite{borkowski_mass_2014}.\\
 Then we hardly exceed $30\%$ of loss: all three datas present small depths from $8.3\pm 0.9 \%$ to $36.4\pm 1.9 \%$ for intensites greater than many experiments like \cite{zelevinsky_narrow_2006} and similar atomic densities. \\
 In addition the linewidth of each line is large : $2.53 \pm 0.17$, $7.48 \pm 0.77$ MHz and $10.93 \pm 2.68$ MHz while we expect $\Gamma = \gamma_{mol} \simeq 2\times \gamma_{at} \simeq 15$ kHz.\\
