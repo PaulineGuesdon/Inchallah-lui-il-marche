@@ -589,7 +589,7 @@ The experimental approach differs according to the quantum statistics of the iso
     \item \textbf{Bosons ($^{88}$Sr):} The near-zero scattering length of $^{88}$Sr is detrimental to evaporative cooling, as it suppresses the elastic collisions necessary for thermalization. In this case, the final density relies almost exclusively on the efficiency of the preceding cooling and trapping stages (e.g., the MOT).
 \end{itemize}
 
-\hl{Once a dense cloud is obtained, the PA process is initiated by illuminating the atoms with a dedicated laser beam and all these datas are realised with a magnetic field of $B = 1.6 \pm$.}
+\hl{Once a dense cloud is obtained, the PA process is initiated by illuminating the atoms with a dedicated laser beam and all these datas are realised with a magnetic field of $B = 1.6 \pm$ mazimized for $\pi$ optical transitions.}
 
 \subsection{Photoassociation lasers and their spectral characteristics}
 \subsubsection{ECDL locking and frequency referencing}
@@ -930,7 +930,12 @@ The molecular lines on $^{87}Sr$ have been reached only with the MOGlabs source.
 (see Setup \ref{zoom red chain battement}). \\
 Datas have been obtained for different waist size in an effort to increase two-body losses, same for the density of the cloud. \\
 For this species with hyperfine structure one expect to visualize hundreds of states as described in the theoretical part of this section
-each wide of about 15~kHz.
+each wide of about 15~kHz.\\
+
+All the resonances presented in this section are done with a shot-to-shot normalisation method in order to suppress short time derivation due to experimental 
+fluctuation. The first atomic number measured during the experiment is the measurement of the atomic density in absence of the PA laser. The second one is the
+measurement of the effect of the PA laser in the gas. This is repeated for the entire experiment and the final plots are the ratio of the perturbated gas on the 
+non-perturbated one.
 
 \begin{figure}[H]
     \centering
@@ -944,21 +949,19 @@ frequency for both laser configurations is tuned by ”AOM Inj Slave 1”, adjus
 \subsection{Verification of the molecular nature of the lines}
 \subsubsection{dN/dt decay interpretation}
 Before presenting the molecular lines obtained for $^{87}Sr$ I want to discuss the reliability of the $dN/dt$ test to identify the nature of the losses.
-While the two slopes are usually a signature of two-body losses we observed the same behavior for the atomic resonance obtained with the red diode noise at 
-6 MHz as visible in \ref{exp decay 6 MHz noise} in dark purple. This experiment has been obtained on a red detuned signal from $F=9/2$ hyperfine state of $^{87}$Sr.
+While the two slopes are usually a signature of two-body losses I observed the same behavior for the atomic resonance obtained with the red diode noise at 
+6 MHz as visible in \ref{exp decay 6 MHz noise} in dark purple. This experiment has been obtained on a red detuned signal from $F=11/2$ hyperfine state of $^{87}$Sr.
 The atoms have been evaporated during $500$ ms, recompressed and illuminated during $T = 2000$ms. In this figure the atom decay is clearly well described 
 by equation \ref{one and two body losses equation} and presents a change of slope around 3s: the fit of this data leads to a misinterpretation of the collision nature. 
 The same data in the absence of the PA laser plotted in the same figure shows a linear behavior on the atomic decay. As presented in 3.3.2.2 the exponential 
 decay test is done in atomic resonance: this measurement is not reliable to identify with certainty the nature of the losses while no molecule has been enhanced on this
 experiment.
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf}
     \caption[Evolution of the atom number as a function of the illumination time at $f = -6$~MHz]{Evolution of the atom number (on a logarithmic scale) as a function of the illumination time, measured at a fixed laser detuning of $f = -6$~MHz from the atomic resonance (see Section 3.2.3.5). Filled circles represent the data in the presence of the photoassociation (PA) laser, adjusted with the fit function (Eq.~\ref{eq:final_fit}) accounting for combined one- and two-body losses. Open circles display the reference measurement at the same frequency in the absence of the PA laser. The distinct decay behaviors observed between the two datasets highlight that relying solely on a single $dN/dt$ decay measurement is insufficient to unambiguously characterize the loss mechanisms.}
     \label{exp decay 6 MHz noise}
 \end{figure}
-
 It appears that for non-recompressed gas it is possible to still have thermalization when the evaporation is not well optimized and 
 that affects the two-body losses rate. For recompressed gas as in \ref{exp decay 6 MHz noise} collisions keep occuring for atoms contained 
 in a smaller volume which explains the slope break on the plot.
@@ -969,8 +972,8 @@ at the bottom of the trap are most likely to photoassociate. Then the resting at
 with a mean temperature per atom increased.
 
 Figure \ref{temp 6MHz noise} is a representation of the temperature of the gas during the same experiment as \ref{6MHz noise red detuned}.
-The mean temperature of the gas in the absence of the PA being \hl{temp} we see from the graphe that appart the few points way above the 
-mean temperature we would expect a full tendency of the temperature with the width of the transitions which is not here.
+This plot shows a linear increase of the temperature coming from the direct increase of illumination time: there is no exponential behavior of 
+this curve as expected.
 
 \begin{figure}[H]
     \centering
@@ -987,11 +990,18 @@ mean temperature we would expect a full tendency of the temperature with the wid
 % LINE 1: 259.01 MHz
 %----------------------------------------------------------
 
-The first molecular state $f_1 = -259.01\pm 0.12$ red detuned from the atomic resonance has been obtained for \hl{environnement des datas?} at intensity $I = 19$~W/cm$^2$.
+
+\paragraph{Line at $-259.01$ MHz}
+The first molecular state $f_1 = -259.01\pm 0.12$ red detuned from the atomic resonance has been obtained for illumination time of t = 1000~ms on a 
+recompressed gas at intensity $I = 19$~W/cm$^2$.
 The lorentzian shape of the data \ref{subfig:259MHz_spectrum} (see 3.2.3.2) reveals a surprising measured linewidth of $\Gamma = 2.53 \pm 0.17$~MHz with a maximized contrast
 of half of the atom number at resonance. \\
+
 Fig.\ref{subfig:259MHz_temp} is a measurement of the temperature of the cloud from the same experiment that should validate the molecular nature of the collisions. While one
-expect an increase of the temperature at the centre frequency of the molecular line the temperature appears to be constant with the detuning.
+expect an increase of the temperature at the center frequency of the molecular line the temperature appears to increase for about 0.5~$\mu$K symmetrically with the resonance, 
+where the width of the lorentzian fit of the resonance is marked by the green dashed lines.\\
+
+The exponential decay has not been verified for this resonance but the behavior of the temperature testify the molecular creation.
 
 \begin{figure}[H]
     \centering
@@ -1014,26 +1024,31 @@ expect an increase of the temperature at the centre frequency of the molecular l
     All detunings are measured from the $^{87}$Sr atomic resonance.}
     \label{fig:line_259MHz}
 \end{figure}
-
 %----------------------------------------------------------
 % LINE 2: 274.83 MHz
 %----------------------------------------------------------
 \paragraph{Line at $274.83$ MHz}
-The second line we have been capable to detect is at $f_2 = -274.83\pm 0.03$ MHz from the atomic resonance plotted in \ref{subfig:274MHz_spectrum}.
-Once again the linewidth measured $\Gamma = 7.48 \pm 0.77$ is surprisingly large. \hl{The points out of the fit could come from a delocking laser or}.
-This time the measurement of the temperature \ref{subfig:274MHz_temp}
-shows an increases of about $500$~nK at the center of the line.
+The second line detected is at $f_2 = -274.83\pm 0.03$ MHz from the atomic resonance plotted in \ref{subfig:274MHz_spectrum}. The gas prepared of density
+$2\times 10^{13}$~atoms/cm$^3$ was evaporated in the crossing and illuminated for 1000~ms.
+in reservoir and dimple
+Once again the linewidth measured $\Gamma = 7.48 \pm 0.77$ is surprisingly large. The points out of the fit could come from a delocking laser or 
+simply a mis-fitting of the gaussian shape of the gas. \\
+
+The measurement of the temperature \ref{subfig:274MHz_temp} is almost maximum at the center of the resonance but shows an unexplained oscilation 
+just after of about $0.1~\mu$K around $1.52~\mu$K.\\
+The analysis of the resonance is completed by the exponential decay observation in \ref{subfig:274MHz_exp}:
+\hl{ajouter analyse de cette data et parler d'éventuellement les deux sources de one-body loss}
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}{1\linewidth}
+    \begin{subfigure}{0.8\linewidth}
         \centering
         \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data171.pdf}
         \caption{Resonance spectrum at $274.83 \pm 0.03$ MHz ($I = 5.2$ W/cm$^2$).}
         \label{subfig:274MHz_spectrum}
     \end{subfigure}
 
-    \begin{subfigure}{1\linewidth}
+    \begin{subfigure}{0.8\linewidth}
         \centering
         % TODO: temperature figure for 274.83 MHz line not yet added
         \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_171.pdf}
@@ -1041,7 +1056,7 @@ shows an increases of about $500$~nK at the center of the line.
         \label{subfig:274MHz_temp}
     \end{subfigure}
 
-    \begin{subfigure}{1\linewidth}
+    \begin{subfigure}{0.8\linewidth}
         \centering
         % TODO: temperature figure for 274.83 MHz line not yet added
         \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data190_exp.pdf}
@@ -1060,12 +1075,11 @@ shows an increases of about $500$~nK at the center of the line.
 % LINE 3: 375.74 MHz
 %----------------------------------------------------------
 \paragraph{Line at $375.74$ MHz}
-The last measured molecular line at $f_3 = 375.74\pm 0.48$ MHz has a really low contrast and still a large linewidth of $\Gamma = 10.96 \pm 2.68$~MHz.
+The last measured molecular line at $f_3 = 375.74 \pm 0.48$\,MHz is obtained for a recompressed gas illuminated during \qty{1000}{ms} with an intensity $I = 5.6$\,W/cm$^{2}$.
+It has a really low contrast and still a large linewidth of $\Gamma = 10.96 \pm 2.68$~MHz.
 The temperature measurement in \ref{subfig:375MHz_temp} shows a frank slope change between the resonance and the red detuned frequencies where it decreases
-to $\Delta T = 200$~nK. The temperature being mostly constant during the entire molecular resonance $dN/dt$ measurement \ref{subfig:375MHz_exp} is well desribed
-by the fitting function \ref{fitting function exp} valid for constant temperature. This graph contains two slopes: a first one that is zoomed in the top corner
-greatly fitted by the two-body loss term and a second slope at long time well desribed by the one-body loss term. We see that the decay time of the two-body losses
-is short : \hl{t?}
+to $\Delta T = 200$~nK. The temperature being mostly constant during the entire molecular resonance $dN/dt$ measurement \ref{subfig:375MHz_exp} is well described
+by the fitting function \ref{eq:final_fit} valid for $\beta$ independant on T. \hl{slopes ?}
 
 \begin{figure}[H]
     \centering
@@ -1117,8 +1131,6 @@ $l_{opt}/I$ ($10^{-6} a_0$) & --- & $1.92 \pm 0.44$ & $2.60 \pm 0.88$ \\
 \end{table}
 
 
-The plots of molecular lines in \ref{87Sr molecular lines} added to the really low estimated $l_{opt}$ values for high intensity expose multiple unexpected behaviours.\\
-
 \noindent\textbf{Defining $l_{\text{opt}}$}\\
 There are two ways to determine the optical length. 
 One is to use the Lorentzian fit of the resonance. Following the formulation from \cite{zelevinsky_narrow_2006}, the inelastic two-body loss rate coefficient is expressed as:
@@ -1148,17 +1160,20 @@ Remarkably, the product of the amplitude and the square of the linewidth elimina
 
 The second way to define $l_{opt}$ is straightforward : $dN/dt$ fit gives an estimation of $K_2$ that is related with $l_{opt}$ as $K_2 = \frac{16 h}{m_{at}l_{opt}}$.
 \hl{calculs lopt avec les valeurs d'ammplitude NON NORMALISEES car valeurs actuelles relevées pour 87 fausses }
-\textbf{PA lines found on $87Sr$}\\
-First, we have not been able to detect two-body losses before $259.01$ MHz which is surprising taking into acount the expect frequency ranges on $87$ isotope from mass scaling discussion of \cite{borkowski_mass_2014}.\\
-Then we hardly exceed $30\%$ of loss: all three datas present small depths from $8.3\pm 0.9 \%$ to $36.4\pm 1.9 \%$ for intensites greater than many experiments like \cite{zelevinsky_narrow_2006} and similar atomic densities. \\
-In addition the linewidth of each line is large : $2.53 \pm 0.17$, $7.48 \pm 0.77$ MHz and $10.93 \pm 2.68$ MHz while we expect $\Gamma = \gamma_{mol} \simeq 2\times \gamma_{at} \simeq 15$ kHz.\\
-
 \hl{Ajouter commentaires sur le calcul de T et estimation incertitude}
-In the next subsection I will discuss the possible interpretation of these caracteristics.
-\subsubsection{Exponential decay and temperature increase: molecular lines with unexpected shape}
-A validation of the two-body losses nature of the collisions responsible for these molecular lines failed: that could come from the presence of three-body losses that would break the $-\beta N^2$ decay at short exposure time. The gas could also not be thermalized at the PA moment of the sequence which will induce collisions between the different spin components. We see at the top small window of the plot where the data is zoomed on the first exposure times under a second the presence of different tendencies.\\
-A last reason mostly probable for the wrong fitting is the presence of another sideband at around $176$ MHz from this molecular line that would induce atomic losses.
 
+\textbf{PA lines found on $87Sr$}\\
+These results show multiple surprising behaviors of our atoms :
+
+\begin{itemize}
+    \item First, we have not been able to detect two-body losses before $259.01$ MHz which is surprising taking into acount the expect frequency ranges on $87$ isotope from mass scaling discussion of \cite{borkowski_mass_2014}.
+    \item Then we hardly exceed $30\%$ of loss: all three datas present small depths from $8.3\pm 0.9 \%$ to $36.4\pm 1.9 \%$ for intensites greater than many experiments like \cite{zelevinsky_narrow_2006} and similar atomic densities. 
+    \item In addition the linewidth of each line is large : $2.53 \pm 0.17$, $7.48 \pm 0.77$ MHz and $10.93 \pm 2.68$ MHz while we expect $\Gamma = \gamma_{mol} \simeq 2\times \gamma_{at} \simeq 15$ kHz.
+\end{itemize}
+
+
+The plots of molecular lines added to the really low estimated $l_{opt}$ values for high intensity expose multiple unexpected behaviours.\\
+In the next subsection I will discuss the possible interpretation of these caracteristics.
 
 \subsection{Interpretation of low contrast}
 The spectroscopy of $^{87}Sr$ reveals a really important linewidth coupled to a low contrast. A way to interpret this surprising contrast is the predissociation.
