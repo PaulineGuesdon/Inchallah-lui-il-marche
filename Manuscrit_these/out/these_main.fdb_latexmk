@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1783084380.71206 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1783084389.27591 0
+["bibtex out/these_main"] 1783091484.14968 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1783097315.15005 0
   "./ref.bib" 1781623620 63818 2d775687e77e634ebeb6731661a898eb ""
   "./spincontrol_refs.bib" 1779203640 549367 6b3bd591fb7a36bddef0122884a01a8a ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/ieeetr.bst" 1291864344 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1783084388 35367 bc822e20af0469624b5ea1245871fa3e "pdflatex"
+  "out/these_main.aux" 1783097314 35369 8894bf5d1ffead2df20796a7ac462f2a "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1783084381.38888 "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1783084389.27666 0
+["pdflatex"] 1783097308.52695 "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1783097315.15085 0
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1779883527 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1771496879 14064 48988c15252745ffb24fd32721a2820d ""
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1775563748 13338688 9fd0248c43254865fc857a8837d50457 ""
@@ -200,7 +200,7 @@
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/zoom_red_chain_beating.pdf" 1780920614 118670 46c40af66c2256b93e8494b4b5e9166c ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf" 1780559467 60309 59a08424e6ccc9a478d78980a4a8dca0 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf" 1780559467 79267 14c623dbacc40bf416a30f94c57175dd ""
-  "Chapitres/Introduction/Introduction.tex" 1783084267 3388 6365ec50a8961890ca1074291099a5a3 ""
+  "Chapitres/Introduction/Introduction.tex" 1783097304 4423 682aa569dbcbfbff986ea473ac684388 ""
   "Chapitres/Introduction/images/ODT_loading.png" 1776070351 42170 7f8c413d7c2ae9196e3e7976c994f54a ""
   "Chapitres/Introduction/images/chaine_bleue_actualisée.pdf" 1776070351 214976 a0f554dae1a7c6cd7fa5315c3f209bde ""
   "Chapitres/Introduction/images/chaine_rouge_vieille.png" 1776070351 134222 ae9d7c737e8a814a8614d7fcd3fe73e6 ""
@@ -209,8 +209,8 @@
   "Chapitres/Introduction/images/optical_pumping.png" 1776070351 43599 b88700e56939675b942ef41222ab9bd4 ""
   "Chapitres/Introduction/images/randomisation.jpeg" 1776070351 214130 84d455bb531baf900fc68291971780f6 ""
   "Chapitres/Introduction/images/red_MOT_in_3_steps.pdf" 1776070351 1815619 592ace939ccfbb8e26dbdf5f08a2748d ""
-  "Chapitres/Introduction/images/repompeur.png" 1776070351 84522 417ea71382f698f231ed5b0e22b963a8 ""
   "Chapitres/Introduction/images/spin_kick_scheme.png" 1776070351 72635 4f934a10137a094245e250b3ce2cce32 ""
+  "Chapitres/Introduction/images/table_repumper.pdf" 1783084478 110850 183fd080ff0885454bc09900d4452468 ""
   "Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex" 1779209605 756 d579552ee0e9e24024864f15c385a46c ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig1.pdf" 1779203640 1356687 95cf72db876d28fb55b8a0cb023dc6e4 ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig2.pdf" 1779203640 375578 085fdef2d26584e7620bd02150a22c68 ""
@@ -228,12 +228,12 @@
   "appendix/titlepage.tex" 1776070351 867 bb7073512633b892c0cc21646372f930 ""
   "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1781517736 4923 27c527cf48a224d6d08d03fc20878c24 ""
   "out/these_main.acr" 1777880373 7 9f404503043ec80c08484be9f659189e ""
-  "out/these_main.aux" 1783084388 35367 bc822e20af0469624b5ea1245871fa3e "pdflatex"
-  "out/these_main.bbl" 1783084381 22353 96c6ef458abc8df20014eeb1baf4085b "bibtex out/these_main"
-  "out/these_main.lof" 1783084388 4837 5a6aa27adf88823ddb9cd703492ef57d "pdflatex"
-  "out/these_main.lot" 1783084388 408 c9d6009d4dbe3097c0beae3fc9fa3da9 "pdflatex"
-  "out/these_main.out" 1783084388 15066 8f68bbb55927ba90b177bd663d4fdb3b "pdflatex"
-  "out/these_main.toc" 1783084388 7024 419893b3ca21f9e617dcab21862592a8 "pdflatex"
+  "out/these_main.aux" 1783097314 35369 8894bf5d1ffead2df20796a7ac462f2a "pdflatex"
+  "out/these_main.bbl" 1783091484 22353 96c6ef458abc8df20014eeb1baf4085b "bibtex out/these_main"
+  "out/these_main.lof" 1783097314 4837 3bc60ec1ae3ee2cfa6181538af5b0949 "pdflatex"
+  "out/these_main.lot" 1783097314 408 fc73fad6a2d6fcad115dadb0bf3bee3c "pdflatex"
+  "out/these_main.out" 1783097314 15066 8f68bbb55927ba90b177bd663d4fdb3b "pdflatex"
+  "out/these_main.toc" 1783097314 7025 4fd5e7a6c0cb899daa8b423897233137 "pdflatex"
   "these_main.tex" 1781517736 4923 27c527cf48a224d6d08d03fc20878c24 ""
   (generated)
   "out/these_main.acn"
