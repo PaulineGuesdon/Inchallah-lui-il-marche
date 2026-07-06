@@ -228,12 +228,12 @@ INPUT ./appendix/titlepage.tex
 INPUT ./appendix/titlepage.tex
 INPUT ./appendix/titlepage.tex
 INPUT appendix/titlepage.tex
+INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT out/these_main.ist
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-OUTPUT out/these_main.ist
-INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./appendix/abstract.tex
 INPUT ./appendix/abstract.tex
 INPUT ./appendix/abstract.tex
@@ -305,12 +305,14 @@ INPUT ./Chapitres/Introduction/Introduction.tex
 INPUT ./Chapitres/Introduction/Introduction.tex
 INPUT Chapitres/Introduction/Introduction.tex
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./Chapitres/Introduction/images/table_repumper.pdf
 INPUT ./Chapitres/Introduction/images/table_repumper.pdf
 INPUT ./Chapitres/Introduction/images/table_repumper.pdf
 INPUT ./Chapitres/Introduction/images/table_repumper.pdf
 INPUT ./Chapitres/Introduction/images/table_repumper.pdf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
 INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
 INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
@@ -366,8 +368,6 @@ INPUT ./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinCon
 INPUT ./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex
 INPUT ./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex
 INPUT Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig1.pdf
 INPUT ./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig1.pdf
 INPUT ./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig1.pdf

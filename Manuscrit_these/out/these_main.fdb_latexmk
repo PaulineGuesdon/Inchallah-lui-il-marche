@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1782745383.27366 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1783000501.49573 0
+["bibtex out/these_main"] 1783337896.13896 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1783337907.76044 0
   "ieeetr.bst" 0 -1 0 ""
-  "out/these_main.aux" 1783000500.88346 50432 0fe74c97727522377cc541239b557158 "pdflatex"
+  "out/these_main.aux" 1783337907.21984 35370 0108faada229eb86a7f7bf2740bf0a13 "pdflatex"
   "ref.bib" 1781622435.03387 62943 2d775687e77e634ebeb6731661a898eb ""
   "spincontrol_refs.bib" 1779216452.60993 549304 6b3bd591fb7a36bddef0122884a01a8a ""
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1783000490.41046 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1783000501.49626 0
+["pdflatex"] 1783337897.68818 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1783337907.76093 2
   "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1781523595.58179 4741 27c527cf48a224d6d08d03fc20878c24 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -208,7 +208,7 @@
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/zoom_red_chain_beating.pdf" 1781095967.88521 118670 deef2fc8cae85a27febb278208a1fd38 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf" 1780503178.41137 60309 e87d01e4187e1ea731100da96d1c173b ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf" 1780503640.70635 79267 14c623dbacc40bf416a30f94c57175dd ""
-  "Chapitres/Introduction/Introduction.tex" 1783000487.97866 3286 c29131ea9de79db3855071f098ea953b ""
+  "Chapitres/Introduction/Introduction.tex" 1783337895.05548 4307 682aa569dbcbfbff986ea473ac684388 ""
   "Chapitres/Introduction/images/ODT_loading.png" 1775984395.9272 42170 096046bbded3d463e5e386f0ff3d48d9 ""
   "Chapitres/Introduction/images/chaine_bleue_actualisée.pdf" 1775984395.94555 214976 431db51f38a16cf35f0ae5c2d4f281e2 ""
   "Chapitres/Introduction/images/chaine_rouge_vieille.png" 1775984395.94707 134222 8d58de6629ef721eb74b387a453aa2f5 ""
@@ -225,7 +225,7 @@
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf" 1779216450.84288 124880 a995a1d3169ba13da03ac75f191c6930 ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf" 1779216450.84503 196863 933448dfb53ed85f14595bebeac7fd5a ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf" 1782917439.77429 138292 87257a98384f328454136a85eb278b77 ""
-  "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1781276464.45463 74550 919b8dd30d55c35c5fa4e9a8185bcc45 ""
+  "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1783337895.06017 74648 f20fbc961cc303f1c4829cb5d305aa0a ""
   "Chapitres/conclusion/conclusion.tex" 1775984395.99658 22 3d71840f53d25ca90a6935976806bc94 ""
   "appendix/abstract.tex" 1775984395.99696 153 eee112a5caef8e0926ac11ba0070c6cc ""
   "appendix/appendixA.tex" 1781449794.72883 1030 92e34e6a6683f5af93dcf8003627b8fb ""
@@ -235,12 +235,12 @@
   "appendix/mis/dedication.tex" 1775984395.99955 123 c52d1d8ac73aabfb3f3061e569acf2cb ""
   "appendix/titlepage.tex" 1775984649.73566 830 bb7073512633b892c0cc21646372f930 ""
   "out/these_main.acr" 1777641657.80531 6 9f404503043ec80c08484be9f659189e ""
-  "out/these_main.aux" 1783000500.88346 50432 0fe74c97727522377cc541239b557158 "pdflatex"
-  "out/these_main.bbl" 1782745383.76195 21474 15b47e296e959612289e9cad3b260e78 "bibtex out/these_main"
-  "out/these_main.lof" 1783000500.91539 12449 60293267483392b9f0edb62572fdcc6f "pdflatex"
-  "out/these_main.lot" 1783000500.91561 408 c9d6009d4dbe3097c0beae3fc9fa3da9 "pdflatex"
-  "out/these_main.out" 1783000500.9073 15071 735f3c569853ef76b53483573d04e8db "pdflatex"
-  "out/these_main.toc" 1783000500.91502 7025 a8f95d981947a2b206baa6b0a83f3ac0 "pdflatex"
+  "out/these_main.aux" 1783337907.21984 35370 0108faada229eb86a7f7bf2740bf0a13 "pdflatex"
+  "out/these_main.bbl" 1783337897.38885 21474 15b47e296e959612289e9cad3b260e78 "bibtex out/these_main"
+  "out/these_main.lof" 1783337907.22774 4837 3bc60ec1ae3ee2cfa6181538af5b0949 "pdflatex"
+  "out/these_main.lot" 1783337907.2279 408 fc73fad6a2d6fcad115dadb0bf3bee3c "pdflatex"
+  "out/these_main.out" 1783337907.22654 15071 735f3c569853ef76b53483573d04e8db "pdflatex"
+  "out/these_main.toc" 1783337907.22753 7026 588514741fd47853c2a4a68d28623eef "pdflatex"
   "these_main.tex" 1781523595.58179 4741 27c527cf48a224d6d08d03fc20878c24 ""
   (generated)
   "out/these_main.acn"
