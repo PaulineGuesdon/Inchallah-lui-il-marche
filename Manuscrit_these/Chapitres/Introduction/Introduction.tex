@@ -4,24 +4,82 @@
 \section{Fermi gas preparation (+ Bose gas ?)}
 The strontium is transformed from solid to gas form by an oven at 490°C through multiple small capillaries in a collimation purpose.  
 
-\subsection{TC} 
-There are then collimated by Transverse Cooling stationnary waves that are propagating perpendicular to the atomic flux: this way the 
-transverse velocity of the atoms is reduced so they mostly propagate along the axis of the coils there for Zeeman cooling. 
+\subsection{Transverse cooling} 
+There are then collimated by Transverse Cooling (TC) stationnary waves that are propagating perpendicular to the atomic flux: this way the 
+transverse velocity of the atoms is reduced by recoil energy $\hbar k_{\perp}$ with $k_{\perp}$ the transverse component of the TC electromagnetic
+wavevector. They mostly propagate along the axis of the coils there for Zeeman cooling. 
 The beam comes from a master-slave system (see Fig \ref{fig:intro-chaine-bleue}) where the slave is a cavity with a gain medium that 
 delivers more power after passing through it. The optical frequency of this laser is set at $f_{TC} = f_{Blue~Master} + f^{RF}_{TC}$ 
 with $f^{RF}_{TC} = $ the modulating frequency of the "TC AOM". \\
-The frequency is red detuned from the targeted $^1S_0~^3P_1$ transition: by Doppler shift more velocity classes of atoms are affected 
-by the TC.
-\hl{ajouter une courbe comme dans l'article sur l'ytterbium avec l'ensemble des pics de résonances dont l'enveloppe est plus grande ?}
+The frequency is red detuned from the targeted $^1S_0~-~^3P_1$ transition: because the temperature is high the atoms have multiple 
+velocity classes. By Doppler shift atoms of different velocities have only a red detuned frequency shift then the laser with a broad 
+spectrum is resonant with atoms of different velocities as illustrate \ref{doppler shift}.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Chapitres/Introduction/images/doppler_shift.png}
+    \caption[Caption]{Caption}
+    \label{doppler shift}
+\end{figure}
 
 \hl{Comment on increasing power in TC (thésard marc chesnais)}
+Depending on the detuning of the laser the atoms can be better cooled during this step. In \cite{TC_thesis} the author shows a curve of the number 
+of atoms depending on the detuning of the laser.
 
 \subsection{Zeeman cooling}
+Still in a manner of energy recoil the atoms are then slowed down by Zeeman cooling. The principle is to use a counterpropagating laser on resonance 
+with Zeeman states of atoms passing through a magnetic field 
+gradient created by an ensemble of \hl{number ?} coils. At the beginning atoms have a large mean velocity of $v = $ and the B field is high 
+
 \subsection{Blue MOT}
 \subsubsection{The physics}
-\subsubsection{How to optimize the superposition with the repumper}
+The Magnetic Optical Trap (MOT) purpose is to trap the atoms in a small volume to cool them down. The first step of cooling is to do a blue MOT 
+that uses the $^1S_0~-~^1P_1~,F=$ transition first to coincide the broad resonance with the broad Doppler shift velocity distribution.
+This MOT is composed by a magnetic field gradient created by pairs of coils in the three directions, centered in the middle of a vacuum chamber and combined
+to the same laser as before at $461$~nm. There is the exact same behavior in each dimension which is why - for simplicity - I will describe the phenomenon along
+x only. 
 
+One start with a small gradient at $B = ~G$ on atoms that are spread in a wide volume because of their kinetic temperature. This field expresses as $B \propto x$ 
+which means that the fthe degeneracy lift $\Delta E = -m_F g \mu_B B$ is higher at extreme positions. 
+
+It is combined with a counterpropagating beam that passes through a $\lambda /4$ waveplate to turn its polarization it's opposite circular. The interaction between 
+light and matter takes the form of the radiation pressure that pushes the atoms with high velocity to the center of the B field: the more the velocity the stronger 
+is this restoring force. At this level the laser is at a fixed frequency and the multiple spin projections are shifted also proportionnal to the position because 
+the B field is linear with the position. Then when an atom is at position $a$ the laser is resonant with $m_F = -9/2$ and the atom looses $\hbar k$ energy that takes 
+him close to the center. It becomes necessary to increase the gradient since the atoms are tending to smaller mean velocity closer to the $O^{th}$ position. 
+
+The temperature of the gas attempt Doppler limit $k_B T = \frac{\hbar \Gamma_{^1S_0-^1P_1}}{2}$ that is colder than the recoil temperature. 
+
+\subsubsection{Comment on the hyperfine states (+boson 88)}
+
+\subsubsection{Optical setup (blue + repump)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/chaine_bleue_actualisée.pdf}
+    \caption{Caption}
+    \label{fig:intro-chaine-bleue}
+\end{figure}
+
+\subsection{Repumper}
+The cooling necessits at this stage the addition of a repumper laser since the most probable decay path for the atoms in the $^1P_1$ state is the metastable state 
+$^3P_2$. Without this supplementary laser the atoms would stay trapped in this state and ??? without going back to the ground state. 
+The repump is assured by a $461~nm$ laser from TOPTICA that is composed by an interferential filter and a extendable cavity, and is constantly swept by $1~$GHz to adress 
+$^3D_2~m_F = 7/2, 9/2, 11/2$ states. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Chapitres/Introduction/images/energy_levels_repumper.png}
+    \caption{Caption}
+    \label{fig:intro-energy-levels-repumper}
+\end{figure}
+
+\subsubsection{How to optimize the superposition with the repumper}
+Only some of them are adressed because \hl{there is a reason why there is a minime atom gain} by scanning more states. Scanning for a 
+higer frequency amplitude means that the particular hyperfine states responsible for the high gain are adressed for less time. The optimization is then done on $1~$GHz on 
+states $m_F$ only during $t=$.
+
+In the end of the blue MOT the gradient is really high: it acts as a magnetic trap on the atoms. Then the atoms are released by the abrupt change of gradient necessary
+for the transfer from the blue MOT to the next step : the red MOT.
 
 \begin{figure}[H]
     \centering
@@ -30,30 +88,35 @@ by the TC.
     \label{fig:intro-repompeur}
 \end{figure}
 
-\subsubsection{Comment on the hyperfine states (+boson 88)}
-\subsubsection{Optical setup (blue + repump)}
+\subsection{Red MOT}
+\subsubsection{Optical setup}
+The Doppler temperature being the limit it is necessary to migrate to narrower transition to have colder gas. The next step of the cooling is done on intercombination 
+line $^1S_0~-~^3P_1$ that is $\Gamma = 7.4~$kHz broad which corresponds to $283~\mu$K. This step is realised with a $689$~nm Radiant Dyes laser that is locked on a high 
+finesse ultrastable cavity. This laser is firstly detuned by \hl{$f = -600$ MHz} from "AOM Inj Slave 1" before being amplified via master-slave system. Then a second 
+double-pass "AOM 87" tune the frequency of the light that is then split in three optical arms for the three directions of the MOT.
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/chaine_bleue_actualisée.pdf}
+    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/chaine_rouge_vieille.png}
     \caption{Caption}
-    \label{fig:intro-chaine-bleue}
+    \label{fig:intro-chaine-rouge}
 \end{figure}
-\subsection{Repumper}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Chapitres/Introduction/images/energy_levels_repumper.png}
-    \caption{Caption}
-    \label{fig:intro-energy-levels-repumper}
-\end{figure}
-\subsection{BB MOT}
+
+\subsubsection{Broadband MOT}
+The atoms spread in a mean volume of width $\sigma = ?$ in each direction are contained in a magnetic field gradient of $B = ?$ and cooled down via the optical molasses
+on $F = 11/2$ hyperfine state of $^3P_1$. The atoms at high temperature necessit a progressive process to attempt Doppler limit on this transition: the first step is to 
+do a sawtooth sweep 
+
+\subsubsection{Narrowband MOT}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/red_MOT_in_3_steps.pdf}
     \caption{Caption}
     \label{fig:intro-red-mot-3-steps}
 \end{figure}
-\subsubsection{First step}
-\subsubsection{Second step}
+
+
+cf p.43 S.Stellmer thesis
 \subsection{Stir}
 Need a stir because :
 
@@ -72,18 +135,9 @@ Need a stir because :
 \end{figure}
 
 
-\subsection{Narrow MOT}
-cf p.43 S.Stellmer thesis
+
 \subsubsection{Optimization of the narrow MOT (intensity, frequency, effect on the size of the cloud)}
 Include images of the cloud for different I and detuning ?
-\subsubsection{Optical setup}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/chaine_rouge_vieille.png}
-    \caption{Caption}
-    \label{fig:intro-chaine-rouge}
-\end{figure}
 
 \subsection{ODT and evaporation}
 \subsubsection{Charging the crossing}
