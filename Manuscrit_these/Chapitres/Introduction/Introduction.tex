@@ -2,6 +2,8 @@
 \begin{flushright}
 \end{flushright}\chapter{Introduction}
 \section{Fermi gas preparation (+ Bose gas ?)}
+\hl{Ajouter ce qui est judicieux d'optimiser à chaque étape, nombre d'atomes ou température}
+
 The strontium is transformed from solid to gas form by an oven at 490°C through multiple small capillaries in a collimation purpose.  
 
 \subsection{Transverse cooling} 
@@ -11,7 +13,7 @@ wavevector. They mostly propagate along the axis of the coils there for Zeeman c
 The beam comes from a master-slave system (see Fig \ref{fig:intro-chaine-bleue}) where the slave is a cavity with a gain medium that 
 delivers more power after passing through it. The optical frequency of this laser is set at $f_{TC} = f_{Blue~Master} + f^{RF}_{TC}$ 
 with $f^{RF}_{TC} = $ the modulating frequency of the "TC AOM". \\
-The frequency is red detuned from the targeted $^1S_0~-~^3P_1$ transition: because the temperature is high the atoms have multiple 
+The frequency is red detuned from the targeted $^1S_0-~^3P_1$ transition: because the temperature is high the atoms have multiple 
 velocity classes. By Doppler shift atoms of different velocities have only a red detuned frequency shift then the laser with a broad 
 spectrum is resonant with atoms of different velocities as illustrate \ref{doppler shift}.
 
@@ -46,9 +48,9 @@ It is combined with a counterpropagating beam that passes through a $\lambda /4$
 light and matter takes the form of the radiation pressure that pushes the atoms with high velocity to the center of the B field: the more the velocity the stronger 
 is this restoring force. At this level the laser is at a fixed frequency and the multiple spin projections are shifted also proportionnal to the position because 
 the B field is linear with the position. Then when an atom is at position $a$ the laser is resonant with $m_F = -9/2$ and the atom looses $\hbar k$ energy that takes 
-him close to the center. It becomes necessary to increase the gradient since the atoms are tending to smaller mean velocity closer to the $O^{th}$ position. 
+him close to the center. It becomes necessary to increase the gradient since the atoms are tending to smaller mean velocity closer to the $0^{th}$ position. 
 
-The temperature of the gas attempt Doppler limit $k_B T = \frac{\hbar \Gamma_{^1S_0-^1P_1}}{2}$ that is colder than the recoil temperature. 
+The temperature of the gas attempt Doppler limit $k_B T = \frac{\hbar ~\Gamma_{^1S_0-^1P_1}}{2}$ that is colder than the recoil temperature. 
 
 \subsubsection{Comment on the hyperfine states (+boson 88)}
 
@@ -130,14 +132,14 @@ For this laser there are the same steps as for the red MOT in the same time:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Chapitres/Introduction/images/need_for_stir.png}
+    \includegraphics[width=0.7\linewidth]{Chapitres/Introduction/images/need_for_stir.png}
     \caption{Caption}
     \label{fig:intro-need-for-stir}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Chapitres/Introduction/images/randomisation.jpeg}
+    \includegraphics[width=0.7\linewidth]{Chapitres/Introduction/images/randomisation.jpeg}
     \caption{Caption}
     \label{fig:intro-randomisation}
 \end{figure}
@@ -156,15 +158,14 @@ the temperature of the cloud.
 
 \subsection{ODT and evaporation}
 \subsubsection{Charging the crossing}
-The last step of the cooling procedure is the evaporation cooling from an optical dipole trap (ODT) that is 
+The pre-last step of the cooling procedure is the evaporation cooling from an optical dipole trap (ODT) that is 
 cooling and trapping the atoms in a volume of width $\sigma = ?$ at 1061~nm. 
 Firstly the ODT is loaded with the atoms from the red MOT. 
 Because the $^1S_0$ state has a different value of g factor \hl{c'est quoi déjà son nom et sa valeur} the lightshift is different from the 
 $^3P_1$. This last one represented in \ref{fig:intro-odt-loading} is deeper shifted which means that in the center of the trap the red MOT 
-is realizing the MOT adressing the transition $^1S_O-^3P_1$ with a red detuning where the atoms end up cooled and trapped in the center of
-the trap. For the hotter atoms that are at the edge of the trap they blue detuned from the $^1S_0$ state which means that they are not trapped 
+is realizing the MOT adressing the transition $^1S_0-^3P_1$ with a red detuning where the atoms end up cooled and trapped in the center of
+the trap. For the hotter atoms that are at the edge of the trap they are blue detuned from the $^1S_0$ state which means that they are not trapped 
 by the MOT.
-The gas attempt at this stage a temperature of $T=$
 
 \begin{figure}[H]
     \centering
@@ -172,17 +173,71 @@ The gas attempt at this stage a temperature of $T=$
     \caption{Caption}
     \label{fig:intro-odt-loading}
 \end{figure}
+
+The gas attempt at this stage a temperature of $T=$ and tend to temperature at the order of $T = 100~$nK for Fermi gases by evaporative cooling.
+This final stage consist in letting the hotter atoms leave a inclined trap where the atoms with the most thermal energy are evaporated at the 
+inclined edge of the two-dimensions trap illustrated in figure \ref{fig:evap}. The resting atoms are them thermalizing by collisions.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Introduction/images/evaporative_cooling.png}
+    \caption{Caption}
+    \label{fig:evap}
+\end{figure}
+
 \subsubsection{Optimization of the evaporation ramps : Dimple + reservoir, just reservoir, parameter to optimize (number of atoms, temperature)}
-Comment on the LS it does to each state
+The vertical axis one call "Dimple" on this thesis acts mostly on the temperature of the gas since it changes the depth of the crossing and so the 
+thermal energy accepted by the trap. The horizontal beam "Reservoir" acts mostly on the collision rate.
+
+To obtain a Fermi degenerated gas it is necessary to optimise these ramps adiabatically in order to maximize the phase density $\propto \frac{N}{T^3}$
+
+The intensity of the vertical beam is $a$ times bigger than the horizontal one to compensate the gravity acting in vertical axis only. Then the size of 
+vertical is $\omega^V_0 = 34~\mu$m and the horizontal beam $\omega^H_0 = 147~\mu$m.
 
 \subsubsection{Optical setup}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/1.30_dipole_trap(1075)_setup.png}
+    \caption{Caption}
+    \label{fig:odt}
+\end{figure}
+
+\section{Spin selection}
 \subsection{Optical pumping}
+Optical pumping preliminarly prepares the gas with a chosen number of spin population to start manipulating on them. The $^3P_1,~F = 11/2$ is linearly shifted
+by Zeeman the electrons interacting with a magnetic field of value $B =$. The atoms are pumped by a $\sigma^-$ polarization beam of frequency $f_{11/2} = 
+f_{Radiant~Dyes} \pm f^{RF}_{Slave~1} + f^{RF}_{11/2}$ with intensity $I$ during $t=$. 
+
+The states are frequency swept around the targeted $^3P_1, F = 11/2, m_F'$ 
+state to empty the ground $^1S_0, F=9/2, m_F$ population. By spontaneous emission the atoms decay with a selection rule 
+$\Delta_J = \pm 1, \Delta m_F = 0,-1,-2$ then populating $^1S_0, F=9/2, m_F-1 \text{ and } m_F-2$. \\
+
+\hl{comment on efficiency ? ajouter temps et intensité pulses}\\
+For an su(1) gas it is necessary to have a second spin population to collision with since there is no spin exchange under collisions of $^{87}Sr$: the last 
+population blast away is the $m_F = -9/2$ after the pumping of all wanted populations. 
+ 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/optical_pumping.png}
     \caption{Caption}
     \label{fig:intro-optical-pumping}
 \end{figure}
+
+
+\section{Spin manipulation}
+\subsection{Principle}
+Coherent and independant method of spin manipulation  is demonstrated in \cite{litvinov_measuring_2021}.
+\hl{changer avec la bonne figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/spin_kick_scheme.png}
+    \caption{Caption}
+    \label{}
+\end{figure}
+
+\subsection{ECDL laser: architecture and filtering}
+
 \section{Spin measurement scheme}
 \begin{figure}[H]
     \centering
@@ -190,7 +245,3 @@ Comment on the LS it does to each state
     \caption{Caption}
     \label{fig:intro-spin-kick-scheme}
 \end{figure}
-
-\section{Spin manipulation}
-\subsection{Principle}
-\subsection{ECDL laser: architecture and filtering}
