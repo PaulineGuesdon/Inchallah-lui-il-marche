@@ -125,7 +125,7 @@ cf p.43 S.Stellmer thesis
 
 \subsection{Stir}
 In parallel with the red MOT one add a 'stir' laser that redistributes the spin distribution because as in Fig.\ref{fig:intro-need-for-stir} some particules
-are pushed at the edge of the cloud when resonant with the laser and are not possibly adressable anymore. Then one use the $F=9/2$ state do de-excite the atoms to 
+are pushed at the edge of the cloud when resonant with the laser and are not possibly adressable anymore. Then one use the $F=9/2$ state to de-excite the atoms to 
 the ground state $^1S_0$ so they can be trapped again in the red MOT. 
 
 For this laser there are the same steps as for the red MOT in the same time:
@@ -233,8 +233,33 @@ by an interferential filter placed at the center of a cateye system that is a ca
 source that depends on the wanted experiment.
 
 \subsubsection{Raman transitions}
-The second chapter of this thesis concerns the 
+The second chapter of this thesis is about spin manipulation on SU(10) manifold. This operation is done by two-photons Raman process from two different lasers adressing
+with a red detuning from the intercombination line. 
+
+One want to control the size of the Hilbert space from one to ten which necessits the independant manipulation of the spin states. Raman transition on this line 
+is the coupling of an $\ket{F, m_F}$ ground state manifold to a state from an ensemble of hyperfine states which has the form
+
+\begin{equation}
+    \hbar \Omega = E \times E^* \sum_{0}^{F = n} \frac{\bra{F, m_F'}\vec{d}.\vec{E}\ket{F, m_F}\bra{F, m_F}\vec{d}.\vec{E}\ket{F, m_F'}}{\delta}
+\end{equation}
+
+The shift of the state has finally the simple form
+%\begin{equation}
+%    \delta E_{m_F}^{m_{F+1}} = q(2 m_F +1) + \beta
+%\end{equation}
+
+that shows the unique energy difference between two consecutive states enabling then to process to Raman transitions with a first photon from the "Dressing" laser that is 
+inducing this TLS and the first part of the transition.
+
 \hl{ajouter l'autre schéma optique pour les transitions raman en opposition à PA}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/moglab.pdf}
+    \caption[]{Caption}
+    \label{}
+\end{figure}
+
 \subsection{Principle}
 \begin{figure}[H]
     \centering
