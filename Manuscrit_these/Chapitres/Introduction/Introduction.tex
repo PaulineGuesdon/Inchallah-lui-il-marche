@@ -225,13 +225,22 @@ population blast away is the $m_F = -9/2$ after the pumping of all wanted popula
 \end{figure}
 
 \section{Spin manipulation}
-\subsection{Setup}
+\subsection{External Cavity Diode Laser (ECDL)}
 Coherent and independant method of spin manipulation is demonstrated in \cite{litvinov_measuring_2021}. To resolve the non-independent isolation of spin states
-from Zeeman splitting only one induce a Tensorial Light Shift (TLS) from a MOGlabs External Cavity Diode Laser (ECDL) at 689~nm. The frequency of this laser is settled
-by an interferential filter placed at the center of a cateye system that is a cavity system giving a laser width under 100~kHz. Then this laser is beat-locked with a 
-source that depends on the wanted experiment.
+from Zeeman splitting only one induce a Tensorial Light Shift (TLS) from a MOGlabs ECDL laser at 689~nm. The frequency of this laser is settled
+by an interferential filter placed at the center of a cateye system giving a laser width under 100~kHz. An internal PID controller compensates the derivation of 
+the cavity length and the intensity of the diode with robustess. 
+Then this laser is beat-locked with a source that depends on the wanted experiment.
 
-\subsubsection{Raman transitions}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth, angle=90]{Chapitres/Introduction/images/ECDL_laser.jpeg}
+    \caption[ECDL laser MOGlabs]{Caption}
+    \label{ECDL laser}
+\end{figure}
+
+\subsection{Raman transitions}
+\subsubsection{Physical concept}
 The second chapter of this thesis is about spin manipulation on SU(10) manifold. This operation is done by two-photons Raman process from two different lasers adressing
 with a red detuning from the intercombination line. 
 
@@ -242,30 +251,14 @@ is the coupling of an $\ket{F, m_F}$ ground state manifold to a state from an en
     \hbar \Omega = E \times E^* \sum_{0}^{F = n} \frac{\bra{F, m_F'}\vec{d}.\vec{E}\ket{F, m_F}\bra{F, m_F}\vec{d}.\vec{E}\ket{F, m_F'}}{\delta}
 \end{equation}
 
-The energy difference between two consecutive states is finally simply 
+The energy difference between two consecutive states is simply 
 \begin{equation}
     \Delta E_{m_F}^{m_{F+1}} = q(2 m_F +1) + \beta
 \end{equation}
 
-that shows the unique value of the energy difference between two consecutive states. It enables then two-photons process with a first photon from 
-the "Dressing" laser that is inducing this TLS and the first part of the transition. A
+that shows the unique value of the energy difference between two consecutive states. 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\linewidth]{Chapitres/Introduction/images/chaine_moglab.pdf}
-    \caption[]{Caption}
-    \label{}
-\end{figure}
 
-\subsubsection{Photoassociation}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\linewidth]{Chapitres/Introduction/images/moglab.pdf}
-    \caption[]{Caption}
-    \label{}
-\end{figure}
-
-\subsection{Principle}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/TLS_et_raman.png}
@@ -273,7 +266,38 @@ the "Dressing" laser that is inducing this TLS and the first part of the transit
     \label{}
 \end{figure}
 
-\subsection{ECDL laser: architecture and filtering}
+\subsubsection{Experimental setup of Raman process}
+It enables then two-photons process with a first photon from the "AOM lattice 689" laser in red in Fig.\ref{raman transitions} that is inducing this TLS and the first part of 
+the transition. A second beam tuned by 'AOM Raman' - in blue in the same scheme - finishes the process that creates in this example a coupling between 
+$\ket{^1S_0, F=9/2, m_F=-7/2}$ and $\ket{^1S_0, F=9/2, m_F=-5/2}$ only. The other $m_F$ states act as is there were no coupling with the targeted state.
+The path of those beams appear in Fig.\ref{mog_raman} that is valid for this operation only and changes for the spectroscopy of the chapter 3.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Chapitres/Introduction/images/chaine_moglab.pdf}
+    \caption[]{Caption}
+    \label{mog_raman}
+\end{figure}
+
+\subsection{Photoassociation}
+The third chapter is about photoassociating atoms under the intercombination line. The beam used for this effect is tuned by the same 'AOM lattice 689' with all the power 
+injected in this AOM instead of shared with the 'Raman AOM'. For all the datas of chapter 3 this optical chain is composed by a homemade confocal Fabry-Perot cavity locked by a 
+Pound-Drever-Hall locking system (PDH) demonstrated in \cite{black_introduction_2001}, inserted in the previous scheme for Raman process giving the final scheme of Fig.\ref{raman transitions}.\\
+
+The distance between the two curved mirrors is set for all the spacial electric modes to be resonant at the same frequency. It enables to maximize the transmitted intensity of the laser
+through the mirrors of reflectivity R = 99$\%$. This cavity has a final transmission of $T = 0.54$ when locked on the laser for a Free Spectral Range
+defined as $FSR = \frac{c}{2L} = 3~$GHz. 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Chapitres/Introduction/images/moglab.pdf}
+    \caption[]{Caption}
+    \label{raman transitions}
+\end{figure}
+
+The PDH system of the cavity lock starts with an Electro Optical Modulator (EOM) that creates sidebands around the center frequency of the laser $f_0 = f_{MOGlabs}$ at $f_0 \pm f_M$ 
+with $f_M$ the modulation frequency of the EOM. 
 
 \section{Spin measurement scheme}
 \begin{figure}[H]
