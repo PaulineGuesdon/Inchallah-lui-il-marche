@@ -1,49 +1,48 @@
-This is BibTeX, Version 0.99e
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: these_main.aux
-Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
-Reallocating 'name_of_file' (item size: 1) to 4 items.
-Reallocating 'name_of_file' (item size: 1) to 17 items.
 Database file #1: ref.bib
 Database file #2: spincontrol_refs.bib
 Warning--entry type for "notemixture" isn't style-file defined
---line 63 of file spincontrol_refs.bib
+--line 62 of file spincontrol_refs.bib
+Warning--empty journal in bataille_realisation_nodate
+Warning--empty year in bataille_realisation_nodate
 Warning--empty publisher in Landau
 Warning--empty journal in dalibard_interactions_nodate
 Warning--empty year in dalibard_interactions_nodate
 Warning--empty journal in reichenbach_optical_nodate
 Warning--empty year in reichenbach_optical_nodate
-You've used 93 entries,
+You've used 94 entries,
             1876 wiz_defined-function locations,
-            1063 strings with 23444 characters,
-and the built_in function-call counts, 30501 in all, are:
-= -- 2909
-> -- 1700
+            1066 strings with 23531 characters,
+and the built_in function-call counts, 30629 in all, are:
+= -- 2917
+> -- 1704
 < -- 0
-+ -- 602
-- -- 509
-* -- 2207
-:= -- 4314
++ -- 604
+- -- 510
+* -- 2216
+:= -- 4333
 add.period$ -- 101
-call.type$ -- 93
-change.case$ -- 89
+call.type$ -- 94
+change.case$ -- 90
 chr.to.int$ -- 0
-cite$ -- 98
-duplicate$ -- 1682
-empty$ -- 2211
-format.name$ -- 509
-if$ -- 7447
+cite$ -- 101
+duplicate$ -- 1691
+empty$ -- 2228
+format.name$ -- 510
+if$ -- 7475
 int.to.chr$ -- 0
-int.to.str$ -- 93
-missing$ -- 92
-newline$ -- 292
-num.names$ -- 92
-pop$ -- 208
+int.to.str$ -- 94
+missing$ -- 93
+newline$ -- 295
+num.names$ -- 93
+pop$ -- 215
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1541
+skip$ -- 1543
 stack$ -- 0
 substring$ -- 1456
 swap$ -- 995
@@ -51,8 +50,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 217
-width$ -- 95
-write$ -- 943
-(There were 6 warnings)
+warning$ -- 7
+while$ -- 218
+width$ -- 96
+write$ -- 949
+(There were 8 warnings)

@@ -281,14 +281,11 @@ The path of those beams appear in Fig.\ref{mog_raman} that is valid for this ope
 
 \subsection{Photoassociation}
 The third chapter is about photoassociating atoms under the intercombination line. The beam used for this effect is tuned by the same 'AOM lattice 689' with all the power 
-injected in this AOM instead of shared with the 'Raman AOM'. For all the datas of chapter 3 this optical chain is composed by a homemade confocal Fabry-Perot cavity locked by a 
-Pound-Drever-Hall locking system (PDH) demonstrated in \cite{black_introduction_2001}, inserted in the previous scheme for Raman process giving the final scheme of Fig.\ref{raman transitions}.\\
-
-The distance between the two curved mirrors is set for all the spacial electric modes to be resonant at the same frequency. It enables to maximize the transmitted intensity of the laser
-through the mirrors of reflectivity R = 99$\%$. This cavity has a final transmission of $T = 0.54$ when locked on the laser for a Free Spectral Range
-defined as $FSR = \frac{c}{2L} = 3~$GHz. 
-
-
+injected in this AOM instead of shared with the 'Raman AOM'. 
+For all the datas of chapter 3 this optical chain is composed by a homemade confocal Fabry-Perot cavity locked by a 
+Pound-Drever-Hall locking system (PDH) demonstrated in \cite{black_introduction_2001}, inserted in the previous scheme for Raman process giving the final scheme of Fig.\ref{raman transitions}.
+It starts with an Electro Optical Modulator (EOM) that is part of the PDH system (details in the next subsection). A lens of focal length $f = 150$~mm is added for the laser to 
+mode-match the best the cavity mode. Then at reflection of the cavity the light is sent to a photodiode mixed with an RF source for error signal.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/moglab.pdf}
@@ -296,13 +293,52 @@ defined as $FSR = \frac{c}{2L} = 3~$GHz.
     \label{raman transitions}
 \end{figure}
 
-The PDH system of the cavity lock starts with an Electro Optical Modulator (EOM) that creates sidebands around the center frequency of the laser $f_0 = f_{MOGlabs}$ at $f_0 \pm f_M$ 
-with $f_M$ the modulation frequency of the EOM. 
+This cavity helps to filter the amplified-spontaneous emission coming with the laser to adress transitions with more accuracy and limit loss and broadening sources on the strontium spin manipulation.\\
+
+\subsection{Fabry-Perot cavity and PDH locking system}
+
+The distance between the two curved mirrors composing the cavity is set for all the spacial electric modes to be resonant at the same frequency. It enables to maximize the transmitted intensity of the laser
+through the mirrors of reflectivity R = 99$\%$. This cavity has a final transmission of $T = 0.54$ when locked on the laser for a Free Spectral Range
+defined as $FSR = \frac{c}{2L} = 3~$GHz. 
+
+
+The EOM of the PDH locking system creates sidebands around the center frequency of the laser $f_0 = f_{MOGlabs}$ at $f_0 \pm f_M$ 
+with $f_M$ the modulation frequency of the EOM. Carrier and sidebands are interfering giving a modulated signal at the output of the EOM:
+\begin{equation}
+    E_{inc}^{mod} = E_0 \left(J_0(\beta)e^{if_0t}+J_1(\beta)e^{i(f_0 + f_M)t}-J_1(\beta)e^{i(f_0-f_M)t}\right)
+\end{equation}
+The first term at amplitude $J_0(\beta)$ - the $0^{th}$ order Bessel function - is the incident electric field at frequency $f_0$ with effective amplitude $E_0 J_0(\beta)$. 
+The second and third terms come from the interference of the carrier with the RF signal giving rise to two sidebands at $f_0\pm f_M$ with amplitude $J_1(\beta)$ the first order Bessel function.
+These side components are reflected from the first mirror and the carrier from the second acquiring a phase difference with the incident field. This reflection is measured by a photodiode 
+which gives an error signal since it is mixed with the RF signal at $f_M = 40.48~$MHz and low-pass filtered. One can deduce from the modulated piezo of the cavity the error signal of shape 
+Fig.\ref{pdh error signal} any derivation from the central frequency because of the strong slope. Then because the sidebands have opposite phase one can detect what side of the 
+resonance the cavity is. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/pdh_error_signal.png}
+    \caption[]{Caption}
+    \label{pdh error signal}
+\end{figure}
+
+When the cavity is at resonance with the laser one lock it. I have been optimizing the PID controller parameters for a robust lock with a Red Pitaya card that enables to induce electronic noise 
+to the cavity while measuring it. From this analysis the final PID controller acting on the piezo of the cavity has a LP filter of frequency cut-off $f_c = 40~$kHz, proportionnal gain between $1 < K_p < 10$
+and integrative gain $0 < K_i < 8$ /s. \\
+\hl{+ détailler ? Intéressant de discuter de ça ? Figures à ajouter ?}
 
 \section{Spin measurement scheme}
+The atom number measurement is done by absorption imaging on the $^1S_0-~^1P_1$ transition with a Vortex laser at $461~$nm. The measurement of their spin state is detailed in our article \cite{bataille_realisation_nodate}.
+The principle is the following: the atoms absorb photons from two counterpropagating lasers of opposite $\sigma$ polarization (as in Fig.\ref{fig:intro-spin-kick-scheme}(a)). One test a specific transition of $^1S_0-^3P_1$ 
+that we want to measure (Fig.\ref{fig:intro-spin-kick-scheme}(b)). Then the atoms recoil by two momentum $\hbar k$ after the absorption and emission of the photon and are imaged after a 
+time of flight of $t =$. Fig.\ref{fig:intro-spin-kick-scheme}(d) shows the final image of this process: at the center are the residual atoms that are not affected by the two lasers. Another small cloud
+of atoms appears on the left of the central peak corresponding to $\ket{-3/2}$ population. At the opposite appears the $\ket{-7/2}$ from the same process that is affective on both way of the transition.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/spin_kick_scheme.png}
     \caption{Caption}
     \label{fig:intro-spin-kick-scheme}
 \end{figure}
+
+The momemtum kick needs to be adiabatical to be effective since there is an existing coupling between the states that makes an avoided crossing. As an example in Fig.\ref{fig:intro-spin-kick-scheme} the state 
+$\ket{1}$ being the initial state crosses $\ket{2}$ inducing a gap between them. If the adiabaticity criterions are not respected then the initial population in $\ket{1}$ will stay the same.
