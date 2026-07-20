@@ -6,16 +6,28 @@
 
 The strontium is transformed from solid to gas form by an oven at 490°C through multiple small capillaries in a collimation purpose.  
 
+\subsection{Blue optical setup}
+The first stages of the cooling are done on the transition $^1S_0-~^1P_1$ from a master-slave system (see Fig \ref{fig:intro-chaine-bleue}) where 
+the slave is a cavity with a gain medium that delivers more power after passing through it. There are four slaves for different purpose that are 
+frequency shifted by single pass AOMs. Then they are injected in fibers propagating in the main optical table containing the vacuum cell where the atoms are
+trapped and manipulated.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/chaine_bleue_actualisée.pdf}
+    \caption{Caption}
+    \label{fig:intro-chaine-bleue}
+\end{figure}
+
+\hl{ajouter schémas fréquences}
 \subsection{Transverse cooling} 
-There are then collimated by Transverse Cooling (TC) stationnary waves that are propagating perpendicular to the atomic flux: this way the 
-transverse velocity of the atoms is reduced by recoil energy $\hbar k_{\perp}$ with $k_{\perp}$ the transverse component of the TC electromagnetic
-wavevector. They mostly propagate along the axis of the coils there for Zeeman cooling. 
-The beam comes from a master-slave system (see Fig \ref{fig:intro-chaine-bleue}) where the slave is a cavity with a gain medium that 
-delivers more power after passing through it. The optical frequency of this laser is set at $f_{TC} = f_{Blue~Master} + f^{RF}_{TC}$ 
-with $f^{RF}_{TC} = $ the modulating frequency of the "TC AOM". \\
-The frequency is red detuned from the targeted $^1S_0-~^3P_1$ transition: because the temperature is high the atoms have multiple 
-velocity classes. By Doppler shift atoms of different velocities have only a red detuned frequency shift then the laser with a broad 
-spectrum is resonant with atoms of different velocities as illustrate \ref{doppler shift}.
+There are then more collimated by Transverse Cooling (TC) stationnary waves that are propagating perpendicular to the atomic flux: this way the 
+transverse velocity of the atoms absorbing photons is reduced by recoil energy $\hbar k_{\perp}$ with $k_{\perp}$ the transverse component of the TC electromagnetic
+wavevector. The principle behind this cooling is the Doppler effect illustrated in Fig.\ref{doppler shift} where atoms with different speed classes are represented by the
+different gaussian peaks centered in $\omega_0 \pm \vec{k}.\vec{v}$, $\omega_0$ the center pulsation of the atoms. The atoms of speed $v$ see the frequency $f_0 = 
+2\pi \omega_0$ detuned by $\pm \vec{k}.\vec{v}$. Depending on the sign of this product the atoms see an effective frequency of the laser from which they absorb a photon. 
+Then the emission of the same photon make them recoil by $\pm 2\hbar k_{\perp}$. 
+
 
 \begin{figure}[H]
     \centering
@@ -24,9 +36,13 @@ spectrum is resonant with atoms of different velocities as illustrate \ref{doppl
     \label{doppler shift}
 \end{figure}
 
+The optical frequency of this laser is set at $f_{TC} = f_{Blue~Master} + f^{RF}_{TC}$ 
+with $f^{RF}_{TC} = $ the modulating frequency of the "TC AOM". \\
+The frequency is experimentally optimized red detuned from the targeted $^1S_0-~^3P_1$ transition by $\delta = x\Gamma$.
 \hl{Comment on increasing power in TC (thésard marc chesnais)}
 Depending on the detuning of the laser the atoms can be better cooled during this step. In \cite{TC_thesis} the author shows a curve of the number 
 of atoms depending on the detuning of the laser.
+They mostly propagate along the axis of the coils there for the next cooling step being the Zeeman cooling. \\
 
 \subsection{Zeeman cooling}
 Still in a manner of energy recoil the atoms are then slowed down by Zeeman cooling. The principle is to use a counterpropagating laser on resonance 
@@ -54,13 +70,7 @@ The temperature of the gas attempt Doppler limit $k_B T = \frac{\hbar ~\Gamma_{^
 
 \subsubsection{Comment on the hyperfine states (+boson 88)}
 
-\subsubsection{Optical setup (blue + repump)}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/chaine_bleue_actualisée.pdf}
-    \caption{Caption}
-    \label{fig:intro-chaine-bleue}
-\end{figure}
+
 
 \subsection{Repumper}
 The cooling necessits at this stage the addition of a repumper laser since the most probable decay path for the atoms in the $^1P_1$ state is the metastable state 

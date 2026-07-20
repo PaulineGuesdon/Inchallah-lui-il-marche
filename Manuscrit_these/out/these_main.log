@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  18 JUL 2026 10:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  19 JUL 2026 14:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -684,38 +684,43 @@ Overfull \hbox (19.5693pt too wide) in paragraph at lines 5--6
 []\OT1/cmr/m/n/12 Ajouter[] [][][]ce[] [][][]qui[] [][][]est[] [][][]ju[]-[]di[]-[]cieux[] [][][]d'optimiser[] [][][]^^Ra[] [][][]chaque[] [][][]^^Setape,[] [][][]nom[]-[]bre[] [][][]d'atomes[] [][][]ou[] [][][]temp^^Serature 
  []
 
-<Chapitres/Introduction/images/doppler_shift.png, id=542, 311.1625pt x 445.665pt>
-File: Chapitres/Introduction/images/doppler_shift.png Graphic file (type png)
-<use Chapitres/Introduction/images/doppler_shift.png>
-Package pdftex.def Info: Chapitres/Introduction/images/doppler_shift.png  used on input line 22.
-(pdftex.def)             Requested size: 213.39566pt x 305.6391pt.
+<Chapitres/Introduction/images/chaine_bleue_actualisée.pdf, id=541, 575.14874pt x 625.33624pt>
+File: Chapitres/Introduction/images/chaine_bleue_actualisée.pdf Graphic file (type pdf)
+<use Chapitres/Introduction/images/chaine_bleue_actualisée.pdf>
+Package pdftex.def Info: Chapitres/Introduction/images/chaine_bleue_actualisée.pdf  used on input line 17.
+(pdftex.def)             Requested size: 426.79134pt x 464.04881pt.
 
 
 [2
 
 {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-
-[3 <./Chapitres/Introduction/images/doppler_shift.png>]
-<Chapitres/Introduction/images/chaine_bleue_actualisée.pdf, id=558, 575.14874pt x 625.33624pt>
-File: Chapitres/Introduction/images/chaine_bleue_actualisée.pdf Graphic file (type pdf)
-<use Chapitres/Introduction/images/chaine_bleue_actualisée.pdf>
-Package pdftex.def Info: Chapitres/Introduction/images/chaine_bleue_actualisée.pdf  used on input line 60.
-(pdftex.def)             Requested size: 426.79134pt x 464.04881pt.
+<Chapitres/Introduction/images/doppler_shift.png, id=548, 311.1625pt x 445.665pt>
+File: Chapitres/Introduction/images/doppler_shift.png Graphic file (type png)
+<use Chapitres/Introduction/images/doppler_shift.png>
+Package pdftex.def Info: Chapitres/Introduction/images/doppler_shift.png  used on input line 34.
+(pdftex.def)             Requested size: 213.39566pt x 305.6391pt.
 
 
-[4]
-<Chapitres/Introduction/images/energy_levels_repumper.png, id=566, 242.40562pt x 363.60844pt>
+[3 <./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 39--46
+
+ []
+
+
+
+[4 <./Chapitres/Introduction/images/doppler_shift.png>]
+<Chapitres/Introduction/images/energy_levels_repumper.png, id=671, 242.40562pt x 363.60844pt>
 File: Chapitres/Introduction/images/energy_levels_repumper.png Graphic file (type png)
 <use Chapitres/Introduction/images/energy_levels_repumper.png>
-Package pdftex.def Info: Chapitres/Introduction/images/energy_levels_repumper.png  used on input line 73.
+Package pdftex.def Info: Chapitres/Introduction/images/energy_levels_repumper.png  used on input line 83.
 (pdftex.def)             Requested size: 213.39566pt x 320.10956pt.
 
 
-[5 <./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf>]
+[5]
 <Chapitres/Introduction/images/table_repumper.pdf, id=679, 542.025pt x 295.1025pt>
 File: Chapitres/Introduction/images/table_repumper.pdf Graphic file (type pdf)
 <use Chapitres/Introduction/images/table_repumper.pdf>
-Package pdftex.def Info: Chapitres/Introduction/images/table_repumper.pdf  used on input line 88.
+Package pdftex.def Info: Chapitres/Introduction/images/table_repumper.pdf  used on input line 98.
 (pdftex.def)             Requested size: 426.79134pt x 232.37192pt.
 
 
@@ -723,7 +728,7 @@ Package pdftex.def Info: Chapitres/Introduction/images/table_repumper.pdf  used 
 <Chapitres/Introduction/images/chaine_rouge_vieille.png, id=685, 578.91281pt x 557.83406pt>
 File: Chapitres/Introduction/images/chaine_rouge_vieille.png Graphic file (type png)
 <use Chapitres/Introduction/images/chaine_rouge_vieille.png>
-Package pdftex.def Info: Chapitres/Introduction/images/chaine_rouge_vieille.png  used on input line 102.
+Package pdftex.def Info: Chapitres/Introduction/images/chaine_rouge_vieille.png  used on input line 112.
 (pdftex.def)             Requested size: 426.79134pt x 411.25009pt.
 
 
@@ -731,7 +736,7 @@ Package pdftex.def Info: Chapitres/Introduction/images/chaine_rouge_vieille.png 
 <Chapitres/Introduction/images/red_MOT_in_3_steps.pdf, id=987, 2419.3818pt x 1179.34499pt>
 File: Chapitres/Introduction/images/red_MOT_in_3_steps.pdf Graphic file (type pdf)
 <use Chapitres/Introduction/images/red_MOT_in_3_steps.pdf>
-Package pdftex.def Info: Chapitres/Introduction/images/red_MOT_in_3_steps.pdf  used on input line 119.
+Package pdftex.def Info: Chapitres/Introduction/images/red_MOT_in_3_steps.pdf  used on input line 129.
 (pdftex.def)             Requested size: 426.79134pt x 208.02603pt.
 
 
@@ -739,12 +744,12 @@ Package pdftex.def Info: Chapitres/Introduction/images/red_MOT_in_3_steps.pdf  u
 <Chapitres/Introduction/images/need_for_stir.png, id=994, 293.095pt x 260.975pt>
 File: Chapitres/Introduction/images/need_for_stir.png Graphic file (type png)
 <use Chapitres/Introduction/images/need_for_stir.png>
-Package pdftex.def Info: Chapitres/Introduction/images/need_for_stir.png  used on input line 135.
+Package pdftex.def Info: Chapitres/Introduction/images/need_for_stir.png  used on input line 145.
 (pdftex.def)             Requested size: 298.75262pt x 266.01178pt.
 <Chapitres/Introduction/images/randomisation.jpeg, id=995, 2055.68pt x 823.075pt>
 File: Chapitres/Introduction/images/randomisation.jpeg Graphic file (type jpg)
 <use Chapitres/Introduction/images/randomisation.jpeg>
-Package pdftex.def Info: Chapitres/Introduction/images/randomisation.jpeg  used on input line 142.
+Package pdftex.def Info: Chapitres/Introduction/images/randomisation.jpeg  used on input line 152.
 (pdftex.def)             Requested size: 298.75262pt x 119.61284pt.
 
 
@@ -752,7 +757,7 @@ Package pdftex.def Info: Chapitres/Introduction/images/randomisation.jpeg  used 
 <Chapitres/Introduction/images/ODT_loading.png, id=1028, 537.50812pt x 371.13657pt>
 File: Chapitres/Introduction/images/ODT_loading.png Graphic file (type png)
 <use Chapitres/Introduction/images/ODT_loading.png>
-Package pdftex.def Info: Chapitres/Introduction/images/ODT_loading.png  used on input line 172.
+Package pdftex.def Info: Chapitres/Introduction/images/ODT_loading.png  used on input line 182.
 (pdftex.def)             Requested size: 298.75262pt x 206.28337pt.
 
 
@@ -760,24 +765,24 @@ Package pdftex.def Info: Chapitres/Introduction/images/ODT_loading.png  used on 
 <Chapitres/Introduction/images/evaporative_cooling.png, id=1034, 646.66594pt x 271.0125pt>
 File: Chapitres/Introduction/images/evaporative_cooling.png Graphic file (type png)
 <use Chapitres/Introduction/images/evaporative_cooling.png>
-Package pdftex.def Info: Chapitres/Introduction/images/evaporative_cooling.png  used on input line 183.
+Package pdftex.def Info: Chapitres/Introduction/images/evaporative_cooling.png  used on input line 193.
 (pdftex.def)             Requested size: 298.75262pt x 125.20485pt.
 <Chapitres/Introduction/images/1.30_dipole_trap(1075)_setup.png, id=1035, 444.9423pt x 325.215pt>
 File: Chapitres/Introduction/images/1.30_dipole_trap(1075)_setup.png Graphic file (type png)
 <use Chapitres/Introduction/images/1.30_dipole_trap(1075)_setup.png>
-Package pdftex.def Info: Chapitres/Introduction/images/1.30_dipole_trap(1075)_setup.png  used on input line 201.
+Package pdftex.def Info: Chapitres/Introduction/images/1.30_dipole_trap(1075)_setup.png  used on input line 211.
 (pdftex.def)             Requested size: 426.79134pt x 311.94977pt.
 
 
 [11 <./Chapitres/Introduction/images/ODT_loading.png> <./Chapitres/Introduction/images/evaporative_cooling.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 212--215
+Underfull \hbox (badness 10000) in paragraph at lines 222--225
 
  []
 
 <Chapitres/Introduction/images/optical_pumping.png, id=1042, 682.80093pt x 346.29375pt>
 File: Chapitres/Introduction/images/optical_pumping.png Graphic file (type png)
 <use Chapitres/Introduction/images/optical_pumping.png>
-Package pdftex.def Info: Chapitres/Introduction/images/optical_pumping.png  used on input line 222.
+Package pdftex.def Info: Chapitres/Introduction/images/optical_pumping.png  used on input line 232.
 (pdftex.def)             Requested size: 426.79134pt x 216.45947pt.
 
 
@@ -785,7 +790,7 @@ Package pdftex.def Info: Chapitres/Introduction/images/optical_pumping.png  used
 <Chapitres/Introduction/images/ECDL_laser.jpeg, id=1049, 1541.76pt x 2055.68pt>
 File: Chapitres/Introduction/images/ECDL_laser.jpeg Graphic file (type jpg)
 <use Chapitres/Introduction/images/ECDL_laser.jpeg>
-Package pdftex.def Info: Chapitres/Introduction/images/ECDL_laser.jpeg  used on input line 237.
+Package pdftex.def Info: Chapitres/Introduction/images/ECDL_laser.jpeg  used on input line 247.
 (pdftex.def)             Requested size: 213.39566pt x 284.4997pt.
 
 
@@ -793,7 +798,7 @@ Package pdftex.def Info: Chapitres/Introduction/images/ECDL_laser.jpeg  used on 
 <Chapitres/Introduction/images/TLS_et_raman.png, id=1056, 838.8138pt x 719.3274pt>
 File: Chapitres/Introduction/images/TLS_et_raman.png Graphic file (type png)
 <use Chapitres/Introduction/images/TLS_et_raman.png>
-Package pdftex.def Info: Chapitres/Introduction/images/TLS_et_raman.png  used on input line 264.
+Package pdftex.def Info: Chapitres/Introduction/images/TLS_et_raman.png  used on input line 274.
 (pdftex.def)             Requested size: 426.79134pt x 366.00696pt.
 
 
@@ -801,17 +806,17 @@ Package pdftex.def Info: Chapitres/Introduction/images/TLS_et_raman.png  used on
 <Chapitres/Introduction/images/chaine_moglab.pdf, id=1067, 316.18124pt x 207.77625pt>
 File: Chapitres/Introduction/images/chaine_moglab.pdf Graphic file (type pdf)
 <use Chapitres/Introduction/images/chaine_moglab.pdf>
-Package pdftex.def Info: Chapitres/Introduction/images/chaine_moglab.pdf  used on input line 277.
+Package pdftex.def Info: Chapitres/Introduction/images/chaine_moglab.pdf  used on input line 287.
 (pdftex.def)             Requested size: 426.79134pt x 280.48264pt.
 <Chapitres/Introduction/images/moglab.pdf, id=1070, 313.17pt x 254.9525pt>
 File: Chapitres/Introduction/images/moglab.pdf Graphic file (type pdf)
 <use Chapitres/Introduction/images/moglab.pdf>
-Package pdftex.def Info: Chapitres/Introduction/images/moglab.pdf  used on input line 291.
+Package pdftex.def Info: Chapitres/Introduction/images/moglab.pdf  used on input line 301.
 (pdftex.def)             Requested size: 426.79134pt x 347.46605pt.
 
 
 [15 <./Chapitres/Introduction/images/chaine_moglab.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
 
@@ -821,7 +826,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 296--297
 <Chapitres/Introduction/images/pdh_error_signal.png, id=1511, 470.75874pt x 287.0725pt>
 File: Chapitres/Introduction/images/pdh_error_signal.png Graphic file (type png)
 <use Chapitres/Introduction/images/pdh_error_signal.png>
-Package pdftex.def Info: Chapitres/Introduction/images/pdh_error_signal.png  used on input line 319.
+Package pdftex.def Info: Chapitres/Introduction/images/pdh_error_signal.png  used on input line 329.
 (pdftex.def)             Requested size: 426.79134pt x 260.26393pt.
 
 
@@ -829,7 +834,7 @@ Package pdftex.def Info: Chapitres/Introduction/images/pdh_error_signal.png  use
 <Chapitres/Introduction/images/spin_kick_scheme.png, id=1524, 417.81094pt x 304.88907pt>
 File: Chapitres/Introduction/images/spin_kick_scheme.png Graphic file (type png)
 <use Chapitres/Introduction/images/spin_kick_scheme.png>
-Package pdftex.def Info: Chapitres/Introduction/images/spin_kick_scheme.png  used on input line 338.
+Package pdftex.def Info: Chapitres/Introduction/images/spin_kick_scheme.png  used on input line 348.
 (pdftex.def)             Requested size: 426.79134pt x 311.46191pt.
 ) (./Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex (./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex
 
@@ -1481,18 +1486,18 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `these_main.out' has not changed.
-(rerunfilecheck)             Checksum: AA8EF7DAFC5C8784C211D901D3870231;16051.
+(rerunfilecheck)             Checksum: 2B164E0559AA64B1B1ABEE5B0FF22C10;15977.
  ) 
 Here is how much of TeX's memory you used:
  25300 strings out of 473190
- 542698 string characters out of 5715801
+ 542692 string characters out of 5715801
  1000070 words of memory out of 5000000
  47784 multiletter control sequences out of 15000+600000
  580658 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,13n,93p,2621b,1473s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on out/these_main.pdf (105 pages, 13482291 bytes).
+Output written on out/these_main.pdf (105 pages, 13483267 bytes).
 PDF statistics:
  63708 PDF objects out of 66169 (max. 8388607)
  42849 compressed objects within 429 object streams
