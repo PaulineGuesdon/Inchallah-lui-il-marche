@@ -84,10 +84,24 @@ The process begins with a moderate magnetic field gradient $B(x) \propto x$. Thi
 \begin{equation}
 \Delta E(x) = - m_F g_F \mu_B B(x)
 \end{equation}
-This spatial energy shift is combined with counter-propagating laser beams carrying opposite circular polarizations ($\sigma^+/\sigma^-$). The light-matter interaction generates a 
-spatial restoring force towards the trap center ($x = 0$) along with a damping friction force. As atoms are cooled and concentrated near the center, the magnetic field gradient is 
-ramped up to compress the cloud to a value 51~G/cm along the coils axis. One put \hl{n times} more intensity in the vertical axis to compensate gravity which is equivalent of 
-$n~I_{sat}$. The alignement with the zero magnetic field and the intensity ratio of the three axis of the MOT is optimized in the abscence of the TC to avoid any compensation force 
+This spatial energy shift is combined with counter-propagating laser beams carrying opposite circular polarizations ($\sigma^+/\sigma^-$). The light-matter interaction generates a spatial restoring force towards the trap center ($x = 0$) along with a damping friction force:
+
+\begin{equation}
+    F_{\text{rad}}(z, v_z) = \frac{\hbar k \Gamma}{2} \frac{I/I_s}{1 + I/I_s + 4 \left( \frac{\Delta_{\text{eff}}(z, v_z)}{\Gamma} \right)^2}
+    \label{eq:radiation_pressure_force}
+\end{equation}
+
+where the effective frequency detuning $\Delta_{\text{eff}}$ depends explicitly on $B(z)$ via the Zeeman effect:
+
+\begin{equation}
+    \Delta_{\text{eff}}(z, v_z) = \delta - k v_z + \frac{\mu_B g_F m_F}{\hbar} B(z)
+    \label{eq:effective_detuning}
+\end{equation}
+
+Although one might naively expect that increasing the laser intensity along the vertical axis could compensate for gravity, doing so is ineffective in a retro-reflected or counter-propagating configuration. Because the increased intensity applies equally to both opposing beams, it simply increases the overall radiation pressure in both directions without providing a net upward restoring force. 
+
+Instead, gravity compensation and spatial confinement along the vertical direction are inherently provided by the magnetic field gradient itself. Because the quadrupole coils generate a steep gradient steep mostly along the coils axis ($z$) as in the horizontal plane ($x, y$), the position-dependent Zeeman shift restores atoms much more strongly along $z$. Consequently, half as much intensity is injected on the vertical axis compared to the two horizontal axes to achieve a balanced, quasi-spherical trap while avoiding unnecessary power broadening and optical density effects.
+The alignement with the zero magnetic field and the intensity ratio of the three axis of the MOT is optimized in the abscence of the TC to avoid any compensation force 
 from it.
 
 During this stage, the gas temperature reaches the Doppler limit:
@@ -119,7 +133,7 @@ To address the multiple hyperfine $m_F$ sub-levels (such as $m_F = 7/2, 9/2, 11/
 \subsubsection{Optimization of the repumper sweep}
 To maximize atom recovery, the repumper frequency scan range is optimized around $1~\text{GHz}$. Scanning over a wider frequency range reduces the atom capture yield: a larger sweep amplitude reduces the dwell time on the specific hyperfine states responsible for the highest repumping efficiency. The modulation span is thus tuned to $1~\text{GHz}$ on the relevant $m_F$ sub-levels.
 
-At the end of the blue MOT phase, the magnetic field gradient is strongly increased to compress the atomic cloud into a magnetic trap. The $461~\text{nm}$ cooling laser is then turned off while keeping the $403~\text{nm}$ repumper on for about 200~ms at intensity $I\simeq30$mW/cm$^2$. This ensures that dark atoms are fully repumped back into the ground state while remaining magnetically 
+At the end of the blue MOT phase, the magnetic field gradient is strongly increased to compress the atomic cloud into a magnetic trap. The $461~\text{nm}$ cooling laser is then turned off while keeping the $403~\text{nm}$ repumper on for about 200~ms at intensity $I\simeq15$mW/cm$^2$. This ensures that dark atoms are fully repumped back into the ground state while remaining magnetically 
 trapped, while switching on the red MOT laser before adjusting the magnetic field.
 
 \begin{figure}[H]
@@ -132,8 +146,9 @@ trapped, while switching on the red MOT laser before adjusting the magnetic fiel
 \subsection{Red MOT}
 
 \subsubsection{Optical setup}
-Because the minimum temperature of the blue MOT is constrained by its large Doppler limit ($T_D \approx 770~\mu\text{K}$), further cooling requires transferring the atoms to a narrower optical transition. The second cooling stage operates on the narrow intercombination transition $^1S_0 \rightarrow {}^3P_1$ at $689~\text{nm}$, which has a natural linewidth of $\Gamma = 2\pi \times 7.4~\text{kHz}$. This narrow linewidth corresponds to a theoretical Doppler limit of $T_D = \frac{\hbar \Gamma}{2 k_B} = 179~\text{nK}$ and a photon recoil temperature of $T_r = 283~\text{nK}$.
+Because the minimum temperature of the blue MOT is constrained by its large Doppler limit ($T_D \approx 770~\mu\text{K}$), further cooling requires transferring the atoms to a narrower optical transition. The second cooling stage operates on the narrow intercombination transition $^1S_0 \rightarrow {}^3P_1$ at $689~\text{nm}$, which has a natural linewidth of $\Gamma = 2\pi \times 7.4~\text{kHz}$. 
 
+For this narrow transition, the formal Doppler limit $T_D = \frac{\hbar \Gamma}{2 k_B} = 179~\text{nK}$ falls below the single-photon recoil temperature $T_r = \frac{\hbar^2 k^2}{m k_B} = 283~\text{nK}$. Consequently, the ultimate temperature achievable in the red MOT is bounded by the photon recoil limit rather than the standard Doppler limit.
 The $689~\text{nm}$ light is provided by a commercial laser (Radiant Dyes) locked onto a high-finesse ultrastable optical cavity. The laser frequency is first detuned by \hl{$f = -600\text{ MHz}$} using a first acousto-optic modulator ("AOM Inj Slave 1") before injection into a master-slave amplifier system. A second double-pass AOM ("AOM 87") fine-tunes the frequency, after which the beam is divided into three pairs of counter-propagating arms for the three spatial axes of the MOT.
 
 \begin{figure}[H]
@@ -145,7 +160,9 @@ The $689~\text{nm}$ light is provided by a commercial laser (Radiant Dyes) locke
 \subsubsection{Broadband MOT (Broadband sweep)}
 At the end of the blue MOT, the atomic cloud exhibits a spatial spread of $\sigma =$ \hl{value} and a temperature too high to be directly captured by a single-frequency red MOT, as the natural linewidth ($\Gamma = 7.4~\text{kHz}$) is much narrower than the thermal Doppler broadening of the cloud. 
 
-To capture these thermal atoms, a broadband MOT is first implemented on the $F=11/2$ hyperfine state of the $^3P_1$ level under a weak magnetic field of a few hundred mG. The laser frequency is artificially broadened by applying a frequency modulation (sawtooth sweep) red-detuned from the transition. As the atoms cool and compress into a smaller volume, the sweep amplitude $\Delta f$ and the laser power are progressively reduced.
+To capture these thermal atoms, a broadband MOT is first implemented on the $F=11/2$ hyperfine state of the $^3P_1$ level under a weak magnetic field gradient of a few hundred mG/cm. The laser frequency is artificially broadened by applying a sawtooth frequency modulation red-detuned from the transition. As the atoms cool and compress into a smaller volume, both the sweep amplitude $\Delta f$ and the laser power are progressively reduced.
+
+Because the narrow linewidth of the intercombination transition strictly limits the maximum radiation pressure force to $F_{\text{max}} = \hbar k \Gamma / 2$, which is comparable to the gravitational force $mg$, a significantly higher intensity is required along the vertical axis to efficiently compensate for gravity and prevent atom loss.
 
 \subsubsection{Narrowband MOT (Single-frequency MOT)}
 Once the cloud is sufficiently cold and compressed, the frequency modulation is turned off to perform a narrowband (monofrequency) MOT. This stage allows the gas to reach microkelvin temperatures ($T \approx 1\text{--}2~\mu\text{K}$, approaching the recoil limit) with a peak density of $n =$ \hl{value} in a spatial RMS width of $\sigma =$ \hl{value}.
@@ -219,7 +236,7 @@ The crossed ODT consists of two orthogonal beams:
     \item the time duration and adiabaticity of the evaporation ramps depend on the target parameter. For high number of atoms only it is favorable to do a short evaporation. For a degenerate gas it is necessary to do few seconds of mutliple evaporative ramps.
 \end{itemize}
 
-To compensate for gravity acting along the vertical axis, the intensity of the vertical beam is set three times higher than that of the horizontal beam. To reach quantum degeneracy, the intensity ramps of both beams are adiabatically optimized to maximize the phase space density $\propto \frac{N}{\bar{\omega}^3 T^3}$) while minimizing atom loss.
+To compensate for gravity acting along the vertical axis, the intensity of the vertical beam is set ten times higher than that of the horizontal beam. To reach quantum degeneracy, the intensity ramps of both beams are adiabatically optimized to maximize the phase space density $\propto \frac{N}{\bar{\omega}^3 T^3}$) while minimizing atom loss.
 
 \subsubsection{Optical setup}
 
@@ -234,7 +251,7 @@ To compensate for gravity acting along the vertical axis, the intensity of the v
 \subsection{Optical Pumping}
 Optical pumping is implemented prior to or during the final evaporation stages to prepare the gas in a tailored mixture of nuclear spin states ($m_F$). Due to the $SU(N)$ symmetry of $^{87}\text{Sr}$, elastic $s$-wave collisions between identical fermions in the same $m_F$ state are forbidden by Pauli blocking. Therefore, at least two distinct spin components must be present to enable elastic collisions and ensure efficient re-thermalization during evaporative cooling.
 
-To perform state preparation, a bias magnetic field $6.0570 ± 0.0443~G$ is applied to lift the degeneracy of the $^3P_1, F = 11/2$ hyperfine sub-levels via the linear Zeeman effect. The atoms are illuminated by a $\sigma^-$-polarized optical pumping beam on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition. The frequency is set according to:
+To perform state preparation, a bias magnetic field $6.05\pm0.05~G$ is applied to lift the degeneracy of the $^3P_1, F = 11/2$ hyperfine sub-levels via the linear Zeeman effect. The atoms are illuminated by a $\sigma^-$-polarized optical pumping beam on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition. The frequency is set according to:
 \begin{equation}
 f_{11/2} = f_{\text{Radiant Dyes}} \pm f_{\text{Slave 1}}^{\text{RF}} + f_{11/2}^{\text{RF}}
 \end{equation}
@@ -291,6 +308,7 @@ where $q$ parameterizes the quadratic (tensor) light shift and $\beta$ represent
 The two-photon process is driven by two distinct beams: a first beam derived from the "AOM lattice 689" laser (shown in red in Fig.~\ref{fig:raman-transitions}) generates the TLS and supplies the first photon. A second beam, frequency-shifted by the "AOM Raman" (shown in blue), completes the Raman transition. 
 
 This configuration selectively couples a single pair of states—for instance, $\ket{^1S_0, F=9/2, m_F=-7/2} \leftrightarrow$ $\ket{^1S_0, F=9/2, m_F=-5/2}$—while remaining far off-resonance for all other $m_F$ states. The complete optical path for this operation is detailed in Fig.~\ref{fig:mog-raman}.
+The magnetic field is close to zero when the ratio between the two lasers is set $I_R << I_{D}$ since we mostly want to seperate the states.
 
 \begin{figure}[H]
     \centering
