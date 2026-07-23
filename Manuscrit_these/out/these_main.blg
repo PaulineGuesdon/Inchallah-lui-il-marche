@@ -1,11 +1,14 @@
-This is BibTeX, Version 0.99d (TeX Live 2025)
+This is BibTeX, Version 0.99e
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: these_main.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Reallocating 'name_of_file' (item size: 1) to 17 items.
 Database file #1: ref.bib
 Database file #2: spincontrol_refs.bib
 Warning--entry type for "notemixture" isn't style-file defined
---line 62 of file spincontrol_refs.bib
+--line 63 of file spincontrol_refs.bib
 Warning--I didn't find a database entry for "StellmerThesis"
 Warning--empty journal in bataille_realisation_nodate
 Warning--empty year in bataille_realisation_nodate
@@ -14,45 +17,45 @@ Warning--empty journal in dalibard_interactions_nodate
 Warning--empty year in dalibard_interactions_nodate
 Warning--empty journal in reichenbach_optical_nodate
 Warning--empty year in reichenbach_optical_nodate
-You've used 94 entries,
+You've used 96 entries,
             1876 wiz_defined-function locations,
-            1068 strings with 23559 characters,
-and the built_in function-call counts, 30629 in all, are:
-= -- 2917
-> -- 1704
+            1077 strings with 23987 characters,
+and the built_in function-call counts, 31170 in all, are:
+= -- 2963
+> -- 1744
 < -- 0
-+ -- 604
-- -- 510
-* -- 2216
-:= -- 4333
-add.period$ -- 101
-call.type$ -- 94
-change.case$ -- 90
++ -- 618
+- -- 522
+* -- 2257
+:= -- 4414
+add.period$ -- 104
+call.type$ -- 96
+change.case$ -- 92
 chr.to.int$ -- 0
-cite$ -- 101
-duplicate$ -- 1691
-empty$ -- 2228
-format.name$ -- 510
-if$ -- 7475
+cite$ -- 103
+duplicate$ -- 1715
+empty$ -- 2268
+format.name$ -- 522
+if$ -- 7604
 int.to.chr$ -- 0
-int.to.str$ -- 94
-missing$ -- 93
-newline$ -- 295
-num.names$ -- 93
-pop$ -- 215
+int.to.str$ -- 96
+missing$ -- 94
+newline$ -- 302
+num.names$ -- 95
+pop$ -- 224
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1543
+skip$ -- 1566
 stack$ -- 0
-substring$ -- 1456
-swap$ -- 995
+substring$ -- 1468
+swap$ -- 1008
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 7
-while$ -- 218
-width$ -- 96
-write$ -- 949
+while$ -- 221
+width$ -- 98
+write$ -- 968
 (There were 9 warnings)
