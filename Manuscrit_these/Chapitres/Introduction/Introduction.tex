@@ -1,13 +1,28 @@
 % !TeX root = ../../main.tex
 \begin{flushright}
-\end{flushright}\chapter{Introduction}
+\end{flushright}\chapter{Gas preparation and spin control}
+
+
+\section{\text{$^{87}\text{Sr}$ Properties and interest}}
+
+Strontium is an alkaline-earth-like element with several stable isotopes well documented in the literature (e.g., \cite{reschovsky_narrow-line_2018, zelevinsky_narrow_2006, blatt_measurement_2011, borkowski_mass_2014, KillianBEC}). The majority of these isotopes are bosonic ($^{88}\text{Sr}$, $^{86}\text{Sr}$, and $^{84}\text{Sr}$) with zero nuclear spin ($I=0$). 
+
+In our work, we focus on the fermionic isotope $^{87}\text{Sr}$, which has a natural abundance of $7.0\%$. In contrast to its bosonic counterparts, $^{87}\text{Sr}$ possesses a large nuclear spin $I=9/2$, providing access to rich multi-level quantum dynamics ($SU(N)$ manifolds).
+
+In the ground state $^1S_0$, the total electronic angular momentum is zero ($J=0$), making the atomic state almost insensitive to stray magnetic field fluctuations—a major advantage for mitigating environmental decoherence. However, this absence of electronic magnetic moment also means that magnetic fields alone cannot drive direct spin transitions via standard Zeeman manipulation. Specific optical techniques must therefore be developed to circumvent this limitation.
+
+Furthermore, the decoupling between the nuclear spin and the electronic shell in the ground state leads to an $SU(N)$ collisional symmetry: the elastic scattering properties are strictly independent of the nuclear spin state $m_F$. The spin manipulation techniques developed by our group \cite{litvinov_measuring_2021} exploit this symmetry to yield a highly controllable quantum system whose internal spin dynamics remain decoupled from the spatial dynamics of the cloud once thermalized.
+
 \section{Fermi gas preparation (+ Bose gas ?)}
 \hl{Ajouter ce qui est judicieux d'optimiser à chaque étape, nombre d'atomes ou température}
 
 The strontium is transformed from solid to gas form by an oven at 490°C through multiple small capillaries in a collimation purpose.  
 
 \subsection{Blue optical setup}
-The first stages of cooling are performed on the $^1S_0 \rightarrow {}^1P_1$ transition using a master-slave architecture (see Fig.~\ref{fig:intro-chaine-bleue}). A low-power, frequency-stabilized master laser injection-locks four high-power slave laser diodes. This injection forces the slave diodes to emit at the master's exact optical frequency and linewidth while delivering the high output power required for the cooling beams.
+The first stages of cooling are performed on the $^1S_0 \rightarrow {}^1P_1$ transition using a master-slave architecture (see Fig.~\ref{fig:intro-chaine-bleue}). A low-power, frequency-stabilized master laser injection-locks three high-power slave laser diodes. 
+This injection forces the slave diodes to emit at the master's exact optical frequency and linewidth while delivering the high output power required for the cooling beams.
+
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/chaine_bleue_actualisée.pdf}
