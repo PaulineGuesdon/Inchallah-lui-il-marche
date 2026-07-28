@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{guttridge_photoassociation_2019}
 A.~Guttridge, {\em Photoassociation of {Ultracold} {CsYb} {Molecules} and {Determination} of {Interspecies} {Scattering} {Lengths}}.
@@ -41,6 +41,13 @@ W.~D. Phillips and H.~Metcalf, ``Laser {Deceleration} of an {Atomic} {Beam},'' {
 
 \bibitem{Bataille2020}
 P.~Bataille, A.~Litvinov, I.~Manai, J.~Huckans, F.~Wiotte, A.~Kaladjian, O.~Gorceix, E.~Mar\'echal, B.~Laburthe-Tolra, and M.~Robert-de Saint-Vincent, ``Adiabatic spin-dependent momentum transfer in an {SU(N)} degenerate {Fermi} gas,'' {\em Phys. Rev. A}, vol.~102, p.~013317, 2020.
+
+\bibitem{phillips_laser_1998}
+W.~D. Phillips, ``Laser cooling and trapping of neutral atoms,'' {\em Rev. Mod. Phys.}, vol.~70, no.~3, 1998.
+
+\bibitem{stellmer_creation_2012}
+S.~Stellmer, B.~Pasquiou, R.~Grimm, and F.~Schreck, ``Creation of ultracold {Sr2} molecules in the electronic ground state,'' {\em Physical Review Letters}, vol.~109, p.~115302, Sept. 2012.
+\newblock arXiv:1205.4505 [cond-mat].
 
 \bibitem{black_introduction_2001}
 E.~D. Black, ``An introduction to {Pound}–{Drever}–{Hall} laser frequency stabilization,'' {\em American Journal of Physics}, vol.~69, pp.~79--87, Jan. 2001.

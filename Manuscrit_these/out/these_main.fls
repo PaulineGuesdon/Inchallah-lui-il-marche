@@ -315,6 +315,11 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT ./Chapitres/Introduction/images/energy_levels_sr.png
+INPUT ./Chapitres/Introduction/images/energy_levels_sr.png
+INPUT ./Chapitres/Introduction/images/energy_levels_sr.png
+INPUT ./Chapitres/Introduction/images/energy_levels_sr.png
+INPUT ./Chapitres/Introduction/images/energy_levels_sr.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
@@ -348,11 +353,6 @@ INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
 INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
 INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
 INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
-INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
 INPUT ./Chapitres/Introduction/images/need_for_stir.png
 INPUT ./Chapitres/Introduction/images/need_for_stir.png
 INPUT ./Chapitres/Introduction/images/need_for_stir.png
@@ -363,6 +363,11 @@ INPUT ./Chapitres/Introduction/images/randomisation.jpeg
 INPUT ./Chapitres/Introduction/images/randomisation.jpeg
 INPUT ./Chapitres/Introduction/images/randomisation.jpeg
 INPUT ./Chapitres/Introduction/images/randomisation.jpeg
+INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
 INPUT ./Chapitres/Introduction/images/ODT_loading.png
 INPUT ./Chapitres/Introduction/images/ODT_loading.png
 INPUT ./Chapitres/Introduction/images/ODT_loading.png
