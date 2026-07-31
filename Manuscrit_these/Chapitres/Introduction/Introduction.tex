@@ -364,35 +364,81 @@ For the dataset presented in Chapter 3, the optical chain incorporates a custom-
 This cavity filters amplified spontaneous emission (ASE) from the laser source, thereby reducing stray light, minimizing photon-recoil heating.
 
 \subsection{Fabry-Pérot cavity and PDH Locking system}
-The cavity length (distance between the two curved mirrors, $R = 99\%$) is chosen to establish spatial mode degeneracy. When locked to the laser, the cavity achieves a power transmission of $T = 0.54$ with a Free Spectral Range (FSR) of:
-\begin{equation}
-\text{FSR} = \frac{c}{2L} = 3~\text{GHz}
-\end{equation}
+\subsubsection{Cavity design and assembly}
 
-The EOM generates sidebands at frequencies $f_0 \pm f_M$ around the carrier $f_0$, where $f_M = 40.48~\text{MHz}$ is the modulation frequency. The modulated electric field incident on the cavity is expressed as:
-\begin{equation}
-E_{\text{inc}}^{\text{mod}} = E_0 \left[ J_0(\beta) e^{i 2\pi f_0 t} + J_1(\beta) e^{i 2\pi (f_0 + f_M) t} - J_1(\beta) e^{i 2\pi (f_0 - f_M) t} \right]
-\end{equation}
-where $J_0(\beta)$ and $J_1(\beta)$ are the zeroth- and first-order Bessel functions of the first kind, with modulation index $\beta$.
+A primary objective of the cavity injection scheme in our optical setup is to maximize overall transmission for spin manipulation. To achieve this, we constructed a confocal cavity configuration ($d_0 = R_C$, where $d_0$ is the mirror separation and $R_C$ is their radius of curvature), ensuring that all odd transverse modes are degenerate and resonate at the same frequency. If these modes were non-degenerate, off-resonance spatial components would be reflected at the input mirror, thereby reducing the total cavity transmission efficiency.
 
-The carrier enters the cavity and acquires a steep frequency-dependent phase shift near resonance, whereas the sidebands are promptly reflected from the input mirror. The interference between the reflected carrier and sidebands is detected on a fast photodiode, demodulated at $f_M$, and low-pass filtered to extract the dispersive error signal (Fig.~\ref{fig:pdh-error-signal}). The sharp slope around resonance provides an error signal sensitive to the sign of the frequency excursion.
+In addition to the confocal geometry, longitudinal mode resonance requires that the cavity length $d_0$ satisfies the condition:
+\begin{equation}
+d_0 = n \frac{\lambda}{2}
+\label{eq:cavity_resonance}
+\end{equation}
+where $n$ is an integer and $\lambda$ is the wavelength of the injection laser.
+
+To fulfill these requirements, we selected curved mirrors (\textbf{PD080.31} from PICMA) with a diameter of $D = 4.5 \pm 0.15~\text{mm}$ and a radius of curvature matching $d_0$. The manufacturer specified a nominal mirror transmission of $T_{\text{mirror}} = 1.28\%$, though the effective system performance can be influenced by mechanical mounting constraints.
+
+Proper cavity operation requires the mirrors to be aligned precisely parallel to each other and perpendicular to the optical propagation axis. In our initial implementation (Fig.~\ref{miroirs cav before}), the mirrors were permanently glued into place. However, this approach introduced major technical issues over time: excess glue migrated onto the optical surfaces, degrading overall transmission, while alignment errors during gluing introduced an uncorrected angular tilt relative to the beam axis.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/pdh_error_signal.png}
-    \caption{Extracted from \cite{black_introduction_2001} Typical Pound-Drever-Hall (PDH) error signal obtained by scanning the cavity length across resonance.}
-    \label{fig:pdh-error-signal}
+    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/changestoFPcavity.pdf}
+    \caption{Initial fixed cavity assembly using glued mirrors, lacking mechanical alignment degrees of freedom.}
+    \label{miroirs cav before}
 \end{figure}
 
-Digital feedback control was implemented using a Red Pitaya STEMlab board. The PID parameters were optimized by injecting electronic noise into the cavity piezo driver and measuring the closed-loop transfer function. The final feedback loop acting on the piezo crystal features a low-pass filter with a cut-off frequency $f_c = 40~\text{kHz}$, a proportional gain $1 < K_p < 10$, and an integrative gain $0 < K_i < 8~\text{s}^{-1}$.
+Because the original design provided no mechanical degrees of freedom to correct these misalignments, we redesigned the mounting mechanism. The updated cavity assembly is presented in Fig.~\ref{miroirs cav after}. In this configuration, three adjustment knobs on a circular outer mount apply controlled pressure against the central cylindrical spacer housing the mirrors, with intermediate washers providing mechanical compliance. This allows for precise tilt control and fine adjustment of the mirror separation.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/changestoFPcavityAFTER.pdf}
+    \caption{Upgraded cavity mount featuring three adjustment screws and compliant washers for precise angular and longitudinal alignment.}
+    \label{miroirs cav after}
+\end{figure}
+
+Once locked to the injection laser, the optimized cavity achieves a total power transmission efficiency of $T = 0.63$. The Free Spectral Range (FSR) is given by:
+\begin{equation}
+\text{FSR} = \frac{c}{2 d_0} = 3~\text{GHz}
+\end{equation}
+with a measured finesse of:
+\begin{equation}
+\mathcal{F} = \frac{\text{FSR}}{\delta \nu} = 310 \pm 15
+\end{equation}
+where $\delta \nu$ represents the full width at half maximum (FWHM) of the transmitted resonance peak measured on a photodiode for the odd transverse modes.
+
+\subsubsection{Pound-Drever-Hall locking system and PID controller analysis}
+
+The cavity is frequency-locked to the laser using the Pound-Drever-Hall (PDH) technique, as detailed by Black~\cite{black_introduction_2001} and schematized in Fig.~\ref{fig:pid}. The scheme utilizes an Electro-Optic Modulator (EOM) to generate sidebands at frequencies $f_0 \pm f_M$ around the optical carrier $f_0$, with a modulation frequency of $f_M = 40.48~\text{MHz}$. The modulated electric field incident on the cavity is expressed as:
+\begin{equation}
+E_{\text{inc}}^{\text{mod}} \approx E_0 \left[ J_0(\beta) e^{i 2\pi f_0 t} + J_1(\beta) e^{i 2\pi (f_0 + f_M) t} - J_1(\beta) e^{i 2\pi (f_0 - f_M) t} \right]
+\end{equation}
+where $J_0(\beta)$ and $J_1(\beta)$ are the zeroth- and first-order Bessel functions of the first kind, and $\beta$ is the modulation index.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/PID_black.png}
-    \caption{Extracted from \cite{black_introduction_2001} }
-    \label{pid}
+    \caption{Schematic of the PDH locking system, extracted from \cite{black_introduction_2001}.}
+    \label{fig:pid}
 \end{figure}
 
+The carrier enters the cavity and acquires a steep, frequency-dependent phase shift near resonance, whereas the sidebands are promptly reflected from the input mirror. The interference between the reflected carrier and the sidebands is detected on a fast photodiode, demodulated at $f_M$, and low-pass filtered to extract the dispersive error signal (Fig.~\ref{fig:pdh-error-signal}). The sharp linear slope around resonance provides a robust error signal highly sensitive to the sign of the frequency excursion.
+From this graph, one measures a signal-to-noise ratio of $\hl{SNR =$}. Interestingly, the sideband resonance features were not distinctly visible on the scanning error signal, even when driving the EOM with a high modulation depth to maximize the $J_1/J_0$ ratio.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/signal pdh.jpg}
+    \caption{Typical Pound-Drever-Hall (PDH) error signal obtained by scanning the cavity length across resonance.}
+    \label{fig:pdh-error-signal}
+\end{figure}
+
+Digital feedback control and noise analysis were implemented primarily using a Red Pitaya STEMlab board. The PID parameters were optimized by injecting a broadband electronic noise signal into the cavity piezo driver and measuring the closed-loop transfer function. As seen in the frequency response plot (Fig.~\ref{fig:analyse_bruit}), operating the system with specific gain values excites mechanical resonances. We interpret the primary peak at $35~\text{kHz}$ as the fundamental mechanical resonance of the piezo actuator, accompanied by other higher-frequency modes.
+The noise injection analysis also revealed the low-frequency behavior of the loop. Consequently, the final feedback loop acting on the piezo crystal incorporates a low-pass filter with a cut-off frequency of $f_c = 40~\text{kHz}$, a proportional gain strictly bounded between $1 < K_p < 10$, and an integral gain configured between $0 < K_i < 8~\text{s}^{-1}$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Introduction/images/bruits_amplifies.png}
+    \caption{Closed-loop noise analysis and mechanical resonance identification using the Red Pitaya.}
+    \label{fig:analyse_bruit}
+\end{figure}
 \section{Spin Measurement Scheme}
 Total atom numbers are determined via standard absorption imaging on the broad $^1S_0 \rightarrow {}^1P_1$ transition at $461~\text{nm}$ using a Vortex laser. State-resolved spin detection follows the momentum-transfer ("spin-kick") technique detailed in \cite{bataille_realisation_nodate}.
 
@@ -406,7 +452,7 @@ The measurement sequence proceeds as follows:
 
 Unaddressed spin states remain at the central position of the cloud. In contrast, states subject to the momentum transfer form distinct spatial wavepackets shifted to the left or right depending on the direction of the resonant momentum kick (e.g., $m_F = -3/2$ and $m_F = -7/2$ in Fig.~\ref{fig:intro-spin-kick-scheme}(d)).
 
-To ensure efficient population transfer without parasitic Landau-Zener transitions, the optical pulse sweep rate must satisfy the adiabaticity criterion across the avoided crossing between coupled adiabatic states (Fig.~\ref{fig:intro-spin-kick-scheme}(c)).
+To ensure efficient population transfer, the optical pulse sweep rate must satisfy the adiabaticity criterion across the avoided crossing between coupled adiabatic states (Fig.~\ref{fig:intro-spin-kick-scheme}(c)).
 
 \begin{figure}[H]
     \centering
