@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: these_main.aux
+The style file: ieeetr.bst
+Database file #1: ref.bib
+Database file #2: spincontrol_refs.bib
+Warning--entry type for "notemixture" isn't style-file defined
+--line 62 of file spincontrol_refs.bib
+Warning--I didn't find a database entry for "StellmerThesis"
+Warning--empty journal in bataille_realisation_nodate
+Warning--empty year in bataille_realisation_nodate
+Warning--empty publisher in Landau
+Warning--empty journal in dalibard_interactions_nodate
+Warning--empty year in dalibard_interactions_nodate
+Warning--empty journal in reichenbach_optical_nodate
+Warning--empty year in reichenbach_optical_nodate
+You've used 103 entries,
+            1876 wiz_defined-function locations,
+            1110 strings with 25142 characters,
+and the built_in function-call counts, 32817 in all, are:
+= -- 3144
+> -- 1803
+< -- 0
++ -- 641
+- -- 538
+* -- 2363
+:= -- 4651
+add.period$ -- 115
+call.type$ -- 103
+change.case$ -- 100
+chr.to.int$ -- 0
+cite$ -- 110
+duplicate$ -- 1811
+empty$ -- 2398
+format.name$ -- 538
+if$ -- 8010
+int.to.chr$ -- 0
+int.to.str$ -- 103
+missing$ -- 99
+newline$ -- 327
+num.names$ -- 102
+pop$ -- 234
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1643
+stack$ -- 0
+substring$ -- 1536
+swap$ -- 1058
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 234
+width$ -- 106
+write$ -- 1042
+(There were 9 warnings)

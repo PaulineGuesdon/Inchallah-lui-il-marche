@@ -1,0 +1,54 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Relevant low-lying electronic energy levels and optical cooling transitions for $^{87}\text {Sr}$.}}{3}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Optical layout of the $461~\text {nm}$ blue laser system for transverse cooling, Zeeman slowing, and blue MOT.}}{4}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Illustration of Doppler cooling: velocity classes are shifted relative to the atomic resonance frequency $\omega _0$.}}{5}{figure.caption.15}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Transverse cooling performance as a function of laser detuning and power (adapted from \cite {faisant_building_2024}).}}{6}{figure.caption.20}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Energy level diagram of $^{87}\text {Sr}$ showing the primary $461~\text {nm}$ cooling transition and the $403~\text {nm}$ repumping pathway from $^3P_2$ to $^3D_2$.}}{8}{figure.caption.28}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Summary of repumping beam frequencies and timing sequence.}}{9}{figure.caption.30}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Optical layout of the $689~\text {nm}$ laser cooling system.}}{10}{figure.caption.33}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Mechanism of population trapping in extreme Zeeman sub-states during the red MOT.}}{11}{figure.caption.36}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Randomization of $m_F$ populations induced by the $689~\text {nm}$ stirring laser.}}{11}{figure.caption.37}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Sequential stages of the $689~\text {nm}$ red MOT: broadband capture, compression, and single-frequency cooling (adapted from \cite {StellmerThesis}).}}{12}{figure.caption.39}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Simulation extracted from \cite {litvinov_these}. Principle of localized $689~\text {nm}$ MOT loading inside the crossed optical dipole trap due to the differential AC Stark shift between $^1S_0$ and $^3P_1$.}}{13}{figure.caption.44}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Evaporative cooling mechanism in an inclined crossed optical dipole trap, illustrating the escape of high-energy atoms and subsequent re-thermalization.}}{14}{figure.caption.45}%
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Optical layout of the $1075~\text {nm}$ crossed dipole trap laser system.}}{15}{figure.caption.48}%
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition used to prepare a specific nuclear spin mixture.}}{16}{figure.caption.52}%
+\contentsline {figure}{\numberline {1.15}{\ignorespaces MOGlabs External Cavity Diode Laser (ECDL) used for spin manipulation.}}{17}{figure.caption.55}%
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Energy level diagram illustrating the Tensorial Light Shift (TLS) and state-selective two-photon Raman transitions.}}{18}{figure.caption.60}%
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Optical layout of the MOGlabs laser chain configured for two-photon Raman transitions.}}{19}{figure.caption.62}%
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Complete optical setup including the Fabry-Pérot cavity and PDH stabilization loop.}}{20}{figure.caption.64}%
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Initial fixed cavity assembly using glued mirrors, lacking mechanical alignment degrees of freedom.}}{21}{figure.caption.68}%
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Upgraded cavity mount featuring three adjustment screws and compliant washers for precise angular and longitudinal alignment.}}{22}{figure.caption.69}%
+\contentsline {figure}{\numberline {1.21}{\ignorespaces Schematic of the PDH locking system, extracted from \cite {black_introduction_2001}.}}{23}{figure.caption.74}%
+\contentsline {figure}{\numberline {1.22}{\ignorespaces Typical Pound-Drever-Hall (PDH) error signal obtained by scanning the cavity length across resonance.}}{24}{figure.caption.75}%
+\contentsline {figure}{\numberline {1.23}{\ignorespaces Closed-loop noise analysis and mechanical resonance identification using the Red Pitaya.}}{25}{figure.caption.76}%
+\contentsline {figure}{\numberline {1.24}{\ignorespaces Principle of spin-selective detection via coherent momentum transfer ("spin kick"). (a) Counter-propagating beam geometry. (b) Level scheme. (c) Avoided crossing structure for adiabatic transfer. (d) Resulting TOF absorption image showing spatially separated spin components.}}{26}{figure.caption.82}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Resume of the article}}{30}{figure.caption.93}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Rabi oscillations}}{34}{figure.caption.98}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Noise analysis on phase and contrast}}{38}{figure.caption.100}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces caption}}{41}{figure.caption.106}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces caption}}{46}{figure.caption.111}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces fig:scattering\_concept}}{51}{figure.caption.125}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Adapted from \cite {guttridge_photoassociation_2019}. General concept of photoassociation: a resonant laser couples a pair of colliding atoms from the free-atom continuum to a bound state of an excited molecular potential. Within this potential, the molecule occupies quantized vibrational states, described by the solutions of the 1D radial Schrödinger equation plotted for each level.}}{54}{figure.caption.136}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces fig:u-g symmetry}}{58}{figure.caption.162}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces fig:hund}}{59}{figure.caption.164}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces fig:pa-ytterbium-potentials}}{60}{figure.caption.173}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces fig:pa-sakurai-wkb}}{62}{figure.caption.182}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces fig:pa-mass-scaling}}{65}{figure.caption.193}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces PA slave 1}}{67}{figure.caption.198}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces frequences 88sr 87sr}}{68}{figure.caption.200}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Beating spectrum}}{69}{figure.caption.202}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Bessel functions}}{70}{figure.caption.205}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Scheme of the PDH sidebands addressing the atomic resonance. The purple plot is the dark signal -with the three interfering components between the carrier and the first harmonics- shifted by $f_0'-f_0$.}}{71}{figure.caption.206}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Atomic loss due to FP cavity PDH sideband that is adressing the $^1S_0 - ^3P_1$ line at $\Delta = f_0 - f_M$ with $f_M$ the modulation frequency of the PDH EOM.}}{71}{figure.caption.207}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Resonances of $^{88}Sr$}}{75}{figure.caption.218}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces 88sr exponential decay}}{79}{figure.caption.242}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Evolution of the atom number as a function of the illumination time at $f = -6$~MHz}}{82}{figure.caption.248}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr ($I = 19$ W/cm$^2$). All detunings are measured from the $^{87}$Sr atomic resonance.}}{84}{figure.caption.253}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$). No exponential decay measurement is available for this line. All detunings are measured from the $^{87}$Sr atomic resonance.}}{86}{figure.caption.255}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$). All detunings are measured from the $^{87}$Sr atomic resonance.}}{88}{figure.caption.257}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces predissociation}}{91}{figure.caption.266}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces sequence chirp}}{92}{figure.caption.268}%
+\addvspace {10\p@ }

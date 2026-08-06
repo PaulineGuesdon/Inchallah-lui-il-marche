@@ -332,9 +332,9 @@ a total spin of $J = 1$ and possible values of total atomic angular momentum F:
 
 The possible values of total angular momentum of the excited molecule are
 \begin{align}
-\text{For } R=1, &\quad {T = 1, 2, 3... 11}\\
-\text{For } R=3, &\quad {T = 1,2... 12}\\
-\text{For } R=5, &\quad {T = 1,2 ... 14}
+\text{For } R=1, &\quad {T = 0, 2, 3... 11}\\
+\text{For } R=3, &\quad {T = 2, 3,... 13}\\
+\text{For } R=5, &\quad {T = 4, 5, ... 15}
 \end{align}
 
 As for atoms there are selection rules for transitions from a collisional state to a molecular excited 
@@ -342,9 +342,9 @@ state fixed by the angular momentum of the electrons.
 $\Delta J = 0, 1$ gives $\Delta T = 0, 1$ with $T=0 \rightarrow T=0$ forbidden.\\
 In the end the accessible transitions in the first molecular excited state of the $f_1=11/2$ are
 \begin{align}
-\text{For } R=0, &\quad {T^f = 1, 2, 3... 10}\\
-\text{For } R=2, &\quad {T^f = 1,2... 10}\\
-\text{For } R=4, &\quad {T^f = 1,2 ... 10}\\
+\text{For } R=1, &\quad {T^f = 1, 2, 3... 10}\\
+\text{For } R=3, &\quad {T^f = 1,2... 10}\\
+\text{For } R=5, &\quad {T^f = 1,2 ... 10}\\
 \end{align}
 
 with only even values of R in respect with wavefunction parity of \ref{wavefunction parity}.
@@ -872,30 +872,32 @@ Looking for molecular lines around +6~MHz and +12~MHz with the 11/2 beam is then
 The ultimate verification of inelastic nature of collisions is the time evolution of the atom number $dN/dt$ discussed in Section~3.1.3. This curve allows one to (i) verify the presence of two-body losses and (ii) 
 determine the value of $l_{\text{opt}}/I$ which characterizes the strength of the loss rate $\beta$. The fitting function is obtained by integrating the rate equation:
 \begin{gather}
-    \frac{dN(t,T)}{dt} = -\beta(T) N(t,T)^2 - \Gamma N(t,T) \label{eq:start} \\[1.5ex]
+    \frac{dN(t,T)}{dt} = -\beta(T(t)) N(t,T)^2 - \Gamma N(t,T) \label{eq globale collisions} \\[1.5ex]
     \text{Setting } M(t,T) = N(t,T)e^{\Gamma t} \iff N(t,T) = M(t,T)e^{-\Gamma t} \label{eq:change_var} \\[1.5ex]
-    \dot{M}(t,T)e^{-\Gamma t} - \Gamma M(t,T) e^{-\Gamma t} = -\beta(T) M(t,T)^2 e^{-2\Gamma t} - \Gamma M(t,T) e^{-\Gamma t} \label{eq:diff} \\[1.5ex]
-    \int_{0}^{t} \frac{\dot{M}(t',T)}{M(t',T)^2} \, dt' = -\int_{0}^{t} \beta(T) e^{-\Gamma t'} \, dt' \label{eq:integ} \\[1.5ex]
-    -\frac{1}{M(t,T)} + \frac{1}{N_0} = \frac{\beta(T)}{\Gamma} \left( e^{-\Gamma t} - 1 \right) \label{eq:inv_M} \\[1.5ex]
-    M(t,T) = \frac{N_0 \Gamma}{\Gamma + \beta(T) N_0 \left( 1 - e^{-\Gamma t} \right)} \label{eq:sol_M} \\[1.5ex]
-    N(t,T) = \frac{N_0 e^{-\Gamma t}}{1 + \frac{\beta(T) N_0}{\Gamma} \left( 1 - e^{-\Gamma t} \right)} \label{eq:final_fit}
+    \dot{M}(t,T)e^{-\Gamma t} - \Gamma M(t,T) e^{-\Gamma t} = -\beta(T(t)) M(t,T)^2 e^{-2\Gamma t} - \Gamma M(t,T) e^{-\Gamma t} \label{eq:diff} \\[1.5ex]
+    \int_{0}^{t} \frac{\dot{M}(t',T)}{M(t',T)^2} \, dt' = -\int_{0}^{t} \beta(T(t')) e^{-\Gamma t'} \, dt' \label{eq:integ} \\[1.5ex]
+    -\frac{1}{M(t,T)} + \frac{1}{N_0} = -\int_{0}^{t} \beta(T(t')) e^{-\Gamma t'} \, dt' \label{eq:inv_M} \\[1.5ex]
+    M(t,T) = \frac{N_0}{1 + N_0 \int_{0}^{t} \beta(T(t')) e^{-\Gamma t'} \, dt'} \label{eq:sol_M} \\[1.5ex]
+    N(t,T) = \frac{N_0 e^{-\Gamma t}}{1 + N_0 \int_{0}^{t} \beta(T(t')) e^{-\Gamma t'} \, dt'} \label{eq:final_fit}
 \end{gather}
 
-Because $N(t,T)$ depends on the temperature, one wants to re-express Eq.~\ref{eq:final_fit} by explicitly showing the $T$-dependence of $\beta(T)$. The atoms are trapped in an ODT with a mean trapping frequency $\bar{\omega} = (\omega_x \omega_y \omega_z)^{1/3}$. According to the equipartition theorem, the spatial width $\sigma_{i}$ (with $i=\{x,y,z\}$) of the Gaussian 
-distribution relates to the temperature $T$ via $\frac{1}{2}m_{\text{at}}\omega_{i}^2\sigma_{i}^2 = \frac{1}{2}k_B T$. This yields the effective volume:
+Because $N(t,T)$ depends on the temperature, one wants to re-express Eq.~\ref{eq:final_fit} by explicitly showing the $T$-dependence of $\beta(T)$. The atoms are trapped in an ODT with a mean trapping frequency $\bar{\omega} = (\omega_x \omega_y \omega_z)^{1/3}$. According to the equipartition theorem, the spatial width $\sigma_{i}$ (with $i=\{x,y,z\}$) of the Gaussian distribution relates to the temperature $T$ via $\frac{1}{2}m_{\text{at}}\omega_{i}^2\sigma_{i}^2 = \frac{1}{2}k_B T$. This yields the effective volume:
 
 \begin{equation}
     V_e(T) = (2\pi)^{3/2}\left(\frac{k_B T}{m_{\text{at}}}\right)^{3/2} \frac{1}{\omega_x\omega_y\omega_z} = (2\pi)^{3/2}\left(\frac{k_B T}{m_{\text{at}}\bar{\omega}^2}\right)^{3/2}
 \end{equation}
 
-with $\bar{\omega}=2\pi 50$~rad/s. By substituting $\beta(T) = \frac{K_2}{2\sqrt{2}V_e(T)}$ into the population evolution law, the final fitting equation becomes:
+with $\bar{\omega}=2\pi 50$~rad/s. By substituting $\beta(T(t')) = \frac{K_2}{2\sqrt{2}V_e(T(t'))}$ into the population evolution law, the final fitting equation becomes:
 
 \begin{equation}
-    N(t,T) = \frac{N_0 e^{-\Gamma t}}{1 + \left[ \frac{K_2}{8\pi^{3/2}} \left( \frac{m_{\text{at}}}{k_B T} \right)^{3/2} \omega_x\omega_y\omega_z \right] 
-    \frac{N_0}{\Gamma} \left( 1 - e^{-\Gamma t} \right)}
+    N(t,T) = \frac{N_0 e^{-\Gamma t}}{1 + \left[ \frac{K_2}{8\pi^{3/2}} \left( m_{\text{at}} \right)^{3/2} \omega_x\omega_y\omega_z \right] N_0 \int_{0}^{t} \left( \frac{1}{k_B T(t')} \right)^{3/2} e^{-\Gamma t'} \, dt'}
+\label{equation fit finale}
 \end{equation}
 
-From this equation, one expects two distinct slopes on the decay curve: an initial fast two-body decay regime followed by a slow one-body regime as the atomic density drops. 
+This fitting function is used to extract the two-body loss rate coefficient $K_2$ from the experimental data. The temperature $T(t)$ is numerically interpolated from the measured temperature. Then for each illumination time, the integrale of \ref{equation fit finale} is calculated and the experimental data are fitted to extract $K_2$.\\
+
+From equation \ref{eq globale collisions}, one expects two distinct slopes on the decay curve: an initial fast two-body decay regime followed by a slow one-body regime as the atomic density drops.\\ 
+
 Figure~\ref{88sr exponential decay} illustrates these two regimes. The experimental data are adjusted using this model, from which the $\beta$ value is extracted. For the resonance $f_{\nu=2}=-222.161(35)$~MHz, the deduced optical length is $l_{\text{opt}} = 13 \, a_0/(\text{W/cm}^2)$, which can be compared to the value of $l_{\text{opt}} = 1 \, a_0/(\text{W/cm}^2)$ reported in \cite{zelevinsky_narrow_2006}. For the second line, we measure $l_{\text{opt}} = 7.6\times 10^3 \, a_0/(\text{W/cm}^2)$, which is consistent with the theoretical predictions from \cite{blatt_systematic_2011}.
 \begin{figure}[H]
     \centering
@@ -1027,8 +1029,8 @@ The exponential decay has not been verified for this resonance but the behavior 
 %----------------------------------------------------------
 % LINE 2: 274.83 MHz
 %----------------------------------------------------------
-\paragraph{Line at $274.83$ MHz}
-The second line detected is at $f_2 = -274.83\pm 0.03$ MHz from the atomic resonance plotted in \ref{subfig:274MHz_spectrum}. The gas prepared of density
+\paragraph{Line at $276.83$ MHz}
+The second line detected is at $f_2 = -276.83\pm 0.03$ MHz from the atomic resonance plotted in \ref{subfig:274MHz_spectrum}. The gas prepared of density
 $2\times 10^{13}$~atoms/cm$^3$ was evaporated in the crossing and illuminated for 1000~ms.
 in reservoir and dimple
 Once again the linewidth measured $\Gamma = 7.48 \pm 0.77$ is surprisingly large. The points out of the fit could come from a delocking laser or 
@@ -1044,7 +1046,7 @@ The analysis of the resonance is completed by the exponential decay observation 
     \begin{subfigure}{0.8\linewidth}
         \centering
         \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data171.pdf}
-        \caption{Resonance spectrum at $274.83 \pm 0.03$ MHz ($I = 5.2$ W/cm$^2$).}
+        \caption{Resonance spectrum at $276.83 \pm 0.03$ MHz ($I = 5.2$ W/cm$^2$).}
         \label{subfig:274MHz_spectrum}
     \end{subfigure}
 
@@ -1052,7 +1054,7 @@ The analysis of the resonance is completed by the exponential decay observation 
         \centering
         % TODO: temperature figure for 274.83 MHz line not yet added
         \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_171.pdf}
-        \caption{Temperature of the gas at the $274.83$ MHz resonance (figure to be added).}
+        \caption{Temperature of the gas at the $276.83$ MHz resonance (figure to be added).}
         \label{subfig:274MHz_temp}
     \end{subfigure}
 
@@ -1065,10 +1067,10 @@ The analysis of the resonance is completed by the exponential decay observation 
     \end{subfigure}
 
     % NOTE: no exponential decay figure available for this line
-    \caption{Characterization of the molecular line at $274.83 \pm 0.03$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$). 
+    \caption{Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$). 
     No exponential decay measurement is available for this line.
     All detunings are measured from the $^{87}$Sr atomic resonance.}
-    \label{fig:line_274MHz}
+    \label{fig:line_276MHz}
 \end{figure}
 
 %----------------------------------------------------------
@@ -1108,8 +1110,8 @@ by the fitting function \ref{eq:final_fit} valid for $\beta$ independant on T. \
     \label{fig:line_375MHz}
 \end{figure}
 
-The exponential decay of the second molecular line at $f = 274.83$ MHz is presented in figure \ref{subfig:274MHz_temp}: 
-% TODO: update this sentence once the exponential decay for the 274.83 MHz line is available.
+The exponential decay of the second molecular line at $f = 276.83$ MHz is presented in figure \ref{subfig:276MHz_temp}: 
+% TODO: update this sentence once the exponential decay for the 276.83 MHz line is available.
 \begin{table}[htbp]
 \centering
 \caption{Summary of fit parameters and experimental conditions for data series 171, 195, and 184.}
@@ -1118,14 +1120,14 @@ The exponential decay of the second molecular line at $f = 274.83$ MHz is presen
 \renewcommand{\arraystretch}{1.2} % Ajoute un peu d'espace vertical entre les lignes
 \begin{tabular}{l c c c}
 \hline \hline
-\textbf{Freq. $f$ (MHz)} & \textbf{$259.01 \pm 0.12$} & \textbf{$274.83 \pm 0.03$} & \textbf{$375.74 \pm 0.48$} \\ 
+\textbf{Freq. $f$ (MHz)} & \textbf{$259.01 \pm 0.12$} & \textbf{$276.83 \pm 0.03$} & \textbf{$375.74 \pm 0.48$} \\ 
 \hline
 Depth & $-0.307 \pm 0.010$ & $-0.364 \pm 0.019$ & $-0.083 \pm 0.009$ \\
 Width (MHz) & $2.53 \pm 0.17$ & $7.48 \pm 0.77$ & $10.96 \pm 2.68$ \\
-Intensity $I$ (W/cm$^2$) & 19 & 5.2 & 5.2 \\
 Time $t$ (ms) & 1000 & 1000 & 1000 \\ 
 \hline
-$l_{opt}/I$ ($10^{-6} a_0$) & --- & $1.92 \pm 0.44$ & $2.60 \pm 0.88$ \\ 
+Intensity $I$ for $l_{opt}$ (W/cm$^2$) & 19 & 31 & 19 \\
+$l_{opt}/I$ ($a_0/(W/cm^2)$) & $(6.11\pm 3.34)\times 10^{-1}$ & $ (5.2 \pm 0.4)\times 10^{-1}$ & $(3.24 \pm 2.25)\times 10^{-2}$ \\ 
 \hline \hline
 \end{tabular}
 \end{table}
@@ -1176,14 +1178,19 @@ The plots of molecular lines added to the really low estimated $l_{opt}$ values 
 In the next subsection I will discuss the possible interpretation of these caracteristics.
 
 \subsection{Interpretation of low contrast}
-The spectroscopy of $^{87}Sr$ reveals a really important linewidth coupled to a low contrast. A way to interpret this surprising contrast is the predissociation.
-This concept illustrated in \ref{predissociation} is a phenomenon that occurs when dissociation limit of an excited molecular potential
-C is under the closed channel of the excited molecule of potential B. Then the $\nu_ B$ state is coupled to a density of states of potential
-C that modifies the linewidth $\Gamma_{mol}$ of the molecular state as 
+The surprising low number of the $^{87}Sr$ PA lines coupled to the large width and low strength of the lorentzian shape have been observed in \cite{franzen_intercombination_2023}. where $^{87}Rb^{170}Yb$ bi-alkali molecules are photoassociated on the intercombination line. 
+Only two spectroscopic lines have been observed with a low contrast while the intensity of the laser reaches $I = 40~$mW/cm$^2$ corresponding to a two-body loss rate $\beta = 5\times 10^{-14}~$cm$^3$/s corresponding to a really low optical length.\\
 
+Authors give two interpretations for this result : the first one is the strong dipole at low internuclear distance coming from the rubidium potentials, leading to atomic decay to $^1S_0$. Nevertheless this effect is estimated to be less than 10\% probable.  \\
+The second interpretation is the predissociation process illustrated in Fig.\ref{predissociation}. Two free atoms from potential A are photoassociated to a vibrationnal state of a molecular potential B. Atomic potential C crosses potential B above its dissociation limit which 
+creates a coupling between the two potentials (\cite{mukherjee_feshbach_2022}). In the case of $^{87}Sr$ this potential is one of the hyperfine structure of the $^3P_J$ state. The bound atoms then decay to the continuum of the potential C that impacts the lifetime of the excited
+molecular state as 
 \begin{equation}
-    \Gamma_{mol} \propto \rho(\epsilon_f)
-\end{equation}
+    \Gamma_{eff} = \Gamma_{stim} + \Gamma_{predissociation} + \Gamma_{mol}
+\end{equation} 
+
+with $\Gamma_{predissociation} \propto \rho(\epsilon_f)$ where $\rho(\epsilon_f)$ is the density of states of the potential C at the energy of the molecular state. The predissociation process is then a loss channel for the molecular state that decreases the lifetime of the molecule and increases its linewidth. 
+
 
 In \ref{fig:pa-ytterbium-potentials} the curves do not seem to be affected by the predissociation from the linewidth values. We were thinking that PA on the lowest
 hyperfine state as for $Yb$ would avoid this effect but the data on $^{87}Sr$ show the contrary: for a reason we ignore this atom is affected by this process but the 
@@ -1197,7 +1204,8 @@ C is under the closed channel of the excited molecule of potential B. Then the $
 C that modifies the linewidth $\Gamma_mol$ of the molecular state}
     \label{predissociation}
 \end{figure}
-
+Changing the polarization of the PA laser could change the coupling strength with the atomic continuum.
+Same as for the magnetic field that could change the energy difference between the hyperfine states and so decrease the density of states. Both of these possibilities have been tested following this work I presented but no significant change has been observed on the linewidth and the contrast of the molecular lines.\\
 \subsubsection{Coupling to more energetic state from the IR}
 ODT can be a distructive source of PA process if it is resonant with high energy levels at $\lambda = 1064$nm from the target state
 of the first molecular excited state.
