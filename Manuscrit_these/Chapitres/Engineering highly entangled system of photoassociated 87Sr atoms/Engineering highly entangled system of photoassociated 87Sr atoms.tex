@@ -7,9 +7,9 @@ In quantum metrology, a fundamental limit to the precision of a phase parameter 
 Moving toward this goal, the work presented in this chapter focuses on the essential preliminary step: the spectroscopic identification of the molecular states involved in this spin-selective process. At this stage of the experiment, our system is characterized by the resolution of three distinct spectroscopic lines, meaning we are still far from generating collective quantum correlations. However, the precise mapping of these three lines provides the first direct evidence of the underlying molecular structure and the spin-selection rules at play. The objective of this chapter is thus to benchmark the photoassociation mechanism itself, establishing the necessary spectroscopic foundations required for future spin-manipulation and state-purification protocols.\\
 
 This chapter opens with the fundamental concepts of scattering theory required to understand the mechanisms of photoassociation, which drives the evolution of atomic density through one- and two-body loss processes. Next, we present preliminary experimental results obtained with $^{88}\text{Sr}$. Leveraging the well-documented molecular potentials of this bosonic species allows us to benchmark and calibrate our experimental setup. Building upon these foundations, we then focus on the fermionic isotope, $^{87}\text{Sr}$. We provide a detailed presentation of the experimental data, accompanied by a thorough analysis of the technical challenges and systematic issues that could account for the low contrast observed in the molecular lines. Finally, the chapter concludes with a discussion regarding the surprising number of detected lines and their specific profiles, which may hint at the existence of yet unexplained physical phenomena.
-\section{Introduction on photoassociation}
+\section{Gas preparation and spin control on photoassociation}
 \subsection{Scattering theory}
-Understanding the PA process necessitates an introduction to scattering theory to define key quantities such as the scattering length and the optical length. These parameters emerge naturally from the asymptotic analysis of the radial Schrödinger equation describing the relative motion of two colliding atoms.
+Understanding the PA process necessitates an Gas preparation and spin control to scattering theory to define key quantities such as the scattering length and the optical length. These parameters emerge naturally from the asymptotic analysis of the radial Schrödinger equation describing the relative motion of two colliding atoms.
 
 In the study of inter-atomic interactions, the Born-Oppenheimer approximation provides a natural simplification. Due to the large mass ratio between the nuclei and the electrons, the nuclei move on a much slower timescale. One can therefore solve the electronic problem for fixed nuclear positions. The resulting electronic energy curve as a function of the inter-nuclear distance $r$ defines the adiabatic potential $\hat{U}(r)$ experienced by the two atoms. 
 
@@ -662,7 +662,7 @@ the frequency of the PA laser- is broaden by the beating spectrum with side comp
 
 \subsubsection{Spectral imperfections from the filter cavity system}
 The laser passes through a Fabry-Perot cavity (see section 1.3.2) stabilized by a Pound-Drever-Hall (PDH) locking system containing an EOM. This latter modulates 
-the incident electric field of frequency $f_0$ fixed at $f_M=40.48$ MHz (see \cite{black_introduction_2001}). The phase modulation gives rise to interferences between the carrier at central frequency 
+the incident electric field of frequency $f_0$ fixed at $f_M=40.48$ MHz (see \cite{black_Gas preparation and spin control_2001}). The phase modulation gives rise to interferences between the carrier at central frequency 
 $f_0$ and the modulating signal at $f_M$:
 
 \begin{equation}
@@ -757,90 +757,101 @@ Then the laser MOGlabs robustly locked, we change $f^{RF}_{beating}$ to search t
 \ref{88Sr resonance}. 
 
 \subsubsection{Fitting model}
-I deduced the number of atoms I plot in the following figures from the integration of the optical density in two-dimension as demonstrated in the article \cite{litvinov_measuring_2021}. 
-Each point of the presented atomic and molecular lines is obtained by fitting absorption images of the atomic cloud. The gaussian function used as a model gives an error estimation 
+I deduced the number of atoms plotted in the following figures from the two-dimensional integration of the optical density, following the method demonstrated in Ref.~\cite{litvinov_measuring_2021}. 
+Each data point of the presented atomic and molecular lines is extracted by fitting the absorption images of the atomic cloud with a 2D Gaussian function. The fit covariance yields a relative fitting uncertainty defined as:
+
 \begin{equation}
     \sigma_{\text{gaussian}} = \sqrt{\left(\frac{\delta A}{A}\right)^2 + \left(\frac{\delta \sigma_x}{\sigma_x}\right)^2 + \left(\frac{\delta \sigma_y}{\sigma_y}\right)^2}
 \end{equation}
 
-with $\delta A$, $\delta \sigma_x$ and $\delta \sigma_y$ the diagonal terms of the covariance matrix of the gaussian fit for respectively the amplitude and full-width-half-max (FWHM) in 
-$(x,y)$ plane.
+where $\delta A$, $\delta \sigma_x$, and $\delta \sigma_y$ are the diagonal elements of the fit covariance matrix, corresponding respectively to the amplitude and the spatial widths along the $x$ and $y$ axes.
 
-When at resonance with molecular/atomic transition the succession of all these fit has a lorentzian shape:
-\begin{equation}
-    f(x) = y_0 + \frac{A}{(x-x_0)^2 + (\frac{\Gamma}{2})^2}
-\end{equation}
-of FWHM $\Gamma$, centered in $x_0$ with amplitude $\frac{A}{(\Gamma/2)^2}$ and $y_0$ an offset.
+When sweeping the laser frequency across an atomic or molecular resonance, the evolution of the atom number exhibits a Lorentzian profile:
 
-I considered the experimental fluctuations for more accuracy by adding an RMS atom number of ten experiments.
-Then the total error for each atom measurement is:
 \begin{equation}
-    \sigma^{tot}_N = N \sqrt{\sigma_{gaussian}^2 + \sigma_{systematic}^2}
+    f(x) = y_0 + \frac{A}{(x-x_0)^2 + \left(\frac{\Gamma}{2}\right)^2}
 \end{equation}
 
-These resonances present an effective linewidth coming from broadening sources : on the atomic lines the intensity of the laser induces a \textbf{power broadening} of the resonance:
+characterized by a full-width at half-maximum (FWHM) $\Gamma$, centered at $x_0$, with a peak amplitude $A / (\Gamma/2)^2$ and an offset $y_0$.
+
+To account for shot-to-shot experimental fluctuations, the RMS atom number variation over ten consecutive realizations was included. The total uncertainty associated with each atom number measurement is given by:
+
 \begin{equation}
-    \Gamma_{power} = \Gamma_{1S_0-3P_1}\sqrt{1+\frac{I}{I_{sat}^{eff}}}
+    \sigma_N^{\text{tot}} = N \sqrt{\sigma_{\text{gaussian}}^2 + \sigma_{\text{systematic}}^2}
 \end{equation}
 
-Due to small Franck-Condon factors, power broadening 
-of the linewidth remains negligible since the $I_{sat}$ for molecules is way bigger than for atoms \cite{zelevinsky_narrow_2006}.\\
-Added to the ensemble of thermal distribution of doppler shifted atoms when the gas is hot, the final broadening of a spectroscopic line is given by:
-\begin{gather*}
-    \Gamma{\text{tot}} = \sqrt{\Gamma_{mol/at}^2 + \Gamma_{\text{thermal}}^2 + \Gamma_{\text{power}}^2 + \Gamma_{\text{remainder}}^2} \\
-    \text{with } \Gamma_{\text{thermal}} = \frac{1}{\lambda}\sqrt{\frac{k_B T}{\mu}} 
-\end{gather*}
-$\mu = m_{at}/2$ for the molecular resonance, $\mu = m_{at}$ for a single atom, $\lambda$ the laser wavelength, T the temperature of the gas and $k_B$ 
-the boltzmann constant. There are still a residual broadening $\Gamma_{remainder}$ we did not identified for now.
+The resonances exhibit an effective linewidth $\Gamma_{\text{tot}}$ resulting from physical and technical broadening mechanisms:
 
-\subsubsection{Experimental results on $^{88}Sr$}
-The first molecular state shown in the middle panel of Fig.~\ref{88Sr resonance} was detected using an exposure time of $t = 1000$~ms and an intensity of $I = 826$~mW/cm$^2$. This state is located at a detuning of $f = -23.99 \pm 0.01$~MHz from the atomic transition, as measured with the MOGlabs laser system, revealing an \hl{effective linewidth of $\sigma = 192(9)\text{ kHz}$. This includes a power broadening contribution of $74\text{ kHz}$ (due to the $100 I_{\text{sat}}$ illumination) and a thermal broadening estimated at $19\text{ kHz}$.}
-Subsequently, a second resonance was observed using the same laser system at a detuning of $f = -222.70 \pm 0.01$~MHz, with a beam intensity of $I = 303$~mW/cm$^2$ and an exposure time of $50$~ms. \hl{The linewidth of this second resonance was estimated to be $330 \pm 13$~kHz, which includes a thermal broadening contribution of $\sigma_{\text{broadening}} = 21$~kHz.}
+\begin{equation}
+    \Gamma_{\text{tot}} = \sqrt{\Gamma_0^2 + \Gamma_{\text{thermal}}^2 + \Gamma_{\text{laser}}^2 + \Gamma_{\text{remainder}}^2}
+\end{equation}
 
-These experimental findings are in good agreement with the results reported by Zelevinsky et al.~\cite{zelevinsky_narrow_2006}, who identified vibrational states at $f_{\nu=1} = -23.932(33)$~MHz and $f_{\nu=2} = -222.161(35)$~MHz associated with the $0_u$ photoassociation potential. 
-The tensorial light shift induced by the photoassociation (PA) beam is known to cause a frequency shift in these molecular states. This effect was quantitatively investigated by Blatt et al.~\cite{blatt_measurement_2011}, where the $\nu = -2$ state exhibited a red-shift of $200$~kHz for a laser intensity increase of approximately 800~mW/cm$^2$. \\
-Furthermore, the measured linewidth for the $f = -222.161(35)$~MHz state remains comparable to what they plotted in their work while we expect a linewidth of $\Gamma = 15$~kHz in average. This extremely larger $\Gamma_{fit}$ comes from technical issues such as the laser sidebands (see section 3.2.2.2) or simple large width of the laser.
-To verify if the broadening was technical we measured the same molecular line with another laser source to compare its linewidth.\\
+where $\Gamma_0$ is the natural linewidth ($\Gamma_0 = 2\pi \times 7.5\text{ kHz}$ for the $^1S_0 - ^3P_1$ atomic line of $^{88}\text{Sr}$, and $\Gamma_0 \approx 15\text{ kHz}$ on average for the molecular states). Due to small Franck-Condon factors, the effective saturation intensity $I_{\text{sat}}^{\text{eff}}$ for molecular transitions is significantly larger than for atomic ones, making power broadening completely negligible for molecular lines \cite{zelevinsky_narrow_2006}.
+
+Furthermore, the thermal motion of Doppler-shifted atoms introduces a thermal broadening given by:
+
+\begin{equation}
+    \Gamma_{\text{thermal}} = \frac{1}{\lambda}\sqrt{\frac{k_B T}{\mu}} 
+\end{equation}
+
+with $\mu = m_{\text{at}}/2$ for molecular resonances, $\mu = m_{\text{at}}$ for single atoms, $\lambda$ the laser wavelength, $T$ the gas temperature, and $k_B$ the Boltzmann constant. 
+
+Finally, $\Gamma_{\text{laser}}$ accounts for the intrinsic spectral width of the laser source, while $\Gamma_{\text{remainder}}$ gathers unassigned technical broadening sources. By subtracting the known physical contributions ($\Gamma_0, \Gamma_{\text{thermal}}$) in quadrature from the measured total linewidth $\Gamma_{\text{tot}}$, one can isolate the effective technical laser linewidth:
+
+\begin{equation}
+    \Gamma_{\text{laser+rem}} = \sqrt{\Gamma_{\text{tot}}^2 - \left(\Gamma_0^2 + \Gamma_{\text{thermal}}^2\right)}
+\end{equation}
+
+
+\subsubsection{Experimental results on $^{88}$Sr}
+The first molecular state shown in the middle panel of Fig.~\ref{88Sr resonance} was detected using an exposure time of $t = 1000$~ms and an intensity of $I = 826$~mW/cm$^2$. This state is located at a detuning of $f = -23.99 \pm 0.01$~MHz from the atomic transition (measured with the MOGlabs laser system), revealing a total effective linewidth of $\Gamma_{\text{tot}} = 192 \pm 9\text{ kHz}$. Accounting for the natural width $\Gamma_0 = 15\text{ kHz}$ and a thermal broadening estimated at $\Gamma_{\text{thermal}} = 19\text{ kHz}$, the residual technical broadening is deduced to be $\Gamma_{\text{laser+rem}} = 190.47\text{ kHz}$\hl{$\pm$}.
+
+Subsequently, a second resonance was observed using the same laser system at a detuning of $f = -222.70 \pm 0.01$~MHz, with a beam intensity of $I = 303$~mW/cm$^2$ and an exposure time of $50$~ms. The measured linewidth of this second resonance was $\Gamma_{\text{tot}} = 330 \pm 13\text{ kHz}$, with a thermal broadening contribution of $\Gamma_{\text{thermal}} = 21\text{ kHz}$. Subtracting these physical terms yields a technical laser width of $\Gamma_{\text{laser+rem}} = 328.99\text{ kHz}$\hl{$\pm$}.
+
+These experimental findings agree well with the results reported by Zelevinsky et al.~\cite{zelevinsky_narrow_2006}, who identified vibrational states at $f_{\nu=-1} = -23.932(33)$~MHz and $f_{\nu=-2} = -222.161(35)$~MHz associated with the $0_u$ photoassociation potential. 
+The tensorial light shift induced by the photoassociation (PA) beam causes a frequency shift in these molecular states, as investigated by Blatt et al.~\cite{blatt_measurement_2011}, where the $\nu = -2$ state exhibited a red-shift of $200$~kHz for a laser intensity increase of approximately $800$~mW/cm$^2$.
+
+The measured linewidths ($\Gamma_{\text{tot}} \sim 192\text{--}330\text{ kHz}$) remain significantly larger than the expected intrinsic molecular linewidth of $\Gamma_0 \approx 15\text{ kHz}$. This substantial broadening stems from technical limitations, notably laser phase noise and sidebands (see section 3.2.2.2). To confirm that this broadening was technical, we measured the same molecular line with an alternative, higher-stability laser source.
 
 \begin{figure}[htbp]
     \centering
-        \includegraphics[width=0.75\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf}
-        \caption[Resonances of $^{88}Sr$]{Normalized $^{88}\text{Sr}$ atom number across the intercombination line. 
-(Top) Atomic resonance used as the PA frequency reference. Data points are extracted from 2D Gaussian fits of absorption images; error bars include fit covariance and unperturbed cloud RMS fluctuations. 
-(Middle) $\nu = -1$ vibrational state ($I = 826$~mW/cm$^2$, $1000$~ms). 
-(Bottom) $\nu = -2$ vibrational state ($I = 303$~mW/cm$^2$, $50$~ms). 
-Solid lines are Lorentzian fits with errors accounting for covariance and systematic fluctuations.}
+    \includegraphics[width=0.75\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf}
+    \caption[Resonances of $^{88}\text{Sr}$]{Normalized $^{88}\text{Sr}$ atom number across the intercombination line. 
+    (Top) Atomic resonance used as the PA frequency reference. Data points are extracted from 2D Gaussian fits of absorption images; error bars include fit covariance and unperturbed cloud RMS fluctuations. 
+    (Middle) $\nu = -1$ vibrational state ($I = 826$~mW/cm$^2$, $1000$~ms). 
+    (Bottom) $\nu = -2$ vibrational state ($I = 303$~mW/cm$^2$, $50$~ms). 
+    Solid lines are Lorentzian fits with errors accounting for covariance and systematic fluctuations.}
     \label{88Sr resonance}
 \end{figure}
 
-\newpage
+
 \subsubsection{Alternative source: the injection-locked laser}
-Spectroscopy experiments betrayed the broadening of the ECDL laser. To confirm that the observed broadening was technical, we compared the MOGlabs results with a more stable source: the "$11/2$ AOM" beam.\\
-The measured linewidth $\Gamma_{effective}$ of the $\nu = 2$ molecular state is compared in Figure \ref{linewidth avec pompopt} and Table \ref{tab:comparaison_lasers}. 
+Spectroscopy measurements confirmed the significant broadening induced by the MOGlabs ECDL laser. To demonstrate its technical origin, we compared the MOGlabs results with a more stable laser source: the "11/2 AOM" beam. The measured parameters for the $\nu = -2$ molecular state are summarized in Table~\ref{tab:comparaison_lasers} and illustrated in Figure~\ref{linewidth avec pompopt}.
 
 \begin{table}[ht]
 \centering
-\caption{Experimental comparison of $\nu=2$ measured with two different laser sources.}
+\caption{Experimental comparison of the $\nu=-2$ molecular resonance linewidth measured with two different laser sources.}
 \label{tab:comparaison_lasers}
 \begin{tabular}{|l|c|c|}
 \hline
-\textbf{Measured parameters} & \textbf{AOM 11/2 beam} & \textbf{MOGlabs laser} \\ \hline
-Frequency [MHz] (measured) & $ \pm 0.01$ kHz & $23.99 \pm 0.01$ kHz \\ \hline
-Intensity ($I$) & $$ mW/cm$^2$ & $$ mW/cm$^2$ \\ \hline
-$\sigma_{total}$ (measured) & $115.5 \pm 8.8$ kHz & $344.5 \pm 27.3$ kHz \\ \hline
-$\gamma_{thermal}$ (calc.) & $$ kHz & $$ kHz \\ \hline
-\textbf{Effective linewidth} & $ \pm 29.24$ kHz & $ \pm 13.6$ kHz \\ \hline
+\textbf{Parameters} & \textbf{AOM 11/2 beam} & \textbf{MOGlabs laser} \\ \hline
+Detuning $f$ [MHz] & $-222.70 \pm 0.01$ & $-222.70 \pm 0.01$ \\ \hline
+Intensity $I$ [mW/cm$^2$] & $\mathbf{[VAL\_AOM]}$ & $303$ \\ \hline
+Natural width $\Gamma_0$ [kHz] & $15$ & $15$ \\ \hline
+$\Gamma_{\text{thermal}}$ (calc.) [kHz] & $21$ & $21$ \\ \hline
+\textbf{Total measured width $\Gamma_{\text{tot}}$} [kHz] & $115.5 \pm 8.8$ & $344.5 \pm 27.3$ \\ \hline
+\textbf{Deduced technical width $\Gamma_{\text{laser+rem}}$} [kHz] & $112.58\hl{\pm}$ & $328.99\hl{\pm}$ \\ \hline
 \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf}
-    \caption[]{Comparison of the $\nu = 2$ molecular line. The deep purple data (MOGlabs) is broader by a factor of 3 compared to the stable "AOM 11/2" source in light purple. The frequencies of MOGlabs experiment have been shifted for figure reading facilites. }
+    \caption[]{Comparison of the $\nu = -2$ molecular line profile. The MOGlabs dataset (deep purple) yields a line three times broader than the stable "11/2 AOM" source (light purple). MOGlabs frequencies were shifted for visualization clarity.}
     \label{linewidth avec pompopt}
 \end{figure}
 
-The MOGlabs source presents a \hl{two times} bigger width than the "11/2" beam. Still the resonances are obtained with this larger source since only this one gives access to a large tunable frequency range.
+The MOGlabs source yields a technical linewidth $\Gamma_{\text{laser+rem}}$ approximately three times larger than the "11/2 AOM" beam. Nevertheless, the MOGlabs laser remains essential for broad spectroscopic searches due to its wide frequency tunability.
 
 \subsubsection{Noise of the diode}
 While comparing the broadening of the molecular line with two different lasers the spectroscopy revealed from the Thorlabs red diode \textbf{HL6750MG}, noise at $\pm 6$ MHz and $\pm 12$ MHz from the central frequency $f_0$. 
@@ -986,6 +997,21 @@ this curve as expected.
     \label{temp 6MHz noise}
 \end{figure}
 
+The cloud temperature is derived assuming an isotropic thermal velocity distribution. During time-of-flight (TOF), the cloud undergoes isotropic ballistic expansion, where the Gaussian width $\sigma_y$ measured along a given axis evolves as:
+\begin{equation}
+    \sigma_y^2 = \sigma_{0,y}^2 + v_{\text{th}}^2 \, \text{TOF}^2
+\end{equation}
+
+where $\sigma_{0,y}$ is the \textit{in-situ} RMS width of the gas in the optical dipole trap (ODT) intersection, and $v_{\text{th}}$ is the thermal velocity. 
+
+Assuming a Maxwell-Boltzmann velocity distribution, the equipartition theorem links the thermal velocity to the isotropic temperature $T$ along each degree of freedom via $\frac{1}{2} m_{\text{at}} v_{\text{th}}^2 = \frac{1}{2} k_B T$. The temperature is thus extracted from the Gaussian spatial width $\sigma_y$ measured on the absorption image:
+\begin{equation}
+    T = \frac{m_{\text{at}} \left(\sigma_y^2 - \sigma_{0,y}^2\right)}{k_B \, \text{TOF}^2}
+\end{equation}
+Assuming independent uncertainties on both the \textit{in-situ} size $\sigma_{0,y}$ and the expanded size $\sigma_y$, error propagation in quadrature yields:
+\begin{equation}
+    \delta T = \frac{2 m_{\text{at}}}{k_B \, \text{TOF}^2} \sqrt{\left(\sigma_y \delta \sigma_y\right)^2 + \left(\sigma_{0,y} \delta \sigma_{0,y}\right)^2}
+\end{equation}
 
 \subsubsection{Molecular lines on $^{87}Sr$}
 %----------------------------------------------------------

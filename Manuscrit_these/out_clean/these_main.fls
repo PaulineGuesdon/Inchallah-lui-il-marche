@@ -296,63 +296,63 @@ INPUT out_clean/these_main.lot
 INPUT out_clean/these_main.lot
 INPUT out_clean/these_main.lot
 OUTPUT out_clean/these_main.lot
-INPUT ./Chapitres/Introduction/Introduction.tex
-INPUT ./Chapitres/Introduction/Introduction.tex
-INPUT ./Chapitres/Introduction/Introduction.tex
-INPUT ./Chapitres/Introduction/Introduction.tex
-INPUT Chapitres/Introduction/Introduction.tex
+INPUT ./Chapitres/Gas preparation and spin control/Gas preparation and spin control.tex
+INPUT ./Chapitres/Gas preparation and spin control/Gas preparation and spin control.tex
+INPUT ./Chapitres/Gas preparation and spin control/Gas preparation and spin control.tex
+INPUT ./Chapitres/Gas preparation and spin control/Gas preparation and spin control.tex
+INPUT Chapitres/Gas preparation and spin control/Gas preparation and spin control.tex
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./Chapitres/Introduction/images/repompeur.png
-INPUT ./Chapitres/Introduction/images/repompeur.png
-INPUT ./Chapitres/Introduction/images/repompeur.png
-INPUT ./Chapitres/Introduction/images/repompeur.png
-INPUT ./Chapitres/Introduction/images/repompeur.png
-INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
-INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
-INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
-INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
-INPUT ./Chapitres/Introduction/images/chaine_bleue_actualisée.pdf
-INPUT ./Chapitres/Introduction/images/energy_levels_repumper.png
-INPUT ./Chapitres/Introduction/images/energy_levels_repumper.png
-INPUT ./Chapitres/Introduction/images/energy_levels_repumper.png
-INPUT ./Chapitres/Introduction/images/energy_levels_repumper.png
-INPUT ./Chapitres/Introduction/images/energy_levels_repumper.png
-INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/images/red_MOT_in_3_steps.pdf
-INPUT ./Chapitres/Introduction/images/need_for_stir.png
-INPUT ./Chapitres/Introduction/images/need_for_stir.png
-INPUT ./Chapitres/Introduction/images/need_for_stir.png
-INPUT ./Chapitres/Introduction/images/need_for_stir.png
-INPUT ./Chapitres/Introduction/images/need_for_stir.png
-INPUT ./Chapitres/Introduction/images/randomisation.jpeg
-INPUT ./Chapitres/Introduction/images/randomisation.jpeg
-INPUT ./Chapitres/Introduction/images/randomisation.jpeg
-INPUT ./Chapitres/Introduction/images/randomisation.jpeg
-INPUT ./Chapitres/Introduction/images/randomisation.jpeg
-INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
-INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
-INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
-INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
-INPUT ./Chapitres/Introduction/images/chaine_rouge_vieille.png
-INPUT ./Chapitres/Introduction/images/ODT_loading.png
-INPUT ./Chapitres/Introduction/images/ODT_loading.png
-INPUT ./Chapitres/Introduction/images/ODT_loading.png
-INPUT ./Chapitres/Introduction/images/ODT_loading.png
-INPUT ./Chapitres/Introduction/images/ODT_loading.png
-INPUT ./Chapitres/Introduction/images/optical_pumping.png
-INPUT ./Chapitres/Introduction/images/optical_pumping.png
-INPUT ./Chapitres/Introduction/images/optical_pumping.png
-INPUT ./Chapitres/Introduction/images/optical_pumping.png
-INPUT ./Chapitres/Introduction/images/optical_pumping.png
-INPUT ./Chapitres/Introduction/images/spin_kick_scheme.png
-INPUT ./Chapitres/Introduction/images/spin_kick_scheme.png
-INPUT ./Chapitres/Introduction/images/spin_kick_scheme.png
-INPUT ./Chapitres/Introduction/images/spin_kick_scheme.png
-INPUT ./Chapitres/Introduction/images/spin_kick_scheme.png
+INPUT ./Chapitres/Gas preparation and spin control/images/repompeur.png
+INPUT ./Chapitres/Gas preparation and spin control/images/repompeur.png
+INPUT ./Chapitres/Gas preparation and spin control/images/repompeur.png
+INPUT ./Chapitres/Gas preparation and spin control/images/repompeur.png
+INPUT ./Chapitres/Gas preparation and spin control/images/repompeur.png
+INPUT ./Chapitres/Gas preparation and spin control/images/chaine_bleue_actualisée.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/chaine_bleue_actualisée.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/chaine_bleue_actualisée.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/chaine_bleue_actualisée.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/chaine_bleue_actualisée.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/energy_levels_repumper.png
+INPUT ./Chapitres/Gas preparation and spin control/images/energy_levels_repumper.png
+INPUT ./Chapitres/Gas preparation and spin control/images/energy_levels_repumper.png
+INPUT ./Chapitres/Gas preparation and spin control/images/energy_levels_repumper.png
+INPUT ./Chapitres/Gas preparation and spin control/images/energy_levels_repumper.png
+INPUT ./Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/need_for_stir.png
+INPUT ./Chapitres/Gas preparation and spin control/images/need_for_stir.png
+INPUT ./Chapitres/Gas preparation and spin control/images/need_for_stir.png
+INPUT ./Chapitres/Gas preparation and spin control/images/need_for_stir.png
+INPUT ./Chapitres/Gas preparation and spin control/images/need_for_stir.png
+INPUT ./Chapitres/Gas preparation and spin control/images/randomisation.jpeg
+INPUT ./Chapitres/Gas preparation and spin control/images/randomisation.jpeg
+INPUT ./Chapitres/Gas preparation and spin control/images/randomisation.jpeg
+INPUT ./Chapitres/Gas preparation and spin control/images/randomisation.jpeg
+INPUT ./Chapitres/Gas preparation and spin control/images/randomisation.jpeg
+INPUT ./Chapitres/Gas preparation and spin control/images/chaine_rouge_vieille.png
+INPUT ./Chapitres/Gas preparation and spin control/images/chaine_rouge_vieille.png
+INPUT ./Chapitres/Gas preparation and spin control/images/chaine_rouge_vieille.png
+INPUT ./Chapitres/Gas preparation and spin control/images/chaine_rouge_vieille.png
+INPUT ./Chapitres/Gas preparation and spin control/images/chaine_rouge_vieille.png
+INPUT ./Chapitres/Gas preparation and spin control/images/ODT_loading.png
+INPUT ./Chapitres/Gas preparation and spin control/images/ODT_loading.png
+INPUT ./Chapitres/Gas preparation and spin control/images/ODT_loading.png
+INPUT ./Chapitres/Gas preparation and spin control/images/ODT_loading.png
+INPUT ./Chapitres/Gas preparation and spin control/images/ODT_loading.png
+INPUT ./Chapitres/Gas preparation and spin control/images/optical_pumping.png
+INPUT ./Chapitres/Gas preparation and spin control/images/optical_pumping.png
+INPUT ./Chapitres/Gas preparation and spin control/images/optical_pumping.png
+INPUT ./Chapitres/Gas preparation and spin control/images/optical_pumping.png
+INPUT ./Chapitres/Gas preparation and spin control/images/optical_pumping.png
+INPUT ./Chapitres/Gas preparation and spin control/images/spin_kick_scheme.png
+INPUT ./Chapitres/Gas preparation and spin control/images/spin_kick_scheme.png
+INPUT ./Chapitres/Gas preparation and spin control/images/spin_kick_scheme.png
+INPUT ./Chapitres/Gas preparation and spin control/images/spin_kick_scheme.png
+INPUT ./Chapitres/Gas preparation and spin control/images/spin_kick_scheme.png
 INPUT ./Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex
 INPUT ./Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex
 INPUT ./Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex
