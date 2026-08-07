@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  7 AUG 2026 16:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  7 AUG 2026 17:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -515,8 +515,8 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (out/these_main.aux)
 Runaway argument?
-{\contentsline {subsubsection}{\numberline {3.1.5.3}Mass scaling and \ETC.
-/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex:151: File ended while scanning use of \@writefile.
+{{1.24}{31}{Principle of spin-selective detection via coherent moment\ETC.
+/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex:151: File ended while scanning use of \@newl@bel.
 <inserted text> 
                 \par 
 l.151 \begin{document}
@@ -613,7 +613,7 @@ Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 151.
 (out/these_main.out)
 Runaway argument?
-{\376\377\000P\000h\000o\000t\000o\000a\000s\00 
+{\376\377\000O\000p\000t\000i\000m 
 /Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex:151: File ended while scanning use of \@@BOOKMARK.
 <inserted text> 
                 \par 
@@ -626,7 +626,7 @@ you'd better type `E' or `X' now and fix your file.
 
 (out/these_main.out)
 Runaway argument?
-{\376\377\000P\000h\000o\000t\000o\000a\000s\00 
+{\376\377\000O\000p\000t\000i\000m 
 /Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex:151: File ended while scanning use of \@@BOOKMARK.
 <inserted text> 
                 \par 
@@ -690,20 +690,53 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 
 [7
 
-] (./Chapitres/Gas preparation and spin control/Gas preparation and spin control.tex
+] (./Chapitres/Introduction/introduction.tex) (./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex
 
 [1
 
+
 ]
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 3.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:3: Missing $ inserted.
+<inserted text> 
+                $
+l.3 ...}\chapter{Gas_preparation_and_spin_control}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:3: Missing $ inserted.
+<inserted text> 
+                $
+l.3 ...}\chapter{Gas_preparation_and_spin_control}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 5.
@@ -734,11 +767,21 @@ Package natbib Warning: Citation `KillianBEC' on page 2 undefined on input line 
 
 Package natbib Warning: Citation `litvinov_measuring_2021' on page 2 undefined on input line 13.
 
-<Chapitres/Gas preparation and spin control/images/energy_levels_sr.png, id=277, 531.9875pt x 456.70625pt>
-File: Chapitres/Gas preparation and spin control/images/energy_levels_sr.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/energy_levels_sr.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/energy_levels_sr.png  used on input line 20.
-(pdftex.def)             Requested size: 426.79134pt x 366.40384pt.
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/energy_levels_sr.png' not found on input line 20.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:20: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/energy_levels_sr.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ..._spin_control/images/energy_levels_sr.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 
 [2
@@ -749,23 +792,159 @@ Package natbib Warning: Citation `bataille_realisation_nodate' on page 3 undefin
 
 
 
-[3 <./Chapitres/Gas preparation and spin control/images/energy_levels_sr.png>]
-<Chapitres/Gas preparation and spin control/images/chaine_bleue_actualisée.pdf, id=296, 575.14874pt x 625.33624pt>
-File: Chapitres/Gas preparation and spin control/images/chaine_bleue_actualisée.pdf Graphic file (type pdf)
-<use Chapitres/Gas preparation and spin control/images/chaine_bleue_actualisée.pdf>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/chaine_bleue_actualisée.pdf  used on input line 37.
-(pdftex.def)             Requested size: 426.79134pt x 464.04881pt.
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:34: Missing $ inserted.
+<inserted text> 
+                $
+l.34 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:34: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.34 
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:34: Missing $ inserted.
+<inserted text> 
+                $
+l.34 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:34: Missing } inserted.
+<inserted text> 
+                }
+l.34 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[3]
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/chaine_bleue_actualisée.pdf' not found on input line 37.
 
 
-[4 <./Chapitres/Gas preparation and spin control/images/chaine_bleue_actualisée.pdf>]
-<Chapitres/Gas preparation and spin control/images/doppler_shift.png, id=410, 311.1625pt x 445.665pt>
-File: Chapitres/Gas preparation and spin control/images/doppler_shift.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/doppler_shift.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/doppler_shift.png  used on input line 55.
-(pdftex.def)             Requested size: 213.39566pt x 305.6391pt.
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:37: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/chaine_bleue_actualisée.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...ntrol/images/chaine_bleue_actualisée.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no � in font cmtt12!
+Missing character: There is no � in font cmtt12!
 
 
-[5 <./Chapitres/Gas preparation and spin control/images/doppler_shift.png>]
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:47: Missing $ inserted.
+<inserted text> 
+                $
+l.47 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:47: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.47 
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:47: Missing $ inserted.
+<inserted text> 
+                $
+l.47 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:47: Missing } inserted.
+<inserted text> 
+                }
+l.47 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[4]
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/doppler_shift.png' not found on input line 55.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:55: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/doppler_shift.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...and_spin_control/images/doppler_shift.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:72: Missing $ inserted.
+<inserted text> 
+                $
+l.72 \end{equation}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:72: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.72 \end{equation}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:72: Missing $ inserted.
+<inserted text> 
+                $
+l.72 \end{equation}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:72: Missing } inserted.
+<inserted text> 
+                }
+l.72 \end{equation}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[5]
 
 Package natbib Warning: Citation `faisant_building_2024' on page 6 undefined on input line 81.
 
@@ -774,11 +953,21 @@ Overfull \hbox (16.10965pt too wide) in paragraph at lines 81--82
 []\OT1/cmr/bx/n/12 Optimal de-tun-ing shift: \OT1/cmr/m/n/12 Ex-per-i-men-tal char-ac-ter-i-za-tion re-ported in F. Faisant's
  []
 
-<Chapitres/Gas preparation and spin control/images/felix_faisant_these.png, id=424, 642.4pt x 461.725pt>
-File: Chapitres/Gas preparation and spin control/images/felix_faisant_these.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/felix_faisant_these.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/felix_faisant_these.png  used on input line 86.
-(pdftex.def)             Requested size: 341.43436pt x 245.41057pt.
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/felix_faisant_these.png' not found on input line 86.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:86: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/felix_faisant_these.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 ...in_control/images/felix_faisant_these.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 Package natbib Warning: Citation `faisant_building_2024' on page 6 undefined on input line 87.
 
@@ -787,7 +976,45 @@ Package natbib Warning: Citation `faisant_building_2024' on page 6 undefined on 
 
 
 
-[6{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Chapitres/Gas preparation and spin control/images/felix_faisant_these.png>]
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:90: Missing $ inserted.
+<inserted text> 
+                $
+l.90 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:90: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.90 
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:90: Missing $ inserted.
+<inserted text> 
+                $
+l.90 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:90: Missing } inserted.
+<inserted text> 
+                }
+l.90 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[6{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 Package natbib Warning: Citation `phillips_laser_1982' on page 7 undefined on input line 97.
 
@@ -795,140 +1022,833 @@ Package natbib Warning: Citation `phillips_laser_1982' on page 7 undefined on in
 Package natbib Warning: Citation `Bataille2020' on page 7 undefined on input line 104.
 
 
-Package natbib Warning: Citation `phillips_laser_1998' on page 7 undefined on input line 110.
 
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:105: Missing $ inserted.
+<inserted text> 
+                $
+l.105 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Package natbib Warning: Citation `dalibard_atomes_froids' on page 7 undefined on input line 120.
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:105: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.105 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:105: Missing $ inserted.
+<inserted text> 
+                $
+l.105 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:105: Missing } inserted.
+<inserted text> 
+                }
+l.105 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 [7]
-<Chapitres/Gas preparation and spin control/images/energy_levels_repumper.png, id=440, 242.40562pt x 363.60844pt>
-File: Chapitres/Gas preparation and spin control/images/energy_levels_repumper.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/energy_levels_repumper.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/energy_levels_repumper.png  used on input line 137.
-(pdftex.def)             Requested size: 170.71393pt x 256.0832pt.
+
+Package natbib Warning: Citation `phillips_laser_1998' on page 8 undefined on input line 110.
 
 
-Package natbib Warning: Citation `stellmer_creation_2012' on page 8 undefined on input line 143.
+Package natbib Warning: Citation `dalibard_atomes_froids' on page 8 undefined on input line 120.
 
 
-
-[8 <./Chapitres/Gas preparation and spin control/images/energy_levels_repumper.png>]
-<Chapitres/Gas preparation and spin control/images/table_repumper.pdf, id=448, 542.025pt x 295.1025pt>
-File: Chapitres/Gas preparation and spin control/images/table_repumper.pdf Graphic file (type pdf)
-<use Chapitres/Gas preparation and spin control/images/table_repumper.pdf>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/table_repumper.pdf  used on input line 149.
-(pdftex.def)             Requested size: 426.79134pt x 232.37192pt.
-<Chapitres/Gas preparation and spin control/images/chaine_rouge_vieille.png, id=449, 578.91281pt x 557.83406pt>
-File: Chapitres/Gas preparation and spin control/images/chaine_rouge_vieille.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/chaine_rouge_vieille.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/chaine_rouge_vieille.png  used on input line 165.
-(pdftex.def)             Requested size: 426.79134pt x 411.25009pt.
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/energy_levels_repumper.png' not found on input line 137.
 
 
-[9 <./Chapitres/Gas preparation and spin control/images/table_repumper.pdf>]
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:137: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/energy_levels_repumper.png' not found: using draft setting.
 
-[10 <./Chapitres/Gas preparation and spin control/images/chaine_rouge_vieille.png>]
-<Chapitres/Gas preparation and spin control/images/need_for_stir.png, id=761, 293.095pt x 260.975pt>
-File: Chapitres/Gas preparation and spin control/images/need_for_stir.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/need_for_stir.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/need_for_stir.png  used on input line 182.
-(pdftex.def)             Requested size: 298.75262pt x 266.01178pt.
-<Chapitres/Gas preparation and spin control/images/randomisation.jpeg, id=762, 2055.68pt x 823.075pt>
-File: Chapitres/Gas preparation and spin control/images/randomisation.jpeg Graphic file (type jpg)
-<use Chapitres/Gas preparation and spin control/images/randomisation.jpeg>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/randomisation.jpeg  used on input line 189.
-(pdftex.def)             Requested size: 298.75262pt x 119.61284pt.
-
-
-[11 <./Chapitres/Gas preparation and spin control/images/need_for_stir.png> <./Chapitres/Gas preparation and spin control/images/randomisation.jpeg>]
-<Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf, id=771, 2419.3818pt x 1179.34499pt>
-File: Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf Graphic file (type pdf)
-<use Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf  used on input line 202.
-(pdftex.def)             Requested size: 426.79134pt x 208.02603pt.
-
-
-Package natbib Warning: Citation `StellmerThesis' on page 12 undefined on input line 203.
-
-
-Package natbib Warning: Citation `StellmerThesis' on page 12 undefined on input line 203.
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 ...ontrol/images/energy_levels_repumper.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 
-[12 <./Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf, page is rotated 270 degrees>]
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:141: Missing $ inserted.
+<inserted text> 
+                $
+l.141 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Package natbib Warning: Citation `litvinov_these' on page 13 undefined on input line 229.
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:141: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.141 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:141: Missing $ inserted.
+<inserted text> 
+                $
+l.141 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Package natbib Warning: Citation `litvinov_these' on page 13 undefined on input line 231.
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:141: Missing } inserted.
+<inserted text> 
+                }
+l.141 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-<Chapitres/Gas preparation and spin control/images/ODT_loading.png, id=803, 537.50812pt x 371.13657pt>
-File: Chapitres/Gas preparation and spin control/images/ODT_loading.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/ODT_loading.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/ODT_loading.png  used on input line 237.
-(pdftex.def)             Requested size: 298.75262pt x 206.28337pt.
+[8]
 
-Package natbib Warning: Citation `litvinov_these' on page 13 undefined on input line 238.
-
-
-Package natbib Warning: Citation `litvinov_these' on page 13 undefined on input line 238.
-
-
-
-[13 <./Chapitres/Gas preparation and spin control/images/ODT_loading.png>]
-<Chapitres/Gas preparation and spin control/images/evaporative_cooling.png, id=812, 646.66594pt x 271.0125pt>
-File: Chapitres/Gas preparation and spin control/images/evaporative_cooling.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/evaporative_cooling.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/evaporative_cooling.png  used on input line 250.
-(pdftex.def)             Requested size: 298.75262pt x 125.20485pt.
-
-
-[14 <./Chapitres/Gas preparation and spin control/images/evaporative_cooling.png>]
-
-Package natbib Warning: Citation `litvinov_these' on page 15 undefined on input line 267.
-
-<Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png, id=820, 444.9423pt x 325.215pt>
-File: Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png  used on input line 272.
-(pdftex.def)             Requested size: 426.79134pt x 311.94977pt.
-
-
-[15 <./Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png>]
-<Chapitres/Gas preparation and spin control/images/optical_pumping.png, id=827, 682.80093pt x 346.29375pt>
-File: Chapitres/Gas preparation and spin control/images/optical_pumping.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/optical_pumping.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/optical_pumping.png  used on input line 294.
-(pdftex.def)             Requested size: 426.79134pt x 216.45947pt.
+Package natbib Warning: Citation `stellmer_creation_2012' on page 9 undefined on input line 143.
 
 
-Package natbib Warning: Citation `Bataille2020' on page 16 undefined on input line 302.
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/table_repumper.pdf' not found on input line 149.
 
 
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:149: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/table_repumper.pdf' not found: using draft setting.
 
-[16 <./Chapitres/Gas preparation and spin control/images/optical_pumping.png>]
-<Chapitres/Gas preparation and spin control/images/ECDL_laser.jpeg, id=835, 1541.76pt x 2055.68pt>
-File: Chapitres/Gas preparation and spin control/images/ECDL_laser.jpeg Graphic file (type jpg)
-<use Chapitres/Gas preparation and spin control/images/ECDL_laser.jpeg>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/ECDL_laser.jpeg  used on input line 309.
-(pdftex.def)             Requested size: 213.39566pt x 284.4997pt.
-
-
-[17 <./Chapitres/Gas preparation and spin control/images/ECDL_laser.jpeg>]
-<Chapitres/Gas preparation and spin control/images/TLS_et_raman.png, id=843, 838.8138pt x 719.3274pt>
-File: Chapitres/Gas preparation and spin control/images/TLS_et_raman.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/TLS_et_raman.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/TLS_et_raman.png  used on input line 333.
-(pdftex.def)             Requested size: 426.79134pt x 366.00696pt.
-
-
-Package natbib Warning: Citation `Bataille2020' on page 18 undefined on input line 338.
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 ...d_spin_control/images/table_repumper.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 
-[18 <./Chapitres/Gas preparation and spin control/images/TLS_et_raman.png>]
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:153: Missing $ inserted.
+<inserted text> 
+                $
+l.153 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:153: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.153 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:153: Missing $ inserted.
+<inserted text> 
+                $
+l.153 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:153: Missing } inserted.
+<inserted text> 
+                }
+l.153 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[9]
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/chaine_rouge_vieille.png' not found on input line 165.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:165: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/chaine_rouge_vieille.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 ..._control/images/chaine_rouge_vieille.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:169: Missing $ inserted.
+<inserted text> 
+                $
+l.169 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:169: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.169 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:169: Missing $ inserted.
+<inserted text> 
+                $
+l.169 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:169: Missing } inserted.
+<inserted text> 
+                }
+l.169 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[10]
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:179: Missing $ inserted.
+<inserted text> 
+                $
+l.179 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:179: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.179 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:179: Missing $ inserted.
+<inserted text> 
+                $
+l.179 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:179: Missing } inserted.
+<inserted text> 
+                }
+l.179 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[11]
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/need_for_stir.png' not found on input line 182.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:182: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/need_for_stir.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 ...nd_spin_control/images/need_for_stir.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/randomisation.jpeg' not found on input line 189.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:189: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/randomisation.jpeg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 ...d_spin_control/images/randomisation.jpeg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:193: Missing $ inserted.
+<inserted text> 
+                $
+l.193 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:193: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.193 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:193: Missing $ inserted.
+<inserted text> 
+                $
+l.193 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:193: Missing } inserted.
+<inserted text> 
+                }
+l.193 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[12]
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/red_MOT_in_3_steps.pdf' not found on input line 202.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:202: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/red_MOT_in_3_steps.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.202 ...in_control/images/red_MOT_in_3_steps.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `StellmerThesis' on page 13 undefined on input line 203.
+
+
+Package natbib Warning: Citation `StellmerThesis' on page 13 undefined on input line 203.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:206: Missing $ inserted.
+<inserted text> 
+                $
+l.206 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:206: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.206 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:206: Missing $ inserted.
+<inserted text> 
+                $
+l.206 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:206: Missing } inserted.
+<inserted text> 
+                }
+l.206 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[13]
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:217: Missing $ inserted.
+<inserted text> 
+                $
+l.217     \item \textbf
+                       {Magnetic field bias and quantization axis:} To prese...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:217: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.217     \item \textbf
+                       {Magnetic field bias and quantization axis:} To prese...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:217: Missing $ inserted.
+<inserted text> 
+                $
+l.217     \item \textbf
+                       {Magnetic field bias and quantization axis:} To prese...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:217: Missing } inserted.
+<inserted text> 
+                }
+l.217     \item \textbf
+                       {Magnetic field bias and quantization axis:} To prese...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[14]
+
+Package natbib Warning: Citation `litvinov_these' on page 15 undefined on input line 229.
+
+
+Package natbib Warning: Citation `litvinov_these' on page 15 undefined on input line 231.
+
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/ODT_loading.png' not found on input line 237.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:237: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/ODT_loading.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ..._and_spin_control/images/ODT_loading.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `litvinov_these' on page 15 undefined on input line 238.
+
+
+Package natbib Warning: Citation `litvinov_these' on page 15 undefined on input line 238.
+
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/evaporative_cooling.png' not found on input line 250.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:250: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/evaporative_cooling.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.250 ...n_control/images/evaporative_cooling.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:254: Missing $ inserted.
+<inserted text> 
+                $
+l.254 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:254: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.254 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:254: Missing $ inserted.
+<inserted text> 
+                $
+l.254 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:254: Missing } inserted.
+<inserted text> 
+                }
+l.254 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[15]
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:254: Missing $ inserted.
+<inserted text> 
+                $
+l.254 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:254: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.254 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:254: Missing $ inserted.
+<inserted text> 
+                $
+l.254 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:254: Missing } inserted.
+<inserted text> 
+                }
+l.254 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[16]
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:266: Missing $ inserted.
+<inserted text> 
+                $
+l.266 \end{itemize}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:266: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.266 \end{itemize}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:266: Missing $ inserted.
+<inserted text> 
+                $
+l.266 \end{itemize}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:266: Missing } inserted.
+<inserted text> 
+                }
+l.266 \end{itemize}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[17]
+
+Package natbib Warning: Citation `litvinov_these' on page 18 undefined on input line 267.
+
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/1.30_dipole_trap(1075)_setup.png' not found on input line 272.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:272: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/1.30_dipole_trap(1075)_setup.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.272 .../images/1.30_dipole_trap(1075)_setup.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:281: Missing $ inserted.
+<inserted text> 
+                $
+l.281 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:281: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.281 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:281: Missing $ inserted.
+<inserted text> 
+                $
+l.281 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:281: Missing } inserted.
+<inserted text> 
+                }
+l.281 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[18]
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/optical_pumping.png' not found on input line 294.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:294: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/optical_pumping.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.294 ..._spin_control/images/optical_pumping.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:298: Missing $ inserted.
+<inserted text> 
+                $
+l.298 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:298: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.298 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:298: Missing $ inserted.
+<inserted text> 
+                $
+l.298 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:298: Missing } inserted.
+<inserted text> 
+                }
+l.298 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[19]
+
+Package natbib Warning: Citation `Bataille2020' on page 20 undefined on input line 302.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:306: Missing $ inserted.
+<inserted text> 
+                $
+l.306 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:306: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.306 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:306: Missing $ inserted.
+<inserted text> 
+                $
+l.306 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:306: Missing } inserted.
+<inserted text> 
+                }
+l.306 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[20]
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/ECDL_laser.jpeg' not found on input line 309.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:309: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/ECDL_laser.jpeg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.309 ..._and_spin_control/images/ECDL_laser.jpeg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/TLS_et_raman.png' not found on input line 333.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:333: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/TLS_et_raman.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.333 ...and_spin_control/images/TLS_et_raman.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:337: Missing $ inserted.
+<inserted text> 
+                $
+l.337 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:337: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.337 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:337: Missing $ inserted.
+<inserted text> 
+                $
+l.337 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:337: Missing } inserted.
+<inserted text> 
+                }
+l.337 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[21]
+
+Package natbib Warning: Citation `Bataille2020' on page 22 undefined on input line 338.
+
+
 Overfull \hbox (97.07822pt too wide) in paragraph at lines 342--344
 []\OT1/cmr/m/n/12 This con-fig-u-ra-tion se-lec-tively cou-ples a sin-gle pair of states|for in-stance, $[] \OMS/cmsy/m/n/12 !
  []
@@ -938,336 +1858,909 @@ Overfull \hbox (5.2139pt too wide) in paragraph at lines 342--344
 []$\OT1/cmr/m/n/12 |while re-main-ing far off-resonance for all other $\OML/cmm/m/it/12 m[]$ \OT1/cmr/m/n/12 states.
  []
 
-<Chapitres/Gas preparation and spin control/images/chaine_moglab.pdf, id=855, 316.18124pt x 207.77625pt>
-File: Chapitres/Gas preparation and spin control/images/chaine_moglab.pdf Graphic file (type pdf)
-<use Chapitres/Gas preparation and spin control/images/chaine_moglab.pdf>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/chaine_moglab.pdf  used on input line 347.
-(pdftex.def)             Requested size: 426.79134pt x 280.48264pt.
-
-Package natbib Warning: Citation `black_Gas preparation and spin control_2001' on page 19 undefined on input line 355.
-
-<Chapitres/Gas preparation and spin control/images/moglab.pdf, id=857, 313.17pt x 254.9525pt>
-File: Chapitres/Gas preparation and spin control/images/moglab.pdf Graphic file (type pdf)
-<use Chapitres/Gas preparation and spin control/images/moglab.pdf>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/moglab.pdf  used on input line 359.
-(pdftex.def)             Requested size: 426.79134pt x 347.46605pt.
 
 
-[19 <./Chapitres/Gas preparation and spin control/images/chaine_moglab.pdf>]
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:344: Missing $ inserted.
+<inserted text> 
+                $
+l.344 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-[20 <./Chapitres/Gas preparation and spin control/images/moglab.pdf>]
-<Chapitres/Gas preparation and spin control/images/changestoFPcavity.pdf, id=1295, 963.35912pt x 542.025pt>
-File: Chapitres/Gas preparation and spin control/images/changestoFPcavity.pdf Graphic file (type pdf)
-<use Chapitres/Gas preparation and spin control/images/changestoFPcavity.pdf>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/changestoFPcavity.pdf  used on input line 384.
-(pdftex.def)             Requested size: 426.79134pt x 240.12932pt.
-<Chapitres/Gas preparation and spin control/images/changestoFPcavityAFTER.pdf, id=1297, 963.35912pt x 542.025pt>
-File: Chapitres/Gas preparation and spin control/images/changestoFPcavityAFTER.pdf Graphic file (type pdf)
-<use Chapitres/Gas preparation and spin control/images/changestoFPcavityAFTER.pdf>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/changestoFPcavityAFTER.pdf  used on input line 393.
-(pdftex.def)             Requested size: 426.79134pt x 240.12932pt.
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:344: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.344 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:344: Missing $ inserted.
+<inserted text> 
+                $
+l.344 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-[21 <./Chapitres/Gas preparation and spin control/images/changestoFPcavity.pdf>]
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:344: Missing } inserted.
+<inserted text> 
+                }
+l.344 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-Package natbib Warning: Citation `black_Gas preparation and spin control_2001' on page 22 undefined on input line 410.
+[22]
 
-<Chapitres/Gas preparation and spin control/images/PID_black.png, id=1313, 451.6875pt x 218.31563pt>
-File: Chapitres/Gas preparation and spin control/images/PID_black.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/PID_black.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/PID_black.png  used on input line 418.
-(pdftex.def)             Requested size: 426.79134pt x 206.29602pt.
-
-Package natbib Warning: Citation `black_Gas preparation and spin control_2001' on page 22 undefined on input line 419.
-
-
-Package natbib Warning: Citation `black_Gas preparation and spin control_2001' on page 22 undefined on input line 419.
-
-
-
-[22 <./Chapitres/Gas preparation and spin control/images/changestoFPcavityAFTER.pdf>]
-<Chapitres/Gas preparation and spin control/images/signal pdh.jpg, id=1331, 1138.2525pt x 1517.67pt>
-File: Chapitres/Gas preparation and spin control/images/signal pdh.jpg Graphic file (type jpg)
-<use Chapitres/Gas preparation and spin control/images/signal pdh.jpg>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/signal pdh.jpg  used on input line 428.
-(pdftex.def)             Requested size: 426.79134pt x 569.05539pt.
-
-
-[23 <./Chapitres/Gas preparation and spin control/images/PID_black.png>]
-
-[24 <./Chapitres/Gas preparation and spin control/images/signal pdh.jpg>]
-<Chapitres/Gas preparation and spin control/images/bruits_amplifies.png, id=1345, 1419.05156pt x 658.71094pt>
-File: Chapitres/Gas preparation and spin control/images/bruits_amplifies.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/bruits_amplifies.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/bruits_amplifies.png  used on input line 438.
-(pdftex.def)             Requested size: 426.79134pt x 198.1073pt.
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/chaine_moglab.pdf' not found on input line 347.
 
 
-Package natbib Warning: Citation `bataille_realisation_nodate' on page 25 undefined on input line 443.
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:347: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/chaine_moglab.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.347 ...nd_spin_control/images/chaine_moglab.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `black_Gas_preparation_and_spin_control_2001' on page 23 undefined on input line 355.
+
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/moglab.pdf' not found on input line 359.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:359: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/moglab.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.359 ...ation_and_spin_control/images/moglab.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 
-[25 <./Chapitres/Gas preparation and spin control/images/bruits_amplifies.png>]
-<Chapitres/Gas preparation and spin control/images/spin_kick_scheme.png, id=1360, 417.81094pt x 304.88907pt>
-File: Chapitres/Gas preparation and spin control/images/spin_kick_scheme.png Graphic file (type png)
-<use Chapitres/Gas preparation and spin control/images/spin_kick_scheme.png>
-Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/spin_kick_scheme.png  used on input line 459.
-(pdftex.def)             Requested size: 426.79134pt x 311.46191pt.
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:362: Missing $ inserted.
+<inserted text> 
+                $
+l.362 \end{figure}
+                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:362: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.362 \end{figure}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:362: Missing $ inserted.
+<inserted text> 
+                $
+l.362 \end{figure}
+                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:362: Missing } inserted.
+<inserted text> 
+                }
+l.362 \end{figure}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[23]
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:372: Missing $ inserted.
+<inserted text> 
+                $
+l.372 \begin{equation}
+                      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:372: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.372 \begin{equation}
+                      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:372: Missing $ inserted.
+<inserted text> 
+                $
+l.372 \begin{equation}
+                      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:372: Missing } inserted.
+<inserted text> 
+                }
+l.372 \begin{equation}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[24]
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/changestoFPcavity.pdf' not found on input line 384.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:384: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/changestoFPcavity.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.384 ...pin_control/images/changestoFPcavity.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:388: Missing $ inserted.
+<inserted text> 
+                $
+l.388 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:388: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.388 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:388: Missing $ inserted.
+<inserted text> 
+                $
+l.388 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:388: Missing } inserted.
+<inserted text> 
+                }
+l.388 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[25]
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/changestoFPcavityAFTER.pdf' not found on input line 393.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:393: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/changestoFPcavityAFTER.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.393 ...ontrol/images/changestoFPcavityAFTER.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:397: Missing $ inserted.
+<inserted text> 
+                $
+l.397 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:397: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.397 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:397: Missing $ inserted.
+<inserted text> 
+                $
+l.397 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:397: Missing } inserted.
+<inserted text> 
+                }
+l.397 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[26]
+
+Package natbib Warning: Citation `black_Gas_preparation_and_spin_control_2001' on page 27 undefined on input line 410.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:411: Missing $ inserted.
+<inserted text> 
+                $
+l.411 \begin{equation}
+                      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:411: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.411 \begin{equation}
+                      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:411: Missing $ inserted.
+<inserted text> 
+                $
+l.411 \begin{equation}
+                      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:411: Missing } inserted.
+<inserted text> 
+                }
+l.411 \begin{equation}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[27]
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/PID_black.png' not found on input line 418.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:418: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/PID_black.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.418 ...on_and_spin_control/images/PID_black.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `black_Gas_preparation_and_spin_control_2001' on page 28 undefined on input line 419.
+
+
+Package natbib Warning: Citation `black_Gas_preparation_and_spin_control_2001' on page 28 undefined on input line 419.
+
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/signal pdh.jpg' not found on input line 428.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:428: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/signal pdh.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.428 ...n_and_spin_control/images/signal pdh.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:431: Missing $ inserted.
+<inserted text> 
+                $
+l.431 \end{figure}
+                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:431: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.431 \end{figure}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:431: Missing $ inserted.
+<inserted text> 
+                $
+l.431 \end{figure}
+                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:431: Missing } inserted.
+<inserted text> 
+                }
+l.431 \end{figure}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[28]
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/bruits_amplifies.png' not found on input line 438.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:438: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/bruits_amplifies.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 ...spin_control/images/bruits_amplifies.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:442: Missing $ inserted.
+<inserted text> 
+                $
+l.442 \section
+              {Spin Measurement Scheme}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:442: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.442 \section
+              {Spin Measurement Scheme}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:442: Missing $ inserted.
+<inserted text> 
+                $
+l.442 \section
+              {Spin Measurement Scheme}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:442: Missing } inserted.
+<inserted text> 
+                }
+l.442 \section
+              {Spin Measurement Scheme}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[29]
+
+Package natbib Warning: Citation `bataille_realisation_nodate' on page 30 undefined on input line 443.
+
+
+LaTeX Warning: Reference `fig:intro-spin-kick-scheme' on page 30 undefined on input line 447.
+
+
+LaTeX Warning: Reference `fig:intro-spin-kick-scheme' on page 30 undefined on input line 448.
+
+
+LaTeX Warning: Reference `fig:intro-spin-kick-scheme' on page 30 undefined on input line 450.
+
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:451: Missing $ inserted.
+<inserted text> 
+                $
+l.451 \end{enumerate}
+                     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:451: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.451 \end{enumerate}
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:451: Missing $ inserted.
+<inserted text> 
+                $
+l.451 \end{enumerate}
+                     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:451: Missing } inserted.
+<inserted text> 
+                }
+l.451 \end{enumerate}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[30]
+
+LaTeX Warning: Reference `fig:intro-spin-kick-scheme' on page 31 undefined on input line 453.
+
+
+LaTeX Warning: Reference `fig:intro-spin-kick-scheme' on page 31 undefined on input line 455.
+
+
+LaTeX Warning: File `Chapitres/Gas_preparation_and_spin_control/images/spin_kick_scheme.png' not found on input line 459.
+
+
+./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:459: Package pdftex.def Error: File `Chapitres/Gas_preparation_and_spin_control/images/spin_kick_scheme.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.459 ...spin_control/images/spin_kick_scheme.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 ) (./Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex (./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex
 
-[26 <./Chapitres/Gas preparation and spin control/images/spin_kick_scheme.png>]
+./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex:1: Missing $ inserted.
+<inserted text> 
+                $
+l.1 \chapter
+            {Quantum state measurement and characterization in qudit systems...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex:1: Extra }, or forgotten $.
+\MakeUppercase    ...ext@case@aux {upper}{#1}{#2}}
+                                                  
+l.1 \chapter
+            {Quantum state measurement and characterization in qudit systems...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex:1: Missing $ inserted.
+<inserted text> 
+                $
+l.1 \chapter
+            {Quantum state measurement and characterization in qudit systems...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex:1: Missing } inserted.
+<inserted text> 
+                }
+l.1 \chapter
+            {Quantum state measurement and characterization in qudit systems...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[31]
 Chapter 2.
 
-Package natbib Warning: Citation `ahmed_coherent_2025' on page 27 undefined on input line 2.
+Package natbib Warning: Citation `ahmed_coherent_2025' on page 32 undefined on input line 2.
 
 
 
-[27
+[32
 
 ]
 
-Package natbib Warning: Citation `ivanovic1987' on page 28 undefined on input line 12.
+Package natbib Warning: Citation `ivanovic1987' on page 33 undefined on input line 12.
 
 
-Package natbib Warning: Citation `dieks1988' on page 28 undefined on input line 12.
+Package natbib Warning: Citation `dieks1988' on page 33 undefined on input line 12.
 
 
-Package natbib Warning: Citation `peres1988' on page 28 undefined on input line 12.
+Package natbib Warning: Citation `peres1988' on page 33 undefined on input line 12.
+
+
+LaTeX Warning: Reference `Sec:BeyondPseduoSpin' on page 33 undefined on input line 24.
 
 
 Overfull \hbox (1.58958pt too wide) in paragraph at lines 28--29
 []\OT1/cmr/bx/n/12 Under the USD frame-work: \OT1/cmr/m/n/12 The an-cil-lary pop-u-la-tions ($[]$ and $[]$)
  []
 
+./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex:33: Missing $ inserted.
+<inserted text> 
+                $
+l.33 \section{Gas_preparation_and_spin_control}
+                                               
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Package natbib Warning: Citation `Klempt2010pao' on page 28 undefined on input line 37.
-
-
-Package natbib Warning: Citation `Krauser2012cmf' on page 28 undefined on input line 37.
-
-
-Package natbib Warning: Citation `Taie2012asm' on page 28 undefined on input line 37.
-
-
-Package natbib Warning: Citation `depaz2013nqm' on page 28 undefined on input line 37.
-
-
-Package natbib Warning: Citation `Pagano2014aod' on page 28 undefined on input line 37.
-
-
-Package natbib Warning: Citation `Patscheider2020cde' on page 28 undefined on input line 37.
+./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex:33: Missing $ inserted.
+<inserted text> 
+                $
+l.33 \section{Gas_preparation_and_spin_control}
+                                               
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 
-Package natbib Warning: Citation `Alaoui2022mcf' on page 28 undefined on input line 37.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 33.
 
 
-Package natbib Warning: Citation `Kiktenko2015sqr' on page 28 undefined on input line 37.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 33.
 
 
-Package natbib Warning: Citation `Fernholz2008sso' on page 28 undefined on input line 37.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 33.
 
 
-Package natbib Warning: Citation `Hamley2012sns' on page 28 undefined on input line 37.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 33.
 
 
-Package natbib Warning: Citation `Kajtoch2016ssi' on page 28 undefined on input line 37.
+Package natbib Warning: Citation `Klempt2010pao' on page 33 undefined on input line 37.
 
 
-Package natbib Warning: Citation `Chalopin2018qes' on page 28 undefined on input line 37.
+Package natbib Warning: Citation `Krauser2012cmf' on page 33 undefined on input line 37.
 
 
-Package natbib Warning: Citation `Peterer2015cad' on page 28 undefined on input line 37.
+Package natbib Warning: Citation `Taie2012asm' on page 33 undefined on input line 37.
 
 
-Package natbib Warning: Citation `Svetitsky2014htq' on page 28 undefined on input line 37.
+Package natbib Warning: Citation `depaz2013nqm' on page 33 undefined on input line 37.
 
 
-Package natbib Warning: Citation `Godfrin2018gri' on page 28 undefined on input line 37.
+Package natbib Warning: Citation `Pagano2014aod' on page 33 undefined on input line 37.
 
 
-Package natbib Warning: Citation `Randall2015epa' on page 28 undefined on input line 37.
+Package natbib Warning: Citation `Patscheider2020cde' on page 33 undefined on input line 37.
 
 
-Package natbib Warning: Citation `Lanyon2008sql' on page 28 undefined on input line 37.
+Package natbib Warning: Citation `Alaoui2022mcf' on page 33 undefined on input line 37.
 
 
-Package natbib Warning: Citation `StamperKurnsbg2013' on page 28 undefined on input line 37.
+Package natbib Warning: Citation `Kiktenko2015sqr' on page 33 undefined on input line 37.
 
 
-Package natbib Warning: Citation `Chomaz2022dpa' on page 28 undefined on input line 37.
+Package natbib Warning: Citation `Fernholz2008sso' on page 33 undefined on input line 37.
+
+
+Package natbib Warning: Citation `Hamley2012sns' on page 33 undefined on input line 37.
+
+
+Package natbib Warning: Citation `Kajtoch2016ssi' on page 33 undefined on input line 37.
+
+
+Package natbib Warning: Citation `Chalopin2018qes' on page 33 undefined on input line 37.
+
+
+Package natbib Warning: Citation `Peterer2015cad' on page 33 undefined on input line 37.
+
+
+Package natbib Warning: Citation `Svetitsky2014htq' on page 33 undefined on input line 37.
+
+
+Package natbib Warning: Citation `Godfrin2018gri' on page 33 undefined on input line 37.
+
+
+Package natbib Warning: Citation `Randall2015epa' on page 33 undefined on input line 37.
+
+
+Package natbib Warning: Citation `Lanyon2008sql' on page 33 undefined on input line 37.
+
+
+Package natbib Warning: Citation `StamperKurnsbg2013' on page 33 undefined on input line 37.
+
+
+Package natbib Warning: Citation `Chomaz2022dpa' on page 33 undefined on input line 37.
 
 
 
-[28]
+[33]
 
-Package natbib Warning: Citation `Ludlow2015oac' on page 29 undefined on input line 39.
+Package natbib Warning: Citation `Ludlow2015oac' on page 34 undefined on input line 39.
 
 LaTeX Font Info:    Trying to load font information for U+euf on input line 39.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 
-Package natbib Warning: Citation `Gorshkov2010tos' on page 29 undefined on input line 39.
+Package natbib Warning: Citation `Gorshkov2010tos' on page 34 undefined on input line 39.
 
 
-Package natbib Warning: Citation `Hermele2009mio' on page 29 undefined on input line 39.
+Package natbib Warning: Citation `Hermele2009mio' on page 34 undefined on input line 39.
 
 
-Package natbib Warning: Citation `Corboz2012ssi' on page 29 undefined on input line 39.
+Package natbib Warning: Citation `Corboz2012ssi' on page 34 undefined on input line 39.
 
 
-Package natbib Warning: Citation `Cazalilla2014ufg' on page 29 undefined on input line 39.
+Package natbib Warning: Citation `Cazalilla2014ufg' on page 34 undefined on input line 39.
 
 
-Package natbib Warning: Citation `Taie2012asm' on page 29 undefined on input line 39.
+Package natbib Warning: Citation `Taie2012asm' on page 34 undefined on input line 39.
 
 
-Package natbib Warning: Citation `Hofrichter2016dpo' on page 29 undefined on input line 39.
+Package natbib Warning: Citation `Hofrichter2016dpo' on page 34 undefined on input line 39.
 
 
-Package natbib Warning: Citation `Ozawa2018asc' on page 29 undefined on input line 39.
+Package natbib Warning: Citation `Ozawa2018asc' on page 34 undefined on input line 39.
 
 
-Package natbib Warning: Citation `Tusi2022FSL' on page 29 undefined on input line 39.
+Package natbib Warning: Citation `Tusi2022FSL' on page 34 undefined on input line 39.
 
 
-Package natbib Warning: Citation `Leroux2018naa' on page 29 undefined on input line 39.
+Package natbib Warning: Citation `Leroux2018naa' on page 34 undefined on input line 39.
 
 
-Package natbib Warning: Citation `Bataille2020' on page 29 undefined on input line 39.
+Package natbib Warning: Citation `Bataille2020' on page 34 undefined on input line 39.
 
 
-Package natbib Warning: Citation `Barnes2022' on page 29 undefined on input line 39.
+Package natbib Warning: Citation `Barnes2022' on page 34 undefined on input line 39.
 
 
 Overfull \hbox (7.25417pt too wide) in paragraph at lines 39--40
 []\OT1/cmr/m/n/12 Among large-spin atoms, fermionic alkaline-earth and alkaline-earth-like atoms (AEA)
  []
 
-<Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig1.pdf, id=1380, 1120.95288pt x 610.41992pt>
+<Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig1.pdf, id=361, 1120.95288pt x 610.41992pt>
 File: Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig1.pdf Graphic file (type pdf)
 <use Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig1.pdf>
 Package pdftex.def Info: Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig1.pdf  used on input line 43.
 (pdftex.def)             Requested size: 426.79134pt x 232.40906pt.
 
-Package natbib Warning: Citation `Deutsch2010qca' on page 29 undefined on input line 48.
+Package natbib Warning: Citation `Deutsch2010qca' on page 34 undefined on input line 48.
 
 
 
-[29]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
+[34]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 51.
 
 
-Package natbib Warning: Citation `Chen2005esp' on page 30 undefined on input line 54.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 51.
 
 
-Package natbib Warning: Citation `Kiktenko2015sqr' on page 30 undefined on input line 54.
+Package natbib Warning: Citation `Chen2005esp' on page 35 undefined on input line 54.
 
 
-
-[30 <./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig1.pdf>]
-
-Package natbib Warning: Citation `Majorana1932aoi' on page 31 undefined on input line 56.
-
-
-Package natbib Warning: Citation `Barnett2006cnp' on page 31 undefined on input line 56.
-
-
-Package natbib Warning: Citation `Bruno2012qgp' on page 31 undefined on input line 56.
-
-
-Package natbib Warning: Citation `Evrard2019ems' on page 31 undefined on input line 56.
-
-
-Package natbib Warning: Citation `Barnes2022' on page 31 undefined on input line 59.
-
-
-Package natbib Warning: Citation `Omanakuttan2021' on page 31 undefined on input line 60.
-
-
-Package natbib Warning: Citation `Godfrin2018gri' on page 31 undefined on input line 60.
-
-
-Package natbib Warning: Citation `Fernholz2008sso' on page 31 undefined on input line 62.
-
-
-Package natbib Warning: Citation `Chalopin2018qes' on page 31 undefined on input line 62.
-
-
-Package natbib Warning: Citation `Evrard2019ems' on page 31 undefined on input line 62.
-
-
-Package natbib Warning: Citation `Burba2024' on page 31 undefined on input line 64.
-
-
-Package natbib Warning: Citation `claude2024' on page 31 undefined on input line 64.
-
-
-Package natbib Warning: Citation `Zheng2024' on page 31 undefined on input line 64.
+Package natbib Warning: Citation `Kiktenko2015sqr' on page 35 undefined on input line 54.
 
 
 
-[31]
+[35 <./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig1.pdf>]
 
-Package natbib Warning: Citation `Bataille2020' on page 32 undefined on input line 70.
+Package natbib Warning: Citation `Majorana1932aoi' on page 36 undefined on input line 56.
+
+
+Package natbib Warning: Citation `Barnett2006cnp' on page 36 undefined on input line 56.
+
+
+Package natbib Warning: Citation `Bruno2012qgp' on page 36 undefined on input line 56.
+
+
+Package natbib Warning: Citation `Evrard2019ems' on page 36 undefined on input line 56.
+
+
+LaTeX Warning: Reference `fig:fig1' on page 36 undefined on input line 58.
+
+
+Package natbib Warning: Citation `Barnes2022' on page 36 undefined on input line 59.
+
+
+Package natbib Warning: Citation `Omanakuttan2021' on page 36 undefined on input line 60.
+
+
+Package natbib Warning: Citation `Godfrin2018gri' on page 36 undefined on input line 60.
+
+
+LaTeX Warning: Reference `fig:fig1' on page 36 undefined on input line 62.
+
+
+Package natbib Warning: Citation `Fernholz2008sso' on page 36 undefined on input line 62.
+
+
+Package natbib Warning: Citation `Chalopin2018qes' on page 36 undefined on input line 62.
+
+
+Package natbib Warning: Citation `Evrard2019ems' on page 36 undefined on input line 62.
+
+
+Package natbib Warning: Citation `Burba2024' on page 36 undefined on input line 64.
+
+
+Package natbib Warning: Citation `claude2024' on page 36 undefined on input line 64.
+
+
+Package natbib Warning: Citation `Zheng2024' on page 36 undefined on input line 64.
 
 
 
-[32]
+[36]
 
-Package natbib Warning: Citation `Bataille2020' on page 33 undefined on input line 78.
+Package natbib Warning: Citation `Bataille2020' on page 37 undefined on input line 70.
+
+
+
+[37]
+
+Package natbib Warning: Citation `Bataille2020' on page 38 undefined on input line 78.
 
 
 Overfull \hbox (1.36636pt too wide) in paragraph at lines 80--80
 []\OT1/cmr/bx/n/17.28 Coherent ma-nip-u-la-tion of a nuclear-spin qubit 
  []
 
-<Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig2.pdf, id=1474, 1087.73332pt x 241.21107pt>
+<Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig2.pdf, id=457, 1087.73332pt x 241.21107pt>
 File: Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig2.pdf Graphic file (type pdf)
 <use Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig2.pdf>
 Package pdftex.def Info: Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig2.pdf  used on input line 85.
 (pdftex.def)             Requested size: 426.79134pt x 94.64243pt.
 
-
-[33]
-
-Package natbib Warning: Citation `Ruseckas2005' on page 34 undefined on input line 100.
-
-
-Package natbib Warning: Citation `Leroux2018naa' on page 34 undefined on input line 100.
+LaTeX Warning: Reference `fig:fig1' on page 38 undefined on input line 95.
 
 
 
-[34 <./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig2.pdf>]
+[38]
 
-[35]
+LaTeX Warning: Reference `fig:two-level-effects' on page 39 undefined on input line 97.
 
-[36]
+
+LaTeX Warning: Reference `fig:two-level-effects' on page 39 undefined on input line 99.
+
+
+Package natbib Warning: Citation `Ruseckas2005' on page 39 undefined on input line 100.
+
+
+Package natbib Warning: Citation `Leroux2018naa' on page 39 undefined on input line 100.
+
+
+
+[39 <./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig2.pdf>]
+
+LaTeX Warning: Reference `fig:two-level-effects' on page 40 undefined on input line 102.
+
+
+LaTeX Warning: Reference `fig:two-level-effects' on page 40 undefined on input line 102.
+
+
+LaTeX Warning: Reference `fig:two-level-effects' on page 40 undefined on input line 102.
+
+
+LaTeX Warning: Reference `fig:fig1' on page 40 undefined on input line 104.
+
+
+
+[40]
+
+LaTeX Warning: Reference `fig:two-level-effects' on page 41 undefined on input line 107.
+
+
+LaTeX Warning: Reference `fig:qubit_coherence' on page 41 undefined on input line 109.
+
+
+LaTeX Warning: Reference `fig:qubit_coherence' on page 41 undefined on input line 109.
+
+
+LaTeX Warning: Reference `fig:qubit_coherence' on page 41 undefined on input line 111.
+
+
+LaTeX Warning: Reference `fig:qubit_coherence' on page 41 undefined on input line 111.
+
+
+LaTeX Warning: Reference `fig:two-level-effects' on page 41 undefined on input line 111.
+
+
+
+[41]
+
+LaTeX Warning: Reference `fig:qubit_coherence' on page 42 undefined on input line 114.
+
+
+LaTeX Warning: Reference `SubSec:ParallelRamsey' on page 42 undefined on input line 114.
+
+
+LaTeX Warning: Reference `fig:fig1' on page 42 undefined on input line 118.
+
+
 Overfull \hbox (7.6897pt too wide) in paragraph at lines 118--120
 \OT1/cmr/m/n/12 demon-stra-tions have been re-stricted to the man-i-fold $\OML/cmm/m/it/12 m[] \OMS/cmsy/m/n/12 2 f^^@\OT1/cmr/m/n/12 9\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 7\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 .
  []
 
-<Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf, id=3150, 462.52798pt x 406.20229pt>
+<Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf, id=2117, 462.52798pt x 406.20229pt>
 File: Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf Graphic file (type pdf)
 <use Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf>
 Package pdftex.def Info: Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf  used on input line 123.
 (pdftex.def)             Requested size: 426.79134pt x 374.8387pt.
 
 
-[37]
+[42]
 
-[38 <./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf>]
+[43 <./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf>]
 
-Package natbib Warning: Citation `Baamara2023qem' on page 39 undefined on input line 135.
+Package natbib Warning: Citation `Baamara2023qem' on page 44 undefined on input line 135.
 
 
-Package natbib Warning: Citation `Kunkel2019' on page 39 undefined on input line 137.
+Package natbib Warning: Citation `Kunkel2019' on page 44 undefined on input line 137.
 
 
 Overfull \hbox (33.18483pt too wide) in paragraph at lines 139--139
@@ -1275,120 +2768,48 @@ Overfull \hbox (33.18483pt too wide) in paragraph at lines 139--139
  []
 
 
-Package natbib Warning: Citation `Campbell2017FermiDegClock' on page 39 undefined on input line 143.
+Package natbib Warning: Citation `Campbell2017FermiDegClock' on page 44 undefined on input line 143.
 
 
-Package natbib Warning: Citation `Savoie2018InterleavedInterf' on page 39 undefined on input line 143.
+Package natbib Warning: Citation `Savoie2018InterleavedInterf' on page 44 undefined on input line 143.
 
 
-Package natbib Warning: Citation `Schioppo2016DualYbClock' on page 39 undefined on input line 143.
+Package natbib Warning: Citation `Schioppo2016DualYbClock' on page 44 undefined on input line 143.
 
 
-Package natbib Warning: Citation `Cheiney2018ContinuousAccelero' on page 39 undefined on input line 143.
+Package natbib Warning: Citation `Cheiney2018ContinuousAccelero' on page 44 undefined on input line 143.
 
 
-Package natbib Warning: Citation `Gessner2020msf' on page 39 undefined on input line 143.
+Package natbib Warning: Citation `Gessner2020msf' on page 44 undefined on input line 143.
 
 
-Package natbib Warning: Citation `notemixture' on page 39 undefined on input line 145.
+LaTeX Warning: Reference `fig:5pulseInterf_clean' on page 44 undefined on input line 145.
+
+
+Package natbib Warning: Citation `notemixture' on page 44 undefined on input line 145.
 
 
 
-[39]
-<Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf, id=3566, 462.52798pt x 475.80318pt>
+[44]
+
+LaTeX Warning: Reference `fig:5pulseInterf_clean' on page 45 undefined on input line 158.
+
+<Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf, id=2533, 462.52798pt x 475.80318pt>
 File: Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf Graphic file (type pdf)
 <use Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf>
 Package pdftex.def Info: Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf  used on input line 165.
 (pdftex.def)             Requested size: 426.79134pt x 439.06558pt.
 
-
-[40]
-
-LaTeX Warning: Text page 41 contains only floats.
+LaTeX Warning: Reference `fig:5pulseInterf_clean' on page 45 undefined on input line 169.
 
 
-Overfull \vbox (6.28249pt too high) has occurred while \output is active []
+LaTeX Warning: Reference `fig:5pulseInterf_clean' on page 45 undefined on input line 169.
 
 
-
-[41 <./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf>]
-
-Package natbib Warning: Citation `Taie2010roa' on page 42 undefined on input line 178.
+LaTeX Warning: Reference `fig:5pulseInterf_clean' on page 45 undefined on input line 173.
 
 
-Package natbib Warning: Citation `Stellmer2011dam' on page 42 undefined on input line 178.
-
-
-Package natbib Warning: Citation `Bataille2020' on page 42 undefined on input line 178.
-
-
-Package natbib Warning: Citation `Bidinosti2022gat' on page 42 undefined on input line 182.
-
-
-
-[42]
-Overfull \hbox (19.06142pt too wide) in paragraph at lines 187--187
-[]\OT1/cmr/bx/n/14.4 Simultaneous mea-sure-ments of mul-ti-ple col-lec-tive atomic
- []
-
-
-Package natbib Warning: Citation `Kitagawa1993sss' on page 43 undefined on input line 193.
-
-
-Package natbib Warning: Citation `Yurke1986sas' on page 43 undefined on input line 193.
-
-
-Package natbib Warning: Citation `Esteve2008sae' on page 43 undefined on input line 193.
-
-
-Package natbib Warning: Citation `Lewenstein2000ooe' on page 43 undefined on input line 193.
-
-
-Package natbib Warning: Citation `Lucke2014dme' on page 43 undefined on input line 193.
-
-
-Package natbib Warning: Citation `Hosten2016mn1' on page 43 undefined on input line 193.
-
-
-Package natbib Warning: Citation `Sorensen2001eae' on page 43 undefined on input line 193.
-
-
-Package natbib Warning: Citation `Vitagliano2011ssi' on page 43 undefined on input line 193.
-
-
-Package natbib Warning: Citation `Klempt2010pao' on page 43 undefined on input line 193.
-
-
-Package natbib Warning: Citation `Lepoutre2019ooe' on page 43 undefined on input line 193.
-
-
-Package natbib Warning: Citation `Alaoui2022mcf' on page 43 undefined on input line 193.
-
-
-Package natbib Warning: Citation `alaoui2024' on page 43 undefined on input line 193.
-
-
-Package natbib Warning: Citation `Kunkel2019' on page 43 undefined on input line 198.
-
-
-
-[43]
-
-[44]
-<Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf, id=4238, 479.7925pt x 454.69875pt>
-File: Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf Graphic file (type pdf)
-<use Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf>
-Package pdftex.def Info: Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf  used on input line 229.
-(pdftex.def)             Requested size: 426.79134pt x 404.47246pt.
-
-
-Package natbib Warning: Citation `Taie2010roa' on page 45 undefined on input line 237.
-
-
-Package natbib Warning: Citation `Stellmer2011dam' on page 45 undefined on input line 237.
-
-
-Package natbib Warning: Citation `Bataille2020' on page 45 undefined on input line 238.
+LaTeX Warning: Reference `fig:5pulseInterf_clean' on page 45 undefined on input line 173.
 
 
 
@@ -1397,80 +2818,189 @@ Package natbib Warning: Citation `Bataille2020' on page 45 undefined on input li
 LaTeX Warning: Text page 46 contains only floats.
 
 
-Overfull \vbox (4.84344pt too high) has occurred while \output is active []
+Overfull \vbox (6.28249pt too high) has occurred while \output is active []
 
 
 
-[46 <./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf>]
+[46 <./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf>]
 
-Package natbib Warning: Citation `Leprince2024' on page 47 undefined on input line 250.
-
-
-Package natbib Warning: Citation `Omanakuttan2021' on page 47 undefined on input line 250.
+LaTeX Warning: Reference `fig:5pulseInterf_clean' on page 47 undefined on input line 175.
 
 
-Package natbib Warning: Citation `Onishchenko2019' on page 47 undefined on input line 250.
+Package natbib Warning: Citation `Taie2010roa' on page 47 undefined on input line 178.
 
 
-Package natbib Warning: Citation `Peres1991' on page 47 undefined on input line 253.
+Package natbib Warning: Citation `Stellmer2011dam' on page 47 undefined on input line 178.
 
 
-Package natbib Warning: Citation `Massar2007' on page 47 undefined on input line 253.
+Package natbib Warning: Citation `Bataille2020' on page 47 undefined on input line 178.
 
 
-Package natbib Warning: Citation `Stellmer2011dam' on page 47 undefined on input line 262.
-
-
-Package natbib Warning: Citation `Taie2010roa' on page 47 undefined on input line 262.
-
-
-Package natbib Warning: Citation `Kiktenko2015sqr' on page 47 undefined on input line 262.
-
-
-Package natbib Warning: Citation `Omanakuttan2021' on page 47 undefined on input line 262.
-
-
-Package natbib Warning: Citation `Godfrin2018gri' on page 47 undefined on input line 262.
-
-
-Package natbib Warning: Citation `Randall2015epa' on page 47 undefined on input line 262.
-
-
-Package natbib Warning: Citation `Lanyon2008sql' on page 47 undefined on input line 262.
-
-
-Package natbib Warning: Citation `Pucher2024' on page 47 undefined on input line 262.
-
-
-Package natbib Warning: Citation `Nakamura2024' on page 47 undefined on input line 262.
+Package natbib Warning: Citation `Bidinosti2022gat' on page 47 undefined on input line 182.
 
 
 
 [47]
-
-Package natbib Warning: Citation `Satoor2021' on page 48 undefined on input line 267.
-
-
-Package natbib Warning: Citation `Chalopin2018qes' on page 48 undefined on input line 267.
+Overfull \hbox (19.06142pt too wide) in paragraph at lines 187--187
+[]\OT1/cmr/bx/n/14.4 Simultaneous mea-sure-ments of mul-ti-ple col-lec-tive atomic
+ []
 
 
-Package natbib Warning: Citation `Kunkel2019' on page 48 undefined on input line 269.
+Package natbib Warning: Citation `Kitagawa1993sss' on page 48 undefined on input line 193.
 
 
-Package natbib Warning: Citation `Bornet2024' on page 48 undefined on input line 272.
+Package natbib Warning: Citation `Yurke1986sas' on page 48 undefined on input line 193.
 
 
-Package natbib Warning: Citation `Mamaev2019' on page 48 undefined on input line 272.
+Package natbib Warning: Citation `Esteve2008sae' on page 48 undefined on input line 193.
 
 
-Package natbib Warning: Citation `Brydges2019' on page 48 undefined on input line 272.
+Package natbib Warning: Citation `Lewenstein2000ooe' on page 48 undefined on input line 193.
 
 
-Package natbib Warning: Citation `Frerot2021' on page 48 undefined on input line 272.
+Package natbib Warning: Citation `Lucke2014dme' on page 48 undefined on input line 193.
+
+
+Package natbib Warning: Citation `Hosten2016mn1' on page 48 undefined on input line 193.
+
+
+Package natbib Warning: Citation `Sorensen2001eae' on page 48 undefined on input line 193.
+
+
+Package natbib Warning: Citation `Vitagliano2011ssi' on page 48 undefined on input line 193.
+
+
+Package natbib Warning: Citation `Klempt2010pao' on page 48 undefined on input line 193.
+
+
+Package natbib Warning: Citation `Lepoutre2019ooe' on page 48 undefined on input line 193.
+
+
+Package natbib Warning: Citation `Alaoui2022mcf' on page 48 undefined on input line 193.
+
+
+Package natbib Warning: Citation `alaoui2024' on page 48 undefined on input line 193.
+
+
+Package natbib Warning: Citation `Kunkel2019' on page 48 undefined on input line 198.
+
+
+LaTeX Warning: Reference `fig:4pulseInterf' on page 48 undefined on input line 198.
+
+
+
+[48]
+
+LaTeX Warning: Reference `fig:4pulseInterf' on page 49 undefined on input line 206.
+
+
+
+[49]
+<Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf, id=3198, 479.7925pt x 454.69875pt>
+File: Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf Graphic file (type pdf)
+<use Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf>
+Package pdftex.def Info: Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf  used on input line 229.
+(pdftex.def)             Requested size: 426.79134pt x 404.47246pt.
+
+
+LaTeX Warning: Reference `fig:4pulseInterf' on page 50 undefined on input line 236.
+
+
+Package natbib Warning: Citation `Taie2010roa' on page 50 undefined on input line 237.
+
+
+Package natbib Warning: Citation `Stellmer2011dam' on page 50 undefined on input line 237.
+
+
+Package natbib Warning: Citation `Bataille2020' on page 50 undefined on input line 238.
+
+
+LaTeX Warning: Reference `fig:4pulseInterf' on page 50 undefined on input line 246.
+
+
+LaTeX Warning: Reference `fig:4pulseInterf' on page 50 undefined on input line 248.
+
+
+
+[50]
+
+LaTeX Warning: Text page 51 contains only floats.
+
+
+Overfull \vbox (4.84344pt too high) has occurred while \output is active []
+
+
+
+[51 <./Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf>]
+
+Package natbib Warning: Citation `Leprince2024' on page 52 undefined on input line 250.
+
+
+Package natbib Warning: Citation `Omanakuttan2021' on page 52 undefined on input line 250.
+
+
+Package natbib Warning: Citation `Onishchenko2019' on page 52 undefined on input line 250.
+
+
+Package natbib Warning: Citation `Peres1991' on page 52 undefined on input line 253.
+
+
+Package natbib Warning: Citation `Massar2007' on page 52 undefined on input line 253.
+
+
+Package natbib Warning: Citation `Stellmer2011dam' on page 52 undefined on input line 262.
+
+
+Package natbib Warning: Citation `Taie2010roa' on page 52 undefined on input line 262.
+
+
+Package natbib Warning: Citation `Kiktenko2015sqr' on page 52 undefined on input line 262.
+
+
+Package natbib Warning: Citation `Omanakuttan2021' on page 52 undefined on input line 262.
+
+
+Package natbib Warning: Citation `Godfrin2018gri' on page 52 undefined on input line 262.
+
+
+Package natbib Warning: Citation `Randall2015epa' on page 52 undefined on input line 262.
+
+
+Package natbib Warning: Citation `Lanyon2008sql' on page 52 undefined on input line 262.
+
+
+Package natbib Warning: Citation `Pucher2024' on page 52 undefined on input line 262.
+
+
+Package natbib Warning: Citation `Nakamura2024' on page 52 undefined on input line 262.
+
+
+
+[52]
+
+Package natbib Warning: Citation `Satoor2021' on page 53 undefined on input line 267.
+
+
+Package natbib Warning: Citation `Chalopin2018qes' on page 53 undefined on input line 267.
+
+
+Package natbib Warning: Citation `Kunkel2019' on page 53 undefined on input line 269.
+
+
+Package natbib Warning: Citation `Bornet2024' on page 53 undefined on input line 272.
+
+
+Package natbib Warning: Citation `Mamaev2019' on page 53 undefined on input line 272.
+
+
+Package natbib Warning: Citation `Brydges2019' on page 53 undefined on input line 272.
+
+
+Package natbib Warning: Citation `Frerot2021' on page 53 undefined on input line 272.
 
 )) (./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex
 
-[48]
+[53]
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1497,35 +3027,103 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2.
 
 
-Package natbib Warning: Citation `pezze_quantum_2014' on page 49 undefined on input line 6.
+Package natbib Warning: Citation `pezze_quantum_2014' on page 54 undefined on input line 6.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
+./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex:10: Missing $ inserted.
+<inserted text> 
+                $
+l.10 ...tion_and_spin_control on photoassociation}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex:10: Missing $ inserted.
+<inserted text> 
+                $
+l.10 ...tion_and_spin_control on photoassociation}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 
-[49
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 10.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 10.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 10.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 10.
+
+./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex:12: Missing $ inserted.
+<inserted text> 
+                $
+l.12 ...anding the PA process necessitates an Gas_
+                                                  preparation_and_spin_contr...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 12.
+
+./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex:12: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.12 ...e asymptotic analysis of the radial Schrö
+                                                  dinger equation describing...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex:13: Missing $ inserted.
+<inserted text> 
+                $
+l.13 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (1178.30104pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/n/12 Understanding the PA pro-cess ne-ces-si-tates an Gas$[]\OML/cmm/m/it/12 reparation[]nd[]pin[]ontroltoscatteringtheorytodefinekeyquantitiessuchasthescatteringlengthandtheopticallength:TheseparametersemergenaturallyfromtheasymptoticanalysisoftheradialSchr[]dingerequationdescribingtherelativemotionoftwocollidingatoms:$ 
+ []
+
+
+
+[54
 
 ]
 
-Package natbib Warning: Citation `Landau' on page 50 undefined on input line 27.
+Package natbib Warning: Citation `Landau' on page 55 undefined on input line 27.
 
 
-Package natbib Warning: Citation `dalibard_interactions_nodate' on page 50 undefined on input line 27.
+Package natbib Warning: Citation `dalibard_interactions_nodate' on page 55 undefined on input line 27.
 
 
-Package natbib Warning: Citation `dalibard_interactions_nodate' on page 50 undefined on input line 36.
+Package natbib Warning: Citation `dalibard_interactions_nodate' on page 55 undefined on input line 36.
 
 
 
-[50]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf, id=4919, 380.42125pt x 247.92625pt>
+[55]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf, id=3883, 380.42125pt x 247.92625pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf  used on input line 66.
 (pdftex.def)             Requested size: 384.10959pt x 250.33922pt.
+
+
+LaTeX Warning: Reference `incoming outcoming scattering wave' on page 56 undefined on input line 75.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
@@ -1538,55 +3136,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--91
 
 
 
-[51 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf>]
+[56 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf>]
 
-[52]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf, id=4956, 417.56pt x 582.175pt>
+LaTeX Warning: Reference `1D schrodinger solution' on page 57 undefined on input line 98.
+
+
+LaTeX Warning: Reference `scattering length' on page 57 undefined on input line 113.
+
+
+LaTeX Warning: Reference `sigma elastic' on page 57 undefined on input line 123.
+
+
+LaTeX Warning: Reference `sigma inelastic' on page 57 undefined on input line 123.
+
+
+
+[57]
+
+LaTeX Warning: Reference `fig:PA_concept' on page 58 undefined on input line 156.
+
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf, id=3913, 417.56pt x 582.175pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf  used on input line 159.
 (pdftex.def)             Requested size: 298.75262pt x 416.554pt.
 
-
-Package natbib Warning: Citation `guttridge_photoassociation_2019' on page 53 undefined on input line 160.
-
-
-Package natbib Warning: Citation `guttridge_photoassociation_2019' on page 53 undefined on input line 160.
+Package natbib Warning: Citation `guttridge_photoassociation_2019' on page 58 undefined on input line 160.
 
 
-
-[53]
-
-[54 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf>]
-
-Package natbib Warning: Citation `bohn1997_prospects' on page 55 undefined on input line 195.
+Package natbib Warning: Citation `guttridge_photoassociation_2019' on page 58 undefined on input line 160.
 
 
-Package natbib Warning: Citation `yan_controlling_2013' on page 55 undefined on input line 200.
+LaTeX Warning: Reference `inelastic evolution equation' on page 58 undefined on input line 186.
 
 
-Package natbib Warning: Citation `tiesinga2005measurement' on page 55 undefined on input line 200.
-
-
-Package natbib Warning: Citation `blatt_systematic_2011' on page 55 undefined on input line 213.
-
-
-Package natbib Warning: Citation `tiesinga2005measurement' on page 55 undefined on input line 218.
+Package natbib Warning: Citation `bohn1997_prospects' on page 58 undefined on input line 195.
 
 
 
-[55]
+[58]
 
-Package natbib Warning: Citation `han_photoassociation_2018' on page 56 undefined on input line 234.
+[59 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf>]
+
+Package natbib Warning: Citation `yan_controlling_2013' on page 60 undefined on input line 200.
+
+
+Package natbib Warning: Citation `tiesinga2005measurement' on page 60 undefined on input line 200.
+
+
+LaTeX Warning: Reference `a(delta)' on page 60 undefined on input line 206.
+
+
+Package natbib Warning: Citation `blatt_systematic_2011' on page 60 undefined on input line 213.
+
+
+Package natbib Warning: Citation `tiesinga2005measurement' on page 60 undefined on input line 218.
 
 
 
-[56]
+[60]
+
+Package natbib Warning: Citation `han_photoassociation_2018' on page 61 undefined on input line 234.
+
+
+LaTeX Warning: Reference `eq:gamma_stim_blatt' on page 61 undefined on input line 236.
+
+
+LaTeX Warning: Reference `K2 complet Blatt' on page 61 undefined on input line 236.
+
+
+LaTeX Warning: Reference `eq:3.28' on page 61 undefined on input line 242.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 251--255
 
  []
 
 
+
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 256--261
 
  []
@@ -1597,17 +3225,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--268
  []
 
 
-Package natbib Warning: Citation `reichenbach_optical_nodate' on page 57 undefined on input line 280.
+Package natbib Warning: Citation `reichenbach_optical_nodate' on page 62 undefined on input line 280.
 
 
+LaTeX Warning: Reference `fig:u-g symmetry' on page 62 undefined on input line 287.
 
-[57]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/proba_presence.pdf, id=5053, 489.83pt x 168.63pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/proba_presence.pdf, id=4001, 489.83pt x 168.63pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/proba_presence.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/proba_presence.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/proba_presence.pdf  used on input line 291.
 (pdftex.def)             Requested size: 426.79134pt x 146.93076pt.
 
+
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 299--302
 
  []
@@ -1618,11 +3248,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--310
  []
 
 
+LaTeX Warning: Reference `fig:hund' on page 63 undefined on input line 312.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 311--313
 
  []
 
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/hund_case_c.pdf, id=5055, 108.405pt x 89.33376pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/hund_case_c.pdf, id=4008, 108.405pt x 89.33376pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/hund_case_c.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/hund_case_c.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/hund_case_c.pdf  used on input line 317.
@@ -1634,167 +3267,194 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--326
 
 
 
-[58 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/proba_presence.pdf>]
+[63 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/proba_presence.pdf>]
 
-Package natbib Warning: Citation `han_photoassociation_2018' on page 59 undefined on input line 353.
+LaTeX Warning: Reference `wavefunction parity' on page 64 undefined on input line 350.
 
 
+Package natbib Warning: Citation `han_photoassociation_2018' on page 64 undefined on input line 353.
 
-[59 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/hund_case_c.pdf>]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/ytterbium.pdf, id=5314, 446.66875pt x 341.275pt>
+
+LaTeX Warning: Reference `fig:pa-ytterbium-potentials' on page 64 undefined on input line 354.
+
+
+LaTeX Warning: Reference `ytt potential' on page 64 undefined on input line 357.
+
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/ytterbium.pdf, id=4198, 446.66875pt x 341.275pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/ytterbium.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/ytterbium.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/ytterbium.pdf  used on input line 361.
 (pdftex.def)             Requested size: 341.43436pt x 260.87663pt.
 
+LaTeX Warning: Reference `fig:u-g symmetry' on page 64 undefined on input line 364.
 
-[60 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/ytterbium.pdf>]
+
+LaTeX Warning: Reference `fig:u-g symmetry' on page 64 undefined on input line 364.
+
+
+
+[64 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/hund_case_c.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 401--404
 
  []
 
 
-Package natbib Warning: Citation `borkowski_mass_2014' on page 61 undefined on input line 417.
+
+[65 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/ytterbium.pdf>]
+
+Package natbib Warning: Citation `borkowski_mass_2014' on page 66 undefined on input line 417.
+
+
+LaTeX Warning: Reference `fig:pa-sakurai-wkb' on page 66 undefined on input line 455.
 
 
 
-[61]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/WKB_sakurai.pdf, id=5337, 200.75pt x 131.49126pt>
+[66]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/WKB_sakurai.pdf, id=4287, 200.75pt x 131.49126pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/WKB_sakurai.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/WKB_sakurai.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/WKB_sakurai.pdf  used on input line 462.
 (pdftex.def)             Requested size: 341.43436pt x 223.67259pt.
 
 
-[62 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/WKB_sakurai.pdf>]
+[67 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/WKB_sakurai.pdf>]
 
-[63]
-
-Package natbib Warning: Citation `zelevinsky_narrow_2006' on page 64 undefined on input line 547.
+LaTeX Warning: Reference `eq:wkb_quantization' on page 68 undefined on input line 507.
 
 
-LaTeX Warning: Reference `fig:pa-mass-scaling' on page 64 undefined on input line 563.
+LaTeX Warning: Reference `fig:pa-ytterbium-potentials' on page 68 undefined on input line 546.
 
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf, id=5380, 244.915pt x 245.91875pt>
+
+Package natbib Warning: Citation `zelevinsky_narrow_2006' on page 68 undefined on input line 547.
+
+
+
+[68]
+
+LaTeX Warning: Reference `fig:pa-mass-scaling' on page 69 undefined on input line 563.
+
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf, id=4328, 244.915pt x 245.91875pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf  used on input line 569.
 (pdftex.def)             Requested size: 298.75262pt x 299.98665pt.
 
-Package natbib Warning: Citation `borkowski_mass_2014' on page 64 undefined on input line 572.
+Package natbib Warning: Citation `borkowski_mass_2014' on page 69 undefined on input line 572.
 
 
-Package natbib Warning: Citation `borkowski_mass_2014' on page 64 undefined on input line 572.
+Package natbib Warning: Citation `borkowski_mass_2014' on page 69 undefined on input line 572.
 
 
 
-[64]
+[69 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf>]
 
-[65 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf>]
-
-LaTeX Warning: Reference `frequences 88sr 87sr' on page 66 undefined on input line 597.
+LaTeX Warning: Reference `frequences 88sr 87sr' on page 70 undefined on input line 597.
 
 
-LaTeX Warning: Reference `PA slave 1' on page 66 undefined on input line 600.
+LaTeX Warning: Reference `PA slave 1' on page 70 undefined on input line 600.
 
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/nouveau_beating.pdf, id=5631, 404.51125pt x 230.8625pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/nouveau_beating.pdf, id=4574, 404.51125pt x 230.8625pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/nouveau_beating.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/nouveau_beating.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/nouveau_beating.pdf  used on input line 605.
 (pdftex.def)             Requested size: 426.79134pt x 243.58229pt.
 
-LaTeX Warning: Reference `zoom red chain battement' on page 66 undefined on input line 608.
+LaTeX Warning: Reference `zoom red chain battement' on page 70 undefined on input line 608.
 
 
-LaTeX Warning: Reference `zoom red chain battement' on page 66 undefined on input line 608.
+LaTeX Warning: Reference `zoom red chain battement' on page 70 undefined on input line 608.
 
 
 
-[66]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf, id=5639, 547.04375pt x 473.77pt>
+[70]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf, id=4584, 547.04375pt x 473.77pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf  used on input line 637.
 (pdftex.def)             Requested size: 341.43436pt x 295.70068pt.
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf, id=5640, 553.06625pt x 436.63126pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf, id=4585, 553.06625pt x 436.63126pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf  used on input line 639.
 (pdftex.def)             Requested size: 362.77524pt x 286.39864pt.
 
 
-[67 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/nouveau_beating.pdf>]
+[71 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/nouveau_beating.pdf>]
 
-LaTeX Warning: Reference `beating broadening' on page 68 undefined on input line 647.
+LaTeX Warning: Reference `beating broadening' on page 72 undefined on input line 647.
 
 
 
-[68 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf> <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf
+[72 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf> <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf, id=5820, 630.355pt x 396.48125pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf, id=4766, 630.355pt x 396.48125pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf  used on input line 656.
 (pdftex.def)             Requested size: 384.10959pt x 241.5991pt.
 
 
-Package natbib Warning: Citation `black_Gas preparation and spin control_2001' on page 69 undefined on input line 665.
+Package natbib Warning: Citation `black_Gas_preparation_and_spin_control_2001' on page 73 undefined on input line 665.
 
 
-LaTeX Warning: Reference `Bessel function' on page 69 undefined on input line 674.
+LaTeX Warning: Reference `Bessel function' on page 73 undefined on input line 674.
 
 
 
-[69 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf>]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/bessel_functions_finale.pdf, id=5843, 344.28625pt x 253.94875pt>
+[73 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf>]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/bessel_functions_finale.pdf, id=4789, 344.28625pt x 253.94875pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/bessel_functions_finale.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/bessel_functions_finale.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/bessel_functions_finale.pdf  used on input line 680.
 (pdftex.def)             Requested size: 298.75262pt x 220.364pt.
 
 
-LaTeX Warning: Reference `fig:raie-40mhz' on page 70 undefined on input line 688.
+LaTeX Warning: Reference `fig:raie-40mhz' on page 74 undefined on input line 688.
 
 
-LaTeX Warning: Reference `sidebands' on page 70 undefined on input line 689.
+LaTeX Warning: Reference `sidebands' on page 74 undefined on input line 689.
 
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/erreur_40MHz.pdf, id=5844, 361.35pt x 212.795pt>
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/erreur_40MHz.pdf, id=4790, 361.35pt x 212.795pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/erreur_40MHz.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/erreur_40MHz.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/erreur_40MHz.pdf  used on input line 696.
 (pdftex.def)             Requested size: 341.43436pt x 201.0696pt.
 
 
-[70 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/bessel_functions_finale.pdf>]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf, id=5871, 624.3325pt x 405.515pt>
+[74 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/bessel_functions_finale.pdf>]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf, id=4817, 624.3325pt x 405.515pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf  used on input line 704.
 (pdftex.def)             Requested size: 426.79134pt x 277.21301pt.
 
 
-[71 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/erreur_40MHz.pdf> <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf
+[75 <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/erreur_40MHz.pdf> <./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 
-[72]
-
-LaTeX Warning: Reference `frequences 88sr 87sr' on page 73 undefined on input line 755.
-
-
-LaTeX Warning: Reference `88Sr resonance' on page 73 undefined on input line 757.
-
-
-Package natbib Warning: Citation `litvinov_measuring_2021' on page 73 undefined on input line 760.
+LaTeX Warning: Reference `one and two body losses equation' on page 76 undefined on input line 737.
 
 
 
-[73]
+[76]
 
-Package natbib Warning: Citation `zelevinsky_narrow_2006' on page 74 undefined on input line 789.
+LaTeX Warning: Reference `frequences 88sr 87sr' on page 77 undefined on input line 755.
+
+
+LaTeX Warning: Reference `88Sr resonance' on page 77 undefined on input line 757.
+
+
+Package natbib Warning: Citation `litvinov_measuring_2021' on page 77 undefined on input line 760.
+
+
+
+[77]
+
+Package natbib Warning: Citation `zelevinsky_narrow_2006' on page 78 undefined on input line 789.
 
 
 Overfull \hbox (1.33803pt too wide) in paragraph at lines 799--800
@@ -1814,7 +3474,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 806.
 
 
-LaTeX Warning: Reference `88Sr resonance' on page 74 undefined on input line 807.
+LaTeX Warning: Reference `88Sr resonance' on page 78 undefined on input line 807.
 
 
 Overfull \hbox (9.576pt too wide) in paragraph at lines 809--810
@@ -1822,25 +3482,25 @@ Overfull \hbox (9.576pt too wide) in paragraph at lines 809--810
  []
 
 
-Package natbib Warning: Citation `zelevinsky_narrow_2006' on page 74 undefined on input line 811.
+Package natbib Warning: Citation `zelevinsky_narrow_2006' on page 78 undefined on input line 811.
 
 
-Package natbib Warning: Citation `blatt_measurement_2011' on page 74 undefined on input line 812.
+Package natbib Warning: Citation `blatt_measurement_2011' on page 78 undefined on input line 812.
 
 
 
-[74]
-<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf, id=9029, 913.4125pt x 1677.26625pt>
+[78]
+<Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf, id=7975, 913.4125pt x 1677.26625pt>
 File: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf Graphic file (type pdf)
 <use Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf>
 Package pdftex.def Info: Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf  used on input line 818.
 (pdftex.def)             Requested size: 320.09349pt x 587.76859pt.
 
 
-LaTeX Warning: Reference `tab:comparaison_lasers' on page 75 undefined on input line 829.
+LaTeX Warning: Reference `tab:comparaison_lasers' on page 79 undefined on input line 829.
 
 
-LaTeX Warning: Reference `linewidth avec pompopt' on page 75 undefined on input line 829.
+LaTeX Warning: Reference `linewidth avec pompopt' on page 79 undefined on input line 829.
 
 
 Overfull \hbox (9.39409pt too wide) in paragraph at lines 829--830
@@ -1877,4 +3537,8 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangl
+./Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex:843: Missing } inserted.
+<inserted text> 
+                }
+l.843 ...{laser+rem}}$} [kHz] & $112.58\hl{\pm}$ &
+                                         
