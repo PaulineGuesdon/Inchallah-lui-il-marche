@@ -7,9 +7,9 @@ In quantum metrology, a fundamental limit to the precision of a phase parameter 
 Moving toward this goal, the work presented in this chapter focuses on the essential preliminary step: the spectroscopic identification of the molecular states involved in this spin-selective process. At this stage of the experiment, our system is characterized by the resolution of three distinct spectroscopic lines, meaning we are still far from generating collective quantum correlations. However, the precise mapping of these three lines provides the first direct evidence of the underlying molecular structure and the spin-selection rules at play. The objective of this chapter is thus to benchmark the photoassociation mechanism itself, establishing the necessary spectroscopic foundations required for future spin-manipulation and state-purification protocols.\\
 
 This chapter opens with the fundamental concepts of scattering theory required to understand the mechanisms of photoassociation, which drives the evolution of atomic density through one- and two-body loss processes. Next, we present preliminary experimental results obtained with $^{88}\text{Sr}$. Leveraging the well-documented molecular potentials of this bosonic species allows us to benchmark and calibrate our experimental setup. Building upon these foundations, we then focus on the fermionic isotope, $^{87}\text{Sr}$. We provide a detailed presentation of the experimental data, accompanied by a thorough analysis of the technical challenges and systematic issues that could account for the low contrast observed in the molecular lines. Finally, the chapter concludes with a discussion regarding the surprising number of detected lines and their specific profiles, which may hint at the existence of yet unexplained physical phenomena.
-\section{Gas_preparation_and_spin_control on photoassociation}
+\section{Introduction to photoassociation}
 \subsection{Scattering theory}
-Understanding the PA process necessitates an Gas_preparation_and_spin_control to scattering theory to define key quantities such as the scattering length and the optical length. These parameters emerge naturally from the asymptotic analysis of the radial Schrödinger equation describing the relative motion of two colliding atoms.
+Understanding the PA process necessitates an introduction to scattering theory to define key quantities such as the scattering length and the optical length. These parameters emerge naturally from the asymptotic analysis of the radial Schrödinger equation describing the relative motion of two colliding atoms.
 
 In the study of inter-atomic interactions, the Born-Oppenheimer approximation provides a natural simplification. Due to the large mass ratio between the nuclei and the electrons, the nuclei move on a much slower timescale. One can therefore solve the electronic problem for fixed nuclear positions. The resulting electronic energy curve as a function of the inter-nuclear distance $r$ defines the adiabatic potential $\hat{U}(r)$ experienced by the two atoms. 
 
@@ -25,7 +25,6 @@ where the spherical harmonics $Y^m_l(\theta, \phi)$ encode the angular dependenc
 \end{equation}
 E the eigenvalue associated to the eigenfunction $u(r)$.
 This one-dimensional structure allows a direct analogy with the 1D quantum framework \cite{Landau}. To extract the scattering properties of the system, one studies the asymptotic behavior of the solutions at large distances. Where the inter-atomic potential $\hat{V}(r)$ vanishes, the general solution for $u_l(r)$ takes the form \cite{dalibard_interactions_nodate}:
-\
 \begin{equation}
     u_l(r) \xrightarrow{r\to\infty} a_l \sin\left(kr - \frac{l\pi}{2} + \delta_l\right)
     \label{solution at long r}
@@ -144,7 +143,7 @@ In the atomic pair frame, the electric dipole interaction drives the system from
     =
     \begin{pmatrix}
         -\frac{\hbar^2}{2\mu}\nabla^2 + U_g & 0\\
-        0 & -\frac{\hbar^2}{2\mu}\nabla^2 + U_e
+        0 & -\frac{\hbar^2}{2\mu}\nabla^2 + U_e - i\hbar \frac{\Gamma_{mol}}{2}
     \end{pmatrix}
     \begin{pmatrix}
         \psi_g\\
@@ -183,20 +182,36 @@ where $\Gamma_{\text{mol}}$ is the natural molecular spontaneous emission linewi
 
 This matrix equation shows that the laser creates a bridge between the two manifolds. During a collision, two atoms approaching each other on the ground potential $U_g(r)$ have a non-zero probability to absorb a photon and transition to the excited molecular potential $U_e(r)$. Once populated, this state decays via spontaneous emission at a rate $\Gamma_{\text{mol}}$. To account for this particle loss within the quantum mechanical framework, the molecular decay appears as an imaginary term $-i\hbar\frac{\Gamma_{\text{mol}}}{2}$ in the Hamiltonian matrix. In quantum scattering theory, such an imaginary component acts as a sink that absorbs probability flux, directly translating the physical disappearance of the atoms from the elastic channel.
 
-Since the laser is tuned far from any bare atomic resonance, the excited molecular state remains weakly populated, meaning the atoms spend most of their time interacting on the ground-state potential. We can therefore project the effect of the excited state directly onto the ground state. Mathematically, isolating $\psi_e$ from the second line of Eq.~\ref{inelastic evolution equation} yields:
+Since the laser is tuned far from any bare atomic resonance, the excited molecular state remains weakly populated, meaning the atoms spend most of their time interacting on the ground-state potential.
+To isolate the response of the excited molecular channel, we expand the closed-channel wavefunction $\psi_e(r)$ onto the bound vibrational eigenstates $\vert{}v_e\rangle$ of the excited Hamiltonian $\hat{H}_e = -\frac{\hbar^2\nabla^2}{2\mu} + U_e(r)$, which satisfy $\hat{H}_e \vert{}v_e\rangle = E_{v_e} \vert{}v_e\rangle$. Projecting the second line of Eq.~\ref{inelastic evolution equation} onto a specific isolated vibrational state $\vert{}v_e\rangle$ yields:
+\begin{gather}
+E \Psi_e = \frac{\hbar \hat{\Omega}}{2}\Psi_g \left(\hat{H_e} + \hbar \Delta - i\hbar \frac{\Gamma_{mol}}{2} \right)\Psi_e\\
+\bra{v_e}(E-\hat{H_e}\Psi_e) = \bra{v_e}\frac{\hbar\hat{\Omega}}{2}\bra{\psi_g} \\
+\psi_e(r) \approx \frac{\left\langle v_e \middle| \frac{\hbar\Omega(r)}{2} \middle| \psi_g \right\rangle}{E - E_{v_e} + \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}} v_e(r)
+\end{gather}
+
+Substituting this spatial projection back into the ground-state channel (first line of Eq.~\ref{inelastic evolution equation}) yields an effective single-channel Schrödinger equation:
+\begin{gather}
+    i\hbar\frac{d}{dt}\Psi_g = \left(-\frac{\hbar^2\hat{\nabla^2}}{2\mu}-\hat{U_g}\right)\Psi_g +\frac{\hbar\Omega}{2}\Psi_e\\
+    \left(E+\frac{\hbar^2\hat{\nabla^2}}{2\mu} - \hat{U_g}\right) \Psi_g = \frac{\hbar\hat{\Omega}}{2} \Psi_e\\
+    \left(E+\frac{\hbar^2\hat{\nabla^2}}{2\mu} - \hat{U_g}\right) \Psi_g = \frac{\hbar\hat{\Omega}}{2} \frac{\frac{\hbar\hat{\Omega}}{2}\ket{v_e}\bra{v_e}\hbar\hat{\Omega}}{2}}{E-E_{v_e} + \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}}\ket{\Psi_g}\\
+\end{gather}
+
 \begin{equation}
-    \psi_e = \frac{\frac{\hbar\Omega}{2}}{E - \left(-\frac{\hbar^2 \nabla^2}{2\mu} + U_e\right) - \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}}\psi_g
+\left(-\frac{\hbar^2\nabla^2}{2\mu} + U_g(r) + \hat{U}_{opt}\right)\psi_g(r) = E \psi_g(r)
+\label{psi e dans psi g}
 \end{equation}
-Substituting this expression back into the first line of the coupled-channel system leads to an effective single-channel Schrödinger equation for the ground state:
+where the non-local complex optical potential $\hat{U}_{opt}$ evaluates on the ground state as:
 \begin{equation}
-    \left(-\frac{\hbar^2\nabla^2}{2\mu} + U_g \right)\psi_g = \left( E - \frac{\left(\frac{\hbar\Omega}{2}\right)^2}{E - \left(-\frac{\hbar^2 \nabla^2}{2\mu} + U_e\right) - \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}} \right)\psi_g
-    \label{psi e dans psi g}
+\langle \psi_g | \hat{U}_{opt} | \psi_g \rangle = \frac{\left| \left\langle v_e \middle| \frac{\hbar\Omega(r)}{2} \middle| \psi_g \right\rangle \right|^2}{E - E_{v_e} + \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}}
 \end{equation}
-The secondary term on the right-hand side acts as a complex, energy-dependent optical potential $U_{\text{opt}}$. In quantum scattering theory, the modsification of the scattering length $\Delta a$ is directly driven by the projection of this optical potential onto the ground state wavefunction $\psi_g$. Near the molecular resonance, where the relative kinetic energy satisfies $E - \left(-\frac{\hbar^2\nabla^2}{2\mu} + U_e\right) \approx 0$, the integration of this localized coupling yields the unities-normalized complex scattering length originally formulated by Bohn and Julienne \cite{bohn1997_prospects}:
+
+Following Bohn and Julienne \cite{bohn1997_prospects}, integrating this optical potential within the asymptotic boundary conditions for $r \to \infty$ modifies the scattering phase shift, leading to the complex scattering length $a(\Delta)$:
 \begin{equation}
-    a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}}{\Delta + i\frac{\eta\Gamma_{\text{mol}}}{2}}
-    \label{a(delta)}
+a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}}{\Delta + i\frac{\eta\Gamma_{\text{mol}}}{2}}
+\label{a(delta)}
 \end{equation}
+
 where $a_{\text{bg}}$ is the real background scattering length representing native elastic collisions, and $\eta$ is a dimensionless phenomenological parameter introduced to account for additional technical broadening or loss channels observed experimentally \cite{yan_controlling_2013}. The parameter $l_{\text{opt}}$ is the temperature-independent optical scattering length, which encapsulates the strength of the light-induced interaction and scales strictly linearly with the laser intensity $I$. At low temperatures, it can be directly related to the stimulated linewidth $\Gamma_{\text{stim}}(k)$ through the Wigner law scaling \cite{tiesinga2005measurement}:
 \begin{equation}
     \Gamma_{\text{stim}}(k) = 2 k l_{\text{opt}} \Gamma_{\text{mol}}
@@ -840,7 +855,7 @@ Intensity $I$ [mW/cm$^2$] & $\mathbf{[VAL\_AOM]}$ & $303$ \\ \hline
 Natural width $\Gamma_0$ [kHz] & $15$ & $15$ \\ \hline
 $\Gamma_{\text{thermal}}$ (calc.) [kHz] & $21$ & $21$ \\ \hline
 \textbf{Total measured width $\Gamma_{\text{tot}}$} [kHz] & $115.5 \pm 8.8$ & $344.5 \pm 27.3$ \\ \hline
-\textbf{Deduced technical width $\Gamma_{\text{laser+rem}}$} [kHz] & $112.58\hl{\pm}$ & $328.99\hl{\pm}$ \\ \hline
+\textbf{Deduced technical width $\Gamma_{\text{laser+rem}}$} [kHz] & $112.58$ & $328.99$ \\ \hline
 \end{tabular}
 \end{table}
 
