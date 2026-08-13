@@ -2,152 +2,57 @@ This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: these_main.aux
 The style file: ieeetr.bst
-No "}"---line 315 of file these_main.aux
- : \citation{zelevinsky_narrow_2006
- :                                 
-I'm skipping whatever remains of this command
-I found no \bibdata command---while reading file these_main.aux
-Warning--I didn't find a database entry for "faisant_building_2024"
+Database file #1: ref.bib
+Database file #2: spincontrol_refs.bib
+Warning--entry type for "notemixture" isn't style-file defined
+--line 62 of file spincontrol_refs.bib
 Warning--I didn't find a database entry for "StellmerThesis"
-Warning--I didn't find a database entry for "litvinov_these"
-Warning--I didn't find a database entry for "black_Gas_preparation_and_spin_control_2001"
-Warning--I didn't find a database entry for "guttridge_photoassociation_2019"
-Warning--I didn't find a database entry for "reschovsky_narrow-line_2018"
-Warning--I didn't find a database entry for "zelevinsky_narrow_2006"
-Warning--I didn't find a database entry for "blatt_measurement_2011"
-Warning--I didn't find a database entry for "borkowski_mass_2014"
-Warning--I didn't find a database entry for "KillianBEC"
-Warning--I didn't find a database entry for "litvinov_measuring_2021"
-Warning--I didn't find a database entry for "bataille_realisation_nodate"
-Warning--I didn't find a database entry for "phillips_laser_1982"
-Warning--I didn't find a database entry for "Bataille2020"
-Warning--I didn't find a database entry for "phillips_laser_1998"
-Warning--I didn't find a database entry for "dalibard_atomes_froids"
-Warning--I didn't find a database entry for "stellmer_creation_2012"
-Warning--I didn't find a database entry for "ahmed_coherent_2025"
-Warning--I didn't find a database entry for "ivanovic1987"
-Warning--I didn't find a database entry for "dieks1988"
-Warning--I didn't find a database entry for "peres1988"
-Warning--I didn't find a database entry for "Klempt2010pao"
-Warning--I didn't find a database entry for "Krauser2012cmf"
-Warning--I didn't find a database entry for "Taie2012asm"
-Warning--I didn't find a database entry for "depaz2013nqm"
-Warning--I didn't find a database entry for "Pagano2014aod"
-Warning--I didn't find a database entry for "Patscheider2020cde"
-Warning--I didn't find a database entry for "Alaoui2022mcf"
-Warning--I didn't find a database entry for "Kiktenko2015sqr"
-Warning--I didn't find a database entry for "Fernholz2008sso"
-Warning--I didn't find a database entry for "Hamley2012sns"
-Warning--I didn't find a database entry for "Kajtoch2016ssi"
-Warning--I didn't find a database entry for "Chalopin2018qes"
-Warning--I didn't find a database entry for "Peterer2015cad"
-Warning--I didn't find a database entry for "Svetitsky2014htq"
-Warning--I didn't find a database entry for "Godfrin2018gri"
-Warning--I didn't find a database entry for "Randall2015epa"
-Warning--I didn't find a database entry for "Lanyon2008sql"
-Warning--I didn't find a database entry for "StamperKurnsbg2013"
-Warning--I didn't find a database entry for "Chomaz2022dpa"
-Warning--I didn't find a database entry for "Ludlow2015oac"
-Warning--I didn't find a database entry for "Gorshkov2010tos"
-Warning--I didn't find a database entry for "Hermele2009mio"
-Warning--I didn't find a database entry for "Corboz2012ssi"
-Warning--I didn't find a database entry for "Cazalilla2014ufg"
-Warning--I didn't find a database entry for "Hofrichter2016dpo"
-Warning--I didn't find a database entry for "Ozawa2018asc"
-Warning--I didn't find a database entry for "Tusi2022FSL"
-Warning--I didn't find a database entry for "Leroux2018naa"
-Warning--I didn't find a database entry for "Barnes2022"
-Warning--I didn't find a database entry for "Deutsch2010qca"
-Warning--I didn't find a database entry for "Chen2005esp"
-Warning--I didn't find a database entry for "Majorana1932aoi"
-Warning--I didn't find a database entry for "Barnett2006cnp"
-Warning--I didn't find a database entry for "Bruno2012qgp"
-Warning--I didn't find a database entry for "Evrard2019ems"
-Warning--I didn't find a database entry for "Omanakuttan2021"
-Warning--I didn't find a database entry for "Burba2024"
-Warning--I didn't find a database entry for "claude2024"
-Warning--I didn't find a database entry for "Zheng2024"
-Warning--I didn't find a database entry for "Ruseckas2005"
-Warning--I didn't find a database entry for "Baamara2023qem"
-Warning--I didn't find a database entry for "Kunkel2019"
-Warning--I didn't find a database entry for "Campbell2017FermiDegClock"
-Warning--I didn't find a database entry for "Savoie2018InterleavedInterf"
-Warning--I didn't find a database entry for "Schioppo2016DualYbClock"
-Warning--I didn't find a database entry for "Cheiney2018ContinuousAccelero"
-Warning--I didn't find a database entry for "Gessner2020msf"
-Warning--I didn't find a database entry for "notemixture"
-Warning--I didn't find a database entry for "Taie2010roa"
-Warning--I didn't find a database entry for "Stellmer2011dam"
-Warning--I didn't find a database entry for "Bidinosti2022gat"
-Warning--I didn't find a database entry for "Kitagawa1993sss"
-Warning--I didn't find a database entry for "Yurke1986sas"
-Warning--I didn't find a database entry for "Esteve2008sae"
-Warning--I didn't find a database entry for "Lewenstein2000ooe"
-Warning--I didn't find a database entry for "Lucke2014dme"
-Warning--I didn't find a database entry for "Hosten2016mn1"
-Warning--I didn't find a database entry for "Sorensen2001eae"
-Warning--I didn't find a database entry for "Vitagliano2011ssi"
-Warning--I didn't find a database entry for "Lepoutre2019ooe"
-Warning--I didn't find a database entry for "alaoui2024"
-Warning--I didn't find a database entry for "Leprince2024"
-Warning--I didn't find a database entry for "Onishchenko2019"
-Warning--I didn't find a database entry for "Peres1991"
-Warning--I didn't find a database entry for "Massar2007"
-Warning--I didn't find a database entry for "Pucher2024"
-Warning--I didn't find a database entry for "Nakamura2024"
-Warning--I didn't find a database entry for "Satoor2021"
-Warning--I didn't find a database entry for "Bornet2024"
-Warning--I didn't find a database entry for "Mamaev2019"
-Warning--I didn't find a database entry for "Brydges2019"
-Warning--I didn't find a database entry for "Frerot2021"
-Warning--I didn't find a database entry for "pezze_quantum_2014"
-Warning--I didn't find a database entry for "Landau"
-Warning--I didn't find a database entry for "dalibard_interactions_nodate"
-Warning--I didn't find a database entry for "bohn1997_prospects"
-Warning--I didn't find a database entry for "yan_controlling_2013"
-Warning--I didn't find a database entry for "tiesinga2005measurement"
-Warning--I didn't find a database entry for "blatt_systematic_2011"
-Warning--I didn't find a database entry for "han_photoassociation_2018"
-Warning--I didn't find a database entry for "reichenbach_optical_nodate"
-You've used 0 entries,
+Warning--empty journal in bataille_realisation_nodate
+Warning--empty year in bataille_realisation_nodate
+Warning--empty publisher in Landau
+Warning--empty journal in dalibard_interactions_nodate
+Warning--empty year in dalibard_interactions_nodate
+Warning--empty journal in reichenbach_optical_nodate
+Warning--empty year in reichenbach_optical_nodate
+You've used 104 entries,
             1876 wiz_defined-function locations,
-            651 strings with 6091 characters,
-and the built_in function-call counts, 20 in all, are:
-= -- 0
-> -- 0
+            1116 strings with 25439 characters,
+and the built_in function-call counts, 33167 in all, are:
+= -- 3176
+> -- 1826
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 9
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 649
+- -- 545
+* -- 2389
+:= -- 4701
+add.period$ -- 116
+call.type$ -- 104
+change.case$ -- 101
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 111
+duplicate$ -- 1831
+empty$ -- 2420
+format.name$ -- 545
+if$ -- 8095
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 104
+missing$ -- 100
+newline$ -- 330
+num.names$ -- 103
+pop$ -- 236
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 1663
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 1548
+swap$ -- 1071
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There were 2 error messages)
+warning$ -- 7
+while$ -- 236
+width$ -- 107
+write$ -- 1052
+(There were 9 warnings)

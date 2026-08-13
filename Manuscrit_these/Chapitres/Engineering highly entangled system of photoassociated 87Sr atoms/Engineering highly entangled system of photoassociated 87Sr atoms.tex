@@ -152,7 +152,7 @@ In the atomic pair frame, the electric dipole interaction drives the system from
     \label{elastic evolution equation}
 \end{equation}
 
-When a laser is tuned near a specific vibrational level of the excited potential $U_e(r)$, it couples the free-atom continuum to the bound molecular state, as illustrated in Fig.~\ref{fig:PA_concept}.
+In the frame of \cite{nicholson_optical_2015} one treat the case when a laser is tuned near a specific vibrational level of the excited potential $U_e(r)$, coupling the free-atom continuum to the bound molecular state, as illustrated in Fig.~\ref{fig:PA_concept}.
 \begin{figure}
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf}
@@ -185,70 +185,80 @@ This matrix equation shows that the laser creates a bridge between the two manif
 Since the laser is tuned far from any bare atomic resonance, the excited molecular state remains weakly populated, meaning the atoms spend most of their time interacting on the ground-state potential.
 To isolate the response of the excited molecular channel, we expand the closed-channel wavefunction $\psi_e(r)$ onto the bound vibrational eigenstates $\vert{}v_e\rangle$ of the excited Hamiltonian $\hat{H}_e = -\frac{\hbar^2\nabla^2}{2\mu} + U_e(r)$, which satisfy $\hat{H}_e \vert{}v_e\rangle = E_{v_e} \vert{}v_e\rangle$. Projecting the second line of Eq.~\ref{inelastic evolution equation} onto a specific isolated vibrational state $\vert{}v_e\rangle$ yields:
 \begin{gather}
-E \Psi_e = \frac{\hbar \hat{\Omega}}{2}\Psi_g \left(\hat{H_e} + \hbar \Delta - i\hbar \frac{\Gamma_{mol}}{2} \right)\Psi_e\\
-\bra{v_e}(E-\hat{H_e}\Psi_e) = \bra{v_e}\frac{\hbar\hat{\Omega}}{2}\bra{\psi_g} \\
-\psi_e(r) \approx \frac{\left\langle v_e \middle| \frac{\hbar\Omega(r)}{2} \middle| \psi_g \right\rangle}{E - E_{v_e} + \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}} v_e(r)
+E \psi_e = \frac{\hbar \hat{\Omega}}{2}\psi_g + \left(\hat{H}_e + \hbar \Delta - i\hbar \frac{\Gamma_{\text{mol}}}{2} \right)\psi_e\\
+\bra{v_e}(E-\hat{H}_e)\psi_e = \bra{v_e}\frac{\hbar\hat{\Omega}}{2}\ket{\psi_g}\\
+\psi_e(r) \approx \frac{\left\langle v_e \middle| \frac{\hbar\hat{\Omega}(r)}{2} \middle| \psi_g \right\rangle}{E - E_{v_e} + \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}} v_e(r)
 \end{gather}
-
-Substituting this spatial projection back into the ground-state channel (first line of Eq.~\ref{inelastic evolution equation}) yields an effective single-channel Schrödinger equation:
+Substituting this spatial projection back into the ground-state channel (first line of Eq.~\ref{inelastic evolution equation}) yields:
 \begin{gather}
-    i\hbar\frac{d}{dt}\Psi_g = \left(-\frac{\hbar^2\hat{\nabla^2}}{2\mu}-\hat{U_g}\right)\Psi_g +\frac{\hbar\Omega}{2}\Psi_e\\
-    \left(E+\frac{\hbar^2\hat{\nabla^2}}{2\mu} - \hat{U_g}\right) \Psi_g = \frac{\hbar\hat{\Omega}}{2} \Psi_e\\
-    \left(E+\frac{\hbar^2\hat{\nabla^2}}{2\mu} - \hat{U_g}\right) \Psi_g = \frac{\hbar\hat{\Omega}}{2} \frac{\frac{\hbar\hat{\Omega}}{2}\ket{v_e}\bra{v_e}\hbar\hat{\Omega}}{2}}{E-E_{v_e} + \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}}\ket{\Psi_g}\\
+    i\hbar\frac{d}{dt}\psi_g = \left(-\frac{\hbar^2\hat{\nabla}^2}{2\mu}+\hat{U}_g\right)\psi_g +\frac{\hbar\hat{\Omega}}{2}\psi_e\\
+    \left(E+\frac{\hbar^2\hat{\nabla}^2}{2\mu} - \hat{U}_g\right) \psi_g = \frac{\hbar\hat{\Omega}}{2} \psi_e\\
+    \left(E+\frac{\hbar^2\hat{\nabla}^2}{2\mu} - \hat{U}_g\right) \psi_g = \frac{\hbar\hat{\Omega}}{2} \frac{\frac{\hbar\hat{\Omega}}{2}\ket{v_e}\bra{v_e}\frac{\hbar\hat{\Omega}}{2}}{E-E_{v_e} + \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}}\psi_g
 \end{gather}
-
 \begin{equation}
-\left(-\frac{\hbar^2\nabla^2}{2\mu} + U_g(r) + \hat{U}_{opt}\right)\psi_g(r) = E \psi_g(r)
+\left(-\frac{\hbar^2\hat{\nabla}^2}{2\mu} + \hat{U}_g(r) + \hat{V}\right)\psi_g(r) = E \psi_g(r)
 \label{psi e dans psi g}
 \end{equation}
-where the non-local complex optical potential $\hat{U}_{opt}$ evaluates on the ground state as:
+One want to isolate the term that concerns the ground state to observe the modifications of it from the coupling to the molecular state. Then by projecting \ref{psi e dans psi g} we define $\langle\hat{V}\rangle$ as:
 \begin{equation}
-\langle \psi_g | \hat{U}_{opt} | \psi_g \rangle = \frac{\left| \left\langle v_e \middle| \frac{\hbar\Omega(r)}{2} \middle| \psi_g \right\rangle \right|^2}{E - E_{v_e} + \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}}
+\langle \psi_g | \hat{V} | \psi_g \rangle = \frac{\left| \left\langle v_e \middle| \frac{\hbar\hat{\Omega}(r)}{2} \middle| \psi_g \right\rangle \right|^2}{E - E_{v_e} + \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}}
+\label{V_opt}
+\end{equation}
+Following Bohn and Julienne \cite{bohn1997_prospects}, one can define the stimutaled rate $\Gamma_{stim}$ from $\ket{v_e}$ to $\ket{\psi_g}$ by the Fermi-Golden rule as
+\begin{equation}
+    \Gamma_{stim} = 2\pi\left(\frac{2\pi I}{c}\right)d^2\left| \bra{v_e} \psi_g \rangle \right|^2
 \end{equation}
 
-Following Bohn and Julienne \cite{bohn1997_prospects}, integrating this optical potential within the asymptotic boundary conditions for $r \to \infty$ modifies the scattering phase shift, leading to the complex scattering length $a(\Delta)$:
+with I the laser intensity, c the light velocity and d the transition dipole moment. On equation \ref{V_opt} the $\frac{\hbar\hat{\Omega}(r)}{2}$ comes from the dipolar interaction of the atoms with the eletric field $\vec{E}$
+of the laser, also expressing as $\frac{\hbar\hat{\Omega(r)}}{2} = \vec{d}.\vec{E}$. One identify the numerator of \ref{V_opt} as the stimulated linewidth $\Gamma_{stim}$. This rate depends on the \textbf{Franck-Condon factor} that 
+is the overlape between the ground state wavefunction and the excited molecular state.\\
+
+
+Also integrating the optical potential $\hat{V}$ within the asymptotic boundary conditions for $r \to \infty$ modifies the scattering phase shift, leading to the complex scattering length $a(\Delta)$:
 \begin{equation}
-a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}}{\Delta + i\frac{\eta\Gamma_{\text{mol}}}{2}}
+a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}}{\Delta + i\frac{\Gamma_{\text{mol}}}{2}}
 \label{a(delta)}
 \end{equation}
-
-where $a_{\text{bg}}$ is the real background scattering length representing native elastic collisions, and $\eta$ is a dimensionless phenomenological parameter introduced to account for additional technical broadening or loss channels observed experimentally \cite{yan_controlling_2013}. The parameter $l_{\text{opt}}$ is the temperature-independent optical scattering length, which encapsulates the strength of the light-induced interaction and scales strictly linearly with the laser intensity $I$. At low temperatures, it can be directly related to the stimulated linewidth $\Gamma_{\text{stim}}(k)$ through the Wigner law scaling \cite{tiesinga2005measurement}:
-\begin{equation}
-    \Gamma_{\text{stim}}(k) = 2 k l_{\text{opt}} \Gamma_{\text{mol}}
-    \label{eq:gamma_stim_definition}
-\end{equation}
-
-To distinguish how the laser independently alters the elastic interactions and the loss mechanisms, we multiply the resonant fraction in Eq.~\ref{a(delta)} by the complex conjugate of its denominator. This algebraic separation successfully decouples the scattering length into its real (dispersive) and imaginary (absorptive) components, $a(\Delta) = a_{\text{bg}} + \delta a(\Delta) + i a''(\Delta)$:
-\begin{equation}
-    a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}\Delta}{\Delta^2 + \left(\frac{\eta \Gamma_{\text{mol}}}{2}\right)^2} - i \frac{l_{\text{opt}}\Gamma_{\text{mol}}\frac{\eta\Gamma_{\text{mol}}}{2}}{\Delta^2 + \left(\frac{\eta \Gamma_{\text{mol}}}{2}\right)^2}
-\end{equation}
-The real light-induced shift $\delta a(\Delta)$ governs the modification of the elastic properties of the gas, whereas the imaginary part $a''(\Delta)$ directly quantifies the rate of inelastic two-body losses.
-\subsection{General scaling laws for PA}
-To connect this microscopic scattering amplitude to observable experimental quantities, one must translate these individual collision events into a population decay. In quantum scattering theory, the fundamental two-body loss rate coefficient $K_2(k)$ is directly driven by the absorptive part of the scattering length through the relation $K_2(k) = \frac{8\pi\hbar}{m_{\text{at}}} a''(k, \Delta)$. 
-Grounded on the systematic study of optical Feshbach resonances by Blatt et al. \cite{blatt_systematic_2011}, substituting the expression of $a''$ into this relation yields the complete expression for the loss coefficient as a function of the collision wavevector $k$:
-\begin{equation}
-    K_2(k) = \frac{8\pi \hbar}{m_{\text{at}} k} \times \frac{\Gamma_{\text{mol}} \Gamma_{\text{stim}}(k)}{\Delta^2 + \frac{1}{4}\big(\Gamma_{\text{mol}} + \Gamma_{\text{stim}}(k)\big)^2}
-    \label{K2 complet Blatt}
-\end{equation}
-where $m_{\text{at}}$ is the atomic mass, $\Delta = \omega_{\text{L}} - \omega_{\text{mol}}$ is the laser detuning from the molecular resonance, and $\Gamma_{\text{mol}}$ is the natural molecular linewidth. The light-induced stimulated linewidth $\Gamma_{\text{stim}}(k)$ accounts for the laser coupling and scales linearly with the wavevector $k$ at low temperature according to \cite{tiesinga2005measurement}:
+where $a_{\text{bg}}$ is the real background scattering length representing native elastic collisions \cite{yan_controlling_2013}. The parameter $l_{\text{opt}}$ is the temperature-independent optical scattering length, which encapsulates the strength of the light-induced interaction and scales strictly linearly with the laser intensity $I$. The light-induced stimulated linewidth $\Gamma_{\text{stim}}(k)$ accounts for the laser coupling and scales linearly with the wavevector $k$ at low temperature according to \cite{tiesinga2005measurement}:
 \begin{equation}
     \Gamma_{\text{stim}}(k) = 2 k l_{\text{opt}} \Gamma_{\text{mol}}
     \label{eq:gamma_stim_blatt}
 \end{equation}
 where $l_{\text{opt}}$ is the temperature-independent \textbf{optical length}, a central parameter characterizing the strength of the light-matter coupling which scales linearly with the laser intensity $I$.
 
+To distinguish how the laser independently alters the elastic interactions and the loss mechanisms, we multiply the resonant fraction in Eq.~\ref{a(delta)} by the complex conjugate of its denominator. This algebraic separation successfully decouples the scattering length into its real (dispersive) and imaginary (absorptive) components, $a(\Delta) = a_{\text{bg}} + \delta a(\Delta) + i a''(\Delta)$:
+\begin{equation}
+    a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}\Delta}{\Delta^2 + \left(\frac{\Gamma_{\text{mol}}}{2}\right)^2} - i \frac{l_{\text{opt}}\Gamma_{\text{mol}}\frac{\eta\Gamma_{\text{mol}}}{2}}{\Delta^2 + \left(\frac{\eta \Gamma_{\text{mol}}}{2}\right)^2}
+\end{equation}
+The real light-induced shift $\delta a(\Delta)$ governs the modification of the elastic properties of the gas, whereas the imaginary part $a''(\Delta)$ directly quantifies the rate of inelastic two-body losses.
+
+
+\subsection{General scaling laws for PA}
+To connect this microscopic scattering amplitude to observable experimental quantities, one must translate these individual collision events into a population decay that write as 
+\begin{equation}
+    \frac{dN}{dt} = -\beta(T) N^2 - \Gamma N
+\end{equation}
+where $\beta(T)$ is related to the two-body loss rate $K_2$ and $\Gamma$ is the one-body loss rate that depends experimentally mostly on the vacuum quality.\\
+
+In quantum scattering theory, the fundamental two-body loss rate coefficient $K_2(k)$ is directly driven by the absorptive part of the scattering length through the relation $K_2(k) = \frac{8\pi\hbar}{m_{\text{at}}} a''(k, \Delta)$. 
+Grounded on the systematic study of optical Feshbach resonances by Blatt et al. \cite{blatt_systematic_2011}, substituting the expression of $a''$ into this relation yields the complete expression for the loss coefficient as a function of the collision wavevector $k$:
+\begin{equation}
+    K_2(k) = \frac{8\pi \hbar}{m_{\text{at}} k} \times \frac{\Gamma_{\text{mol}} \Gamma_{\text{stim}}(k)}{\Delta^2 + \frac{1}{4}\big(\Gamma_{\text{mol}} + \Gamma_{\text{stim}}(k)\big)^2}
+    \label{K2 complet Blatt}
+\end{equation}
+where $m_{\text{at}}$ is the atomic mass, $\Delta = \omega_{\text{L}} - \omega_{\text{mol}}$ is the laser detuning from the molecular resonance, and $\Gamma_{\text{mol}}$ is the natural molecular linewidth. 
 While $K_2$ characterizes the fundamental two-body collision process, the experimentally observed decay coefficient $\beta$ depends on the spatial density distribution of the atomic cloud of width $\sigma_x, \sigma_y, \sigma_z$. The relation between $K_2$ and $\beta$ is derived by integrating the local loss over a Gaussian density profile:
 \begin{gather}
-\frac{dN(t,T)}{dt} = -K_2 \iiint n^2(x,y,z,t,T) \, d^3r \label{eq:3.24}\\[1.5ex]
+\frac{dN(t,T)}{dt} = -K_2 \iiint n^2(x,y,z,t,T) \, d^3r \label{eq:3.24} \\[1.5ex]
 \text{with } n(x,y,z,t,T) = n_0 \exp\left( -\frac{x^2}{2\sigma_x(T)^2} - \frac{y^2}{2\sigma_y(T)^2} - \frac{z^2}{2\sigma_z(T)^2} \right) \label{eq:3.25} \\[1.5ex]
-\text{and } n_0 = \frac{N(t,T)}{(2\pi)^{3/2}\sigma_x(T)\sigma_y(T)\sigma_z(T)}\label{eq:3.25bis} \\[1.5ex]
-\frac{dN(t,T)}{dt} = -K_2 \frac{N(t,T)^2}{2\sqrt{2}V_{\text{e}}(T)} = -\beta(T) N(t,T)^2 \label{eq:3.26} \\[1.5ex]
+\text{and } n_0 = \frac{N(t,T)}{(2\pi)^{3/2}\sigma_x(T)\sigma_y(T)\sigma_z(T)} \label{eq:3.25bis} \\[1.5ex]
+\frac{dN(t,T)}{dt} = -K_2 \frac{N(t,T)^2}{2\sqrt{2}V_{\text{e}}(T)} \equiv -\beta(T) N(t,T)^2 \label{eq:3.26} \\[1.5ex]
 \text{where } V_{\text{e}}(T) = (2\pi)^{3/2} \sigma_x(T) \sigma_y(T) \sigma_z(T) \label{eq:3.27} \\[1.5ex]
 \text{Then } \beta(T) = \frac{K_2}{2\sqrt{2}V_{\text{e}}(T)} \label{eq:3.28}
 \end{gather}
 consistent with the definitions found in \cite{han_photoassociation_2018}.
 
-For low temperatures, the de Broglie wavelength settles the negligibility of the wavevector ($k \to 0$). In this threshold regime, the light-induced linewidth becomes negligible compared to the natural molecular width ($\Gamma_{\text{stim}}(k) \ll \Gamma_{\text{mol}}$). On resonance ($\Delta = 0$), substituting Eq.~\ref{eq:gamma_stim_blatt} into Eq.~\ref{K2 complet Blatt} allows the wavevector $k$ to cancel out from the prefactor, and the microscopic PA rate coefficient simplifies to:
+For low temperatures, we neglect the contribution of the wavevector since $k \to 0$. In this threshold regime, the light-induced linewidth becomes negligible compared to the natural molecular width ($\Gamma_{\text{stim}}(k) \ll \Gamma_{\text{mol}}$). On resonance ($\Delta = 0$), substituting Eq.~\ref{eq:gamma_stim_blatt} into Eq.~\ref{K2 complet Blatt} allows the wavevector $k$ to cancel out from the prefactor, and the microscopic PA rate coefficient simplifies to:
 \begin{equation}
     K_2 = \frac{16h}{m_{\text{at}}}l_{\text{opt}}
 \end{equation}
@@ -259,9 +269,7 @@ Finally, by combining Eq.~\ref{eq:3.28} and the low-temperature limit of $K_2$, 
     \frac{dN}{dt} = -\frac{4\sqrt{2} h }{V_{\text{e}} m_{\text{at}}}l_{\text{opt}}N^2 - \Gamma N
 \label{one and two body losses equation}
 \end{equation}
-which highlights that the global loss process is driven by the tunable optical length $l_{\text{opt}}$ and enhanced by the peak atomic density $n_0 \propto 1/V_{\text{e}}$.
-
-
+which highlights that the global loss process is driven by the tunable optical length $l_{\text{opt}}$ and enhanced by the peak atomic density $n_0 \propto 1/V_{\text{e}}$. 
 \subsection{Handling multiple molecular potentials}
 So far we have described the PA process as if there was only one excited-state molecular potential $U_e$
 from the perspective of atom losses.
