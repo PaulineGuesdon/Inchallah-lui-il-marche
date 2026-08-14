@@ -32,25 +32,23 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces fig:scattering\_concept}}{51}{figure.caption.126}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Adapted from \cite {guttridge_photoassociation_2019}. General concept of photoassociation: a resonant laser couples a pair of colliding atoms from the free-atom continuum to a bound state of an excited molecular potential. Within this potential, the molecule occupies quantized vibrational states, described by the solutions of the 1D radial Schrödinger equation plotted for each level.}}{54}{figure.caption.137}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces fig:u-g symmetry}}{59}{figure.caption.177}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces fig:hund}}{60}{figure.caption.179}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces fig:hund}}{61}{figure.caption.181}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces fig:pa-ytterbium-potentials}}{62}{figure.caption.189}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces fig:pa-ytterbium-potentials}}{63}{figure.caption.193}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces fig:pa-sakurai-wkb}}{65}{figure.caption.202}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces fig:pa-mass-scaling}}{68}{figure.caption.213}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces PA slave 1}}{70}{figure.caption.218}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces frequences 88sr 87sr}}{71}{figure.caption.220}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Beating spectrum}}{72}{figure.caption.222}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Bessel functions}}{73}{figure.caption.225}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Scheme of the PDH sidebands addressing the atomic resonance. The purple plot is the dark signal -with the three interfering components between the carrier and the first harmonics- shifted by $f_0'-f_0$.}}{74}{figure.caption.226}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Atomic loss due to FP cavity PDH sideband that is adressing the $^1S_0 - ^3P_1$ line at $\Delta = f_0 - f_M$ with $f_M$ the modulation frequency of the PDH EOM.}}{74}{figure.caption.227}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Resonances of $^{88}\text {Sr}$}}{79}{figure.caption.240}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces 88sr exponential decay}}{82}{figure.caption.264}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Evolution of the atom number as a function of the illumination time at $f = -6$~MHz}}{85}{figure.caption.270}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr ($I = 19$ W/cm$^2$). All detunings are measured from the $^{87}$Sr atomic resonance.}}{88}{figure.caption.278}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$). No exponential decay measurement is available for this line. All detunings are measured from the $^{87}$Sr atomic resonance.}}{90}{figure.caption.280}%
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr ($I = 5.6$ W/cm$^2$ for t = 1000~ms). All detunings are measured from the $^{87}$Sr atomic resonance.}}{92}{figure.caption.282}%
-\contentsline {figure}{\numberline {3.27}{\ignorespaces predissociation}}{95}{figure.caption.291}%
-\contentsline {figure}{\numberline {3.28}{\ignorespaces sequence chirp}}{96}{figure.caption.293}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Gerade/ungerade electronic symmetry}}{59}{figure.caption.178}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Hund's case (c) coupling scheme}}{59}{figure.caption.181}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Density of molecular potentials for $^{173}\text {Yb}$}}{61}{figure.caption.186}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces fig:pa-sakurai-wkb}}{63}{figure.caption.195}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces fig:pa-mass-scaling}}{66}{figure.caption.206}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces PA slave 1}}{68}{figure.caption.211}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces frequences 88sr 87sr}}{69}{figure.caption.213}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Beating spectrum}}{70}{figure.caption.215}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Bessel functions}}{71}{figure.caption.218}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Scheme of the PDH sidebands addressing the atomic resonance. The purple plot is the dark signal -with the three interfering components between the carrier and the first harmonics- shifted by $f_0'-f_0$.}}{72}{figure.caption.219}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Atomic loss due to FP cavity PDH sideband that is adressing the $^1S_0 - ^3P_1$ line at $\Delta = f_0 - f_M$ with $f_M$ the modulation frequency of the PDH EOM.}}{72}{figure.caption.220}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Resonances of $^{88}\text {Sr}$}}{77}{figure.caption.233}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces 88sr exponential decay}}{80}{figure.caption.257}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Evolution of the atom number as a function of the illumination time at $f = -6$~MHz}}{83}{figure.caption.263}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr ($I = 19$ W/cm$^2$). All detunings are measured from the $^{87}$Sr atomic resonance.}}{86}{figure.caption.271}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$). No exponential decay measurement is available for this line. All detunings are measured from the $^{87}$Sr atomic resonance.}}{88}{figure.caption.273}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr ($I = 5.6$ W/cm$^2$ for t = 1000~ms). All detunings are measured from the $^{87}$Sr atomic resonance.}}{90}{figure.caption.275}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces predissociation}}{93}{figure.caption.284}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces sequence chirp}}{94}{figure.caption.286}%
 \addvspace {10\p@ }

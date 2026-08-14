@@ -279,252 +279,96 @@ Finally, by combining Eq.~\ref{eq:3.28} and the low-temperature limit of $K_2$, 
 \end{equation}
 which highlights that the global loss process is driven by the tunable optical length $l_{\text{opt}}$ and enhanced by the peak atomic density $n_0 \propto 1/V_{\text{e}}$. 
 
-
 \subsection{Handling multiple molecular potentials}
-So far we have described the PA process as if there was only one excited-state molecular potential $U_e$
-from the perspective of atom losses.
-But the molecules formed in this process have a rich internal structure. Understanding this
-structure is therefore essential to optimise $\beta(T)$ experimentally.\\
+So far, the photoassociation (PA) process has been presented assuming a simplified picture with a single excited-state molecular potential $U_e$. However, the molecules created via PA exhibit a rich internal structure, making the identification of accessible excited states essential for predicting and optimizing the loss rate coefficient $\beta(T)$.
 
-While exciting a single atom is straightforward, identifying the correct
-molecular state to target is considerably more involving, since a large
-number of potentials and internal states coexist. To navigate this complexity,
-we now want to determine and enumerate the molecular potentials $U_e$ by introducing the molecular quantum
-numbers that label these potentials to finally determine their possible transition excited states.\\
+Unlike atomic spectroscopy, where selecting target states is straightforward, identifying specific molecular target states is significantly more involved due to the dense coexistence of multiple potential energy curves. Following the Born-Oppenheimer approximation, the fast electronic motion decouples from the slower nuclear motion. Each distinct molecular electronic configuration—labeled by its set of molecular quantum numbers—gives rise to an adiabatic potential energy curve $U_e(r)$. Determining these curves $U_e(r)$ is crucial, as they dictate the bound-state wavefunctions $\psi_e(r)$ and govern the overall PA dynamics.
 
-In analogy to the atomic case, the Born-Oppenheimer approximation allows for the separation of electronic and 
-nuclear motions. Consequently, each specific molecular electronic configuration—defined by its relevant molecular
-quantum numbers—gives rise to a distinct adiabatic potential energy curve $U_e(r)$. The primary objective of this 
-section is to identify and characterize these molecular potentials, upon which the bound-state wavefunctions 
-$\psi_e(r)$ and the overall photoassociation dynamics crucially depend. This framework provides the essential 
-foundation for mapping and enumerating the excited vibrational states probed during our spectroscopic measurements.\\
+\subsubsection{Symmetry constraints and Pauli exclusion principle}
+In ultracold gases, ground-state collisions occur predominantly in the $s$-wave regime ($R_i = 0$), as higher partial waves ($l > 0$) are reflected by the centrifugal barrier before reaching the short-range interaction region. For fermionic $^{87}\text{Sr}$ atoms, Fermi-Dirac statistics impose a overall antisymmetric wavefunction $\ket{\Psi}$ under nuclear permutation. 
 
-In ultracold gases, only collisions in s-wave are impacted by the interaction potential,
-because partial waves of higher $l$ mostly are reflected by the centrifugal barrier before crossing regions where interactions 
-are not negligeable. Then in respect with Fermi statistics (related to the Pauli principle) the orbital wavefunction $\ket{\phi}$ 
-being symmetric the spin wavefunction should be odd to conserve the antisymmetric nature of the total wavefunction $\ket{\psi}$
-for fermions. For two atoms A and B possibly in spin state $\ket{\beta_1}$ or $\ket{\beta_2}$ the expression of total wavefunction
+For two identical atoms A and B with spatial states $\ket{\beta_1}$ and $\ket{\beta_2}$, the total molecular wavefunction is expressed as:
 \begin{equation}
-    \ket{\Psi} = \left(\ket{\beta_1}_A \ket{\beta_2}_B -\rho \times p \ket{\beta_1}_B \ket{\beta_2}_A\right)
-     \otimes\ket{\phi}
-     \label{wavefunction parity}
+    \ket{\Psi} = \left(\ket{\beta_1}_A \ket{\beta_2}_B - \rho \times p \ket{\beta_1}_B \ket{\beta_2}_A\right) \otimes \ket{\phi}
+    \label{wavefunction parity}
 \end{equation}
+where $\ket{\phi}$ represents the total nuclear spin wavefunction. Since $s$-wave collisions ($R_i = 0$) feature a symmetric spatial wavefunction, Pauli's principle mandates that the ground-state nuclear spin wavefunction $\ket{\phi}$ must be antisymmetric. Because electric dipole ($E1$) transitions act purely on electronic and spatial degrees of freedom, the nuclear spin acts as a spectator; hence, \textbf{$\ket{\phi}$ remains antisymmetric throughout the PA process.}
 
-the coefficients $p_i= (-1)^R$ the parity of the electronic state i and $\rho = p_1 p_2$ the product of the parity of ground and excited
-states. In the case of the fermions $\rho = -1$ and $\rho = +1$ for bosons, which constrains the \textbf{rotational quantum number $R$} to values $R = 1, 3$ or $5$... 
-\cite{reichenbach_optical_nodate}.\\
+Following \cite{reichenbach_optical_nodate}, $\rho = p_1 p_2$ denotes the product of the intrinsic electronic parities of the two isolated atoms, while $p = (-1)^R$ reflects the rotational parity associated with the \textbf{molecular rotational quantum number $R$.}
 
-The rotational quantum number $R$ describes the relative orbital motion of the two colliding nuclei. Under the exchange of the two identical atoms, the spatial rotational wavefunction acquires a parity phase of $(-1)^R$. Due to the overall exchange symmetry dictated by Pauli's principle, a given electronic and spin state only allows specific values of $R$ (e.g., odd $R$ for $p$-wave collisions or even $R$ for $s$-wave collisions).
-For each value of R the electronic spatial wavefunction $\ket{\Psi_{\pm}}$ can be odd or even under nuclei exchange. This symmetry is denoted by the terms \textbf{gerade} (even) and \textbf{ungerade} (odd). Figure \ref{fig:u-g symmetry}
-is a representation of the probability density of the electronic wavefunctions : we see that for the odd wavefunction cancels the probability of finding
-electrons in between. 
-
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/proba_presence.pdf}
-    \caption[fig:u-g symmetry]{Gerade/ungerade specificitie of the electronic wavefunction of electrons orbiting around nucleus A and B.
-    Left : modulus square of the wavefunction $\left|\psi_-(z)\right|^2$ for odd parity of $R=1,3,5...$. The electrons have a non-zero
-    probability of being found in between the two atoms contrarely to Right: for even parity of $R=0,2,4...$ the density probability is zero 
-    in between the two atoms.}
+    \caption[Gerade/ungerade electronic symmetry]{Gerade ($g$) and ungerade ($u$) spatial electronic wavefunctions for electrons orbiting nuclei A and B. Left: Square modulus $\left|\psi_-(z)\right|^2$ for an ungerade state, showing a non-zero probability density between the two nuclei. Right: For a gerade state, the electronic probability density vanishes at the midpoint between the nuclei.}
     \label{fig:u-g symmetry}
 \end{figure}
 
-The spin-orbit coupling also plays a crucial role in determining the molecular structure. In this context, the total angular
-momentum of the molecule is defined as $T = R + F = R + I + J$, where $F$ denotes the total spin of the two atoms $f_1 + f_2$, $J = j_1+j_2$
-accounts for the total electronic angular momentum and R is the rotational angular momentum of the molecule. \\
+\subsubsection{Angular momentum coupling and state enumeration}
+Spin-orbit coupling plays a dominant role in shaping the excited molecular structure near the $^1\text{S}_0 - {}^3\text{P}_1$ intercombination asymptote. The total angular momentum of the molecule is defined by $T = R + F = R + I + J$, where $F = f_1 + f_2$ is the coupled atomic angular momentum, $J = j_1 + j_2$ is the total electronic angular momentum, and $R$ is the rotational angular momentum.
 
-The projections of these angular momenta onto the internuclear axis are characterised by
+Along the internuclear axis, the projection of the electronic angular momentum is quantified by:
 \begin{equation}
     \Omega = \Lambda + \Sigma
 \end{equation}
+where $\Lambda$ and $\Sigma$ represent the internuclear projections of the orbital and spin angular momenta, respectively. Because spin-orbit interaction is strong relative to rotational coupling at short to intermediate ranges, the molecule is appropriately described within Hund's case (c) framework (see Fig.~\ref{fig:hund}), where $\Omega$ remains a good quantum number.
 
-where $\Lambda$ represents the projection of the orbital momentum of the molecule on the internuclear axis
-and $\Sigma$ the projection of the spin angular momentum. Furthermore, $M_T$ denotes the projection of $T$ onto a chosen quantization axis.\\
-
-In particular case of the $^1S_0$ - $^3P_1$ molecular state of $^{87}Sr$, the spin-orbit interaction is sufficiently strong to couple the electronic angular momentum
-to the internuclear axis. This regime is quantified by $\Omega$ and is appropriately described within the framework of Hund's case (c) (see Fig.\ref{fig:hund}).\\
-
-
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/hund_case_c.pdf}
-    \caption[fig:hund]{Hund case (c) is a case where spin-orbit coupling dominates the interaction, resulting in a angular momenta of projection
-    $\hbar \Omega$ in internuclear axis. In this case we took $R = 0$ as in many cases. }
+    \caption[Hund's case (c) coupling scheme]{Hund's case (c) coupling scheme, where strong spin-orbit interaction couples the total electronic angular momentum to the internuclear axis with projection $\hbar \Omega$. In most ultracold photoassociation scenarios, the rotational quantum number is low ($R = 0, 1$).}
     \label{fig:hund}
 \end{figure}
 
-The spin-orbit coupling also plays a crucial role in determining the molecular structure. In this context, the total angular
-momentum of the molecule is defined as $T = R + F = R + I + J$, where $F$ denotes the total spin of the two atoms $f_1 + f_2$, $J = j_1+j_2$
-accounts for the total electronic angular momentum and R is the rotational angular momentum of the molecule. \\
+To determine the accessible target molecular states, we analyze the parity requirements in both initial and final asymptotes:
 
-The projections of these angular momenta onto the internuclear axis are characterised by
-\begin{equation}
-    \Omega = \Lambda + \Sigma
-\end{equation}
+\begin{itemize}
+    \item \textbf{Ground collisional state ($^1\text{S}_0 + {}^1\text{S}_0$):}\\
+    Both atoms share identical, even electronic parity ($p_1 = p_2 = +1$), giving $\rho = +1$. To maintain an overall antisymmetric wavefunction with an antisymmetric spin state $\ket{\phi}$, we require $\rho \times p = +1$. This implies $p = +1$, which restricts ground $s$-wave collisions to even rotational numbers ($R_i = 0, 2 \dots$).
+    
+    \item \textbf{Excited molecular state ($^1\text{S}_0 + {}^3\text{P}_1$):}\\
+    The asymptotic electronic parities are opposite ($p_1 = +1, p_2 = -1$), leading to a constant electronic parity product $\rho = -1$. Because the nuclear spin state remains antisymmetric, the Pauli constraint $\rho \times p = +1$ requires $p = -1$. Consequently, the excited molecular states accessible from $s$-wave collisions must feature odd rotational quantum numbers ($R_f = 1, 3, 5 \dots$).
+\end{itemize}
 
-where $\Lambda$ represents the projection of the orbital momentum of the molecule on the internuclear axis
-and $\Sigma$ the projection of the spin angular momentum. Furthermore, $M_T$ denotes the projection of $T$ onto a chosen quantization axis.\\
-
-In particular case of the $^1S_0$ - $^3P_1$ molecular state of $^{87}Sr$, the spin-orbit interaction is sufficiently strong to couple the electronic angular momentum
-to the internuclear axis. This regime is quantified by $\Omega$ and is appropriately described within the framework of Hund's case (c) (see Fig.\ref{fig:hund}).\\
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/hund_case_c.pdf}
-    \caption[fig:hund]{Hund case (c) is a case where spin-orbit coupling dominates the interaction, resulting in a angular momenta of projection
-    $\hbar \Omega$ in internuclear axis. In this case we took $R = 0$ as in many cases. }
-    \label{fig:hund}
-\end{figure}
-
-Applied to the case of $^{87}Sr$, we will photoassociate atoms in the $F=11/2$ hyperfine state. \\
-Say we have one atom in the $^1S_0$ state with maximum value $f_1=9/2$ and one in the $^3P_1$ state at maximum $f_2=11/2$: we can have
-an electronic spin $J = 1$ for the two atoms and possible values of the associated total atomic angular momentum F:
+Applying these selection rules to $^{87}\text{Sr}$ atoms photoassociated in the $F = 11/2$ manifold (with $f_1 = 9/2$ for $^1\text{S}_0$ and $f_2 = 11/2$ for $^3\text{P}_1$), the electronic angular momentum $J = 1$ couples with nuclear spin to yield total atomic angular momenta $F \in \{1, 2, \dots, 10\}$. Combining $F$ with the allowed odd rotational modes ($R_f = 1, 3, 5\dots$) and taking into account electric dipole selection rules ($|\Delta T| \le 1$ with $T=0 \not\rightarrow T=0$), the accessible final states $T^f$ satisfy:
 \begin{align}
-\text{For } J=1, &\quad {F = 1, 2, 3... 10}
+\text{For } R_f=1, &\quad T^f \in \{1, 2, \dots, 10\}\\
+\text{For } R_f=3, &\quad T^f \in \{1, 2, \dots, 10\}\\
+\text{For } R_f=5, &\quad T^f \in \{1, 2, \dots, 10\}
 \end{align}
+\subsubsection{Effective Hamiltonian and Potential Modeling}
 
-The possible values of total angular momentum of the excited molecule are
-\begin{align}
-\text{For } R=1, &\quad {T = 0, 2, 3... 11}\\
-\text{For } R=3, &\quad {T = 2, 3,... 13}\\
-\text{For } R=5, &\quad {T = 4, 5, ... 15}
-\end{align}
-
-As for atoms there are selection rules for transitions from a collisional state to a molecular excited 
-state fixed by the angular momentum of the electrons.
-$|\Delta J| = 0, 1$ gives $|\Delta T |= 0, 1$ with $T=0 \rightarrow T=0$ forbidden.\\
-In the end the accessible transitions in the first molecular excited state of the $f_1=11/2$ are
-\begin{align}
-\text{For } R=1, &\quad {T^f = 1, 2, 3... 10}\\
-\text{For } R=3, &\quad {T^f = 1,2... 10}\\
-\text{For } R=5, &\quad {T^f = 1,2 ... 10}
-\end{align}
-
-with only even values of R in respect with wavefunction parity of \ref{fig:u-g symmetry}.
-Finally we estimate about 981 combinations of accessible $(R,T^f)$ molecular external states
-which is a complex number of potentials to explore experimentally. We expect to have a spectrum
-similar to the experiment on $^{173}Yb$ \cite{han_photoassociation_2018} realised in the intercombination
-line where the momentum projection associated to the molecular potentials $0_u, 1_g, 1_u, 0_g$ (see figure \ref{fig:pa-ytterbium-potentials})
-comes from the hyperfine structure. For this species it is indeed expected
-to count 205 different configurations of $(T, F, R)$ for the excited molecular states on intercombination line with an
-atomic potential written as \ref{ytt potential}.
+Taking into account the hyperfine-induced mixing between $g$ and $u$ electronic manifolds ($0_u, 1_u, 0_g, 1_g$) at long range—analogous to observations in $^{173}\text{Yb}$ \cite{han_photoassociation_2018}—we estimate a total of approximately **981 accessible $(R_f, T^f)$ molecular configurations**. This massive density of states illustrates the extreme complexity of the excited molecular spectrum to be mapped experimentally.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/ytterbium.pdf}
-    \caption[fig:pa-ytterbium-potentials]{Density of molecular potentials for $^{173}Yb$ with three hyperfine states inhancing numerous
-    triplet of quantum numbers $(T,F,R)$. The spectral lines are identified by $S_{u/g}$ with $S$ the total orbital momentum of the molecule
-    and $u/g$ the parity of the electronic wavefunction (see \ref{fig:u-g symmetry}).}
+    \caption[Density of molecular potentials for $^{173}\text{Yb}$]{Density of molecular potentials for $^{173}\text{Yb}$ with three hyperfine states, giving rise to numerous triplets of quantum numbers $(T, F, R)$. The spectral lines are identified as $S_{u/g}$, where $S$ is the total orbital momentum projection of the molecule and $u/g$ denotes the electronic parity (see Fig.~\ref{fig:u-g symmetry}).}
     \label{fig:pa-ytterbium-potentials}
 \end{figure}
 
-The high density of states expected for $^{87}Sr$ makes the task of spectral assignment particularly challenging. To move beyond a purely statistical 
-estimation and accurately predict the energy levels of these 981 configurations, a precise modeling of the molecular interaction is required. 
-This involves a description of the coupling between the rotation of the nuclear frame, the electronic degrees of freedom, and the hyperfine structure.
-Following the molecular picture introduced in section 3.1.1, the energy of these states is governed by the Hamiltonian $\hat{H}$ which, for a Sr-Sr system, 
-can be expressed as:
+The high density of states expected for $^{87}\text{Sr}$ makes spectral assignment particularly challenging. To move beyond a statistical estimation and accurately predict the energy levels of these 981 configurations, precise modeling of the molecular interaction is required. This involves describing the coupling between the rotation of the nuclear frame, the electronic degrees of freedom, and the hyperfine structure.
+
+Following the molecular picture introduced in Section~3.1.1, the energy of these states is governed by the total Hamiltonian $\hat{H}$, which for a Sr--Sr system can be expressed as:
 \begin{equation}
-    \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{U}_{BO} + \hat{H}_{HF}
-    \label{general hamiltonian of molecule}
+    \hat{H} = \frac{\hat{p}_r^2}{2\mu} + \frac{\hbar^2}{2\mu r^2} \hat{R}^2 + \hat{U}_{\text{BO}} + \hat{H}_{\text{hf}}
+    \label{eq:general_hamiltonian_molecule}
 \end{equation}
-
-where some electronic interactions orders has been neglected depending on the Hund's case. For $^{87}Sr$
-we approximate the potential to be as for $^{173}Yb$:
-
+where higher-order electronic interactions have been neglected depending on the relevant Hund's case. For $^{87}\text{Sr}$, the Born-Oppenheimer potential $\hat{U}_{\text{BO}}$ is approximated using a long-range expansion similar to $^{173}\text{Yb}$:
 \begin{equation}
-    \hat{U}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
-    \label{ytt potential}
+    \hat{U}_{\text{BO}}(r) = -\frac{C_6}{r^6} \left( 1 - \frac{\sigma^6}{r^6} \right) - s \frac{C_3^{\Omega}}{r^3}
+    \label{eq:sr_potential}
 \end{equation}
+where $s = +1$ and $s = -1$ correspond to $g$ and $u$ potentials, respectively.
 
+The atomic hyperfine Hamiltonian $\hat{H}_{\text{hf}}$ acts solely on the $^3\text{P}_1$ atom (with nuclear spin $i_1 = 9/2$ and electronic angular momentum $j_1 = 1$), as the ground-state $^1\text{S}_0$ atom has $j_2 = 0$ and thus no hyperfine interaction:
 \begin{equation}
-\hat{H}_{\mathrm{hf}} =
-A \, (\mathbf{i}_1 \cdot \mathbf{j}_1)
-+
-B \,
-\frac{
-3(\mathbf{i}_1 \cdot \mathbf{j}_1)^2
-+ \frac{3}{2}(\mathbf{i}_1 \cdot \mathbf{j}_1)
-- i_1(i_1+1)\, j_1(j_1+1)
-}{
-2 i_1 (2 i_1 - 1)\,
-2 j_1 (2 j_1 - 1)
-}
+    \hat{H}_{\text{hf}} = A \, (\mathbf{i}_1 \cdot \mathbf{j}_1) + B \, \frac{3(\mathbf{i}_1 \cdot \mathbf{j}_1)^2 + \frac{3}{2}(\mathbf{i}_1 \cdot \mathbf{j}_1) - i_1(i_1+1) j_1(j_1+1)}{2 i_1 (2 i_1 - 1) \, 2 j_1 (2 j_1 - 1)}
 \end{equation}
+where $A$ and $B$ are the magnetic dipole and electric quadrupole hyperfine constants, respectively.
 
-$s=\pm1$ for gerade and ungerade potentials respectively.
-The hyperfine term of the atom in $^1S_0$ is zero because its electronic angular momentum is zero.
-Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts. \\
+Among these potential curves, approximately 80 bound internal states were experimentally identified for $^{173}\text{Yb}$ \cite{han_photoassociation_2018}. Atom-loss spectra, recorded as a function of PA laser detuning, reveal the position of bound states relative to the atomic resonance $|^1\text{S}_0, F=5/2\rangle \to |^3\text{P}_1, F=7/2\rangle$. Near this threshold, atoms are illuminated for $30\,\text{ms}$ at low intensity ($I = 37\,\text{mW/cm}^2$) to avoid power broadening, resolving bound states closest to the dissociation limit. At larger red detunings, higher laser power and optimized exposure times are used to maximize signal depth.
 
-Finally we estimate about 981 combinations of accessible $(R,T^f)$ molecular external states
-which is a complex number of potentials to explore experimentally. We expect to have a spectrum
-similar to the experiment on $^{173}Yb$ \cite{han_photoassociation_2018} realised in the intercombination
-line where the momentum projection associated to the molecular potentials $0_u, 1_g, 1_u, 0_g$ (see figure \ref{fig:pa-ytterbium-potentials})
-comes from the hyperfine structure. For this species it is indeed expected
-to count 205 different configurations of $(T, F, R)$ for the excited molecular states on intercombination line with an
-atomic potential written as \ref{ytt potential}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/ytterbium.pdf}
-    \caption[fig:pa-ytterbium-potentials]{Density of molecular potentials for $^{173}Yb$ with three hyperfine states inhancing numerous
-    triplet of quantum numbers $(T,F,R)$. The spectral lines are identified by $S_{u/g}$ with $S$ the total orbital momentum of the molecule
-    and $u/g$ the parity of the electronic wavefunction (see \ref{fig:u-g symmetry}).}
-    \label{fig:pa-ytterbium-potentials}
-\end{figure}
-
-The high density of states expected for $^{87}Sr$ makes the task of spectral assignment particularly challenging. To move beyond a purely statistical 
-estimation and accurately predict the energy levels of these 981 configurations, a precise modeling of the molecular interaction is required. 
-This involves a description of the coupling between the rotation of the nuclear frame, the electronic degrees of freedom, and the hyperfine structure.
-Following the molecular picture introduced in section 3.1.1, the energy of these states is governed by the Hamiltonian $\hat{H}$ which, for a Sr-Sr system, 
-can be expressed as:
-\begin{equation}
-    \hat{H} = \frac{\hat{p_r}^2}{2\mu} + \frac{\hbar^2}{2\mu r^2}R\left(R+1\right) +\hat{U}_{BO} + \hat{H}_{HF}
-    \label{general hamiltonian of molecule}
-\end{equation}
-
-where some electronic interactions orders has been neglected depending on the Hund's case. For $^{87}Sr$
-we approximate the potential to be as for $^{173}Yb$:
-
-\begin{equation}
-    \hat{U}_{BO} = \frac{-C_6}{r^6}\left(1-\frac{\sigma^6}{r^6}\right) - s\frac{C_3^{\Omega}}{r^3}
-    \label{ytt potential}
-\end{equation}
-
-\begin{equation}
-\hat{H}_{\mathrm{hf}} =
-A \, (\mathbf{i}_1 \cdot \mathbf{j}_1)
-+
-B \,
-\frac{
-3(\mathbf{i}_1 \cdot \mathbf{j}_1)^2
-+ \frac{3}{2}(\mathbf{i}_1 \cdot \mathbf{j}_1)
-- i_1(i_1+1)\, j_1(j_1+1)
-}{
-2 i_1 (2 i_1 - 1)\,
-2 j_1 (2 j_1 - 1)
-}
-\end{equation}
-
-$s=\pm1$ for gerade and ungerade potentials respectively.
-The hyperfine term of the atom in $^1S_0$ is zero because its electronic angular momentum is zero.
-Only the hyperfine interaction of the atom with $i_1, j_1$ in $^3P_1$ counts. \\
-
-Among these potentials, approximately 80 internal states of $^{173}Yb$ were measured. Atom loss 
-spectra, recorded as a function of PA laser detuning, reveal the position of bound states relative 
-to the atomic resonance $|^1S_0, F=5/2\rangle \to |^3P_1, F=7/2\rangle$. Near this resonance, atoms 
-are illuminated for 30 ms at a low intensity ($I = 37$ mW/cm$^2$) to avoid power broadening, thus 
-allowing the bound states closest to the dissociation limit to be resolved. At larger red detunings, 
-the intensity is increased and the illumination time is optimized to maximize the depth of the loss.
-
-Theoretically, these results are analyzed by plotting the approximated potentials and adjusting 
-parameters such as the $C_n$ coefficients to match the observed vibrational states. Several scaling 
-laws and approximations assist in this assignment: the WKB approximation provides a semi-classical 
-description of the bound states, while the LeRoy-Bernstein scaling is a powerful approach to predict 
-the position of consecutive lines near the dissociation limit without requiring the full knowledge of 
-the potential shape. Finally, mass scaling across strontium isotopes, as demonstrated in \cite{borkowski_mass_2014}, 
-serves as a robust tool to cross-check these predictions.
-
+Theoretically, these experimental loss lines are assigned by computing the eigenvalues of the effective Hamiltonian and adjusting parameters such as $C_n$ coefficients to match observed vibrational levels. Several semi-classical tools aid this assignment: the WKB approximation describes the near-threshold bound states, while LeRoy-Bernstein scaling predicts the spacing of consecutive vibrational lines near the dissociation limit without requiring detailed short-range potential data. Finally, mass scaling across strontium isotopes \cite{borkowski_mass_2014} serves as a robust benchmark to cross-check these energy assignments.
 \subsection{Internal energy states}
 \subsubsection{WKB approximation}
 
