@@ -14,45 +14,45 @@ Warning--empty journal in dalibard_interactions_nodate
 Warning--empty year in dalibard_interactions_nodate
 Warning--empty journal in reichenbach_optical_nodate
 Warning--empty year in reichenbach_optical_nodate
-You've used 108 entries,
+You've used 105 entries,
             1876 wiz_defined-function locations,
-            1137 strings with 26253 characters,
-and the built_in function-call counts, 34274 in all, are:
-= -- 3281
-> -- 1888
+            1119 strings with 26033 characters,
+and the built_in function-call counts, 33451 in all, are:
+= -- 3187
+> -- 1876
 < -- 0
-+ -- 671
-- -- 563
-* -- 2468
-:= -- 4859
-add.period$ -- 122
-call.type$ -- 108
-change.case$ -- 105
++ -- 665
+- -- 560
+* -- 2413
+:= -- 4750
+add.period$ -- 119
+call.type$ -- 105
+change.case$ -- 102
 chr.to.int$ -- 0
-cite$ -- 115
-duplicate$ -- 1883
-empty$ -- 2513
-format.name$ -- 563
-if$ -- 8364
+cite$ -- 112
+duplicate$ -- 1836
+empty$ -- 2433
+format.name$ -- 560
+if$ -- 8156
 int.to.chr$ -- 0
-int.to.str$ -- 108
-missing$ -- 104
-newline$ -- 344
-num.names$ -- 107
-pop$ -- 251
+int.to.str$ -- 105
+missing$ -- 101
+newline$ -- 335
+num.names$ -- 104
+pop$ -- 247
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1706
+skip$ -- 1671
 stack$ -- 0
-substring$ -- 1600
-swap$ -- 1096
+substring$ -- 1532
+swap$ -- 1073
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 7
-while$ -- 244
-width$ -- 111
-write$ -- 1092
+while$ -- 234
+width$ -- 108
+write$ -- 1059
 (There were 9 warnings)
