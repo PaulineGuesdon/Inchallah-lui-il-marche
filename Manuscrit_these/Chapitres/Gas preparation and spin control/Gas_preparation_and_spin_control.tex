@@ -12,7 +12,7 @@ In the ground state $^1S_0$, the total electronic angular momentum is zero ($J=0
 Furthermore, the decoupling between the nuclear spin and the electronic shell in the ground state leads to an $SU(N)$ collisional symmetry: the elastic scattering properties are strictly independent of the nuclear spin state $m_F$. The spin manipulation techniques developed by our group \cite{litvinov_measuring_2021} exploit this symmetry to yield a highly controllable quantum system whose internal spin dynamics remain decoupled from the spatial dynamics of the cloud once thermalized.
 
 Preparation of the cold gas follows the standard scheme of ultracold gas experiments.
-For $t_{\text{BlueMot}} = 8.2~\text{s}$, 2D transverse cooling (TC) collimates atoms prior to a Zeeman slowing stage, followed by a blue Magneto-Optical Trap (MOT), operating on the broad $^1S_0 \rightarrow {}^1P_1$ transition (see Fig.~\ref{energy levels sr}). Following this blue stage, repumping light is applied for $t_{\text{Repump}} = \text{\hl{time}}$, swept across multiple hyperfine states of the $^3P_2 \rightarrow {}^3D_2$ transition to recover approximately $25\%$ of the atoms trapped in the metastable $^3P_2$ state. The atoms are then cooled to temperatures close to $T = \text{\hl{temperature}}$ by a dynamic red MOT for $t_{\text{Red}}^{\text{tot}} = \text{\hl{time}}$ on the narrow $^1S_0 \rightarrow {}^3P_1$ transition. Finally, the gas is loaded and evaporated inside an Optical Dipole Trap (ODT).
+For $t_{\text{BlueMot}} = 8.2~\text{s}$, 2D transverse cooling (TC) collimates atoms prior to a Zeeman slowing stage, followed by a blue Magneto-Optical Trap (MOT), operating on the broad $^1S_0 \rightarrow {}^1P_1$ transition (see Fig.~\ref{energy levels sr}). Following this blue stage, repumping light is applied for $t_{\text{Repump}} = \text{\textcolor{blue}{time}}$, swept across multiple hyperfine states of the $^3P_2 \rightarrow {}^3D_2$ transition to recover approximately $25\%$ of the atoms trapped in the metastable $^3P_2$ state. The atoms are then cooled to temperatures close to $T = \text{\hl{temperature}}$ by a dynamic red MOT for $t_{\text{Red}}^{\text{tot}} = \text{\textcolor{blue}{time}}$ on the narrow $^1S_0 \rightarrow {}^3P_1$ transition. Finally, the gas is loaded and evaporated inside an Optical Dipole Trap (ODT).
 
 \begin{figure}[H]
     \centering
@@ -26,7 +26,7 @@ In this chapter, I describe each stage of the cooling and loading process from a
 \section{Fermi gas preparation}
 \hl{Ajouter ce qui est judicieux d'optimiser à chaque étape : nombre d'atomes, $T$, $T/T_F$, nombre d'atomes final chargé à chaque étape, vitesse.}
 
-Solid strontium is vaporized in an oven heated to $490^\circ\text{C}$, outputting an atomic beam through a cluster of fine capillaries that provide initial spatial collimation.
+Solid strontium is vaporized in an oven heated to $\textcolor{blue}{490}^\circ\text{C}$, outputting an atomic beam through a cluster of fine capillaries that provide initial spatial collimation.
 
 \subsection{Blue optical setup}
 The first cooling stages operate on the main $^1S_0 \rightarrow {}^1P_1$ transition using a master-slave laser architecture (see Fig.~\ref{fig:intro-chaine-bleue}). The master laser is an Extended-Cavity Diode Laser (ECDL, New Focus Vortex) frequency-stabilized via saturated absorption spectroscopy on $^{88}\text{Sr}$ \cite{bataille_realisation_nodate}. It seeds three high-power slave laser diodes, forcing them to inherit the master's narrow linewidth and central frequency while delivering the high output power needed for the cooling beams. This stage brings the atomic beam to a mean longitudinal velocity of \hl{$v$} at an equivalent beam temperature of \hl{$T=$}.
@@ -70,7 +70,7 @@ For this stage, we drive the broad-linewidth $^1S_0 \rightarrow {}^1P_1$ transit
 f_{\mathrm{TC}} = f_{\mathrm{Blue,Master}} + f^{\mathrm{RF}}_{\mathrm{TC}}
 \end{equation}
 
-Due to anisotropic geometric constraints of our atomic beam, the intensity in the horizontal arm is set roughly three times higher than in the vertical arm, though both remain below saturation ($I \ll I_{\text{sat}}$) over an interaction area of approximately $10~\text{cm}^2$. The TC laser remains active throughout subsequent blue-cooling stages to ensure continuous atomic flux collimation.
+Due to anisotropic geometric constraints of our atomic beam, the intensity in the horizontal arm is set roughly three times higher than in the vertical arm, \colorbox{blue}{puissance pour $nI_{sat}$} though both remain below saturation ($I \ll I_{\text{sat}}$) over an interaction area of approximately $10~\text{cm}^2$. The TC laser remains active throughout subsequent blue-cooling stages to ensure continuous atomic flux collimation.
 
 \subsubsection{Detuning and power optimization}
 
@@ -87,12 +87,11 @@ While ideal two-level theory predicts an optimal detuning of $\Delta = -\Gamma/2
 \label{felix faisant}
 \end{figure}
 
-Future upgrades include replacing the current TC slave diode with a higher-power diode and re-optimizing $\Delta_{\text{eff}}$ to further enhance atom capture.\\
+Future upgrades in progress include replacing the current TC slave diode with a higher-power diode and re-optimizing $\Delta_{\text{eff}}$ to further enhance atom capture.\\
 Following transverse collimation, the atomic beam enters the Zeeman slower stage along the main longitudinal axis.
 
 \subsection{Zeeman cooling}
 \hl{Valeur du gradient de champ B?}
-
 Following transverse collimation, atoms are decelerated longitudinally using a Zeeman slower \cite{phillips_laser_1982}. The mechanism relies on a counter-propagating laser beam maintained on resonance with the decelerating atoms as they travel through a spatially varying magnetic field gradient $B(z)$ generated by a tapered solenoid.
 
 To compensate for the decreasing Doppler shift $k v(z)$ as atoms slow down, the magnetic field $B(z)$ shifts the Zeeman sub-levels to satisfy the resonance condition along the entire deceleration path:
