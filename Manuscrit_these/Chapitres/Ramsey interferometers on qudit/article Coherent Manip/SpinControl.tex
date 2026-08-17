@@ -1,6 +1,5 @@
 \chapter{Quantum state measurement and characterization in qudit systems \label{cha:litreivew}}
-This chapter is dedicated to the experimental and theoretical results published in our paper, "Coherent control over the high-dimensional space of the nuclear spin of alkaline-earth atoms" \cite{ahmed_coherent_2025} that I directly inserted here. In this work, we harness the large, 10-dimensional nuclear spin Hilbert space ($2F+1 = 10$) of $^{87}\text{Sr}$ atoms to implement advanced quantum sensing and manipulation protocols. By utilizing a tensor light shift to isolate two specific spin states, we engineered a highly robust pseudo-spin qubit. This pristine qudit resource exhibits an exceptionally long coherence time, showing no measurable signs of decoherence even after 3 seconds of free evolution. Building upon this platform, we designed multi-state interferometric schemes operating over four nuclear states, opening new avenues for multi-parameter quantum metrology and quantum information.
-
+This chapter presents the experimental results published in Ref.~\cite{ahmed_coherent_2025}, centered on the coherent manipulation of the 10-dimensional nuclear spin Hilbert space ($2I+1 = 10$) of $^{87}\text{Sr}$ atoms. By exploiting a tensor light shift to isolate tailored subsystems, we demonstrate control ranging from robust pseudo-spin qubits to high-dimensional qudits ($D=3$ to $10$) displaying multi-second coherence times. Based on this platform, we implement multi-state interferometric schemes over four nuclear levels for multi-parameter sensing. Following the reproduced article, Section~\ref{sec:povm_framework_and_derivation} provides an extended theoretical derivation of the Positive-Operator-Valued Measures (POVMs) implemented in our non-commuting observables measurement scheme.
 \section{Gas preparation and spin control}
 
 \label{Sec:Gas_preparation_and_spin_control}
@@ -242,45 +241,96 @@ Finally, following the original idea of Ref.~\cite{Kunkel2019}, we have seen tha
 The full potential of such measurements deserve investigation. The scheme is analogous to randomly partitioning the system into several sub-ensembles and measuring each along a different quantization axis. 
 One question is whether this could be amenable to extracting signatures of specific many-body states (chiral states, cluster states \cite{Bornet2024, Mamaev2019}), or to characterize general properties of the many-body states (entanglement, purity) in the spirit of, e.g., Refs.~\cite{Brydges2019, Frerot2021}.
 
+\section{Positive-operator-valued measures (POVMs)}
+\label{sec:povm_framework_and_derivation}
 
-\section{More about Positive-Operator-Valued Measures (POVMs) }
+In traditional quantum metrology, standard interferometers are bounded by Projective Valued Measurements (PVM), which restrict the device to sensing a single physical quantity per experimental run. Tracking multiple environmental parameters or reconstructing the full state usually requires sequential measurements across different configurations, heavily increasing the statistical overhead and cycle times. The high-dimensional ground state manifold of $^{87}\text{Sr}$ allows us to bypass these rigid constraints through parallelized architectures. Specifically, we demonstrated a parallel quantum sensor designed to simultaneously extract both the linear and the quadratic components of an external degeneracy-lifting field in a single shot. In the context of magnetic or optical field sensing, this capability is highly powerful: it enables the simultaneous measurement of a physical quantity (such as a magnetic field vector) and its associated noise or fluctuations, separating tracking signatures that would otherwise require separate, destructive measurement cycles.
 
-
-In traditional quantum metrology, standard interferometers are bounded by Projective Valued Measurements (PVM), which restrict the device to sensing a single physical quantity per experimental run. Tracking multiple environmental parameters or reconstructing the full state usually requires sequential measurements across different configurations, heavily increasing the statistical overhead and cycle times. The high-dimensional manifold of $^{87}\text{Sr}$ allows us to bypass these rigid constraints through parallelized architectures. Specifically, we demonstrated a parallel quantum sensor designed to simultaneously extract both the linear and the quadratic components of an external degeneracy-lifting field in a single shot. In the context of magnetic or optical field sensing, this capability is highly powerful: it enables the simultaneous measurement of a physical quantity (such as a magnetic field vector) and its associated noise or fluctuations, separating tracking signatures that would otherwise require separate, destructive measurement cycles.
-
-To formally understand how a quantum system can extract such complementary pieces of information simultaneously, one must look at the generalization of the measurement postulate via Positive-Operator-Valued Measures (POVM) \cite{Massar2007}. Indeed, standard PVMs face a fundamental impossibility when trying to obtain complete information on a Hilbert space from a single outcome. For instance, considering a non-orthogonal state ensemble:
+To formally understand how a quantum system can extract such complementary pieces of information simultaneously, one must look at the generalization of the measurement postulate via Positive-Operator-Valued Measures (POVM)~\cite{Massar2007, Bergou2008}. Indeed, standard PVMs face a fundamental impossibility when trying to obtain complete information on a Hilbert space from a single outcome. For instance, considering a non-orthogonal state ensemble:
 \[
 \left\{ \ket{\psi_1} = \ket{0}, \quad \ket{\psi_2} = \frac{1}{2}\ket{0} + \frac{\sqrt{3}}{2}\ket{1} \right\}
 \]
-because $\langle\psi_1\vert\psi_2\rangle = 1/2 \neq 0$, a projection-based measurement in the $\{\ket{\psi_1}, \ket{\psi_1^\perp}\}$ basis - with $\ket{\psi_1^\perp} = \ket{1}$- yields a conditional probability of $P(\psi_1|\psi_2) = |\langle\psi_1\vert\psi_2\rangle|^2 = 0.25$. Because of this non-orthogonality, a single PVM outcome cannot deduce with certainty which state was prepared, and crucial information is completely lost.
+because $\langle\psi_1\vert\psi_2\rangle = 1/2 \neq 0$, a projection-based measurement in the $\{\ket{\psi_1}, \ket{\psi_1^\perp}\}$ basis---with $\ket{\psi_1^\perp} = \ket{1}$---yields a conditional probability of $P(\psi_1|\psi_2) = |\langle\psi_1\vert\psi_2\rangle|^2 = 0.25$. Unambiguous state discrimination (USD) addresses this limitation by guaranteeing error-free identification of non-orthogonal states at the expense of introducing a non-zero probability of obtaining an inconclusive result. Because of non-orthogonality, a single PVM outcome cannot deduce with certainty which state was prepared, and crucial information is completely lost.
 
-A POVM overcomes this by defining an ensemble of positive hermitian operators $\{\hat{E_1}, \hat{E_2}, \hat{E_3}\}$ ($\hat{E}_i \ge 0$, of positive eigenvalues) summing to the identity $\sum_{i}^{} \hat{E}_i = \mathbb{I}$. This enforce orthogonality conditions in the same basis $\left\{ \ket{\psi_1}, \ket{\psi_2}, \ket{\psi_1^\perp}, \ket{\psi_2^\perp} \right\}$:
+A POVM overcomes this by defining an ensemble of positive hermitian operators $\{\hat{E}_1, \hat{E}_2, \hat{E}_3\}$ ($\hat{E}_i \ge 0$, of positive eigenvalues) summing to the identity $\sum_i \hat{E}_i = \mathbb{I}$. This enforces orthogonality conditions in the same basis $\left\{ \ket{\psi_1}, \ket{\psi_2}, \ket{\psi_1^\perp}, \ket{\psi_2^\perp} \right\}$:
 \begin{gather}
-  \bra{\psi_2} \hat{E_1} \ket{\psi_2} = 0 \label{USD condition 1}\\
-  \bra{\psi_1} \hat{E_2} \ket{\psi_1} = 0 \label{USD condition 2}
+  \bra{\psi_2} \hat{E}_1 \ket{\psi_2} = 0 \label{USD condition 1}\\
+  \bra{\psi_1} \hat{E}_2 \ket{\psi_1} = 0 \label{USD condition 2}
 \end{gather}
-with $\ket{\psi_2^{\perp}} = \frac{\sqrt{3}}{2}\ket{0} - \frac{1}{2}\ket{1}$. Probability conservation requires an inconclusive operator $\hat{E_3}$ such that $\mathbb{I} = \hat{E_1} + \hat{E_2} + \hat{E_3}$. Combined with condition of semi-positivity of the eigenvalues, these constraints force the operators to be proportional to the dual basis projectors:
+with $\ket{\psi_2^{\perp}} = \frac{\sqrt{3}}{2}\ket{0} - \frac{1}{2}\ket{1}$. Probability conservation requires an inconclusive operator $\hat{E}_3$ such that $\mathbb{I} = \hat{E}_1 + \hat{E}_2 + \hat{E}_3$. Combined with the condition of semi-positivity of the eigenvalues, these constraints force the operators to be proportional to the dual basis projectors:
 \begin{gather}
-  \hat{E_1} = \lambda \ket{\psi_2^\perp}\bra{\psi_2^\perp} \\
-  \hat{E_2} = \lambda \ket{\psi_1^\perp}\bra{\psi_1^\perp}
+  \hat{E}_1 = \lambda \ket{\psi_2^\perp}\bra{\psi_2^\perp} \\
+  \hat{E}_2 = \lambda \ket{\psi_1^\perp}\bra{\psi_1^\perp}
 \end{gather}
-where the normalization $\lambda = 2/3$ validates the $\hat{E_3} \ge 0$ condition. This leads to a success probability of $P(\hat{E_1}|\psi_1) = \lambda |\langle\psi_1\vert\psi_2^\perp\rangle|^2 = 1/2$ (equivalent for P($\hat{E_2}\psi_2)$), while the remaining $50\%$ is routed to the inconclusive outcome $\hat{E_3}$ since projecting $\hat{E_3}$ onto $\psi_1$ or $\psi_2$ does not lead to the conclusion of the initial state.
+where the normalization $\lambda = 2/3$ validates the $\hat{E}_3 \ge 0$ condition. This leads to a success probability of $P(\hat{E}_1|\psi_1) = \lambda |\langle\psi_1\vert\psi_2^\perp\rangle|^2 = 1/2$ (equivalent for $P(\hat{E}_2|\psi_2)$), while the remaining $50\%$ is routed to the inconclusive outcome $\hat{E}_3$ since projecting $\hat{E}_3$ onto $\psi_1$ or $\psi_2$ does not lead to a conclusive determination of the initial state.
 
-Our second interferometric scheme, detailed in Section \ref{Sec:BeyondPseduoSpin}, constitutes a direct physical realization of this POVM framework through multiplexed joint tomography. The protocol prepares a target qubit state $\ket{\psi} = \alpha \ket{-5/2} + \beta \ket{-7/2}$, and uses targeted coherent pulses to map a controlled fraction of these populations into two auxiliary ancillary states ($\ket{-9/2}$ and $\ket{-3/2}$). 
+Our second interferometric scheme, detailed in Section~\ref{Sec:BeyondPseduoSpin}, constitutes a direct physical realization of this POVM framework. The protocol prepares a target qubit state $\ket{\psi} = \alpha \ket{-5/2} + \beta \ket{-7/2}$, and uses targeted coherent pulses to map a controlled fraction of these populations into two auxiliary ancillary states ($\ket{-9/2}$ and $\ket{-3/2}$).
 
+\subsection{Derivation of the experimental POVM framework}
 
+\subsubsection{Four-level extended space dynamics}
 
+To model this sequence, we consider the four-level subspace spanned by the states participating in the transfer dynamics:
+\begin{equation}
+    \mathcal{H}_4 = \text{span}\left\{ \left|-\frac{9}{2}\right\rangle, \left|-\frac{7}{2}\right\rangle, \left|-\frac{5}{2}\right\rangle, \left|-\frac{3}{2}\right\rangle \right\}.
+\end{equation}
 
+In this basis, the fundamental projective measurements (PVM) associated with state selective fluorescence detection are described by the diagonal projectors:
+\begin{equation}
+    \hat{E}_1 = \left|-\frac{9}{2}\right\rangle\left\langle -\frac{9}{2}\right|, \quad 
+    \hat{E}_2 = \left|-\frac{7}{2}\right\rangle\left\langle -\frac{7}{2}\right|, \quad 
+    \hat{E}_3 = \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right|, \quad 
+    \hat{E}_4 = \left|-\frac{3}{2}\right\rangle\left\langle -\frac{3}{2}\right|.
+\end{equation}
 
+The pulse sequence consists of a differential phase accumulation $\phi$ applied to state $\ket{-5/2}$, described by the phase operator:
+\begin{equation}
+    \hat{\Phi}(\phi) = \text{diag}\left(1, 1, e^{-i\phi}, 1\right),
+\end{equation}
+followed by resonant $\pi/2$ pulse rotations acting simultaneously on the adjacent pairs $\left\{\ket{-9/2}, \ket{-7/2}\right\}$ and $\left\{\ket{-5/2}, \ket{-3/2}\right\}$. In matrix representation over $\mathcal{H}_4$, these beam-splitter-like operations take the block-diagonal form:
+\begin{equation}
+    \hat{X}_{\pi/2} = \frac{1}{\sqrt{2}} \begin{pmatrix} 
+    1 & -i & 0 & 0 \\ 
+    -i & 1 & 0 & 0 \\ 
+    0 & 0 & 1 & -i \\ 
+    0 & 0 & -i & 1 
+    \end{pmatrix}.
+\end{equation}
 
+The full unitary transformation experienced by the system prior to detection is given by $\hat{U} = \hat{X}_{\pi/2} \hat{\Phi}(\phi)$. In the Heisenberg picture, the bare detection operators transform as $\hat{E}_i' = \hat{U}^\dagger \hat{E}_i \hat{U}$. 
 
+Carrying out the matrix multiplication for $\hat{E}_2' = \hat{\Phi}^\dagger \hat{X}_{\pi/2}^\dagger \hat{E}_2 \hat{X}_{\pi/2} \hat{\Phi}$ explicitly yields:
+\begin{equation}
+    \hat{E}_2' = \frac{1}{2} \left[ \left|-\frac{9}{2}\right\rangle\left\langle -\frac{9}{2}\right| + \left|-\frac{7}{2}\right\rangle\left\langle -\frac{7}{2}\right| + i \left|-\frac{9}{2}\right\rangle\left\langle -\frac{7}{2}\right| - i \left|-\frac{7}{2}\right\rangle\left\langle -\frac{9}{2}\right| \right].
+\end{equation}
 
+Similarly, evaluating the transformed operator for the fourth detection channel $\hat{E}_4' = \hat{\Phi}^\dagger \hat{X}_{\pi/2}^\dagger \hat{E}_4 \hat{X}_{\pi/2} \hat{\Phi}$ accounts for the differential phase factor $e^{-i\phi}$ accumulated on the $\ket{-5/2}$ state:
+\begin{equation}
+    \hat{E}_4' = \frac{1}{2} \left[ \left|-\frac{3}{2}\right\rangle\left\langle -\frac{3}{2}\right| + \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right| - i e^{i\phi} \left|-\frac{3}{2}\right\rangle\left\langle -\frac{5}{2}\right| + i e^{-i\phi} \left|-\frac{5}{2}\right\rangle\left\langle -\frac{3}{2}\right| \right].
+\end{equation}
 
+\subsubsection{Reduction to the target qubit subspace}
 
+While the set $\{\hat{E}_i'\}$ forms a valid PVM over the full four-level space $\mathcal{H}_4$, the initial physical state $\ket{\psi} = \alpha \ket{-5/2} + \beta \ket{-7/2}$ is strictly prepared inside the two-level target qubit subspace $\mathcal{H}_{\text{qubit}} = \text{span}\left\{\left|-\frac{7}{2}\right\rangle, \left|-\frac{5}{2}\right\rangle\right\}$.
 
-This architecture maps onto the $\{E_1, E_2, E_3\}$ operator structure through a dual interpretation:
-\begin{itemize}
-    \item \textbf{Under the USD framework:} The ancillary populations ($\ket{-9/2}$ and $\ket{-3/2}$) act as the unambiguous channels ($E_1$ and $E_2$), extracting directional information with zero cross-talk, while the population remaining in the main interferometer ($\ket{-5/2}$ and $\ket{-7/2}$) embodies the inconclusive operator $E_3$, absorbing the non-orthogonal overlap.
-    \item \textbf{Under the Multiplexed Tomography framework:} The role of the $E_3$ residue is dynamically modulated by the pulse sequence. Across different experimental runs, the ancillary channels sequentially capture $S_z$ then $S_x$, while the main interferometer's residual population systematically monitors the complementary $S_y$ projection.
-\end{itemize}
-By unifying these concepts, our platform demonstrates how high-dimensional nuclear spins can be leveraged to minimize statistical overhead, offering a low-latency, powerful toolkit for high-fidelity state reconstruction and advanced quantum metrology.
+In the geometric state-discrimination framework described by Bergou~\cite{Bergou2008}, measurement probabilities correspond to state overlaps $P(i) = \bra{\psi} \hat{E}_i' \ket{\psi}$. Because the prepared state has zero initial population in the auxiliary states $\left|-\frac{9}{2}\right\rangle$ and $\left|-\frac{3}{2}\right\rangle$, we have the boundary conditions:
+\begin{equation}
+    \left\langle -\frac{9}{2} \middle| \psi \right\rangle = 0, \quad \left\langle -\frac{3}{2} \middle| \psi \right\rangle = 0.
+\end{equation}
+
+As a consequence, any matrix elements of $\hat{E}_i'$ acting purely on $\ket{-9/2}$ or $\ket{-3/2}$ yield zero contribution when evaluated on $\ket{\psi}$. Restricting the transformed measurement operators to the active qubit manifold by projecting via $\hat{P}_{\text{qubit}} = \left|-\frac{7}{2}\right\rangle\left\langle -\frac{7}{2}\right| + \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right|$ defines the set of effective operators:
+\begin{equation}
+    \hat{M}_i \equiv \hat{P}_{\text{qubit}} \hat{E}_i' \hat{P}_{\text{qubit}}.
+\end{equation}
+
+Applying this projection to $\hat{E}_2'$ isolates the populated component:
+\begin{equation}
+    \hat{M}_2 = \frac{1}{2} \left|-\frac{7}{2}\right\rangle\left\langle -\frac{7}{2}\right|.
+\end{equation}
+
+Likewise, projecting $\hat{E}_4'$ eliminates the unpopulated state $\ket{-3/2}$ as well as the off-diagonal cross-terms involving $\ket{-3/2}$, leaving:
+\begin{equation}
+    \hat{M}_4 = \frac{1}{2} \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right|.
+\end{equation}
+
+The set of restricted operators $\{\hat{M}_i\}$ on $\mathcal{H}_{\text{qubit}}$ are non-orthogonal ($\hat{M}_i^2 \neq \hat{M}_i$) and positive semi-definite ($\hat{M}_i \ge 0$), yet they fulfill the completeness relation $\sum_i \hat{M}_i = \mathbb{I}_{\text{qubit}}$. Restricting a global projective measurement on an extended Hilbert space to an active target subspace by eliminating unpopulated auxiliary channels provides a direct physical construction of a POVM.

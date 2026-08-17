@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1786961973.0915 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1786961981.59625 0
-  "./ref.bib" 1786961597 74300 ec0bc1b4a5e54a878fce1906454fd6c7 ""
+["bibtex out/these_main"] 1786975197.40196 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1786975206.03192 0
+  "./ref.bib" 1786972433 74532 78d237ead2af05fb0a9006b07ea38673 ""
   "./spincontrol_refs.bib" 1779203640 549367 6b3bd591fb7a36bddef0122884a01a8a ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/ieeetr.bst" 1291864344 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1786961980 48496 2468089d44ecf70a6c485aed8837d628 "pdflatex"
+  "out/these_main.aux" 1786975204 49110 4bbe12ad3ddb5711b1f0fd839897e010 "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1786961973.71156 "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1786961981.59704 0
+["pdflatex"] 1786975198.04411 "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1786975206.03274 0
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1779883527 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1771496879 14064 48988c15252745ffb24fd32721a2820d ""
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1775563748 13338688 9fd0248c43254865fc857a8837d50457 ""
@@ -234,7 +234,7 @@
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf" 1779203640 124880 0a263bb34b9ca857c010539b3df58da3 ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf" 1779203640 196863 c6f85c50162e077bfb0b0a8bfd3aae46 ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf" 1783933835 138292 770dd2b5e75693af025168b139bf41e6 ""
-  "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1786961597 75438 accaad19bf43a1626b9c4fcfc2a80734 ""
+  "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1786975188 80059 ef187a9454832f27e7dfd42f7d730038 ""
   "Chapitres/conclusion/conclusion.tex" 1786961597 93 3729c63f8704b1a18fb8c9f21a17be5f ""
   "appendix/abstract.tex" 1776070351 157 eee112a5caef8e0926ac11ba0070c6cc ""
   "appendix/appendixA.tex" 1781517121 1046 92e34e6a6683f5af93dcf8003627b8fb ""
@@ -245,12 +245,12 @@
   "appendix/titlepage.tex" 1776070351 867 bb7073512633b892c0cc21646372f930 ""
   "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1786961963 5027 50459a2f49274b0b42c767c876257c03 ""
   "out/these_main.acr" 0 -1 0 ""
-  "out/these_main.aux" 1786961980 48496 2468089d44ecf70a6c485aed8837d628 "pdflatex"
-  "out/these_main.bbl" 1786961973 25548 0255b9bfaabcd771b125b41675bd32d0 "bibtex out/these_main"
-  "out/these_main.lof" 1786961980 8782 4eb7dbc44ffea2690dc6efcd74173894 "pdflatex"
-  "out/these_main.lot" 1786961980 443 f978de837e3c4c2a4bd8a10ad13bf075 "pdflatex"
-  "out/these_main.out" 1786961980 18541 1388efb8474a4cc1d2fd6794a763e88b "pdflatex"
-  "out/these_main.toc" 1786961980 8492 af7d298281a434286471eea11d417a58 "pdflatex"
+  "out/these_main.aux" 1786975204 49110 4bbe12ad3ddb5711b1f0fd839897e010 "pdflatex"
+  "out/these_main.bbl" 1786975197 25668 94e3feab0253a7f75b29c42da61f613b "bibtex out/these_main"
+  "out/these_main.lof" 1786975204 8782 3aeb2b2e90c0fdd832b47ad3511890d2 "pdflatex"
+  "out/these_main.lot" 1786975204 443 419cc8bf924c46a3a7314ee603702044 "pdflatex"
+  "out/these_main.out" 1786975204 19288 469cbdefd6b27dca461596b980fad7ca "pdflatex"
+  "out/these_main.toc" 1786975204 8820 a775678e0d2668f3de1fe1fc4c2177d9 "pdflatex"
   "these_main.acr" 0 -1 0 ""
   "these_main.tex" 1786961963 5027 50459a2f49274b0b42c767c876257c03 ""
   (generated)
