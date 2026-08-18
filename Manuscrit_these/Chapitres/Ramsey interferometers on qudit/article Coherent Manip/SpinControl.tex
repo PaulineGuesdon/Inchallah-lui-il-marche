@@ -244,9 +244,9 @@ One question is whether this could be amenable to extracting signatures of speci
 \section{Positive-operator-valued measures (POVMs)}
 \label{sec:povm_framework_and_derivation}
 
-In traditional quantum metrology, standard interferometers are bounded by Projective Valued Measurements (PVM), which restrict the device to sensing a single physical quantity per experimental run. Tracking multiple environmental parameters or reconstructing the full state usually requires sequential measurements across different configurations, heavily increasing the statistical overhead and cycle times. The high-dimensional ground state manifold of $^{87}\text{Sr}$ allows us to bypass these rigid constraints through parallelized architectures. Specifically, we demonstrated a parallel quantum sensor designed to simultaneously extract both the linear and the quadratic components of an external degeneracy-lifting field in a single shot. In the context of magnetic or optical field sensing, this capability is highly powerful: it enables the simultaneous measurement of a physical quantity (such as a magnetic field vector) and its associated noise or fluctuations, separating tracking signatures that would otherwise require separate, destructive measurement cycles.
+In traditional quantum metrology, standard interferometers are bounded by Projective Valued Measurements (PVM), which restrict the device to sensing a single physical quantity per experimental run. Tracking multiple environmental parameters or reconstructing the full state usually requires sequential measurements across different configurations, heavily increasing the statistical overhead and cycle times. The high-dimensional ground state manifold of $^{87}\text{Sr}$ allows us to bypass these rigid constraints through parallelized architectures. Specifically, we demonstrated a parallel quantum sensor designed to simultaneously extract both the linear and the quadratic components of an external degeneracy-lifting field in a single shot. In the context of magnetic or optical field sensing, this capability is highly powerful: it enables the simultaneous measurement of a physical quantity such as a a transition (e.g optical clock transition) and the fluctuations on another quantity such as the $\vec{B}$ field, separating tracking signatures that would otherwise require separate, destructive measurement cycles.
 
-To formally understand how a quantum system can extract such complementary pieces of information simultaneously, one must look at the generalization of the measurement postulate via Positive-Operator-Valued Measures (POVM)~\cite{Massar2007, Bergou2008}. Indeed, standard PVMs face a fundamental impossibility when trying to obtain complete information on a Hilbert space from a single outcome. For instance, considering a non-orthogonal state ensemble:
+To formally understand how a quantum system can extract such complementary pieces of information simultaneously, one look at the generalization of the measurement postulate via Positive-Operator-Valued Measures (POVM)~\cite{Massar2007, Bergou2008} of the reduced space of a two level object. Indeed, standard PVMs face a fundamental impossibility when trying to obtain complete information on a Hilbert space from a single outcome. Let us consider a system that produces either of these two non-orthogonal states, and try to extract from measruements which state is produced. For instance:
 \[
 \left\{ \ket{\psi_1} = \ket{0}, \quad \ket{\psi_2} = \frac{1}{2}\ket{0} + \frac{\sqrt{3}}{2}\ket{1} \right\}
 \]
@@ -270,10 +270,11 @@ Our second interferometric scheme, detailed in Section~\ref{Sec:BeyondPseduoSpin
 
 \subsubsection{Four-level extended space dynamics}
 
-To model this sequence, we consider the four-level subspace spanned by the states participating in the transfer dynamics:
+To model this sequence, we consider the four-level subspace $\mathcal{H}_4$ spanned by the basis states:
 \begin{equation}
-    \mathcal{H}_4 = \text{span}\left\{ \left|-\frac{9}{2}\right\rangle, \left|-\frac{7}{2}\right\rangle, \left|-\frac{5}{2}\right\rangle, \left|-\frac{3}{2}\right\rangle \right\}.
+    \mathcal{H}_4 = \left\{ \left|-\frac{9}{2}\right\rangle, \left|-\frac{7}{2}\right\rangle, \left|-\frac{5}{2}\right\rangle, \left|-\frac{3}{2}\right\rangle \right\}.
 \end{equation}
+
 
 In this basis, the fundamental projective measurements (PVM) associated with state selective fluorescence detection are described by the diagonal projectors:
 \begin{equation}
@@ -311,7 +312,7 @@ Similarly, evaluating the transformed operator for the fourth detection channel 
 
 \subsubsection{Reduction to the target qubit subspace}
 
-While the set $\{\hat{E}_i'\}$ forms a valid PVM over the full four-level space $\mathcal{H}_4$, the initial physical state $\ket{\psi} = \alpha \ket{-5/2} + \beta \ket{-7/2}$ is strictly prepared inside the two-level target qubit subspace $\mathcal{H}_{\text{qubit}} = \text{span}\left\{\left|-\frac{7}{2}\right\rangle, \left|-\frac{5}{2}\right\rangle\right\}$.
+While the set $\{\hat{E}_i'\}$ forms a valid PVM over the full four-level space $\mathcal{H}_4$, the initial physical state $\ket{\psi} = \alpha \ket{-5/2} + \beta \ket{-7/2}$ is strictly prepared inside the two-level target qubit subspace $\mathcal{H}_{\text{qubit}} = \left\{\left|-\frac{7}{2}\right\rangle, \left|-\frac{5}{2}\right\rangle\right\}$.
 
 In the geometric state-discrimination framework described by Bergou~\cite{Bergou2008}, measurement probabilities correspond to state overlaps $P(i) = \bra{\psi} \hat{E}_i' \ket{\psi}$. Because the prepared state has zero initial population in the auxiliary states $\left|-\frac{9}{2}\right\rangle$ and $\left|-\frac{3}{2}\right\rangle$, we have the boundary conditions:
 \begin{equation}
@@ -335,3 +336,4 @@ Likewise, projecting $\hat{E}_4'$ eliminates the unpopulated state $\ket{-3/2}$ 
 
 The set of restricted operators $\{\hat{M}_i\}$ on $\mathcal{H}_{\text{qubit}}$ are non-orthogonal ($\hat{M}_i^2 \neq \hat{M}_i$) and positive semi-definite ($\hat{M}_i \ge 0$), yet they fulfill the completeness relation $\sum_i \hat{M}_i = \mathbb{I}_{\text{qubit}}$. Restricting a global projective measurement on an extended Hilbert space to an active target subspace by eliminating unpopulated auxiliary channels provides a direct physical construction of a POVM.
 
+\hl{ajouter ouverture sur mesure hétérodyne comme def d'un POVM} \cite{HacohenGourgy2020} \hl{et l'application de l'article} \cite{Peres1991}
