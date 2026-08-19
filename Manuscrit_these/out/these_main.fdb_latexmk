@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1787156745.41949 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1787157632.49256 0
+["bibtex out/these_main"] 1787157937.60858 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1787157946.84241 0
   "./ref.bib" 1787068490 78010 332e0fed3e3d998cf8ed8d29fa96b00f ""
   "./spincontrol_refs.bib" 1779203640 549367 6b3bd591fb7a36bddef0122884a01a8a ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/ieeetr.bst" 1291864344 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1787157630 50505 b543128319141c6b6cc4c1d5cd6748d2 "pdflatex"
+  "out/these_main.aux" 1787157945 50502 1f803f4d734ae3e89eaf9fe0f27bd6a9 "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1787157623.70814 "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1787157632.49343 0
+["pdflatex"] 1787157938.38948 "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1787157946.84327 0
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1787069954 278015 b5ae8789d05c9394f564dcef5be6e51a ""
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1775563748 13338688 9fd0248c43254865fc857a8837d50457 ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1001775420 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -203,9 +203,10 @@
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/zoom_red_chain_beating.pdf" 1780920614 118670 46c40af66c2256b93e8494b4b5e9166c ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf" 1780559467 60309 59a08424e6ccc9a478d78980a4a8dca0 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf" 1780559467 79267 14c623dbacc40bf416a30f94c57175dd ""
-  "Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex" 1787157622 47586 76edfaeaf1b92db73a0d75b785611fa0 ""
+  "Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex" 1787157928 47596 600410e89a452d8bb40220f3e8daf91f ""
   "Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png" 1786961597 249538 7469bcc54214d71998788b3904089a90 ""
   "Chapitres/Gas preparation and spin control/images/Carte_lock_laser_PDH_sr1sr2.pdf" 1787076165 451061 37b4b6d50f5c63e9a1f8126f537cee36 ""
+  "Chapitres/Gas preparation and spin control/images/Code_Generated_Image.png" 1787155975 205091 fff04f46220274c86a87dc07f149e178 ""
   "Chapitres/Gas preparation and spin control/images/ECDL_laser.jpeg" 1786961597 154487 e9d7175ed6338a17e334c28c2dc3c005 ""
   "Chapitres/Gas preparation and spin control/images/LevelDiagramRed.pdf" 1787132362 48696 7ad3c7c1810b738cb585f5b726cdbeb0 ""
   "Chapitres/Gas preparation and spin control/images/ODT_loading.png" 1786961597 42170 7f8c413d7c2ae9196e3e7976c994f54a ""
@@ -228,7 +229,6 @@
   "Chapitres/Gas preparation and spin control/images/optical_pumping.png" 1786961597 43599 b88700e56939675b942ef41222ab9bd4 ""
   "Chapitres/Gas preparation and spin control/images/randomisation.jpeg" 1786961597 214130 84d455bb531baf900fc68291971780f6 ""
   "Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf" 1786961597 1815619 592ace939ccfbb8e26dbdf5f08a2748d ""
-  "Chapitres/Gas preparation and spin control/images/signal pdh.jpg" 1786961597 292386 c2e84db3bf690101d0c9c9bceebe880e ""
   "Chapitres/Gas preparation and spin control/images/spin_kick_scheme.png" 1786961597 72635 4f934a10137a094245e250b3ce2cce32 ""
   "Chapitres/Gas preparation and spin control/images/table_repumper.pdf" 1786961597 110850 183fd080ff0885454bc09900d4452468 ""
   "Chapitres/Introduction/introduction.tex" 1787068733 406 78c9893a7456dbc335a7bd1107e6f988 ""
@@ -249,12 +249,12 @@
   "appendix/titlepage.tex" 1776070351 867 bb7073512633b892c0cc21646372f930 ""
   "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1786961963 5027 50459a2f49274b0b42c767c876257c03 ""
   "out/these_main.acr" 0 -1 0 ""
-  "out/these_main.aux" 1787157630 50505 b543128319141c6b6cc4c1d5cd6748d2 "pdflatex"
-  "out/these_main.bbl" 1787156745 27213 a9e15c1a9e2c317003c9539b0c30690e "bibtex out/these_main"
-  "out/these_main.lof" 1787157631 9070 5133b034631ab751b1a6e63c57c1d9ab "pdflatex"
-  "out/these_main.lot" 1787157631 443 11c1ddd343f471e4311f3b2238b4eb8b "pdflatex"
-  "out/these_main.out" 1787157631 19464 f832b35a0895a17a3b6517c63c50d285 "pdflatex"
-  "out/these_main.toc" 1787157631 8916 c7b31a7340f5f6514eed28618a4ace08 "pdflatex"
+  "out/these_main.aux" 1787157945 50502 1f803f4d734ae3e89eaf9fe0f27bd6a9 "pdflatex"
+  "out/these_main.bbl" 1787157938 27213 a9e15c1a9e2c317003c9539b0c30690e "bibtex out/these_main"
+  "out/these_main.lof" 1787157945 9069 22e4eaf3156117c9dabd1762de7c77b9 "pdflatex"
+  "out/these_main.lot" 1787157945 443 b35e4428ec4035ac37db51ce32bedca3 "pdflatex"
+  "out/these_main.out" 1787157945 19464 f832b35a0895a17a3b6517c63c50d285 "pdflatex"
+  "out/these_main.toc" 1787157945 8915 0c6d71ebc34c2239fbc4917931ef78b0 "pdflatex"
   "these_main.acr" 0 -1 0 ""
   "these_main.tex" 1786961963 5027 50459a2f49274b0b42c767c876257c03 ""
   (generated)
