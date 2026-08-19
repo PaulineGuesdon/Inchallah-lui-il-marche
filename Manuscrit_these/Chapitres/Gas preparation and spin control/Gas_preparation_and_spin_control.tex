@@ -49,7 +49,7 @@ The first cooling stages operate on the main $^1S_0 \rightarrow {}^1P_1$ transit
 
 Following extraction from the oven capillaries, the atomic beam is collimated using 2D transverse cooling (TC). This stage employs two orthogonal pairs of counter-propagating laser beams perpendicular to the main longitudinal atomic propagation axis ($z$-axis), reducing the transverse velocity spread $v_\perp$ via photon recoil recoil momentum ($\hbar k_\perp$).
 
-\subsubsection{Operating principle and radiation oressure}
+\subsubsection{Operating principle and radiation pressure}
 
 The collimation relies on Doppler cooling. An atom moving with a transverse velocity $\vec{v}_\perp$ experiences a Doppler shift $\Delta_D = -\vec{k}_\perp \cdot \vec{v}_\perp$. As illustrated in Fig.~\ref{fig:doppler_shift}, atomic velocity classes observe shifted transition resonances centered at $\omega_0 \pm \vec{k}_\perp \cdot \vec{v}_\perp$. 
 When the laser frequency is red-detuned ($\Delta < 0$) with respect to the atomic transition frequency ($\omega_0$), the atom preferentially absorbs photons from the counter-propagating beam, generating a net damping force.
@@ -124,7 +124,21 @@ During this stage, the cloud reaches the Doppler temperature limit \cite{dalibar
 \begin{equation}
 k_B T_D = \frac{\hbar \Gamma_{^1S_0 \rightarrow {}^1P_1}}{2}
 \end{equation}
-Due to the broad linewidth of the $461~\text{nm}$ transition ($\Gamma/2\pi = 30.5~\text{MHz}$), this Doppler temperature ($T_D \approx 770~\mu\text{K}$) remains significantly higher than the single-photon recoil limit $T_r$.
+Due to the broad linewidth of the $461~\text{nm}$ transition ($\Gamma/2\pi = 30.5~\text{MHz}$), this Doppler temperature ($T_D \approx 770~\mu\text{K}$) remains significantly higher than the single-photon recoil limit $T_r$.\\
+The atoms are transfered in $^1P_1$ state that is determined by the equation evolution of the atom number:
+\begin{equation}
+    \frac{dN(t)}{dt} = \alpha \Gamma^2 -\gamma_{loss}N(t)
+\end{equation}
+where $\alpha$ is a coefficient that depends on experimental parameters, $\gamma_{loss} = \gamma_{vacuum} + \gamma_{leak}$ respectively the loss rate due to the imperfection of the vacuum and the rate leakage to the 
+metastable state. Then the number of atom in time evolves as:
+\begin{equation}
+    N(t) = N_{sat}(1-e^{-t/\tau})
+\end{equation}
+$N_{sat} = \alpha \Gamma^2 \tau$ when the transition reaches its maximum value. To saturate the transition one should wait for few blue MOT lifetime which corresponds to 100~ms to 1~sec. \\
+The experimental duration is set differently since one must consider the time for which one reaches the maximum atom number trapped in the metastable state: this corresponds to 8.2~sec. \\
+The transition to the next step necessits the extinction of the blue lasers while keeping the same magnetic field to avoid loosing the atoms that decayed to the $^3P_1$ state to end up in the ground state. Then, 
+before turning on the repumper laser, one decays slightly the magnetic field to value \colorbox{blue}{B=} and turning on the red MOT laser to maximize the recovering of the repumped atomes that necessits really short 
+time.
 
 \subsection{Repumper}
 
@@ -204,10 +218,14 @@ The stirring laser drives the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=9/2)$ transi
 
 Because the narrow linewidth of the intercombination transition ($\Gamma = 2\pi \times 7.4~\text{kHz}$) strictly bounds the saturation radiation pressure force to a theoretical maximum of $F_{\text{max}} = \hbar k \Gamma / 2 \approx 1.6~mg$, gravity plays a critical role during this stage. 
 
-In practice, to minimize power broadening and reach microkelvin temperatures, the red MOT operates at low saturation parameters ($s \lesssim 1$). Under these conditions, a symmetric beam intensity would yield a radiation pressure force weaker than gravity ($F_{\text{rad}} < mg$), causing the atoms to fall out of the trap. To overcome this limitation, a significantly higher intensity is delivered specifically along the vertical axis to maintain $F_{\text{rad}} > mg$ and support the cloud against gravity, while lower intensities are maintained on the horizontal axes to prevent unnecessary power broadening and transverse heating.
+In practice, to minimize power broadening and reach microkelvin temperatures, the red MOT operates at low saturation parameters ($s \lesssim 1$). Under these conditions, a symmetric beam intensity would yield a radiation pressure force weaker than gravity ($F_{\text{rad}} < mg$), causing the atoms to fall out of the trap. To overcome this limitation, a significantly higher intensity is delivered specifically along the vertical axis to maintain $F_{\text{rad}} > mg$ and support the cloud against gravity, while lower intensities are maintained on the horizontal axes to prevent unnecessary power broadening and transverse heating.\\
+
+During all the process of swap and sweep frequency the intensity and time duration of each stage is simply experimentally optimized, always with a purpose of decreasing the intensity when going to the end of the cooling
+to reduce any heating and spread of the gas.
+
+
 \subsubsection{Narrowband MOT (Single-frequency MOT)}
 Once the cloud is sufficiently cold, frequency modulation is switched off to operate a single-frequency (monofrequency) MOT. This stage reduces the temperature to $1\text{--}2~\mu\text{K}$ (near the recoil limit) with a peak density of $n = \text{\hl{value}}$ and an RMS width of $\sigma = \text{\hl{value}}$.
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf}
