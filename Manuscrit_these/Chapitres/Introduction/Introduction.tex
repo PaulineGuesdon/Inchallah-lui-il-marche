@@ -1,4 +1,56 @@
 \chapter*{Introduction}
-\hl{sur optical clocks: Degenerate quantum gases of strontium de Schreck (et même un peu tout le contexte)}
-Quantum simulation field has grown the past few decades with the emergence of second quantization.
-Plenty of groups of cold atoms experiments have exploited the quantum properties of atoms to simulate condensed matter systems, quantum magnetism, and many-body physics.
+\addcontentsline{toc}{chapter}{Introduction} % <-- Ajoute cette ligne
+\markboth{Introduction}{Introduction}
+
+In the history of science, multidisciplinary research has repeatedly shown the value of crossing field boundaries.
+
+The Saha-Langmuir equation, linking ionization states to local temperature and pressure, was originally developed for physical chemistry. Yet it transformed astrophysics through the work of Cecilia Payne-Gaposchkin \cite{Payne1925StellarAtmospheres}, who established that stars are predominantly composed of hydrogen and helium. Similarly, X-ray crystallography—devised to probe crystal lattices in solid-state physics—was applied by Rosalind Franklin and Raymond Gosling to determine the helical structure of DNA \cite{Franklin1953MolecularConfiguration}, contributing directly to molecular biology. In the same way, the discovery of radioactivity, polonium, and radium by Marie and Pierre Curie connected physics, chemistry, and medicine \cite{Borde2017Metrologie}.
+
+Following this interdisciplinary approach, ultracold atomic physics emerged as a platform for quantum simulation. As proposed by Richard Feynman \cite{Feynman1982Simulating}, quantum simulators use controllable atomic systems to study complex many-body problems in condensed matter that remain difficult to model on classical supercomputers. Over the past two decades, cold atom experiments have addressed several key questions at the boundary of these fields:
+
+\begin{itemize}
+\item \textbf{Superfluid-to-Mott insulator transition:} By tuning the optical lattice depth, I. Bloch \textit{et al.} demonstrated the transition from a superfluid to a Mott insulator state in an ultracold Bose gas~\cite{Greiner2002MottInsulator}. This provided a model system to study strongly correlated materials, such as transition metal oxides.
+\item \textbf{Simulation of condensed-matter phases:} Systems governed by the Hubbard model have been implemented with both bosons and fermions trapped in optical lattices, enabling the observation of magnetic ordering such as short-range Néel order \cite{Mazurenko2017a, Sun2021BosonicAntiferromagnet}.
+\item \textbf{Quantum gas microscopy:} High-resolution single-site imaging, developed by M. Greiner and I. Bloch, allowed direct spatial measurement of atomic distributions \cite{Bakr2009QuantumGasMicroscope}. First demonstrated on $^{87}\text{Rb}$ Bose-Einstein condensates, this technique was later extended to fermionic systems to observe spatial anti-ferromagnetic correlations.
+\end{itemize}
+
+Combining aspects of quantum simulation, optical metrology, and molecular physics, alkaline-earth atoms provide another example of overlapping research domains.
+\newpage
+
+\textbf{Interest and properties of $^{87}\text{Sr}$}\\
+Strontium is an alkaline-earth element whose stable isotopes are documented in the literature (e.g., \cite{zelevinsky_narrow_2006, blatt_measurement_2011, borkowski_mass_2014, reschovsky_narrow-line_2018}). The bosonic isotopes ($^{88}\text{Sr}$, $^{86}\text{Sr}$, and $^{84}\text{Sr}$) have zero nuclear spin ($I=0$).
+
+This work focuses on the fermionic isotope $^{87}\text{Sr}$, which has a natural abundance of $7.0\%$. Unlike its bosonic counterparts, $^{87}\text{Sr}$ possesses a nuclear spin $I=9/2$, giving access to multi-level quantum dynamics and $SU(N)$-symmetric states.
+
+In the $^1S_0$ ground state, the electronic angular momentum is zero ($J=0$), making the atom insensitive to magnetic field fluctuations. However, because there is no electronic magnetic moment, static magnetic fields cannot drive spin transitions directly. Optical methods are therefore required to address the nuclear spin states.
+
+Furthermore, the decoupling between nuclear spin and the electronic shell in the ground state leads to an $SU(N)$ collisional symmetry: elastic scattering properties are independent of the nuclear spin projection $m_F$. This symmetry allows the realization of a qudit system where internal spin dynamics remain uncoupled from spatial degrees of freedom during thermalization.
+
+These properties make $^{87}\text{Sr}$ relevant for both optical metrology and quantum state engineering.
+\vspace{0.5em}
+
+\textbf{Metrology}\\
+Fermionic strontium is widely used in optical frequency standards, connecting precision measurement with atomic physics:
+\begin{itemize}
+\item \textbf{Ultra-narrow clock transition:} The $^1S_0 \rightarrow {}^3P_0$ transition features a narrow natural linewidth ($\sim 1\text{ mHz}$) shielded from magnetic perturbations due to $J=0$ in both states \cite{Derevianko2011Clock}. H. Katori and collaborators identified a \textit{magic wavelength} ($\lambda_{\text{magic}} \approx 813\text{ nm}$) where the AC Stark shifts of $^1S_0$ and $^3P_0$ cancel, enabling trapping in optical lattices without shifting the transition frequency \cite{Katori2003Ultrastable}.
+\item \textbf{Beating the Standard Quantum Limit (SQL):} Measurement protocols using quantum logic, heterodyne detection, or spin-squeezing aim to reduce phase uncertainty below the SQL ($\Delta \theta \propto 1/\sqrt{N}$) \cite{pezze_quantum_2014}. For example, J. Ye and co-workers reported clock fractional instabilities at the $10^{-18}$ level \cite{Yang2025ClockPrecision}. In their experiment, a coherent spin state is prepared via a $\pi/2$ pulse. Cavity-mediated non-destructive measurement generates a spin-squeezed state that reduces phase noise. A second pulse completes the Ramsey sequence, achieving phase uncertainty below the SQL with a squeezing parameter $\xi^2 = 0.63 < 1$.
+\end{itemize}
+\vspace{0.5em}
+
+\textbf{Photoassociation and dissipative quantum engineering}\\
+Optical control of short-range interactions also connects atomic physics with molecular spectroscopy:
+\begin{itemize}
+\item \textbf{Interaction control:} Interatomic interactions in degenerate quantum gases can be modified through molecular spectroscopy via photoassociation \cite{martinez_de_escobar_two-photon_2008, stellmer_degenerate_2014}, using optical Feshbach resonances to adjust the $s$-wave scattering length.
+\item \textbf{Dissipation-assisted state preparation:} Controlled dissipation, such as two-body losses induced by photoassociation, can be used to stabilize target quantum states. Theoretical works (e.g., \cite{foss-feig_steady-state_2012}) indicate that engineered dissipation can prepare Dicke states for precision measurements below the SQL.
+\end{itemize}
+
+\vspace{2em}
+
+\textbf{Thesis Outline}\\
+This manuscript covers experimental atomic cooling, quantum measurement schemes, and ultracold molecular spectroscopy.
+
+The first chapter details the experimental sequence used to prepare a degenerate $^{87}\text{Sr}$ gas, from initial laser cooling to nuclear spin state preparation. Physical models and operating parameters are presented for Transverse Cooling, the Zeeman Slower, Magneto-Optical Traps (MOT), and Evaporative Cooling. This chapter also describes a custom optical spectrum-filtering setup and diagnostic procedures developed for Extended-Cavity Diode Lasers (ECDL, MOGlabs).
+
+The second chapter presents the quantum measurement platform constructed during this thesis, building on the work of H. Ahmed \cite{ahmed_coherent_2025}. We characterize the coherence time of the nuclear spin qudit using Ramsey interferometry, then implement a dual-Ramsey scheme to extract two physical parameters within a single experimental cycle. Finally, we examine non-commuting observables in a 4-dimensional Hilbert subspace and map the protocol onto Positive-Operator-Valued Measures (POVM).
+
+The third chapter reports on the spectroscopy of molecular lines in $^{87}\text{Sr}_2$. Following an overview of photoassociation and ultracold dimer physics, we describe the creation of fermionic dimers and analyze the technical limits encountered during their production and detection.

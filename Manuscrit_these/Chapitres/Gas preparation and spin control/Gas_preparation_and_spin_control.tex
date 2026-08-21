@@ -2,19 +2,11 @@
 \begin{flushright}
 \end{flushright}\chapter{Gas preparation and spin control}
 
-\section{$^{87}$Sr Properties and interest}
-Strontium is an alkaline-earth-like element with several stable isotopes well documented in the literature (e.g., \cite{reschovsky_narrow-line_2018, zelevinsky_narrow_2006, blatt_measurement_2011, borkowski_mass_2014, KillianBEC}). The majority of these isotopes are bosonic ($^{88}\text{Sr}$, $^{86}\text{Sr}$, and $^{84}\text{Sr}$) with zero nuclear spin ($I=0$). 
-
-In our work, we focus on the fermionic isotope $^{87}\text{Sr}$, which has a natural abundance of $7.0\%$. In contrast to its bosonic counterparts, $^{87}\text{Sr}$ possesses a large nuclear spin $I=9/2$, providing access to rich multi-level quantum dynamics ($SU(N)$ manifolds).
-
-In the ground state $^1S_0$, the total electronic angular momentum is zero ($J=0$), making the atomic state almost insensitive to stray magnetic field fluctuations—a major advantage for mitigating environmental decoherence. However, this absence of an electronic magnetic moment also implies that magnetic fields alone cannot drive direct spin transitions via standard Zeeman manipulation. Specific optical techniques must therefore be developed to circumvent this limitation.
-
-Furthermore, the decoupling between the nuclear spin and the electronic shell in the ground state leads to an $SU(N)$ collisional symmetry: the elastic scattering properties are strictly independent of the nuclear spin state $m_F$. The spin manipulation techniques developed by our group \cite{litvinov_measuring_2021} exploit this symmetry to yield a highly controllable quantum system whose internal spin dynamics remain decoupled from the spatial dynamics of the cloud once thermalized.
 
 Preparation of the cold gas follows the standard scheme of ultracold gas experiments.
 For $t_{\text{BlueMot}} = 8.2~\text{s}$, 2D transverse cooling (TC) collimates atoms prior to a Zeeman slowing stage, followed by a blue Magneto-Optical Trap (MOT), operating on the broad $^1S_0 \rightarrow {}^1P_1$ transition (see Fig.~\ref{energy levels sr}). Following this blue stage, repumping light is applied for $t_{\text{Repump}} = \text{\textcolor{blue}{time}}$, swept across multiple hyperfine states of the $^3P_2 \rightarrow {}^3D_2$ transition to recover approximately $25\%$ of the atoms trapped in the metastable $^3P_2$ state. The atoms are then cooled to temperatures close to $T = \text{\hl{temperature}}$ by a dynamic red MOT for $t_{\text{Red}}^{\text{tot}} = \text{\textcolor{blue}{time}}$ on the narrow $^1S_0 \rightarrow {}^3P_1$ transition. Finally, the gas is loaded and evaporated inside an Optical Dipole Trap (ODT).
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/energy_levels_sr.png}
     \caption{Relevant low-lying electronic energy levels and optical cooling transitions for $^{87}\text{Sr}$.}
@@ -22,6 +14,13 @@ For $t_{\text{BlueMot}} = 8.2~\text{s}$, 2D transverse cooling (TC) collimates a
 \end{figure}
 
 In this chapter, I describe each stage of the cooling and loading process from a practical "user guide" perspective, concluding with an explanation of the spin manipulation schemes tailored to our experimental goals: coherent control of quantum systems, precision measurement, and photoassociation spectroscopy of $^{87}\text{Sr}$.
+\section{Full experimental setup}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/setup_experimental.pdf}
+    \caption{}
+    \label{setup exp}
+\end{figure}
 
 \section{Fermi gas preparation}
 \hl{Ajouter ce qui est judicieux d'optimiser à chaque étape : nombre d'atomes, $T$, $T/T_F$, nombre d'atomes final chargé à chaque étape, vitesse.}
