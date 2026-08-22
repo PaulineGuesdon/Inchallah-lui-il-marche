@@ -191,6 +191,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/rotating.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/rotating.sty
 INPUT ./appendix/mis/acronym.tex
 INPUT ./appendix/mis/acronym.tex
 INPUT ./appendix/mis/acronym.tex
@@ -317,6 +319,11 @@ INPUT ./Chapitres/Gas preparation and spin control/images/energy_levels_sr.png
 INPUT ./Chapitres/Gas preparation and spin control/images/energy_levels_sr.png
 INPUT ./Chapitres/Gas preparation and spin control/images/energy_levels_sr.png
 INPUT ./Chapitres/Gas preparation and spin control/images/energy_levels_sr.png
+INPUT ./Chapitres/Gas preparation and spin control/images/sequence_Sr87.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/sequence_Sr87.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/sequence_Sr87.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/sequence_Sr87.pdf
+INPUT ./Chapitres/Gas preparation and spin control/images/sequence_Sr87.pdf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./Chapitres/Gas preparation and spin control/images/setup_experimental.pdf
 INPUT ./Chapitres/Gas preparation and spin control/images/setup_experimental.pdf
