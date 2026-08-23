@@ -68,12 +68,11 @@ When the laser frequency is red-detuned ($\Delta < 0$) with respect to the atomi
 \label{fig:doppler_shift}
 \end{figure}
 
-The underlying radiation pressure force acting on the atoms is given by:
-\begin{equation}
-F_{\text{rad}}(v_\perp) = \frac{\hbar k_\perp \Gamma}{2} \frac{s}{1 + s + 4 \left( \frac{\Delta_{\text{eff}}(v_\perp)}{\Gamma} \right)^2}
-\label{eq:radiation_pressure}
-\end{equation}
-where $\Gamma$ is the natural linewidth of the transition, $s = I/I_{\text{sat}}$ is the saturation parameter, and $\Delta_{\text{eff}} = \Delta - \vec{k}_\perp \cdot \vec{v}_\perp$ is the effective detuning ($\Delta = \omega_{\text{laser}} - \omega_0$). In the low-intensity limit ($s \ll 1$), standard Doppler cooling theory predicts a maximum damping force gradient at a detuning of $\Delta_{\text{eff}} = -\Gamma/2$.
+In the low-intensity limit ($s \ll 1$), standard Doppler cooling theory shows that the
+equilibrium temperature $T(\Delta)$, set by the competition between the velocity-dependent
+damping and the momentum diffusion from photon scattering, is minimized at a detuning of
+$\Delta_{\text{eff}} = -\Gamma/2$, yielding the Doppler temperature limit
+$T_D = \hbar\Gamma/(2k_B)$.
 
 \subsubsection{Experimental setup and laser configuration}
 
@@ -82,14 +81,20 @@ For this stage, we drive the broad-linewidth $^1S_0 \rightarrow {}^1P_1$ transit
 f_{\mathrm{TC}} = f_{\mathrm{Blue,Master}} + f^{\mathrm{RF}}_{\mathrm{TC}}
 \end{equation}
 
-Due to anisotropic geometric constraints of our atomic beam, the intensity in the horizontal arm is set roughly three times higher than in the vertical arm, $I/I_{sat} = 0.25$ though both remain below saturation ($I \ll I_{\text{sat}}$) over an interaction area of approximately $10~\text{cm}^2$. The TC laser remains active throughout subsequent blue-cooling stages to ensure continuous atomic flux collimation.
+Because optical access around the vacuum cell is limited, the horizontal arm is
+constrained to operate at roughly three times the intensity of the vertical arm,
+with $I/I_{\text{sat}} = 0.25$ in the horizontal arm. Both arms nonetheless remain
+below saturation ($I < I_{\text{sat}}$) over an interaction area of approximately
+$10~\text{cm}^2$. The TC laser remains active throughout the subsequent
+blue-cooling stages to ensure continuous atomic-flux collimation.
 
 \subsubsection{Detuning and power optimization}
 
 While ideal two-level theory predicts an optimal detuning of $\Delta = -\Gamma/2$, experimental constraints alter this optimum:
 \begin{itemize}
 \item \textbf{Power limitations over large beam areas:} Operating near saturation ($I \sim I_{\text{sat}}$) would maximize the velocity capture range through power broadening. However, illuminating the $10~\text{cm}^2$ interaction area at saturation would require over $400~\text{mW}$ of optical power. Consequently, the system operates in the low-intensity regime ($I \ll I_{\text{sat}}$).
-\item \textbf{Optimal detuning shift:} Experimental characterization reported in F. Faisant's thesis \cite{faisant_building_2024} demonstrated that maximum collimation efficiency (measured by downstream atom yield) is achieved at $\Delta = -\Gamma/4$ rather than $-\Gamma/2$, as shown in Fig.~\ref{felix faisant}. This plot also illustrates how the maximum gain improves with total beam power.
+\item \textbf{Optimal detuning shift:} Experimental characterization reported in F. Faisant's thesis \cite{faisant_building_2024} demonstrated that maximum collimation efficiency (measured by downstream atom yield) is achieved at $\Delta = -\Gamma/4$ rather than $-\Gamma/2$, as shown in Fig.~\ref{felix faisant}. Indeed considering the residual random motion of the atoms modifies the expression
+of the total average force leading to a minimum temperature reached for higher intensity, keeping the regime of $I<<I_{sat}$. This plot also illustrates how the maximum gain improves with total beam power.
 \end{itemize}
 
 \begin{figure}[H]
@@ -149,12 +154,13 @@ time.
 
 \subsection{Repumper}
 
-To sustain the blue MOT cycle, a repumping laser system is required: approximately $1$ out of every $150{,}000$ excitations to $^1P_1$ decays into the metastable $^3P_2$ state (lifetime $\tau \approx 500~\text{s}$) via the intermediate $^1D_2$ state. Without repumping, atoms become dark to the $461~\text{nm}$ light and are lost from the cooling cycle.
+To sustain the blue MOT cycle, a repumping laser system is required: approximately $1:4$ of the atoms decay into the metastable state  (lifetime $\tau \approx 500~\text{s}$) via the intermediate $^1D_2$ state, the rest in $^1P_1$. Without repumping, atoms become dark to the $461~\text{nm}$ light and are lost from the cooling cycle. 
+At this stage the B field gradient is maximum which acts as a magnetic trap on the atoms since the magnetic dipole of the atoms in the metastable state is non-zero.
 
 \subsubsection{Hyperfine structure of Strontium-87}
 Because fermionic $^{87}\text{Sr}$ possesses a nuclear spin $I = 9/2$, its electronic states exhibit a rich hyperfine structure that must be addressed for efficient repumping.
 
-Repumping is provided by a $403~\text{nm}$ external-cavity diode laser (TOPTICA). To address multiple $F$ hyperfine sub-levels (see Fig.~\ref{fig:intro-energy-levels-repumper}), the laser frequency is rapidly swept over a $3~\text{GHz}$ bandwidth.
+Repumping is provided by a $403~\text{nm}$ external-cavity diode laser (TOPTICA). To address multiple $F$ hyperfine sub-levels (see Fig.~\ref{fig:intro-energy-levels-repumper}), the laser frequency is rapidly swept over a $3~\text{GHz}$ bandwidth for 3.2ms.
 
 \begin{figure}[H]
     \centering
@@ -167,7 +173,8 @@ Repumping is provided by a $403~\text{nm}$ external-cavity diode laser (TOPTICA)
 \subsubsection{Optimization of the repumper sweep}
 The $^3P_2$ hyperfine levels are unequally populated during blue MOT decay due to their differing $g_F$ Landé factors, affecting their magnetic trapping efficiency \cite{stellmer_creation_2012}.
 
-The repumper frequency scan range is optimized around $3~\text{GHz}$ to selectively cover the $F=11/2$ and $F=13/2$ states. Scanning a wider range reduces total atom recovery by decreasing the dwell time on these critical transitions. At the end of the blue MOT phase, the $461~\text{nm}$ beam is extinguished while the $403~\text{nm}$ repumper remains active for $\approx 200~\text{ms}$ at $I \approx 15~\text{mW/cm}^2$, returning trapped metastable atoms to the $^1S_0$ ground state before starting the red MOT.
+The repumper frequency scan range is optimized around $3~\text{GHz}$ to selectively cover the $F=11/2$ and $F=13/2$ states. Scanning a wider range reduces total atom recovery by decreasing the dwell time on these critical transitions. At the end of the blue MOT phase, the $461~\text{nm}$ beam is extinguished while the $403~\text{nm}$ repumper is turned on for 3.2~ms at $I \approx 15~\text{mW/cm}^2$.
+Meanwhile the red MOT lasers are turned on for a best charging in the red MOT so they are not lost on the decay of $^3D_2$ states and keep in the cycle.
 
 \begin{figure}[H]
     \centering
@@ -181,11 +188,12 @@ The repumper frequency scan range is optimized around $3~\text{GHz}$ to selectiv
 \subsubsection{Optical setup}
 Because the blue MOT temperature is bounded by $T_D \approx 770~\mu\text{K}$, further cooling requires transferring atoms to the narrow intercombination transition $^1S_0 \rightarrow {}^3P_1$ at $689~\text{nm}$ ($\Gamma = 2\pi \times 7.4~\text{kHz}$).
 
-For this transition, the formal Doppler limit ($T_D = \hbar \Gamma / 2 k_B = 179~\text{nK}$) falls below the single-photon recoil limit ($T_r = \hbar^2 k^2 / m k_B = 283~\text{nK}$). Consequently, the ultimate red MOT temperature is bounded by the photon recoil limit.
+For this transition, the formal Doppler limit \hl{($T_D = \hbar \Gamma / 2 k_B = 179~\text{nK}$}) falls below the single-photon recoil limit ($T_r = \hbar^2 k^2 / m k_B = 283~\text{nK}$). Consequently, the ultimate red MOT temperature is bounded by the photon recoil limit.
 
-The $689~\text{nm}$ light is generated by a commercial laser locked to an ultra-stable optical cavity. The frequency is offset-shifted by \hl{$f = -600\text{ MHz}$} using a first AOM before injection into a master-slave system. A double-pass AOM fine-tunes the frequency before splitting into three spatial counter-propagating beam pairs.
+The $689~\text{nm}$ light is generated by a commercial laser locked to an ultra-stable optical cavity. The frequency is red detuned from the $^3P_1, F=11/2$ by $f = -18~$MHz, settled by a first AOM shifting the frequency of -600~MHz before injection into a master-slave system. 
+A double-pass AOM fine-tunes the frequency before splitting into three spatial counter-propagating beam pairs.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/chaine_rouge_vieille.png}
     \caption{Optical setup of the $689~\text{nm}$ laser cooling system.}
@@ -193,7 +201,7 @@ The $689~\text{nm}$ light is generated by a commercial laser locked to an ultra-
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/LevelDiagramRed.pdf}
     \caption{Frequencies of the red lasers used for the red MOT cooling stages and optical pumping. The red dashed lines correspond to the tunable frequencies, the dark plain lines for the $^{87}Sr$ hyperfine states of transition $^3P_J$ and the $^{88}Sr$}
@@ -201,9 +209,30 @@ The $689~\text{nm}$ light is generated by a commercial laser locked to an ultra-
 \end{figure}
 
 \subsubsection{Broadband MOT}
-At the end of the blue MOT, the atomic cloud's spatial spread ($\sigma = \text{\hl{value}}$) and thermal energy exceed the capture velocity of a single-frequency $689~\text{nm}$ MOT.
+At the end of the blue MOT, the atomic cloud's spatial spread ($\sigma = \text{\hl{value}}$)
+and thermal energy exceed the capture velocity of a single-frequency $689~\text{nm}$ MOT.
+To capture these thermal atoms, a broadband MOT is implemented on the
+$^1S_0\,(F=9/2) \rightarrow {}^3P_1\,(F=11/2)$ transition under a weak magnetic field
+gradient, operated in two successive stages.
 
-To capture these thermal atoms, a broadband MOT is implemented on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition under a weak magnetic field gradient. The laser spectrum is artificially broadened by applying a sawtooth frequency modulation red-detuned from resonance. As the cloud cools and compresses, both the modulation amplitude $\Delta f$ and total optical power are ramped down.
+In the first stage, SWAP (Sawtooth Wave Adiabatic Passage) cooling is applied
+\cite{bartolotta_laser_2018}. Two counter-propagating beams have their frequency swept
+slowly and linearly through resonance, then reset almost instantaneously back to the start
+of the ramp. The slow ramp is adiabatic and drives two sequential, stimulated transfers --
+absorption from the beam the atom is moving towards, followed by emission into the
+opposing beam, their Doppler shifts setting the time ordering -- removing $2\hbar k$ of
+momentum per sweep without relying on spontaneous emission. The fast reset, in contrast,
+is deliberately non-adiabatic so that it drives no transfer, and hence no momentum kick,
+back the other way; a symmetric ramp would instead undo the cooling just achieved. As the
+cloud cools and compresses during this stage, both the modulation amplitude $\Delta f$ and
+the total optical power are ramped down. This process is illustrated by the left scheme of 
+\ref{fig:intro-red-mot-3-steps} that represents the projection total spin of the electrons
+with the frequency ramp red detuned by -18~MHz.
+
+In the second stage visible at the right of \ref{fig:intro-red-mot-3-steps}, the cooling light is modulated with a conventional sawtooth ramp
+detuned from resonance, operating as a standard frequency-modulated Doppler-cooling MOT
+that further compresses and cools the now colder, denser cloud.
+
 
 \subsubsection{Stirring laser}
 Simultaneously, a "stirring" laser beam is applied to redistribute populations among magnetic sub-levels. Because the $F=9/2 \rightarrow F=11/2$ cooling transition contains weak or non-absorbing Zeeman sub-states at the cloud edges, atoms accumulated in these states experience reduced radiation pressure and escape the trap (Fig.~\ref{fig:intro-need-for-stir}).
@@ -217,7 +246,7 @@ The stirring laser drives the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=9/2)$ transi
     \label{fig:intro-need-for-stir}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.9\linewidth]{Chapitres/Gas preparation and spin control/images/spin_randomization.pdf}
     \caption{Illustration of the melange concept added to the red MOT cooling to capture extreme spin states components unaccessible from the counterpropagating lasers of the red MOT.}
@@ -226,7 +255,16 @@ The stirring laser drives the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=9/2)$ transi
 
 Because the narrow linewidth of the intercombination transition ($\Gamma = 2\pi \times 7.4~\text{kHz}$) strictly bounds the saturation radiation pressure force to a theoretical maximum of $F_{\text{max}} = \hbar k \Gamma / 2 \approx 1.6~mg$, gravity plays a critical role during this stage. 
 
-In practice, to minimize power broadening and reach microkelvin temperatures, the red MOT operates at low saturation parameters ($s \lesssim 1$). Under these conditions, a symmetric beam intensity would yield a radiation pressure force weaker than gravity ($F_{\text{rad}} < mg$), causing the atoms to fall out of the trap. To overcome this limitation, a significantly higher intensity is delivered specifically along the vertical axis to maintain $F_{\text{rad}} > mg$ and support the cloud against gravity, while lower intensities are maintained on the horizontal axes to prevent unnecessary power broadening and transverse heating.\\
+In practice, the broadband/SWAP red MOT operates with a total intensity well above
+saturation (typically $s \sim 10^{2}\text{--}10^{3}$), since the frequency modulation
+distributes this power over a broad spectral range. Because the laser is only resonant
+with a given velocity class for a small fraction of the sweep period, the time-averaged
+saturation -- and hence the effective power broadening -- experienced by any individual
+atom remains low, despite the large total intensity. To support the atomic cloud against
+gravity, a higher intensity is delivered along the vertical axis than along the horizontal
+axes, ensuring the radiation pressure force exceeds $mg$ in the direction where it is
+needed most, while limiting unnecessary power broadening and transverse heating on the
+horizontal axes.
 
 During all the process of swap and sweep frequency the intensity and time duration of each stage is simply experimentally optimized, always with a purpose of decreasing the intensity when going to the end of the cooling
 to reduce any heating and spread of the gas.
@@ -234,7 +272,7 @@ to reduce any heating and spread of the gas.
 
 \subsubsection{Narrowband MOT (Single-frequency MOT)}
 Once the cloud is sufficiently cold, frequency modulation is switched off to operate a single-frequency (monofrequency) MOT. This stage reduces the temperature to $1\text{--}2~\mu\text{K}$ (near the recoil limit) with a peak density of $n = \text{\hl{value}}$ and an RMS width of $\sigma = \text{\hl{value}}$.
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf}
     \caption{Sequential stages of the $689~\text{nm}$ red MOT. From left to right : swap cooling and broadband capture (adapted from \cite{StellmerThesis}). The size of the cloud is decreasing with the cooling since the atoms are kicked in the opposite direction of the resonant laser of right polarization.}
