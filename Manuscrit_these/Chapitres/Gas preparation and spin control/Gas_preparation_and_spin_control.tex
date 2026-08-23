@@ -289,7 +289,6 @@ Cooling efficiency during the single-frequency stage depends on precise frequenc
     
     \item \textbf{Detuning optimization:} Setting the laser too close to resonance causes re-heating via photon re-absorption in dense clouds. During the single-frequency MOT, the laser detuning is fixed at $\Delta f = -600~\text{kHz}$, optimized experimentally to minimize final cloud temperature.
     
-    \item \textbf{Magnetic field bias and quantization axis:} To preserve spin polarization, the magnetic field is never allowed to cross zero during transitions between cooling phases. Maintaining non-zero bias components along at least two orthogonal directions (e.g., $|B_x|$ and $|B_y|$) preserves the quantization axis and prevents spin depolarization.
 \end{itemize}
 
 \subsection{Optical Dipole Trap (ODT) and evaporative cooling}
@@ -305,7 +304,7 @@ Atoms are adiabatically loaded into the ODT while decreasing the intensity of th
 
 As seen from these expressions, the AC Stark shift induced by the dipole laser is state-dependent. As illustrated in Fig.~\ref{fig:intro-odt-loading}, the potential estimated in \cite{litvinov_these} is deeper for the ground state $^1S_0$ ($U_{\text{dip}}(^1S_0) \simeq -1.5~\text{MHz}$) than for the excited state $^3P_1$ ($U_{\text{dip}}(^3P_1) \simeq -1.2~\text{MHz}$) at the center of the trap, resulting in a differential red-shift of the $^1S_0 \rightarrow {}^3P_1$ transition.
 
-This differential shift creates a localized spatial resonance condition: atoms at the center of the trap remain in resonance with the red MOT beams, where they are continuously cooled and trapped. Conversely, energetic atoms at the periphery experience a negligible light shift and remain blue-detuned from the local resonance, preventing unwanted re-heating.
+This differential shift creates a localized spatial resonance condition: atoms at the center of the trap remain in resonance with the red MOT beams, where they are continuously cooled and trapped. In other words a slight red detuning in the center of the trap corresponds to a blue detuning outside of the center. Conversely, energetic atoms at the periphery experience a negligible light shift and remain blue-detuned from the local resonance, preventing unwanted re-heating.
 
 \begin{figure}
     \centering
@@ -314,7 +313,7 @@ This differential shift creates a localized spatial resonance condition: atoms a
     \label{fig:intro-odt-loading}
 \end{figure}
 
-Following loading, forced evaporative cooling is performed to reach deep Fermi degeneracy, down to temperatures on the order of $T =, T/T_F=$ \hl{calculer avec les valeurs du temps d'husain}. Evaporative cooling is achieved by adiabatically lowering the trap depth: the most energetic atoms overcome the potential barrier and escape the trap, while the remaining ones re-thermalize to lower temperatures via elastic collisions (Fig.~\ref{fig:evap}).
+Following loading, forced evaporative cooling is performed to reach deep Fermi degeneracy, down to temperatures on the order of $T =, T/T_F=$ \hl{calculer avec les valeurs du temps d'husain}. Evaporative cooling is achieved by progressively lowering the trap depth: the most energetic atoms overcome the potential barrier and escape the trap, while the remaining ones re-thermalize to lower temperatures via elastic collisions (Fig.~\ref{fig:evap}).
 
 The results presented in the following two chapters were obtained with an atomic cloud located at the intersection of a horizontal beam, called the ``Reservoir'' (waist $w_0^H = 150~\mu\text{m}$), and a vertical beam, called the ``Dimple'' (waist $w_0^V = 80~\mu\text{m}$). The vertical beam axis is tilted at an angle of $\simeq 30^\circ$ relative to the vertical to facilitate the escape of the hottest atoms from the trap.
 
@@ -332,7 +331,7 @@ In Chapter 2, the horizontal arm is tilted by $\simeq 1^\circ$. For the photoass
 For a degenerate Fermi gas, the key parameter to optimize is the phase-space density (PSD), which scales as $\text{PSD} \propto N\bar{\omega}^3/T^3$, where $N$ is the atom number, $\bar{\omega}$ the geometrically averaged trap frequency, and $T$ the temperature. While both arms of the dipole trap influence these parameters, their main physical contributions differ:
 
 \begin{itemize}
-    \item \textbf{Tight vertical beam (``Dimple''):} Writing the atom number as $N = nV$ (where $n$ is the spatial density and $V$ the trap volume), the elastic collision rate scales as $\Gamma_{\text{el}} = n\sigma_{\text{el}}v_{\text{th}}$. The tightly focused waist of the dimple beam mainly dictates the local confinement, thereby enhancing collision rates for fast re-thermalization. Moreover, ramping down the dimple intensity directly lowers the effective trap depth, setting the final temperature $T$ of the cloud.
+    \item \textbf{Tight vertical beam (``Dimple''):} Writing the atom number as $N = nV$ (where $n$ is the spatial density and $V$ the trap volume), the elastic collision rate scales as $\Gamma_{\text{el}} = n\sigma_{\text{el}}v_{\text{th}}$ with $\sigma_{el}$ the elastic collision cross section and $v_{th}$ the thermal speed of the atoms. The tightly focused waist of the dimple beam mainly dictates the local confinement, thereby enhancing collision rates for fast re-thermalization. Moreover, ramping down the dimple intensity directly lowers the effective trap depth, setting the final temperature $T$ of the cloud.
     
     \item \textbf{Broad horizontal beam (``Reservoir''):} Due to its large waist and capture volume, the reservoir beam primarily serves to maximize the initial atom number $N$ loaded from the MOT. While modifying its intensity also reshapes the cloud and affects thermalization dynamics, its primary role remains maintaining a high-capacity atomic reservoir.
     
@@ -358,9 +357,16 @@ To perform state preparation, a bias magnetic field of $6.05 \pm 0.05~\text{G}$ 
 \begin{equation}
 f_{11/2} = f_{\text{Radiant Dyes}} \pm f_{\text{Slave 1}}^{\text{RF}} + f_{11/2}^{\text{RF}}
 \end{equation}
-The laser frequency is swept across 200~kHz the targeted $^3P_1, F = 11/2, m_F'$ sub-levels to deplete specific ground-state populations in $^1S_0, F=9/2, m_F$, during about 10~$\mu$s with intensity $\simeq 70I_{sat}$. Governed by electric dipole selection rules ($\Delta m_F = 0, \pm 1$), spontaneous emission redistributes the excited atoms into adjacent lower ground-state sub-levels, resulting in a progressive accumulation in the target spin states.
+The sign goes depends on the wanted spin manipulation experiment (more details in chapter \ref{chap 3}).
+The laser frequency is swept across 200~kHz around the targeted $^3P_1, F=11/2, m_F'$
+sub-level -- to compensate for day-to-day energy shifts arising from experimental
+fluctuations -- depleting the corresponding $^1S_0, F=9/2, m_F$ ground-state population
+over about 10~$\mu$s at an intensity of $\simeq 70\,I_{\text{sat}}$. Spontaneous emission,
+governed by the electric-dipole selection rule $\Delta m_F = 0, \pm 1$, then redistributes
+the excited atoms into adjacent, lower-lying ground-state sub-levels, leading to a
+progressive accumulation of population in the target spin states.
 
-To prepare a specific mixture (e.g., a 2-spin mixture), unwanted spin populations are sequentially pumped out. One spin component, typically $m_F = -9/2$, is intentionally retained alongside the target mixture to maintain two-body elastic collisions for thermalization during evaporation. Once evaporative cooling is complete, this auxiliary component is selectively removed using a short \textbf{'blast'} pulse. Under $\sigma^-$ excitation on the $F=9/2 \rightarrow F'=11/2$ transition, the $m_F = -9/2$ state couples exclusively to $m_F' = -11/2$. Because no $m_F = -11/2$ ground state exists, spontaneous emission from $m_F' = -11/2$ can only decay back to $m_F = -9/2$, forming a closed cycling transition. The resulting continuous photon scattering exerts a strong radiation pressure that expels the $m_F = -9/2$ population from the trap without disturbing the target mixture.
+To prepare a specific mixture (e.g., a 2-spin mixture), unwanted spin populations are sequentially pumped out. One spin component, typically $m_F = -9/2$, is intentionally retained alongside the target mixture to maintain two-body elastic collisions for thermalization during evaporation. Once evaporative cooling is complete, this auxiliary component can be selectively removed using a short \textbf{'blast'} pulse. Under $\sigma^-$ excitation on the $F=9/2 \rightarrow F'=11/2$ transition, the $m_F = -9/2$ state couples exclusively to $m_F' = -11/2$. Because no $m_F = -11/2$ ground state exists, spontaneous emission from $m_F' = -11/2$ can only decay back to $m_F = -9/2$, forming a closed cycling transition. The resulting continuous photon scattering exerts a strong radiation pressure that expels the $m_F = -9/2$ population from the trap without disturbing the target single state or mixture.
 
 \begin{figure}[H]
     \centering
@@ -369,12 +375,13 @@ To prepare a specific mixture (e.g., a 2-spin mixture), unwanted spin population
     \label{fig:intro-optical-pumping}
 \end{figure}
 
-
+\hl{Magnetic field bias and quantization axis: To preserve spin polarization, the magnetic field is never allowed to cross zero during transitions between cooling phases. Maintaining non-zero bias components along at least two orthogonal directions (e.g., $|B_x|$ and $|B_y|$) preserves the quantization axis and prevents spin depolarization.}
 
 \section{Spin Manipulation}
 We developed a method demonstrated in \cite{Bataille2020} for coherent control within the ground state manifold of zeeman sublevels. it relies on tensor shifts enacted by a laser operating near 689 nm, and will be described in detail in chapter 2. At a later stage, we performed photoassociation experiments in the vicinity of the intercombination manifold, see chapter 3. Both experiments actually rely on the same laser system, that I will present here.
 
 \subsection{External Cavity Diode Laser (ECDL)}
+\subsubsection{Laser architecture}
 To lift the degeneracy of the Zeeman sub-levels and allow state-selective addressing, a Tensorial Light Shift (TLS) is induced using an External Cavity Diode Laser (ECDL) from MOGlabs operating near $689~\text{nm}$. The laser frequency is selected by an interference filter placed at the center of a cat's-eye configuration, yielding a linewidth below $100~\text{kHz}$. An internal PID controller robustly compensates for thermal and mechanical drifts of the cavity length as well as diode intensity fluctuations. The laser is subsequently beat-locked to a master optical reference adapted to the specific experimental requirements.
 
 \begin{figure}[H]
@@ -384,8 +391,16 @@ To lift the degeneracy of the Zeeman sub-levels and allow state-selective addres
     \label{fig:ecdl-laser}
 \end{figure}
 
-\subsection{Repair of the MOGlabs}
-\hl{parler des pièces changées et de stabilisation en l'éteignant et retouchant le seuil avec ajout de fibres pour alignement}
+\subsubsection{Repair of the MOGlabs}
+The MOGlabs threshold was constantly evolving in time. Many problems were identified:
+\begin{itemize}
+    \item the interferential filter presented a damage at the center which impacted the transmission of the light. It has been changed with a new one sent by the provider
+    \item one of the three piezos of the cavity were broken. I had to change the full cateye system for an MGEF adapter that were including a wider frequency piezo.
+\end{itemize}
+
+Even with these changes the threshold was drifting with days, but slowlier.
+Gluing the cateye to the mount incounting the diode and interferentiel filter helped to slow more this drift. Keeping the laser off when not used helps also to keep it from derivation. When the stable mode of the laser is not accessible anymore with the possible intensity diode one might still low down to the threshold of the laser. The final way to do it is to slighlty touch the knobs of the mount that is holding the full barilet of the diode. 
+We did add two fibers at the output of the laser since the threshold procedure moves the beam: the fiber propagation assures the alignement to the rest of the filtering laser optical setup.
 
 \subsection{Raman Transitions}
 
@@ -405,28 +420,31 @@ By applying the TLS, the energy difference between two consecutive spin projecti
 where $q$ parameterizes the quadratic (tensor) light shift and $\beta$ represents the linear Zeeman contribution. This explicit dependence on $m_F$ lifts the energy degeneracy between adjacent transitions, allowing spectral isolation and individual control of any given $m_F \leftrightarrow m_F+1$ pair.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/TLS_et_raman.png}
-    \caption{Spin manipulation scheme of \cite{bataille_realisation_nodate}. The isolation of spin states is allowed by the tensorial shift of the ground states that makes neighbours $m_F$ states isolated from the other resonances.}
-    \label{fig:tls-raman-scheme}
+\centering
+\includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/TLS_et_raman.png}
+\caption{Spin manipulation scheme of \cite{bataille_realisation_nodate}. The isolation of spin states is allowed by the tensorial shift of the ground states that makes neighbours $m_F$ states isolated from the other resonances.}
+\label{fig:tls-raman-scheme}
 \end{figure}
 
 For more details this process is discussed in the second chapter of this thesis and also in the article of the group \cite{Bataille2020}.
 \subsubsection{Experimental Setup of the Raman Process}
-The two-photon process is driven by two distinct beams: a first beam derived from the "AOM lattice 689" laser (shown in red in Fig.~\ref{fig:raman-transitions}) generates the TLS and supplies the first photon. A second beam, frequency-shifted by the "AOM Raman" (shown in blue), completes the Raman transition. 
+The two-photon process is driven by two distinct beams: a first beam derived from the "AOM lattice 689" laser (shown in red in Fig.~\ref{fig:raman-transitions}) generates the TLS and supplies the first photon. A second beam, frequency-shifted by the "AOM Raman" (shown in blue), completes the Raman transition.
 
-This configuration selectively couples a single pair of states—for instance, $\ket{^1S_0, F=9/2, m_F=-7/2} \rightarrow \ket{^1S_0, F=9/2, m_F=-5/2}$ —while remaining far off-resonance for all other $m_F$ states. The complete optical path for this operation is detailed in Fig.~\ref{fig:mog-raman}.
-The magnetic field is close to zero when the ratio between the two lasers is set $I_R << I_{D}$ since we mostly want to separate the states.
+The TLS beam polarization is set parallel to the magnetic field ($\pi$ transitions), producing a purely scalar/tensor light shift with no vector component. The Raman beam polarization is linear and orthogonal to the magnetic field, so that its decomposition onto $\sigma^+$ and $\sigma^-$ components drives the required $\Delta m_F = \pm 1$ legs of the two-photon transition -- one photon absorbed from the $\pi$-polarized TLS beam, one photon emitted into the $\sigma^{\mp}$ component of the Raman beam.
+
+This configuration selectively couples a single pair of states—for instance, $\ket{^1S_0, F=9/2, m_F=-7/2} \rightarrow \ket{^1S_0, F=9/2, m_F=-5/2}$ —while remaining far off-resonance for all other $m_F$ states. The two-photon Raman coupling strength scales as $\Omega_R \propto \sqrt{I_{D} I_R}$, while the spacing between adjacent Raman resonances scales as $2q/h \propto I_{D}$. Spectral isolation of a single $m_F \leftrightarrow m_F'$ pair therefore requires $I_R \ll I_{D}$, so that neighbouring resonances remain spectrally resolved; in practice we use $I_R/I_{D} \lesssim 10^{-4}$.
+
+The complete optical path for this operation is detailed in Fig.~\ref{fig:mog-raman}.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/chaine_moglab.pdf}
-    \caption{Optical layout of the MOGlabs laser chain configured for two-photon Raman transitions.}
-    \label{fig:mog-raman}
+\centering
+\includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/chaine_moglab.pdf}
+\caption{Optical layout of the MOGlabs laser chain configured for two-photon Raman transitions.}
+\label{fig:mog-raman}
 \end{figure}
 
 \subsection{Photoassociation}
-Chapter 3 investigates photoassociation spectroscopy below the intercombination line. For these measurements, the full power of the laser is sent through the "AOM lattice 689" instead of being split with the Raman AOM.
+Chapter 3 investigates photoassociation spectroscopy below the intercombination line. For these measurements, the full power of the laser is sent through the "AOM lattice 689" since the other AOM is not useful anymore.
 
 For the dataset presented in Chapter 3, the optical chain incorporates a custom-built confocal Fabry-Pérot cavity stabilized using the Pound-Drever-Hall (PDH) technique \cite{black_Gas_preparation_and_spin_control_2001}, yielding the final setup depicted in Fig.~\ref{fig:raman-transitions}. The beam first passes through an Electro-Optic Modulator (EOM) to generate phase modulation sidebands. A lens with focal length $f = 150~\text{mm}$ mode-matches the beam to the fundamental cavity mode. Upon reflection from the cavity, the light is directed onto a fast photodiode and demodulated with an RF source to produce the PDH error signal.
 
@@ -465,7 +483,8 @@ Proper cavity operation requires the mirrors to be aligned precisely parallel to
 Because the original design provided no mechanical degrees of freedom to correct these misalignments, we redesigned the mounting mechanism. The updated cavity assembly is presented in Fig.~\ref{miroirs cav before} bottom. In this configuration, three adjustment knobs on a circular outer mount apply controlled pressure against the central cylindrical spacer housing the mirrors, with intermediate washers providing mechanical compliance. This allows for precise tilt control and fine adjustment of the mirror separation.
 
 
-Once locked to the injection laser, the optimized cavity achieves a total power transmission efficiency of $T = 0.63$. The Free Spectral Range (FSR) is given by:
+Once locked to the injection laser, the optimized cavity achieves a total power transmission efficiency of $T = 0.63$. This efficiency could come from a mis-gluing of the mirror that gives an angle to the optical direction of the cavity, and a part of the beam could clip inside of it. It could also come from dirt, maybe the glue. 
+The Free Spectral Range (FSR) is given by:
 \begin{equation}
 \text{FSR} = \frac{c}{2 d_0} = 3~\text{GHz}
 \end{equation}
