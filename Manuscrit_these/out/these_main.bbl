@@ -1,5 +1,8 @@
 \begin{thebibliography}{100}
 
+\bibitem{Bataille2020}
+P.~Bataille, A.~Litvinov, I.~Manai, J.~Huckans, F.~Wiotte, A.~Kaladjian, O.~Gorceix, E.~Mar\'echal, B.~Laburthe-Tolra, and M.~Robert-de Saint-Vincent, ``Adiabatic spin-dependent momentum transfer in an {SU(N)} degenerate {Fermi} gas,'' {\em Phys. Rev. A}, vol.~102, p.~013317, 2020.
+
 \bibitem{faisant_building_2024}
 F.~Faisant, {\em Building a strontium quantum gas microscope}.
 \newblock Theses, Université Paris-Saclay, Dec. 2024.
@@ -8,6 +11,9 @@ F.~Faisant, {\em Building a strontium quantum gas microscope}.
 \bibitem{litvinov_these}
 A.~Litvinov, {\em Manipulation of the nuclear spin states of 87 {Srin} degenerate {SU}({N})-symmetric {Fermi} gases}.
 \newblock Theses, Sorbonne Paris Nord, Jan. 2023.
+
+\bibitem{bataille_realisation_nodate}
+P.~Bataille, ``Réalisation de gaz quantiques de grand spin,''
 
 \bibitem{black_Gas_preparation_and_spin_control_2001}
 E.~D. Black, ``An introduction to {Pound}–{Drever}–{Hall} laser frequency stabilization,'' {\em American Journal of Physics}, vol.~69, pp.~79--87, Jan. 2001.
@@ -84,14 +90,8 @@ M.~Foss-Feig, A.~J. Daley, J.~K. Thompson, and A.~M. Rey, ``Steady-state many-bo
 H.~Ahmed, A.~Litvinov, P.~Guesdon, E.~Maréchal, J.~H. Huckans, B.~Pasquiou, B.~Laburthe-Tolra, and M.~Robert-de Saint-Vincent, ``Coherent control over the high-dimensional space of the nuclear spin of alkaline-earth atoms,'' {\em PRX Quantum}, vol.~6, p.~020352, June 2025.
 \newblock arXiv:2501.01731 [quant-ph].
 
-\bibitem{bataille_realisation_nodate}
-P.~Bataille, ``Réalisation de gaz quantiques de grand spin,''
-
 \bibitem{phillips_laser_1982}
 W.~D. Phillips and H.~Metcalf, ``Laser {Deceleration} of an {Atomic} {Beam},'' {\em Physical Review Letters}, vol.~48, pp.~596--599, Mar. 1982.
-
-\bibitem{Bataille2020}
-P.~Bataille, A.~Litvinov, I.~Manai, J.~Huckans, F.~Wiotte, A.~Kaladjian, O.~Gorceix, E.~Mar\'echal, B.~Laburthe-Tolra, and M.~Robert-de Saint-Vincent, ``Adiabatic spin-dependent momentum transfer in an {SU(N)} degenerate {Fermi} gas,'' {\em Phys. Rev. A}, vol.~102, p.~013317, 2020.
 
 \bibitem{phillips_laser_1998}
 W.~D. Phillips, ``Laser cooling and trapping of neutral atoms,'' {\em Rev. Mod. Phys.}, vol.~70, no.~3, 1998.
