@@ -158,7 +158,7 @@ Repumping is provided by a $403~\text{nm}$ external-cavity diode laser (TOPTICA)
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\linewidth]{Chapitres/Gas preparation and spin control/images/energy_levels_repumper.pdf}
+    \includegraphics[width=0.7\linewidth]{Chapitres/Gas preparation and spin control/images/energy_levels_repumper.png}
     \caption{Energy level diagram of $^{87}\text{Sr}$ of the transition $^3P_2$ to the hyperfine states of the $^3D_J$
     at $403~\text{nm}$ cooling.}
     \label{fig:intro-energy-levels-repumper}
@@ -219,7 +219,7 @@ The stirring laser drives the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=9/2)$ transi
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Gas preparation and spin control/images/randomisation.jpeg}
+    \includegraphics[width=0.9\linewidth]{Chapitres/Gas preparation and spin control/images/spin_randomization.pdf}
     \caption{Illustration of the melange concept added to the red MOT cooling to capture extreme spin states components unaccessible from the counterpropagating lasers of the red MOT.}
     \label{fig:intro-randomisation}
 \end{figure}
@@ -237,7 +237,7 @@ Once the cloud is sufficiently cold, frequency modulation is switched off to ope
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf}
-    \caption{Sequential stages of the $689~\text{nm}$ red MOT. From left to right : swap cooling, broadband capture and single-frequency cooling (adapted from \cite{StellmerThesis}). The size of the cloud is decreasing with the cooling since the atoms are kicked in the opposite direction of the resonant laser of right polarization.}
+    \caption{Sequential stages of the $689~\text{nm}$ red MOT. From left to right : swap cooling and broadband capture (adapted from \cite{StellmerThesis}). The size of the cloud is decreasing with the cooling since the atoms are kicked in the opposite direction of the resonant laser of right polarization.}
     \label{fig:intro-red-mot-3-steps}
 \end{figure}
 
@@ -341,8 +341,8 @@ To lift the degeneracy of the Zeeman sub-levels and allow state-selective addres
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth, angle=90]{Chapitres/Gas preparation and spin control/images/ECDL_laser.jpeg}
-    \caption{MOGlabs External Cavity Diode Laser (ECDL) architecture used for spin manipulation. A diode lasing at 689~nm is frequency settled by an interferential filter to then be collimated by a lens. The beam is focused in the middle of this lens and a second one where the beam is reflected: this system is selecting more precisely the frequency of the laser as a cateye. }
+    \includegraphics[width=0.9\linewidth]{Chapitres/Gas preparation and spin control/images/ecdl_cateye.pdf}
+    \caption{MOGlabs External Cavity Diode Laser (ECDL) architecture used for spin manipulation. A diode lasing at 689~nm is frequency settled by an interferential filter marked in red to then be collimated by a lens. The beam is reflected on a second miroir to close a cavity acting as a frequency filter: this system is a cateye. The last lens is used to collimate the beam passing throught an isolater before leaving the laser head. }
     \label{fig:ecdl-laser}
 \end{figure}
 
@@ -377,7 +377,7 @@ For more details this process is discussed in the second chapter of this thesis 
 \subsubsection{Experimental Setup of the Raman Process}
 The two-photon process is driven by two distinct beams: a first beam derived from the "AOM lattice 689" laser (shown in red in Fig.~\ref{fig:raman-transitions}) generates the TLS and supplies the first photon. A second beam, frequency-shifted by the "AOM Raman" (shown in blue), completes the Raman transition. 
 
-This configuration selectively couples a single pair of states—for instance, $\ket{^1S_0, F=9/2, m_F=-7/2} \rightarrow \ket{^1S_0, F=9/2, m_F=-5/2}$—while remaining far off-resonance for all other $m_F$ states. The complete optical path for this operation is detailed in Fig.~\ref{fig:mog-raman}.
+This configuration selectively couples a single pair of states—for instance, $\ket{^1S_0, F=9/2, m_F=-7/2} \rightarrow \ket{^1S_0, F=9/2, m_F=-5/2}$ —while remaining far off-resonance for all other $m_F$ states. The complete optical path for this operation is detailed in Fig.~\ref{fig:mog-raman}.
 The magnetic field is close to zero when the ratio between the two lasers is set $I_R << I_{D}$ since we mostly want to separate the states.
 
 \begin{figure}[H]
@@ -415,23 +415,17 @@ where $n$ is an integer and $\lambda$ is the wavelength of the injection laser.
 
 To fulfill these requirements, we selected curved mirrors (\textbf{PD080.31} from PICMA) with a diameter of $D = 4.5 \pm 0.15~\text{mm}$ and a radius of curvature matching $d_0$. The manufacturer specified a nominal mirror transmission of $T_{\text{mirror}} = 1.28\%$, though the effective system performance can be influenced by mechanical mounting constraints.
 
-Proper cavity operation requires the mirrors to be aligned precisely parallel to each other and perpendicular to the optical propagation axis. In our initial implementation (Fig.~\ref{miroirs cav before}), the mirrors were permanently glued into place. However, this approach introduced major technical issues over time: excess glue migrated onto the optical surfaces, degrading overall transmission, while alignment errors during gluing introduced an uncorrected angular tilt relative to the beam axis.
+Proper cavity operation requires the mirrors to be aligned precisely parallel to each other and perpendicular to the optical propagation axis. In our initial implementation (Fig.~\ref{miroirs cav before} top), the mirrors were permanently glued into place. However, this approach introduced major technical issues over time: excess glue migrated onto the optical surfaces, degrading overall transmission, while alignment errors during gluing introduced an uncorrected angular tilt relative to the beam axis.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/cavity_before.pdf}
-    \caption{Initial fixed cavity assembly using glued mirrors, lacking mechanical alignment degrees of freedom.}
+    \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/cavity_mount.pdf}
+    \caption{Top : Initial fixed cavity assembly using glued mirrors, lacking mechanical alignment degrees of freedom. Bottom : Upgraded and final cavity mount featuring three adjustment screws and compliant washers for precise angular and longitudinal alignment}
     \label{miroirs cav before}
 \end{figure}
 
-Because the original design provided no mechanical degrees of freedom to correct these misalignments, we redesigned the mounting mechanism. The updated cavity assembly is presented in Fig.~\ref{miroirs cav after}. In this configuration, three adjustment knobs on a circular outer mount apply controlled pressure against the central cylindrical spacer housing the mirrors, with intermediate washers providing mechanical compliance. This allows for precise tilt control and fine adjustment of the mirror separation.
+Because the original design provided no mechanical degrees of freedom to correct these misalignments, we redesigned the mounting mechanism. The updated cavity assembly is presented in Fig.~\ref{miroirs cav before} bottom. In this configuration, three adjustment knobs on a circular outer mount apply controlled pressure against the central cylindrical spacer housing the mirrors, with intermediate washers providing mechanical compliance. This allows for precise tilt control and fine adjustment of the mirror separation.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/changestoFPcavityAFTEE.pdf}
-    \caption{Upgraded and final cavity mount featuring three adjustment screws and compliant washers for precise angular and longitudinal alignment.}
-    \label{miroirs cav after}
-\end{figure}
 
 Once locked to the injection laser, the optimized cavity achieves a total power transmission efficiency of $T = 0.63$. The Free Spectral Range (FSR) is given by:
 \begin{equation}
