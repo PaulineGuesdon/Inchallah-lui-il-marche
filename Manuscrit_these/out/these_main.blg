@@ -6,7 +6,7 @@ Database file #1: ref.bib
 Database file #2: spincontrol_refs.bib
 Warning--entry type for "notemixture" isn't style-file defined
 --line 62 of file spincontrol_refs.bib
-Warning--I didn't find a database entry for "StellmerThesis"
+Warning--I didn't find a database entry for "bataille_adiabatic_2020"
 Warning--empty journal in bataille_realisation_nodate
 Warning--empty year in bataille_realisation_nodate
 Warning--empty booktitle in stellmer_degenerate_2014
@@ -16,45 +16,45 @@ Warning--empty journal in dalibard_interactions_nodate
 Warning--empty year in dalibard_interactions_nodate
 Warning--empty journal in reichenbach_optical_nodate
 Warning--empty year in reichenbach_optical_nodate
-You've used 124 entries,
+You've used 125 entries,
             1876 wiz_defined-function locations,
-            1241 strings with 29937 characters,
-and the built_in function-call counts, 39429 in all, are:
-= -- 3800
-> -- 2141
+            1245 strings with 30072 characters,
+and the built_in function-call counts, 39736 in all, are:
+= -- 3829
+> -- 2152
 < -- 0
-+ -- 761
-- -- 637
-* -- 2848
-:= -- 5589
-add.period$ -- 143
-call.type$ -- 124
-change.case$ -- 120
++ -- 765
+- -- 640
+* -- 2874
+:= -- 5631
+add.period$ -- 144
+call.type$ -- 125
+change.case$ -- 121
 chr.to.int$ -- 0
-cite$ -- 133
-duplicate$ -- 2153
-empty$ -- 2915
-format.name$ -- 637
-if$ -- 9619
+cite$ -- 134
+duplicate$ -- 2168
+empty$ -- 2949
+format.name$ -- 640
+if$ -- 9695
 int.to.chr$ -- 0
-int.to.str$ -- 124
-missing$ -- 119
-newline$ -- 397
-num.names$ -- 123
-pop$ -- 279
+int.to.str$ -- 125
+missing$ -- 120
+newline$ -- 400
+num.names$ -- 124
+pop$ -- 283
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1932
+skip$ -- 1942
 stack$ -- 0
-substring$ -- 1901
-swap$ -- 1241
+substring$ -- 1920
+swap$ -- 1246
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 290
-width$ -- 127
-write$ -- 1266
+while$ -- 294
+width$ -- 128
+write$ -- 1277
 (There were 11 warnings)
