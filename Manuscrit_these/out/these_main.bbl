@@ -25,6 +25,10 @@ E.~D. Black, ``An introduction to {Pound}–{Drever}–{Hall} laser frequency st
 A.~Guttridge, {\em Photoassociation of {Ultracold} {CsYb} {Molecules} and {Determination} of {Interspecies} {Scattering} {Lengths}}.
 \newblock Springer {Theses}, Cham: Springer International Publishing, 2019.
 
+\bibitem{zelevinsky_narrow_2006}
+T.~Zelevinsky, M.~M. Boyd, A.~D. Ludlow, T.~Ido, J.~Ye, R.~Ciurylo, P.~Naidon, and P.~S. Julienne, ``Narrow {Line} {Photoassociation} in an {Optical} {Lattice},'' {\em Physical Review Letters}, vol.~96, p.~203201, May 2006.
+\newblock Number: 20 arXiv:physics/0602135.
+
 \bibitem{Payne1925StellarAtmospheres}
 C.~H. Payne, {\em Stellar Atmospheres; a Contribution to the Observational Study of High Temperature in the Reversing Layers of Stars}.
 \newblock PhD thesis, Radcliffe College, Cambridge, MA, USA, 1925.
@@ -50,10 +54,6 @@ H.~Sun, B.~Yang, H.-Y. Wang, Z.-Y. Zhou, G.-X. Su, H.-N. Dai, Z.-S. Yuan, and J.
 
 \bibitem{Bakr2009QuantumGasMicroscope}
 W.~S. Bakr, J.~I. Gillen, A.~Peng, S.~F{\"o}lling, and M.~Greiner, ``A quantum gas microscope for detecting single atoms in a hubbard-regime optical lattice,'' {\em Nature}, vol.~462, no.~7269, pp.~74--77, 2009.
-
-\bibitem{zelevinsky_narrow_2006}
-T.~Zelevinsky, M.~M. Boyd, A.~D. Ludlow, T.~Ido, J.~Ye, R.~Ciurylo, P.~Naidon, and P.~S. Julienne, ``Narrow {Line} {Photoassociation} in an {Optical} {Lattice},'' {\em Physical Review Letters}, vol.~96, p.~203201, May 2006.
-\newblock Number: 20 arXiv:physics/0602135.
 
 \bibitem{blatt_measurement_2011}
 S.~Blatt, T.~L. Nicholson, B.~J. Bloom, J.~R. Williams, J.~W. Thomsen, P.~S. Julienne, and J.~Ye, ``Measurement of {Optical} {Feshbach} {Resonances} in an {Ideal} {Gas},'' {\em Physical Review Letters}, vol.~107, p.~073202, Aug. 2011.
@@ -385,10 +385,6 @@ J.~J. Sakurai and J.~Napolitano, {\em Modern Quantum Mechanics}.
 
 \bibitem{leroy1970dissociation}
 R.~J. Le~Roy and R.~B. Bernstein, ``Dissociation energy and long-range potential constants from vibrational energies of multiatomic molecules,'' {\em The Journal of Chemical Physics}, vol.~52, no.~8, pp.~3869--3879, 1970.
-
-\bibitem{litvinov_measuring_2021}
-A.~Litvinov, P.~Bataille, E.~Maréchal, P.~Pedri, O.~Gorceix, M.~Robert-de Saint-Vincent, and B.~Laburthe-Tolra, ``Measuring densities of cold atomic clouds smaller than the resolution limit,'' {\em Physical Review A}, vol.~104, p.~033309, Sept. 2021.
-\newblock arXiv:2105.10296 [cond-mat].
 
 \bibitem{franzen_intercombination_2023}
 T.~Franzen, B.~Pollklesener, C.~Sillus, and A.~Görlitz, ``Intercombination line photoassociation spectroscopy of \$\{\}{\textasciicircum}\{87\}\${Rb}\$\{\}{\textasciicircum}\{170\}\${Yb},'' {\em Physical Review A}, vol.~107, p.~023114, Feb. 2023.

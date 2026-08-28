@@ -68,24 +68,28 @@
 \contentsline {subsubsection}{\numberline {3.2.2.1}ECDL locking and frequency referencing}{79}{subsubsection.231}%
 \contentsline {subsubsection}{\numberline {3.2.2.2}Spectral imperfections from the locking scheme}{82}{subsubsection.235}%
 \contentsline {subsubsection}{\numberline {3.2.2.3}Spectral imperfections from the filter cavity system}{82}{subsubsection.237}%
-\contentsline {subsection}{\numberline {3.2.3}Atomic and molecular lines calibration}{85}{subsection.243}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}General experimental framework and baseline parameters}{85}{subsubsection.244}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}Fitting model}{86}{subsubsection.246}%
-\contentsline {subsubsection}{\numberline {3.2.3.3}Experimental results on $^{88}$Sr}{87}{subsubsection.253}%
-\contentsline {subsubsection}{\numberline {3.2.3.4}Alternative source: the injection-locked laser}{88}{subsubsection.255}%
-\contentsline {subsubsection}{\numberline {3.2.3.5}Noise of the diode}{90}{subsubsection.258}%
-\contentsline {subsubsection}{\numberline {3.2.3.6}Decay dynamics ($dN/dt$)}{91}{subsubsection.261}%
-\contentsline {section}{\numberline {3.3}$^{87}\text {Sr}$ molecules}{94}{section.279}%
-\contentsline {subsection}{\numberline {3.3.1}Results on $^{87}Sr$}{94}{subsection.280}%
-\contentsline {subsection}{\numberline {3.3.2}Verification of the molecular nature of the lines}{95}{subsection.282}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}dN/dt decay interpretation}{95}{subsubsection.283}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Temperature as an ultimate proof}{96}{subsubsection.285}%
-\contentsline {subsubsection}{\numberline {3.3.2.3}Molecular lines on $^{87}Sr$}{98}{subsubsection.290}%
-\contentsline {paragraph}{Line at $-259.01$ MHz}{98}{section*.291}%
-\contentsline {paragraph}{Line at $276.83$ MHz}{100}{section*.293}%
-\contentsline {paragraph}{Line at $375.74$ MHz}{102}{section*.295}%
-\contentsline {subsection}{\numberline {3.3.3}Interpretation of low contrast}{105}{subsection.303}%
-\contentsline {subsubsection}{\numberline {3.3.3.1}Coupling to more energetic state from the IR}{106}{subsubsection.306}%
-\contentsline {subsection}{\numberline {3.3.4}Conclusion and outlook}{107}{subsection.308}%
-\contentsline {chapter}{Conclusion}{108}{chapter*.309}%
-\contentsline {chapter}{\numberline {A}Algorithms}{119}{appendix.311}%
+\contentsline {subsection}{\numberline {3.2.3}Atomic and molecular lines calibration}{86}{subsection.244}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}General experimental framework and baseline parameters}{86}{subsubsection.245}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Fitting model}{87}{subsubsection.247}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}Experimental results on $^{88}$Sr}{88}{subsubsection.254}%
+\contentsline {subsubsection}{\numberline {3.2.3.4}PA experiments with an alternative laser source}{89}{subsubsection.257}%
+\contentsline {subsubsection}{\numberline {3.2.3.5}Noise of the diode}{91}{subsubsection.260}%
+\contentsline {subsubsection}{\numberline {3.2.3.6}Determining the optical scattering length $l_{\text {opt}}$}{93}{subsubsection.263}%
+\contentsline {paragraph}{Method 1: Linewidth and Peak Analysis of the Photoassociation Loss Resonance}{93}{section*.264}%
+\contentsline {paragraph}{Method 2: Direct Extraction from Two-Body Loss Rate Dynamics}{93}{section*.271}%
+\contentsline {subsubsection}{\numberline {3.2.3.7}Decay dynamics ($dN/dt$)}{94}{subsubsection.273}%
+\contentsline {section}{\numberline {3.3}$^{87}\text {Sr}$ inelastic collisions}{97}{section.291}%
+\contentsline {subsection}{\numberline {3.3.1}Results on $^{87}Sr$}{97}{subsection.292}%
+\contentsline {subsection}{\numberline {3.3.2}Verification of the molecular nature of the lines}{98}{subsection.294}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}dN/dt decay interpretation}{98}{subsubsection.295}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Temperature analysis }{99}{subsubsection.297}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}Molecular lines on $^{87}Sr$}{101}{subsubsection.302}%
+\contentsline {paragraph}{Line at $-259.01$ MHz}{101}{section*.303}%
+\contentsline {paragraph}{Line at $276.83$ MHz}{103}{section*.305}%
+\contentsline {paragraph}{Line at $375.74$ MHz}{105}{section*.307}%
+\contentsline {subsection}{\numberline {3.3.3}Interpretation of low contrast}{107}{subsection.310}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}Predissociation}{107}{subsubsection.311}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}Prevent from oupling to more energetic state from the IR}{109}{subsubsection.314}%
+\contentsline {subsection}{\numberline {3.3.4}Conclusion and outlook}{109}{subsection.319}%
+\contentsline {chapter}{Conclusion}{111}{chapter*.320}%
+\contentsline {chapter}{\numberline {A}Algorithms}{123}{appendix.322}%

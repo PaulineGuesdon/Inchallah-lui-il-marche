@@ -19,6 +19,7 @@
 \citation{bataille_realisation_nodate}
 \citation{black_Gas_preparation_and_spin_control_2001}
 \citation{guttridge_photoassociation_2019}
+\citation{zelevinsky_narrow_2006}
 \citation{Payne1925StellarAtmospheres}
 \citation{Franklin1953MolecularConfiguration}
 \citation{Borde2017Metrologie}
@@ -127,6 +128,7 @@
 \newlabel{fig:intro-optical-pumping}{{1.18}{25}{Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition used to prepare a specific nuclear spin mixture. The red laser is ramped through the target energy level of $^3P_1$: the atoms decay to neighbours states $m_F \pm 1$ of $^1S_0$}{figure.caption.58}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.4}Spin Manipulation}{26}{section.59}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.4.1}External Cavity Diode Laser (ECDL)}{26}{subsection.60}\protected@file@percent }
+\newlabel{moglabs ecdl}{{1.4.1}{26}{External Cavity Diode Laser (ECDL)}{subsection.60}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.1.1}Laser architecture}{26}{subsubsection.61}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1.19}{\ignorespaces MOGlabs External Cavity Diode Laser (ECDL) architecture used for spin manipulation. A diode lasing at 689~nm is frequency settled by an interferential filter marked in red to then be collimated by a lens. The beam is reflected on a second miroir to close a cavity acting as a frequency filter: this system is a cateye. The last lens is used to collimate the beam passing throught an isolater before leaving the laser head. }}{26}{figure.caption.62}\protected@file@percent }
 \newlabel{fig:ecdl-laser}{{1.19}{26}{MOGlabs External Cavity Diode Laser (ECDL) architecture used for spin manipulation. A diode lasing at 689~nm is frequency settled by an interferential filter marked in red to then be collimated by a lens. The beam is reflected on a second miroir to close a cavity acting as a frequency filter: this system is a cateye. The last lens is used to collimate the beam passing throught an isolater before leaving the laser head}{figure.caption.62}{}}
@@ -147,6 +149,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1.22}{\ignorespaces Complete optical setup including the Fabry-Pérot cavity and PDH stabilization loop.}}{30}{figure.caption.72}\protected@file@percent }
 \newlabel{fig:raman-transitions}{{1.22}{30}{Complete optical setup including the Fabry-Pérot cavity and PDH stabilization loop}{figure.caption.72}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.4.4}Fabry-Pérot cavity and PDH Locking system}{30}{subsection.73}\protected@file@percent }
+\newlabel{FP cavity}{{1.4.4}{30}{Fabry-Pérot cavity and PDH Locking system}{subsection.73}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.4.1}Cavity design and assembly}{30}{subsubsection.74}\protected@file@percent }
 \newlabel{eq:cavity_resonance}{{1.11}{30}{Cavity design and assembly}{equation.75}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.23}{\ignorespaces Top : Initial fixed cavity assembly using glued mirrors, lacking mechanical alignment degrees of freedom. Bottom : Upgraded and final cavity mount featuring three adjustment screws and compliant washers for precise angular and longitudinal alignment}}{31}{figure.caption.76}\protected@file@percent }
@@ -370,94 +373,102 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2.3}Spectral imperfections from the filter cavity system}{82}{subsubsection.237}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Bessel functions}}{83}{figure.caption.239}\protected@file@percent }
 \newlabel{Bessel function}{{3.11}{83}{Bessel functions}{figure.caption.239}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Scheme of the PDH sidebands addressing the atomic resonance. The purple plot is the dark signal -with the three interfering components between the carrier and the first harmonics- shifted by $f_0'-f_0$.}}{84}{figure.caption.240}\protected@file@percent }
-\newlabel{sidebands}{{3.12}{84}{Scheme of the PDH sidebands addressing the atomic resonance. The purple plot is the dark signal -with the three interfering components between the carrier and the first harmonics- shifted by $f_0'-f_0$}{figure.caption.240}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Atomic loss due to FP cavity PDH sideband that is adressing the $^1S_0 - ^3P_1$ line at $\Delta = f_0 - f_M$ with $f_M$ the modulation frequency of the PDH EOM.}}{84}{figure.caption.241}\protected@file@percent }
-\newlabel{fig:raie-40mhz}{{3.13}{84}{Atomic loss due to FP cavity PDH sideband that is adressing the $^1S_0 - ^3P_1$ line at $\Delta = f_0 - f_M$ with $f_M$ the modulation frequency of the PDH EOM}{figure.caption.241}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Atomic and molecular lines calibration}{85}{subsection.243}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.1}General experimental framework and baseline parameters}{85}{subsubsection.244}\protected@file@percent }
-\citation{litvinov_measuring_2021}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.2}Fitting model}{86}{subsubsection.246}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Scheme of the PDH sidebands addressing the atomic resonance, shown at two snapshots of the laser frequency scan. The atomic transition sits at the fixed frequency $f_0$ (green dashed line). In black: the carrier is scanned onto resonance ($f_0'=f_0$), producing the true photoassociation signal. In purple: the carrier is instead detuned to $f_0'=f_0+f_M$, so that it is itself off-resonance, but its lower sideband coincides with $f_0$ and drives a spurious ("ghost") loss resonance. As the scan sweeps $f_0'$, this coincidence recurs whenever $f_0' = f_0 \pm f_M$, producing satellite peaks such as the one reported in Fig.~\ref {fig:raie-40mhz}.}}{84}{figure.caption.241}\protected@file@percent }
+\newlabel{sidebands}{{3.12}{84}{Scheme of the PDH sidebands addressing the atomic resonance, shown at two snapshots of the laser frequency scan. The atomic transition sits at the fixed frequency $f_0$ (green dashed line). In black: the carrier is scanned onto resonance ($f_0'=f_0$), producing the true photoassociation signal. In purple: the carrier is instead detuned to $f_0'=f_0+f_M$, so that it is itself off-resonance, but its lower sideband coincides with $f_0$ and drives a spurious ("ghost") loss resonance. As the scan sweeps $f_0'$, this coincidence recurs whenever $f_0' = f_0 \pm f_M$, producing satellite peaks such as the one reported in Fig.~\ref {fig:raie-40mhz}}{figure.caption.241}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Atomic loss due to the FP cavity's PDH sideband addressing the $^1S_0 \rightarrow {}^3P_1$ line at $\Delta = f_0 - f_M$, with $f_M$ the modulation frequency of the PDH EOM. The dashed line marks the expected detuning of the ghost resonance, $|\Delta |=f_M=40.48$~MHz.}}{85}{figure.caption.242}\protected@file@percent }
+\newlabel{fig:raie-40mhz}{{3.13}{85}{Atomic loss due to the FP cavity's PDH sideband addressing the $^1S_0 \rightarrow {}^3P_1$ line at $\Delta = f_0 - f_M$, with $f_M$ the modulation frequency of the PDH EOM. The dashed line marks the expected detuning of the ghost resonance, $|\Delta |=f_M=40.48$~MHz}{figure.caption.242}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Atomic and molecular lines calibration}{86}{subsection.244}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.1}General experimental framework and baseline parameters}{86}{subsubsection.245}\protected@file@percent }
 \citation{zelevinsky_narrow_2006}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.2}Fitting model}{87}{subsubsection.247}\protected@file@percent }
+\citation{zelevinsky_narrow_2006}
+\citation{zelevinsky_narrow_2006}
+\citation{zelevinsky_narrow_2006}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.3}Experimental results on $^{88}$Sr}{88}{subsubsection.254}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Summary of the two vibrational states identified for $^{88}\text  {Sr}$, comparing measured line centers and linewidths to the literature values from Zelevinsky et al.~\cite  {zelevinsky_narrow_2006}. $\Gamma _0$ and $\Gamma _{\text  {thermal}}$ are estimated from first principles (not extracted from the data); $\Gamma _{\text  {laser+rem}}$ is obtained by subtracting these two contributions in quadrature from $\Gamma _{\text  {tot}}$.}}{88}{table.caption.255}\protected@file@percent }
+\newlabel{tab:88Sr-lines-summary}{{3.1}{88}{Summary of the two vibrational states identified for $^{88}\text {Sr}$, comparing measured line centers and linewidths to the literature values from Zelevinsky et al.~\cite {zelevinsky_narrow_2006}. $\Gamma _0$ and $\Gamma _{\text {thermal}}$ are estimated from first principles (not extracted from the data); $\Gamma _{\text {laser+rem}}$ is obtained by subtracting these two contributions in quadrature from $\Gamma _{\text {tot}}$}{table.caption.255}{}}
 \citation{zelevinsky_narrow_2006}
 \citation{blatt_measurement_2011}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.3}Experimental results on $^{88}$Sr}{87}{subsubsection.253}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.4}Alternative source: the injection-locked laser}{88}{subsubsection.255}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Experimental comparison of the $\nu =-2$ molecular resonance linewidth measured with two different laser sources.}}{88}{table.caption.256}\protected@file@percent }
-\newlabel{tab:comparaison_lasers}{{3.1}{88}{Experimental comparison of the $\nu =-2$ molecular resonance linewidth measured with two different laser sources}{table.caption.256}{}}
-\newlabel{linewidth avec pompopt}{{3.15}{88}{}{figure.caption.257}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Resonances of $^{88}\text  {Sr}$}}{89}{figure.caption.254}\protected@file@percent }
-\newlabel{88Sr resonance}{{3.14}{89}{Resonances of $^{88}\text {Sr}$}{figure.caption.254}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.5}Noise of the diode}{90}{subsubsection.258}\protected@file@percent }
-\newlabel{6MHz noise red detuned}{{3.16}{90}{}{figure.caption.259}{}}
-\newlabel{6MHz noise blue detuned}{{3.17}{91}{}{figure.caption.260}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.6}Decay dynamics ($dN/dt$)}{91}{subsubsection.261}\protected@file@percent }
-\newlabel{eq globale collisions}{{3.70}{91}{Decay dynamics ($dN/dt$)}{equation.269}{}}
-\newlabel{eq:change_var}{{3.71}{91}{Decay dynamics ($dN/dt$)}{equation.270}{}}
-\newlabel{eq:diff}{{3.72}{91}{Decay dynamics ($dN/dt$)}{equation.271}{}}
-\newlabel{eq:integ}{{3.73}{91}{Decay dynamics ($dN/dt$)}{equation.272}{}}
-\newlabel{eq:inv_M}{{3.74}{91}{Decay dynamics ($dN/dt$)}{equation.273}{}}
-\newlabel{eq:sol_M}{{3.75}{91}{Decay dynamics ($dN/dt$)}{equation.274}{}}
-\newlabel{eq:final_fit}{{3.76}{91}{Decay dynamics ($dN/dt$)}{equation.275}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.4}PA experiments with an alternative laser source}{89}{subsubsection.257}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Experimental comparison of the photoassociation line to the bound state $\nu =-2$ measured with two different laser sources.}}{89}{table.caption.258}\protected@file@percent }
+\newlabel{tab:comparaison_lasers}{{3.2}{89}{Experimental comparison of the photoassociation line to the bound state $\nu =-2$ measured with two different laser sources}{table.caption.258}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Resonances of $^{88}\text  {Sr}$}}{90}{figure.caption.256}\protected@file@percent }
+\newlabel{88Sr resonance}{{3.14}{90}{Resonances of $^{88}\text {Sr}$}{figure.caption.256}{}}
+\newlabel{linewidth avec pompopt}{{3.15}{91}{}{figure.caption.259}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.5}Noise of the diode}{91}{subsubsection.260}\protected@file@percent }
+\newlabel{6MHz noise red detuned}{{3.16}{92}{}{figure.caption.261}{}}
+\newlabel{6MHz noise blue detuned}{{3.17}{92}{}{figure.caption.262}{}}
 \citation{zelevinsky_narrow_2006}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.6}Determining the optical scattering length $l_{\text  {opt}}$}{93}{subsubsection.263}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Method 1: Linewidth and Peak Analysis of the Photoassociation Loss Resonance}{93}{section*.264}\protected@file@percent }
+\newlabel{eq:zelevinsky_K2}{{3.71}{93}{Method 1: Linewidth and Peak Analysis of the Photoassociation Loss Resonance}{equation.265}{}}
+\newlabel{eq:lorentzian_fit_standard}{{3.73}{93}{Method 1: Linewidth and Peak Analysis of the Photoassociation Loss Resonance}{equation.267}{}}
+\@writefile{toc}{\contentsline {paragraph}{Method 2: Direct Extraction from Two-Body Loss Rate Dynamics}{93}{section*.271}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.7}Decay dynamics ($dN/dt$)}{94}{subsubsection.273}\protected@file@percent }
+\newlabel{eq globale collisions}{{3.78}{94}{Decay dynamics ($dN/dt$)}{equation.281}{}}
+\newlabel{eq:change_var}{{3.79}{94}{Decay dynamics ($dN/dt$)}{equation.282}{}}
+\newlabel{eq:diff}{{3.80}{94}{Decay dynamics ($dN/dt$)}{equation.283}{}}
+\newlabel{eq:integ}{{3.81}{94}{Decay dynamics ($dN/dt$)}{equation.284}{}}
+\newlabel{eq:inv_M}{{3.82}{94}{Decay dynamics ($dN/dt$)}{equation.285}{}}
+\newlabel{eq:sol_M}{{3.83}{94}{Decay dynamics ($dN/dt$)}{equation.286}{}}
+\newlabel{eq:final_fit}{{3.84}{94}{Decay dynamics ($dN/dt$)}{equation.287}{}}
+\newlabel{equation fit finale}{{3.86}{94}{Decay dynamics ($dN/dt$)}{equation.289}{}}
 \citation{blatt_systematic_2011}
-\newlabel{equation fit finale}{{3.78}{92}{Decay dynamics ($dN/dt$)}{equation.277}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces 88sr exponential decay}}{93}{figure.caption.278}\protected@file@percent }
-\newlabel{88sr exponential decay}{{3.18}{93}{88sr exponential decay}{figure.caption.278}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}$^{87}\text  {Sr}$ molecules}{94}{section.279}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Results on $^{87}Sr$}{94}{subsection.280}\protected@file@percent }
-\newlabel{zoom red chain battement}{{3.19}{95}{}{figure.caption.281}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Verification of the molecular nature of the lines}{95}{subsection.282}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.1}dN/dt decay interpretation}{95}{subsubsection.283}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces Evolution of the atom number as a function of the illumination time at $f = -6$~MHz}}{96}{figure.caption.284}\protected@file@percent }
-\newlabel{exp decay 6 MHz noise}{{3.20}{96}{Evolution of the atom number as a function of the illumination time at $f = -6$~MHz}{figure.caption.284}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.2}Temperature as an ultimate proof}{96}{subsubsection.285}\protected@file@percent }
-\newlabel{temp 6MHz noise}{{3.21}{97}{}{figure.caption.286}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.3}Molecular lines on $^{87}Sr$}{98}{subsubsection.290}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Line at $-259.01$ MHz}{98}{section*.291}\protected@file@percent }
-\newlabel{subfig:259MHz_spectrum}{{3.22a}{99}{Resonance spectrum at $259.01 \pm 0.12$ MHz ($I = 19$ W/cm$^2$ for t = 1000~ms)}{figure.caption.292}{}}
-\newlabel{sub@subfig:259MHz_spectrum}{{a}{99}{Resonance spectrum at $259.01 \pm 0.12$ MHz ($I = 19$ W/cm$^2$ for t = 1000~ms)}{figure.caption.292}{}}
-\newlabel{subfig:259MHz_temp}{{3.22b}{99}{Temperature of the gas at the $259.01$ MHz resonance}{figure.caption.292}{}}
-\newlabel{sub@subfig:259MHz_temp}{{b}{99}{Temperature of the gas at the $259.01$ MHz resonance}{figure.caption.292}{}}
-\newlabel{subfig:259MHz_temp}{{3.22c}{99}{at the $259.01$ MHz resonance}{figure.caption.292}{}}
-\newlabel{sub@subfig:259MHz_temp}{{c}{99}{at the $259.01$ MHz resonance}{figure.caption.292}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.22}{\ignorespaces Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr ($I = 19$ W/cm$^2$). All detunings are measured from the $^{87}$Sr atomic resonance.}}{99}{figure.caption.292}\protected@file@percent }
-\newlabel{fig:line_259MHz}{{3.22}{99}{Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr ($I = 19$ W/cm$^2$). All detunings are measured from the $^{87}$Sr atomic resonance}{figure.caption.292}{}}
-\@writefile{toc}{\contentsline {paragraph}{Line at $276.83$ MHz}{100}{section*.293}\protected@file@percent }
-\newlabel{subfig:274MHz_spectrum}{{3.23a}{101}{Resonance spectrum at $276.83 \pm 0.03$ MHz ($I = 5.2$ W/cm$^2$ for t = 1000~ms)}{figure.caption.294}{}}
-\newlabel{sub@subfig:274MHz_spectrum}{{a}{101}{Resonance spectrum at $276.83 \pm 0.03$ MHz ($I = 5.2$ W/cm$^2$ for t = 1000~ms)}{figure.caption.294}{}}
-\newlabel{subfig:274MHz_temp}{{3.23b}{101}{Temperature of the gas at the $276.83$ MHz resonance (figure to be added)}{figure.caption.294}{}}
-\newlabel{sub@subfig:274MHz_temp}{{b}{101}{Temperature of the gas at the $276.83$ MHz resonance (figure to be added)}{figure.caption.294}{}}
-\newlabel{subfig:274MHz_exp}{{3.23c}{101}{\relax }{figure.caption.294}{}}
-\newlabel{sub@subfig:274MHz_exp}{{c}{101}{\relax }{figure.caption.294}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.23}{\ignorespaces Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$). No exponential decay measurement is available for this line. All detunings are measured from the $^{87}$Sr atomic resonance.}}{101}{figure.caption.294}\protected@file@percent }
-\newlabel{fig:line_276MHz}{{3.23}{101}{Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$). No exponential decay measurement is available for this line. All detunings are measured from the $^{87}$Sr atomic resonance}{figure.caption.294}{}}
-\@writefile{toc}{\contentsline {paragraph}{Line at $375.74$ MHz}{102}{section*.295}\protected@file@percent }
-\newlabel{subfig:375MHz_spectrum}{{3.24a}{103}{Resonance spectrum at $375.74 \pm 0.48$ MHz ($I = 5.6$ W/cm$^2$ for t = 1000~ms)}{figure.caption.296}{}}
-\newlabel{sub@subfig:375MHz_spectrum}{{a}{103}{Resonance spectrum at $375.74 \pm 0.48$ MHz ($I = 5.6$ W/cm$^2$ for t = 1000~ms)}{figure.caption.296}{}}
-\newlabel{subfig:375MHz_temp}{{3.24b}{103}{Temperature of the gas at the $375.74$ MHz resonance}{figure.caption.296}{}}
-\newlabel{sub@subfig:375MHz_temp}{{b}{103}{Temperature of the gas at the $375.74$ MHz resonance}{figure.caption.296}{}}
-\newlabel{subfig:375MHz_exp}{{3.24c}{103}{Exponential decay (one- and two-body losses) at the $375.74$ MHz resonance}{figure.caption.296}{}}
-\newlabel{sub@subfig:375MHz_exp}{{c}{103}{Exponential decay (one- and two-body losses) at the $375.74$ MHz resonance}{figure.caption.296}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.24}{\ignorespaces Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr ($I = 5.6$ W/cm$^2$ for t = 1000~ms). All detunings are measured from the $^{87}$Sr atomic resonance.}}{103}{figure.caption.296}\protected@file@percent }
-\newlabel{fig:line_375MHz}{{3.24}{103}{Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr ($I = 5.6$ W/cm$^2$ for t = 1000~ms). All detunings are measured from the $^{87}$Sr atomic resonance}{figure.caption.296}{}}
-\citation{zelevinsky_narrow_2006}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Summary of fit parameters and experimental conditions for data series 171, 195, and 184.}}{104}{table.caption.297}\protected@file@percent }
-\newlabel{tab:summary_fits_PA_final}{{3.2}{104}{Summary of fit parameters and experimental conditions for data series 171, 195, and 184}{table.caption.297}{}}
-\newlabel{eq:zelevinsky_K2}{{3.82}{104}{Line at $375.74$ MHz}{equation.298}{}}
-\newlabel{eq:lorentzian_fit_standard}{{3.83}{104}{Line at $375.74$ MHz}{equation.299}{}}
+\citation{blatt_systematic_2011}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces 88sr exponential decay}}{96}{figure.caption.290}\protected@file@percent }
+\newlabel{88sr exponential decay}{{3.18}{96}{88sr exponential decay}{figure.caption.290}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}$^{87}\text  {Sr}$ inelastic collisions}{97}{section.291}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Results on $^{87}Sr$}{97}{subsection.292}\protected@file@percent }
+\newlabel{zoom red chain battement}{{3.19}{98}{}{figure.caption.293}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Verification of the molecular nature of the lines}{98}{subsection.294}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.1}dN/dt decay interpretation}{98}{subsubsection.295}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces Evolution of the atom number as a function of the illumination time at $f = -6$~MHz}}{99}{figure.caption.296}\protected@file@percent }
+\newlabel{exp decay 6 MHz noise}{{3.20}{99}{Evolution of the atom number as a function of the illumination time at $f = -6$~MHz}{figure.caption.296}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.2}Temperature analysis }{99}{subsubsection.297}\protected@file@percent }
+\newlabel{temp 6MHz noise}{{3.21}{100}{}{figure.caption.298}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.3}Molecular lines on $^{87}Sr$}{101}{subsubsection.302}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Line at $-259.01$ MHz}{101}{section*.303}\protected@file@percent }
+\newlabel{subfig:259MHz_spectrum}{{3.22a}{102}{Resonance spectrum at $259.01 \pm 0.12$ MHz ($I = 19$ W/cm$^2$ for t = 1000~ms)}{figure.caption.304}{}}
+\newlabel{sub@subfig:259MHz_spectrum}{{a}{102}{Resonance spectrum at $259.01 \pm 0.12$ MHz ($I = 19$ W/cm$^2$ for t = 1000~ms)}{figure.caption.304}{}}
+\newlabel{subfig:259MHz_temp}{{3.22b}{102}{Temperature of the gas at the $259.01$ MHz resonance}{figure.caption.304}{}}
+\newlabel{sub@subfig:259MHz_temp}{{b}{102}{Temperature of the gas at the $259.01$ MHz resonance}{figure.caption.304}{}}
+\newlabel{subfig:259MHz_temp}{{3.22c}{102}{at the $259.01$ MHz resonance}{figure.caption.304}{}}
+\newlabel{sub@subfig:259MHz_temp}{{c}{102}{at the $259.01$ MHz resonance}{figure.caption.304}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.22}{\ignorespaces Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr ($I = 19$ W/cm$^2$). All detunings are measured from the $^{87}$Sr atomic resonance.}}{102}{figure.caption.304}\protected@file@percent }
+\newlabel{fig:line_259MHz}{{3.22}{102}{Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr ($I = 19$ W/cm$^2$). All detunings are measured from the $^{87}$Sr atomic resonance}{figure.caption.304}{}}
+\@writefile{toc}{\contentsline {paragraph}{Line at $276.83$ MHz}{103}{section*.305}\protected@file@percent }
+\newlabel{subfig:274MHz_spectrum}{{3.23a}{104}{Resonance spectrum at $276.83 \pm 0.03$ MHz ($I = 5.2$ W/cm$^2$ for t = 1000~ms)}{figure.caption.306}{}}
+\newlabel{sub@subfig:274MHz_spectrum}{{a}{104}{Resonance spectrum at $276.83 \pm 0.03$ MHz ($I = 5.2$ W/cm$^2$ for t = 1000~ms)}{figure.caption.306}{}}
+\newlabel{subfig:274MHz_temp}{{3.23b}{104}{Temperature of the gas at the $276.83$ MHz resonance (figure to be added)}{figure.caption.306}{}}
+\newlabel{sub@subfig:274MHz_temp}{{b}{104}{Temperature of the gas at the $276.83$ MHz resonance (figure to be added)}{figure.caption.306}{}}
+\newlabel{subfig:274MHz_exp}{{3.23c}{104}{\relax }{figure.caption.306}{}}
+\newlabel{sub@subfig:274MHz_exp}{{c}{104}{\relax }{figure.caption.306}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.23}{\ignorespaces Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$). No exponential decay measurement is available for this line. All detunings are measured from the $^{87}$Sr atomic resonance.}}{104}{figure.caption.306}\protected@file@percent }
+\newlabel{fig:line_276MHz}{{3.23}{104}{Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$). No exponential decay measurement is available for this line. All detunings are measured from the $^{87}$Sr atomic resonance}{figure.caption.306}{}}
+\@writefile{toc}{\contentsline {paragraph}{Line at $375.74$ MHz}{105}{section*.307}\protected@file@percent }
+\newlabel{subfig:375MHz_spectrum}{{3.24a}{106}{Resonance spectrum at $375.74 \pm 0.48$ MHz ($I = 5.6$ W/cm$^2$ for t = 1000~ms)}{figure.caption.308}{}}
+\newlabel{sub@subfig:375MHz_spectrum}{{a}{106}{Resonance spectrum at $375.74 \pm 0.48$ MHz ($I = 5.6$ W/cm$^2$ for t = 1000~ms)}{figure.caption.308}{}}
+\newlabel{subfig:375MHz_temp}{{3.24b}{106}{Temperature of the gas at the $375.74$ MHz resonance}{figure.caption.308}{}}
+\newlabel{sub@subfig:375MHz_temp}{{b}{106}{Temperature of the gas at the $375.74$ MHz resonance}{figure.caption.308}{}}
+\newlabel{subfig:375MHz_exp}{{3.24c}{106}{Exponential decay (one- and two-body losses) at the $375.74$ MHz resonance}{figure.caption.308}{}}
+\newlabel{sub@subfig:375MHz_exp}{{c}{106}{Exponential decay (one- and two-body losses) at the $375.74$ MHz resonance}{figure.caption.308}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.24}{\ignorespaces Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr ($I = 5.6$ W/cm$^2$ for t = 1000~ms). All detunings are measured from the $^{87}$Sr atomic resonance.}}{106}{figure.caption.308}\protected@file@percent }
+\newlabel{fig:line_375MHz}{{3.24}{106}{Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr ($I = 5.6$ W/cm$^2$ for t = 1000~ms). All detunings are measured from the $^{87}$Sr atomic resonance}{figure.caption.308}{}}
 \citation{borkowski_mass_2014}
 \citation{zelevinsky_narrow_2006}
 \citation{franzen_intercombination_2023}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Summary of fit parameters and experimental conditions for data series 171, 195, and 184.}}{107}{table.caption.309}\protected@file@percent }
+\newlabel{tab:summary_fits_PA_final}{{3.3}{107}{Summary of fit parameters and experimental conditions for data series 171, 195, and 184}{table.caption.309}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Interpretation of low contrast}{107}{subsection.310}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3.1}Predissociation}{107}{subsubsection.311}\protected@file@percent }
 \citation{mukherjee_feshbach_2022}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Interpretation of low contrast}{105}{subsection.303}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.25}{\ignorespaces predissociation}}{106}{figure.caption.305}\protected@file@percent }
-\newlabel{predissociation}{{3.25}{106}{predissociation}{figure.caption.305}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3.1}Coupling to more energetic state from the IR}{106}{subsubsection.306}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.26}{\ignorespaces sequence chirp}}{107}{figure.caption.307}\protected@file@percent }
-\newlabel{sequence chirp}{{3.26}{107}{sequence chirp}{figure.caption.307}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Conclusion and outlook}{107}{subsection.308}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{Conclusion}{108}{chapter*.309}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.25}{\ignorespaces predissociation}}{108}{figure.caption.313}\protected@file@percent }
+\newlabel{predissociation}{{3.25}{108}{predissociation}{figure.caption.313}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3.2}Prevent from oupling to more energetic state from the IR}{109}{subsubsection.314}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.26}{\ignorespaces Experimental sequence for ODT and PA laser chopping}}{109}{figure.caption.318}\protected@file@percent }
+\newlabel{fig:sequence_chopping}{{3.26}{109}{Experimental sequence for ODT and PA laser chopping}{figure.caption.318}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Conclusion and outlook}{109}{subsection.319}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Conclusion}{111}{chapter*.320}\protected@file@percent }
 \bibdata{ref,spincontrol_refs}
 \bibcite{Bataille2020}{{1}{}{{}}{{}}}
 \bibcite{faisant_building_2024}{{2}{}{{}}{{}}}
@@ -466,15 +477,15 @@
 \bibcite{bataille_realisation_nodate}{{5}{}{{}}{{}}}
 \bibcite{black_Gas_preparation_and_spin_control_2001}{{6}{}{{}}{{}}}
 \bibcite{guttridge_photoassociation_2019}{{7}{}{{}}{{}}}
-\bibcite{Payne1925StellarAtmospheres}{{8}{}{{}}{{}}}
-\bibcite{Franklin1953MolecularConfiguration}{{9}{}{{}}{{}}}
-\bibcite{Borde2017Metrologie}{{10}{}{{}}{{}}}
-\bibcite{Feynman1982Simulating}{{11}{}{{}}{{}}}
-\bibcite{Greiner2002MottInsulator}{{12}{}{{}}{{}}}
-\bibcite{Mazurenko2017a}{{13}{}{{}}{{}}}
-\bibcite{Sun2021BosonicAntiferromagnet}{{14}{}{{}}{{}}}
-\bibcite{Bakr2009QuantumGasMicroscope}{{15}{}{{}}{{}}}
-\bibcite{zelevinsky_narrow_2006}{{16}{}{{}}{{}}}
+\bibcite{zelevinsky_narrow_2006}{{8}{}{{}}{{}}}
+\bibcite{Payne1925StellarAtmospheres}{{9}{}{{}}{{}}}
+\bibcite{Franklin1953MolecularConfiguration}{{10}{}{{}}{{}}}
+\bibcite{Borde2017Metrologie}{{11}{}{{}}{{}}}
+\bibcite{Feynman1982Simulating}{{12}{}{{}}{{}}}
+\bibcite{Greiner2002MottInsulator}{{13}{}{{}}{{}}}
+\bibcite{Mazurenko2017a}{{14}{}{{}}{{}}}
+\bibcite{Sun2021BosonicAntiferromagnet}{{15}{}{{}}{{}}}
+\bibcite{Bakr2009QuantumGasMicroscope}{{16}{}{{}}{{}}}
 \bibcite{blatt_measurement_2011}{{17}{}{{}}{{}}}
 \bibcite{borkowski_mass_2014}{{18}{}{{}}{{}}}
 \bibcite{reschovsky_narrow-line_2018}{{19}{}{{}}{{}}}
@@ -581,12 +592,11 @@
 \bibcite{borkowski_line_2009}{{120}{}{{}}{{}}}
 \bibcite{sakurai2020modern}{{121}{}{{}}{{}}}
 \bibcite{leroy1970dissociation}{{122}{}{{}}{{}}}
-\bibcite{litvinov_measuring_2021}{{123}{}{{}}{{}}}
-\bibcite{franzen_intercombination_2023}{{124}{}{{}}{{}}}
-\bibcite{mukherjee_feshbach_2022}{{125}{}{{}}{{}}}
+\bibcite{franzen_intercombination_2023}{{123}{}{{}}{{}}}
+\bibcite{mukherjee_feshbach_2022}{{124}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Algorithms}{119}{appendix.311}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Algorithms}{123}{appendix.322}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{cha:appendix}{{A}{119}{Algorithms}{appendix.311}{}}
-\gdef \@abspage@last{132}
+\newlabel{cha:appendix}{{A}{123}{Algorithms}{appendix.322}{}}
+\gdef \@abspage@last{136}

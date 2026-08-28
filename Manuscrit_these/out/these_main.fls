@@ -193,6 +193,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/rotating.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/rotating.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT ./appendix/mis/acronym.tex
 INPUT ./appendix/mis/acronym.tex
 INPUT ./appendix/mis/acronym.tex
