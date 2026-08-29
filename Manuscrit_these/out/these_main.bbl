@@ -1,25 +1,11 @@
 \begin{thebibliography}{100}
 
-\bibitem{Bataille2020}
-P.~Bataille, A.~Litvinov, I.~Manai, J.~Huckans, F.~Wiotte, A.~Kaladjian, O.~Gorceix, E.~Mar\'echal, B.~Laburthe-Tolra, and M.~Robert-de Saint-Vincent, ``Adiabatic spin-dependent momentum transfer in an {SU(N)} degenerate {Fermi} gas,'' {\em Phys. Rev. A}, vol.~102, p.~013317, 2020.
-
-\bibitem{faisant_building_2024}
-F.~Faisant, {\em Building a strontium quantum gas microscope}.
-\newblock Theses, Université Paris-Saclay, Dec. 2024.
-\newblock Issue: 2024UPASP147.
-
-\bibitem{stellmerThesis}
-S.~Stellmer, F.~Schreck, and T.~C. Killian, ``{DEGENERATE} {QUANTUM} {GASES} {OF} {STRONTIUM},'' in {\em Annual {Review} of {Cold} {Atoms} and {Molecules}}, vol.~2, pp.~1--80, WORLD SCIENTIFIC, May 2014.
-
 \bibitem{litvinov_these}
 A.~Litvinov, {\em Manipulation of the nuclear spin states of 87 {Srin} degenerate {SU}({N})-symmetric {Fermi} gases}.
 \newblock Theses, Sorbonne Paris Nord, Jan. 2023.
 
 \bibitem{bataille_realisation_nodate}
 P.~Bataille, ``Réalisation de gaz quantiques de grand spin,''
-
-\bibitem{black_Gas_preparation_and_spin_control_2001}
-E.~D. Black, ``An introduction to {Pound}–{Drever}–{Hall} laser frequency stabilization,'' {\em American Journal of Physics}, vol.~69, pp.~79--87, Jan. 2001.
 
 \bibitem{guttridge_photoassociation_2019}
 A.~Guttridge, {\em Photoassociation of {Ultracold} {CsYb} {Molecules} and {Determination} of {Interspecies} {Scattering} {Lengths}}.
@@ -93,6 +79,14 @@ M.~Foss-Feig, A.~J. Daley, J.~K. Thompson, and A.~M. Rey, ``Steady-state many-bo
 H.~Ahmed, A.~Litvinov, P.~Guesdon, E.~Maréchal, J.~H. Huckans, B.~Pasquiou, B.~Laburthe-Tolra, and M.~Robert-de Saint-Vincent, ``Coherent control over the high-dimensional space of the nuclear spin of alkaline-earth atoms,'' {\em PRX Quantum}, vol.~6, p.~020352, June 2025.
 \newblock arXiv:2501.01731 [quant-ph].
 
+\bibitem{Bataille2020}
+P.~Bataille, A.~Litvinov, I.~Manai, J.~Huckans, F.~Wiotte, A.~Kaladjian, O.~Gorceix, E.~Mar\'echal, B.~Laburthe-Tolra, and M.~Robert-de Saint-Vincent, ``Adiabatic spin-dependent momentum transfer in an {SU(N)} degenerate {Fermi} gas,'' {\em Phys. Rev. A}, vol.~102, p.~013317, 2020.
+
+\bibitem{faisant_building_2024}
+F.~Faisant, {\em Building a strontium quantum gas microscope}.
+\newblock Theses, Université Paris-Saclay, Dec. 2024.
+\newblock Issue: 2024UPASP147.
+
 \bibitem{phillips_laser_1982}
 W.~D. Phillips and H.~Metcalf, ``Laser {Deceleration} of an {Atomic} {Beam},'' {\em Physical Review Letters}, vol.~48, pp.~596--599, Mar. 1982.
 
@@ -108,6 +102,12 @@ S.~Stellmer, B.~Pasquiou, R.~Grimm, and F.~Schreck, ``Creation of ultracold {Sr2
 
 \bibitem{bartolotta_laser_2018}
 J.~P. Bartolotta, M.~A. Norcia, J.~R.~K. Cline, J.~K. Thompson, and M.~J. Holland, ``Laser cooling by sawtooth-wave adiabatic passage,'' {\em Phys. Rev. A}, vol.~98, p.~023404, 2018.
+
+\bibitem{stellmerThesis}
+S.~Stellmer, F.~Schreck, and T.~C. Killian, ``{DEGENERATE} {QUANTUM} {GASES} {OF} {STRONTIUM},'' in {\em Annual {Review} of {Cold} {Atoms} and {Molecules}}, vol.~2, pp.~1--80, WORLD SCIENTIFIC, May 2014.
+
+\bibitem{black_Gas_preparation_and_spin_control_2001}
+E.~D. Black, ``An introduction to {Pound}–{Drever}–{Hall} laser frequency stabilization,'' {\em American Journal of Physics}, vol.~69, pp.~79--87, Jan. 2001.
 
 \bibitem{Klempt2010pao}
 C.~Klempt, O.~Topic, G.~Gebreyesus, M.~Scherer, T.~Henninger, P.~Hyllus, W.~Ertmer, L.~Santos, and J.~J. Arlt, ``Parametric amplification of vacuum fluctuations in a spinor condensate,'' {\em Phys. Rev. Lett.}, vol.~104, p.~195303, May 2010.

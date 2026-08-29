@@ -1197,8 +1197,9 @@ in the following section using the same methodology, while explicitly accounting
 the experimental constraints listed here.
 
 \section{$^{87}\text{Sr}$ inelastic collisions}
-
-\subsection{Experimental procedure and setup}
+Molecular spectroscopy on bosonic species of $^{88}Sr$ have not revealed any signal on the $^{87}Sr$. On this section one presents the optical setup for the results on this fermion. It is followed by a discussion on 
+the verifications of the nature of the spectroscopic lines: atom number decrease and temperature. Finally the resonances and their associated $dN/dt$ and temperature evolution are plotted.
+\subsection{Experimental procedure and setup }
 The molecular lines on $^{87}Sr$ have been reached only with the MOGlabs source. To adress the fermionic species I did change the diffracted order of the red optical chain for the opposite order to adress $F=11/2$ 
 hyperfine state $1.441$~GHz from the bosonic species 88. 
 (see Setup \ref{zoom red chain battement}). \\
@@ -1254,7 +1255,7 @@ this curve as expected.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_16.pdf}
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_16_corrected.pdf}
     \caption[]{Temperature of the gas during the experiment described in \ref{6MHz noise red detuned} where we observe a number of atoms decaying 
     with a two-body loss-like behavior while it is not the case. The temperature of the gas does not show any increase which is a proof of the elastic
     collisions only and the absence of molecule formation.}
@@ -1312,7 +1313,7 @@ that is directly impacting the shape of the atomic number decay over the time.
     \begin{subfigure}{0.8\linewidth}
         \centering
         % TODO: add temperature figure for 259 MHz line
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_195.pdf}
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_195_corrected.pdf}
         \caption{Temperature of the gas at the $259.01$ MHz resonance.}
         \label{subfig:259MHz_temp}
     \end{subfigure}
@@ -1363,7 +1364,7 @@ The interpolation of the temperature during the illumination time is then used t
     \begin{subfigure}{0.8\linewidth}
         \centering
         % TODO: temperature figure for 274.83 MHz line not yet added
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_171.pdf}
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_171_corrected.pdf}
         \caption{Temperature of the gas at the $276.83$ MHz resonance (figure to be added).}
         \label{subfig:274MHz_temp}
     \end{subfigure}
@@ -1404,7 +1405,7 @@ by the fitting function \ref{eq:final_fit} valid for $\beta$ independant on T. \
 
     \begin{subfigure}{0.75\linewidth}
         \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_184.pdf}
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_184_corrected.pdf}
         \caption{Temperature of the gas at the $375.74$ MHz resonance.}
         \label{subfig:375MHz_temp}
     \end{subfigure}
@@ -1503,11 +1504,11 @@ Same as for the magnetic field that could change the energy difference between t
 
 
  \subsubsection{Prevent from coupling to more energetic state from the IR}
-The ODT laser at $\lambda = 1064$~nm can induce unwanted photoassociation (PA) or transitions to higher energy molecular states if it is resonant with excitation pathways originating from the intermediate excited state. To suppress these parasitic multi-photon processes, an out-of-phase chopping sequence between the ODT and the PA laser is implemented (see Fig.~\ref{fig:sequence_chopping}).
+The ODT laser at $\lambda = 1070$~nm can induce unwanted photoassociation (PA) or transitions to higher energy molecular states if it is resonant with excitation pathways originating from the intermediate excited state. To suppress these parasitic multi-photon processes, an out-of-phase chopping sequence between the ODT and the PA laser is implemented (see Fig.~\ref{fig:sequence_chopping}).
 
 This temporal separation addresses three main constraints:
 \begin{enumerate}
-    \item \textbf{Suppression of multi-photon processes:} Since the ODT ($1064$~nm) and the PA laser ($689$~nm) are never turned on simultaneously, photoassociation pathways involving the combined action of both photons are completely eliminated.
+    \item \textbf{Suppression of multi-photon processes:} Since the ODT ($1070$~nm) and the PA laser ($689$~nm) are never turned on simultaneously, photoassociation pathways involving the combined action of both photons are completely eliminated.
     \item \textbf{Preservation of the atomic cloud:} The trap extinction duration is sufficiently short compared to free-fall expansion so that the atomic cloud does not fall or drop significantly under gravity during the dark phase.
     \item \textbf{Spectral integrity and AOM response:} The switching time is long enough for the acousto-optic modulators (AOMs) to respond faithfully, preventing dramatic spectral broadening or alteration of the PA laser line.
 \end{enumerate}
@@ -1518,16 +1519,6 @@ This temporal separation addresses three main constraints:
     \caption[Experimental sequence for ODT and PA laser chopping]{Experimental sequence of the ODT and PA laser chopping used to prevent multi-photon transitions to higher energy levels. The RF signals driving the ODT and Raman AOMs are modulated at $25$~kHz in opposite phase. This ensures that the two lasers do not overlap while keeping the extinction time short enough to avoid atom loss due to gravity.}
     \label{fig:sequence_chopping}
 \end{figure}
-
-\subsection{Conclusion and outlook}
-To conclude on this chapter I started to present theoretical aspect of PA process by introducting fundamental material such as scattering length, optical length, atoms evolution time for two-body collisions... 
-Then I presented the experimental results on $^{88}Sr$ on intercombination line as a reference to experimentally characterize the process. This chapter ends up with the measurement of molecular lines on an 
-unpolarized gas of $^{87}Sr$ that comes with low contrast and wide linewidth, explained by predissociation process higly present for numerous molecular potentials such as $^{87}Sr$ being an atom with hyperfine 
-structure.\\
-
-Predissociation could be proved by implementing again the optical pumping on the experiment: the number of potentials will decrease and the density of states $\rho(\epsilon_f)$ also. Then the contrast of the 
-molecular lines and their associated linewidth will be improved.\\
-Optical pumping tests have already been operated to enhance SU(2) gas with maximum value $m_F = 9/2$ and $m_F = -9/2$ in order to have the maximum value of $T, m_T$ and 
 
 
 %The last part of this work is to test the final Dicke state we expect to engineer by this PA experiment. A way to test it is to create Ramsey interferometers -as in section 2 of this thesis- on a controllable Hilbert space of low dimension.

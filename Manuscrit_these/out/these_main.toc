@@ -1,95 +1,93 @@
 \contentsline {chapter}{Introduction}{1}{chapter*.7}%
 \contentsline {chapter}{\numberline {1}Gas preparation and spin control}{4}{chapter.8}%
-\contentsline {section}{\numberline {1.1}Full experimental setup}{6}{section.10}%
-\contentsline {section}{\numberline {1.2}Fermi gas preparation}{8}{section.13}%
-\contentsline {subsection}{\numberline {1.2.1}Blue optical setup}{8}{subsection.14}%
-\contentsline {subsection}{\numberline {1.2.2}Transverse cooling}{8}{subsection.17}%
-\contentsline {subsubsection}{\numberline {1.2.2.1}Operating principle and radiation pressure}{8}{subsubsection.18}%
-\contentsline {subsubsection}{\numberline {1.2.2.2}Experimental setup and laser configuration}{11}{subsubsection.20}%
-\contentsline {subsubsection}{\numberline {1.2.2.3}Detuning and power optimization}{11}{subsubsection.22}%
-\contentsline {subsection}{\numberline {1.2.3}Zeeman cooling}{12}{subsection.24}%
-\contentsline {subsection}{\numberline {1.2.4}Blue MOT}{13}{subsection.26}%
-\contentsline {subsection}{\numberline {1.2.5}Repumper}{14}{subsection.31}%
-\contentsline {subsubsection}{\numberline {1.2.5.1}Hyperfine structure of Strontium-87}{14}{subsubsection.32}%
-\contentsline {subsubsection}{\numberline {1.2.5.2}Optimization of the repumper sweep}{15}{subsubsection.34}%
-\contentsline {subsection}{\numberline {1.2.6}Red MOT}{15}{subsection.36}%
-\contentsline {subsubsection}{\numberline {1.2.6.1}Optical setup}{15}{subsubsection.37}%
-\contentsline {subsubsection}{\numberline {1.2.6.2}Broadband MOT}{16}{subsubsection.40}%
-\contentsline {subsubsection}{\numberline {1.2.6.3}Stirring laser}{18}{subsubsection.41}%
-\contentsline {subsubsection}{\numberline {1.2.6.4}Narrowband MOT (Single-frequency MOT)}{20}{subsubsection.44}%
-\contentsline {subsubsection}{\numberline {1.2.6.5}Optimization of narrowband MOT Parameters}{21}{subsubsection.46}%
-\contentsline {subsection}{\numberline {1.2.7}Optical Dipole Trap (ODT) and evaporative cooling}{21}{subsection.47}%
-\contentsline {subsubsection}{\numberline {1.2.7.1}Loading the crossed ODT}{21}{subsubsection.48}%
-\contentsline {subsubsection}{\numberline {1.2.7.2}Optimization of the evaporation ramps}{23}{subsubsection.52}%
-\contentsline {subsubsection}{\numberline {1.2.7.3}Optical setup}{23}{subsubsection.53}%
-\contentsline {section}{\numberline {1.3}Spin Selection}{24}{section.55}%
-\contentsline {subsection}{\numberline {1.3.1}Optical Pumping}{24}{subsection.56}%
-\contentsline {section}{\numberline {1.4}Spin Manipulation}{26}{section.59}%
-\contentsline {subsection}{\numberline {1.4.1}External Cavity Diode Laser (ECDL)}{26}{subsection.60}%
-\contentsline {subsubsection}{\numberline {1.4.1.1}Laser architecture}{26}{subsubsection.61}%
-\contentsline {subsubsection}{\numberline {1.4.1.2}Repair of the MOGlabs}{26}{subsubsection.63}%
-\contentsline {subsection}{\numberline {1.4.2}Raman Transitions}{27}{subsection.64}%
-\contentsline {subsubsection}{\numberline {1.4.2.1}Physical Concept}{27}{subsubsection.65}%
-\contentsline {subsubsection}{\numberline {1.4.2.2}Experimental Setup of the Raman Process}{28}{subsubsection.69}%
-\contentsline {subsection}{\numberline {1.4.3}Photoassociation}{29}{subsection.71}%
-\contentsline {subsection}{\numberline {1.4.4}Fabry-Pérot cavity and PDH Locking system}{30}{subsection.73}%
-\contentsline {subsubsection}{\numberline {1.4.4.1}Cavity design and assembly}{30}{subsubsection.74}%
-\contentsline {subsubsection}{\numberline {1.4.4.2}Pound-Drever-Hall locking system and PID controller analysis}{32}{subsubsection.79}%
-\contentsline {section}{\numberline {1.5}Spin Measurement Scheme}{35}{section.85}%
-\contentsline {chapter}{\numberline {2}Quantum state measurement and characterization in qudit systems }{37}{chapter.91}%
-\contentsline {section}{\numberline {2.1}Gas preparation and spin control}{37}{section.92}%
-\contentsline {section}{\numberline {2.2}Implementation of $\mathfrak {su}$(N) generators.}{39}{section.94}%
-\contentsline {section}{\numberline {2.3}Experimental setting}{40}{section.95}%
-\contentsline {section}{\numberline {2.4}Coherent manipulation of a nuclear-spin qubit}{42}{section.97}%
-\contentsline {section}{\numberline {2.5}Beyond pseudo-spin 1/2 schemes: qudit interferometry}{47}{section.101}%
-\contentsline {subsection}{\numberline {2.5.1}Parallel Ramsey interferometers for simultaneous multiple-field sensing.}{48}{subsection.102}%
-\contentsline {subsection}{\numberline {2.5.2}Simultaneous measurements of multiple collective atomic observables.}{52}{subsection.107}%
-\contentsline {section}{\numberline {2.6}Conclusion}{56}{section.113}%
-\contentsline {section}{\numberline {2.7}Positive-operator-valued measures (POVMs)}{57}{section.114}%
-\contentsline {subsection}{\numberline {2.7.1}Derivation of the experimental POVM framework}{59}{subsection.123}%
-\contentsline {subsubsection}{\numberline {2.7.1.1}Four-level extended space dynamics}{59}{subsubsection.124}%
-\contentsline {subsubsection}{\numberline {2.7.1.2}Reduction to the target qubit subspace}{59}{subsubsection.131}%
-\contentsline {chapter}{\numberline {3}Photoassociation : concept and spectroscopy of $^{87}Sr$ calibrated on $^{88}Sr$}{61}{chapter.136}%
-\contentsline {section}{\numberline {3.1}Introduction to photoassociation}{62}{section.137}%
-\contentsline {subsection}{\numberline {3.1.1}Scattering theory}{62}{subsection.138}%
-\contentsline {subsection}{\numberline {3.1.2}PA and complex scattering length}{65}{subsection.156}%
-\contentsline {subsection}{\numberline {3.1.3}General scaling laws for PA}{68}{subsection.178}%
-\contentsline {subsection}{\numberline {3.1.4}Handling multiple molecular potentials}{70}{subsection.196}%
-\contentsline {subsubsection}{\numberline {3.1.4.1}Symmetry constraints and Pauli exclusion principle}{70}{subsubsection.197}%
-\contentsline {subsubsection}{\numberline {3.1.4.2}Angular momentum coupling and state enumeration}{71}{subsubsection.200}%
-\contentsline {subsubsection}{\numberline {3.1.4.3}Effective hamiltonian and potential modeling}{73}{subsubsection.206}%
-\contentsline {subsection}{\numberline {3.1.5}Internal energy states}{74}{subsection.211}%
-\contentsline {subsubsection}{\numberline {3.1.5.1}WKB approximation}{74}{subsubsection.212}%
-\contentsline {subsubsection}{\numberline {3.1.5.2}Leroy-Bernstein scaling}{76}{subsubsection.218}%
-\contentsline {subsubsection}{\numberline {3.1.5.3}Mass scaling and isotopic shifts}{77}{subsubsection.224}%
-\contentsline {section}{\numberline {3.2}Spectroscopy protocol and calibration of the PA laser}{79}{section.228}%
-\contentsline {subsection}{\numberline {3.2.1}Gas preparation and isotope specificities}{79}{subsection.229}%
-\contentsline {subsection}{\numberline {3.2.2}Photoassociation lasers and their spectral characteristics}{79}{subsection.230}%
-\contentsline {subsubsection}{\numberline {3.2.2.1}ECDL locking and frequency referencing}{79}{subsubsection.231}%
-\contentsline {subsubsection}{\numberline {3.2.2.2}Spectral imperfections from the locking scheme}{82}{subsubsection.235}%
-\contentsline {subsubsection}{\numberline {3.2.2.3}Spectral imperfections from the filter cavity system}{82}{subsubsection.237}%
-\contentsline {subsection}{\numberline {3.2.3}Atomic and molecular lines calibration}{86}{subsection.244}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}General experimental framework and baseline parameters}{86}{subsubsection.245}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}Fitting model}{87}{subsubsection.247}%
-\contentsline {subsubsection}{\numberline {3.2.3.3}Experimental results on $^{88}$Sr}{88}{subsubsection.254}%
-\contentsline {subsubsection}{\numberline {3.2.3.4}PA experiments with an alternative laser source}{89}{subsubsection.257}%
-\contentsline {subsubsection}{\numberline {3.2.3.5}Noise of the diode}{91}{subsubsection.260}%
-\contentsline {subsubsection}{\numberline {3.2.3.6}Determining the optical scattering length $l_{\text {opt}}$}{93}{subsubsection.263}%
-\contentsline {paragraph}{Method 1: Linewidth and Peak Analysis of the Photoassociation Loss Resonance}{93}{section*.264}%
-\contentsline {paragraph}{Method 2: Direct Extraction from Two-Body Loss Rate Dynamics}{93}{section*.271}%
-\contentsline {subsubsection}{\numberline {3.2.3.7}Decay dynamics ($dN/dt$)}{94}{subsubsection.273}%
-\contentsline {section}{\numberline {3.3}$^{87}\text {Sr}$ inelastic collisions}{97}{section.291}%
-\contentsline {subsection}{\numberline {3.3.1}Experimental procedure and setup}{97}{subsection.292}%
-\contentsline {subsection}{\numberline {3.3.2}Verification of the molecular nature of the lines}{98}{subsection.294}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}dN/dt decay interpretation}{98}{subsubsection.295}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Temperature analysis }{99}{subsubsection.297}%
-\contentsline {subsubsection}{\numberline {3.3.2.3}Molecular lines on $^{87}Sr$}{101}{subsubsection.302}%
-\contentsline {paragraph}{Line at $-259.01$ MHz}{101}{section*.303}%
-\contentsline {paragraph}{Line at $276.83$ MHz}{103}{section*.305}%
-\contentsline {paragraph}{Line at $375.74$ MHz}{105}{section*.307}%
-\contentsline {subsection}{\numberline {3.3.3}Interpretation of low contrast}{107}{subsection.310}%
-\contentsline {subsubsection}{\numberline {3.3.3.1}Predissociation}{107}{subsubsection.311}%
-\contentsline {subsubsection}{\numberline {3.3.3.2}Prevent from coupling to more energetic state from the IR}{109}{subsubsection.314}%
-\contentsline {subsection}{\numberline {3.3.4}Conclusion and outlook}{109}{subsection.319}%
-\contentsline {chapter}{Conclusion}{111}{chapter*.320}%
-\contentsline {chapter}{\numberline {A}Algorithms}{123}{appendix.322}%
+\contentsline {section}{\numberline {1.1}Fermi gas preparation}{8}{section.12}%
+\contentsline {subsection}{\numberline {1.1.1}Blue optical setup}{8}{subsection.13}%
+\contentsline {subsection}{\numberline {1.1.2}Transverse cooling}{8}{subsection.16}%
+\contentsline {subsubsection}{\numberline {1.1.2.1}Operating principle and radiation pressure}{8}{subsubsection.17}%
+\contentsline {subsubsection}{\numberline {1.1.2.2}Experimental setup and laser configuration}{11}{subsubsection.19}%
+\contentsline {subsubsection}{\numberline {1.1.2.3}Detuning and power optimization}{11}{subsubsection.21}%
+\contentsline {subsection}{\numberline {1.1.3}Zeeman cooling}{12}{subsection.23}%
+\contentsline {subsection}{\numberline {1.1.4}Blue MOT}{13}{subsection.25}%
+\contentsline {subsection}{\numberline {1.1.5}Repumper}{14}{subsection.30}%
+\contentsline {subsubsection}{\numberline {1.1.5.1}Hyperfine structure of Strontium-87}{14}{subsubsection.31}%
+\contentsline {subsubsection}{\numberline {1.1.5.2}Optimization of the repumper sweep}{15}{subsubsection.33}%
+\contentsline {subsection}{\numberline {1.1.6}Red MOT}{15}{subsection.35}%
+\contentsline {subsubsection}{\numberline {1.1.6.1}Optical setup}{15}{subsubsection.36}%
+\contentsline {subsubsection}{\numberline {1.1.6.2}Broadband MOT}{16}{subsubsection.39}%
+\contentsline {subsubsection}{\numberline {1.1.6.3}Stirring laser}{18}{subsubsection.40}%
+\contentsline {subsubsection}{\numberline {1.1.6.4}Narrowband MOT (Single-frequency MOT)}{20}{subsubsection.43}%
+\contentsline {subsubsection}{\numberline {1.1.6.5}Optimization of narrowband MOT Parameters}{21}{subsubsection.45}%
+\contentsline {subsection}{\numberline {1.1.7}Optical Dipole Trap (ODT) and evaporative cooling}{21}{subsection.46}%
+\contentsline {subsubsection}{\numberline {1.1.7.1}Loading the crossed ODT}{21}{subsubsection.47}%
+\contentsline {subsubsection}{\numberline {1.1.7.2}Optimization of the evaporation ramps}{23}{subsubsection.51}%
+\contentsline {subsubsection}{\numberline {1.1.7.3}Optical setup}{23}{subsubsection.52}%
+\contentsline {section}{\numberline {1.2}Spin Selection}{24}{section.54}%
+\contentsline {subsection}{\numberline {1.2.1}Optical Pumping}{24}{subsection.55}%
+\contentsline {section}{\numberline {1.3}Spin Manipulation}{26}{section.58}%
+\contentsline {subsection}{\numberline {1.3.1}External Cavity Diode Laser (ECDL)}{26}{subsection.59}%
+\contentsline {subsubsection}{\numberline {1.3.1.1}Laser architecture}{26}{subsubsection.60}%
+\contentsline {subsubsection}{\numberline {1.3.1.2}Repair of the MOGlabs}{26}{subsubsection.62}%
+\contentsline {subsection}{\numberline {1.3.2}Raman Transitions}{27}{subsection.63}%
+\contentsline {subsubsection}{\numberline {1.3.2.1}Physical Concept}{27}{subsubsection.64}%
+\contentsline {subsubsection}{\numberline {1.3.2.2}Experimental Setup of the Raman Process}{28}{subsubsection.68}%
+\contentsline {subsection}{\numberline {1.3.3}Photoassociation}{29}{subsection.70}%
+\contentsline {subsection}{\numberline {1.3.4}Fabry-Pérot cavity and PDH Locking system}{30}{subsection.72}%
+\contentsline {subsubsection}{\numberline {1.3.4.1}Cavity design and assembly}{30}{subsubsection.73}%
+\contentsline {subsubsection}{\numberline {1.3.4.2}Pound-Drever-Hall locking system and PID controller analysis}{32}{subsubsection.78}%
+\contentsline {section}{\numberline {1.4}Spin Measurement Scheme}{35}{section.84}%
+\contentsline {chapter}{\numberline {2}Quantum state measurement and characterization in qudit systems }{37}{chapter.90}%
+\contentsline {section}{\numberline {2.1}Gas preparation and spin control}{37}{section.91}%
+\contentsline {section}{\numberline {2.2}Implementation of $\mathfrak {su}$(N) generators.}{39}{section.93}%
+\contentsline {section}{\numberline {2.3}Experimental setting}{40}{section.94}%
+\contentsline {section}{\numberline {2.4}Coherent manipulation of a nuclear-spin qubit}{42}{section.96}%
+\contentsline {section}{\numberline {2.5}Beyond pseudo-spin 1/2 schemes: qudit interferometry}{47}{section.100}%
+\contentsline {subsection}{\numberline {2.5.1}Parallel Ramsey interferometers for simultaneous multiple-field sensing.}{48}{subsection.101}%
+\contentsline {subsection}{\numberline {2.5.2}Simultaneous measurements of multiple collective atomic observables.}{52}{subsection.106}%
+\contentsline {section}{\numberline {2.6}Conclusion}{56}{section.112}%
+\contentsline {section}{\numberline {2.7}Positive-operator-valued measures (POVMs)}{57}{section.113}%
+\contentsline {subsection}{\numberline {2.7.1}Derivation of the experimental POVM framework}{59}{subsection.122}%
+\contentsline {subsubsection}{\numberline {2.7.1.1}Four-level extended space dynamics}{59}{subsubsection.123}%
+\contentsline {subsubsection}{\numberline {2.7.1.2}Reduction to the target qubit subspace}{59}{subsubsection.130}%
+\contentsline {chapter}{\numberline {3}Photoassociation : concept and spectroscopy of $^{87}Sr$ calibrated on $^{88}Sr$}{61}{chapter.135}%
+\contentsline {section}{\numberline {3.1}Introduction to photoassociation}{62}{section.136}%
+\contentsline {subsection}{\numberline {3.1.1}Scattering theory}{62}{subsection.137}%
+\contentsline {subsection}{\numberline {3.1.2}PA and complex scattering length}{65}{subsection.155}%
+\contentsline {subsection}{\numberline {3.1.3}General scaling laws for PA}{68}{subsection.177}%
+\contentsline {subsection}{\numberline {3.1.4}Handling multiple molecular potentials}{70}{subsection.195}%
+\contentsline {subsubsection}{\numberline {3.1.4.1}Symmetry constraints and Pauli exclusion principle}{70}{subsubsection.196}%
+\contentsline {subsubsection}{\numberline {3.1.4.2}Angular momentum coupling and state enumeration}{71}{subsubsection.199}%
+\contentsline {subsubsection}{\numberline {3.1.4.3}Effective hamiltonian and potential modeling}{73}{subsubsection.205}%
+\contentsline {subsection}{\numberline {3.1.5}Internal energy states}{74}{subsection.210}%
+\contentsline {subsubsection}{\numberline {3.1.5.1}WKB approximation}{74}{subsubsection.211}%
+\contentsline {subsubsection}{\numberline {3.1.5.2}Leroy-Bernstein scaling}{76}{subsubsection.217}%
+\contentsline {subsubsection}{\numberline {3.1.5.3}Mass scaling and isotopic shifts}{77}{subsubsection.223}%
+\contentsline {section}{\numberline {3.2}Spectroscopy protocol and calibration of the PA laser}{79}{section.227}%
+\contentsline {subsection}{\numberline {3.2.1}Gas preparation and isotope specificities}{79}{subsection.228}%
+\contentsline {subsection}{\numberline {3.2.2}Photoassociation lasers and their spectral characteristics}{79}{subsection.229}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}ECDL locking and frequency referencing}{79}{subsubsection.230}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}Spectral imperfections from the locking scheme}{82}{subsubsection.234}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}Spectral imperfections from the filter cavity system}{82}{subsubsection.236}%
+\contentsline {subsection}{\numberline {3.2.3}Atomic and molecular lines calibration}{86}{subsection.243}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}General experimental framework and baseline parameters}{86}{subsubsection.244}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Fitting model}{87}{subsubsection.246}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}Experimental results on $^{88}$Sr}{88}{subsubsection.253}%
+\contentsline {subsubsection}{\numberline {3.2.3.4}PA experiments with an alternative laser source}{89}{subsubsection.256}%
+\contentsline {subsubsection}{\numberline {3.2.3.5}Noise of the diode}{91}{subsubsection.259}%
+\contentsline {subsubsection}{\numberline {3.2.3.6}Determining the optical scattering length $l_{\text {opt}}$}{93}{subsubsection.262}%
+\contentsline {paragraph}{Method 1: Linewidth and Peak Analysis of the Photoassociation Loss Resonance}{93}{section*.263}%
+\contentsline {paragraph}{Method 2: Direct Extraction from Two-Body Loss Rate Dynamics}{93}{section*.270}%
+\contentsline {subsubsection}{\numberline {3.2.3.7}Decay dynamics ($dN/dt$)}{94}{subsubsection.272}%
+\contentsline {section}{\numberline {3.3}$^{87}\text {Sr}$ inelastic collisions}{97}{section.290}%
+\contentsline {subsection}{\numberline {3.3.1}Experimental procedure and setup }{97}{subsection.291}%
+\contentsline {subsection}{\numberline {3.3.2}Verification of the molecular nature of the lines}{98}{subsection.293}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}dN/dt decay interpretation}{98}{subsubsection.294}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Temperature analysis }{99}{subsubsection.296}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}Molecular lines on $^{87}Sr$}{101}{subsubsection.301}%
+\contentsline {paragraph}{Line at $-259.01$ MHz}{101}{section*.302}%
+\contentsline {paragraph}{Line at $276.83$ MHz}{103}{section*.304}%
+\contentsline {paragraph}{Line at $375.74$ MHz}{105}{section*.306}%
+\contentsline {subsection}{\numberline {3.3.3}Interpretation of low contrast}{107}{subsection.309}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}Predissociation}{107}{subsubsection.310}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}Prevent from coupling to more energetic state from the IR}{109}{subsubsection.313}%
+\contentsline {chapter}{Conclusion}{110}{chapter*.318}%
+\contentsline {chapter}{\numberline {A}Algorithms}{121}{appendix.320}%

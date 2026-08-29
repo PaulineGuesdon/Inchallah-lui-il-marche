@@ -7,59 +7,85 @@ in an optical trap. Starting from a thermal atomic beam, the aim of this sequenc
 progressively reduce the atoms' velocity spread and increase their phase-space density,
 until quantum degeneracy is reached.
 
-For $t_{\text{BlueMot}} = 8.2~\text{s}$, 2D transverse cooling (TC) collimates the atomic
-beam prior to a Zeeman slowing stage, followed by a blue Magneto-Optical Trap (MOT)
-operating on the broad $^1S_0 \rightarrow {}^1P_1$ transition (see
-Fig.~\ref{energy levels sr}). Because this transition is not perfectly closed, repumping
-light is then applied for $t_{\text{Repump}} = 3.2~\text{ms}$, swept across multiple
-hyperfine states of the $^3P_2 \rightarrow {}^3D_2$ transition, to recover approximately
-$25\%$ of the atoms that had decayed into the metastable $^3P_2$ state. The atoms are
-subsequently cooled to temperatures close to $T = \text{\hl{temperature}}$ by a dynamic
-red MOT operating for $t_{\text{Red}}^{\text{tot}} \simeq 685~\text{ms}$
-(182~ms broadband/SWAP, 250~ms narrowband -- see below) on the narrow
-$^1S_0 \rightarrow {}^3P_1$ intercombination transition. Finally, the gas is loaded via a
-monofrequency red MOT and evaporated inside an Optical Dipole Trap (ODT), where deep
-quantum degeneracy is ultimately reached.
+The gas preparation begins with an atomic flux effusing from an oven held at
+$T=490^\circ\text{C}$, with a mean forward velocity of $v \simeq 500~\text{m/s}$. The
+first cooling stage, 2D transverse cooling (TC), reduces the transverse velocity spread
+of this beam to $\simeq 20~\text{m/s}$, at an estimated temperature
+$T \simeq 1~\text{mK}$ -- somewhat above the Doppler limit of the
+$^1S_0 \rightarrow {}^1P_1$ transition, since TC deliberately operates in the
+low-intensity regime discussed below.
 
-The complete timing sequence -- magnetic field ramps, laser intensities, and laser
-frequencies -- for every stage described in this chapter is summarized in
-Fig.~\ref{fig:sequence_sr87}. The corresponding numerical values are reported alongside
-each stage's description below, together with the typical atom number, temperature,
-density, velocity, and cloud size reached at each step; AOM drive amplitudes still
-awaiting a final calibration are highlighted and should be updated once confirmed.
-\hl{ajouter températures, densités, vitesse et tailles nuages dans ce paragraphe, qui
-seront marqués sur la figure 1.3 du setup}
+Meanwhile, the Zeeman slower and blue Magneto-Optical Trap (MOT) lasers remain on for
+$t_{\text{BlueMot}} = 8.2~\text{s}$, both operating on the broad
+$^1S_0 \rightarrow {}^1P_1$ transition (see Fig.~\ref{energy levels sr}). The blue MOT
+requires a high magnetic gradient, set to $\Delta B = 51~\text{G/cm}$ for a coil current
+of $170~\text{A}$. By the end of this stage, approximately $30$ million atoms are
+captured.
+
+Because this transition is not perfectly closed, repumping light is then applied for
+$t_{\text{Repump}} = 3.2~\text{ms}$, swept across multiple hyperfine states of the
+$^3P_2 \rightarrow {}^3D_2$ transition, to recover approximately $25\%$ of the atoms that
+had decayed into the metastable $^3P_2$ state.
+
+The atoms are subsequently cooled on the narrow $^1S_0 \rightarrow {}^3P_1$
+intercombination transition, in two successive red MOT stages: $182~\text{ms}$ of
+SWAP/broadband cooling followed by $250~\text{ms}$ of narrower-band cooling (see below).
+Throughout both stages, a second "stirring" beam is applied in parallel with the main
+MOT beam to counteract a loss channel intrinsic to the red MOT's $\sigma^+/\sigma^-$
+configuration (see below). The first stage, operated at a magnetic gradient
+$\Delta B \simeq 1~\text{G/cm}$, brings the cloud to $T \simeq 200~\mu\text{K}$; the
+resulting Boltzmann-distributed gas has an in-situ spatial spread of
+$\sigma \simeq 400~\mu\text{m}$. The second stage, at the same gradient, further cools
+the same $30$ million atoms to an average temperature of $T \simeq 30~\mu\text{K}$, with
+a spread of \hl{$\sigma=$}.
+
+The final cooling step is a single-frequency (monofrequency) red MOT, operated at
+$\Delta B \simeq 2.5~\text{G/cm}$ at the crossing point of the two arms of an Optical
+Dipole Trap (ODT). Two configurations are used depending on the results targeted in this
+thesis: in Chapter 2, the atoms are additionally loaded into an optical lattice formed at
+the crossing point, reaching a colder temperature of $T \simeq 3~\mu\text{K}$ before
+further evaporation; in Chapter 3, the atoms are held in one or two arms of the ODT only,
+within a round region of $\sigma \simeq 100~\mu\text{m}$, reaching $T \simeq 30~\mu\text{K}$
+with an atom number of $400\,000$.
 
 \begin{figure}
 \centering
 \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/energy_levels_sr.png}
-\caption{Energy spectrum of $^{87}\text{Sr}$ including fine and hyperfine interactions. In blue the $461~$nm transition used for TC, Zeeman cooling, blue MOT stage and imaging. The purple arrow indicates the repump line at $403~$nm from the metastable state $^3P_2$ used for the atoms leaking from the $^1P_1$ state. In red the transition at $689~$nm used for all stages of the red MOT, optical pumping, spin manipulation, coherent manipulation (see Chap.\ref{chap 2}), photoassociation (see Chap.\ref{chap 3})}
+\caption[Energy spectrum of $^{87}\text{Sr}$]{Energy spectrum of $^{87}\text{Sr}$ including fine and hyperfine interactions. In blue the $461~$nm transition used for TC, Zeeman cooling, blue MOT stage and imaging. The purple arrow indicates the repump line at $403~$nm from the metastable state $^3P_2$ used for the atoms leaking from the $^1P_1$ state. In red the transition at $689~$nm used for all stages of the red MOT, optical pumping, spin manipulation, coherent manipulation (see Chap.\ref{chap 2}), photoassociation (see Chap.\ref{chap 3})}
 \label{energy levels sr}
 \end{figure}
 
-In this chapter, I describe each stage of the cooling and loading process from a practical "user guide" perspective, concluding with an explanation of the spin manipulation schemes tailored to our experimental goals: coherent control of quantum systems, precision measurement, and photoassociation spectroscopy of $^{87}\text{Sr}$.
-
-\section{Full experimental setup}
-
-\begin{sidewaysfigure}
-    \centering
-    \includegraphics[width=\textheight]{Chapitres/Gas preparation and spin control/images/sequence_Sr87.pdf}
-    \caption{Experimental sequence for the magnetic field, laser intensities, and laser frequencies as a function of time, spanning the blue MOT through to time-of-flight imaging. \textbf{Top:} magnetic field gradient (BMOT) and the three bias/compensation coil voltages (VA, VC, VD). \textbf{Middle:} intensities of the $461~$nm, $403~$nm, $689~$nm, and $1064~$nm light. \textbf{Bottom:} frequency detunings of the MOT and STIR (stirring) beams during the broadband/SWAP and narrowband stages, and of the reservoir/dimple beams during evaporation. The bottom right inset details the imaging sequence (probe, reference, and dark exposures). AOM drive amplitudes still awaiting final calibration are highlighted.}
-    \label{fig:sequence_sr87}
-\end{sidewaysfigure}
-
+Finally, for the Chapter 2 configuration, the gas is further evaporated inside the ODT
+and optical lattice, reaching deep quantum degeneracy at $T \simeq 100~\text{nK}$, giving
+\hl{$T/T_F=$ ajouter avec valeurs d'Husain}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/setup_experimental.pdf}
-    \caption{}
+    \caption{Experimental full setup for the cooling and trapping of the atoms with figures on the velocity, temperature and typical magnetic gradient on each stage.}
     \label{setup exp}
 \end{figure}
 
+The complete timing sequence -- magnetic field ramps, laser intensities, and laser
+frequencies -- for every stage described in this chapter is summarized in
+Fig.~\ref{fig:sequence_sr87}. The corresponding numerical values are reported alongside
+each stage's description below; AOM drive amplitudes still awaiting a final calibration
+are highlighted and should be updated once confirmed.
+
+In this chapter, I describe each stage of the cooling and loading process from a
+practical "user guide" perspective, concluding with an explanation of the spin
+manipulation schemes tailored to our experimental goals: coherent control of quantum
+systems, precision measurement, and photoassociation spectroscopy of $^{87}\text{Sr}$.
+
+\begin{sidewaysfigure}
+    \centering
+    \includegraphics[width=\textheight]{Chapitres/Gas preparation and spin control/images/sequence_Sr87.pdf}
+    \caption[Experimental sequence for the magnetic field, laser intensities, and laser frequencies]{Experimental sequence for the magnetic field, laser intensities, and laser frequencies as a function of time, spanning the blue MOT through to time-of-flight imaging. \textbf{Top:} magnetic field gradient (BMOT) and the three bias/compensation coil voltages (VA, VC, VD). \textbf{Middle:} intensities of the $461~$nm, $403~$nm, $689~$nm, and $1070~$nm light. \textbf{Bottom:} frequency detunings of the MOT and STIR (stirring) beams during the broadband/SWAP and narrowband stages, and of the reservoir/dimple beams during evaporation. The bottom right inset details the imaging sequence (probe, reference, and dark exposures). AOM drive amplitudes still awaiting final calibration are highlighted.}
+    \label{fig:sequence_sr87}
+\end{sidewaysfigure}
+
+
 \section{Fermi gas preparation}
-\hl{Ajouter ce qui est judicieux d'optimiser à chaque étape : nombre d'atomes, $T$, $T/T_F$, nombre d'atomes final chargé à chaque étape, vitesse.}
-
-
 \subsection{Blue optical setup}
 Solid strontium is vaporized in an oven heated to $\textcolor{blue}{490}^\circ\text{C}$, outputting an atomic beam through a cluster of fine capillaries that provide initial spatial collimation.
 
@@ -68,14 +94,14 @@ The first cooling stages operate on the main $^1S_0 \rightarrow {}^1P_1$ transit
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/chaine_bleue_actualisée.pdf}
-    \caption{Optical layout of the $461~\text{nm}$ blue laser system for transverse cooling, Zeeman slowing, and blue MOT.}
+    \caption[Optical layout of the $461~\text{nm}$ blue laser system ]{Optical layout of the $461~\text{nm}$ blue laser system for transverse cooling, Zeeman slowing, and blue MOT.}
     \label{fig:intro-chaine-bleue}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/frequences_bleues.pdf}
-    \caption{Adapted from P.Bataille thesis \cite{Bataille2020} Diagram of the frequencies of each laser composing the blue chain of the blue MOT broadband cooling. Blue dashed lines indicate the tunable frequencies of the lasers. Plain black lines indicate the transitions of \text{$^{87}Sr$ and $^{88}Sr$ isotopes.}}
+    \caption[ Diagram of the frequencies of each laser composing the blue chain]{Adapted from P.Bataille thesis \cite{Bataille2020} Diagram of the frequencies of each laser composing the blue chain of the blue MOT broadband cooling. Blue dashed lines indicate the tunable frequencies of the lasers. Plain black lines indicate the transitions of \text{$^{87}Sr$ and $^{88}Sr$ isotopes.}}
     \label{frequences bleues}
 \end{figure}
 
@@ -91,7 +117,7 @@ When the laser frequency is red-detuned ($\Delta < 0$) with respect to the atomi
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/transverse_cooling_distribution.pdf}
-\caption{Illustration of the transverse cooling effec on the atoms arriving from the oven spread in different velocity classes. }
+\caption[Illustration of the transverse cooling effect]{Illustration of the transverse cooling effect on the atoms arriving from the oven spread in different velocity classes. }
 \label{fig:doppler_shift}
 \end{figure}
 
@@ -127,7 +153,7 @@ of the total average force leading to a minimum temperature reached for higher i
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\linewidth]{Chapitres/Gas preparation and spin control/images/felix_faisant_these.pdf}
-\caption{Transverse cooling performance as a function of laser detuning and power (adapted from \cite{faisant_building_2024}).}
+\caption[Discussion on TC detuning efficiency (Felix Faisant thesis)]{Transverse cooling performance as a function of laser detuning and power (adapted from \cite{faisant_building_2024}).}
 \label{felix faisant}
 \end{figure}
 
@@ -149,7 +175,11 @@ At the slower entrance, atoms exhibit a mean velocity of $v_0 = 430~\text{m/s}$ 
 
 The Magneto-Optical Trap (MOT) provides simultaneous spatial confinement and cooling. 
 
-The blue MOT combines a magnetic quadrupole field (generated by anti-Helmholtz coils centered on the vacuum chamber) with three orthogonal pairs of counter-propagating $461~\text{nm}$ laser beams carrying opposite circular polarizations ($\sigma^+/\sigma^-$) \cite{phillips_laser_1998}. 
+The blue MOT combines a magnetic quadrupole field (generated by anti-Helmholtz coils
+centered on the vacuum chamber, driven at $170~\text{A}$ to produce a gradient of
+$\Delta B = 51~\text{G/cm}$) with three orthogonal pairs of counter-propagating
+$461~\text{nm}$ laser beams carrying opposite circular polarizations ($\sigma^+/\sigma^-$)
+\cite{phillips_laser_1998}.
 
 The position-dependent Zeeman shift breaks the spatial degeneracy of the sub-levels:
 \begin{equation}
@@ -190,7 +220,7 @@ Repumping is provided by a $403~\text{nm}$ external-cavity diode laser (TOPTICA)
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Gas preparation and spin control/images/energy_levels_repumper.png}
-    \caption{Energy level diagram of $^{87}\text{Sr}$ of the transition $^3P_2$ to the hyperfine states of the $^3D_J$
+    \caption[Energy level diagram of $^{87}\text{Sr}$, $^3P_2$ transition]{Energy level diagram of $^{87}\text{Sr}$ of the transition $^3P_2$ to the hyperfine states of the $^3D_J$
     at $403~\text{nm}$ cooling.}
     \label{fig:intro-energy-levels-repumper}
 \end{figure}
@@ -228,16 +258,18 @@ A double-pass AOM fine-tunes the frequency before splitting into three spatial c
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/LevelDiagramRed.pdf}
-    \caption{Frequencies of the red lasers used for the red MOT cooling stages and optical pumping. The red dashed lines correspond to the tunable frequencies, the dark plain lines for the $^{87}Sr$ hyperfine states of transition $^3P_J$ and the $^{88}Sr$}
+    \caption[Frequencies of the red lasers used for the red MOT cooling stages]{Frequencies of the red lasers used for the red MOT cooling stages and optical pumping. The red dashed lines correspond to the tunable frequencies, the dark plain lines for the $^{87}Sr$ hyperfine states of transition $^3P_J$ and the $^{88}Sr$}
     \label{frequences rouges}
 \end{figure}
 
 \subsubsection{Broadband MOT}
-At the end of the blue MOT, the atomic cloud's spatial spread ($\sigma = \text{\hl{value}}$)
-and thermal energy exceed the capture velocity of a single-frequency $689~\text{nm}$ MOT.
-To capture these thermal atoms, a broadband MOT is implemented on the
+At the end of the blue MOT, approximately $30$ million atoms have been captured; their
+spatial spread ($\sigma \simeq 400~\mu\text{m}$, reached at the end of the SWAP stage)
+and thermal energy exceed the capture velocity of a single-frequency $689~\text{nm}$
+MOT. To capture these thermal atoms, a broadband MOT is implemented on the
 $^1S_0\,(F=9/2) \rightarrow {}^3P_1\,(F=11/2)$ transition under a weak magnetic field
-gradient (bias coil voltage $V_A = 0.50$), operated in two successive stages.
+gradient ($\Delta B \simeq 1~\text{G/cm}$, bias coil voltage $V_A = 0.50$), operated in
+two successive stages.
 
 In the first stage, lasting $182~\text{ms}$, SWAP (Sawtooth Wave Adiabatic Passage) cooling is applied
 \cite{bartolotta_laser_2018}. Two counter-propagating beams have their frequency swept
@@ -270,6 +302,8 @@ bias coil voltage is raised to $V_C = 0.51$. Over this stage, the optical power 
 further, in two additional steps for the MOT beam -- from $A_{85} = 36~\text{mW}$, through
 $A_{32} = 7~\text{mW}$, down to a final value of $A_{19} = 0.08~\text{mW}$ -- while the STIR
 beam is reduced from $A_{85} = 24.5~\text{mW}$ to a final value of $A_{55} = 20~\text{mW}$.
+By the end of this second stage, the cloud has cooled to an average temperature of
+$T \simeq 30~\mu\text{K}$.
 
 \subsubsection{Stirring laser}
 
@@ -288,7 +322,8 @@ eventually lost from the trap.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\linewidth]{Chapitres/Gas preparation and spin control/images/need_for_stir.pdf}
-\caption{(Adapted from \cite{stellmerThesis}) Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1,
+\caption[Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1,
+F=11/2$ level]{(Adapted from \cite{stellmerThesis}) Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1,
 F=11/2$ level. The position-dependent light shift brings the two counter-propagating
 beams into resonance with different $m_F'$ sub-levels ($\sigma^+$ with the closed
 transition to $m_F'=11/2$, $\sigma^-$ with the open transition to $m_F'=7/2$) at the same
@@ -307,7 +342,8 @@ to the cooling cycle.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\linewidth]{Chapitres/Gas preparation and spin control/images/spin_randomization.pdf}
-\caption{(Adapted from \cite{stellmerThesis}) Illustration of the melange concept on the $^1S_0(F=9/2) \rightarrow
+\caption[Illustration of the melange concept on the $^1S_0(F=9/2) \rightarrow
+{}^3P_1(F=9/2)$ transition]{(Adapted from \cite{stellmerThesis}) Illustration of the melange concept on the $^1S_0(F=9/2) \rightarrow
 {}^3P_1(F=9/2)$ transition, added to the red MOT cooling to capture extreme spin-state
 components inaccessible to the counter-propagating lasers of the red MOT.}
 \label{fig:intro-randomisation}
@@ -315,13 +351,14 @@ components inaccessible to the counter-propagating lasers of the red MOT.}
 
 \subsubsection{Narrowband MOT (Single-frequency MOT)}
 Once the cloud is sufficiently cold, frequency modulation is switched off to operate a
-single-frequency (monofrequency) MOT during a magnetic field ramp to $V_D = 0.70$. This
+single-frequency (monofrequency) MOT during a magnetic field ramp to $V_D = 0.70$
+($\Delta B \simeq 2.5~\text{G/cm}$). This
 stage reduces the temperature to $1\text{--}2~\mu\text{K}$ (near the recoil limit) with a
 peak density of $n = \text{\hl{value}}$ and an RMS width of $\sigma = \text{\hl{value}}$.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf}
-    \caption{Sequential stages of the $689~\text{nm}$ red MOT. From left to right : swap cooling and broadband capture (adapted from \cite{stellmerThesis}). The size of the cloud is decreasing with the cooling since the atoms are kicked in the opposite direction of the resonant laser of right polarization.}
+    \caption[Sequential stages of the $689~\text{nm}$ red MOT.]{Sequential stages of the $689~\text{nm}$ red MOT. From left to right : swap cooling and broadband capture (adapted from \cite{stellmerThesis}). The size of the cloud is decreasing with the cooling since the atoms are kicked in the opposite direction of the resonant laser of right polarization.}
     \label{fig:intro-red-mot-3-steps}
 \end{figure}
 
@@ -340,7 +377,7 @@ Cooling efficiency during the single-frequency stage depends on precise frequenc
 
 \subsubsection{Loading the crossed ODT}
 The final cooling stage before optical trapping consists in transferring the atoms into an
-Optical Dipole Trap (ODT) operating at $1064~\text{nm}$, followed by forced evaporative
+Optical Dipole Trap (ODT) operating at $1070~\text{nm}$, followed by forced evaporative
 cooling.
 
 Atoms are adiabatically loaded into the ODT while decreasing the intensity of the
@@ -367,7 +404,7 @@ re-heating at the periphery.
 \begin{figure}
     \centering
     \includegraphics[width=0.9\linewidth]{Chapitres/Gas preparation and spin control/images/ODT_loading.png}
-    \caption{Simulation extracted from \cite{litvinov_these}. Principle of localized $689~\text{nm}$ MOT loading inside the crossed optical dipole trap due to the differential AC Stark shift between $^1S_0$ and $^3P_1$.}
+    \caption[Simulation extracted from \cite{litvinov_these}. Principle of localized $689~\text{nm}$ MOT loading inside the crossed optical dipole trap]{Simulation extracted from \cite{litvinov_these}. Principle of localized $689~\text{nm}$ MOT loading inside the crossed optical dipole trap due to the differential AC Stark shift between $^1S_0$ and $^3P_1$.}
     \label{fig:intro-odt-loading}
 \end{figure}
 
@@ -380,7 +417,7 @@ In Chapter 2, the horizontal arm is tilted by $\simeq 1^\circ$. For the photoass
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Gas preparation and spin control/images/evaporative_cooling.png}
-    \caption{Extracted from [] Evaporative cooling mechanism in a crossed optical dipole trap, illustrating the escape of high-energy atoms and subsequent re-thermalization.}
+    \caption[Evaporative cooling mechanism in a crossed optical dipole trap]{Extracted from [] Evaporative cooling mechanism in a crossed optical dipole trap, illustrating the escape of high-energy atoms and subsequent re-thermalization.}
     \label{fig:evap}
 \end{figure}
 
@@ -400,7 +437,7 @@ For further details on loading atoms into the optical crossed dipole trap, the r
 
 \subsubsection{Optical setup}
 
-The $1064~\text{nm}$ light from the IPG laser is split by a half-wave plate and
+The $1070~\text{nm}$ light from the IPG laser is split by a half-wave plate and
 polarizing beamsplitter into the two arms described above (Fig.~\ref{fig:odt}). The
 horizontal arm forms the "Reservoir" beam: a pair of cylindrical lenses ($f=-50~\text{mm}$
 and $f=-75~\text{mm}$) shapes it into an anisotropic ellipse, with nominal waists of
@@ -417,9 +454,14 @@ $\simeq 4.5~\text{mm}$ and $\simeq 7~\text{mm}$, respectively).
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png}
-    \caption{Optical setup of the $1064~\text{nm}$ crossed dipole trap laser system.}
+    \caption{Optical setup of the $1070~\text{nm}$ crossed dipole trap laser system.}
     \label{fig:odt}
 \end{figure}
+
+For the photoassociation measurements presented in Chapter 3, quantum degeneracy is not
+required, and a high atomic density is favored instead; these experiments are realized
+with $400\,000$ atoms of spread $\sigma \simeq 100~\mu\text{m}$ at a few $\mu\text{K}$, as
+introduced above.
 
 \section{Spin Selection}
 
@@ -446,7 +488,7 @@ frequency or magnetic field calibration \cite{bataille_adiabatic_2020}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/optical_pumping.png}
-    \caption{Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition used to prepare a specific nuclear spin mixture. The red laser is ramped through the target energy level of $^3P_1$: the atoms decay to neighbours states $m_F \pm 1$ of $^1S_0$}
+    \caption[Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition]{Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition used to prepare a specific nuclear spin mixture. The red laser is ramped through the target energy level of $^3P_1$: the atoms decay to neighbours states $m_F \pm 1$ of $^1S_0$}
     \label{fig:intro-optical-pumping}
 \end{figure}
 
@@ -463,7 +505,7 @@ To lift the degeneracy of the Zeeman sub-levels and allow state-selective addres
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{Chapitres/Gas preparation and spin control/images/ecdl_cateye.pdf}
-    \caption{MOGlabs External Cavity Diode Laser (ECDL) architecture used for spin manipulation. A diode lasing at 689~nm is frequency settled by an interferential filter marked in red to then be collimated by a lens. The beam is reflected on a second miroir to close a cavity acting as a frequency filter: this system is a cateye. The last lens is used to collimate the beam passing throught an isolater before leaving the laser head. }
+    \caption[MOGlabs External Cavity Diode Laser architecture used for spin manipulation]{MOGlabs External Cavity Diode Laser (ECDL) architecture used for spin manipulation. A diode lasing at 689~nm is frequency settled by an interferential filter marked in red to then be collimated by a lens. The beam is reflected on a second miroir to close a cavity acting as a frequency filter: this system is a cateye. The last lens is used to collimate the beam passing throught an isolater before leaving the laser head. }
     \label{fig:ecdl-laser}
 \end{figure}
 
@@ -498,7 +540,7 @@ where $q$ parameterizes the quadratic (tensor) light shift and $\beta$ represent
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/TLS_et_raman.png}
-\caption{Spin manipulation scheme of \cite{bataille_realisation_nodate}. The isolation of spin states is allowed by the tensorial shift of the ground states that makes neighbours $m_F$ states isolated from the other resonances.}
+\caption[Spin manipulation scheme of \cite{bataille_realisation_nodate}]{Spin manipulation scheme of \cite{bataille_realisation_nodate}. The isolation of spin states is allowed by the tensorial shift of the ground states that makes neighbours $m_F$ states isolated from the other resonances.}
 \label{fig:tls-raman-scheme}
 \end{figure}
 
@@ -553,7 +595,7 @@ Proper cavity operation requires the mirrors to be aligned precisely parallel to
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/cavity_mount.pdf}
-    \caption{Top : Initial fixed cavity assembly using glued mirrors, lacking mechanical alignment degrees of freedom. Bottom : Upgraded and final cavity mount featuring three adjustment screws and compliant washers for precise angular and longitudinal alignment}
+    \caption[Fabry-Pérot comparison of cavity construction method]{Top : Initial fixed cavity assembly using glued mirrors, lacking mechanical alignment degrees of freedom. Bottom : Upgraded and final cavity mount featuring three adjustment screws and compliant washers for precise angular and longitudinal alignment}
     \label{miroirs cav before}
 \end{figure}
 
@@ -590,7 +632,7 @@ where $J_0(\beta)$ and $J_1(\beta)$ are the zeroth- and first-order Bessel funct
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/PID_black.pdf}
-    \caption{Schematic of the Pound-Drever-Hall locking system, extracted and adapted from \cite{black_Gas_preparation_and_spin_control_2001}. The laser is firstly passing through an EOM that is modulating the eletric field at frequency $f_M$, creating two sidebands at frequency $f_{laser}\pm f_M$. The carrier at $f_{laser}$ and the sidebands are passing through the filtering Fabry-Pérot cavity wich is reflecting the light going back to the entrance of the cavity. 
+    \caption[Schematic of the Pound-Drever-Hall locking system]{Schematic of the Pound-Drever-Hall locking system, extracted and adapted from \cite{black_Gas_preparation_and_spin_control_2001}. The laser is firstly passing through an EOM that is modulating the eletric field at frequency $f_M$, creating two sidebands at frequency $f_{laser}\pm f_M$. The carrier at $f_{laser}$ and the sidebands are passing through the filtering Fabry-Pérot cavity wich is reflecting the light going back to the entrance of the cavity. 
     A beamsplitter serving as an optical isolator is reflecting the light to a photodiode. Then this signal is mixed with a local oscillator to extract an error signal to which a low-pass filter is combined to keep only the signal for the locking.}
     \label{fig:pid}
 \end{figure}
@@ -601,9 +643,10 @@ From this graph, one measures a signal-to-noise ratio of SNR = 187. Interestingl
  \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/error_signal_FP.pdf}
-    \caption{Pound-Drever-Hall (PDH) error signal obtained by scanning the cavity length across resonance, enabling the lock cavity for the filtering of MOGlabs laser.}
+    \caption[Pound-Drever-Hall error signal of the homemade Fabry-Pérot cavity]{Pound-Drever-Hall (PDH) error signal obtained by scanning the cavity length across resonance, enabling the lock cavity for the filtering of MOGlabs laser.}
     \label{fig:pdh-error-signal}
 \end{figure}
+
 Digital feedback control and noise analysis were implemented primarily using a Red Pitaya
 STEMlab board, driving a home-made PID controller with separate proportional and
 integral stages (Fig.~\ref{lock PID}), which we found sufficient for our setup. The PID
@@ -622,14 +665,14 @@ $0 < K_i < 8~\text{s}^{-1}$.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/Carte_lock_laser_PDH_sr1sr2.pdf}
-    \caption{Homemade PID scheme composed of separate proportional and integral stages, which we considered sufficient for our setup.}
+    \caption[Homemade PID scheme]{Homemade PID scheme composed of separate proportional and integral stages, which we considered sufficient for our setup.}
     \label{lock PID}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/noise_spectrum.pdf}
-    \caption{Closed-loop noise analysis and mechanical resonance identification using the Red Pitaya with a gain that is amplifying parasitic noise, such as the mechanical resonance of the piezo at $f = 35~$kHz.}
+    \caption[Closed-loop noise analysis of the Fabry-Pérot cavity]{Closed-loop noise analysis and mechanical resonance identification using the Red Pitaya with a gain that is amplifying parasitic noise, such as the mechanical resonance of the piezo at $f = 35~$kHz.}
     \label{fig:analyse_bruit}
 \end{figure}
 
@@ -651,6 +694,6 @@ To ensure efficient population transfer, the optical pulse sweep rate must satis
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/spin_kick_scheme.png}
-    \caption{Principle of spin-selective detection via coherent momentum transfer. (a) Counter-propagating beam geometry of the lasers used for the TLS and two-photon Raman scheme. (b) Energy levels scheme of the Raman process, with recoil energy shifting the $m_F+2$ level. (c) Avoided crossing due to the coupling of the states, necessiting adiabatic transfer. (d) Resulting TOF absorption image showing spatially separated spin components and the corresponding lilentul distribution.}
+    \caption[Principle of spin-selective detection via coherent momentum transfer.]{Principle of spin-selective detection via coherent momentum transfer. (a) Counter-propagating beam geometry of the lasers used for the TLS and two-photon Raman scheme. (b) Energy levels scheme of the Raman process, with recoil energy shifting the $m_F+2$ level. (c) Avoided crossing due to the coupling of the states, necessiting adiabatic transfer. (d) Resulting TOF absorption image showing spatially separated spin components and the corresponding lilentul distribution.}
     \label{fig:intro-spin-kick-scheme}
 \end{figure}
