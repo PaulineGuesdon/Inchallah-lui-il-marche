@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1788165839.34656 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1788165888.15171 0
+["bibtex out/these_main"] 1788195585.94923 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1788195592.80524 0
   "./ref.bib" 1788165825 84245 a818510e7ef66e9b5c8964970b807364 ""
   "./spincontrol_refs.bib" 1779203640 549367 6b3bd591fb7a36bddef0122884a01a8a ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/ieeetr.bst" 1291864344 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1788165886 53897 3bd7e91e31f7ef03315f19cd368ab209 "pdflatex"
+  "out/these_main.aux" 1788195591 54994 f592e3c3468811d144a2c47cf79bad83 "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1788165880.67283 "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1788165888.1526 0
+["pdflatex"] 1788195586.61606 "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1788195592.80611 0
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1787069954 278015 b5ae8789d05c9394f564dcef5be6e51a ""
   "C:/Users/pauline.guesdon/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1775563748 13338688 9fd0248c43254865fc857a8837d50457 ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1001775420 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -169,7 +169,7 @@
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/pauline.guesdon/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1788165824 112607 30237ba6100faf8a35e325fedc3f7e25 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1788195566 114258 d6d122eb928c5d9c8d1b1d8dd7baea47 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf" 1788165824 28667 58ec5ddd590e5b66090a693ceb2af2d0 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf" 1781023280 1454812 949711a5770bab5f452c2a8b131fc13e ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf" 1781022213 352833 104bd9d650681449e10523424cce80f9 ""
@@ -240,7 +240,7 @@
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf" 1779203640 124880 0a263bb34b9ca857c010539b3df58da3 ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf" 1779203640 196863 c6f85c50162e077bfb0b0a8bfd3aae46 ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf" 1783933835 138292 770dd2b5e75693af025168b139bf41e6 ""
-  "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1788165824 80372 d2efab8078e43366eed7eae6ca842d63 ""
+  "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1788193594 80715 5d2ca2625ea3a717376a82b9a288f9c3 ""
   "Chapitres/conclusion/conclusion.tex" 1788165824 1298 1224724a43cd874359166285e3e8a97b ""
   "appendix/abstract.tex" 1776070351 157 eee112a5caef8e0926ac11ba0070c6cc ""
   "appendix/appendixA.tex" 1787076020 44 07ccf91c6e6b7817fc5cd8209e43100f ""
@@ -249,16 +249,16 @@
   "appendix/mis/declaration.tex" 1776070351 24 e69cd86c426083881af5fa1dff2222e6 ""
   "appendix/mis/dedication.tex" 1776070351 124 c52d1d8ac73aabfb3f3061e569acf2cb ""
   "appendix/titlepage.tex" 1788165824 972 3e0fab2cb160ff8d97a80c63f3e58d47 ""
-  "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1788165825 5073 39e87e0393d2175b3040559a8832b2bb ""
+  "c:/Users/pauline.guesdon/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1788168066 4986 0707aa47dafd84c0a3b6ce261893b75d ""
   "out/these_main.acr" 0 -1 0 ""
-  "out/these_main.aux" 1788165886 53897 3bd7e91e31f7ef03315f19cd368ab209 "pdflatex"
-  "out/these_main.bbl" 1788165839 29940 38e0b6538e248cd89ecbab60f570e4df "bibtex out/these_main"
-  "out/these_main.lof" 1788165886 8907 0d3015958d54f968fa5ba973cc55be71 "pdflatex"
-  "out/these_main.lot" 1788165886 970 ffcd663137778963b6ed4c7434810cba "pdflatex"
-  "out/these_main.out" 1788165886 20078 65b1d24205575811a0a6b9010d28a929 "pdflatex"
-  "out/these_main.toc" 1788165886 9442 a3cb76e5eb2b43399a3a8f2a3e89144f "pdflatex"
+  "out/these_main.aux" 1788195591 54994 f592e3c3468811d144a2c47cf79bad83 "pdflatex"
+  "out/these_main.bbl" 1788195586 29940 526e651e0acb21046726f638d160dc23 "bibtex out/these_main"
+  "out/these_main.lof" 1788195591 9550 b98fb171b3f9ac6ee5e43a5005e141dd "pdflatex"
+  "out/these_main.lot" 1788195591 949 6bcbb489f34664200fa4074195591d09 "pdflatex"
+  "out/these_main.out" 1788195591 20078 65b1d24205575811a0a6b9010d28a929 "pdflatex"
+  "out/these_main.toc" 1788195591 9442 a3cb76e5eb2b43399a3a8f2a3e89144f "pdflatex"
   "these_main.acr" 0 -1 0 ""
-  "these_main.tex" 1788165825 5073 39e87e0393d2175b3040559a8832b2bb ""
+  "these_main.tex" 1788168066 4986 0707aa47dafd84c0a3b6ce261893b75d ""
   (generated)
   "out/these_main.acn"
   "out/these_main.aux"

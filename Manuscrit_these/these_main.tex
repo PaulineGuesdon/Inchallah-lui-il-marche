@@ -26,12 +26,12 @@
 \usepackage{booktabs}
 % CONFIGS
 
-\pagestyle{fancy}
-\setlength{\headheight}{14.49998pt}
-\fancyhead{}
-\fancyhead[RO,LE]{No Cluster Worry Free Thesis Template}    % TODO: CHANGE THIS
 \fancyfoot{}
-\fancyfoot[LO,CE]{\ifnum\value{chapter}=0\else \leftmark \fi}
+\fancyfoot[LO,CE]{%
+    \ifnum\value{chapter}=0\else
+        \parbox[b]{0.85\textwidth}{\raggedright\leftmark}%
+    \fi
+}
 \fancyfoot[LE,RO]{\thepage}
 \hypersetup{
     pdfauthor = {John Student}, % TODO: CHANGE THIS
