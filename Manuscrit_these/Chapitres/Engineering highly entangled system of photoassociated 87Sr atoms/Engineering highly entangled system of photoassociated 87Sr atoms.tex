@@ -1107,6 +1107,7 @@ Alternatively, $l_{\text{opt}}$ can be determined by measuring the temporal deca
 This second approach is detailed in the following section.
 
 \subsubsection{Decay dynamics ($dN/dt$)}
+\label{decay dynamics}
 The ultimate verification of inelastic nature of collisions is the time evolution of the atom number $dN/dt$ discussed in Section~3.1.3. This curve allows one to (i) verify the presence of two-body losses and (ii) 
 determine the value of $l_{\text{opt}}/I$ which characterizes the strength of the loss rate $\beta$. The fitting function is obtained by integrating the rate equation:
 \begin{gather}
@@ -1200,40 +1201,77 @@ in the following section using the same methodology, while explicitly accounting
 the experimental constraints listed here.
 
 \section{$^{87}\text{Sr}$ inelastic collisions}
-Molecular spectroscopy on bosonic species of $^{88}Sr$ have not revealed any signal on the $^{87}Sr$. On this section one presents the optical setup for the results on this fermion. It is followed by a discussion on 
-the verifications of the nature of the spectroscopic lines: atom number decrease and temperature. Finally the resonances and their associated $dN/dt$ and temperature evolution are plotted.
-\subsection{Experimental procedure and setup }
-The molecular lines on $^{87}Sr$ have been reached only with the MOGlabs source. To adress the fermionic species I did change the diffracted order of the red optical chain for the opposite order to adress $F=11/2$ 
-hyperfine state $1.441$~GHz from the bosonic species 88. 
-(see Setup \ref{zoom red chain battement}). \\
-Datas have been obtained for different waist size in an effort to increase two-body losses, same for the density of the cloud. \\
-For this species with hyperfine structure one expect to visualize hundreds of states as described in the theoretical part of this section
-each wide of about 15~kHz.\\
 
-All the resonances presented in this section are done with a shot-to-shot normalisation method in order to suppress short time derivation due to experimental 
-fluctuation. The first atomic number measured during the experiment is the measurement of the atomic density in absence of the PA laser. The second one is the
-measurement of the effect of the PA laser in the gas. This is repeated for the entire experiment and the final plots are the ratio of the perturbated gas on the 
-non-perturbated one.
+The previous section's calibration on the well-known $^{88}\text{Sr}$ isotope allowed us
+to define the experimental parameters needed for photoassociation -- exposure times,
+laser intensities -- before turning to the fermionic species. However, some of the
+signals subsequently encountered while searching for $^{87}\text{Sr}$ molecular lines
+initially misled us into interpreting them as molecular resonances. The various checks
+performed on these signals, detailed at the beginning of this section, progressively
+guided us towards a set of measurements to systematically assess the true, non-molecular
+nature of such resonances.
+
+Molecular line searches on $^{87}\text{Sr}$ are performed only with the MOGlabs source.
+To address the fermionic species, the diffraction order of the red optical chain was
+changed from $-1$ to $+1$, shifting the addressed frequency by $1.441~\text{GHz}$ -- the
+isotopic shift between $^{88}\text{Sr}$ and the $F=11/2$ hyperfine state of
+$^{87}\text{Sr}$ (see Fig.~\ref{zoom red chain battement}).
+
+
+
+All the resonances presented in this section are recorded using a shot-to-shot
+normalization method, to suppress short-timescale drifts due to experimental
+fluctuations: the first atom number measured in each cycle is the atomic density in the
+absence of the PA laser, and the second is the atom number after exposure to it. This is
+repeated throughout the experiment, and the final signal plotted is the ratio of the
+perturbed to the unperturbed atom number.
+
+To increase the two-body loss signal, data were collected while varying both the PA
+beam waist and the atomic cloud density. 
+
+For this hyperfine species, hundreds of resonances are expected, as introduced in the 
+theoretical part of this section, each with a linewidth of about $15~\text{kHz}$.
+By considering the Leroy-Bernstein law, one expect
+
+
+
+
+
+
+
+
+The remainder of this section first analyzes the experimental signals that initially
+misled us, and the verification protocol they led us to establish. The reader will then
+find the molecular lines obtained for $^{87}\text{Sr}$, together with their associated
+temperature and atom number evolution. The unexpected shape of these lines opens a
+discussion of their possible technical and physical origins. The section ends with an
+outlook on the future tests needed to confirm the current hypotheses.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/zoom_red_chain_beating.pdf}
-    \caption[Zoom on the section of the red chain dedicated to the PA process]{Zoom on the section of the red chain dedicated to the PA process. The
-frequency for both laser configurations is tuned by ”AOM Inj Slave 1”, adjusted by
-”AOM 11/2” before being sent to the atoms.}
-    \label{zoom red chain battement}
+\centering
+\includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/zoom_red_chain_beating.pdf}
+\caption[Zoom on the section of the red chain dedicated to the PA process]{Zoom on the section of the red chain dedicated to the PA process. The
+frequency for both laser configurations is tuned by 'AOM Inj Slave 1', adjusted by
+'AOM 11/2' before being sent to the atoms.}
+\label{zoom red chain battement}
 \end{figure}
 
-\subsection{Verification of the molecular nature of the lines}
+\subsection{Establishment of the molecular lines research protocol from experimental mistakes}
+This part presents the investigations carried out on the signal \ref{6MHz noise blue detuned} obtained from red diode noise at -6~MHz, from the $^{87}Sr$ atomic resonance, a case initially 
+misinterpreted as a molecular resonance. The atoms have been evaporated during $500$ ms, recompressed and illuminated during $T = 2000$ms. 
+
+These tests resulted in a systematic protocol for identifying molecular lines where we verify the fitting model of the atomic decay and the temperature evolution.
+
 \subsubsection{dN/dt decay interpretation}
-Before presenting the molecular lines obtained for $^{87}Sr$ I want to discuss the reliability of the $dN/dt$ test to identify the nature of the losses.
-While the two slopes are usually a signature of two-body losses I observed the same behavior for the atomic resonance obtained with the red diode noise at 
-6 MHz as visible in \ref{exp decay 6 MHz noise} in dark purple. This experiment has been obtained on a red detuned signal from $F=11/2$ hyperfine state of $^{87}$Sr.
-The atoms have been evaporated during $500$ ms, recompressed and illuminated during $T = 2000$ms. In this figure the atom decay is clearly well described 
-by equation \ref{one and two body losses equation} and presents a change of slope around 3s: the fit of this data leads to a misinterpretation of the collision nature. 
+
+On the observation of the atomic decay upon illumination time --discussed in \ref{decay dynamics}-- dark purple plot of Fig.\ref{exp decay 6 MHz noise} shows 
+the expected two slopes usually signature of two-body losses. 
+In this figure the atom decay is clearly well described by equation \ref{one and two body losses equation} and presents a change of slope around 3s: the fit of this 
+data leads to a misinterpretation of the collision nature. 
 The same data in the absence of the PA laser plotted in the same figure shows a linear behavior on the atomic decay. As presented in 3.3.2.2 the exponential 
 decay test is done in atomic resonance: this measurement is not reliable to identify with certainty the nature of the losses while no molecule has been enhanced on this
 experiment.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf}
@@ -1248,7 +1286,7 @@ that affects the two-body losses rate. For recompressed gas as in \ref{exp decay
 in a smaller volume which explains the slope break on the plot.
 
 \subsubsection{Temperature analysis }
-A last trustworthy test is the measurement of the temperature of the gas: when PA occurs we expect the gas to be hotter. The coldest atoms
+Another trustworthy test is the measurement of the temperature of the gas: when PA occurs we expect the gas to be hotter. The coldest atoms
 at the bottom of the trap are most likely to photoassociate. Then the resting atoms redistribute by elastic collisions leading to a hotter gas
 with a mean temperature per atom increased.
 
@@ -1283,14 +1321,18 @@ Assuming independent uncertainties on both the \textit{in-situ} size $\sigma_{0,
     \delta T = \frac{2 m_{\text{at}}}{k_B \, \text{TOF}^2} \sqrt{\left(\sigma_y \delta \sigma_y\right)^2 + \left(\sigma_{0,y} \delta \sigma_{0,y}\right)^2}
 \end{equation}
 
-\subsubsection{Molecular lines on $^{87}Sr$}
-%----------------------------------------------------------
-% LINE 1: 259.01 MHz
-%----------------------------------------------------------
+From the analysis of the red diode noise at $-6$~MHz we conclude that for the $^{87}Sr$ signal obtained one need to perform two experimental tests can help to the interpretation of the elastic or inelastic nature of the collisions:
+\begin{itemize}
+    \item \textbf{dN/dt measurement:} one demonstrated in the theoretical part of this chapter the two expected slopes on the atomic decay curve. In practice, the confrontation of 
+    this decay in the presence and absence of the PA laser was not sufficient to conclude on the nature of the collisions. 
+    \item \textbf{temperature measurement:} while we expect the gas to be 
+\end{itemize}
 
+\subsection{Molecular lines on $^{87}Sr$}
 
-\paragraph{Line at $-259.01$ MHz}
-I did find the closest molecular state red detuned from the atomic resonance at $f_1 = -259.01\pm 0.12$: it has been obtained for illumination time of t = 1000~ms on a 
+\textbf{Line at $-259.01$ MHz}
+
+We find the closest molecular state red detuned from the atomic resonance at $f_1 = -259.01\pm 0.12$: it has been obtained for illumination time of t = 1000~ms on a 
 recompressed gas at intensity $I = 19$~W/cm$^2$.
 The lorentzian shape of the data \ref{subfig:259MHz_spectrum} (see 3.2.3.2) reveals a surprising measured linewidth of $\Gamma = 2.53 \pm 0.17$~MHz with a maximized contrast
 of half of the atom number at resonance. \\
@@ -1303,6 +1345,36 @@ where the width of the lorentzian fit of the resonance is marked by the green da
 The analysis of the resonance is completed by the non-exponential decay observation in \ref{subfig:274MHz_exp}: the data is fitted by the function demonstrated in \ref{eq:final_fit} with 
 an interpolation of the temperature during the illumination time with a unique value of $\beta(T)$ for each point. Figure \ref{subfig:274MHz_temp} shows a lot of fluctuations on the temperature
 that is directly impacting the shape of the atomic number decay over the time. 
+\vspace{1cm}
+
+\textbf{Line at $276.83$ MHz}
+
+The second line detected is at $f_2 = -276.83\pm 0.03$ MHz from the atomic resonance plotted in \ref{subfig:274MHz_spectrum}. The gas prepared of density
+$2\times 10^{13}$~atoms/cm$^3$ was evaporated in the crossing and illuminated for 1000~ms.
+in reservoir and dimple
+Once again the linewidth measured $\Gamma = 7.48 \pm 0.77~$MHz is surprisingly large. The points out of the fit could come from a delocking laser or 
+simply a mis-fitting of the gaussian shape of the gas. \\
+
+The measurement of the temperature \ref{subfig:274MHz_temp} is almost maximum at the center of the resonance but shows an unexplained oscilation 
+just after of about $0.1~\mu$K around $1.52~\mu$K.\\
+
+The exponential decay of this resonance, as for the previous one, has first been tested with an invariant temperature which gave an unsuccessful fit \ref{subfig:274MHz_exp} 
+with an associated really low value of $l_{opt}/I = (2.6 \pm 0.9)\times 10^{-6}~a_0/(W/cm^2)$.\\
+
+
+Then I solved the misfitting by considering the $\beta$ factor dependant with the temperature since the gas is hotter when photoassociated and the plot of the 
+temperature shows lots of fluctuations. 
+
+The interpolation of the temperature during the illumination time is then used to fit the data with a unique value of $\beta(T)$ for each point.
+\vspace{1cm}
+
+\textbf{Line at $375.74$ MHz}
+
+The last measured molecular line at $f_3 = 375.74 \pm 0.48$\,MHz is obtained for a recompressed gas illuminated during \qty{1000}{ms} with an intensity $I = 5.6$\,W/cm$^{2}$.
+It has a really low contrast and still a large linewidth of $\Gamma = 10.96 \pm 2.68$~MHz.
+The temperature measurement in \ref{subfig:375MHz_temp} shows a frank slope change between the resonance and the red detuned frequencies where it decreases
+to $\Delta T = 200$~nK. The temperature being mostly constant during the entire molecular resonance $dN/dt$ measurement \ref{subfig:375MHz_exp} is well described
+by the fitting function \ref{eq:final_fit} valid for $\beta$ independant on T. \hl{slopes ?}
 
 \begin{figure}[H]
     \centering
@@ -1333,27 +1405,6 @@ that is directly impacting the shape of the atomic number decay over the time.
     All detunings are measured from the $^{87}$Sr atomic resonance.}
     \label{fig:line_259MHz}
 \end{figure}
-%----------------------------------------------------------
-% LINE 2: 274.83 MHz
-%----------------------------------------------------------
-\paragraph{Line at $276.83$ MHz}
-The second line detected is at $f_2 = -276.83\pm 0.03$ MHz from the atomic resonance plotted in \ref{subfig:274MHz_spectrum}. The gas prepared of density
-$2\times 10^{13}$~atoms/cm$^3$ was evaporated in the crossing and illuminated for 1000~ms.
-in reservoir and dimple
-Once again the linewidth measured $\Gamma = 7.48 \pm 0.77~$MHz is surprisingly large. The points out of the fit could come from a delocking laser or 
-simply a mis-fitting of the gaussian shape of the gas. \\
-
-The measurement of the temperature \ref{subfig:274MHz_temp} is almost maximum at the center of the resonance but shows an unexplained oscilation 
-just after of about $0.1~\mu$K around $1.52~\mu$K.\\
-
-The exponential decay of this resonance, as for the previous one, has first been tested with an invariant temperature which gave an unsuccessful fit \ref{subfig:274MHz_exp} 
-with an associated really low value of $l_{opt}/I = (2.6 \pm 0.9)\times 10^{-6}~a_0/(W/cm^2)$.\\
-
-
-Then I solved the misfitting by considering the $\beta$ factor dependant with the temperature since the gas is hotter when photoassociated and the plot of the 
-temperature shows lots of fluctuations. 
-
-The interpolation of the temperature during the illumination time is then used to fit the data with a unique value of $\beta(T)$ for each point.
 
 \begin{figure}[H]
     \centering
@@ -1387,15 +1438,6 @@ The interpolation of the temperature during the illumination time is then used t
     \label{fig:line_276MHz}
 \end{figure}
 
-%----------------------------------------------------------
-% LINE 3: 375.74 MHz
-%----------------------------------------------------------
-\paragraph{Line at $375.74$ MHz}
-The last measured molecular line at $f_3 = 375.74 \pm 0.48$\,MHz is obtained for a recompressed gas illuminated during \qty{1000}{ms} with an intensity $I = 5.6$\,W/cm$^{2}$.
-It has a really low contrast and still a large linewidth of $\Gamma = 10.96 \pm 2.68$~MHz.
-The temperature measurement in \ref{subfig:375MHz_temp} shows a frank slope change between the resonance and the red detuned frequencies where it decreases
-to $\Delta T = 200$~nK. The temperature being mostly constant during the entire molecular resonance $dN/dt$ measurement \ref{subfig:375MHz_exp} is well described
-by the fitting function \ref{eq:final_fit} valid for $\beta$ independant on T. \hl{slopes ?}
 
 \begin{figure}[H]
     \centering
@@ -1424,8 +1466,8 @@ by the fitting function \ref{eq:final_fit} valid for $\beta$ independant on T. \
     \label{fig:line_375MHz}
 \end{figure}
 
-The exponential decay of the second molecular line at $f = 276.83$ MHz is presented in figure \ref{subfig:276MHz_temp}: 
-% TODO: update this sentence once the exponential decay for the 276.83 MHz line is available.
+The following table \ref{tab:summary_fits_PA_final} refers the experimental and fitted parameters of the three resonances and their associated atomic decay.
+
 \begin{table}[htbp]
 \centering
 \caption{Summary of fit parameters and experimental conditions for $^{87}Sr$}
@@ -1446,6 +1488,7 @@ $l_{opt}/I$ ($a_0/(W/cm^2)$) & $(6.1\pm 3.4)\times 10^{-1}$ & $ (5.2 \pm 0.4)\ti
 \hline \hline
 \end{tabular}
 \end{table}
+with depth stending for the strength of the transition.
 
 \hl{ajouter valeurs attendues }\\
 
@@ -1466,70 +1509,101 @@ One had to use really high values of PA beam intensity compared to the $^{88}$: 
 The plots of PA lines added to the really low estimated $l_{opt}$ values for high intensity expose multiple unexpected behaviours.\\
 In the next subsection I will discuss the possible interpretation of these caracteristics.
 
-\subsection{Interpretation of low contrast}
-\subsubsection{Predissociation}
-The surprising low number of the $^{87}Sr$ PA lines coupled to the large width and low strength of the lorentzian shape have been observed in \cite{franzen_intercombination_2023} where $^{87}Rb^{170}Yb$ bi-alkali 
-molecules are photoassociated on the intercombination line. 
-Only two spectroscopic lines have been observed with a low contrast while the intensity of the laser reaches $I = 40~$mW/cm$^2$ corresponding to a two-body loss rate $\beta = 5\times 10^{-14}~$cm$^3$/s 
-corresponding to a really low optical length.\\
+\subsection{Interpretation of low contrast and large linewidth}
+\subsubsection{Technical possibilities repsonsible for misbehaving}
+The first reason of low strength and large linewidth could be the technical limitations of the experiment:
+\begin{itemize}
+    \item \textbf{Coupling to more energetic state from the ODT laser} The ODT laser at $\lambda = 1070$~nm can induce unwanted photoassociation (PA) or transitions to higher energy molecular states if it is resonant with excitation pathways originating from the intermediate excited state. To suppress these parasitic multi-photon processes, an out-of-phase chopping sequence between the ODT and the PA laser is implemented (see Fig.~\ref{fig:sequence_chopping}).
 
-Authors give two interpretations for this result : the first one is the strong dipole at low internuclear distance coming from the rubidium potentials, leading to atomic decay to $^1S_0$. Nevertheless this effect 
-is estimated to be less than 10\% probable.  \\
+            This temporal separation addresses three main constraints:
+            \begin{enumerate}
+                \item \textbf{Suppression of multi-photon processes:} Since the ODT ($1070$~nm) and the PA laser ($689$~nm) are never turned on simultaneously, photoassociation pathways involving the combined action of both photons are completely eliminated.
+                \item \textbf{Preservation of the atomic cloud:} The trap extinction duration is sufficiently short compared to free-fall expansion so that the atomic cloud does not fall or drop significantly under gravity during the dark phase.
+                \item \textbf{Spectral integrity and AOM response:} The switching time is long enough for the acousto-optic modulators (AOMs) to respond faithfully, preventing dramatic spectral broadening or alteration of the PA laser line.
+            \end{enumerate}
 
-The second interpretation is the predissociation process illustrated in Fig.\ref{predissociation}. Two free atoms from potential A are photoassociated to a vibrationnal state of a molecular potential B. Atomic 
-potential C crosses potential B above its dissociation limit which 
-creates a coupling between the two potentials (\cite{mukherjee_feshbach_2022}). In the case of $^{87}Sr$ this potential is one of the hyperfine structure of the $^3P_J$ state. The bound atoms then decay to the 
-continuum of the potential C that impacts the lifetime of the excited
-molecular state as 
-\begin{equation}
-    \Gamma_{eff} = \Gamma_{stim} + \Gamma_{predissociation} + \Gamma_{mol}
-\end{equation} 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/sequence_chopping.pdf}
+            \caption[Experimental sequence for ODT and PA laser chopping]{Experimental sequence of the ODT and PA laser chopping used to prevent multi-photon transitions to higher energy levels. The RF signals driving the ODT and Raman AOMs are modulated at $25$~kHz in opposite phase. This ensures that the two lasers do not overlap while keeping the extinction time short enough to avoid atom loss due to gravity.}
+            \label{fig:sequence_chopping}
+        \end{figure}
 
-with $\Gamma_{predissociation} \propto \rho(\epsilon_f)$ where $\rho(\epsilon_f)$ is the kinetic energy continuum of potential C that dilutes the probability of transfering to the excited molecular state B. The 
-predissociation process is then a loss channel for the molecular state that decreases the lifetime of the molecule and increases its linewidth. 
+        This possibility as been ruled out from tests on $^{88}Sr$ molecular line that was weaker and broader in the presence of the chopping. 
+    \item \textbf{Laser noise of the MOGlabs} This laser has been tested on the $^{88}Sr$ molecular lines and showed a factor of 20 compared to the expected width $\simeq$15~kHz, not enough to explain the large linewidths observed on $^{87}Sr$.
+    \item \textbf{Inhomogeneous trap} The atoms could see a different potential from the ODT if they are not all trapped and cooled enough to be at the center of the trap. This has also been tested by \hl{expliquer}
+    \item \textbf{Thermal width} The temperature of the gas could be a reason of broadening of a resonance when too high. But I demonstrated in Tab.\ref{tab:comparaison_lasers} that the order of magnitude for similar temperature was negligible compared
+    to the few MHz linewidths observed.
+\end{itemize}
 
+These technical possibilities tested bring to the other possible explanation of a true physical effect.
 
-In \ref{fig:pa-ytterbium-potentials} the curves do not seem to be affected by the predissociation from the linewidth values. We were thinking that PA on the lowest
-hyperfine state as for $Yb$ would avoid this effect but the data on $^{87}Sr$ show the contrary: for a reason we ignore this atom is affected by this process but the 
-$Yb$ with hyperfine structure is not.
+\subsubsection{Physical hypotheses for the low contrast and large linewidth}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf}
-    \caption[Scheme of predissociation]{Scheme of predissociation which is a phenomenon that occurs when dissociation limit of an excited molecular potential
-C is under the closed channel of the excited molecule of potential B. Then the $\nu_ B$ state is coupled to a density of states of potential
-C that modifies the linewidth $\Gamma_mol$ of the molecular state}
-    \label{predissociation}
-\end{figure}
-Changing the polarization of the PA laser could change the coupling strength with the atomic continuum.
-Same as for the magnetic field that could change the energy difference between the hyperfine states and so decrease the density of states. Both of these possibilities have been tested following this work I presented
- but no significant change has been observed on the linewidth and the contrast of the molecular lines.\\
+\begin{itemize}
+    \item \textbf{Node of a wavefunction for some vibrational states:} Vibrational states whose wavefunction has a node at the Condon radius cannot be excited by the PA laser.
+        In figure \ref{fig:PA_concept} the wavefunction of the second bound state crosses the molecular potential
+        at a node. It means that if we try to PA atoms from the free atoms to this molecular state we would not see
+        any atom loss.        
+    \item \textbf{Coupling to high atomic potentials via potentials crossings:} It exists a possibility that higher atomic potentials of for example the $^1D_2$ state cross the molecular
+    potential we target on the intercombination line. Then if a vibrational state coincides with the crossing of both potentials then the atoms could be lost by spontaneous emission. 
+    Therefore it is less probable that this process occurs because we estimate the probability to be negligible.
+    \item \textbf{Predissociation:} The surprising low number of the $^{87}Sr$ PA lines coupled to the large width and low strength of the lorentzian shape have been observed in \cite{franzen_intercombination_2023} where $^{87}~Rb^{170}Yb$ bi-alkali 
+        molecules are photoassociated on the intercombination line. 
+        Only two spectroscopic lines have been observed with a low contrast while the intensity of the laser reaches $I = 40~$mW/cm$^2$ corresponding to a two-body loss rate $\beta = 5\times 10^{-14}~$cm$^3$/s 
+        corresponding to a really low optical length.\\
 
+        Authors give two interpretations for this result : the first one is the strong dipole at low internuclear distance coming from the rubidium potentials, leading to atomic decay to $^1S_0$. Nevertheless this effect 
+        is estimated to be less than 10\% probable.  \\
 
- \subsubsection{Prevent from coupling to more energetic state from the IR}
-The ODT laser at $\lambda = 1070$~nm can induce unwanted photoassociation (PA) or transitions to higher energy molecular states if it is resonant with excitation pathways originating from the intermediate excited state. To suppress these parasitic multi-photon processes, an out-of-phase chopping sequence between the ODT and the PA laser is implemented (see Fig.~\ref{fig:sequence_chopping}).
+        The second interpretation is the predissociation process illustrated in Fig.\ref{predissociation}. Two free atoms from potential A are photoassociated to a vibrationnal state of a molecular potential B. Atomic 
+        potential C crosses potential B above its dissociation limit which 
+        creates a coupling between the two potentials (\cite{mukherjee_feshbach_2022}). In the case of $^{87}Sr$ this potential is one of the hyperfine structure of the $^3P_J$ state. The bound atoms then decay to the 
+        continuum of the potential C that impacts the lifetime of the excited
+        molecular state as 
+        \begin{equation}
+            \Gamma_{eff} = \Gamma_{stim} + \Gamma_{predissociation} + \Gamma_{mol}
+        \end{equation} 
 
-This temporal separation addresses three main constraints:
-\begin{enumerate}
-    \item \textbf{Suppression of multi-photon processes:} Since the ODT ($1070$~nm) and the PA laser ($689$~nm) are never turned on simultaneously, photoassociation pathways involving the combined action of both photons are completely eliminated.
-    \item \textbf{Preservation of the atomic cloud:} The trap extinction duration is sufficiently short compared to free-fall expansion so that the atomic cloud does not fall or drop significantly under gravity during the dark phase.
-    \item \textbf{Spectral integrity and AOM response:} The switching time is long enough for the acousto-optic modulators (AOMs) to respond faithfully, preventing dramatic spectral broadening or alteration of the PA laser line.
-\end{enumerate}
+        with $\Gamma_{predissociation} \propto \rho(\epsilon_f)$ where $\rho(\epsilon_f)$ is the kinetic energy continuum of potential C that dilutes the probability of transfering to the excited molecular state B. The 
+        predissociation process is then a loss channel for the molecular state that decreases the lifetime of the molecule and increases its linewidth. 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/sequence_chopping.pdf}
-    \caption[Experimental sequence for ODT and PA laser chopping]{Experimental sequence of the ODT and PA laser chopping used to prevent multi-photon transitions to higher energy levels. The RF signals driving the ODT and Raman AOMs are modulated at $25$~kHz in opposite phase. This ensures that the two lasers do not overlap while keeping the extinction time short enough to avoid atom loss due to gravity.}
-    \label{fig:sequence_chopping}
-\end{figure}
+        In \ref{fig:pa-ytterbium-potentials} the curves do not seem to be affected by the predissociation from the linewidth values. We were thinking that PA on the lowest
+        hyperfine state as for $Yb$ would avoid this effect but the data on $^{87}Sr$ show the contrary: for a reason we ignore this atom is affected by this process but the 
+        $Yb$ with hyperfine structure is not.
+        
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf}
+            \caption[Scheme of predissociation]{Scheme of predissociation which is a phenomenon that occurs when dissociation limit of an excited molecular potential
+        C is under the closed channel of the excited molecule of potential B. Then the $\nu_ B$ state is coupled to a density of states of potential
+        C that modifies the linewidth $\Gamma_mol$ of the molecular state}
+            \label{predissociation}
+        \end{figure}
+    \item \textbf{Forest of molecular lines non-resolved} The last hypothesis is the possible high density of molecular lines centered in the frequencies presented in this section.
+\end{itemize}
+The two last hypotheses are the most probable ones to explain the broad linewidth and low strength of the molecular lines. 
 
+This part of the expose ends with the future experiments to be done to clarify it.
 
-%The last part of this work is to test the final Dicke state we expect to engineer by this PA experiment. A way to test it is to create Ramsey interferometers -as in section 2 of this thesis- on a controllable Hilbert space of low dimension.
+\subsubsection{Tests to be done in the future}
+At this point of the work, few points have been tested and others merit to be tested on the molecular lines we found:
 
+\begin{itemize}
+    \item Changing the polarization of the PA laser could change the coupling strength with the atomic continuum. This test has been concluded with no significant change on the line.
+    \item Changing the magnetic field could change the energy difference between the hyperfine states and so decrease the density of states. It has also been tested and revealed a slight 
+    change on the width but no resolution on eventual molecular lines have been observed.
+    \item Optically pumping the atoms to reduce the size of the Hilbert space would reduce the number of atomic potentials and so the probability of predissociation. Experiments are 
+    in progress to verify this hypothesis. Magnetic field switch has been already implemented in the experiment to fill the $m_F = \pm 9/2$ states: this SU(2) configuration maximizes 
+    the value of T \hl{compléter} 
+\end{itemize}
 
-%\subsubsection{Node of wavefunction for some vibrational states}
+Both of these possibilities have been tested following this work I presented
+but no significant change has been observed on the linewidth and the contrast of the molecular lines.\\
+        
 
-%Vibrational states whose wavefunction has a node at the Condon radius cannot be excited by the PA laser.
-%In figure \ref{fig:PA_concept} the wavefunction of the second bound state crosses the molecular potential
-%at a node. It means that if we try to PA atoms from the free atoms to this molecular state we would not see
-%any atom loss.
+To conclude on this chapter I started to present theoretical aspect of PA process by introducting fundamental material such as scattering length, optical length, atoms evolution time for two-body collisions... 
+Then I presented the experimental results on $^{88}Sr$ on intercombination line as a reference to experimentally characterize the process. This chapter ends up with the measurement of molecular lines on an 
+unpolarized gas of $^{87}Sr$ that comes with low contrast and wide linewidth, explained by predissociation process higly present for numerous molecular potentials such as $^{87}Sr$ being an atom with hyperfine 
+structure.\\
+
