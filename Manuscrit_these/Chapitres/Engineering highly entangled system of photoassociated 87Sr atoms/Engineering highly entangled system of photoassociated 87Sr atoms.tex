@@ -165,7 +165,7 @@ At low temperatures we can re-express equations \ref{sigma elastic} and \ref{sig
     \sigma_{el} = 4\pi|a|^2
 \end{equation}
 \begin{equation}
-    \sigma_{inel} = 4\pi|a''|^2
+    \sigma_{inel} = \frac{4\pi}{k}|a''|
 \end{equation}
 
 As an illustration a usual case of the elastic collisions is atoms in the ground
@@ -1473,18 +1473,22 @@ The following table \ref{tab:summary_fits_PA_final} refers the experimental and 
 \caption{Summary of fit parameters and experimental conditions for $^{87}Sr$}
 \label{tab:summary_fits_PA_final}
 \small
-\renewcommand{\arraystretch}{1.2} % Ajoute un peu d'espace vertical entre les lignes
+\renewcommand{\arraystretch}{1.2}
 \begin{tabular}{l c c c}
 \hline \hline
 \textbf{Freq. $f$ (MHz)} & \textbf{$259.01 \pm 0.12$} & \textbf{$276.83 \pm 0.03$} & \textbf{$375.74 \pm 0.48$} \\ 
 \hline
 Depth & $-0.31 \pm 0.01$ & $-0.37 \pm 0.02$ & $-0.08 \pm 0.01$ \\
 Width (MHz) & $2.5 \pm 0.2$ & $7.5 \pm 0.8$ & $11.0 \pm 2.7$ \\
-Time $t$ (ms) & 1000 & 1000 & 1000 \\ 
+Exposure time $t$ (ms) & 1000 & 1000 & 1000 \\ 
+Density $\langle n\rangle$ (atoms/cm$^3$) & $7.8\times10^{12}$ & $3.2\times10^{13}$ & $1.7\times10^{12}$ \\
 Intensity for resonance $I$ (W/cm$^2$) & 19 & 5.2 & 5.6 \\
 \hline
 Intensity $I$ for $l_{opt}$ (W/cm$^2$) & 19 & 31 & 19 \\
-$l_{opt}/I$ ($a_0/(W/cm^2)$) & $(6.1\pm 3.4)\times 10^{-1}$ & $ (5.2 \pm 0.4)\times 10^{-1}$ & $(3.2 \pm 2.3)\times 10^{-2}$ \\ 
+$\bar\omega/2\pi$ (Hz) & $258.6$ & $258.6$ & $142.7$ \\
+$K_2$ (cm$^3$/s) & $4.10\times10^{-13}$ & $5.74\times10^{-13}$ & $1.42\times10^{-13}$ \\
+Characteristic time $\tau$ & $393~\text{ms}$ & $68.2~\text{ms}$ & $5.69~\text{s}$ \\
+$l_{opt}/I$ ($a_0/(W/cm^2)$) & $(4.5\pm2.5)\times10^{-3}$ & $(4.7\pm0.4)\times10^{-3}$ & $(1.4\pm1.0)\times10^{-3}$ \\ 
 \hline \hline
 \end{tabular}
 \end{table}
@@ -1513,11 +1517,11 @@ In the next subsection I will discuss the possible interpretation of these carac
 \subsubsection{Technical possibilities repsonsible for misbehaving}
 The first reason of low strength and large linewidth could be the technical limitations of the experiment:
 \begin{itemize}
-    \item \textbf{Coupling to more energetic state from the ODT laser} The ODT laser at $\lambda = 1070$~nm can induce unwanted photoassociation (PA) or transitions to higher energy molecular states if it is resonant with excitation pathways originating from the intermediate excited state. To suppress these parasitic multi-photon processes, an out-of-phase chopping sequence between the ODT and the PA laser is implemented (see Fig.~\ref{fig:sequence_chopping}).
+    \item \textbf{Coupling to more energetic state from the ODT laser} The ODT laser at $\lambda = 1075$~nm can induce unwanted photoassociation (PA) or transitions to higher energy molecular states if it is resonant with excitation pathways originating from the intermediate excited state. To suppress these parasitic multi-photon processes, an out-of-phase chopping sequence between the ODT and the PA laser is implemented (see Fig.~\ref{fig:sequence_chopping}).
 
             This temporal separation addresses three main constraints:
             \begin{enumerate}
-                \item \textbf{Suppression of multi-photon processes:} Since the ODT ($1070$~nm) and the PA laser ($689$~nm) are never turned on simultaneously, photoassociation pathways involving the combined action of both photons are completely eliminated.
+                \item \textbf{Suppression of multi-photon processes:} Since the ODT ($1075$~nm) and the PA laser ($689$~nm) are never turned on simultaneously, photoassociation pathways involving the combined action of both photons are completely eliminated.
                 \item \textbf{Preservation of the atomic cloud:} The trap extinction duration is sufficiently short compared to free-fall expansion so that the atomic cloud does not fall or drop significantly under gravity during the dark phase.
                 \item \textbf{Spectral integrity and AOM response:} The switching time is long enough for the acousto-optic modulators (AOMs) to respond faithfully, preventing dramatic spectral broadening or alteration of the PA laser line.
             \end{enumerate}
