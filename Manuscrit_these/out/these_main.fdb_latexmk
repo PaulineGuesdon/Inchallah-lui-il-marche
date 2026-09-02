@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1788294272.61427 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1788294380.70158 0
+["bibtex out/these_main"] 1788342434.94092 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1788346578.63044 0
   "./ref.bib" 1787564175.54825 82970 a818510e7ef66e9b5c8964970b807364 ""
   "./spincontrol_refs.bib" 1786519568.72538 549304 6b3bd591fb7a36bddef0122884a01a8a ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1788294379.26393 54844 fd18954264236ba95c0c9a85b8340c65 "pdflatex"
+  "out/these_main.aux" 1788346577.0607 55041 3edceba66fc662ddd1c233628e04d377 "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1788294370.11717 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1788294380.70238 0
+["pdflatex"] 1788346560.10674 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1788346578.63096 0
   "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1788265867.25625 4801 0707aa47dafd84c0a3b6ce261893b75d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -177,7 +177,7 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1770486403 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1770486061 3345734 73c3e0ab3e3452bd60acd93a512a4193 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1788294368.23937 118009 3895dc3343611687ca63828787ba0e06 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1788346558.76073 120438 6fc8dfe3afa04d6536203f3b28bf85da ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf" 1787578033.83223 28667 58ec5ddd590e5b66090a693ceb2af2d0 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf" 1781095967.09494 1454812 662b8267160935ff0394eee0a2c9d1d6 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf" 1781095967.10995 352833 46196ce3888e2bf47651dece7ecb5e1e ""
@@ -189,9 +189,9 @@
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data184.pdf" 1788289854.80015 4316892 b43e4a42b033ad62f6ec7b4e3fd9e003 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data195.pdf" 1777366657.47756 147501 c41e689a723039ed8e11b6eb57f0ee36 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_16_corrected.pdf" 1787997674 21286 73fac78a2ea244ed97bbac50cb0292c9 ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_171_corrected.pdf" 1787997674 21194 76ae82b54976f6ad2bbfd0a4153d6bed ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_184_corrected.pdf" 1788005313.72853 47889 856e44b263e838a9e3e8f5b65762f6e8 ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_195_corrected.pdf" 1787997674 17019 71066bd1acdfdb884b4f1737dc92e585 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temperature_Tt_190.pdf" 1788338986 13361 ffeffb82b103070bbd2478b04888c1e6 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temperature_Tt_194.pdf" 1788338986 14590 44837bb42a792503ffab21ba83f71b72 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temperature_Tt_247.pdf" 1788338986 14895 dcd366c917c5cd6fd2bb13ff9166b06b ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf" 1781254916.21612 594453 a1c812cb2f6f80bc18f5bfcd553f5afa ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf" 1787468686 14901 b4f3192f9b58469887e2ecad317d49a3 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf" 1787468686 14782 a07ba5199f3fe94d0362e6e2ba116252 ""
@@ -258,12 +258,12 @@
   "appendix/mis/dedication.tex" 1775984395.99955 123 c52d1d8ac73aabfb3f3061e569acf2cb ""
   "appendix/titlepage.tex" 1787218044.34791 935 3e0fab2cb160ff8d97a80c63f3e58d47 ""
   "out/these_main.acr" 0 -1 0 ""
-  "out/these_main.aux" 1788294379.26393 54844 fd18954264236ba95c0c9a85b8340c65 "pdflatex"
-  "out/these_main.bbl" 1788294273.27101 28788 875e92b6b79a30e1ea7716da05bd845b "bibtex out/these_main"
-  "out/these_main.lof" 1788294379.28238 9550 39cf8fec75fbea1d15a719e927b71b40 "pdflatex"
-  "out/these_main.lot" 1788294379.28248 949 b193206664512362b83e62873d2ef7a2 "pdflatex"
-  "out/these_main.out" 1788294379.27472 20548 5d84fff4021a9074791589fd694ac9da "pdflatex"
-  "out/these_main.toc" 1788294379.28223 9327 6edb3d54af6b440a07968aa64c791035 "pdflatex"
+  "out/these_main.aux" 1788346577.0607 55041 3edceba66fc662ddd1c233628e04d377 "pdflatex"
+  "out/these_main.bbl" 1788342435.7405 28788 875e92b6b79a30e1ea7716da05bd845b "bibtex out/these_main"
+  "out/these_main.lof" 1788346577.08988 9550 199392377c49c3d5d8d10ab6a6ea1d9f "pdflatex"
+  "out/these_main.lot" 1788346577.0901 949 5aafdb886a715bae9855fadc4b6f57c9 "pdflatex"
+  "out/these_main.out" 1788346577.08706 20548 5d84fff4021a9074791589fd694ac9da "pdflatex"
+  "out/these_main.toc" 1788346577.08948 9327 f80481e2dddfd05360be4d8e4452babe "pdflatex"
   "these_main.acr" 0 -1 0 ""
   "these_main.tex" 1788265867.25625 4801 0707aa47dafd84c0a3b6ce261893b75d ""
   (generated)

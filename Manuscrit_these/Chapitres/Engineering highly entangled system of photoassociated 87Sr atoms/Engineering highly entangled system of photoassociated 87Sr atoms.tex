@@ -334,6 +334,7 @@ For low temperatures, we neglect the contribution of the wavevector since $k \to
 prefactor, and the microscopic PA rate coefficient simplifies to:
 \begin{equation}
     K_2 = \frac{16h}{m_{\text{at}}}l_{\text{opt}}
+    \label{K2 et lopt}
 \end{equation}
 This fundamental result demonstrates that at low temperatures, the maximum photoassociation rate becomes independent of the temperature and scales purely linearly with the laser intensity $I$ through its dependence 
 on $l_{\text{opt}}$. Structurally, $K_2$ is maximized when the ground- and excited-state wavefunctions exhibit maximum overlap at the Condon radius. In a classical picture, this distance corresponds to the turning 
@@ -804,15 +805,16 @@ recording the atom loss induced by the PA beam as a function of its detuning aro
 expected atomic frequency. This loss follows a two-body decay: isolating the two-body
 term of Eq.~\ref{one and two body losses equation},
 \begin{gather*}
-\frac{dn(t)}{dt} = -\beta n(t)^2 \\
-\int_{n_0}^{n(t)} \frac{dn}{n^2} = -\beta \int_{0}^{t} dt \\
-    \left[ -\frac{1}{n} \right]_{n_0}^{n(t)} = -\beta t \\
-\frac{1}{n(t)} - \frac{1}{n_0} = \beta t \\
-    t = \frac{1}{\beta} \frac{n_0 - n(t)}{n(t) n_0}
+\frac{dn(t)}{dt} = -K_2 n(t)^2 \\
+\int_{n_0}^{n(t)} \frac{dn}{n^2} = -K_2 \int_{0}^{t} dt \\
+    \left[ -\frac{1}{n} \right]_{n_0}^{n(t)} = -K_2 t \\
+\frac{1}{n(t)} - \frac{1}{n_0} = K_2 t \\
+    t = \frac{1}{K_2} \frac{n_0 - n(t)}{n(t) n_0}
 \end{gather*}
 so that the characteristic loss time at half the initial density is
 \begin{equation}
-\tau = \frac{1}{\beta n_0}.
+\tau = \frac{1}{K_2 n_0}.
+\label{temps caractéristique}
 \end{equation}
 
 The PA experiments on $^{88}\text{Sr}$ presented in this section begin with an initial
@@ -821,7 +823,7 @@ $T \simeq 1.7~\mu\text{K}$. The atomic transition is addressed at
 $f^{\text{RF}}_{\text{beating}} = f_{\text{Raman}}$ using a laser beam with an intensity
 of $I = 100~I_{\text{sat}}$ and a waist of $w_0 = 340~\mu\text{m}$. For the typical
 two-body loss rate coefficients expected on this transition
-($10^{-12} < K_2 < 10^{-8}~\text{cm}^3\cdot\text{s}^{-1}$ where $K_2$ relates to $\beta$ as \ref{eq:3.28}), 
+($10^{-12} < K_2 < 10^{-8}~\text{cm}^3\cdot\text{s}^{-1}$), 
 these parameters predict a
 characteristic loss time $\tau$ of a few milliseconds or less.
 
@@ -1329,52 +1331,107 @@ From the analysis of the red diode noise at $-6$~MHz we conclude that for the $^
 \end{itemize}
 
 \subsection{Molecular lines on $^{87}Sr$}
+\textbf{Line at $-259.01$~MHz}
 
-\textbf{Line at $-259.01$ MHz}
+The closest molecular state red-detuned from the atomic resonance is found at
+$f_1 = -259.01 \pm 0.12$~MHz. It was obtained for an illumination time of
+$t=1000$~ms on a recompressed gas at intensity $I=19$~W/cm$^2$. The Lorentzian
+shape of the data (Fig.~\ref{subfig:259MHz_spectrum}, see Sec.~3.2.3.2) reveals a
+surprisingly large linewidth of $\Gamma = 2.53\pm0.17$~MHz, with a maximum contrast
+of half the atom number at resonance.
 
-We find the closest molecular state red detuned from the atomic resonance at $f_1 = -259.01\pm 0.12$: it has been obtained for illumination time of t = 1000~ms on a 
-recompressed gas at intensity $I = 19$~W/cm$^2$.
-The lorentzian shape of the data \ref{subfig:259MHz_spectrum} (see 3.2.3.2) reveals a surprising measured linewidth of $\Gamma = 2.53 \pm 0.17$~MHz with a maximized contrast
-of half of the atom number at resonance. \\
+Fig.~\ref{subfig:259MHz_temp} shows the temperature of the cloud measured in the
+same experiment, intended to help confirm the molecular nature of the losses.
+While one might expect the temperature to peak sharply at the line center, it
+instead rises by about $0.5~\mu$K over a range symmetric around the resonance,
+whose width (from the Lorentzian fit) is marked by the green dashed lines.
 
-Fig.\ref{subfig:259MHz_temp} is a measurement of the temperature of the cloud from the same experiment that should validate the molecular nature of the collisions. While one
-expect an increase of the temperature at the center frequency of the molecular line the temperature appears to increase for about 0.5~$\mu$K symmetrically with the resonance, 
-where the width of the lorentzian fit of the resonance is marked by the green dashed lines.\\
+As for the line discussed below, the temperature fluctuates substantially during
+illumination, so the atom number decay for this line
+(Fig.~\ref{subfig:259MHz_exp}) is fitted using the interpolated-temperature
+procedure detailed for the $276.83$~MHz line. From the measured trap beam powers,
+the mean trap frequency is estimated at \textbf{$\bar\omega/2\pi = 258.6$ Hz},
+giving an average density \textbf{$\langle n\rangle = 7.8\times10^{12}$ atoms/cm$^3$}.
+The fit yields \textbf{$K_2 = 4.10\times10^{-13}$ cm$^3$/s} at
+\textbf{$I=19$ W/cm$^2$}, i.e.
+\textbf{$l_{\text{opt}}/I=(4.5\pm2.5)\times10^{-3}$ $a_0$/(W/cm$^2$)}.
+\vspace{0.5cm}
 
+\textbf{Line at $276.83$~MHz}
 
-The analysis of the resonance is completed by the non-exponential decay observation in \ref{subfig:274MHz_exp}: the data is fitted by the function demonstrated in \ref{eq:final_fit} with 
-an interpolation of the temperature during the illumination time with a unique value of $\beta(T)$ for each point. Figure \ref{subfig:274MHz_temp} shows a lot of fluctuations on the temperature
-that is directly impacting the shape of the atomic number decay over the time. 
+The second line is detected at $f_2 = -276.83\pm0.03$~MHz from the atomic
+resonance (Fig.~\ref{subfig:274MHz_spectrum}). The gas, prepared at a density of
+$2\times10^{13}~\text{atoms/cm}^3$ by evaporation at the crossing of the reservoir
+and dimple beams, was illuminated for $1000$~ms. The measured linewidth,
+$\Gamma=7.48\pm0.77$~MHz, is again surprisingly large; the points deviating from
+the fit may result from the laser unlocking, or simply from a poor Gaussian fit
+of the cloud shape.
+
+The temperature (Fig.~\ref{subfig:274MHz_temp}) is close to maximal at the line
+center, but shows an unexplained oscillation of about $0.1~\mu$K around
+$1.52~\mu$K just past resonance.
+
+As for the previous line, the atom number decay was first fitted assuming a
+constant temperature; this fit failed (Fig.~\ref{subfig:274MHz_exp}), yielding an
+implausibly small value of $l_{\text{opt}}/I=(2.6\pm0.9)\times10^{-6}~a_0/(\text{W/cm}^2)$.
+
+This misfit was resolved by letting the loss coefficient $\beta$ depend on the
+measured temperature, since the gas heats up during photoassociation and the
+temperature trace shows substantial fluctuations. The temperature measurements
+are first linearly interpolated into a continuous function $T(t)$; this
+interpolated temperature is fixed once and for all, independently of the fit that
+follows. The nonlinear regression then iteratively adjusts four free parameters
+-- the one-body loss rate $\Gamma$, the two-body loss coefficient $K_2$
+(equivalently $l_{\text{opt}}$), the initial atom number $N_0$, and a constant
+offset. At each iteration, a candidate value of $K_2$ is combined with the
+(fixed) interpolated $T(t)$ to compute the instantaneous loss rate
+$\beta(t) = K_2/(2\sqrt{2}\,V_e(T(t)))$ at every time step; $\beta(t)$ is then
+integrated numerically over time to reconstruct a trial decay curve $N(t)$ via
+Eq.~\ref{eq:final_fit}. This trial curve is compared to the measured $N(t)$, and
+the four parameters are updated so as to reduce the resulting $\chi^2$; the
+procedure repeats until convergence. The final, best-fit $K_2$ is thus a single
+constant, common to the entire curve, while $\beta(t)$ varies throughout the
+decay solely because it inherits the time-dependence of $T(t)$ -- not because
+$K_2$ itself changes with time. This procedure is applied identically to the
+$259.01$~MHz line above.
+
+With this corrected fit, the mean trap frequency is estimated at
+\textbf{$\bar\omega/2\pi = 258.6$ Hz} (same trap powers as for the previous
+line), giving an average density \textbf{$\langle n\rangle = 3.2\times10^{13}$ atoms/cm$^3$}.
+The fit yields \textbf{$K_2 = 5.74\times10^{-13}$ cm$^3$/s} at
+\textbf{$I=31$ W/cm$^2$}, i.e.
+\textbf{$l_{\text{opt}}/I=(4.7\pm0.4)\times10^{-3}$ $a_0$/(W/cm$^2$)}.
+\vspace{0.5cm}
+
+\textbf{Line at $375.74$~MHz}
+
+The last molecular line is measured at $f_3=375.74\pm0.48$~MHz, for a
+recompressed gas illuminated for $1000$~ms at intensity $I=5.6$~W/cm$^2$. It has a
+notably low contrast and, again, a large linewidth of $\Gamma=10.96\pm2.68$~MHz.
+The temperature (Fig.~\ref{subfig:375MHz_temp}) shows a marked change in slope
+between the resonance and the red-detuned frequencies, decreasing there by
+$\Delta T=200$~nK. Since the temperature remains essentially constant throughout
+this resonance's decay measurement, $dN/dt$ (Fig.~\ref{subfig:375MHz_exp}) is well
+described by Eq.~\ref{eq:final_fit} in the standard case of a temperature-independent
+$\beta$. \hl{slopes?}
+
+Using the lower trap beam powers for this line, the mean trap frequency is
+estimated at \textbf{$\bar\omega/2\pi = 142.7$ Hz}, giving an average density
+\textbf{$\langle n\rangle = 1.7\times10^{12}$ atoms/cm$^3$}. The fit yields
+\textbf{$K_2 = 1.42\times10^{-13}$ cm$^3$/s} at \textbf{$I=19$ W/cm$^2$}, i.e.
+\textbf{$l_{\text{opt}}/I=(1.4\pm1.0)\times10^{-3}$ $a_0$/(W/cm$^2$)}.
+
 \vspace{1cm}
 
-\textbf{Line at $276.83$ MHz}
-
-The second line detected is at $f_2 = -276.83\pm 0.03$ MHz from the atomic resonance plotted in \ref{subfig:274MHz_spectrum}. The gas prepared of density
-$2\times 10^{13}$~atoms/cm$^3$ was evaporated in the crossing and illuminated for 1000~ms.
-in reservoir and dimple
-Once again the linewidth measured $\Gamma = 7.48 \pm 0.77~$MHz is surprisingly large. The points out of the fit could come from a delocking laser or 
-simply a mis-fitting of the gaussian shape of the gas. \\
-
-The measurement of the temperature \ref{subfig:274MHz_temp} is almost maximum at the center of the resonance but shows an unexplained oscilation 
-just after of about $0.1~\mu$K around $1.52~\mu$K.\\
-
-The exponential decay of this resonance, as for the previous one, has first been tested with an invariant temperature which gave an unsuccessful fit \ref{subfig:274MHz_exp} 
-with an associated really low value of $l_{opt}/I = (2.6 \pm 0.9)\times 10^{-6}~a_0/(W/cm^2)$.\\
-
-
-Then I solved the misfitting by considering the $\beta$ factor dependant with the temperature since the gas is hotter when photoassociated and the plot of the 
-temperature shows lots of fluctuations. 
-
-The interpolation of the temperature during the illumination time is then used to fit the data with a unique value of $\beta(T)$ for each point.
-\vspace{1cm}
-
-\textbf{Line at $375.74$ MHz}
-
-The last measured molecular line at $f_3 = 375.74 \pm 0.48$\,MHz is obtained for a recompressed gas illuminated during \qty{1000}{ms} with an intensity $I = 5.6$\,W/cm$^{2}$.
-It has a really low contrast and still a large linewidth of $\Gamma = 10.96 \pm 2.68$~MHz.
-The temperature measurement in \ref{subfig:375MHz_temp} shows a frank slope change between the resonance and the red detuned frequencies where it decreases
-to $\Delta T = 200$~nK. The temperature being mostly constant during the entire molecular resonance $dN/dt$ measurement \ref{subfig:375MHz_exp} is well described
-by the fitting function \ref{eq:final_fit} valid for $\beta$ independant on T. \hl{slopes ?}
+Table~\ref{tab:summary_fits_PA_final} summarizes the experimental conditions and
+the resulting fit parameters for the three resonances, together with the derived
+density $\langle n\rangle = N/(2\sqrt{2}\,V_e)$ and characteristic time $\tau$
+(defined in Eq.~\ref{temps caractéristique}). The mean trap oscillation frequency
+$\bar\omega=(\omega_x\omega_y\omega_z)^{1/3}$, entering $V_e(T)$, is estimated from
+the measured Reservoir and Dimple beam powers and the trap geometry (see Sec.~\hl{[ref]}); this estimate has not yet been
+cross-checked against a direct trap-frequency measurement (e.g. parametric
+heating). 'Depth' refers to the peak amplitude of
+the fitted Lorentzian line, a proxy for the strength of the transition.
 
 \begin{figure}[H]
     \centering
@@ -1388,7 +1445,7 @@ by the fitting function \ref{eq:final_fit} valid for $\beta$ independant on T. \
     \begin{subfigure}{0.8\linewidth}
         \centering
         % TODO: add temperature figure for 259 MHz line
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_195_corrected.pdf}
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temperature_Tt_247.pdf}
         \caption{Temperature of the gas at the $259.01$ MHz resonance.}
         \label{subfig:259MHz_temp}
     \end{subfigure}
@@ -1418,7 +1475,7 @@ by the fitting function \ref{eq:final_fit} valid for $\beta$ independant on T. \
     \begin{subfigure}{0.8\linewidth}
         \centering
         % TODO: temperature figure for 274.83 MHz line not yet added
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_171_corrected.pdf}
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temperature_Tt_190.pdf}
         \caption{Temperature of the gas at the $276.83$ MHz resonance.}
         \label{subfig:274MHz_temp}
     \end{subfigure}
@@ -1450,7 +1507,7 @@ by the fitting function \ref{eq:final_fit} valid for $\beta$ independant on T. \
 
     \begin{subfigure}{0.75\linewidth}
         \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temp_data_184_corrected.pdf}
+        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temperature_Tt_194.pdf}
         \caption{Temperature of the gas at the $375.74$ MHz resonance.}
         \label{subfig:375MHz_temp}
     \end{subfigure}
@@ -1465,8 +1522,6 @@ by the fitting function \ref{eq:final_fit} valid for $\beta$ independant on T. \
     All detunings are measured from the $^{87}$Sr atomic resonance.}
     \label{fig:line_375MHz}
 \end{figure}
-
-The following table \ref{tab:summary_fits_PA_final} refers the experimental and fitted parameters of the three resonances and their associated atomic decay.
 
 \begin{table}[htbp]
 \centering
@@ -1492,7 +1547,6 @@ $l_{opt}/I$ ($a_0/(W/cm^2)$) & $(4.5\pm2.5)\times10^{-3}$ & $(4.7\pm0.4)\times10
 \hline \hline
 \end{tabular}
 \end{table}
-with depth stending for the strength of the transition.
 
 \hl{ajouter valeurs attendues }\\
 
