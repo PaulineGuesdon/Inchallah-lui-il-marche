@@ -1069,7 +1069,6 @@ sideband in the diode laser spectrum.}
 There are two primary methods to determine the optical scattering length $l_{\text{opt}}$.
 
 \paragraph{Method 1: Linewidth and Peak Analysis of the Photoassociation Loss Resonance}
-\hl{revoir la démo}\\
 Following the formulation from \cite{zelevinsky_narrow_2006}, the microscopic two-body loss rate coefficient near a photoassociation resonance is given by:
 \begin{equation}
     K_2(\Delta) = \frac{4\pi\hbar}{\mu} \frac{\Gamma_{\text{mol}}^2 \, l_{\text{opt}}}{\left(\frac{E}{\hbar} + 2\pi\Delta\right)^2 + \frac{(\Gamma_{\text{stim}} + \Gamma_{\text{mol}})^2}{4}}
@@ -1077,7 +1076,8 @@ Following the formulation from \cite{zelevinsky_narrow_2006}, the microscopic tw
 \end{equation}
 where $\mu = m_{\text{at}}/2$ is the reduced mass of the atom pair, $\Gamma_{\text{mol}}$ is the natural molecular linewidth (in rad/s), $\Gamma_{\text{stim}}$ is the light-induced stimulated width (in rad/s), and $E$ is the relative collision energy.
 
-Experimentally, we measure the relative atomic loss profile $f(\Delta)$ as a function of the laser detuning $\Delta$ (in Hz). For a pulse duration $t_{\text{pa}}$ and an average atomic density $\langle n \rangle$, in the limit of small loss fraction ($K_2 \langle n \rangle t_{\text{pa}} \ll 1$), the relative loss amplitude $f(\Delta)$ is directly proportional to $K_2(\Delta)$:
+Experimentally, we measure the relative atomic loss profile $f(\Delta) = \frac{n_0 - n(t)}{n_0}$ as a function of the laser detuning $\Delta$ (in Hz). One demonsrated that considering only the two-body loss term, $n(t) = \frac{n_0}{1+K_2(\Delta t_{PA})}$ (see \ref{temps caractéristique}).
+Then a pulse duration $t_{\text{pa}}$ and an average atomic density $\langle n \rangle$, in the limit of small loss fraction ($K_2 \langle n \rangle t_{\text{pa}} \ll 1$), the relative loss amplitude $f(\Delta)$ is directly proportional to $K_2(\Delta)$:
 \begin{equation}
     f(\Delta) \approx \langle n \rangle \, t_{\text{pa}} \, K_2(\Delta)
 \end{equation}
@@ -1336,11 +1336,11 @@ From the analysis of the red diode noise at $-6$~MHz we conclude that for the $^
 The closest molecular state red-detuned from the atomic resonance is found at
 $f_1 = -259.01 \pm 0.12$~MHz. It was obtained for an illumination time of
 $t=1000$~ms on a recompressed gas at intensity $I=19$~W/cm$^2$. The Lorentzian
-shape of the data (Fig.~\ref{subfig:259MHz_spectrum}, see Sec.~3.2.3.2) reveals a
+shape of the data (Fig.~\ref{fig:line_259MHz}, top left) reveals a
 surprisingly large linewidth of $\Gamma = 2.53\pm0.17$~MHz, with a maximum contrast
 of half the atom number at resonance.
 
-Fig.~\ref{subfig:259MHz_temp} shows the temperature of the cloud measured in the
+Fig.~\ref{fig:line_259MHz} (bottom left) shows the temperature of the cloud measured in the
 same experiment, intended to help confirm the molecular nature of the losses.
 While one might expect the temperature to peak sharply at the line center, it
 instead rises by about $0.5~\mu$K over a range symmetric around the resonance,
@@ -1348,31 +1348,40 @@ whose width (from the Lorentzian fit) is marked by the green dashed lines.
 
 As for the line discussed below, the temperature fluctuates substantially during
 illumination, so the atom number decay for this line
-(Fig.~\ref{subfig:259MHz_exp}) is fitted using the interpolated-temperature
+(Fig.~\ref{fig:line_259MHz}, top right) is fitted using the interpolated-temperature
 procedure detailed for the $276.83$~MHz line. From the measured trap beam powers,
 the mean trap frequency is estimated at \textbf{$\bar\omega/2\pi = 258.6$ Hz},
 giving an average density \textbf{$\langle n\rangle = 7.8\times10^{12}$ atoms/cm$^3$}.
 The fit yields \textbf{$K_2 = 4.10\times10^{-13}$ cm$^3$/s} at
 \textbf{$I=19$ W/cm$^2$}, i.e.
-\textbf{$l_{\text{opt}}/I=(4.5\pm2.5)\times10^{-3}$ $a_0$/(W/cm$^2$)}.
-\vspace{0.5cm}
+\textbf{$l_{\text{opt}}/I=(4.5\pm2.5)\times10^{-3}$ $a_0$/(W/cm$^2$)}. The
+saturating-exponential fit of $T(t)$ (Fig.~\ref{fig:line_259MHz}, bottom right),
+with $\Gamma$ fixed to the value extracted from $N(t)$, is consistent with the
+anti-evaporation heating mechanism discussed in Sec.~\hl{[ref]}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf}
+    \caption[Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr]{Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr. Top left: resonance spectrum ($I=19$~W/cm$^2$, $t=1000$~ms), with Lorentzian fit (green). Top right: atom number decay $N(t)$, fitted via Eq.~\ref{eq:final_fit} with interpolated $T(t)$. Bottom left: temperature of the cloud versus detuning; the shaded region and dashed line mark the resonance width and center from the top-left fit. Bottom right: temperature versus illumination time, with a saturating-exponential fit ($\Gamma$ fixed to the $N(t)$ value). All detunings are measured from the $^{87}$Sr atomic resonance.}
+    \label{fig:line_259MHz}
+\end{figure}
 
 \textbf{Line at $276.83$~MHz}
 
 The second line is detected at $f_2 = -276.83\pm0.03$~MHz from the atomic
-resonance (Fig.~\ref{subfig:274MHz_spectrum}). The gas, prepared at a density of
+resonance (Fig.~\ref{fig:line_276MHz}, top left). The gas, prepared at a density of
 $2\times10^{13}~\text{atoms/cm}^3$ by evaporation at the crossing of the reservoir
 and dimple beams, was illuminated for $1000$~ms. The measured linewidth,
 $\Gamma=7.48\pm0.77$~MHz, is again surprisingly large; the points deviating from
 the fit may result from the laser unlocking, or simply from a poor Gaussian fit
 of the cloud shape.
 
-The temperature (Fig.~\ref{subfig:274MHz_temp}) is close to maximal at the line
+The temperature (Fig.~\ref{fig:line_276MHz}, bottom left) is close to maximal at the line
 center, but shows an unexplained oscillation of about $0.1~\mu$K around
 $1.52~\mu$K just past resonance.
 
 As for the previous line, the atom number decay was first fitted assuming a
-constant temperature; this fit failed (Fig.~\ref{subfig:274MHz_exp}), yielding an
+constant temperature; this fit failed, yielding an
 implausibly small value of $l_{\text{opt}}/I=(2.6\pm0.9)\times10^{-6}~a_0/(\text{W/cm}^2)$.
 
 This misfit was resolved by letting the loss coefficient $\beta$ depend on the
@@ -1387,7 +1396,8 @@ offset. At each iteration, a candidate value of $K_2$ is combined with the
 (fixed) interpolated $T(t)$ to compute the instantaneous loss rate
 $\beta(t) = K_2/(2\sqrt{2}\,V_e(T(t)))$ at every time step; $\beta(t)$ is then
 integrated numerically over time to reconstruct a trial decay curve $N(t)$ via
-Eq.~\ref{eq:final_fit}. This trial curve is compared to the measured $N(t)$, and
+Eq.~\ref{eq:final_fit}. This trial curve is compared to the measured $N(t)$
+(Fig.~\ref{fig:line_276MHz}, top right), and
 the four parameters are updated so as to reduce the resulting $\chi^2$; the
 procedure repeats until convergence. The final, best-fit $K_2$ is thus a single
 constant, common to the entire curve, while $\beta(t)$ varies throughout the
@@ -1400,18 +1410,28 @@ With this corrected fit, the mean trap frequency is estimated at
 line), giving an average density \textbf{$\langle n\rangle = 3.2\times10^{13}$ atoms/cm$^3$}.
 The fit yields \textbf{$K_2 = 5.74\times10^{-13}$ cm$^3$/s} at
 \textbf{$I=31$ W/cm$^2$}, i.e.
-\textbf{$l_{\text{opt}}/I=(4.7\pm0.4)\times10^{-3}$ $a_0$/(W/cm$^2$)}.
-\vspace{0.5cm}
+\textbf{$l_{\text{opt}}/I=(4.7\pm0.4)\times10^{-3}$ $a_0$/(W/cm$^2$)}. The
+saturating-exponential fit of $T(t)$ (Fig.~\ref{fig:line_276MHz}, bottom right)
+does not reproduce the last three points of the temperature trace, which lie
+systematically above the model prediction -- see the discussion in
+Sec.~\hl{[ref]}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf}
+    \caption[Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr]{Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr. Panel layout as in Fig.~\ref{fig:line_259MHz}, with $I=31$~W/cm$^2$ for the $N(t)$/$T(t)$ fits. All detunings are measured from the $^{87}$Sr atomic resonance.}
+    \label{fig:line_276MHz}
+\end{figure}
 
 \textbf{Line at $375.74$~MHz}
 
 The last molecular line is measured at $f_3=375.74\pm0.48$~MHz, for a
-recompressed gas illuminated for $1000$~ms at intensity $I=5.6$~W/cm$^2$. It has a
+recompressed gas illuminated for $1000$~ms at intensity $I=5.6$~W/cm$^2$
+(Fig.~\ref{fig:line_375MHz}, top left). It has a
 notably low contrast and, again, a large linewidth of $\Gamma=10.96\pm2.68$~MHz.
-The temperature (Fig.~\ref{subfig:375MHz_temp}) shows a marked change in slope
+The temperature (Fig.~\ref{fig:line_375MHz}, bottom left) shows a marked change in slope
 between the resonance and the red-detuned frequencies, decreasing there by
 $\Delta T=200$~nK. Since the temperature remains essentially constant throughout
-this resonance's decay measurement, $dN/dt$ (Fig.~\ref{subfig:375MHz_exp}) is well
+this resonance's decay measurement, $dN/dt$ (Fig.~\ref{fig:line_375MHz}, top right) is well
 described by Eq.~\ref{eq:final_fit} in the standard case of a temperature-independent
 $\beta$. \hl{slopes?}
 
@@ -1419,9 +1439,19 @@ Using the lower trap beam powers for this line, the mean trap frequency is
 estimated at \textbf{$\bar\omega/2\pi = 142.7$ Hz}, giving an average density
 \textbf{$\langle n\rangle = 1.7\times10^{12}$ atoms/cm$^3$}. The fit yields
 \textbf{$K_2 = 1.42\times10^{-13}$ cm$^3$/s} at \textbf{$I=19$ W/cm$^2$}, i.e.
-\textbf{$l_{\text{opt}}/I=(1.4\pm1.0)\times10^{-3}$ $a_0$/(W/cm$^2$)}.
+\textbf{$l_{\text{opt}}/I=(1.4\pm1.0)\times10^{-3}$ $a_0$/(W/cm$^2$)}. The
+saturating-exponential fit of $T(t)$ (Fig.~\ref{fig:line_375MHz}, bottom right)
+agrees well with the data over this timescale, though the transition to the
+$\Gamma$-dominated regime is not yet fully resolved given the small value of
+$\Gamma$ for this line.
 
-\vspace{1cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_375MHz.pdf}
+    \caption[Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr]{Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr. Panel layout as in Fig.~\ref{fig:line_259MHz}, with $I=19$~W/cm$^2$ for the $N(t)$/$T(t)$ fits. All detunings are measured from the $^{87}$Sr atomic resonance.}
+    \label{fig:line_375MHz}
+\end{figure}
 
 Table~\ref{tab:summary_fits_PA_final} summarizes the experimental conditions and
 the resulting fit parameters for the three resonances, together with the derived
@@ -1432,96 +1462,6 @@ the measured Reservoir and Dimple beam powers and the trap geometry (see Sec.~\h
 cross-checked against a direct trap-frequency measurement (e.g. parametric
 heating). 'Depth' refers to the peak amplitude of
 the fitted Lorentzian line, a proxy for the strength of the transition.
-
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}{0.8\linewidth}
-        \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data195.pdf}
-        \caption{Resonance spectrum at $259.01 \pm 0.12$ MHz ($I = 19$ W/cm$^2$ for t = 1000~ms).}
-        \label{subfig:259MHz_spectrum}
-    \end{subfigure}
-
-    \begin{subfigure}{0.8\linewidth}
-        \centering
-        % TODO: add temperature figure for 259 MHz line
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temperature_Tt_247.pdf}
-        \caption{Temperature of the gas at the $259.01$ MHz resonance.}
-        \label{subfig:259MHz_temp}
-    \end{subfigure}
-    
-\begin{subfigure}{0.8\linewidth}
-        \centering
-        % TODO: add temperature figure for 259 MHz line
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data247_exp_.pdf}
-        \caption{dN/dt measurement at the $259.01$ MHz resonance.}
-        \label{subfig:259MHz_temp}
-    \end{subfigure}
-
-    \caption[Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr ($I = 19$ W/cm$^2$) (resonance, temperature, dN/dt)]{Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr ($I = 19$ W/cm$^2$). 
-    All detunings are measured from the $^{87}$Sr atomic resonance.}
-    \label{fig:line_259MHz}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}{0.8\linewidth}
-        \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data171.pdf}
-        \caption{Resonance spectrum at $276.83 \pm 0.03$ MHz ($I = 5.2$ W/cm$^2$ for t = 1000~ms).}
-        \label{subfig:274MHz_spectrum}
-    \end{subfigure}
-
-    \begin{subfigure}{0.8\linewidth}
-        \centering
-        % TODO: temperature figure for 274.83 MHz line not yet added
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temperature_Tt_190.pdf}
-        \caption{Temperature of the gas at the $276.83$ MHz resonance.}
-        \label{subfig:274MHz_temp}
-    \end{subfigure}
-
-    \begin{subfigure}{0.8\linewidth}
-        \centering
-        % TODO: temperature figure for 274.83 MHz line not yet added
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data190_exp.pdf}
-        \caption{dN/dt measurement at the $276.83$ MHz resonance.}
-        \label{subfig:274MHz_exp}
-    \end{subfigure}
-
-    % NOTE: no exponential decay figure available for this line
-    \caption[Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$) (resonance, temperature, dN/dt)]{Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$). 
-    No exponential decay measurement is available for this line.
-    All detunings are measured from the $^{87}$Sr atomic resonance.}
-    \label{fig:line_276MHz}
-\end{figure}
-
-
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}{0.75\linewidth}
-        \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/normalisation_data184.pdf}
-        \caption{Resonance spectrum at $375.74 \pm 0.48$ MHz ($I = 5.6$ W/cm$^2$ for t = 1000~ms).}
-        \label{subfig:375MHz_spectrum}
-    \end{subfigure}
-
-    \begin{subfigure}{0.75\linewidth}
-        \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/temperature_Tt_194.pdf}
-        \caption{Temperature of the gas at the $375.74$ MHz resonance.}
-        \label{subfig:375MHz_temp}
-    \end{subfigure}
-
-    \begin{subfigure}{0.75\linewidth}
-        \centering
-        \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data_194_exp.pdf}
-        \caption{Exponential decay (one- and two-body losses) at the $375.74$ MHz resonance.}
-        \label{subfig:375MHz_exp}
-    \end{subfigure}
-    \caption[Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr ($I = 5.2$ W/cm$^2$) (resonance, temperature, dN/dt)]{Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr ($I = 5.6$ W/cm$^2$ for t = 1000~ms). 
-    All detunings are measured from the $^{87}$Sr atomic resonance.}
-    \label{fig:line_375MHz}
-\end{figure}
 
 \begin{table}[htbp]
 \centering
