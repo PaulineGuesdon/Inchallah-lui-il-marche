@@ -574,6 +574,7 @@ scaling of the vibrational spacing:
 \begin{equation}
     E_{\nu} = D_e - \left[ (\nu_D - \nu) H_n \right]^{\frac{2n}{n-2}}
 \end{equation}
+\label{leroy-bernstein}
 where $H_n$ is defined as:
 
 \begin{equation}
@@ -1231,15 +1232,16 @@ perturbed to the unperturbed atom number.
 To increase the two-body loss signal, data were collected while varying both the PA
 beam waist and the atomic cloud density. 
 
-For this hyperfine species, hundreds of resonances are expected, as introduced in the 
+For this hyperfine species, hundreds of resonances are expected, as introduced in the
 theoretical part of this section, each with a linewidth of about $15~\text{kHz}$.
-By considering the Leroy-Bernstein law, one expect
-
-
-
-
-
-
+One can estimate from Eq.~\ref{leroy-bernstein} the energy difference between the
+dissociation limit and the first vibrational state to be
+$3H_6\epsilon^{2/3} \simeq 266~\text{MHz}$. Distributing the 981 accessible molecular
+configurations over this range, we expect a dense spectrum of molecular lines with a
+mean separation of only $\sim 270~\text{kHz}$ -- an order of magnitude narrower than
+the natural linewidth of a single line, let alone the several-MHz linewidths we
+actually observe (Sec.~\hl{[ref]}). This supports the hypothesis of an unresolved
+forest of overlapping molecular lines.
 
 
 The remainder of this section first analyzes the experimental signals that initially
@@ -1488,17 +1490,17 @@ $l_{opt}/I$ ($a_0/(W/cm^2)$) & $(4.5\pm2.5)\times10^{-3}$ & $(4.7\pm0.4)\times10
 \end{tabular}
 \end{table}
 
-\hl{ajouter valeurs attendues }\\
-
 \textbf{PA lines found on $^{87}Sr$}\\
 These results show multiple surprising behaviors of our atoms :
 
 \begin{itemize}
-    \item First, we have not been able to detect two-body losses before $259.01$ MHz which is surprising taking into acount the expect frequency ranges on $87$ isotope from mass scaling discussion of 
-    \cite{borkowski_mass_2014}.
+    \item First, contrarely to the 270~kHz energy diffence between the 981 vibrational states estimated under 270~MHz from the atomic transition, we have not been able to detect two-body losses before $259.01$ 
+    MHz. It is also not consistent with the expected results on $87$ isotope from mass scaling discussion of \cite{borkowski_mass_2014}.
     \item Then we hardly exceed $30\%$ of loss: all three datas present small depths from $8.3\pm 0.9 \%$ to $36.4\pm 1.9 \%$ for intensites greater than many experiments like \cite{zelevinsky_narrow_2006} and 
     similar atomic densities. 
-    \item In addition the linewidth of each line is large : $2.53 \pm 0.17$, $7.48 \pm 0.77$ MHz and $10.93 \pm 2.68$ MHz while we expect $\Gamma = \gamma_{mol} \simeq 2\times \gamma_{at} \simeq 15$ kHz.
+    \item In addition the linewidth of each line is large : $2.53 \pm 0.17$, $7.48 \pm 0.77$ MHz and $10.93 \pm 2.68$ MHz while we expect $\Gamma = \gamma_{mol} \simeq 2\times \gamma_{at} \simeq 15$ kHz. \hl{commentaire sur la largeur de certaines expériences déjà grande}
+    \item Also the results have been obtained for similar atomic density of experiment \cite{reschovsky_narrow-line_2018} with about 10 times more intensity: still there is five order of magnitude difference on 
+    the optical length $l_{opt}$. Same conclusion for \cite{reichenbach_optical_nodate}.
 \end{itemize}
 
 
