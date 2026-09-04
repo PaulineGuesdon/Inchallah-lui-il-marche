@@ -61,7 +61,7 @@
 \contentsline {subsubsection}{\numberline {3.1.5.1}WKB approximation}{74}{subsubsection.211}%
 \contentsline {subsubsection}{\numberline {3.1.5.2}Leroy-Bernstein scaling}{76}{subsubsection.217}%
 \contentsline {subsubsection}{\numberline {3.1.5.3}Mass scaling and isotopic shifts}{77}{subsubsection.223}%
-\contentsline {section}{\numberline {3.2}Spectroscopy protocol and calibration of the PA laser}{79}{section.227}%
+\contentsline {section}{\numberline {3.2}Spectroscopy protocol and calibration of the photoassociation laser}{79}{section.227}%
 \contentsline {subsection}{\numberline {3.2.1}Gas preparation and isotope specificities}{79}{subsection.228}%
 \contentsline {subsection}{\numberline {3.2.2}Photoassociation lasers and their spectral characteristics}{79}{subsection.229}%
 \contentsline {subsubsection}{\numberline {3.2.2.1}ECDL locking and frequency referencing}{79}{subsubsection.230}%
@@ -69,22 +69,22 @@
 \contentsline {subsubsection}{\numberline {3.2.2.3}Spectral imperfections from the filter cavity system}{82}{subsubsection.236}%
 \contentsline {subsection}{\numberline {3.2.3}Atomic and molecular lines calibration}{86}{subsection.243}%
 \contentsline {subsubsection}{\numberline {3.2.3.1}General experimental framework and baseline parameters}{86}{subsubsection.244}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}Fitting model}{87}{subsubsection.246}%
-\contentsline {subsubsection}{\numberline {3.2.3.3}Experimental results on $^{88}$Sr}{88}{subsubsection.253}%
-\contentsline {subsubsection}{\numberline {3.2.3.4}PA experiments with an alternative laser source}{89}{subsubsection.256}%
-\contentsline {subsubsection}{\numberline {3.2.3.5}Noise of the diode}{91}{subsubsection.259}%
-\contentsline {subsubsection}{\numberline {3.2.3.6}Determining the optical scattering length $l_{\text {opt}}$}{93}{subsubsection.262}%
-\contentsline {paragraph}{Method 1: Linewidth and Peak Analysis of the Photoassociation Loss Resonance}{93}{section*.263}%
-\contentsline {paragraph}{Method 2: Direct Extraction from Two-Body Loss Rate Dynamics}{93}{section*.270}%
-\contentsline {subsubsection}{\numberline {3.2.3.7}Decay dynamics ($dN/dt$)}{94}{subsubsection.272}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Fitting model for molecular resonances}{87}{subsubsection.246}%
+\contentsline {subsection}{\numberline {3.2.4}Experimental results on $^{88}$Sr}{88}{subsection.253}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}PA experiments with an alternative laser source}{91}{subsubsection.256}%
+\contentsline {subsubsection}{\numberline {3.2.4.2}Noise of the diode}{92}{subsubsection.259}%
+\contentsline {subsubsection}{\numberline {3.2.4.3}Determining the optical scattering length $l_{\text {opt}}$}{93}{subsubsection.262}%
+\contentsline {paragraph}{Method 1: Linewidth and peak analysis of the photoassociation loss resonance}{93}{section*.263}%
+\contentsline {paragraph}{Method 2: Direct extraction from two-body loss rate dynamics}{94}{section*.270}%
+\contentsline {subsubsection}{\numberline {3.2.4.4}Decay dynamics ($dN/dt$)}{94}{subsubsection.272}%
 \contentsline {section}{\numberline {3.3}$^{87}\text {Sr}$ inelastic collisions}{97}{section.290}%
-\contentsline {subsection}{\numberline {3.3.1}Establishment of the molecular lines research protocol from experimental mistakes}{98}{subsection.292}%
+\contentsline {subsection}{\numberline {3.3.1}Establishment of the molecular lines research protocol from experimental mistakes}{99}{subsection.292}%
 \contentsline {subsubsection}{\numberline {3.3.1.1}dN/dt decay interpretation}{99}{subsubsection.293}%
-\contentsline {subsubsection}{\numberline {3.3.1.2}Temperature analysis }{100}{subsubsection.295}%
-\contentsline {subsection}{\numberline {3.3.2}Molecular lines on $^{87}Sr$}{101}{subsection.300}%
-\contentsline {subsection}{\numberline {3.3.3}Interpretation of low contrast and large linewidth}{105}{subsection.305}%
-\contentsline {subsubsection}{\numberline {3.3.3.1}Technical possibilities repsonsible for misbehaving}{105}{subsubsection.306}%
-\contentsline {subsubsection}{\numberline {3.3.3.2}Physical hypotheses for the low contrast and large linewidth}{107}{subsubsection.311}%
-\contentsline {subsubsection}{\numberline {3.3.3.3}Tests to be done in the future}{108}{subsubsection.314}%
-\contentsline {chapter}{Conclusion}{110}{chapter*.315}%
-\contentsline {chapter}{\numberline {A}Algorithms}{121}{appendix.317}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}Temperature analysis}{100}{subsubsection.295}%
+\contentsline {subsection}{\numberline {3.3.2}Molecular lines on $^{87}Sr$}{102}{subsection.301}%
+\contentsline {subsection}{\numberline {3.3.3}Interpretation of low contrast and large linewidth}{107}{subsection.306}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}Technical possibilities repsonsible for misbehaving}{107}{subsubsection.307}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}Physical hypotheses for the low contrast and large linewidth}{108}{subsubsection.312}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}Tests to be done in the future}{110}{subsubsection.315}%
+\contentsline {chapter}{Conclusion}{112}{chapter*.316}%
+\contentsline {chapter}{\numberline {A}Algorithms}{123}{appendix.318}%
