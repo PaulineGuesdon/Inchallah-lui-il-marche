@@ -65,7 +65,9 @@ with an atom number of $400\,000$.
 \begin{figure}
 \centering
 \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/energy_levels_sr.png}
-\caption[Energy diagram of $^{87}\text{Sr}$]{Extracted from \cite{litvinov_these} Energy spectrum of $^{87}\text{Sr}$ including fine and hyperfine interactions. In blue the $461~$nm transition used for TC, Zeeman cooling, blue MOT stage and imaging. The purple arrow indicates the repump line at $403~$nm from the metastable state $^3P_2$ used for the atoms leaking from the $^1P_1$ state. In red the transition at $689~$nm used for all stages of the red MOT, optical pumping, spin manipulation, coherent manipulation (see Chap.\ref{chap 2}), photoassociation (see Chap.\ref{chap 3})}
+\caption[Energy diagram of $^{87}\text{Sr}$]{Extracted from \cite{litvinov_these} Energy spectrum of $^{87}\text{Sr}$ including fine and hyperfine interactions. In blue the $461~$nm transition used for TC, Zeeman cooling, blue MOT stage and imaging. The purple arrow indicates the repump line at $403~$nm from the metastable state $^3P_2$ used for the atoms leaking from the intermediate $^1D_2$ state. In red the transition to $^3P_1$ at $689~$nm used for all stages of the red MOT, optical pumping, spin manipulation, coherent manipulation (see Chap.\ref{chap 2}), photoassociation (see Chap.\ref{chap 3}, through
+the different hyperfine states $F=7/2, 9/2, 11/2$).
+The 698~nm transition indicates the clock transition which we do not use in this experiment.}
 \label{energy levels sr}
 \end{figure}
 
@@ -199,7 +201,7 @@ The position-dependent Zeeman shift breaks the spatial degeneracy of the sub-lev
 \end{equation}
 Combined with red-detuned laser beams, this spatial shift creates a restoring force toward the trap center ($z = 0$) alongside the velocity-dependent radiation pressure force.
 
-Gravity compensation and vertical spatial confinement are provided by the magnetic field gradient itself. Because the quadrupole coils produce a steeper gradient along their symmetry axis ($z$) than in the horizontal plane ($x, y$), half as much intensity is delivered along the vertical axis compared to the horizontal axes. This ratio achieves a balanced, quasi-spherical trap while minimizing power broadening and optical density effects.
+Because the quadrupole coils produce a steeper gradient along their symmetry axis ($z$) than in the horizontal plane ($x, y$), half as much intensity is delivered along the vertical axis compared to the horizontal axes. This ratio achieves a balanced, quasi-spherical trap while minimizing power broadening and optical density effects.
 
 During this stage, the cloud reaches the Doppler temperature limit \cite{dalibard_atomes_froids}:
 \begin{equation}
@@ -208,20 +210,25 @@ k_B T_D = \frac{\hbar \Gamma_{^1S_0 \rightarrow {}^1P_1}}{2}
 Due to the broad linewidth of the $461~\text{nm}$ transition ($\Gamma/2\pi = 30.5~\text{MHz}$), this Doppler temperature ($T_D \approx 770~\mu\text{K}$) remains significantly higher than the single-photon recoil limit $T_r$.\\
 The atoms are transfered in $^1P_1$ state that is determined by the equation evolution of the atom number:
 \begin{equation}
-    \frac{dN(t)}{dt} = \alpha \Gamma^2 -\gamma_{loss}N(t)
+    \frac{dN(t)}{dt} = \alpha \Gamma -\gamma_{loss}N(t)
 \end{equation}
 where $\alpha$ is a coefficient that depends on experimental parameters, $\gamma_{loss} = \gamma_{vacuum} + \gamma_{leak}$ respectively the loss rate due to the imperfection of the vacuum and the rate leakage to the 
 metastable state. Then the number of atom in time evolves as:
 \begin{equation}
     N(t) = N_{sat}(1-e^{-t/\tau})
 \end{equation}
-$N_{sat} = \alpha \Gamma^2 \tau$ when the transition reaches its maximum value. To saturate the transition one should wait for few blue MOT lifetime which corresponds to 100~ms to 1~sec. \\
-The experimental duration is set differently since one must consider the time for which one reaches the maximum atom number trapped in the metastable state: this corresponds to 8.2~sec. \\
-The transition to the next step necessitates extinguishing the blue lasers while keeping a strong magnetic field, to avoid losing the atoms that have decayed to $^3P_1$ before they reach the ground state. 
+$N_{sat} = \alpha \Gamma \tau$ when the transition reaches its maximum value. To saturate the transition one should wait for few blue MOT lifetime which corresponds to 100~ms to 1~sec. \\
+
+The experimental duration is set differently since one must consider the time for which one reaches the maximum atom number trapped in the metastable state: this corresponds to 8.2~sec. This waiting time is 
+to accumulate all the atoms in the metastable state since at a photon absorption 3:4 of them are still in the blue MOT cycle. Meanwhile the magnetic trap is on to keep the atoms in the metastable state.
+From this accumulation the atoms are repumped (see subsection down below) to $^3D_2$ state and then decay to the $^3P_1$ state where they go back to the ground state. There are then adressed by the lasers one turn on before 
+the repumping laser so during the short process of repumping, all the atoms in the ground state are trapped by the next red MOT stage.
+
 
 \subsection{Repumper}
 
-To sustain the blue MOT cycle, a repumping laser system is required: approximately $1:4$ of the atoms decay into the metastable state  (lifetime $\tau \approx 500~\text{s}$) via the intermediate $^1D_2$ state, the rest in $^1P_1$. Without repumping, atoms become dark to the $461~\text{nm}$ light and are lost from the cooling cycle. 
+After the accumulation of all the atoms in the metastable state, a repumping laser system is required: approximately $1:4$ of the 1:20000 atoms that decayed from $^1P_1$ to $^1D_2$ into the metastable state (lifetime $\tau 
+\approx 500~\text{s}$), the rest in $^3P_1$. Without repumping, atoms become dark to the $461~\text{nm}$ light and are lost from the cooling cycle. 
 At this stage the B field gradient is maximum which acts as a magnetic trap on the atoms since the magnetic dipole of the atoms in the metastable state is non-zero.
 
 \subsubsection{Hyperfine structure of Strontium-87}
@@ -336,7 +343,7 @@ eventually lost from the trap.
 \includegraphics[width=0.8\linewidth]{Chapitres/Gas preparation and spin control/images/need_for_stir.pdf}
 \caption[Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1,
 F=11/2$ level]{(Adapted from \cite{stellmerThesis}) Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1,
-F=11/2$ level. The position-dependent light shift brings the two counter-propagating
+F=11/2$ level. The position-dependent Zeeman shift brings the two counter-propagating
 beams into resonance with different $m_F'$ sub-levels ($\sigma^+$ with the closed
 transition to $m_F'=11/2$, $\sigma^-$ with the open transition to $m_F'=7/2$) at the same
 position, opening a leak out of the cycling transition.}
@@ -706,6 +713,6 @@ To ensure efficient population transfer, the optical pulse sweep rate must satis
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/figure1_adiabatic_passage.pdf}
-    \caption[Principle of spin-selective detection via coherent momentum transfer.]{Principle of spin-selective detection via coherent momentum transfer. (a) Counter-propagating beam geometry of the lasers used for the TLS and two-photon Raman scheme. (b) Energy levels scheme of the Raman process, with recoil energy shifting the $m_F+2$ level. (c) Avoided crossing due to the coupling of the states, necessiting adiabatic transfer. (d) Resulting TOF absorption image showing spatially separated spin components and the corresponding lilentul distribution.}
+    \caption[Principle of spin-selective detection via coherent momentum transfer.]{Principle of spin-selective detection via coherent momentum transfer. (a) Counter-propagating beam geometry of the lasers used for the TLS and two-photon Raman scheme. (b) Energy levels scheme of the Raman process, with recoil energy shifting the $m_F+2$ level. (c) Avoided crossing due to the coupling of the states, necessiting adiabatic transfer. (d) Resulting TOF absorption image showing spatially separated spin components and the corresponding momentum distribution.}
     \label{fig:intro-spin-kick-scheme}
 \end{figure}
