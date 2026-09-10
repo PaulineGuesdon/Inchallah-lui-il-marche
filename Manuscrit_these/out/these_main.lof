@@ -1,62 +1,62 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Energy spectrum of $^{87}\text {Sr}$}}{5}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Extracted and modified from \cite {bataille_realisation_nodate} Experimental full setup for the cooling and trapping of the atoms with figures on the velocity, temperature and typical magnetic gradient on each stage.}}{6}{figure.caption.10}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Experimental sequence for the magnetic field, laser intensities, and laser frequencies}}{7}{figure.caption.11}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Optical layout of the $461~\text {nm}$ blue laser system }}{9}{figure.caption.14}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Diagram of the frequencies of each laser composing the blue chain}}{10}{figure.caption.15}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Illustration of the transverse cooling effect}}{11}{figure.caption.18}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Discussion on TC detuning efficiency (Felix Faisant thesis)}}{12}{figure.caption.22}%
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Energy level diagram of $^{87}\text {Sr}$, $^3P_2$ transition}}{14}{figure.caption.32}%
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Optical setup for the repump and the beat-lock system.}}{15}{figure.caption.34}%
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Optical setup of the $689~\text {nm}$ laser cooling system.}}{16}{figure.caption.37}%
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Frequencies of the red lasers used for the red MOT cooling stages}}{17}{figure.caption.38}%
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1, F=11/2$ level}}{19}{figure.caption.41}%
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Illustration of the melange concept on the $^1S_0(F=9/2) \rightarrow {}^3P_1(F=9/2)$ transition}}{20}{figure.caption.42}%
-\contentsline {figure}{\numberline {1.14}{\ignorespaces Sequential stages of the $689~\text {nm}$ red MOT.}}{20}{figure.caption.44}%
-\contentsline {figure}{\numberline {1.15}{\ignorespaces Simulation extracted from \cite {litvinov_these}. Principle of localized $689~\text {nm}$ MOT loading inside the crossed optical dipole trap}}{22}{figure.caption.49}%
-\contentsline {figure}{\numberline {1.16}{\ignorespaces Evaporative cooling mechanism in a crossed optical dipole trap}}{22}{figure.caption.50}%
-\contentsline {figure}{\numberline {1.17}{\ignorespaces Optical setup of the $1075~\text {nm}$ crossed dipole trap laser system.}}{24}{figure.caption.53}%
-\contentsline {figure}{\numberline {1.18}{\ignorespaces Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition}}{25}{figure.caption.57}%
-\contentsline {figure}{\numberline {1.19}{\ignorespaces MOGlabs External Cavity Diode Laser architecture used for spin manipulation}}{26}{figure.caption.61}%
-\contentsline {figure}{\numberline {1.20}{\ignorespaces Spin manipulation scheme extracted from \cite {bataille_realisation_nodate}}}{28}{figure.caption.67}%
-\contentsline {figure}{\numberline {1.21}{\ignorespaces Optical layout of the MOGlabs laser chain configured for two-photon Raman transitions.}}{29}{figure.caption.69}%
-\contentsline {figure}{\numberline {1.22}{\ignorespaces Complete optical setup including the Fabry-Pérot cavity and PDH stabilization loop.}}{30}{figure.caption.71}%
-\contentsline {figure}{\numberline {1.23}{\ignorespaces Fabry-Pérot comparison of cavity construction method}}{31}{figure.caption.75}%
-\contentsline {figure}{\numberline {1.24}{\ignorespaces Schematic of the Pound-Drever-Hall locking system}}{32}{figure.caption.80}%
-\contentsline {figure}{\numberline {1.25}{\ignorespaces Pound-Drever-Hall error signal of the homemade Fabry-Pérot cavity}}{33}{figure.caption.81}%
-\contentsline {figure}{\numberline {1.26}{\ignorespaces Homemade PID scheme}}{34}{figure.caption.82}%
-\contentsline {figure}{\numberline {1.27}{\ignorespaces Closed-loop noise analysis of the Fabry-Pérot cavity}}{34}{figure.caption.83}%
-\contentsline {figure}{\numberline {1.28}{\ignorespaces Principle of spin-selective detection via coherent momentum transfer.}}{36}{figure.caption.89}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Energy diagram of $^{87}\text {Sr}$}}{6}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Extracted and modified from \cite {bataille_realisation_nodate} Experimental full setup for the cooling and trapping of the atoms with figures on the velocity, temperature and typical magnetic gradient on each stage.}}{7}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Experimental sequence for the magnetic field, laser intensities, and laser frequencies}}{8}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Optical layout of the $461~\text {nm}$ blue laser system }}{10}{figure.caption.14}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Diagram of the frequencies of each laser composing the blue chain}}{11}{figure.caption.15}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Illustration of the transverse cooling effect}}{12}{figure.caption.18}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Discussion on TC detuning efficiency (Felix Faisant thesis)}}{13}{figure.caption.22}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Energy level diagram of $^{87}\text {Sr}$, $^3P_2$ transition}}{15}{figure.caption.32}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Optical setup for the repump and the beat-lock system.}}{16}{figure.caption.34}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Optical setup of the $689~\text {nm}$ laser cooling system.}}{18}{figure.caption.37}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Frequencies of the red lasers used for the red MOT cooling stages}}{19}{figure.caption.38}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1, F=11/2$ level}}{20}{figure.caption.41}%
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Illustration of the melange concept on the $^1S_0(F=9/2) \rightarrow {}^3P_1(F=9/2)$ transition}}{21}{figure.caption.42}%
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Sequential stages of the $689~\text {nm}$ red MOT.}}{21}{figure.caption.44}%
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Simulation extracted from \cite {litvinov_these}. Principle of localized $689~\text {nm}$ MOT loading inside the crossed optical dipole trap}}{23}{figure.caption.49}%
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Evaporative cooling mechanism in a crossed optical dipole trap}}{24}{figure.caption.50}%
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Optical setup of the $1075~\text {nm}$ crossed dipole trap laser system.}}{25}{figure.caption.53}%
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition}}{26}{figure.caption.57}%
+\contentsline {figure}{\numberline {1.19}{\ignorespaces MOGlabs External Cavity Diode Laser architecture used for spin manipulation}}{28}{figure.caption.61}%
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Spin manipulation scheme extracted from \cite {bataille_realisation_nodate}}}{30}{figure.caption.67}%
+\contentsline {figure}{\numberline {1.21}{\ignorespaces Optical layout of the MOGlabs laser chain configured for two-photon Raman transitions.}}{31}{figure.caption.69}%
+\contentsline {figure}{\numberline {1.22}{\ignorespaces Complete optical setup including the Fabry-Pérot cavity and PDH stabilization loop.}}{32}{figure.caption.71}%
+\contentsline {figure}{\numberline {1.23}{\ignorespaces Fabry-Pérot comparison of cavity construction method}}{33}{figure.caption.75}%
+\contentsline {figure}{\numberline {1.24}{\ignorespaces Schematic of the Pound-Drever-Hall locking system}}{34}{figure.caption.80}%
+\contentsline {figure}{\numberline {1.25}{\ignorespaces Pound-Drever-Hall error signal of the homemade Fabry-Pérot cavity}}{35}{figure.caption.81}%
+\contentsline {figure}{\numberline {1.26}{\ignorespaces Homemade PID scheme}}{36}{figure.caption.82}%
+\contentsline {figure}{\numberline {1.27}{\ignorespaces Closed-loop noise analysis of the Fabry-Pérot cavity}}{36}{figure.caption.83}%
+\contentsline {figure}{\numberline {1.28}{\ignorespaces Principle of spin-selective detection via coherent momentum transfer.}}{38}{figure.caption.89}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Resume of the article experiments implemented over four $m_F$ states}}{38}{figure.caption.92}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Rabi oscillations driven by $\delta m_F = +1, +2$ Raman coupling and Ramsey interferogram between two Zeeman states}}{42}{figure.caption.97}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Analysis on phase and contrast of a Ramsey interferogram between two Zeeman states}}{47}{figure.caption.99}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Simultaneous sensing of two external fields over four $m_F$ states with phase analysis}}{50}{figure.caption.105}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Measuring two non-commuting observables in a single realization over four states}}{55}{figure.caption.110}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Resume of the article experiments implemented over four $m_F$ states}}{40}{figure.caption.92}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Rabi oscillations driven by $\delta m_F = +1, +2$ Raman coupling and Ramsey interferogram between two Zeeman states}}{44}{figure.caption.97}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Analysis on phase and contrast of a Ramsey interferogram between two Zeeman states}}{49}{figure.caption.99}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Simultaneous sensing of two external fields over four $m_F$ states with phase analysis}}{52}{figure.caption.105}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Measuring two non-commuting observables in a single realization over four states}}{57}{figure.caption.110}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of the amplitude's wavefunction of collisional particles}}{64}{figure.caption.146}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Scheme of the general concept of photoassociation}}{66}{figure.caption.157}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Gerade/ungerade electronic symmetry}}{71}{figure.caption.198}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Hund's case (c) coupling scheme}}{72}{figure.caption.201}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Density of molecular potentials for $^{173}\text {Yb}$ \cite {zelevinsky_narrow_2006}}}{73}{figure.caption.206}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of the WKB semi-classical approximation at short range in an interatomic potential}}{75}{figure.caption.215}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Plot of the energy levels depending on the isotopic mass of Strontium from mass-scaling article }}{78}{figure.caption.226}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Beating scheme for PA process between the light from "AOM 11/2" that is settled on the resonance $^1S_0 \rightarrow ^3P_1, F=11/2$, and MOGlabs}}{80}{figure.caption.231}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Frequency schemes for photoassociation (PA) depending on the targeted isotope}}{81}{figure.caption.233}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Beating spectrum between the MOGlabs laser and the "AOM 11/2"}}{82}{figure.caption.235}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Modulus square of the $0^{th}$ and $1^{st}$ Bessel functions $J_n$ governing the power distribution between the carrier and PDH sidebands.}}{83}{figure.caption.238}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Scheme of the PDH sidebands addressing the atomic resonance}}{84}{figure.caption.240}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Atomic loss due to the FP cavity's PDH sideband}}{85}{figure.caption.241}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Experimental verification of the known resonances of $^{88}\text {Sr}$}}{90}{figure.caption.255}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Comparison of the $\nu = -2$ molecular line profile with two different sources}}{91}{figure.caption.258}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Noise measurement on $^{87}Sr$ at $\delta = +6$~MHz from the atomic resonance}}{92}{figure.caption.260}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Twelve $m_F$ states of the $^3P_1, F=11/2$ hyperfine excited state, measured at $\delta = -6$~MHz and $\delta = -12$~MHz from the atomic resonance.}}{93}{figure.caption.261}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces $dN/dt$ verification of the molecular nature of $^{88}Sr$ resonances \ref {88Sr resonance}}}{96}{figure.caption.289}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Zoom on the section of the red chain dedicated to the PA process}}{98}{figure.caption.291}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Evolution of the atom number as a function of the illumination time at $f = -6$~MHz}}{100}{figure.caption.294}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Temperature of the gas during the experiment described by the $6$~MHz atomic signal \ref {6MHz noise red detuned} and not molecular}}{101}{figure.caption.297}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr}}{103}{figure.caption.302}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr}}{105}{figure.caption.303}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr}}{106}{figure.caption.304}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Experimental sequence for ODT and PA laser chopping}}{108}{figure.caption.311}%
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Scheme of predissociation}}{110}{figure.caption.314}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of the amplitude's wavefunction of collisional particles}}{66}{figure.caption.146}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Scheme of the general concept of photoassociation}}{68}{figure.caption.157}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Gerade/ungerade electronic symmetry}}{73}{figure.caption.198}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Hund's case (c) coupling scheme}}{74}{figure.caption.201}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Density of molecular potentials for $^{173}\text {Yb}$ \cite {zelevinsky_narrow_2006}}}{75}{figure.caption.206}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of the WKB semi-classical approximation at short range in an interatomic potential}}{77}{figure.caption.215}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Plot of the energy levels depending on the isotopic mass of Strontium from mass-scaling article }}{80}{figure.caption.226}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Beating scheme for PA process between the light from "AOM 11/2" that is settled on the resonance $^1S_0 \rightarrow ^3P_1, F=11/2$, and MOGlabs}}{82}{figure.caption.231}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Frequency schemes for photoassociation (PA) depending on the targeted isotope}}{83}{figure.caption.233}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Beating spectrum between the MOGlabs laser and the "AOM 11/2"}}{84}{figure.caption.235}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Modulus square of the $0^{th}$ and $1^{st}$ Bessel functions $J_n$ governing the power distribution between the carrier and PDH sidebands.}}{85}{figure.caption.238}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Scheme of the PDH sidebands addressing the atomic resonance}}{86}{figure.caption.240}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Atomic loss due to the FP cavity's PDH sideband}}{87}{figure.caption.241}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Experimental verification of the known resonances of $^{88}\text {Sr}$}}{92}{figure.caption.255}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Comparison of the $\nu = -2$ molecular line profile with two different sources}}{93}{figure.caption.258}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Noise measurement on $^{87}Sr$ at $\delta = +6$~MHz from the atomic resonance}}{94}{figure.caption.260}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Twelve $m_F$ states of the $^3P_1, F=11/2$ hyperfine excited state, measured at $\delta = -6$~MHz and $\delta = -12$~MHz from the atomic resonance.}}{95}{figure.caption.261}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces $dN/dt$ verification of the molecular nature of $^{88}Sr$ resonances \ref {88Sr resonance}}}{98}{figure.caption.289}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Zoom on the section of the red chain dedicated to the PA process}}{100}{figure.caption.291}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Evolution of the atom number as a function of the illumination time at $f = -6$~MHz}}{102}{figure.caption.294}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Temperature of the gas during the experiment described by the $6$~MHz atomic signal \ref {6MHz noise red detuned} and not molecular}}{103}{figure.caption.297}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr}}{105}{figure.caption.302}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr}}{107}{figure.caption.303}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr}}{108}{figure.caption.304}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Experimental sequence for ODT and PA laser chopping}}{110}{figure.caption.311}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Scheme of predissociation}}{112}{figure.caption.314}%
