@@ -319,7 +319,7 @@ spatial spread ($ \simeq 300~\mu\text{m}$, reached at the end of the SWAP stage)
 and thermal energy exceed the capture velocity of a single-frequency $689~\text{nm}$
 MOT. To capture these thermal atoms, a broadband MOT is implemented on the
 $^1S_0\,(F=9/2) \rightarrow {}^3P_1\,(F=11/2)$ transition under a weak magnetic field
-gradient ($\Delta B \simeq 1~\text{G/cm}$, bias coil voltage $V_A = 0.50$), operated in
+gradient ($\Delta B \simeq 1~\text{G/cm}$, bias coil voltage $VA = 0.50$), operated in
 two successive stages.
 
 In the first stage, lasting $182~\text{ms}$, SWAP (Sawtooth Wave Adiabatic Passage) cooling is applied
@@ -414,7 +414,7 @@ cycling transition, restoring efficiency to the cooling cycle.
 \centering
 \includegraphics[width=0.95\linewidth]{Chapitres/Gas preparation and spin control/images/spin_randomization.pdf}
 \caption[Illustration of the melange concept on the $^1S_0(F=9/2) \rightarrow
-{}^3P_1(F=9/2)$ transition]{Illustration of the melange concept on the
+{}^3P_1(F=9/2)$ transition]{Illustration of t`he melange concept on the
 $^1S_0(F=9/2) \rightarrow {}^3P_1(F=9/2)$ transition, added to the red MOT
 cooling to capture extreme spin-state components inaccessible to the
 counter-propagating lasers of the red MOT. Left: spatial dependence of the
@@ -454,7 +454,7 @@ Cooling efficiency during the single-frequency stage depends on precise frequenc
 \subsection{Optical Dipole Trap (ODT) and evaporative cooling}
 
 \subsubsection{Loading the crossed ODT}
-The final cooling stage before optical trapping consists in transferring the atoms into an
+The final cooling stage before optical trapping consists in transfering the atoms into an
 Optical Dipole Trap (ODT) operating at $1075~\text{nm}$, followed by forced evaporative
 cooling.
 
@@ -467,17 +467,17 @@ the optical dipole potential:
 \end{equation}
 \cite{litvinov_these}, where $1/\bar{\Delta} = 1/(\omega_{\text{laser}} - \omega_{\text{atomic}}) - 1/(\omega_{\text{laser}} + \omega_{\text{atomic}})$ is the effective detuning factor, and $\Omega^2 = \frac{\Gamma^2}{2}\frac{I}{I_{\text{sat}}}$ is the Rabi frequency.
 
-As seen from these expressions, the AC Stark shift induced by the dipole laser is state-dependent. As illustrated in Fig.~\ref{fig:intro-odt-loading}, the potential estimated in \cite{litvinov_these} is deeper for the ground state $^1S_0$ ($U_{\text{dip}}(^1S_0) \simeq -1.5~\text{MHz}$) than for the excited state $^3P_1$ ($U_{\text{dip}}(^3P_1) \simeq -1.2~\text{MHz}$) at the center of the trap, resulting in a differential red-shift of the $^1S_0 \rightarrow {}^3P_1$ transition.
+As seen from these expressions, the AC Stark shift induced by the dipole laser is state-dependent. As illustrated in Fig.~\ref{fig:intro-odt-loading}, the potential estimated in \cite{litvinov_these} is deeper for the ground state $^1S_0$ ($U_{\text{dip}}(^1S_0) \simeq -1.5~\text{MHz}$) than for the excited state $^3P_1$ ($U_{\text{dip}}(^3P_1) \simeq -1.2~\text{MHz}$) at the center of the trap, resulting in a differential blue-shift of the $^1S_0 \rightarrow {}^3P_1$ transition (black line).
 
-Both $^1S_0$ and $^3P_1$ are shifted downward by the dipole trap potential, but $^3P_1$
+Both $^1S_0$ and $^3P_1$ are shifted downward by the dipole trap potential, but $^1S_0$
 experiences a larger shift due to its higher polarizability, so the transition energy
-$\hbar\omega_0(x)$ decreases toward the trap center. At the center, this shrinking gap
-brings the transition close to resonance with the red-detuned MOT laser
+$\hbar\omega_0(x)$ increases toward the trap center. At the center, this shrinking gap
+brings the transition on resonance with the red-detuned MOT laser (red line)
 ($\omega_l - \omega_0 < 0$), enabling efficient cooling and confinement there. Away from
 the center, the transition energy relaxes back toward its unperturbed value, exceeding
 the laser frequency and making the same laser effectively blue-detuned from the local
 resonance ($\omega_l - \omega_0 > 0$), which suppresses scattering and prevents unwanted
-re-heating at the periphery.
+re-heating at the periphery. 
 
 \begin{figure}
     \centering
@@ -486,7 +486,14 @@ re-heating at the periphery.
     \label{fig:intro-odt-loading}
 \end{figure}
 
-Following loading, forced evaporative cooling is performed to reach deep Fermi degeneracy, down to temperatures on the order of $T = 100~$nK, $T/T_F=0.25$. Evaporative cooling is achieved by progressively lowering the trap depth: the most energetic atoms overcome the potential barrier and escape the trap, while the remaining ones re-thermalize to lower temperatures via elastic collisions (Fig.~\ref{fig:evap}).
+Following loading, the $689~\text{nm}$ red MOT is switched off, and forced evaporative
+cooling is performed purely by progressively lowering the ODT depth: the most energetic
+atoms overcome the (now shallower) potential barrier and escape the trap, while the
+remaining ones re-thermalize to lower temperatures via elastic collisions
+(Fig.~\ref{fig:evap}). Incidentally, as the trap depth decreases, the differential AC
+Stark shift also shrinks, so the local transition frequency at the trap center relaxes
+back toward its unperturbed value -- though since the MOT laser is off at
+this stage, this drift plays no role in the evaporation dynamics itself.
 
 The results presented in the following two chapters were obtained with an atomic cloud located at the intersection of a horizontal beam, called the ``Reservoir'' (waist $w_0^H = 150~\mu\text{m}$), and a vertical beam, called the ``Dimple'' (waist $w_0^V = 80~\mu\text{m}$). The vertical beam axis is tilted at an angle of $\simeq 30^\circ$ relative to the vertical to facilitate the escape of the hottest atoms from the trap.
 
