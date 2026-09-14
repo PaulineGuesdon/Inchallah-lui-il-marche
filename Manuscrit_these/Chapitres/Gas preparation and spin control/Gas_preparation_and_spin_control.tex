@@ -64,7 +64,7 @@ with an atom number of $400\,000$.
 
 \begin{figure}
 \centering
-\includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/energy_levels_sr.png}
+\includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf}
 \caption[Energy diagram of $^{87}\text{Sr}$]{Extracted from \cite{litvinov_these} Energy spectrum of $^{87}\text{Sr}$ including fine and hyperfine interactions. In blue the $461~$nm transition used for TC, Zeeman cooling, blue MOT stage and imaging. The purple arrow indicates the repump line at $403~$nm from the metastable state $^3P_2$ used for the atoms leaking from the intermediate $^1D_2$ state. In red the transition to $^3P_1$ at $689~$nm used for all stages of the red MOT, optical pumping, spin manipulation, coherent manipulation (see Chap.\ref{chap 2}), photoassociation (see Chap.\ref{chap 3}, through
 the different hyperfine states $F=7/2, 9/2, 11/2$).
 The 698~nm transition indicates the clock transition which we do not use in this experiment.}
@@ -467,17 +467,25 @@ the optical dipole potential:
 \end{equation}
 \cite{litvinov_these}, where $1/\bar{\Delta} = 1/(\omega_{\text{laser}} - \omega_{\text{atomic}}) - 1/(\omega_{\text{laser}} + \omega_{\text{atomic}})$ is the effective detuning factor, and $\Omega^2 = \frac{\Gamma^2}{2}\frac{I}{I_{\text{sat}}}$ is the Rabi frequency.
 
-As seen from these expressions, the AC Stark shift induced by the dipole laser is state-dependent. As illustrated in Fig.~\ref{fig:intro-odt-loading}, the potential estimated in \cite{litvinov_these} is deeper for the ground state $^1S_0$ ($U_{\text{dip}}(^1S_0) \simeq -1.5~\text{MHz}$) than for the excited state $^3P_1$ ($U_{\text{dip}}(^3P_1) \simeq -1.2~\text{MHz}$) at the center of the trap, resulting in a differential red-shift of the $^1S_0 \rightarrow {}^3P_1$ transition.
+As seen from these expressions, the AC Stark shift induced by the dipole laser is
+state-dependent. As illustrated in Fig.~\ref{fig:intro-odt-loading}, the potential
+estimated in \cite{litvinov_these} is deeper for the ground state $^1S_0$
+($U_{\text{dip}}(^1S_0) \simeq -1.5~\text{MHz}$) than for the excited state $^3P_1$
+($U_{\text{dip}}(^3P_1) \simeq -1.2~\text{MHz}$) at the center of the trap, owing to its
+higher polarizability. This results in a differential \emph{blue}-shift of the
+$^1S_0 \rightarrow {}^3P_1$ transition at the trap center, relative to the unperturbed
+atomic lines (dashed lines).
 
-Both $^1S_0$ and $^3P_1$ are shifted downward by the dipole trap potential, but $^3P_1$
-experiences a larger shift due to its higher polarizability, so the transition energy
-$\hbar\omega_0(x)$ decreases toward the trap center. At the center, this shrinking gap
-brings the transition close to resonance with the red-detuned MOT laser
-($\omega_l - \omega_0 < 0$), enabling efficient cooling and confinement there. Away from
-the center, the transition energy relaxes back toward its unperturbed value, exceeding
-the laser frequency and making the same laser effectively blue-detuned from the local
-resonance ($\omega_l - \omega_0 > 0$), which suppresses scattering and prevents unwanted
-re-heating at the periphery.
+The thin red curve tracks the local resonance condition: it represents the energy an
+atom would reach by absorbing one $689~\text{nm}$ photon from its local $^1S_0$ level,
+and its crossing with the shifted $^3P_1$ curve marks where the laser is exactly
+resonant. Since the $689~\text{nm}$ MOT laser is chosen slightly blue-detuned from the
+unperturbed transition, this differential shift brings it \emph{red}-detuned from the
+local resonance at the trap center, while it remains blue-detuned at the edges, where
+the light shift vanishes. As a result, atoms near the center scatter photons less
+often, but each scattering event cools them; atoms near the edges scatter more often,
+but each event slightly heats them, since the local detuning there is blue. Atoms that
+retain too much thermal energy from this imbalance are eventually lost from the trap.
 
 \begin{figure}
     \centering
