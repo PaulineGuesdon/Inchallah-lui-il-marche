@@ -3,7 +3,7 @@
 \end{flushright}\chapter{Gas preparation and spin control}
 
 In this chapter, I describe each stage of the cooling and loading process from a
-practical "user guide" perspective, concluding with an explanation of the spin
+practical ``user guide'' perspective, concluding with an explanation of the spin
 manipulation schemes tailored to our experimental goals: coherent control of quantum
 systems, precision measurement, and photoassociation spectroscopy of $^{87}\text{Sr}$.
 
@@ -43,7 +43,7 @@ captured spread in about a centimer in space.
 The atoms are subsequently cooled on the narrow $^1S_0 \rightarrow {}^3P_1$
 intercombination transition, in two successive red MOT stages: $182~\text{ms}$ of
 Sawtooth Wave Adiabatic Passage (SWAP) and broadband cooling followed by $250~\text{ms}$ of narrower-band cooling (see below).
-Throughout both stages, a second "stirring" beam is applied in parallel with the main
+Throughout both stages, a second ``stirring'' beam is applied in parallel with the main
 MOT beam to counteract a loss channel intrinsic to the red MOT's $\sigma^+/\sigma^-$
 configuration (see below). The first stage, operated at a magnetic gradient
 $\Delta B \simeq 1~\text{G/cm}$, brings the cloud to $T \simeq 200~\mu\text{K}$; the
@@ -414,7 +414,7 @@ cycling transition, restoring efficiency to the cooling cycle.
 \centering
 \includegraphics[width=0.95\linewidth]{Chapitres/Gas preparation and spin control/images/spin_randomization.pdf}
 \caption[Illustration of the melange concept on the $^1S_0(F=9/2) \rightarrow
-{}^3P_1(F=9/2)$ transition]{Illustration of t`he melange concept on the
+{}^3P_1(F=9/2)$ transition]{Illustration of the melange concept on the
 $^1S_0(F=9/2) \rightarrow {}^3P_1(F=9/2)$ transition, added to the red MOT
 cooling to capture extreme spin-state components inaccessible to the
 counter-propagating lasers of the red MOT. Left: spatial dependence of the
@@ -467,25 +467,12 @@ the optical dipole potential:
 \end{equation}
 \cite{litvinov_these}, where $1/\bar{\Delta} = 1/(\omega_{\text{laser}} - \omega_{\text{atomic}}) - 1/(\omega_{\text{laser}} + \omega_{\text{atomic}})$ is the effective detuning factor, and $\Omega^2 = \frac{\Gamma^2}{2}\frac{I}{I_{\text{sat}}}$ is the Rabi frequency.
 
-As seen from these expressions, the AC Stark shift induced by the dipole laser is
-state-dependent. As illustrated in Fig.~\ref{fig:intro-odt-loading}, the potential
-estimated in \cite{litvinov_these} is deeper for the ground state $^1S_0$
-($U_{\text{dip}}(^1S_0) \simeq -1.5~\text{MHz}$) than for the excited state $^3P_1$
-($U_{\text{dip}}(^3P_1) \simeq -1.2~\text{MHz}$) at the center of the trap, owing to its
-higher polarizability. This results in a differential \emph{blue}-shift of the
-$^1S_0 \rightarrow {}^3P_1$ transition at the trap center, relative to the unperturbed
-atomic lines (dashed lines).
+As seen from these expressions, the AC Stark shift induced by the dipole laser is state-dependent. As illustrated in Fig.~\ref{fig:intro-odt-loading}, the potential estimated in \cite{litvinov_these} is deeper for the ground state $^1S_0$ ($U_{\text{dip}}(^1S_0) \simeq -1.5~\text{MHz}$) than for the excited state $^3P_1$ ($U_{\text{dip}}(^3P_1) \simeq -1.2~\text{MHz}$) at the center of the trap, resulting in a differential blue-shift of the $^1S_0 \rightarrow {}^3P_1$ transition (black line)
+compared to the frequency the atoms feel from the red MOT (red curve).
 
-The thin red curve tracks the local resonance condition: it represents the energy an
-atom would reach by absorbing one $689~\text{nm}$ photon from its local $^1S_0$ level,
-and its crossing with the shifted $^3P_1$ curve marks where the laser is exactly
-resonant. Since the $689~\text{nm}$ MOT laser is chosen slightly blue-detuned from the
-unperturbed transition, this differential shift brings it \emph{red}-detuned from the
-local resonance at the trap center, while it remains blue-detuned at the edges, where
-the light shift vanishes. As a result, atoms near the center scatter photons less
-often, but each scattering event cools them; atoms near the edges scatter more often,
-but each event slightly heats them, since the local detuning there is blue. Atoms that
-retain too much thermal energy from this imbalance are eventually lost from the trap.
+At the center, this shrinking gap is red-detuned from the MOT, enabling efficient cooling and confinement there. Away from
+the center, the laser is blue-detuned from the trap which gives kinetic energy to the atoms accumulated at the edges of the 
+ground state trap: these are the ones with the most kinetic energy we want to get rid off to reach ultracold temperatures.
 
 \begin{figure}
     \centering
@@ -505,7 +492,15 @@ this stage, this drift plays no role in the evaporation dynamics itself.
 
 The results presented in the following two chapters were obtained with an atomic cloud located at the intersection of a horizontal beam, called the ``Reservoir'' (waist $w_0^H = 150~\mu\text{m}$), and a vertical beam, called the ``Dimple'' (waist $w_0^V = 80~\mu\text{m}$). The vertical beam axis is tilted at an angle of $\simeq 30^\circ$ relative to the vertical to facilitate the escape of the hottest atoms from the trap.
 
-In Chapter 2, the horizontal arm is tilted by $\simeq 1^\circ$. For the photoassociation results in Chapter 3, this tilt was canceled: \hl{ajouter des arguments et refs pour motiver ça}.
+In Chapter 2, the horizontal arm is tilted by $\simeq 1^\circ$. For the photoassociation results in Chapter 3, this tilt was canceled: it enables to have bigger volumes to trap the atoms from the crossing of the two arms (see \ref{optimisation evap}).
+
+Both $^1S_0$ and $^3P_1$ are shifted downward by the dipole trap potential, but $^1S_0$
+experiences a larger shift due to its higher polarizability, so the energy difference between 
+the two states is way more important at the center of the trap than on the edges. The atoms adressed by the 
+red MOT laser at the center of the trapp are cooled with the red-detuned laser while the slighlty
+blue-detuned laser is heating the atoms with the more kinetic energy -- located at the edges of the 
+harmonic potential of the ODT -- in order to keep only the coldest atoms.
+
 
 \begin{figure}
     \centering
@@ -515,46 +510,19 @@ In Chapter 2, the horizontal arm is tilted by $\simeq 1^\circ$. For the photoass
 \end{figure}
 
 \subsubsection{Optimization of the evaporation ramps}
-
+\label{optimisation evap}
 For a degenerate Fermi gas, the key parameter to optimize is the phase-space density (PSD), which scales as $\text{PSD} \propto N\bar{\omega}^3/T^3$, where $N$ is the atom number, $\bar{\omega}$ the geometrically averaged trap frequency, and $T$ the temperature. While both arms of the dipole trap influence these parameters, their main physical contributions differ:
 
 \begin{itemize}
-    \item \textbf{Tight vertical beam (``Dimple''):} Writing the atom number as $N = nV$ (where $n$ is the spatial density and $V$ the trap volume), the elastic collision rate scales as $\Gamma_{\text{el}} = n\sigma_{\text{el}}v_{\text{th}}$ with $\sigma_{el}$ the elastic collision cross section and $v_{th}$ the thermal speed of the atoms. The tightly focused waist of the dimple beam mainly dictates the local confinement, thereby enhancing collision rates for fast re-thermalization. Moreover, ramping down the dimple intensity directly lowers the effective trap depth, setting the final temperature $T$ of the cloud.
-    
-    \item \textbf{Broad horizontal beam (``Reservoir''):} Due to its large waist and capture volume, the reservoir beam primarily serves to maximize the initial atom number $N$ loaded from the MOT. While modifying its intensity also reshapes the cloud and affects thermalization dynamics, its primary role remains maintaining a high-capacity atomic reservoir.
-    
-    \item \textbf{Ramp duration and adiabaticity:} The duration and adiabaticity of the evaporative ramps depend on the targeted state. Short evaporations are preferred when aiming solely for a large atom number at moderate temperatures when it is necessary to detect atom number fluctuations, such as for our experiments on photoassociation (see Chapt.3). 
+    \item \textbf{Tight vertical beam (``Dimple''):} Writing the atom number as $N = nV$ (where $n$ is the spatial density and $V$ the trap volume), the elastic collision rate scales as $\Gamma_{\text{el}} = n\sigma_{\text{el}}v_{\text{th}}$ with $\sigma_{el}$ the elastic collision cross section and $v_{th}$ the thermal speed of the atoms, enhancing collision rates for fast re-thermalization. This
+    beam impacts mostly the temperature of the gas since it acts on the collision rate. The tightly focused waist of the dimple beam mainly dictates the local horizontal confinement, and contributes negligibly to the vertical confinement due to its near-vertical propagation axis~\cite{stellmer_production_2012}.
+
+    \item \textbf{Broad horizontal beam (``Reservoir''):} Owing to its narrow vertical waist, the reservoir beam sets the effective trap depth $U$ against gravity-assisted atom loss, thereby controlling the evaporative truncation of the energy distribution and, in turn, the atom number~\cite{stellmer_production_2012}. Increasing the reservoir depth raises both $N$ (less truncation, more atoms retained) and $T$ (less evaporative cooling), and these two effects largely cancel out in the $N/T^3$ ratio: the reservoir therefore has a much weaker net effect on the PSD than the dimple, whose action on $\bar\omega^3$ is not compensated by an opposite change in $N$.
+
+    \item \textbf{Ramp duration and adiabaticity:} The duration and adiabaticity of the evaporative ramps depend on the targeted state. Short evaporations are preferred when aiming solely for a large atom number at moderate temperatures when it is necessary to detect atom number fluctuations, such as for our experiments on photoassociation (see Chapt.3).
     Conversely, reaching deep quantum degeneracy requires a multi-stage ramp lasting approximately 7 seconds which was necessary for the results of Chapt.2.
 \end{itemize}
 For further details on loading atoms into the optical crossed dipole trap, the reader is referred to the thesis of A. Litvinov~\cite{litvinov_these}. An additional optical lattice, formed by a $1064~\text{nm}$ ALS laser, was initially implemented to enhance the phase-space density (PSD) of the atomic cloud prior to forced evaporative cooling. While this configuration was employed for the experiments presented in Chapter~2, it was subsequently discarded due to intensity fluctuations in the laser that induced significant heating.
-
-\subsubsection{Optical setup}
-
-The $1075~\text{nm}$ light from the IPG laser is split by a half-wave plate and
-polarizing beamsplitter into the two arms described above (Fig.~\ref{fig:odt}). The
-horizontal arm forms the "Reservoir" beam: a pair of cylindrical lenses ($f=-50~\text{mm}$
-and $f=-75~\text{mm}$) shapes it into an anisotropic ellipse, with nominal waists of
-$w_h = 147~\mu\text{m}$ (horizontal) and $w_v = 34~\mu\text{m}$ (vertical) at the lens
-focal plane. However, the atoms sit $\simeq 3.3~\text{mm}$ beyond this focus rather than
-at the waist itself, so that the vertical waist they actually experience is somewhat
-larger, $w_v \simeq 47~\mu\text{m}$, while the horizontal waist remains close to its
-nominal value at this distance. The second arm forms the "Dimple" beam, focused by a
-spherical lens ($f=300~\text{mm}$) and crossing the reservoir arm at the position of the
-atoms, at $\simeq 30^\circ$ from vertical; astigmatism in this arm means its two
-transverse waists are not equidistant from the atoms either (measured at
-$\simeq 4.5~\text{mm}$ and $\simeq 7~\text{mm}$, respectively).
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png}
-    \caption{Optical setup of the $1075~\text{nm}$ crossed dipole trap laser system.}
-    \label{fig:odt}
-\end{figure}
-
-For the photoassociation measurements presented in Chapter 3, quantum degeneracy is not
-required, and a high atomic density is favored instead; these experiments are realized
-with $400\,000$ atoms of spread $\sigma \simeq 100~\mu\text{m}$ at a few $\mu\text{K}$, as
-introduced above.
 
 \section{Spin Selection}
 
@@ -639,7 +607,7 @@ where $q$ parameterizes the quadratic (tensor) light shift and $\beta$ represent
 
 For more details this process is discussed in the second chapter of this thesis and also in the article of the group \cite{Bataille2020}.
 \subsubsection{Experimental Setup of the Raman Process}
-The two-photon process is driven by two distinct beams: a first beam derived from the "AOM lattice 689" laser (shown in red in Fig.~\ref{fig:raman-transitions}) generates the TLS and supplies the first photon. A second beam, frequency-shifted by the "AOM Raman" (shown in blue), completes the Raman transition.
+The two-photon process is driven by two distinct beams: a first beam derived from the ``AOM lattice 689'' laser (shown in red in Fig.~\ref{fig:raman-transitions}) generates the TLS and supplies the first photon. A second beam, frequency-shifted by the ``AOM Raman'' (shown in blue), completes the Raman transition.
 
 The TLS beam polarization is set parallel to the magnetic field ($\pi$ transitions), producing a purely scalar/tensor light shift with no vector component. The Raman beam polarization is linear and orthogonal to the magnetic field, so that its decomposition onto $\sigma^+$ and $\sigma^-$ components drives the required $\Delta m_F = \pm 1$ legs of the two-photon transition -- one photon absorbed from the $\pi$-polarized TLS beam, one photon emitted into the $\sigma^{\mp}$ component of the Raman beam.
 
@@ -655,7 +623,7 @@ The complete optical path for this operation is detailed in Fig.~\ref{fig:mog-ra
 \end{figure}
 
 \subsection{Photoassociation}
-Chapter 3 investigates photoassociation spectroscopy below the intercombination line. For these measurements, the full power of the laser is sent through the "AOM lattice 689" since the other AOM is not useful anymore.
+Chapter 3 investigates photoassociation spectroscopy below the intercombination line. For these measurements, the full power of the laser is sent through the ``AOM lattice 689'' since the other AOM is not useful anymore.
 
 For the dataset presented in Chapter 3, the optical chain incorporates a custom-built confocal Fabry-Pérot cavity stabilized using the Pound-Drever-Hall (PDH) technique \cite{black_Gas_preparation_and_spin_control_2001}, yielding the final setup depicted in Fig.~\ref{fig:raman-transitions}. The beam first passes through an Electro-Optic Modulator (EOM) to generate phase modulation sidebands. A lens with focal length $f = 150~\text{mm}$ mode-matches the beam to the fundamental cavity mode. Upon reflection from the cavity, the light is directed onto a fast photodiode and demodulated with an RF source to produce the PDH error signal.
 
@@ -770,7 +738,7 @@ $0 < K_i < 8~\text{s}^{-1}$.
 \end{figure}
 
 \section{Spin Measurement Scheme}
-Total atom numbers are determined via standard absorption imaging on the broad $^1S_0 \rightarrow {}^1P_1$ transition at $461~\text{nm}$ using a Vortex laser. State-resolved spin detection follows the momentum-transfer ("spin-kick") technique detailed in \cite{bataille_realisation_nodate}.
+Total atom numbers are determined via standard absorption imaging on the broad $^1S_0 \rightarrow {}^1P_1$ transition at $461~\text{nm}$ using a Vortex laser. State-resolved spin detection follows the momentum-transfer (``spin-kick'') technique detailed in \cite{bataille_realisation_nodate}.
 
 The measurement sequence proceeds as follows:
 \begin{enumerate}
