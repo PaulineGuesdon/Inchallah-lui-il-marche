@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  15 SEP 2026 20:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.7)  16 SEP 2026 10:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -877,83 +877,19 @@ Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/evapo
 
 
 [25 <./Chapitres/Gas preparation and spin control/images/evaporative_cooling.pdf>]
-
-./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:529: LaTeX Error: Unicode character ≃ (U+2243)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.529 larger, $w^v ≃
-                       47~\mu$m, while the horizontal waist remains close to...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:529: Undefined control sequence.
-\degree ->\ERROR 
-                 
-l.529 ...ition of the atoms, at $\simeq 30 \degree
-                                                  $ from vertical; astigmati...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:529: LaTeX Error: Unicode character ≃ (U+2243)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.529 ...nt from the atoms either (measured at ≃
-                                                   4.5~mm and ≃ 7~mm, resp...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:529: LaTeX Error: Unicode character ≃ (U+2243)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.529 ...ms either (measured at ≃ 4.5~mm and ≃
-                                                   7~mm, respectively).
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
 <Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png, id=2380, 444.9423pt x 325.215pt>
 File: Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png Graphic file (type png)
 <use Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png>
 Package pdftex.def Info: Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png  used on input line 533.
-(pdftex.def)             Requested size: 298.75262pt x 218.36433pt.
-
-./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex:538: LaTeX Error: Unicode character ≃ (U+2243)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.538 ... with 400 000 atoms of spread $\sigma ≃
-                                                   100~\mu$m at a few $\mu$K...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
+(pdftex.def)             Requested size: 426.79134pt x 311.94977pt.
 
 
 [26]
 
-Package natbib Warning: Citation `bataille_adiabatic_2020' on page 27 undefined on input line 560.
-
-
-
 [27 <./Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png>]
+
+Package natbib Warning: Citation `bataille_adiabatic_2020' on page 28 undefined on input line 560.
+
 <Chapitres/Gas preparation and spin control/images/optical_pumping.png, id=2395, 682.80093pt x 346.29375pt>
 File: Chapitres/Gas preparation and spin control/images/optical_pumping.png Graphic file (type png)
 <use Chapitres/Gas preparation and spin control/images/optical_pumping.png>
@@ -1670,15 +1606,15 @@ Package rerunfilecheck Info: File `these_main.out' has not changed.
 (rerunfilecheck)             Checksum: 3084842D3180343765C383D795AF7958;20641.
  ) 
 Here is how much of TeX's memory you used:
- 26110 strings out of 473190
- 560309 string characters out of 5715801
- 1022543 words of memory out of 5000000
- 48458 multiletter control sequences out of 15000+600000
+ 26109 strings out of 473190
+ 560303 string characters out of 5715801
+ 1021543 words of memory out of 5000000
+ 48457 multiletter control sequences out of 15000+600000
  580658 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,13n,93p,2621b,1586s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on out/these_main.pdf (137 pages, 8712987 bytes).
+Output written on out/these_main.pdf (137 pages, 8712978 bytes).
 PDF statistics:
  33434 PDF objects out of 38293 (max. 8388607)
  22823 compressed objects within 229 object streams
