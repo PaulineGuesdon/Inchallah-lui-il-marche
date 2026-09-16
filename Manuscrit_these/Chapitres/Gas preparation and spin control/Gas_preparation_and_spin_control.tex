@@ -64,7 +64,7 @@ with an atom number of $400\,000$.
 
 \begin{figure}
 \centering
-\includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/energy_levels_sr.png}
+\includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf}
 \caption[Energy diagram of $^{87}\text{Sr}$]{Extracted from \cite{litvinov_these} Energy spectrum of $^{87}\text{Sr}$ including fine and hyperfine interactions. In blue the $461~$nm transition used for TC, Zeeman cooling, blue MOT stage and imaging. The purple arrow indicates the repump line at $403~$nm from the metastable state $^3P_2$ used for the atoms leaking from the intermediate $^1D_2$ state. In red the transition to $^3P_1$ at $689~$nm used for all stages of the red MOT, optical pumping, spin manipulation, coherent manipulation (see Chap.\ref{chap 2}), photoassociation (see Chap.\ref{chap 3}, through
 the different hyperfine states $F=7/2, 9/2, 11/2$).
 The 698~nm transition indicates the clock transition which we do not use in this experiment.}
@@ -561,12 +561,10 @@ frequency or magnetic field calibration \cite{bataille_adiabatic_2020}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/optical_pumping.png}
+    \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/optical_pumping_bataille2020.pdf}
     \caption[Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition]{Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition used to prepare a specific nuclear spin mixture. The red laser is ramped through the target energy level of $^3P_1$: the atoms decay to neighbours states $m_F \pm 1$ of $^1S_0$}
     \label{fig:intro-optical-pumping}
 \end{figure}
-
-\hl{Magnetic field bias and quantization axis: To preserve spin polarization, the magnetic field is never allowed to cross zero during transitions between cooling phases that require rotating its direction to remain aligned with the beams of the next stage. This is achieved by maintaining a constant bias component along an orthogonal direction throughout the rotation, so that $|\vec{B}(t)| > 0$ at all times.}
 
 \section{Spin Manipulation}
 We developed a method demonstrated in \cite{Bataille2020} for coherent control within the ground state manifold of zeeman sublevels. it relies on tensor shifts enacted by a laser operating near 689 nm, and will be described in detail in chapter 2. At a later stage, we performed photoassociation experiments in the vicinity of the intercombination manifold, see chapter 3. Both experiments actually rely on the same laser system, that I will present here.
@@ -574,16 +572,20 @@ We developed a method demonstrated in \cite{Bataille2020} for coherent control w
 \subsection{External Cavity Diode Laser (ECDL)}
 \label{moglabs ecdl}
 \subsubsection{Laser architecture}
-To lift the degeneracy of the Zeeman sub-levels and allow state-selective addressing, a Tensorial Light Shift (TLS) is induced using an External Cavity Diode Laser (ECDL) from MOGlabs operating near $689~\text{nm}$. The laser frequency is selected by an interference filter placed at the center of a cat's-eye configuration, yielding a linewidth below $100~\text{kHz}$. An internal PID controller robustly compensates for thermal and mechanical drifts of 
-the cavity length as well as diode current fluctuations. The laser is subsequently beat-locked to a master optical reference adapted to the specific experimental requirements.
+The spin-selective method presented in the article \cite{Bataille2020} reveals the importance of inducing a Tensorial Light Shift (TLS) to be added to the Zeeman degeneracy lift.
+
+For this purpose, an External Cavity Diode Laser (ECDL) from MOGlabs was chosen, whose architecture is shown in Fig.~\ref{fig:ecdl-laser}. A diode operating near $689~\text{nm}$
+is first collimated by a collimation lens, before its frequency is roughly selected by an interference filter. The beam is then focused by a cat's-eye lens onto a partially reflective mirror placed at its focus -- represented by the dashed rectangular shape on the scheme. Together, this lens and mirror form a \textbf{cat's-eye retroreflector}: it compensates for any tilt of the wavefront introduced by the mirror, which would otherwise cause a loss of mode-matching with the light re-injected into the diode, and it closes the external cavity used to narrow and fine-tune the laser frequency. Most of the light reflected on the mirror sustains this resonant cavity, while the small transmitted fraction is collimated by an output lens and leaves the laser head through an optical isolator, with a linewidth below $100~\text{kHz}$.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{Chapitres/Gas preparation and spin control/images/ecdl_cateye.pdf}
-    \caption[MOGlabs External Cavity Diode Laser architecture used for spin manipulation]{MOGlabs External Cavity Diode Laser (ECDL) architecture used for spin manipulation. A diode lasing at 689~nm is frequency settled by an interferential filter marked in red to then be collimated by a lens. The beam is reflected on a second miroir to close a cavity acting as a frequency filter: this system is a cateye. The last lens is used to collimate the beam 
-    passing throught an isolater before leaving the laser head. }
+    \caption[MOGlabs External Cavity Diode Laser architecture used for spin manipulation]{MOGlabs External Cavity Diode Laser (ECDL) architecture used for spin manipulation. A diode lasing at 689~nm is first collimated by a lens, then its frequency is roughly selected by an interference filter marked in red. The beam is focused by a second lens onto a partially reflective mirror (hatched rectangle): together they form a cat's-eye retroreflector that closes the external cavity, feeding most of the light back for resonant frequency filtering while transmitting a small fraction onward. This output is collimated by a last lens and leaves the laser head through an optical isolator.}
     \label{fig:ecdl-laser}
 \end{figure}
+
+An internal PID controller robustly compensates for thermal and mechanical drifts of 
+the cavity length as well as diode current fluctuations. The laser is subsequently beat-locked to a master optical reference adapted to the specific experimental requirements.
 
 \subsubsection{Repair of the MOGlabs}
 The MOGlabs threshold was constantly evolving in time. Many problems were identified:
@@ -744,7 +746,7 @@ specific gain values excites mechanical resonances at low frequencies, with at 3
 the electronical bump that has similar amplitude for every gain but that is pushed to 
 higher frequencies while the gain increases. 
 Consequently, the final feedback loop acting on the cavity incorporates a
-low-pass filter with a cut-off frequency of $f_c = 3~\text{kHz}$, a proportional gain
+low-pass filter with a cut-off frequency of $f_c = 40~\text{kHz}$, a proportional gain
 strictly bounded between $1 < K_p < 10$, and an integral gain configured between
 $0 < K_i < 8~\text{s}^{-1}$.
 
