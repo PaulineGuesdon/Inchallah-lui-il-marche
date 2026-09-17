@@ -306,11 +306,11 @@ INPUT ./Chapitres/Introduction/Introduction.tex
 INPUT ./Chapitres/Introduction/Introduction.tex
 INPUT ./Chapitres/Introduction/Introduction.tex
 INPUT Chapitres/Introduction/Introduction.tex
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex
 INPUT ./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex
 INPUT ./Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex

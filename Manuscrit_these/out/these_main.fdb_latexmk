@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1789580127.94472 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1789580137.58293 0
+["bibtex out/these_main"] 1789641582.53953 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1789641600.16752 0
   "./ref.bib" 1789485690.10309 84793 f2f182b75b24769b7314cf79af8c03f3 ""
   "./spincontrol_refs.bib" 1786519568.72538 549304 6b3bd591fb7a36bddef0122884a01a8a ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1789580136.02306 53646 129ab7efe1ff1e78cfc6683f1796bb2f "pdflatex"
+  "out/these_main.aux" 1789641597.68019 53739 2d66b0de48688d25946059b0d363deab "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1789580128.5221 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1789580137.58354 0
+["pdflatex"] 1789641583.58433 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1789641600.16815 0
   "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1788623417.41311 4763 e3a0d4e837b64b0e7934d61f2f98f0f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -206,7 +206,7 @@
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/zoom_red_chain_beating.pdf" 1781095967.88521 118670 deef2fc8cae85a27febb278208a1fd38 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf" 1787471230 58777 35eaf1feb6e1ab555d1498d458eb281e ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf" 1787471230 77678 bdc5c7996bd3a373c0b5b6eca0516d12 ""
-  "Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex" 1789560823.80877 68621 afb4743d5b2eda0a36df18d2540e67f0 ""
+  "Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex" 1789641576.80309 68605 68fb5f9ea5e4a62959e597932605ea09 ""
   "Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png" 1784017167.25041 249538 8dd17d39e6efee72dc58ff40fba10cf7 ""
   "Chapitres/Gas preparation and spin control/images/Carte_lock_laser_PDH_sr1sr2.pdf" 1787469531.30359 771842 90426ad0dcdc9807c5a2e2021b54d17a ""
   "Chapitres/Gas preparation and spin control/images/LevelDiagramRed.pdf" 1787148105.53802 48696 b195a43def8242170d9f867e90978a97 ""
@@ -221,7 +221,7 @@
   "Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf" 1789121225.03808 44675 fabfbd1cf9d66c6ef2b48b49d50428ef ""
   "Chapitres/Gas preparation and spin control/images/error_signal_FP.pdf" 1787469238.29233 21019 b039b302124791838d5f93a82a214b5c ""
   "Chapitres/Gas preparation and spin control/images/evaporative_cooling.pdf" 1788971276.44328 18999 bc58a299944a46e6a149fac38a72bea5 ""
-  "Chapitres/Gas preparation and spin control/images/felix_faisant_these.pdf" 1787400842 47532 8c8a11ce8768154bb356ffd47c33f986 ""
+  "Chapitres/Gas preparation and spin control/images/felix_faisant_these.pdf" 1789640783.75582 47845 d9e90e9f83a61cf754e04b45bf975e10 ""
   "Chapitres/Gas preparation and spin control/images/figure1_adiabatic_passage.pdf" 1788627573.3924 267273 a2b070f842c6c37425f34755510db4f6 ""
   "Chapitres/Gas preparation and spin control/images/frequences_bleues.pdf" 1787148105.54452 45973 7cd668ad7ab1e96157d654df695f6f5a ""
   "Chapitres/Gas preparation and spin control/images/moglab.pdf" 1788626118.71618 97707 44d9ab3f2d75d19812bfae882fe48e78 ""
@@ -235,7 +235,7 @@
   "Chapitres/Gas preparation and spin control/images/table_repumper.pdf" 1783000280.99915 110850 183fd080ff0885454bc09900d4452468 ""
   "Chapitres/Gas preparation and spin control/images/table_rouge.pdf" 1788948729.7555 271788 9b1dccee23fa3915e0366e0f8560fe3a ""
   "Chapitres/Gas preparation and spin control/images/transverse_cooling_distribution.pdf" 1789564000.88223 71969 17288e611860c468e1d18b2d22f24d89 ""
-  "Chapitres/Introduction/Introduction.tex" 1789580108.21556 8493 984f54c8306917f7ad1fd97c5931e2cf ""
+  "Chapitres/Introduction/Introduction.tex" 1789633360.04393 8365 8edade3752f173c44aba09a006670617 ""
   "Chapitres/Ramsey interferometers on qudit/Ramsey_interferometers_on_qudit.tex" 1779216449.68848 750 d579552ee0e9e24024864f15c385a46c ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig1.pdf" 1779216450.83435 1356687 6465835b59049f16af9b01b3b44464a6 ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig2.pdf" 1779216450.83896 375578 0120927f67c845e3e456d3049cd8b2c5 ""
@@ -251,12 +251,12 @@
   "appendix/mis/dedication.tex" 1775984395.99955 123 c52d1d8ac73aabfb3f3061e569acf2cb ""
   "appendix/titlepage.tex" 1789034544.31399 943 b98a0910ba494906d90be62b51fbf4ff ""
   "out/these_main.acr" 0 -1 0 ""
-  "out/these_main.aux" 1789580136.02306 53646 129ab7efe1ff1e78cfc6683f1796bb2f "pdflatex"
-  "out/these_main.bbl" 1789580128.50129 28962 0006d9662d7494dc543170afc44ee473 "bibtex out/these_main"
-  "out/these_main.lof" 1789580136.03612 9441 47052756f81101a79e4696d24770b7f5 "pdflatex"
-  "out/these_main.lot" 1789580136.03635 929 792810d47d0d3b216846038b9260f1ec "pdflatex"
-  "out/these_main.out" 1789580136.03438 20641 3084842d3180343765c383d795af7958 "pdflatex"
-  "out/these_main.toc" 1789580136.03525 9515 5b2a5b08bdb78c23b96c58a7ca253f31 "pdflatex"
+  "out/these_main.aux" 1789641597.68019 53739 2d66b0de48688d25946059b0d363deab "pdflatex"
+  "out/these_main.bbl" 1789641583.50636 28962 0006d9662d7494dc543170afc44ee473 "bibtex out/these_main"
+  "out/these_main.lof" 1789641597.69972 9440 9f9b3bc3a2be91d701044fee698d742d "pdflatex"
+  "out/these_main.lot" 1789641597.69994 929 792810d47d0d3b216846038b9260f1ec "pdflatex"
+  "out/these_main.out" 1789641597.69863 21148 92fe41684b52c1903ca8b8fbc4619f6e "pdflatex"
+  "out/these_main.toc" 1789641597.6995 9610 6ec277674bdadd323961d564c188682a "pdflatex"
   "these_main.acr" 0 -1 0 ""
   "these_main.tex" 1788623417.41311 4763 e3a0d4e837b64b0e7934d61f2f98f0f4 ""
   (generated)
