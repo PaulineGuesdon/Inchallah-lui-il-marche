@@ -245,17 +245,18 @@ During this stage, the cloud reaches the Doppler temperature limit \cite{dalibar
 \begin{equation}
 k_B T_D = \frac{\hbar \Gamma_{^1S_0 \rightarrow {}^1P_1}}{2}
 \end{equation}
-Due to the broad linewidth of the $461~\text{nm}$ transition ($\Gamma/2\pi = 30.5~\text{MHz}$), this Doppler temperature ($T_D \approx 770~\mu\text{K}$) remains significantly higher than the single-photon recoil limit $T_r$.\\
+Due to the broad linewidth of the $461~\text{nm}$ transition ($\Gamma/2\pi = 30.5~\text{MHz}$), this Doppler temperature ($T_D \approx 770~\mu\text{K}$) remains significantly higher than the single-photon recoil limit $T_r$.
+Experimentally this temperature rises about 2~mK. \\
 The atoms are transfered in $^1P_1$ state that is determined by the equation evolution of the atom number:
 \begin{equation}
-    \frac{dN(t)}{dt} = \alpha \Phi -\gamma_{loss}N(t)
+    \frac{dN(t)}{dt} = \alpha \Gamma -\gamma_{loss}N(t)
 \end{equation}
-where $\Phi$ is the raw atomic flux incident on the MOT capture region, $\alpha$ is the dimensionless capture efficiency (the fraction of that flux actually trapped, depending on experimental parameters), $\gamma_{loss} = \gamma_{vacuum} + \gamma_{leak}$ respectively the loss rate due to the imperfection of the vacuum and the rate leakage to the
+where $\alpha$ is a coefficient that depends on experimental parameters, $\gamma_{loss} = \gamma_{vacuum} + \gamma_{leak}$ respectively the loss rate due to the imperfection of the vacuum and the rate leakage to the 
 metastable state. Then the number of atom in time evolves as:
 \begin{equation}
     N(t) = N_{sat}(1-e^{-t/\tau})
 \end{equation}
-$N_{sat} = \alpha \Phi \tau$ when the transition reaches its maximum value. Since the blue MOT lifetime is dominated by the leak into the metastable state and amounts to a few tens of milliseconds \cite{stellmer_degenerate_2013}, saturating the blue MOT atom number only requires waiting for a few such lifetimes. \\
+$N_{sat} = \alpha \Gamma \tau$ when the transition reaches its maximum value. To saturate the blue MOT atom number one should wait for few blue MOT lifetime which corresponds to 100~ms to 1~sec. \\
 
 The experimental duration is set differently since one must consider the time for which one reaches the maximum atom number trapped in the metastable state: this corresponds to 8.2~sec. This waiting time is 
 to accumulate all the atoms in the metastable state since at a photon absorption 3:4 of them are still in the blue MOT cycle. Meanwhile the magnetic trap is on to keep the atoms in the metastable state.
@@ -285,12 +286,13 @@ Repumping is provided by a $403~\text{nm}$ external-cavity diode laser (TOPTICA)
 \subsubsection{Optimization of the repumper sweep}
 The $^3P_2$ hyperfine levels are unequally populated during blue MOT decay due to their differing $g_F$ Landé factors, affecting their magnetic trapping efficiency \cite{stellmer_creation_2012}.
 
-To recover this population into the cooling cycle, the sequence proceeds as follows: the $461~\text{nm}$ beam is first extinguished at the end of the blue MOT phase, preventing recovered atoms from being re-excited and recycling back onto the blue transition; the $689~\text{nm}$ red MOT lasers are then switched on, so that atoms are captured as soon as they return to the ground state; finally, the $403~\text{nm}$ repumper is pulsed for $3.2~\text{ms}$ at $I\approx15~\text{mW/cm}^2$, starting $9.3~\text{ms}$ after the red MOT lasers are switched on, and the red MOT is left running afterwards. The repumper frequency is scanned over a range optimized around $3~\text{GHz}$ to selectively cover the $F=11/2$ and $F=13/2$ states; scanning a wider range would reduce total atom recovery by decreasing the dwell time on these critical transitions.
+The repumper frequency scan range is optimized around $3~\text{GHz}$ to selectively cover the $F=11/2$ and $F=13/2$ states. Scanning a wider range reduces total atom recovery by decreasing the dwell time on these critical transitions. At the end of the blue MOT phase, 
+the $461~\text{nm}$ beam is extinguished to avoid them to recycle on the blue transition after the repump. The $403~\text{nm}$ repumper is turned on for $3.2~\text{ms}$ at $I \approx 15~\text{mW/cm}^2$. This pulse begins $9.3~\text{ms}$ after the $689~\text{nm}$ red MOT lasers to avoid losing atoms decaying from $^3D_2$ states, and to keep them within the red cooling cycle.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/table_repumper.pdf}
-    \caption{Optical setup for the repump and the beat-lock setup of the MOGlabs laser onto the Radiant Dyes.}
+    \caption{Optical setup for the repump and the beat-lock system.}
     \label{fig:intro-repompeur}
 \end{figure}
 
@@ -365,42 +367,22 @@ $T \simeq 30~\mu\text{K}$ with a size of $\simeq 300~\mu$m.
 \subsubsection{Stirring laser}
 The $\sigma^+/\sigma^-$ configuration of the red MOT introduces an intrinsic loss
 channel arising from the large differential Land\'e $g$-factor between the ground
-$^1S_0, F=9/2$ and excited $^3P_1, F'=11/2$ hyperfine levels. For a $\sigma^+/\sigma^-$
-MOT to provide a restoring force at every position, the ratio of excited to
-ground-state Landé factors must satisfy $\frac{F}{F+1} < \frac{g_e}{g_g} <
-\frac{F}{F-1}$ \cite{stellmerThesis}. In alkali atoms this is comfortably satisfied,
-since the ground-state $g_g$ is of the same order as $g_e$. Here however, the
-$^1S_0$ ground state has $g_g\approx0$ (only a tiny nuclear-magnetic-moment
-contribution survives, no electronic contribution since $J=0$), so that
-$g_e/g_g\gg1$: the double inequality is badly violated, and the restoring force
-is only local rather than guaranteed everywhere in the trap. As illustrated in
+$^1S_0, F=9/2$ and excited $^3P_1, F'=11/2$ hyperfine levels. As illustrated in
 Fig.~\ref{fig:intro-need-for-stir}, the position-dependent Zeeman shift
 ($B \sim x$) brings the two counter-propagating beams into resonance with
 different $m_F'$ sub-levels at the same position: the $\sigma^+$ beam (green)
 addresses the closed transition $m_F=9/2 \rightarrow m_F'=11/2$, while,
 within the same laser linewidth (grey band), the $\sigma^-$ beam (purple)
 simultaneously becomes resonant with the neighbouring, open transition
-$m_F=9/2 \rightarrow m_F'=7/2$. The relative probability of these two processes is
-set by their Clebsch-Gordan coefficients; the transition from $m_F=9/2$ to $m_F=7/2$
-is less probable than to $m_F=11/2$, which settles the probable of atoms pushed to the
-extreme out positions of the trap.
-
-The dominant loss mechanism is instead geometric. The restoring force for an atom
-in $m_F=9/2$ is maximal on one side of the trap only; on the opposite side, this
-same atom cannot come into resonance with either beam at all, and is lost
-\cite{stellmerThesis}. This is especially detrimental for the stretched states
-$m_F=\pm9/2$: because their cycling transition is \textit{closed}, these atoms
-have no spontaneous decay path to another $m_F$ state that could rescue them once
-they find themselves on the wrong side of the trap -- unlike atoms in intermediate
-$m_F$ states, which are naturally redistributed by the trapping light itself as
-soon as they scatter a photon elsewhere. Note that the trapping beam itself is also
-frequency-broadened to enlarge its capture range (see the broadband MOT stage above),
-but this does not help: it still only drives the closed transition, so no amount of
-frequency coverage opens a spontaneous-decay path out of the stretched $m_F$ states.
+$m_F=9/2 \rightarrow m_F'=7/2$. This dual resonance is not by itself a loss
+mechanism: the relative probability of the two processes, set by their
+Clebsch-Gordan coefficients, favors the restoring transition by a ratio as
+high as 55:1 in the most extreme case, so that the force averaged over many
+scattering events remains restoring \cite{stellmerThesis}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/need_for_stir.pdf}
+\includegraphics[width=0.8\linewidth]{Chapitres/Gas preparation and spin control/images/need_for_stir.pdf}
 \caption[Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1,
 F=11/2$ level]{(Adapted from \cite{stellmerThesis}) Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1,
 F=11/2$ level. The position-dependent Zeeman shift brings the two counter-propagating
@@ -412,37 +394,83 @@ mechanism is discussed below.}
 \label{fig:intro-need-for-stir}
 \end{figure}
 
-A dedicated stirring laser mitigates this loss by driving the open
-$^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=9/2)$ transition, with its frequency swept in
-a sawtooth pattern \textit{in time}, as shown in Fig.~\ref{fig:intro-randomisation}
-(right panel). At any given instant, this fixed frequency is simultaneously
-resonant with several $m_F$ sub-levels at different positions across the trap
-(left panel); as the frequency sweeps, the ground-state $m_F$ population is
-continuously and randomly redistributed. Because the differential Zeeman shift of
-$F'=9/2$ is about five times smaller than that of $F'=11/2$
-\cite{stellmerThesis}, its resonance region is correspondingly broader in space,
-allowing the stirring light to reach and randomize atoms over a much wider
-portion of the trap than the narrow-line trapping transition alone. This
-continuous optical pumping brings atoms that would otherwise remain trapped in an
-unfavorable $m_F$ state on the wrong side of the trap back within reach of the
-cycling transition, restoring efficiency to the cooling cycle.
+The condition for stable operation of a $F\to F+1$ MOT transition requires the
+double inequality $F/(F+1) < g_e/g_g < F/(F-1)$ to hold \cite{stellmerThesis}.
+For $^{87}$Sr, where $g_e/g_g\sim10^3$ due to the near-vanishing nuclear
+magnetic moment of the $^1S_0$ ground state, this condition is violated by
+several orders of magnitude. As a consequence, the resonance condition
+$(m_F'g_e-m_Fg_g)\mu_B B(x) = h\Delta$ has a widely $m_F$-dependent slope:
+low-$|m_F|$ states cross the laser resonance window (grey band) over a broad
+range of positions, while the most Zeeman-shifted states cross it almost
+vertically, remaining within resonance over such a narrow range of $x$ that
+they are, in practice, essentially unaddressed by a fixed-frequency beam
+(Fig.~\ref{fig:intro-randomisation}, left panel, akin to Fig.~2.8(d) of
+\cite{stellmerThesis}).
+
+The actual loss mechanism therefore appears when an atom finds itself on the
+\emph{wrong} side of the trap for its $m_F$ state. There, neither beam can
+come into resonance with it at all: the restoring force for an atom in
+$m_F=9/2$ is maximal on one side of the trap only, and on the other side this
+atom is lost from the trap entirely \cite{stellmerThesis}. This is especially
+detrimental for the stretched states $m_F=\pm9/2$, whose cycling transition
+is \emph{closed} and which therefore have no spontaneous decay path to
+another $m_F$ state that could rescue them once on the wrong side.
+
+A dedicated stirring laser mitigates this geometric loss by driving the open
+$^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=9/2)$ transition, superimposed on the
+trapping light and red-detuned such that its resonance region overlaps with
+that of the trapping transition (Fig.~\ref{fig:intro-randomisation}, left
+panel, akin to Fig.~2.8(d) of \cite{stellmerThesis}). Because the differential
+Zeeman shift of $F'=9/2$ is about five times smaller than that of $F'=11/2$
+\cite{stellmerThesis}, driving this transition changes both where and how
+broadly each $m_F$ state can come into resonance: the resonance position
+shifts, potentially restoring resonance for atoms otherwise stuck on the
+wrong side of the trap, and the resonance region in $x$ broadens by the same
+factor, making it far more likely that an atom actually scatters enough
+photons near resonance to be redistributed before drifting away. Since this
+$F'=9/2$ transition is open, each excitation-decay cycle can additionally
+redistribute the atom into a different $m_F$ sub-level of the ground state.
+
+In our implementation, we additionally sweep the stirring laser's frequency
+in a sawtooth pattern over time (Fig.~\ref{fig:intro-randomisation}, right
+panel): at any instant, the fixed instantaneous frequency is simultaneously
+resonant with several $(m_F, x)$ pairs across the trap (left panel), and as
+the frequency sweeps, the ground-state $m_F$ population is continuously and
+randomly redistributed. This continuous optical pumping brings atoms that
+would otherwise remain trapped in an unfavorable $m_F$ state on the wrong
+side of the trap back within reach of the cycling transition, restoring
+efficiency to the cooling cycle.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.95\linewidth]{Chapitres/Gas preparation and spin control/images/spin_randomization.pdf}
 \caption[Illustration of the melange concept on the $^1S_0(F=9/2) \rightarrow
-{}^3P_1(F=9/2)$ transition]{Illustration of the melange concept on the
-$^1S_0(F=9/2) \rightarrow {}^3P_1(F=9/2)$ transition, added to the red MOT
-cooling to capture extreme spin-state components inaccessible to the
-counter-propagating lasers of the red MOT. Left: spatial dependence of the
-resonance condition on each $m_F$ sub-level, as a function of position $x$
-($B\propto x$). Right: the stirring laser's frequency, swept in a sawtooth
-pattern \textit{over time}. At each instant $t_0$, the instantaneous frequency
-(right) is simultaneously resonant with several $(m_F,x)$ pairs (left, black
-dots); sweeping this frequency over time thus randomizes the $m_F$ population
-across the whole trap.}
+{}^3P_1(F=9/2)$ transition]{Left: spatial dependence of the resonance condition
+on each $m_F$ sub-level, as a function of position $x$ ($B\propto x$) --
+adapted from the principle illustrated in Fig.~2.8(d) of \cite{stellmerThesis}.
+Right: the stirring laser's frequency, swept in a sawtooth pattern
+\textit{over time} in our implementation. At each instant $t_0$, the
+instantaneous frequency (right) is simultaneously resonant with several
+$(m_F,x)$ pairs (left, black dots); sweeping this frequency over time thus
+randomizes the $m_F$ population across the whole trap.}
 \label{fig:intro-randomisation}
 \end{figure}
+
+While the broadened resonance region alone increases the fraction of the trap
+addressed by the stirring light at any given detuning, a single, fixed
+stirring frequency still only brings each $m_F$ state into resonance over a
+finite, localized range of positions around its own resonance point
+$x_{\text{res}}(m_F)$. An atom in a given $m_F$ state located outside this
+window at a given time is simply not addressed, and nothing guarantees that
+its thermal motion within the trap will ever bring it there. In our
+implementation, we therefore additionally sweep the stirring laser's
+frequency in a sawtooth pattern over time (Fig.~\ref{fig:intro-randomisation},
+right panel): as the frequency ramps, the resonance position
+$x_{\text{res}}(m_F,t)$ for each $m_F$ sweeps continuously across the trap,
+so that every $m_F$ state is brought into resonance at every position over
+the course of one ramp. This guarantees full coverage of the $(m_F,x)$ phase
+space, rather than relying on the atom's own motion to bring it within reach
+of a fixed, broadened resonance window.
 
 \subsubsection{Narrowband MOT (Single-frequency MOT)}
 Once the cloud is sufficiently cold, frequency modulation is switched off to operate a
@@ -534,8 +562,7 @@ For a degenerate Fermi gas, the key parameter to optimize is the phase-space den
     \item \textbf{Tight vertical beam (``Dimple''):} Writing the atom number as $N = nV$ (where $n$ is the spatial density and $V$ the trap volume), the elastic collision rate scales as $\Gamma_{\text{el}} = n\sigma_{\text{el}}v_{\text{th}}$ with $\sigma_{el}$ the elastic collision cross section and $v_{th}$ the thermal speed of the atoms, enhancing collision rates for fast re-thermalization. This
     beam impacts mostly the temperature of the gas since it acts on the collision rate. The tightly focused waist of the dimple beam mainly dictates the local horizontal confinement, and contributes negligibly to the vertical confinement due to its near-vertical propagation axis~\cite{stellmer_production_2012}.
 
-    \item \textbf{Broad horizontal beam (``Reservoir''):} Owing to its narrow vertical waist, the reservoir beam sets the effective trap depth $U$ against gravity-assisted atom loss, thereby controlling the evaporative truncation of the energy distribution and, in turn, the atom number~\cite{stellmer_production_2012}. Increasing the reservoir depth raises both $N$ (less truncation, more atoms retained) and $T$ (less evaporative cooling), and these two effects largely cancel out in the $N/T^3$ ratio: the reservoir therefore has a much weaker net effect on the PSD than the 
-    dimple, whose action on $\bar\omega^3$ is not compensated by an opposite change in $N$. Therefore the reservoir compensates alone the gravity effect on the cloud. 
+    \item \textbf{Broad horizontal beam (``Reservoir''):} Owing to its narrow vertical waist, the reservoir beam sets the effective trap depth $U$ against gravity-assisted atom loss, thereby controlling the evaporative truncation of the energy distribution and, in turn, the atom number~\cite{stellmer_production_2012}. Increasing the reservoir depth raises both $N$ (less truncation, more atoms retained) and $T$ (less evaporative cooling), and these two effects largely cancel out in the $N/T^3$ ratio: the reservoir therefore has a much weaker net effect on the PSD than the dimple, whose action on $\bar\omega^3$ is not compensated by an opposite change in $N$.
 
     \item \textbf{Ramp duration and adiabaticity:} The duration and adiabaticity of the evaporative ramps depend on the targeted state. Short evaporations are preferred when aiming solely for a large atom number at moderate temperatures when it is necessary to detect atom number fluctuations, such as for our experiments on photoassociation (see Chapt.3).
     Conversely, reaching deep quantum degeneracy requires a multi-stage ramp lasting approximately 7 seconds which was necessary for the results of Chapt.2.
@@ -649,7 +676,7 @@ The two-photon process is driven by two distinct beams: a first beam derived fro
 
 The TLS beam polarization is set parallel to the magnetic field ($\pi$ transitions), producing a purely scalar/tensor light shift with no vector component. The Raman beam polarization is linear and orthogonal to the magnetic field, so that its decomposition onto $\sigma^+$ and $\sigma^-$ components drives the required $\Delta m_F = \pm 1$ legs of the two-photon transition -- one photon absorbed from the $\pi$-polarized TLS beam, one photon emitted into the $\sigma^{\mp}$ component of the Raman beam.
 
-This configuration selectively couples a single pair of states—for instance, $\ket{^1S_0, F=9/2, m_F=-7/2} \leftrightarrow \ket{^1S_0, F=9/2, m_F=-5/2}$ —while remaining far off-resonance for all other $m_F$ states. The two-photon Raman coupling strength scales as $\Omega_R \propto \sqrt{I_{D} I_R}$, while the spacing between adjacent Raman resonances scales as $2q/h \propto I_{D}$. Spectral isolation of a single $m_F \leftrightarrow m_F'$ pair therefore requires $I_R \ll I_{D}$, so that neighbouring resonances remain spectrally resolved; in practice we use $I_R/I_{D} \lesssim 10^{-4}$ \cite{bataille_realisation_nodate}.
+This configuration selectively couples a single pair of states—for instance, $\ket{^1S_0, F=9/2, m_F=-7/2} \rightarrow \ket{^1S_0, F=9/2, m_F=-5/2}$ —while remaining far off-resonance for all other $m_F$ states. The two-photon Raman coupling strength scales as $\Omega_R \propto \sqrt{I_{D} I_R}$, while the spacing between adjacent Raman resonances scales as $2q/h \propto I_{D}$. Spectral isolation of a single $m_F \leftrightarrow m_F'$ pair therefore requires $I_R \ll I_{D}$, so that neighbouring resonances remain spectrally resolved; in practice we use $I_R/I_{D} \lesssim 10^{-4}$ \cite{bataille_realisation_nodate}.
 
 The complete optical path for this operation is detailed in Fig.~\ref{fig:mog-raman}.
 
@@ -660,7 +687,7 @@ The complete optical path for this operation is detailed in Fig.~\ref{fig:mog-ra
 \label{fig:mog-raman}
 \end{figure}
 
-\subsection{Optical bench for photoassociation experiments}
+\subsection{Photoassociation}
 Chapter 3 investigates photoassociation spectroscopy below the intercombination line. For these measurements, the full power of the laser is sent through the ``AOM lattice 689'' since the other AOM is not useful anymore.
 
 For the dataset presented in Chapter 3, the optical chain incorporates a custom-built confocal Fabry-Pérot cavity stabilized using the Pound-Drever-Hall (PDH) technique \cite{black_Gas_preparation_and_spin_control_2001}, yielding the final setup depicted in Fig.~\ref{fig:raman-transitions}. The beam first passes through an Electro-Optic Modulator (EOM) to generate phase modulation sidebands. A lens with focal length $f = 150~\text{mm}$ mode-matches the beam to the fundamental cavity mode. Upon reflection from the cavity, the light is directed onto a fast photodiode and demodulated with an RF source to produce the PDH error signal.
