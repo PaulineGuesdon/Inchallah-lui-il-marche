@@ -245,7 +245,8 @@ During this stage, the cloud reaches the Doppler temperature limit \cite{dalibar
 \begin{equation}
 k_B T_D = \frac{\hbar \Gamma_{^1S_0 \rightarrow {}^1P_1}}{2}
 \end{equation}
-Due to the broad linewidth of the $461~\text{nm}$ transition ($\Gamma/2\pi = 30.5~\text{MHz}$), this Doppler temperature ($T_D \approx 770~\mu\text{K}$) remains significantly higher than the single-photon recoil limit $T_r$.\\
+Due to the broad linewidth of the $461~\text{nm}$ transition ($\Gamma/2\pi = 30.5~\text{MHz}$), this Doppler temperature ($T_D \approx 770~\mu\text{K}$) remains significantly higher than the single-photon recoil limit $T_r$.
+Experimentally this temperature rises about 2~mK. \\
 The atoms are transfered in $^1P_1$ state that is determined by the equation evolution of the atom number:
 \begin{equation}
     \frac{dN(t)}{dt} = \alpha \Gamma -\gamma_{loss}N(t)
@@ -373,20 +374,11 @@ different $m_F'$ sub-levels at the same position: the $\sigma^+$ beam (green)
 addresses the closed transition $m_F=9/2 \rightarrow m_F'=11/2$, while,
 within the same laser linewidth (grey band), the $\sigma^-$ beam (purple)
 simultaneously becomes resonant with the neighbouring, open transition
-$m_F=9/2 \rightarrow m_F'=7/2$. The relative probability of these two processes is
-set by their Clebsch-Gordan coefficients; the transition from $m_F=9/2$ to $m_F=7/2$
-is less probable than to $m_F=11/2$, which settles the probable of atoms pushed to the
-extreme out positions of the trap.
-
-The dominant loss mechanism is instead geometric. The restoring force for an atom
-in $m_F=9/2$ is maximal on one side of the trap only; on the opposite side, this
-same atom cannot come into resonance with either beam at all, and is lost
-\cite{stellmerThesis}. This is especially detrimental for the stretched states
-$m_F=\pm9/2$: because their cycling transition is \textit{closed}, these atoms
-have no spontaneous decay path to another $m_F$ state that could rescue them once
-they find themselves on the wrong side of the trap -- unlike atoms in intermediate
-$m_F$ states, which are naturally redistributed by the trapping light itself as
-soon as they scatter a photon elsewhere.
+$m_F=9/2 \rightarrow m_F'=7/2$. This dual resonance is not by itself a loss
+mechanism: the relative probability of the two processes, set by their
+Clebsch-Gordan coefficients, favors the restoring transition by a ratio as
+high as 55:1 in the most extreme case, so that the force averaged over many
+scattering events remains restoring \cite{stellmerThesis}.
 
 \begin{figure}[H]
 \centering
@@ -402,37 +394,83 @@ mechanism is discussed below.}
 \label{fig:intro-need-for-stir}
 \end{figure}
 
-A dedicated stirring laser mitigates this loss by driving the open
-$^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=9/2)$ transition, with its frequency swept in
-a sawtooth pattern \textit{in time}, as shown in Fig.~\ref{fig:intro-randomisation}
-(right panel). At any given instant, this fixed frequency is simultaneously
-resonant with several $m_F$ sub-levels at different positions across the trap
-(left panel); as the frequency sweeps, the ground-state $m_F$ population is
-continuously and randomly redistributed. Because the differential Zeeman shift of
-$F'=9/2$ is about five times smaller than that of $F'=11/2$
-\cite{stellmerThesis}, its resonance region is correspondingly broader in space,
-allowing the stirring light to reach and randomize atoms over a much wider
-portion of the trap than the narrow-line trapping transition alone. This
-continuous optical pumping brings atoms that would otherwise remain trapped in an
-unfavorable $m_F$ state on the wrong side of the trap back within reach of the
-cycling transition, restoring efficiency to the cooling cycle.
+The condition for stable operation of a $F\to F+1$ MOT transition requires the
+double inequality $F/(F+1) < g_e/g_g < F/(F-1)$ to hold \cite{stellmerThesis}.
+For $^{87}$Sr, where $g_e/g_g\sim10^3$ due to the near-vanishing nuclear
+magnetic moment of the $^1S_0$ ground state, this condition is violated by
+several orders of magnitude. As a consequence, the resonance condition
+$(m_F'g_e-m_Fg_g)\mu_B B(x) = h\Delta$ has a widely $m_F$-dependent slope:
+low-$|m_F|$ states cross the laser resonance window (grey band) over a broad
+range of positions, while the most Zeeman-shifted states cross it almost
+vertically, remaining within resonance over such a narrow range of $x$ that
+they are, in practice, essentially unaddressed by a fixed-frequency beam
+(Fig.~\ref{fig:intro-randomisation}, left panel, akin to Fig.~2.8(d) of
+\cite{stellmerThesis}).
+
+The actual loss mechanism therefore appears when an atom finds itself on the
+\emph{wrong} side of the trap for its $m_F$ state. There, neither beam can
+come into resonance with it at all: the restoring force for an atom in
+$m_F=9/2$ is maximal on one side of the trap only, and on the other side this
+atom is lost from the trap entirely \cite{stellmerThesis}. This is especially
+detrimental for the stretched states $m_F=\pm9/2$, whose cycling transition
+is \emph{closed} and which therefore have no spontaneous decay path to
+another $m_F$ state that could rescue them once on the wrong side.
+
+A dedicated stirring laser mitigates this geometric loss by driving the open
+$^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=9/2)$ transition, superimposed on the
+trapping light and red-detuned such that its resonance region overlaps with
+that of the trapping transition (Fig.~\ref{fig:intro-randomisation}, left
+panel, akin to Fig.~2.8(d) of \cite{stellmerThesis}). Because the differential
+Zeeman shift of $F'=9/2$ is about five times smaller than that of $F'=11/2$
+\cite{stellmerThesis}, driving this transition changes both where and how
+broadly each $m_F$ state can come into resonance: the resonance position
+shifts, potentially restoring resonance for atoms otherwise stuck on the
+wrong side of the trap, and the resonance region in $x$ broadens by the same
+factor, making it far more likely that an atom actually scatters enough
+photons near resonance to be redistributed before drifting away. Since this
+$F'=9/2$ transition is open, each excitation-decay cycle can additionally
+redistribute the atom into a different $m_F$ sub-level of the ground state.
+
+In our implementation, we additionally sweep the stirring laser's frequency
+in a sawtooth pattern over time (Fig.~\ref{fig:intro-randomisation}, right
+panel): at any instant, the fixed instantaneous frequency is simultaneously
+resonant with several $(m_F, x)$ pairs across the trap (left panel), and as
+the frequency sweeps, the ground-state $m_F$ population is continuously and
+randomly redistributed. This continuous optical pumping brings atoms that
+would otherwise remain trapped in an unfavorable $m_F$ state on the wrong
+side of the trap back within reach of the cycling transition, restoring
+efficiency to the cooling cycle.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.95\linewidth]{Chapitres/Gas preparation and spin control/images/spin_randomization.pdf}
 \caption[Illustration of the melange concept on the $^1S_0(F=9/2) \rightarrow
-{}^3P_1(F=9/2)$ transition]{Illustration of the melange concept on the
-$^1S_0(F=9/2) \rightarrow {}^3P_1(F=9/2)$ transition, added to the red MOT
-cooling to capture extreme spin-state components inaccessible to the
-counter-propagating lasers of the red MOT. Left: spatial dependence of the
-resonance condition on each $m_F$ sub-level, as a function of position $x$
-($B\propto x$). Right: the stirring laser's frequency, swept in a sawtooth
-pattern \textit{over time}. At each instant $t_0$, the instantaneous frequency
-(right) is simultaneously resonant with several $(m_F,x)$ pairs (left, black
-dots); sweeping this frequency over time thus randomizes the $m_F$ population
-across the whole trap.}
+{}^3P_1(F=9/2)$ transition]{Left: spatial dependence of the resonance condition
+on each $m_F$ sub-level, as a function of position $x$ ($B\propto x$) --
+adapted from the principle illustrated in Fig.~2.8(d) of \cite{stellmerThesis}.
+Right: the stirring laser's frequency, swept in a sawtooth pattern
+\textit{over time} in our implementation. At each instant $t_0$, the
+instantaneous frequency (right) is simultaneously resonant with several
+$(m_F,x)$ pairs (left, black dots); sweeping this frequency over time thus
+randomizes the $m_F$ population across the whole trap.}
 \label{fig:intro-randomisation}
 \end{figure}
+
+While the broadened resonance region alone increases the fraction of the trap
+addressed by the stirring light at any given detuning, a single, fixed
+stirring frequency still only brings each $m_F$ state into resonance over a
+finite, localized range of positions around its own resonance point
+$x_{\text{res}}(m_F)$. An atom in a given $m_F$ state located outside this
+window at a given time is simply not addressed, and nothing guarantees that
+its thermal motion within the trap will ever bring it there. In our
+implementation, we therefore additionally sweep the stirring laser's
+frequency in a sawtooth pattern over time (Fig.~\ref{fig:intro-randomisation},
+right panel): as the frequency ramps, the resonance position
+$x_{\text{res}}(m_F,t)$ for each $m_F$ sweeps continuously across the trap,
+so that every $m_F$ state is brought into resonance at every position over
+the course of one ramp. This guarantees full coverage of the $(m_F,x)$ phase
+space, rather than relying on the atom's own motion to bring it within reach
+of a fixed, broadened resonance window.
 
 \subsubsection{Narrowband MOT (Single-frequency MOT)}
 Once the cloud is sufficiently cold, frequency modulation is switched off to operate a

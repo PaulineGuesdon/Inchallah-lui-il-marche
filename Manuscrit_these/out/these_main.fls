@@ -300,23 +300,22 @@ INPUT .\Chapitres\Introduction\Introduction.tex
 INPUT .\Chapitres\Introduction\Introduction.tex
 INPUT .\Chapitres\Introduction\Introduction.tex
 INPUT Chapitres\Introduction\Introduction.tex
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
-INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\cm-super\cm-super-ts1.enc
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
 INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Users\pauline.guesdon\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\cm-super\cm-super-ts1.enc
 INPUT .\Chapitres\Gas preparation and spin control\Gas_preparation_and_spin_control.tex
 INPUT .\Chapitres\Gas preparation and spin control\Gas_preparation_and_spin_control.tex
 INPUT .\Chapitres\Gas preparation and spin control\Gas_preparation_and_spin_control.tex
 INPUT .\Chapitres\Gas preparation and spin control\Gas_preparation_and_spin_control.tex
 INPUT Chapitres\Gas preparation and spin control\Gas_preparation_and_spin_control.tex
-INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.png
-INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.png
-INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.png
-INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.png
-INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.png
-INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.png
-INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.png
+INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.pdf
+INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.pdf
+INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.pdf
+INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.pdf
+INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.pdf
+INPUT .\Chapitres\Gas preparation and spin control\images\energy_levels_sr.pdf
 INPUT .\Chapitres\Gas preparation and spin control\images\setup_exp.pdf
 INPUT .\Chapitres\Gas preparation and spin control\images\setup_exp.pdf
 INPUT .\Chapitres\Gas preparation and spin control\images\setup_exp.pdf
@@ -418,13 +417,12 @@ INPUT .\Chapitres\Gas preparation and spin control\images\1.30_dipole_trap(1075)
 INPUT .\Chapitres\Gas preparation and spin control\images\1.30_dipole_trap(1075)_setup.png
 INPUT .\Chapitres\Gas preparation and spin control\images\1.30_dipole_trap(1075)_setup.png
 INPUT .\Chapitres\Gas preparation and spin control\images\1.30_dipole_trap(1075)_setup.png
-INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping.png
-INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping.png
-INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping.png
-INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping.png
-INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping.png
-INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping.png
-INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping.png
+INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping_bataille2020.pdf
+INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping_bataille2020.pdf
+INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping_bataille2020.pdf
+INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping_bataille2020.pdf
+INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping_bataille2020.pdf
+INPUT .\Chapitres\Gas preparation and spin control\images\optical_pumping_bataille2020.pdf
 INPUT .\Chapitres\Gas preparation and spin control\images\ecdl_cateye.pdf
 INPUT .\Chapitres\Gas preparation and spin control\images\ecdl_cateye.pdf
 INPUT .\Chapitres\Gas preparation and spin control\images\ecdl_cateye.pdf
