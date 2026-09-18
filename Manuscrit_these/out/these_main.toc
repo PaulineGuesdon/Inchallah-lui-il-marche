@@ -2,16 +2,16 @@
 \contentsline {chapter}{\numberline {1}Gas preparation and spin control}{4}{chapter.8}%
 \contentsline {section}{\numberline {1.1}Fermi gas preparation}{9}{section.12}%
 \contentsline {subsection}{\numberline {1.1.1}Blue optical setup}{9}{subsection.13}%
-\contentsline {subsection}{\numberline {1.1.2}Transverse cooling}{9}{subsection.16}%
-\contentsline {subsubsection}{\numberline {1.1.2.1}Operating principle and radiation pressure}{9}{subsubsection.17}%
-\contentsline {subsubsection}{\numberline {1.1.2.2}Experimental setup and laser configuration}{12}{subsubsection.19}%
+\contentsline {subsection}{\numberline {1.1.2}Transverse cooling}{11}{subsection.16}%
+\contentsline {subsubsection}{\numberline {1.1.2.1}Operating principle and radiation pressure}{11}{subsubsection.17}%
+\contentsline {subsubsection}{\numberline {1.1.2.2}Experimental setup and laser configuration}{11}{subsubsection.19}%
 \contentsline {subsubsection}{\numberline {1.1.2.3}Detuning and power optimization}{12}{subsubsection.21}%
 \contentsline {subsection}{\numberline {1.1.3}Zeeman cooling}{13}{subsection.23}%
 \contentsline {subsection}{\numberline {1.1.4}Blue MOT}{14}{subsection.26}%
 \contentsline {subsection}{\numberline {1.1.5}Repumper}{15}{subsection.31}%
 \contentsline {subsubsection}{\numberline {1.1.5.1}Hyperfine structure of Strontium-87}{15}{subsubsection.32}%
 \contentsline {subsubsection}{\numberline {1.1.5.2}Optimization of the repumper sweep}{16}{subsubsection.34}%
-\contentsline {subsection}{\numberline {1.1.6}Red MOT}{17}{subsection.36}%
+\contentsline {subsection}{\numberline {1.1.6}Laser cooling on the intercombination line : the ``red MOT''}{17}{subsection.36}%
 \contentsline {subsubsection}{\numberline {1.1.6.1}Optical setup}{17}{subsubsection.37}%
 \contentsline {subsubsection}{\numberline {1.1.6.2}Broadband MOT}{17}{subsubsection.40}%
 \contentsline {subsubsection}{\numberline {1.1.6.3}Stirring laser}{20}{subsubsection.41}%
@@ -23,11 +23,11 @@
 \contentsline {subsubsection}{\numberline {1.1.7.3}Optical setup}{26}{subsubsection.53}%
 \contentsline {section}{\numberline {1.2}Spin Selection}{27}{section.55}%
 \contentsline {subsection}{\numberline {1.2.1}Optical Pumping}{27}{subsection.56}%
-\contentsline {section}{\numberline {1.3}Spin Manipulation}{29}{section.59}%
+\contentsline {section}{\numberline {1.3}Lasers for spin Manipulation}{28}{section.59}%
 \contentsline {subsection}{\numberline {1.3.1}External Cavity Diode Laser (ECDL)}{29}{subsection.60}%
 \contentsline {subsubsection}{\numberline {1.3.1.1}Laser architecture}{29}{subsubsection.61}%
 \contentsline {subsubsection}{\numberline {1.3.1.2}Repair of the MOGlabs}{29}{subsubsection.63}%
-\contentsline {subsection}{\numberline {1.3.2}Raman Transitions}{30}{subsection.64}%
+\contentsline {subsection}{\numberline {1.3.2}Optical bench for coherent Raman manipulations}{30}{subsection.64}%
 \contentsline {subsubsection}{\numberline {1.3.2.1}Physical Concept}{30}{subsubsection.65}%
 \contentsline {subsubsection}{\numberline {1.3.2.2}Experimental Setup of the Raman Process}{31}{subsubsection.69}%
 \contentsline {subsection}{\numberline {1.3.3}Photoassociation}{32}{subsection.71}%
