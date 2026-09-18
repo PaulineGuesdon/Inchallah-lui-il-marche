@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: these_main.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+Database file #1: ref.bib
+Database file #2: spincontrol_refs.bib
+Warning--entry type for "notemixture" isn't style-file defined
+--line 63 of file spincontrol_refs.bib
+Warning--I didn't find a database entry for "bataille_adiabatic_2020"
+Warning--empty journal in bataille_realisation_nodate
+Warning--empty year in bataille_realisation_nodate
+Warning--empty booktitle in stellmer_degenerate_2014
+Warning--empty publisher in stellmer_degenerate_2014
+Warning--empty publisher in Landau
+Warning--empty journal in dalibard_interactions_nodate
+Warning--empty year in dalibard_interactions_nodate
+Warning--empty journal in reichenbach_optical_nodate
+Warning--empty year in reichenbach_optical_nodate
+You've used 126 entries,
+            1876 wiz_defined-function locations,
+            1246 strings with 29977 characters,
+and the built_in function-call counts, 39802 in all, are:
+= -- 3833
+> -- 2151
+< -- 0
++ -- 765
+- -- 639
+* -- 2880
+:= -- 5642
+add.period$ -- 144
+call.type$ -- 126
+change.case$ -- 122
+chr.to.int$ -- 0
+cite$ -- 135
+duplicate$ -- 2165
+empty$ -- 2970
+format.name$ -- 639
+if$ -- 9710
+int.to.chr$ -- 0
+int.to.str$ -- 126
+missing$ -- 120
+newline$ -- 402
+num.names$ -- 125
+pop$ -- 291
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1934
+stack$ -- 0
+substring$ -- 1927
+swap$ -- 1238
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 9
+while$ -- 297
+width$ -- 129
+write$ -- 1282
+(There were 11 warnings)
