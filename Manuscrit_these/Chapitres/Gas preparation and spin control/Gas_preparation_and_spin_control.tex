@@ -454,7 +454,7 @@ would otherwise remain trapped in an unfavorable $m_F$ state on the wrong
 side of the trap back within reach of the cycling transition, restoring
 efficiency to the cooling cycle.
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=0.95\linewidth]{Chapitres/Gas preparation and spin control/images/spin_randomization.pdf}
 \caption[Illustration of the melange concept on the $^1S_0(F=9/2) \rightarrow
@@ -506,7 +506,8 @@ Cooling efficiency during the single-frequency stage depends on precise frequenc
     
     \item \textbf{Intensity ramp and power broadening:} High intensities $I/I_{sat}=400 $ to 1600 provide a deep trap for initial capture, but causes power broadening ($\Gamma_{\text{eff}} = \Gamma \sqrt{1 + I/I_s}$), raising the achievable Doppler limit. For single-frequency cooling, intensity is adiabatically ramped down over $45~\text{ms}$ to reduce power broadening while maintaining sufficient force to support the cloud against gravity.
 \end{itemize}
-Atoms are adiabatically loaded into the ODT while decreasing the intensity of the
+
+Atoms are progressively loaded into the ODT while decreasing the intensity of the
 single-frequency $689~\text{nm}$ red MOT during a ramp lasting
 approximately $45~\text{ms}$. From second-order perturbation theory, the light shift experienced by the energy levels yields
 the optical dipole potential:
@@ -575,7 +576,7 @@ For further details on loading atoms into the optical crossed dipole trap, the r
 
 \subsubsection{Optical setup}
 The 1075 nm light from the IPG laser is split by a half-wave plate and polarizing beamsplitter into the two arms described above (Fig.~\ref{setup evap}). The horizontal arm forms the ``Reservoir'' beam: a pair of cylindrical lenses (f = -50 mm and f = -75 mm) shapes the elliptical beam into an anisotropic ellipse, with nominal waists of $w^h = 147~\mu$m (horizontal) and $w^v = 34~\mu$m (vertical) at the lens focal plane. However, the atoms sit $\simeq$ 3.3~mm beyond this focus rather than at the waist itself, so that the vertical waist they actually experience is somewhat
-larger, $w^v \simeq 47~\mu$m, while the horizontal waist remains close to its nominal value at this distance. The second arm forms the ``Dimple'' beam, focused by a spherical lens (f = 300 mm) and crossing the reservoir arm at the position of the atoms, at $\simeq 30^\circ$ from vertical; astigmatism in this arm means its two transverse waists are not equidistant from the atoms either (measured at $\simeq$ 4.5~mm and $\simeq$ 7~mm, respectively).
+larger, $w^v \simeq 47~\mu$m, while the horizontal waist remains close to its nominal value at this distance. The second arm forms the ``Dimple'' beam, focused by a spherical lens (f = 300 mm), its waist crossing the reservoir arm at the position of the atoms, at $\simeq 30^\circ$ from vertical; astigmatism in this arm means its two transverse waists are not equidistant from the atoms either (measured at $\simeq$ 4.5~mm and $\simeq$ 7~mm, respectively).
 
 \begin{figure}
     \centering
@@ -589,7 +590,7 @@ For the photoassociation measurements presented in Chapter 3, quantum degeneracy
 \section{Spin Selection}
 
 \subsection{Optical Pumping}
-Optical pumping is implemented prior to the final evaporation stages to prepare the atomic gas in a tailored mixture of nuclear spin states ($m_F$). Due to the $SU(N)$ symmetry of $^{87}\text{Sr}$, elastic $s$-wave collisions between identical fermions in the same $m_F$ state are forbidden by the Pauli exclusion principle. Therefore, at least two distinct spin components must be present to enable elastic collisions and ensure efficient re-thermalization during evaporative cooling. Furthermore, $SU(N)$ symmetry guarantees that elastic collisions conserve the nuclear spin state, preventing spin-exchange collisions during evaporation.
+Optical pumping is implemented prior to the final evaporation stages to prepare the atomic gas in a tailored mixture of nuclear spin states ($m_F$). Elastic $s$-wave collisions between identical fermions in the same $m_F$ state are forbidden by the Pauli exclusion principle. Therefore, at least two distinct spin components must be present to enable elastic collisions and ensure efficient re-thermalization during evaporative cooling. Furthermore, $SU(N)$ symmetry guarantees that elastic collisions conserve the nuclear spin state, preventing spin-exchange collisions during evaporation.
 
 To perform state preparation, a bias magnetic field of $6.05 \pm 0.05~\text{G}$ is applied to lift the degeneracy of the $^3P_1, F = 11/2$ hyperfine sub-levels via the linear Zeeman effect. The cloud is illuminated by a $\sigma^-$-polarized optical pumping beam tuned to the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition. Its frequency is defined as:
 \begin{equation}
@@ -611,11 +612,11 @@ frequency or magnetic field calibration \cite{bataille_adiabatic_2020}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/optical_pumping_bataille2020.pdf}
-    \caption[Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition]{Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition used to prepare a specific nuclear spin mixture. The red laser is ramped through the target energy level of $^3P_1$: the atoms decay to neighbours states $m_F \pm 1$ of $^1S_0$}
+    \caption[Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition]{Extracted from \cite{bataille_realisation_nodate} Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition used to prepare a specific nuclear spin mixture. The red laser is ramped through the target energy level of $^3P_1$: the atoms decay to neighbours states $m_F \pm 1$ of $^1S_0$}
     \label{fig:intro-optical-pumping}
 \end{figure}
 
-\section{Lasers for spin Manipulation}
+\section{Lasers for spin manipulation}
 We developed a method demonstrated in \cite{Bataille2020} for coherent control within the ground state manifold of zeeman sublevels. it relies on tensor shifts enacted by a laser operating near 689 nm, and will be described in detail in chapter 2. At a later stage, we performed photoassociation experiments in the vicinity of the intercombination manifold, see chapter 3. Both experiments actually rely on the same laser system, that I will present here.
 
 \subsection{External Cavity Diode Laser (ECDL)}
@@ -629,12 +630,13 @@ is first collimated by a collimation lens, before its frequency is roughly selec
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{Chapitres/Gas preparation and spin control/images/ecdl_cateye.pdf}
-    \caption[MOGlabs External Cavity Diode Laser architecture used for spin manipulation]{MOGlabs External Cavity Diode Laser (ECDL) architecture used for spin manipulation. A diode lasing at 689~nm is first collimated by a lens, then its frequency is roughly selected by an interference filter marked in red. The beam is focused by a second lens onto a partially reflective mirror (hatched rectangle): together they form a cat's-eye retroreflector that closes the external cavity, feeding most of the light back for resonant frequency filtering while transmitting a small fraction onward. This output is collimated by a last lens and leaves the laser head through an optical isolator.}
+    \caption[External Cavity Diode Laser architecture used for spin manipulation]{External Cavity Diode Laser (ECDL) architecture. A diode lasing at 689~nm is first collimated by a lens, then its frequency is roughly selected by an interference filter marked in red. The beam is focused by a second lens onto a partially reflective mirror (hatched rectangle): together they form a cat's-eye retroreflector that closes the external cavity, feeding most of the light back for resonant frequency filtering while transmitting a small fraction onward. This output is collimated by a last lens and leaves the laser head through an optical isolator. }
     \label{fig:ecdl-laser}
 \end{figure}
 
-An internal PID controller robustly compensates for thermal and mechanical drifts of 
-the cavity length as well as diode current fluctuations. The laser is subsequently beat-locked to a master optical reference adapted to the specific experimental requirements.
+The laser is beat-locked to a master optical reference adapted to the specific experimental requirements.
+An internal PID controller robustly compensates from this beating signal for thermal and mechanical drifts of 
+the cavity length as well as diode current fluctuations. 
 
 \subsubsection{Problems encountered on the MOGlabs ECDL}
 For years, this ECDL exhibited a recurring instability that directly affected our experiments. We operate this laser far above threshold, at a fixed, high diode current chosen to maximize its output intensity on the external-cavity mode we lock to on a daily basis. As intracavity losses accumulated with time, however, the laser's entire mode spectrum -- the current-dependent map linking diode current to wavelength and output intensity -- drifted: at this same fixed operating current, the mode we needed was no longer the one giving maximum intensity, so the laser no longer delivered its usual output power on the intended wavelength. Rather than changing the operating current, we instead had to open the laser head and reduce the intracavity losses; lowering the laser's threshold in this way shifted the whole mode spectrum back, restoring the correspondence between our fixed operating current and maximum output intensity on the intended mode. This drift was eventually traced to two independent hardware issues, both responsible for a progressive loss of intracavity intensity:
