@@ -1,8 +1,11 @@
 \chapter{Quantum state measurement and characterization in qudit systems \label{cha:litreivew}}
 \label{chap 2}
 
-This chapter presents the experimental results published in Ref.~\cite{ahmed_coherent_2025}, centered on the coherent manipulation of the 10-dimensional nuclear spin Hilbert space ($2I+1 = 10$) of $^{87}\text{Sr}$ atoms. By exploiting a tensor light shift to isolate tailored subsystems, we demonstrate control ranging from robust pseudo-spin qubits to high-dimensional qudits ($D=3$ to $10$) displaying multi-second coherence times. Based on this platform, we implement multi-state interferometric schemes over four nuclear levels for multi-parameter sensing. Following the reproduced article, Section~\ref{sec:povm_framework_and_derivation} provides an extended theoretical derivation of the Positive-Operator-Valued Measures (POVMs) implemented in our non-commuting observables measurement scheme.
-\section{Gas preparation and spin control}
+This chapter presents the experimental results published in Ref.~\cite{ahmed_coherent_2025}, centered on the coherent manipulation of the 10-dimensional nuclear spin Hilbert space ($2I+1 = 10$) of $^{87}\text{Sr}$ atoms. By exploiting a tensor light shift to isolate tailored subsystems, we demonstrate control ranging from robust pseudo-spin qubits to high-dimensional qudits ($D=3$ to $10$) displaying multi-second coherence times. Based on this platform, we implement multi-state interferometric schemes over four nuclear levels for multi-parameter sensing. Following section \ref{Sec:Gas_preparation_and_spin_control} reproduces article, Section~\ref{sec:povm_framework_and_derivation} is written for this manuscript and provides an extended theoretical derivation of the Positive-Operator-Valued Measures (POVMs) implemented in our non-commuting observables measurement scheme.
+
+
+\section{Article `Coherent control over the high-dimensional space  of the nuclear spin of alkaline-earth atoms' \cite{ahmed_coherent_2025}}
+\subsection{Gas preparation and spin control}
 
 \label{Sec:Gas_preparation_and_spin_control}
 
@@ -20,7 +23,7 @@ Among large-spin atoms, fermionic alkaline-earth and alkaline-earth-like atoms (
 In this paper, we use a tensor light shift \cite{Deutsch2010qca} to control the resonance conditions of Raman transitions within the manifold of $2F+1=10$ Zeeman states of the spin-$F=9/2$ ground state of {$^{87}$Sr}. The quadratic energy shift $\propto m_F^2$ enables us to perform coherent manipulations between isolated pairs of $m_F$ states with a fidelity better than {99\,\%}. These operations demonstrate control over unitary transformations deriving from $\mathfrak{su}$($N = 2F+1$) generators, beyond the usual precession operations deriving from the spin-F representation of the $\mathfrak{su}$(2) group. Taking advantage of this new possibility and the atoms' insensitivity to magnetic fields, we operate a Ramsey interferometer between two isolated hyperfine states and demonstrate Ramsey fringes with no discernible loss of contrast over 3\,s. We further exploit the large spin of the atoms with two new types of interferometers. In the first implementation, we operate two Ramsey interferometers simultaneously and in parallel, using two independent pairs of spin states within the hyperfine structure. This configuration allows simultaneous measurement of two independent parameters (here corresponding to the effective quadratic and linear Zeeman shifts). In the second implementation, we mirror two physical spin states that make a qubit into two ancillary spin states. Selective unitary transformation (``rotation") of the two qubit states and the measurement of all four states then permit the simultaneous measurement of two non-commuting observables of an ensemble of qubits.
 
 
-\section{Implementation of $\mathfrak{su}$(N) generators.}
+\subsection{Implementation of $\mathfrak{su}$(N) generators.}
 \label{Sec:ExperimentPrinciple}
 
 One key idea of this paper is to implement coherent rotations between two and only two arbitrary spin states chosen among the $N$ spin states of an $N-$component Fermi mixture. Rabi oscillation between such a selected pair of states corresponds to rotations driven by infinitesimal generators of the $\mathfrak{su}$(N) spin algebra, described by an operator $\sigma^x_{m_F,m_F'}$. The restriction of $\sigma^x_{m_F,m_F'}$ to the Hilbert space $\{\ket{m_F} , \ket{m_F'} \}$ is the Pauli matrix $\sigma^x$, while all its other elements are zero. The evolution operator after a sequence reads  $\sim \exp{(- i \theta \sigma^x_{m_F,m_F'}/2 )}$, where $\theta = \int \Omega_R(t) dt$ is called pulse area and $\Omega_R$ is the Rabi frequency. The evolution operator describes a rotation in the restricted Hilbert space associated with the two selected spin states, and is the identity in the orthogonal space consisting of all other levels. Thus, it is distinct from the more usual manipulation of a spin $\vec F$ by precession around a magnetic field, $\exp(-i \vec \alpha . \vec F)$, which involves a combination of the three generators $\vec F = (F_x, F_y, F_z)$ of the spin-F representation of the $\mathfrak{su}$(2) algebra. This new tool enables complete control over the spin degrees of freedom, which is necessary to characterize phases of $\mathfrak{su}$(N)-symmetric quantum matter at low energy (see e.g. \cite{Chen2005esp}) and for computing applications leveraging the vast Hilbert space provided by large spins (see e.g. \cite{Kiktenko2015sqr}).
@@ -36,7 +39,7 @@ Pulsing the Raman coupling drives precession on one selected sub-Bloch sphere ar
 The intercombination line \RedMotTransition~of the \Sr{87} isotope is particularly favorable to engineer large tensor shifts with only weak spontaneous emission, thanks to the high ratio of about $10^5$ between the hyperfine splitting in $^3P_1$ and the inverse lifetime of these hyperfine states \cite{Burba2024}. Using the much narrower \ThreePTwoTransition~transition might lead to even better performances. Our scheme should readily adapt to other alkaline-earth-like atoms and to other species with similarly rich electronic structures (Yb, Cd, Hg, Er, Dy, ...). Finally, compared to the recent results in Ref.~\cite{claude2024, Zheng2024}, where the spins of erbium and strontium atoms, respectively, are manipulated through coherent oscillations on a narrow optical transition, our scheme also benefits from \textit{not} relying on a clock-like optical transition. This, we achieve because the Raman transitions negligibly populate lossy excited states.
 
 
-\section{Experimental setting}
+\subsection{Experimental setting}
 \label{Sec:ExperimentSetting}
 
 All the experiments described in the following sections start with a spin-polarized ultracold Fermi gas of \Sr{87}. To produce this gas, we first laser cool and hold within a dipole trap a $\SI{5}{\micro \kelvin}$-cold sample of atoms in the \StateOneSZeroLong~ground state, fully depolarized across the ten spin states of the $F = 9/2$ manifold. We then use optical pumping on the {\RedMotTransition, $F = 11/2$} intercombination line to empty all spin states but two (typically, the $m_F = -9/2$ and $m_F = -5/2$ states). We thus prepare a stable spin mixture since the $\mathfrak{su}$(N) symmetry prevents spin-changing collisions. Ref.~\cite{Bataille2020} gives more details on this optical pumping. We next use forced evaporative cooling to obtain an ultracold gas at a temperature of about $\SI{100}{\nano \kelvin}$. Finally, we apply a state-selective radiation-pressure pulse to remove atoms in the $m_F = -9/2$ state, with no noticeable heating of the remaining $m_F = -5/2$ sample. We achieve such state selection by a 4.5 ms light pulse tuned to the \RedBlastTransition~transition in a magnetic field of $ \SI{4.5}{\gauss}$. The polarized gas, of about $10^4$ atoms, is then kept in a uniform magnetic field $B \vec e_z$ with $B = \SI{5.2}{\gauss}$ that defines the quantization axis and produces a linear Zeeman splitting of $960 (5)$ Hz. With less than 1$\%$ of the atoms in each Zeeman state other than the one chosen, the residual spin entropy is below 0.5 (while a fully random spin state has entropy log(10) = 2.3). 
@@ -49,7 +52,7 @@ We set the TLS beam polarization almost co-linear to the magnetic field, corresp
 
 At the end of an experiment cycle, we adiabatically ramp down the TLS beam and measure the spin-state distribution by spin-selective momentum transfer \cite{Bataille2020}, simultaneously extracting and probing two spin states of choice ($m_F-1$ and $m_F+1$) for each measurement. Spin populations presented throughout the paper are relative to the total atom number. For this, we calibrate the detection efficiencies $\eta(m_F)$ for each spin state on clouds prepared in that single spin state. For  $m_F = -7/2$, $-5/2$, and $-3/2$, we find $\eta(m_F) = $ 0.65, 0.70, and 0.51, respectively\,\footnote{The detection efficiencies are probably limited by a lack of optical power and by using rather warm clouds with momentum spread comparable to the optical recoil.}. However, $\eta(-3/2)$ fluctuated throughout the experiments shown here, as evidenced by some population estimates larger than one. In such cases, we recalibrate $\eta(-3/2)$ by up to $6\,\%$ to bring extremal population estimates down to 1.
 
-\section{Coherent manipulation of a nuclear-spin qubit}
+\subsection{Coherent manipulation of a nuclear-spin qubit}
 \label{Sec:CoherentManipulation}
 
  \begin{figure}[t!]
@@ -99,7 +102,7 @@ fluctuations. Minimizing the exposure time to the TLS beam, we have demonstrated
  \end{figure}
 
 
-\section{Beyond pseudo-spin 1/2 schemes: qudit interferometry}
+\subsection{Beyond pseudo-spin 1/2 schemes: qudit interferometry}
 \label{Sec:BeyondPseduoSpin}
 
 The possibility to coherently couple two spin states among the $N=10$ available ones in ground-state $^{87}$Sr atoms enables coherent navigation over the whole ground-state manifold - for example, by simply concatenating a series of resonant pulses between isolated pairs of Zeeman states. Consequently, our experimental toolkit creates new possibilities that use more than two spin states in order to store or retrieve information. In this section, we experimentally investigate two of those new possibilities that use the large nuclear spin as a genuine qudit.
@@ -108,7 +111,7 @@ First, we will use well-defined linear-superposition states involving four spin 
 
 Second, we present a scheme that simultaneously measures collective observables that do not commute, in a single experimental realization. Building on Ref.~\cite{Kunkel2019}, our scheme can characterize a many-body state where the coherences are stored in a subset of the fully available ground-state hyperfine manifold. The main idea is to extend the Hilbert space of the atoms for measurement purposes only; the measurement sequence involves mapping the state of the atoms into initially empty ``ancillary" states and applying controlled rotations, which provides additional observables, and facilitates tomographic characterization of a quantum many-body state.
 
-\subsection{Parallel Ramsey interferometers for simultaneous multiple-field sensing.}
+\subsubsection{Parallel Ramsey interferometers for simultaneous multiple-field sensing.}
 \label{SubSec:ParallelRamsey}
 
 
@@ -156,7 +159,7 @@ First, the pulses of the two interferometers are interleaved temporally. Consequ
 We have shown in this section an example of a sensor that parallelizes two measurements using an extended Hilbert space basis. Thanks to the simultaneity of the measurements, we have demonstrated that correlation analyses are possible. We illustrated it by tracking in parallel variations of the vector and tensor light shifts acting on the atoms. One can also interpret these experiments as a common-mode noise-rejection scheme, i.e., extracting precise values of $q$ despite the fact that fluctuations of $b$ affect all interferometers. Similar schemes for the simultaneous sensing of multiple fields could be devised, e.g., for measuring multiple spatial components of a vector (magnetic) field. 
 
 
-\subsection{Simultaneous measurements of multiple collective atomic observables.}
+\subsubsection{Simultaneous measurements of multiple collective atomic observables.}
 \label{SubSec:SimultMeasurementObservables}
 
 We will now explore a second possibility offered by the large spin-state manifold: increasing the number of observables accessible in one realization and characterizing the collective spin state of a quantum many-body ensemble. 
@@ -226,7 +229,7 @@ Thus, expanding the internal Hilbert space in the measurement sequence enables t
 
  
  
- \section{Conclusion}
+ \subsection{Conclusion}
  \label{Sec:Conclusion}
 
 In this work, we have demonstrated the implementation of operations effectively driven by generators of the $\mathfrak{su}$(10) group. We focused on selectively driving Rabi oscillations between adjacent ($m_F \longleftrightarrow m_F+1$) and next-to-adjacent ($m_F \longleftrightarrow m_F+2$) levels. We demonstrated these on four out of ten levels, with high fidelity $>0.99$. We expect the generalization to the entire spin manifold to require moderate technical adjustments, such as a higher magnetic field bias. Being able to drive all $\Delta m_F = (1,2)$ transitions effectively amounts to driving ``rotations" around $2N-3 = 17$ generators of the $\mathfrak{su}$(N) group. This number exceeds the $N-1$ number of generators that can be simultaneously diagonalized (which  correspond to the $N-1$ quantization axes). Therefore concatenating $\Delta m_F = (1,2)$ transitions is in principle sufficient to implement all the $N^2-1$ generators. 
@@ -243,12 +246,12 @@ Finally, following the original idea of Ref.~\cite{Kunkel2019}, we have seen tha
 The full potential of such measurements deserve investigation. The scheme is analogous to randomly partitioning the system into several sub-ensembles and measuring each along a different quantization axis. 
 One question is whether this could be amenable to extracting signatures of specific many-body states (chiral states, cluster states \cite{Bornet2024, Mamaev2019}), or to characterize general properties of the many-body states (entanglement, purity) in the spirit of, e.g., Refs.~\cite{Brydges2019, Frerot2021}.
 
-\section{Positive-operator-valued measures (POVMs)}
+\section{Outlook to positive-operator-valued measures (POVMs)}
 \label{sec:povm_framework_and_derivation}
 
-In traditional quantum metrology, standard interferometers are bounded by Projective Valued Measurements (PVM), which restrict the device to sensing a single physical quantity per experimental run. Tracking multiple environmental parameters or reconstructing the full state usually requires sequential measurements across different configurations, heavily increasing the statistical overhead and cycle times. The high-dimensional ground state manifold of $^{87}\text{Sr}$ allows us to bypass these rigid constraints through parallelized architectures. Specifically, we demonstrated a parallel quantum sensor designed to simultaneously extract both the linear and the quadratic components of an external degeneracy-lifting field in a single shot. In the context of magnetic or optical field sensing, this capability is highly powerful: it enables the simultaneous measurement of a physical quantity such as a a transition (e.g optical clock transition) and the fluctuations on another quantity such as the $\vec{B}$ field, separating tracking signatures that would otherwise require separate, destructive measurement cycles.
+In traditional quantum metrology, standard interferometers are bounded by Projective Valued Measurements (PVM), which restrict the device to sensing a single physical quantity per experimental run. Tracking multiple environmental parameters or reconstructing the full state usually requires sequential measurements across different configurations, heavily increasing the statistical overhead and cycle times. The high-dimensional ground state manifold of $^{87}\text{Sr}$ allows us to bypass these rigid constraints through parallelized architectures. Specifically, we demonstrated a parallel quantum sensor designed to simultaneously extract both the linear and the quadratic components of an external degeneracy-lifting field in a single shot.
 
-To formally understand how a quantum system can extract such complementary pieces of information simultaneously, one look at the generalization of the measurement postulate via Positive-Operator-Valued Measures (POVM)~\cite{Massar2007, Bergou2008} of the reduced space of a two level object. Indeed, standard PVMs face a fundamental impossibility when trying to obtain complete information on a Hilbert space from a single outcome. Let us consider a system that produces either of these two non-orthogonal states, and try to extract from measruements which state is produced. For instance:
+To formally understand how a quantum system can extract such complementary pieces of information simultaneously, one look at the generalization of the measurement postulate via Positive-Operator-Valued Measures (POVM)~\cite{Massar2007, Bergou2008} of the reduced space of a two level object. Indeed, standard PVMs face a fundamental impossibility when trying to obtain complete information on a Hilbert space from a single outcome. Let us consider a system that produces either of these two non-orthogonal states of a two-level object, and try to extract from measurements which state is produced. For instance:
 \[
 \left\{ \ket{\psi_1} = \ket{0}, \quad \ket{\psi_2} = \frac{1}{2}\ket{0} + \frac{\sqrt{3}}{2}\ket{1} \right\}
 \]
@@ -286,7 +289,7 @@ In this basis, the fundamental projective measurements (PVM) associated with sta
     \hat{E}_4 = \left|-\frac{3}{2}\right\rangle\left\langle -\frac{3}{2}\right|.
 \end{equation}
 
-The pulse sequence consists of a differential phase accumulation $\phi$ applied to state $\ket{-5/2}$, described by the phase operator:
+The pulse sequence consists of a differential phase accumulation $\phi$ applied to state $\ket{-5/2}$ (and other states but not our interest here), described by the phase operator:
 \begin{equation}
     \hat{\Phi}(\phi) = \text{diag}\left(1, 1, e^{-i\phi}, 1\right),
 \end{equation}
@@ -309,14 +312,17 @@ Carrying out the matrix multiplication for $\hat{E}_2' = \hat{\Phi}^\dagger \hat
 
 Similarly, evaluating the transformed operator for the fourth detection channel $\hat{E}_4' = \hat{\Phi}^\dagger \hat{X}_{\pi/2}^\dagger \hat{E}_4 \hat{X}_{\pi/2} \hat{\Phi}$ accounts for the differential phase factor $e^{-i\phi}$ accumulated on the $\ket{-5/2}$ state:
 \begin{equation}
-    \hat{E}_4' = \frac{1}{2} \left[ \left|-\frac{3}{2}\right\rangle\left\langle -\frac{3}{2}\right| + \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right| - i e^{i\phi} \left|-\frac{3}{2}\right\rangle\left\langle -\frac{5}{2}\right| + i e^{-i\phi} \left|-\frac{5}{2}\right\rangle\left\langle -\frac{3}{2}\right| \right].
+    \hat{E}_4' = \frac{1}{2} \left[ \left|-\frac{3}{2}\right\rangle\left\langle -\frac{3}{2}\right| + \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right| - i e^{-i\phi} \left|-\frac{3}{2}\right\rangle\left\langle -\frac{5}{2}\right| + i e^{i\phi} \left|-\frac{5}{2}\right\rangle\left\langle -\frac{3}{2}\right| \right].
 \end{equation}
+
+$\hat{E_1'}$ and $\hat{E_2'}$ could be measured in the same shot but it would be preferable to extend the space to more $m_F$ states 
+to reduce SQL noise.
 
 \subsubsection{Reduction to the target qubit subspace}
 
 While the set $\{\hat{E}_i'\}$ forms a valid PVM over the full four-level space $\mathcal{H}_4$, the initial physical state $\ket{\psi} = \alpha \ket{-5/2} + \beta \ket{-7/2}$ is strictly prepared inside the two-level target qubit subspace $\mathcal{H}_{\text{qubit}} = \left\{\left|-\frac{7}{2}\right\rangle, \left|-\frac{5}{2}\right\rangle\right\}$.
 
-In the geometric state-discrimination framework described by Bergou~\cite{Bergou2008}, measurement probabilities correspond to state overlaps $P(i) = \bra{\psi} \hat{E}_i' \ket{\psi}$. Because the prepared state has zero initial population in the auxiliary states $\left|-\frac{9}{2}\right\rangle$ and $\left|-\frac{3}{2}\right\rangle$, we have the boundary conditions:
+In Bergou~\cite{Bergou2008} framework, measurement probabilities correspond to state overlaps $P(i) = \bra{\psi} \hat{E}_i' \ket{\psi}$. Because the prepared state has zero initial population in the auxiliary states $\left|-\frac{9}{2}\right\rangle$ and $\left|-\frac{3}{2}\right\rangle$, we have:
 \begin{equation}
     \left\langle -\frac{9}{2} \middle| \psi \right\rangle = 0, \quad \left\langle -\frac{3}{2} \middle| \psi \right\rangle = 0.
 \end{equation}

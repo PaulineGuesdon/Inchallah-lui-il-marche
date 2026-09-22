@@ -6,7 +6,6 @@ Database file #1: ref.bib
 Database file #2: spincontrol_refs.bib
 Warning--entry type for "notemixture" isn't style-file defined
 --line 62 of file spincontrol_refs.bib
-Warning--I didn't find a database entry for "bataille_adiabatic_2020"
 Warning--empty journal in bataille_realisation_nodate
 Warning--empty year in bataille_realisation_nodate
 Warning--empty booktitle in stellmer_degenerate_2014
@@ -18,7 +17,7 @@ Warning--empty journal in reichenbach_optical_nodate
 Warning--empty year in reichenbach_optical_nodate
 You've used 125 entries,
             1876 wiz_defined-function locations,
-            1243 strings with 29896 characters,
+            1242 strings with 29873 characters,
 and the built_in function-call counts, 39529 in all, are:
 = -- 3805
 > -- 2140
@@ -57,4 +56,4 @@ warning$ -- 9
 while$ -- 293
 width$ -- 128
 write$ -- 1272
-(There were 11 warnings)
+(There were 10 warnings)

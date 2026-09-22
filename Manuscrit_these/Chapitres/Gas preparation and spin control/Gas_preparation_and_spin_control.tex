@@ -93,7 +93,8 @@ Fig.~\ref{fig:sequence_sr87}.
     \includegraphics[width=\textheight]{Chapitres/Gas preparation and spin control/images/sequence_Sr87_final.pdf}
     \caption[Experimental sequence for the magnetic field, laser intensities, and laser frequencies]{Experimental sequence for the magnetic field, laser intensities, and laser frequencies as a function of time, spanning the blue MOT through to time-of-flight imaging. Indicated intensities
     are the mean intensity in each fiber of the cooling stage (e.g intensity in 1/3 of the MOT fibers). Both real physical values and instructions on the variable attenuator (VA,VC,VD, BMOT) and the frequencies on the AOM's are writen for the reader and the experimentators of this machine. 
-    \textbf{Top:} magnetic field gradient (BMOT) and the three bias/compensation coil voltages (VA, VC, VD). \textbf{Middle:} intensities of the $461~$nm, $403~$nm, $689~$nm, and $1075~$nm light. \textbf{Bottom:} frequency detunings of the entire red cooling stages. Frequencies of 
+    \textbf{First:} magnetic field gradient (BMOT) and the three bias/compensation coil voltages (VA, VC, VD). \textbf{Second:} intensities of the $461~$nm, $403~$nm, $689~$nm, and $1075~$nm light. \textbf{Third:} AOM frequency of the entire red cooling stages. \textbf{Fourth} Real frequencies
+    compared to the 9/2 state for the stirring laser and 11/2 for the MOT. Plain lines is the real experimental rampes and dashed rampes are the ideal ones for the optimization of the experiment (see more details in \ref{BB MOT}). Frequencies of 
     blue MOT, repumper and reservoir/dimple beams are not indicated since they do not change through the entire sequence. 
     The bottom right inset details the imaging sequence (probe, reference, and dark exposures).}
     \label{fig:sequence_sr87}
@@ -301,7 +302,7 @@ the summation of the 'AOM Inj Slave 1' that enables to access GHz away transitio
 
 Double-pass AOMs then fine-tune the frequency of MOT and Stir beams individually before splitting into three spatial counter-propagating beam pairs, bringing the actual atom-light detuning down to the much smaller values used for trapping (see below).
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/table_rouge.pdf}
     \caption{Optical setup of the $689~\text{nm}$ laser cooling system.}
@@ -309,48 +310,52 @@ Double-pass AOMs then fine-tune the frequency of MOT and Stir beams individually
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/LevelDiagramRed.pdf}
     \caption[Frequencies of the red lasers used for the red MOT cooling stages]{Frequencies of the red lasers used for the red MOT cooling stages and optical pumping. The red dashed lines correspond to the tunable frequencies, the dark plain lines for the $^{87}Sr$ hyperfine states of transition $^3P_J$ and the $^{88}Sr$}
     \label{frequences rouges}
 \end{figure}
 
-\subsubsection{Broadband MOT}
+\subsubsection{Swap cooling, broadband MOT to narrowband}
+\label{BB MOT}
 At the end of the blue MOT, approximately $30$ million atoms have been captured; their
 spatial spread ($ \simeq 300~\mu\text{m}$, reached at the end of the SWAP stage)
 and thermal energy exceed the capture velocity of a single-frequency $689~\text{nm}$
 MOT. To capture these thermal atoms, a broadband MOT is implemented on the
 $^1S_0\,(F=9/2) \rightarrow {}^3P_1\,(F=11/2)$ transition under a weak magnetic field
 gradient ($\Delta B \simeq 1~\text{G/cm}$, bias coil voltage VA = 0.50), operated in
-two successive stages.
+two successive stages. In parallel a redistribution of the spin is assured by a stirring 
+laser, its function explained in the following subsection. 
 
 In the first stage, lasting $182~\text{ms}$, SWAP (Sawtooth Wave Adiabatic Passage) cooling is applied
-\cite{bartolotta_laser_2018}. Two counter-propagating beams have their frequency swept
-slowly and linearly through resonance, then reset almost instantaneously back to the start
-of the ramp. The slow ramp is adiabatic and drives two sequential, stimulated transfers --
-absorption from the beam the atom is moving towards, followed by emission into the
-opposing beam, their Doppler shifts setting the time ordering -- removing $2\hbar k$ of
-momentum per sweep without relying on spontaneous emission. The fast reset, in contrast,
+\cite{bartolotta_laser_2018}. As illustrated in \ref{fig:swap-mechanism} two counter-propagating beams have their frequency swept through resonance, 
+then reset almost instantaneously back to the initial frequency
+of the ramp. The ramp drives two sequential, stimulated transfers: first
+absorption from the beam the atom is moving towards. The laser gets on resonance with the 
+Doppler shifted atom at $\omega_L - kv$. The frequency of the laser still increasing then 
+becomes resonant with the opposite polarized laser which affects the atom with a new velocity
+v' after the absorption: by emission into the opposing beam $2\hbar k$ are removed of momentum 
+per sweep without relying on spontaneous emission. The fast reset, in contrast,
 is deliberately non-adiabatic so that it drives no transfer, and hence no momentum kick,
-back the other way; a symmetric ramp would instead undo the cooling just achieved. The
-trapping beam (MOT) is swept between $111.9$ and $110.4~\text{MHz}$ -- corresponding to a
+back the other way; a symmetric ramp would instead undo the cooling just achieved. 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/swap_mechanism.pdf}
+    \caption[Mechanism of SWAP (sawtooth-wave adiabatic passage) cooling]{Mechanism of SWAP cooling, adapted from \cite{bartolotta_laser_2018}. Left: over one slow rise of the sawtooth $\omega_L(t)$, the laser successively crosses the two Doppler-shifted resonance conditions $\omega_a - kv$ and $\omega_a + kv'$, driving first an absorption then a stimulated emission into the opposing beam; the fast reset transfers no population. Top right: the corresponding two-level picture, showing the atom transiently promoted to $\ket{e}$ before returning to $\ket{g}$ with a net momentum change of $-2\hbar k$. Bottom right: geometry, with the atom (velocity $v$) between two counter-propagating beams sharing the same swept frequency $\omega_L(t)$.}
+    \label{fig:swap-mechanism}
+\end{figure}
+
+
+The trapping beam (MOT) is swept between RF frequencies $111.9$ and $110.4~\text{MHz}$ -- corresponding to a
 real detuning from the $^3P_1\,(F'=11/2)$ resonance (calibrated at $110.34~\text{MHz}$ on
 this AOM) of $-6.24~\text{MHz}$ to $-240~\text{kHz}$ -- while the stirring
 beam (STIR, see below) is swept between $105.25$ and $103.7~\text{MHz}$
 \textcolor{red}{\textbf{[TODO: convert to real detuning from $F'=9/2$ once its resonance
 is measured on this AOM]}}, both starting at
-an intensity of $I_{A100}(MOT87) = 5~mW/cm^2$ and $I_{A100}(STIR) = 2~mW/cm^2$. After $9.3~\text{ms}$, the repumper pulse
-described above interrupts the STIR sweep for $3.2~\text{ms}$; the MOT and STIR sweeps then
-resume for the remainder of the $182~\text{ms}$ stage. As the cloud cools and compresses
-during this stage, the modulation amplitude $\Delta f$ is progressively ramped down together
-with the optical power, which reaches $I_{A85} = 4.3~mW/cm^2$ for the MOT beam and
-still $I_{A85} = 2~mW/cm^2$ for the STIR beam by the end of the stage. This process is
-illustrated by the scheme of Fig.~\ref{fig:intro-red-mot-3-steps}, which represents the
-total electronic spin projection as a function of B and position, with the bottom panel 
-that corresponds to the actual frequency ramp in time. In the top figures dots on the 
-Zeeman states indicates in black the states adressed at $t_0$ of the rampes, and in orange
-the ones adressed by the frequency at $t_1$.
+an intensity of $I_{A100}(MOT87) = 5~mW/cm^2$ and $I_{A100}(STIR) = 2~mW/cm^2$.
 
 In principle, since SWAP relies on an adiabatic passage through resonance to generate a
 deterministic momentum kick on every sweep, the detuning should start blue of resonance,
@@ -359,6 +364,26 @@ cloud cools further. In practice, however, the implemented sweep range given abo
 ($-6.24$ to $-240~\text{kHz}$) remained entirely red-detuned relative to the $F'=11/2$
 resonance and never actually crossed it -- indicating that this parameter was not fully
 optimized (already represented in the sequence scheme \ref{fig:sequence_sr87}).
+
+
+After $9.3~\text{ms}$, the repumper pulse
+described above interrupts the SWAP of the MOT and STIR sweeps for $3.2~\text{ms}$; the MOT and STIR sweeps then
+resume for the remainder of the $182~\text{ms}$ stage. As the cloud cools and compresses
+during this stage, the modulation amplitude $\Delta f$ is progressively ramped down together
+with the optical power, which reaches $I_{A85} = 4.3~mW/cm^2$ for the MOT beam and
+still $I_{A85} = 2~mW/cm^2$ for the STIR beam by the end of the stage. Toward the end of this
+first stage, the sweep transitions into a broadband-capture phase, using a symmetric triangular
+ramp (no fast reset) to sweep continuously across a broader range of Zeeman sub-levels, as
+illustrated in Fig.~\ref{fig:intro-red-mot-3-steps}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf}
+    \caption[Broadband capture stage of the $689~\text{nm}$ red MOT.]{Broadband capture stage of the $689~\text{nm}$ red MOT (adapted from \cite{stellmerThesis}). Top: Zeeman sublevels depending on the B field and position since $B \propto x$. Dark dots show the Zeeman states adressed
+    at $t_0$ by the laser rampe plotted on the bottom figure. The orange dots are the Zeeman states adressed at $t_1$ by the same laser rampe.}
+    \label{fig:intro-red-mot-3-steps}
+\end{figure}
+
 
 In the second stage, lasting $250~\text{ms}$ and visible on the right of
 Fig.~\ref{fig:intro-red-mot-3-steps}, the cooling light is modulated with a conventional
@@ -393,19 +418,6 @@ Clebsch-Gordan coefficients, favors the restoring transition by a ratio as
 high as 55:1 in the most extreme case, so that the force averaged over many
 scattering events remains restoring \cite{stellmerThesis}.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\linewidth]{Chapitres/Gas preparation and spin control/images/need_for_stir.pdf}
-\caption[Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1,
-F=11/2$ level]{(Adapted from \cite{stellmerThesis}) Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1,
-F=11/2$ level. The position-dependent Zeeman shift brings the two counter-propagating
-beams into resonance with different $m_F'$ sub-levels ($\sigma^+$ with the closed
-transition to $m_F'=11/2$, $\sigma^-$ with the open transition to $m_F'=7/2$) at the same
-position. The imbalance between the two processes, set by their Clebsch-Gordan
-coefficients, still favors restoring trapping locally (see text); the actual loss
-mechanism is discussed below.}
-\label{fig:intro-need-for-stir}
-\end{figure}
 
 The condition for stable operation of a $F\to F+1$ MOT transition requires the
 double inequality $F/(F+1) < g_e/g_g < F/(F-1)$ to hold \cite{stellmerThesis}.
@@ -419,6 +431,21 @@ vertically, remaining within resonance over such a narrow range of $x$ that
 they are, in practice, essentially unaddressed by a fixed-frequency beam
 (Fig.~\ref{fig:intro-randomisation}, left panel, akin to Fig.~2.8(d) of
 \cite{stellmerThesis}).
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{Chapitres/Gas preparation and spin control/images/need_for_stir.pdf}
+\caption[Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1,
+F=11/2$ level]{(Adapted from \cite{stellmerThesis}) Illustration of the MOT effect on the $m_F$ states of the hyperfine $^3P_1,
+F=11/2$ level. The position-dependent Zeeman shift brings the two counter-propagating
+beams into resonance with different $m_F'$ sub-levels ($\sigma^+$ with the closed
+transition to $m_F'=11/2$, $\sigma^-$ with the open transition to $m_F'=7/2$) at the same
+position. The imbalance between the two processes, set by their Clebsch-Gordan
+coefficients, still favors restoring trapping locally (see text); the actual loss
+mechanism is discussed below.}
+\label{fig:intro-need-for-stir}
+\end{figure}
 
 The actual loss mechanism therefore appears when an atom finds itself on the
 \emph{wrong} side of the trap for its $m_F$ state. There, neither beam can
@@ -454,7 +481,7 @@ would otherwise remain trapped in an unfavorable $m_F$ state on the wrong
 side of the trap back within reach of the cycling transition, restoring
 efficiency to the cooling cycle.
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.95\linewidth]{Chapitres/Gas preparation and spin control/images/spin_randomization.pdf}
 \caption[Illustration of the melange concept on the $^1S_0(F=9/2) \rightarrow
@@ -491,12 +518,6 @@ single-frequency (monofrequency) MOT during a magnetic field ramp to $V_D = 0.70
 ($\Delta B \simeq 2.5~\text{G/cm}$). This
 stage reduces the temperature to $1\text{--}2~\mu\text{K}$ (near the recoil limit) with a
 peak density of $n \simeq 10^8~$at/cm$^3$ and a size of 30~$\mu$m.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/red_MOT_in_3_steps.pdf}
-    \caption[Sequential stages of the $689~\text{nm}$ red MOT.]{Sequential stages of the $689~\text{nm}$ red MOT. From left to right : swap cooling and broadband capture (adapted from \cite{stellmerThesis}). The size of the cloud is decreasing with the cooling since the atoms are kicked in the opposite direction of the resonant laser of right polarization.}
-    \label{fig:intro-red-mot-3-steps}
-\end{figure}
 
 \subsubsection{Optimization of narrowband MOT Parameters}
 
@@ -507,7 +528,9 @@ Cooling efficiency during the single-frequency stage depends on precise frequenc
     \item \textbf{Intensity ramp and power broadening:} High intensities $I/I_{sat}=400 $ to 1600 provide a deep trap for initial capture, but causes power broadening ($\Gamma_{\text{eff}} = \Gamma \sqrt{1 + I/I_s}$), raising the achievable Doppler limit. For single-frequency cooling, intensity is adiabatically ramped down over $45~\text{ms}$ to reduce power broadening while maintaining sufficient force to support the cloud against gravity.
 \end{itemize}
 
-Atoms are progressively loaded into the ODT while decreasing the intensity of the
+\subsection{Optical Dipole Trap (ODT) and evaporative cooling}
+\subsubsection{Loading the crossed ODT}
+Atoms are adiabatically loaded into the ODT while decreasing the intensity of the
 single-frequency $689~\text{nm}$ red MOT during a ramp lasting
 approximately $45~\text{ms}$. From second-order perturbation theory, the light shift experienced by the energy levels yields
 the optical dipole potential:
@@ -576,11 +599,11 @@ For further details on loading atoms into the optical crossed dipole trap, the r
 
 \subsubsection{Optical setup}
 The 1075 nm light from the IPG laser is split by a half-wave plate and polarizing beamsplitter into the two arms described above (Fig.~\ref{setup evap}). The horizontal arm forms the ``Reservoir'' beam: a pair of cylindrical lenses (f = -50 mm and f = -75 mm) shapes the elliptical beam into an anisotropic ellipse, with nominal waists of $w^h = 147~\mu$m (horizontal) and $w^v = 34~\mu$m (vertical) at the lens focal plane. However, the atoms sit $\simeq$ 3.3~mm beyond this focus rather than at the waist itself, so that the vertical waist they actually experience is somewhat
-larger, $w^v \simeq 47~\mu$m, while the horizontal waist remains close to its nominal value at this distance. The second arm forms the ``Dimple'' beam, focused by a spherical lens (f = 300 mm), its waist crossing the reservoir arm at the position of the atoms, at $\simeq 30^\circ$ from vertical; astigmatism in this arm means its two transverse waists are not equidistant from the atoms either (measured at $\simeq$ 4.5~mm and $\simeq$ 7~mm, respectively).
+larger, $w^v \simeq 47~\mu$m, while the horizontal waist remains close to its nominal value at this distance. The second arm forms the ``Dimple'' beam, focused by a spherical lens (f = 300 mm) and crossing the reservoir arm at the position of the atoms, at $\simeq 30^\circ$ from vertical; astigmatism in this arm means its two transverse waists are not equidistant from the atoms either (measured at $\simeq$ 4.5~mm and $\simeq$ 7~mm, respectively).
 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png}
+    \includegraphics[width=0.85\linewidth]{Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png}
     \caption{Optical setup of the 1075 nm crossed dipole trap laser system.}
     \label{setup evap}
 \end{figure}
@@ -590,7 +613,7 @@ For the photoassociation measurements presented in Chapter 3, quantum degeneracy
 \section{Spin Selection}
 
 \subsection{Optical Pumping}
-Optical pumping is implemented prior to the final evaporation stages to prepare the atomic gas in a tailored mixture of nuclear spin states ($m_F$). Elastic $s$-wave collisions between identical fermions in the same $m_F$ state are forbidden by the Pauli exclusion principle. Therefore, at least two distinct spin components must be present to enable elastic collisions and ensure efficient re-thermalization during evaporative cooling. Furthermore, $SU(N)$ symmetry guarantees that elastic collisions conserve the nuclear spin state, preventing spin-exchange collisions during evaporation.
+Optical pumping is implemented prior to the final evaporation stages to prepare the atomic gas in a tailored mixture of nuclear spin states ($m_F$). Due to the $SU(N)$ symmetry of $^{87}\text{Sr}$, elastic $s$-wave collisions between identical fermions in the same $m_F$ state are forbidden by the Pauli exclusion principle. Therefore, at least two distinct spin components must be present to enable elastic collisions and ensure efficient re-thermalization during evaporative cooling. Furthermore, $SU(N)$ symmetry guarantees that elastic collisions conserve the nuclear spin state, preventing spin-exchange collisions during evaporation.
 
 To perform state preparation, a bias magnetic field of $6.05 \pm 0.05~\text{G}$ is applied to lift the degeneracy of the $^3P_1, F = 11/2$ hyperfine sub-levels via the linear Zeeman effect. The cloud is illuminated by a $\sigma^-$-polarized optical pumping beam tuned to the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition. Its frequency is defined as:
 \begin{equation}
@@ -607,16 +630,16 @@ progressive accumulation of population in the target spin states.
 
 To prepare a specific mixture (e.g., a 2-spin mixture), unwanted spin populations are sequentially pumped out. One spin component, typically $m_F = -9/2$, is intentionally retained alongside the target mixture to maintain two-body elastic collisions for thermalization during evaporation. Once evaporative cooling is complete, this auxiliary component can be selectively removed using a short \textbf{'blast'} pulse. Under $\sigma^-$ excitation on the $F=9/2 \rightarrow F'=11/2$ transition, the $m_F = -9/2$ state couples exclusively to $m_F' = -11/2$. Because no $m_F = -11/2$ ground state exists, spontaneous emission from $m_F' = -11/2$ can only decay back to $m_F = -9/2$, forming a closed cycling transition. The resulting continuous photon scattering exerts a strong radiation pressure that expels the $m_F = -9/2$ population from the trap without disturbing the target single state or mixture. In practice, the blast pulse frequency is swept over a narrow range through resonance
 (rather than held fixed) to make the removal insensitive to small drifts in laser
-frequency or magnetic field calibration \cite{bataille_adiabatic_2020}.
+frequency or magnetic field calibration \cite{Bataille2020}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/optical_pumping_bataille2020.pdf}
-    \caption[Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition]{Extracted from \cite{bataille_realisation_nodate} Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition used to prepare a specific nuclear spin mixture. The red laser is ramped through the target energy level of $^3P_1$: the atoms decay to neighbours states $m_F \pm 1$ of $^1S_0$}
+    \caption[Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition]{Optical pumping scheme on the $^1S_0 (F=9/2) \rightarrow {}^3P_1 (F=11/2)$ transition used to prepare a specific nuclear spin mixture. The red laser is ramped through the target energy level of $^3P_1$: the atoms decay to neighbours states $m_F \pm 1$ of $^1S_0$}
     \label{fig:intro-optical-pumping}
 \end{figure}
 
-\section{Lasers for spin manipulation}
+\section{Lasers for spin Manipulation}
 We developed a method demonstrated in \cite{Bataille2020} for coherent control within the ground state manifold of zeeman sublevels. it relies on tensor shifts enacted by a laser operating near 689 nm, and will be described in detail in chapter 2. At a later stage, we performed photoassociation experiments in the vicinity of the intercombination manifold, see chapter 3. Both experiments actually rely on the same laser system, that I will present here.
 
 \subsection{External Cavity Diode Laser (ECDL)}
@@ -630,13 +653,12 @@ is first collimated by a collimation lens, before its frequency is roughly selec
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{Chapitres/Gas preparation and spin control/images/ecdl_cateye.pdf}
-    \caption[External Cavity Diode Laser architecture used for spin manipulation]{External Cavity Diode Laser (ECDL) architecture. A diode lasing at 689~nm is first collimated by a lens, then its frequency is roughly selected by an interference filter marked in red. The beam is focused by a second lens onto a partially reflective mirror (hatched rectangle): together they form a cat's-eye retroreflector that closes the external cavity, feeding most of the light back for resonant frequency filtering while transmitting a small fraction onward. This output is collimated by a last lens and leaves the laser head through an optical isolator. }
+    \caption[MOGlabs External Cavity Diode Laser architecture used for spin manipulation]{MOGlabs External Cavity Diode Laser (ECDL) architecture used for spin manipulation. A diode lasing at 689~nm is first collimated by a lens, then its frequency is roughly selected by an interference filter marked in red. The beam is focused by a second lens onto a partially reflective mirror (hatched rectangle): together they form a cat's-eye retroreflector that closes the external cavity, feeding most of the light back for resonant frequency filtering while transmitting a small fraction onward. This output is collimated by a last lens and leaves the laser head through an optical isolator.}
     \label{fig:ecdl-laser}
 \end{figure}
 
-The laser is beat-locked to a master optical reference adapted to the specific experimental requirements.
-An internal PID controller robustly compensates from this beating signal for thermal and mechanical drifts of 
-the cavity length as well as diode current fluctuations. 
+An internal PID controller robustly compensates for thermal and mechanical drifts of 
+the cavity length as well as diode current fluctuations. The laser is subsequently beat-locked to a master optical reference adapted to the specific experimental requirements.
 
 \subsubsection{Problems encountered on the MOGlabs ECDL}
 For years, this ECDL exhibited a recurring instability that directly affected our experiments. We operate this laser far above threshold, at a fixed, high diode current chosen to maximize its output intensity on the external-cavity mode we lock to on a daily basis. As intracavity losses accumulated with time, however, the laser's entire mode spectrum -- the current-dependent map linking diode current to wavelength and output intensity -- drifted: at this same fixed operating current, the mode we needed was no longer the one giving maximum intensity, so the laser no longer delivered its usual output power on the intended wavelength. Rather than changing the operating current, we instead had to open the laser head and reduce the intracavity losses; lowering the laser's threshold in this way shifted the whole mode spectrum back, restoring the correspondence between our fixed operating current and maximum output intensity on the intended mode. This drift was eventually traced to two independent hardware issues, both responsible for a progressive loss of intracavity intensity:
@@ -667,13 +689,13 @@ where $q$ parameterizes the quadratic (tensor) light shift and $\beta$ represent
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\linewidth]{Chapitres/Gas preparation and spin control/images/TLS_et_raman.pdf}
-\caption[Spin manipulation scheme extracted from \cite{bataille_realisation_nodate}]{Spin manipulation scheme of \cite{bataille_realisation_nodate}. The isolation of spin states is allowed by the tensorial shift of the ground states that makes neighbours $m_F$ states isolated from the other resonances.}
+\caption[Spin manipulation scheme extracted from \cite{bataille_realisation_nodate}]{Spin manipulation scheme of \cite{bataille_realisation_nodate}. The isolation of spin states is allowed by the tensorial shift of the ground states that makes neighbours $m_F$ states isolated from the other resonances. The Bloch sphere represents the reduced Hilbert space of the selected qubit.}
 \label{fig:tls-raman-scheme}
 \end{figure}
 
 For more details this process is discussed in the second chapter of this thesis and also in the article of the group \cite{Bataille2020}.
 
-\subsubsection{Experimental Setup of the Raman process}
+\subsubsection{Experimental setup of the Raman and PA process}
 The two-photon process is driven by two distinct beams: a first beam derived from the ``AOM TLS'' laser (shown in red in Fig.~\ref{fig:raman-transitions}) generates the TLS and supplies the first photon. A second beam, frequency-shifted by the ``AOM Raman'' (shown in blue), completes the Raman transition.
 
 The TLS beam polarization is set parallel to the magnetic field ($\pi$ transitions), producing a purely scalar/tensor light shift with no vector component. The Raman beam polarization is linear and orthogonal to the magnetic field, so that its decomposition onto $\sigma^+$ and $\sigma^-$ components drives the required $\Delta m_F = \pm 1$ legs of the two-photon transition -- one photon absorbed from the $\pi$-polarized TLS beam, one photon emitted into the $\sigma^{\mp}$ component of the Raman beam.
@@ -691,9 +713,6 @@ The complete optical path for this two-photon process, together with the filteri
 
 To reduce amplified spontaneous emission (ASE) from the laser source -- and thereby minimize stray light and photon-recoil heating during spin manipulation -- the optical chain incorporates a custom-built, PDH-stabilized confocal Fabry-Pérot cavity, detailed in Sec.~\ref{FP cavity}. The effect of the ASE has been observed by the heating of the gas while the laser was 
 hundred's of MHz off resonance of transitions where we expect really low spontaneous emission. This cavity was originally built with these Raman TLS experiments in mind; however, by the time its construction was completed the corresponding measurements had already been carried out, and the experimental effort had moved on to the photoassociation spectroscopy presented in Chapter 3 -- for which the cavity turned out to be essential, given the higher sensitivity of these measurements to stray light. It is intended to be used again for future extensions of the Chapter 2 spin-manipulation experiments.
-
-\subsection{Optical bench for photoassociation experiments}
-Chapter 3 investigates photoassociation spectroscopy below the intercombination line. For these measurements, the full power of the laser is sent through the ``AOM lattice 689'' since the other AOM is not useful anymore, and the filtering cavity introduced above (Sec.~\ref{FP cavity}) is used for all datasets presented in that chapter.
 
 \subsection{Fabry-Pérot cavity and PDH Locking system}
 \label{FP cavity}
@@ -715,7 +734,7 @@ To fulfill these requirements, we selected curved mirrors with a diameter of $D 
 
 Proper cavity operation requires the mirrors to be aligned precisely parallel to each other and perpendicular to the optical propagation axis. In our initial implementation (Fig.~\ref{miroirs cav before} top), the mirrors were permanently glued into place. However, this approach introduced major technical issues over time: excess glue migrated onto the optical surfaces, degrading overall transmission, while alignment errors during gluing introduced an uncorrected angular tilt relative to the beam axis.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/cavity_mount.pdf}
     \caption[Fabry-Pérot comparison of cavity construction method]{Top : Initial fixed cavity assembly using glued mirrors, lacking mechanical alignment degrees of freedom. Bottom : Upgraded and final cavity mount featuring three adjustment screws and compliant washers for precise angular and longitudinal alignment}
