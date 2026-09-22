@@ -351,14 +351,21 @@ As a consequence, any matrix elements of $\hat{E}_i'$ acting purely on $\ket{-9/
 
 Applying this projection to $\hat{E}_2'$ isolates the populated block, which retains the $\phi$-dependent coherence between the two qubit states:
 \begin{equation}
-    \hat{M}_2 = \frac{1}{4} \left[ \left|-\frac{7}{2}\right\rangle\left\langle -\frac{7}{2}\right| + \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right| - i e^{-i\phi} \left|-\frac{7}{2}\right\rangle\left\langle -\frac{5}{2}\right| + i e^{i\phi} \left|-\frac{5}{2}\right\rangle\left\langle -\frac{7}{2}\right| \right].
+    \hat{M}_2 = \frac{1}{4} \left[ \left|-\frac{7}{2}\right\rangle\left\langle -\frac{7}{2}\right| + \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right| - i e^{-i\phi} \left|-\frac{7}{2}\right\rangle\left\langle -\frac{5}{2}\right| + i e^{i\phi} \left|-\frac{5}{2}\right\rangle\left\langle -\frac{7}{2}\right| \right]. \label{eq:M2}
 \end{equation}
 
 Likewise, projecting $\hat{E}_4'$ eliminates the unpopulated auxiliary states $\ket{-9/2}$ and $\ket{-3/2}$, leaving:
 \begin{equation}
-    \hat{M}_4 = \frac{1}{2} \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right|.
+    \hat{M}_4 = \frac{1}{2} \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right|. \label{eq:M4}
 \end{equation}
 
 The set of restricted operators $\{\hat{M}_i\}$ on $\mathcal{H}_{\text{qubit}}$ are non-orthogonal ($\hat{M}_i^2 \neq \hat{M}_i$) and positive semi-definite ($\hat{M}_i \ge 0$), yet they fulfill the completeness relation $\sum_i \hat{M}_i = \mathbb{I}_{\text{qubit}}$. Restricting a global projective measurement on an extended Hilbert space to an active target subspace by eliminating unpopulated auxiliary channels provides a direct physical construction of a POVM.
+
+Since $\hat{P}_{\text{qubit}}\ket{\psi} = \ket{\psi}$ for the qubit-restricted state, the click probabilities coincide with those of the full-space operators, $P(i) = \bra{\psi}\hat{E}_i'\ket{\psi} = \bra{\psi}\hat{M}_i\ket{\psi}$, so that the measured populations obey $\langle N_{-3/2}\rangle = N_{at}\langle \hat{M}_4\rangle$ and $\langle N_{-7/2}\rangle = N_{at}\langle \hat{M}_2\rangle$. Combined with the definitions of the collective pseudo-spin observables in terms of these same populations, this directly expresses the mean pseudo-spin projections in terms of the POVM outcome probabilities:
+\begin{equation}
+    \langle \hat{s}^z_{\uparrow,\downarrow} \rangle = N_{at}\left(2\langle \hat{M}_4\rangle - \frac{1}{2}\right), \qquad
+    \langle \hat{s}^\phi_{\uparrow,\downarrow} \rangle = N_{at}\left(\frac{1}{2} - 2\langle \hat{M}_2\rangle\right).
+\end{equation}
+The $\phi$-independent term in $\hat{M}_4$ (eq.~\eqref{eq:M4}) reflects that $\hat s^z$ does not depend on the interferometric phase, while the coherence carried by $\hat{M}_2$ (eq.~\eqref{eq:M2}) is precisely what makes $\hat s^\phi$ sensitive to $\phi$.
 
 \hl{ajouter ouverture sur mesure hétérodyne comme def d'un POVM} \cite{HacohenGourgy2020} \hl{et l'application de l'article} \cite{Peres1991}
