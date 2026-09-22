@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1790097475.27584 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1790097484.96753 0
-  "./ref.bib" 1789651354.55242 84793 f2f182b75b24769b7314cf79af8c03f3 ""
+["bibtex out/these_main"] 1790117600.28829 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1790117629.15889 0
+  "./ref.bib" 1790116792.05301 84855 8a075dcb8417e5e86cc29fe64ea0f79d ""
   "./spincontrol_refs.bib" 1786519568.72538 549304 6b3bd591fb7a36bddef0122884a01a8a ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1790097483.06387 54446 b328890424b167549f7b53dce785e309 "pdflatex"
+  "out/these_main.aux" 1790117625.41441 54454 f8bc6d352498c94ab48701bee6b89e70 "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1790097475.80903 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1790097484.96829 0
+["pdflatex"] 1790117601.72145 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1790117629.16073 0
   "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1788623417.41311 4763 e3a0d4e837b64b0e7934d61f2f98f0f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -250,7 +250,7 @@
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf" 1779216450.84288 124880 a995a1d3169ba13da03ac75f191c6930 ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf" 1779216450.84503 196863 933448dfb53ed85f14595bebeac7fd5a ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf" 1782917439.77429 138292 87257a98384f328454136a85eb278b77 ""
-  "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1790097457.33974 80408 32c288b839bb8285dbb0684c459fa2ff ""
+  "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1790117058.82692 81156 790dcd7c2e3c2f63d4a07be6a3d96546 ""
   "Chapitres/conclusion/conclusion.tex" 1788854261.26954 4321 dce46de9927fe9bbde296a9c2c9135b5 ""
   "appendix/abstract.tex" 1775984395.99696 153 eee112a5caef8e0926ac11ba0070c6cc ""
   "appendix/mis/acknowledgements.tex" 1775984395.99768 28 c20483b5759ef691c060fd266e58e4d2 ""
@@ -259,12 +259,12 @@
   "appendix/mis/dedication.tex" 1775984395.99955 123 c52d1d8ac73aabfb3f3061e569acf2cb ""
   "appendix/titlepage.tex" 1789034544.31399 943 b98a0910ba494906d90be62b51fbf4ff ""
   "out/these_main.acr" 0 -1 0 ""
-  "out/these_main.aux" 1790097483.06387 54446 b328890424b167549f7b53dce785e309 "pdflatex"
-  "out/these_main.bbl" 1790097475.78951 28962 11c7c819de3cdaad3f5654e3d78ec951 "bibtex out/these_main"
-  "out/these_main.lof" 1790097483.08202 9462 27e94c7dfda498e673e199b37102baf2 "pdflatex"
-  "out/these_main.lot" 1790097483.08253 929 8e3ee2a1e0ed19125592b9ce0c2702c7 "pdflatex"
-  "out/these_main.out" 1790097483.08004 22092 3bf6696c348520db90c5496f90c3ae08 "pdflatex"
-  "out/these_main.toc" 1790097483.08099 9845 72d1adc35a6b5d4f973b8b69703963cc "pdflatex"
+  "out/these_main.aux" 1790117625.41441 54454 f8bc6d352498c94ab48701bee6b89e70 "pdflatex"
+  "out/these_main.bbl" 1790117601.66748 28998 66a2344dce96c346777187cdd597bb7d "bibtex out/these_main"
+  "out/these_main.lof" 1790117625.44655 9462 793ea56ad4e8603dda687f6616a3d717 "pdflatex"
+  "out/these_main.lot" 1790117625.4471 929 578cbf22d74b92a0846b6609ff7c6d0c "pdflatex"
+  "out/these_main.out" 1790117625.44187 22092 3bf6696c348520db90c5496f90c3ae08 "pdflatex"
+  "out/these_main.toc" 1790117625.44582 9845 90766a16436f732a84a56a88c1da5188 "pdflatex"
   "these_main.acr" 0 -1 0 ""
   "these_main.tex" 1788623417.41311 4763 e3a0d4e837b64b0e7934d61f2f98f0f4 ""
   (generated)

@@ -251,7 +251,7 @@ One question is whether this could be amenable to extracting signatures of speci
 
 In traditional quantum metrology, standard interferometers are bounded by Projective Valued Measurements (PVM), which restrict the device to sensing a single physical quantity per experimental run. Tracking multiple environmental parameters or reconstructing the full state usually requires sequential measurements across different configurations, heavily increasing the statistical overhead and cycle times. The high-dimensional ground state manifold of $^{87}\text{Sr}$ allows us to bypass these rigid constraints through parallelized architectures. Specifically, we demonstrated a parallel quantum sensor designed to simultaneously extract both the linear and the quadratic components of an external degeneracy-lifting field in a single shot.
 
-To formally understand how a quantum system can extract such complementary pieces of information simultaneously, one look at the generalization of the measurement postulate via Positive-Operator-Valued Measures (POVM)~\cite{Massar2007, Bergou2008} of the reduced space of a two level object. Indeed, standard PVMs face a fundamental impossibility when trying to obtain complete information on a Hilbert space from a single outcome. Let us consider a system that produces either of these two non-orthogonal states of a two-level object, and try to extract from measurements which state is produced. For instance:
+To formally understand how a quantum system can extract such complementary pieces of information simultaneously, one look at the generalization of the measurement postulate via Positive-Operator-Valued Measures (POVM)~\cite{Massar2007, Bergou2007} of the reduced space of a two level object. Indeed, standard PVMs face a fundamental impossibility when trying to obtain complete information on a Hilbert space from a single outcome. Let us consider a system that produces either of these two non-orthogonal states of a two-level object, and try to extract from measurements which state is produced. For instance:
 \[
 \left\{ \ket{\psi_1} = \ket{0}, \quad \ket{\psi_2} = \frac{1}{2}\ket{0} + \frac{\sqrt{3}}{2}\ket{1} \right\}
 \]
@@ -293,27 +293,44 @@ The pulse sequence consists of a differential phase accumulation $\phi$ applied 
 \begin{equation}
     \hat{\Phi}(\phi) = \text{diag}\left(1, 1, e^{-i\phi}, 1\right),
 \end{equation}
-followed by resonant $\pi/2$ pulse rotations acting simultaneously on the adjacent pairs $\left\{\ket{-9/2}, \ket{-7/2}\right\}$ and $\left\{\ket{-5/2}, \ket{-3/2}\right\}$. In matrix representation over $\mathcal{H}_4$, these beam-splitter-like operations take the block-diagonal form:
+followed by resonant $\pi/2$ pulse rotations acting simultaneously on the adjacent pairs $\left\{\ket{-9/2}, \ket{-7/2}\right\}$ and $\left\{\ket{-5/2}, \ket{-3/2}\right\}$, duplicating the qubit amplitudes onto the ancillary states used for readout. In matrix representation over $\mathcal{H}_4$, this beam-splitter-like operation takes the block-diagonal form:
 \begin{equation}
-    \hat{X}_{\pi/2} = \frac{1}{\sqrt{2}} \begin{pmatrix} 
-    1 & -i & 0 & 0 \\ 
-    -i & 1 & 0 & 0 \\ 
-    0 & 0 & 1 & -i \\ 
-    0 & 0 & -i & 1 
+    \hat{X}_{\pi/2} = \frac{1}{\sqrt{2}} \begin{pmatrix}
+    1 & -i & 0 & 0 \\
+    -i & 1 & 0 & 0 \\
+    0 & 0 & 1 & -i \\
+    0 & 0 & -i & 1
     \end{pmatrix}.
 \end{equation}
 
-The full unitary transformation experienced by the system prior to detection is given by $\hat{U} = \hat{X}_{\pi/2} \hat{\Phi}(\phi)$. In the Heisenberg picture, the bare detection operators transform as $\hat{E}_i' = \hat{U}^\dagger \hat{E}_i \hat{U}$. 
-
-Carrying out the matrix multiplication for $\hat{E}_2' = \hat{\Phi}^\dagger \hat{X}_{\pi/2}^\dagger \hat{E}_2 \hat{X}_{\pi/2} \hat{\Phi}$ explicitly yields:
+The measurement sequence is closed by a final resonant $\pi/2$ pulse acting only on the original qubit pair $\left\{\ket{-7/2}, \ket{-5/2}\right\}$, leaving the ancillary states $\ket{-9/2}$ and $\ket{-3/2}$ untouched:
 \begin{equation}
-    \hat{E}_2' = \frac{1}{2} \left[ \left|-\frac{9}{2}\right\rangle\left\langle -\frac{9}{2}\right| + \left|-\frac{7}{2}\right\rangle\left\langle -\frac{7}{2}\right| + i \left|-\frac{9}{2}\right\rangle\left\langle -\frac{7}{2}\right| - i \left|-\frac{7}{2}\right\rangle\left\langle -\frac{9}{2}\right| \right].
+    \hat{X}^{qubit}_{\pi/2} = \begin{pmatrix}
+    1 & 0 & 0 & 0 \\
+    0 & \frac{1}{\sqrt{2}} & \frac{-i}{\sqrt{2}} & 0 \\
+    0 & \frac{-i}{\sqrt{2}} & \frac{1}{\sqrt{2}} & 0 \\
+    0 & 0 & 0 & 1
+    \end{pmatrix}.
 \end{equation}
 
-Similarly, evaluating the transformed operator for the fourth detection channel $\hat{E}_4' = \hat{\Phi}^\dagger \hat{X}_{\pi/2}^\dagger \hat{E}_4 \hat{X}_{\pi/2} \hat{\Phi}$ accounts for the differential phase factor $e^{-i\phi}$ accumulated on the $\ket{-5/2}$ state:
+The full unitary transformation experienced by the system prior to detection is given by $\hat{U} = \hat{X}^{qubit}_{\pi/2}\, \hat{\Phi}(\phi)\, \hat{X}_{\pi/2}$: the duplicating pulse acts first, followed by the phase accumulation, followed by the closing pulse on the qubit pair. In the Heisenberg picture, the bare detection operators transform as $\hat{E}_i' = \hat{U}^\dagger \hat{E}_i \hat{U}$.
+
+Carrying out the matrix multiplication explicitly, in the basis $\left\{\ket{-9/2}, \ket{-7/2}, \ket{-5/2}, \ket{-3/2}\right\}$, yields for the second and fourth detection channels:
 \begin{equation}
-    \hat{E}_4' = \frac{1}{2} \left[ \left|-\frac{3}{2}\right\rangle\left\langle -\frac{3}{2}\right| + \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right| - i e^{-i\phi} \left|-\frac{3}{2}\right\rangle\left\langle -\frac{5}{2}\right| + i e^{i\phi} \left|-\frac{5}{2}\right\rangle\left\langle -\frac{3}{2}\right| \right].
+    \hat{E}_2' = \frac{1}{4}\begin{pmatrix}
+    1 & i & e^{-i\phi} & -ie^{-i\phi} \\
+    -i & 1 & -ie^{-i\phi} & -e^{-i\phi} \\
+    e^{i\phi} & ie^{i\phi} & 1 & -i \\
+    ie^{i\phi} & -e^{i\phi} & i & 1
+    \end{pmatrix}, \qquad
+    \hat{E}_4' = \begin{pmatrix}
+    0&0&0&0\\
+    0&0&0&0\\
+    0&0&\frac{1}{2}&\frac{i}{2}\\
+    0&0&-\frac{i}{2}&\frac{1}{2}
+    \end{pmatrix}.
 \end{equation}
+Compared to a sequence with only the duplicating pulse, the closing pulse $\hat{X}^{qubit}_{\pi/2}$ mixes the phase accumulated on $\ket{-5/2}$ back into the $\ket{-7/2}$ channel, so that $\hat{E}_2'$ now also carries $\phi$-dependent coherences -- a direct signature of the qubit phase, and the key point of this measurement scheme.
 
 $\hat{E_1'}$ and $\hat{E_2'}$ could be measured in the same shot but it would be preferable to extend the space to more $m_F$ states 
 to reduce SQL noise.
@@ -322,7 +339,7 @@ to reduce SQL noise.
 
 While the set $\{\hat{E}_i'\}$ forms a valid PVM over the full four-level space $\mathcal{H}_4$, the initial physical state $\ket{\psi} = \alpha \ket{-5/2} + \beta \ket{-7/2}$ is strictly prepared inside the two-level target qubit subspace $\mathcal{H}_{\text{qubit}} = \left\{\left|-\frac{7}{2}\right\rangle, \left|-\frac{5}{2}\right\rangle\right\}$.
 
-In Bergou~\cite{Bergou2008} framework, measurement probabilities correspond to state overlaps $P(i) = \bra{\psi} \hat{E}_i' \ket{\psi}$. Because the prepared state has zero initial population in the auxiliary states $\left|-\frac{9}{2}\right\rangle$ and $\left|-\frac{3}{2}\right\rangle$, we have:
+In Bergou~\cite{Bergou2007} framework, measurement probabilities correspond to state overlaps $P(i) = \bra{\psi} \hat{E}_i' \ket{\psi}$. Because the prepared state has zero initial population in the auxiliary states $\left|-\frac{9}{2}\right\rangle$ and $\left|-\frac{3}{2}\right\rangle$, we have:
 \begin{equation}
     \left\langle -\frac{9}{2} \middle| \psi \right\rangle = 0, \quad \left\langle -\frac{3}{2} \middle| \psi \right\rangle = 0.
 \end{equation}
@@ -332,12 +349,12 @@ As a consequence, any matrix elements of $\hat{E}_i'$ acting purely on $\ket{-9/
     \hat{M}_i \equiv \hat{P}_{\text{qubit}} \hat{E}_i' \hat{P}_{\text{qubit}}.
 \end{equation}
 
-Applying this projection to $\hat{E}_2'$ isolates the populated component:
+Applying this projection to $\hat{E}_2'$ isolates the populated block, which retains the $\phi$-dependent coherence between the two qubit states:
 \begin{equation}
-    \hat{M}_2 = \frac{1}{2} \left|-\frac{7}{2}\right\rangle\left\langle -\frac{7}{2}\right|.
+    \hat{M}_2 = \frac{1}{4} \left[ \left|-\frac{7}{2}\right\rangle\left\langle -\frac{7}{2}\right| + \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right| - i e^{-i\phi} \left|-\frac{7}{2}\right\rangle\left\langle -\frac{5}{2}\right| + i e^{i\phi} \left|-\frac{5}{2}\right\rangle\left\langle -\frac{7}{2}\right| \right].
 \end{equation}
 
-Likewise, projecting $\hat{E}_4'$ eliminates the unpopulated state $\ket{-3/2}$ as well as the off-diagonal cross-terms involving $\ket{-3/2}$, leaving:
+Likewise, projecting $\hat{E}_4'$ eliminates the unpopulated auxiliary states $\ket{-9/2}$ and $\ket{-3/2}$, leaving:
 \begin{equation}
     \hat{M}_4 = \frac{1}{2} \left|-\frac{5}{2}\right\rangle\left\langle -\frac{5}{2}\right|.
 \end{equation}

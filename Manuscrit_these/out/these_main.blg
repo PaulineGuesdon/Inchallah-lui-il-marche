@@ -17,43 +17,43 @@ Warning--empty journal in reichenbach_optical_nodate
 Warning--empty year in reichenbach_optical_nodate
 You've used 125 entries,
             1876 wiz_defined-function locations,
-            1242 strings with 29873 characters,
-and the built_in function-call counts, 39529 in all, are:
-= -- 3805
+            1243 strings with 29899 characters,
+and the built_in function-call counts, 39668 in all, are:
+= -- 3825
 > -- 2140
 < -- 0
 + -- 761
 - -- 636
-* -- 2859
-:= -- 5602
+* -- 2863
+:= -- 5612
 add.period$ -- 143
 call.type$ -- 125
 change.case$ -- 121
 chr.to.int$ -- 0
 cite$ -- 134
-duplicate$ -- 2152
-empty$ -- 2945
+duplicate$ -- 2164
+empty$ -- 2952
 format.name$ -- 636
-if$ -- 9644
+if$ -- 9686
 int.to.chr$ -- 0
 int.to.str$ -- 125
 missing$ -- 119
 newline$ -- 399
 num.names$ -- 124
-pop$ -- 289
+pop$ -- 288
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1926
+skip$ -- 1944
 stack$ -- 0
-substring$ -- 1908
-swap$ -- 1233
+substring$ -- 1920
+swap$ -- 1245
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 293
+while$ -- 294
 width$ -- 128
-write$ -- 1272
+write$ -- 1274
 (There were 10 warnings)
