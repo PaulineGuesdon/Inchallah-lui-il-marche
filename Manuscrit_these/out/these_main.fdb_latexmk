@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1790118172.6849 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1790118239.89207 0
+["bibtex out/these_main"] 1790168367.39192 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1790170475.39049 0
   "./ref.bib" 1790116792.05301 84855 8a075dcb8417e5e86cc29fe64ea0f79d ""
   "./spincontrol_refs.bib" 1786519568.72538 549304 6b3bd591fb7a36bddef0122884a01a8a ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1790118230.60909 54624 74fe0289319687a3a687b652ef9233b9 "pdflatex"
+  "out/these_main.aux" 1790170473.78835 54712 ee87d3f7813dfbd037505bfa02c31735 "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1790118175.33035 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1790118239.89427 0
+["pdflatex"] 1790170464.16894 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1790170475.39107 0
   "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1788623417.41311 4763 e3a0d4e837b64b0e7934d61f2f98f0f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -250,7 +250,7 @@
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf" 1779216450.84288 124880 a995a1d3169ba13da03ac75f191c6930 ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf" 1779216450.84503 196863 933448dfb53ed85f14595bebeac7fd5a ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf" 1782917439.77429 138292 87257a98384f328454136a85eb278b77 ""
-  "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1790118077.52823 82313 4e71a6026e40d124761b00d0d8dfdd10 ""
+  "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1790170460.87081 83668 d2369276db2fabb9004dc50c039a9ca5 ""
   "Chapitres/conclusion/conclusion.tex" 1788854261.26954 4321 dce46de9927fe9bbde296a9c2c9135b5 ""
   "appendix/abstract.tex" 1775984395.99696 153 eee112a5caef8e0926ac11ba0070c6cc ""
   "appendix/mis/acknowledgements.tex" 1775984395.99768 28 c20483b5759ef691c060fd266e58e4d2 ""
@@ -259,12 +259,12 @@
   "appendix/mis/dedication.tex" 1775984395.99955 123 c52d1d8ac73aabfb3f3061e569acf2cb ""
   "appendix/titlepage.tex" 1789034544.31399 943 b98a0910ba494906d90be62b51fbf4ff ""
   "out/these_main.acr" 0 -1 0 ""
-  "out/these_main.aux" 1790118230.60909 54624 74fe0289319687a3a687b652ef9233b9 "pdflatex"
-  "out/these_main.bbl" 1790118175.2056 28998 66a2344dce96c346777187cdd597bb7d "bibtex out/these_main"
-  "out/these_main.lof" 1790118230.71138 9462 fd750858d3131c6db820bd72f85052d4 "pdflatex"
-  "out/these_main.lot" 1790118230.71236 929 04f19a91f48c7b3effa4eb7eb33875f1 "pdflatex"
-  "out/these_main.out" 1790118230.68477 22092 b892e6f46dbc5543ce7e84fce54bcb86 "pdflatex"
-  "out/these_main.toc" 1790118230.70818 9845 b48ef744a81ac9de396d7c04380ad145 "pdflatex"
+  "out/these_main.aux" 1790170473.78835 54712 ee87d3f7813dfbd037505bfa02c31735 "pdflatex"
+  "out/these_main.bbl" 1790168367.91501 28998 66a2344dce96c346777187cdd597bb7d "bibtex out/these_main"
+  "out/these_main.lof" 1790170473.80635 9462 22e435c18d3a5b6aa44fa71d87cb8677 "pdflatex"
+  "out/these_main.lot" 1790170473.80663 929 2958ebe8edf4dba1b0061bc3235d6d63 "pdflatex"
+  "out/these_main.out" 1790170473.7987 22092 4f1e330b46fcbd4cc9b93988852fa717 "pdflatex"
+  "out/these_main.toc" 1790170473.80601 9845 c8e1e546b88315ebb159564180dfff6a "pdflatex"
   "these_main.acr" 0 -1 0 ""
   "these_main.tex" 1788623417.41311 4763 e3a0d4e837b64b0e7934d61f2f98f0f4 ""
   (generated)
