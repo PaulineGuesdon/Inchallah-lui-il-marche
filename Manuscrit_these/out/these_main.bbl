@@ -1,5 +1,26 @@
 \begin{thebibliography}{100}
 
+\bibitem{ahmed_coherent_2025}
+H.~Ahmed, A.~Litvinov, P.~Guesdon, E.~Maréchal, J.~H. Huckans, B.~Pasquiou,
+  B.~Laburthe-Tolra, and M.~Robert-de Saint-Vincent, ``Coherent control over
+  the high-dimensional space of the nuclear spin of alkaline-earth atoms,''
+  {\em PRX Quantum}, vol.~6, p.~020352, June 2025.
+\newblock arXiv:2501.01731 [quant-ph].
+
+\bibitem{bataille_realisation_nodate}
+P.~Bataille, ``Réalisation de gaz quantiques de grand spin,''
+
+\bibitem{litvinov_these}
+A.~Litvinov, {\em Manipulation of the nuclear spin states of 87 {Srin}
+  degenerate {SU}({N})-symmetric {Fermi} gases}.
+\newblock Theses, Sorbonne Paris Nord, Jan. 2023.
+
+\bibitem{zelevinsky_narrow_2006}
+T.~Zelevinsky, M.~M. Boyd, A.~D. Ludlow, T.~Ido, J.~Ye, R.~Ciurylo, P.~Naidon,
+  and P.~S. Julienne, ``Narrow {Line} {Photoassociation} in an {Optical}
+  {Lattice},'' {\em Physical Review Letters}, vol.~96, p.~203201, May 2006.
+\newblock Number: 20 arXiv:physics/0602135.
+
 \bibitem{Payne1925StellarAtmospheres}
 C.~H. Payne, {\em Stellar Atmospheres; a Contribution to the Observational
   Study of High Temperature in the Reversing Layers of Stars}.
@@ -38,12 +59,6 @@ H.~Sun, B.~Yang, H.-Y. Wang, Z.-Y. Zhou, G.-X. Su, H.-N. Dai, Z.-S. Yuan, and
 W.~S. Bakr, J.~I. Gillen, A.~Peng, S.~F{\"o}lling, and M.~Greiner, ``A quantum
   gas microscope for detecting single atoms in a hubbard-regime optical
   lattice,'' {\em Nature}, vol.~462, no.~7269, pp.~74--77, 2009.
-
-\bibitem{zelevinsky_narrow_2006}
-T.~Zelevinsky, M.~M. Boyd, A.~D. Ludlow, T.~Ido, J.~Ye, R.~Ciurylo, P.~Naidon,
-  and P.~S. Julienne, ``Narrow {Line} {Photoassociation} in an {Optical}
-  {Lattice},'' {\em Physical Review Letters}, vol.~96, p.~203201, May 2006.
-\newblock Number: 20 arXiv:physics/0602135.
 
 \bibitem{blatt_measurement_2011}
 S.~Blatt, T.~L. Nicholson, B.~J. Bloom, J.~R. Williams, J.~W. Thomsen, P.~S.
@@ -97,21 +112,6 @@ M.~Foss-Feig, A.~J. Daley, J.~K. Thompson, and A.~M. Rey, ``Steady-state
   many-body entanglement of hot reactive fermions,'' {\em Physical Review
   Letters}, vol.~109, p.~230501, Dec. 2012.
 \newblock arXiv:1207.4741 [cond-mat.quant-gas].
-
-\bibitem{ahmed_coherent_2025}
-H.~Ahmed, A.~Litvinov, P.~Guesdon, E.~Maréchal, J.~H. Huckans, B.~Pasquiou,
-  B.~Laburthe-Tolra, and M.~Robert-de Saint-Vincent, ``Coherent control over
-  the high-dimensional space of the nuclear spin of alkaline-earth atoms,''
-  {\em PRX Quantum}, vol.~6, p.~020352, June 2025.
-\newblock arXiv:2501.01731 [quant-ph].
-
-\bibitem{litvinov_these}
-A.~Litvinov, {\em Manipulation of the nuclear spin states of 87 {Srin}
-  degenerate {SU}({N})-symmetric {Fermi} gases}.
-\newblock Theses, Sorbonne Paris Nord, Jan. 2023.
-
-\bibitem{bataille_realisation_nodate}
-P.~Bataille, ``Réalisation de gaz quantiques de grand spin,''
 
 \bibitem{Bataille2020}
 P.~Bataille, A.~Litvinov, I.~Manai, J.~Huckans, F.~Wiotte, A.~Kaladjian,

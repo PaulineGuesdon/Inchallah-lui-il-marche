@@ -171,6 +171,8 @@ At low temperatures we can re-express equations \ref{sigma elastic} and \ref{sig
 As an illustration a usual case of the elastic collisions is atoms in the ground
 state. For inelasticity photoassociation is a good example of
 dissipative process where two atoms in the ground state are coupled to a molecular state by a laser.
+
+
 \subsection{PA and complex scattering length}
 Photoassociation (PA) is a process in which a pair of colliding free atoms absorbs a photon to form a bound molecule in an excited electronic state. Effectively, because the short-lived molecule quickly decays into 
 deeply bound states or dissociates with high kinetic energy, it escapes the optical trap. Consequently, the bound molecule is typically seen as lost, and the process is perceived as a macroscopic two-body loss effect
@@ -234,30 +236,50 @@ absorbs probability flux, directly translating the physical disappearance of the
 
 Since the laser is tuned far from any bare atomic resonance, the excited molecular state remains weakly populated, meaning the atoms spend most of their time interacting on the ground-state potential.
 To isolate the response of the excited molecular channel, we expand the closed-channel wavefunction $\psi_e(r)$ onto the bound vibrational eigenstates $\vert{}v_e\rangle$ of the excited Hamiltonian 
-$\hat{H}_e = -\frac{\hbar^2\nabla^2}{2\mu} + U_e(r)$, which satisfy $\hat{H}_e \vert{}v_e\rangle = E_{v_e} \vert{}v_e\rangle$. Projecting the second line of Eq.~\ref{inelastic evolution equation} onto a specific 
+$\hat{H}_e = -\frac{\hbar^2\nabla^2}{2\mu} + U_e(r)$, which satisfy $\hat{H}_e \vert{}v_e\rangle = E_{v_e} \vert{}v_e\rangle$. 
+
+As with Bohn and Julienne \cite{bohn1997_prospects}, who restrict their
+treatment to a single vibrational resonance well separated from its
+neighbours (and, in their case, from any hyperfine structure), we retain
+only the vibrational level $v_e$ nearest to resonance in the expansion of
+$\psi_e$ (isolated-resonance approximation), rather than truncating a
+perturbative expansion in laser intensity. For $^{87}$Sr, this restriction
+must additionally extend across the hyperfine manifold: since the
+$^3P_1$ hyperfine splitting ($\gtrsim1$~GHz \cite{stellmerThesis}) far
+exceeds both $\Gamma_{\text{mol}}$ and the range of detuning explored here,
+different $F'$ levels remain well-resolved, isolated resonances in their own
+right. The full expectation value $\langle\hat V\rangle$ would, in principle,
+also contain contributions from every other $(v_e',F')$ manifold; these
+terms are not intrinsically negligible in magnitude, but each is suppressed
+by its own large, off-resonant energy denominator.
+
+
+Projecting the second line of Eq.~\ref{inelastic evolution equation} onto a specific 
 isolated vibrational state $\vert{}v_e\rangle$ yields:
 \begin{gather}
 E \psi_e = \frac{\hbar \hat{\Omega}}{2}\psi_g + \left(\hat{H}_e + \hbar \Delta - i\hbar \frac{\Gamma_{\text{mol}}}{2} \right)\psi_e\\
-\bra{v_e}(E-\hat{H}_e)\psi_e = \bra{v_e}\frac{\hbar\hat{\Omega}}{2}\ket{\psi_g}\\
-\psi_e(r) \approx \frac{\left\langle v_e \middle| \frac{\hbar\hat{\Omega}(r)}{2} \middle| \psi_g \right\rangle}{E - E_{v_e} + \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}} v_e(r)
+\bra{v_e}(E-\hat{H}_e - \hbar \Delta + i\hbar \frac{\Gamma_{\text{mol}}}{2})\ket{\psi_e} = \bra{v_e}\frac{\hbar\hat{\Omega}}{2}\ket{\psi_g}\\
+\psi_e(r) \approx \frac{\left\langle v_e \middle| \frac{\hbar\hat{\Omega}(r)}{2} \middle| \psi_g \right\rangle}{E - E_{v_e} - \hbar\Delta + i\hbar\frac{\Gamma_{\text{mol}}}{2}} v_e(r)
 \end{gather}
+
 Substituting this spatial projection back into the ground-state channel (first line of Eq.~\ref{inelastic evolution equation}) yields:
 \begin{gather}
     i\hbar\frac{d}{dt}\psi_g = \left(-\frac{\hbar^2\hat{\nabla}^2}{2\mu}+\hat{U}_g\right)\psi_g +\frac{\hbar\hat{\Omega}}{2}\psi_e\\
     \left(E+\frac{\hbar^2\hat{\nabla}^2}{2\mu} - \hat{U}_g\right) \psi_g = \frac{\hbar\hat{\Omega}}{2} \psi_e\\
-    \left(E+\frac{\hbar^2\hat{\nabla}^2}{2\mu} - \hat{U}_g\right) \psi_g = \frac{\hbar\hat{\Omega}}{2} \frac{\frac{\hbar\hat{\Omega}}{2}\ket{v_e}\bra{v_e}\frac{\hbar\hat{\Omega}}{2}}{E-E_{v_e} + \hbar\Delta + 
-    i\hbar\frac{\Gamma_{\text{mol}}}{2}}\psi_g
+    \left(E+\frac{\hbar^2\hat{\nabla}^2}{2\mu} - \hat{U}_g\right) \psi_g =  \underbrace{\frac{\frac{\hbar\hat{\Omega}}{2}\ket{v_e}\bra{v_e}\frac{\hbar\hat{\Omega}}{2}\ket{\psi_g}}{E-E_{v_e} - \hbar\Delta + 
+    i\hbar\frac{\Gamma_{\text{mol}}}{2}}}_{\displaystyle \equiv\ \hat{V}\psi_g}
 \end{gather}
 \begin{equation}
 \left(-\frac{\hbar^2\hat{\nabla}^2}{2\mu} + \hat{U}_g(r) + \hat{V}\right)\psi_g(r) = E \psi_g(r)
 \label{psi e dans psi g}
 \end{equation}
-One want to isolate the term that concerns the ground state to observe the modifications of it from the coupling to the molecular state. Then by projecting \ref{psi e dans psi g} we define $\langle\hat{V}\rangle$ as:
+One want to isolate the term that concerns the ground state to observe the modifications of it from the coupling to the molecular state. Then by projecting $\ket{psi_g}$ in \ref{psi e dans psi g} we define $\langle\hat{V}\rangle$ as:
 \begin{equation}
-\langle \psi_g | \hat{V} | \psi_g \rangle = \frac{\left| \left\langle v_e \middle| \frac{\hbar\hat{\Omega}(r)}{2} \middle| \psi_g \right\rangle \right|^2}{E - E_{v_e} + \hbar\Delta + 
+\langle \psi_g | \hat{V} | \psi_g \rangle = \frac{\left| \left\langle v_e \middle| \frac{\hbar\hat{\Omega}(r)}{2} \middle| \psi_g \right\rangle \right|^2}{E - E_{v_e} - \hbar\Delta + 
 i\hbar\frac{\Gamma_{\text{mol}}}{2}}
 \label{V_opt}
 \end{equation}
+
 Following Bohn and Julienne \cite{bohn1997_prospects}, one can define the stimutaled rate $\Gamma_{stim}$ from $\ket{v_e}$ to $\ket{\psi_g}$ by the Fermi-Golden rule as
 \begin{equation}
     \Gamma_{stim} = 2\pi\left(\frac{2\pi I}{c}\right)d^2\left| \bra{v_e} \psi_g \rangle \right|^2
@@ -270,7 +292,23 @@ of the laser, also expressing as $\frac{\hbar\hat{\Omega(r)}}{2} = \vec{d}.\vec{
 is the overlape between the ground state wavefunction and the excited molecular state.\\
 
 
-Also integrating the optical potential $\hat{V}$ within the asymptotic boundary conditions for $r \to \infty$ modifies the scattering phase shift, leading to the complex scattering length $a(\Delta)$:
+
+To relate $\langle\hat V\rangle$ to $a(\Delta)$, compare $\psi_g$ (with
+$\hat V$) to the background solution $\psi_g^{(0)}$ (without $\hat V$), both
+at threshold. Substracting their Schr\"odinger equations gives
+$$\frac{d}{dr}\Big[\psi_g^{(0)\prime}\psi_g-\psi_g^{\prime}\psi_g^{(0)}\Big]
+=\frac{2\mu}{\hbar^2}\hat V\,\psi_g\,\psi_g^{(0)}.$$
+Integrating from $r=0$ (where both wavefunctions vanish) to $r\to\infty$,
+where $\psi_g^{(0)}\to r-a_{\text{bg}}$ and $\psi_g\to r-a$ by definition of
+the scattering length, yields
+$$\delta a \equiv a-a_{\text{bg}} = -\frac{2\mu}{\hbar^2}
+\int_0^\infty \hat V(r)\,\psi_g(r)\,\psi_g^{(0)}(r)\,dr.$$
+Replacing $\psi_g$ by $\psi_g^{(0)}$ inside the integral -- valid to leading
+order in $\hat V$, since their difference is itself $O(\hat V)$ -- gives
+$\delta a=-\frac{2\mu}{\hbar^2}\langle\hat V\rangle$, i.e. Eq.~\ref{V_opt}
+evaluated on the background threshold state, which directly reproduces the
+resonant form of $a(\Delta)$ in Eq.~\ref{a(delta)}.
+
 
 \begin{equation}
 a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}}{\Delta + i\frac{\Gamma_{\text{mol}}}{2}}
@@ -287,12 +325,15 @@ laser coupling and scales linearly with the wavevector $k$ at low temperature ac
 where $l_{\text{opt}}$ is the temperature-independent \textbf{optical length}, a central parameter characterizing the strength of the light-matter coupling which scales linearly with the laser intensity $I$.
 
 To distinguish how the laser independently alters the elastic interactions and the loss mechanisms, we multiply the resonant fraction in Eq.~\ref{a(delta)} by the complex conjugate of its denominator. This algebraic
- separation successfully decouples the scattering length into its real (dispersive) and imaginary (absorptive) components, $a(\Delta) = a_{\text{bg}} + \delta a(\Delta) + i a''(\Delta)$:
+ separation successfully decouples the scattering length into its real (dispersive) and imaginary (absorptive) components, $a(\Delta) = a_{\text{bg}} + \delta a(\Delta) - i a''(\Delta)$:
 \begin{equation}
     a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}\Delta}{\Delta^2 + \left(\frac{\Gamma_{\text{mol}}}{2}\right)^2} - i \frac{l_{\text{opt}}\Gamma_{\text{mol}}\frac{\Gamma_{\text{mol}}}{2}}
     {\Delta^2 + \left(\frac{ \Gamma_{\text{mol}}}{2}\right)^2}
 \end{equation}
 The real light-induced shift $\delta a(\Delta)$ governs the modification of the elastic properties of the gas, whereas the imaginary part $a''(\Delta)$ directly quantifies the rate of inelastic two-body losses.
+
+
+
 \subsection{General scaling laws for PA}
 To connect this microscopic scattering amplitude to observable experimental quantities, one must translate these individual collision events into a population decay that writes as 
 \cite{martinez_de_escobar_two-photon_2008}:
@@ -303,7 +344,7 @@ where $\beta(T)$ is related to the two-body loss rate $K_2$ and $\Gamma$ is the 
 
 In quantum scattering theory, the fundamental two-body loss rate coefficient $K_2(k)$ is directly driven by the absorptive (imaginary) part of the scattering length $a''$ derived from Eq.~\ref{V_opt}:
 \begin{equation}
-    K_2(k) = \frac{8\pi\hbar}{m_{\text{at}}} a''(k, \Delta)
+    K_2(k) = \frac{16\pi\hbar}{m_{\text{at}}} a''(k, \Delta)
     \label{eq:K2_a_second}
 \end{equation}
 
@@ -311,7 +352,7 @@ Grounded on the systematic study of optical Feshbach resonances by Blatt et al. 
 the loss coefficient as a function of the collision wavevector $k$:
 
 \begin{equation}
-    K_2(k) = \frac{8\pi \hbar}{m_{\text{at}} k} \times \frac{\Gamma_{\text{mol}} \Gamma_{\text{stim}}(k)}{\Delta^2 + \frac{1}{4}\big(\Gamma_{\text{mol}} + \Gamma_{\text{stim}}(k)\big)^2}
+    K_2(k) = \frac{4\pi \hbar}{m_{\text{at}} k} \times \frac{\Gamma_{\text{mol}} \Gamma_{\text{stim}}(k)}{\Delta^2 + \frac{1}{4}\big(\Gamma_{\text{mol}} + \Gamma_{\text{stim}}(k)\big)^2}
     \label{K2 complet Blatt}
 \end{equation}
 
