@@ -172,11 +172,9 @@ As an illustration a usual case of the elastic collisions is atoms in the ground
 state. For inelasticity photoassociation is a good example of
 dissipative process where two atoms in the ground state are coupled to a molecular state by a laser.
 
-
 \subsection{PA and complex scattering length}
 Photoassociation (PA) is a process in which a pair of colliding free atoms absorbs a photon to form a bound molecule in an excited electronic state. Effectively, because the short-lived molecule quickly decays into 
-deeply bound states or dissociates with high kinetic energy, it escapes the optical trap. Consequently, the bound molecule is typically seen as lost, and the process is perceived as a macroscopic two-body loss effect
-.
+deeply bound states or dissociates with high kinetic energy, it escapes the optical trap. Consequently, the bound molecule is typically seen as lost, and the process is perceived as a macroscopic two-body loss effect.
 
 In the atomic pair frame, the electric dipole interaction drives the system from the ground electronic state $\psi_g$ of potential $U_g(r)$ to the excited molecular state $\psi_e$ of potential $U_e(r)$. In the 
 absence of a resonant laser, the internal evolution of the system is purely elastic and expresses as:
@@ -197,8 +195,17 @@ absence of a resonant laser, the internal evolution of the system is purely elas
     \end{pmatrix}.
     \label{elastic evolution equation}
 \end{equation}
+Both $\psi_g$ and its field-free counterpart $\psi_g^{(0)}$ introduced below are
+continuum states and cannot be normalized to unity. We adopt the standard
+energy normalization $\langle\psi_g(E)\vert\psi_g(E')\rangle=\delta(E-E')$,
+which fixes the s-wave asymptotic form to
+$\psi_g^{(0)}(r,E)\to\sqrt{2\mu/(\pi\hbar^2 k)}\,\sin(kr+\eta_0)$. This
+convention is not a mere bookkeeping choice: it is precisely what sets the
+density of final states entering Fermi's Golden Rule to unity, so that
+transition rates below can be written as $2\pi\vert\langle f\vert H'\vert
+i\rangle\vert^2$ without an additional explicit density-of-states factor.
 
-In the frame of \cite{nicholson_optical_2015} one treat the case when a laser is tuned near a specific vibrational level of the excited potential $U_e(r)$, coupling the free-atom continuum to the bound molecular 
+In the frame of \cite{nicholson_optical_2015} one treats the case when a laser is tuned near a specific vibrational level of the excited potential $U_e(r)$, coupling the free-atom continuum to the bound molecular 
 state, as illustrated in Fig.~\ref{fig:PA_concept}.
 \begin{figure}
     \centering
@@ -236,7 +243,7 @@ absorbs probability flux, directly translating the physical disappearance of the
 
 Since the laser is tuned far from any bare atomic resonance, the excited molecular state remains weakly populated, meaning the atoms spend most of their time interacting on the ground-state potential.
 To isolate the response of the excited molecular channel, we expand the closed-channel wavefunction $\psi_e(r)$ onto the bound vibrational eigenstates $\vert{}v_e\rangle$ of the excited Hamiltonian 
-$\hat{H}_e = -\frac{\hbar^2\nabla^2}{2\mu} + U_e(r)$, which satisfy $\hat{H}_e \vert{}v_e\rangle = E_{v_e} \vert{}v_e\rangle$. 
+$\hat{H}_e = -\frac{\hbar^2\nabla^2}{2\mu} + U_e(r)$, which satisfy $\hat{H}_e \vert{}v_e\rangle = E_{v_e} \vert{}v_e\rangle$.
 
 As with Bohn and Julienne \cite{bohn1997_prospects}, who restrict their
 treatment to a single vibrational resonance well separated from its
@@ -252,7 +259,6 @@ right. The full expectation value $\langle\hat V\rangle$ would, in principle,
 also contain contributions from every other $(v_e',F')$ manifold; these
 terms are not intrinsically negligible in magnitude, but each is suppressed
 by its own large, off-resonant energy denominator.
-
 
 Projecting the second line of Eq.~\ref{inelastic evolution equation} onto a specific 
 isolated vibrational state $\vert{}v_e\rangle$ yields:
@@ -273,56 +279,122 @@ Substituting this spatial projection back into the ground-state channel (first l
 \left(-\frac{\hbar^2\hat{\nabla}^2}{2\mu} + \hat{U}_g(r) + \hat{V}\right)\psi_g(r) = E \psi_g(r)
 \label{psi e dans psi g}
 \end{equation}
-One want to isolate the term that concerns the ground state to observe the modifications of it from the coupling to the molecular state. Then by projecting $\ket{psi_g}$ in \ref{psi e dans psi g} we define $\langle\hat{V}\rangle$ as:
+One wants to isolate the term that concerns the ground state to observe the modifications of it from the coupling to the molecular state. Then by projecting $\ket{\psi_g}$ in \ref{psi e dans psi g} we define $\langle\hat{V}\rangle$ as:
 \begin{equation}
 \langle \psi_g | \hat{V} | \psi_g \rangle = \frac{\left| \left\langle v_e \middle| \frac{\hbar\hat{\Omega}(r)}{2} \middle| \psi_g \right\rangle \right|^2}{E - E_{v_e} - \hbar\Delta + 
 i\hbar\frac{\Gamma_{\text{mol}}}{2}}
 \label{V_opt}
 \end{equation}
 
-Following Bohn and Julienne \cite{bohn1997_prospects}, one can define the stimutaled rate $\Gamma_{stim}$ from $\ket{v_e}$ to $\ket{\psi_g}$ by the Fermi-Golden rule as
+\textbf{From $\hat V$ to a shift of the scattering length.}
+
+The general relationship used here between a coupling potential and a
+resulting shift of the scattering length is the same Green's function
+argument that underlies the two-channel treatment of Feshbach resonances in
+\cite{goral_adiabatic_2004} (see their Eqs.~13, 17, 19 and 22): there, the
+coupling matrix element $\langle\phi_{\text{res}}\vert W\vert\phi_p^{(+)}
+\rangle$ plays exactly the role of our $\langle v_e\vert\frac{\hbar\Omega}{2}
+\vert\psi_g^{(0)}\rangle$, and their scattering-length shift (their Eq.~22)
+has the same structure as the one derived below. We reproduce this result
+directly in position space, working at leading order in the laser coupling.
+
+To relate $\langle\hat V\rangle$ to $a(\Delta)$, compare the full solution
+$\psi_g$ of Eq.~\ref{psi e dans psi g} to the background solution
+$\psi_g^{(0)}$ of the same equation with $\hat V\to0$, both evaluated at the
+same threshold energy $E\to0$:
 \begin{equation}
-    \Gamma_{stim} = 2\pi\left(\frac{2\pi I}{c}\right)d^2\left| \bra{v_e} \psi_g \rangle \right|^2
+    -\frac{\hbar^2\hat\nabla^2}{2\mu}\psi_g^{(0)} + \hat U_g\,\psi_g^{(0)} = E\,\psi_g^{(0)},
+    \label{psi_g0}
 \end{equation}
-
-with I the laser intensity, c the light velocity and d the transition dipole moment. On equation \ref{V_opt} the $\frac{\hbar\hat{\Omega}(r)}{2}$ comes from the dipolar interaction of the atoms with the eletric 
-field $\vec{E}$
-of the laser, also expressing as $\frac{\hbar\hat{\Omega(r)}}{2} = \vec{d}.\vec{E}$. One identify the numerator of \ref{V_opt} as the stimulated linewidth $\Gamma_{stim}$. This rate depends on the 
-\textbf{Franck-Condon factor} that 
-is the overlape between the ground state wavefunction and the excited molecular state.\\
-
-
-
-To relate $\langle\hat V\rangle$ to $a(\Delta)$, compare $\psi_g$ (with
-$\hat V$) to the background solution $\psi_g^{(0)}$ (without $\hat V$), both
-at threshold. Substracting their Schr\"odinger equations gives
+which is simply Eq.~\ref{psi e dans psi g} with the coupling to the
+molecular channel switched off, consistent with $\psi_g^{(0)}$ describing
+purely elastic collisions on $U_g$ alone as in Eq.~\ref{elastic evolution equation}.
+Subtracting Eq.~\ref{psi_g0} from Eq.~\ref{psi e dans psi g} (both at the same $E$),
+multiplying the former by $\psi_g$ and the latter by $\psi_g^{(0)}$, and subtracting,
+gives
 $$\frac{d}{dr}\Big[\psi_g^{(0)\prime}\psi_g-\psi_g^{\prime}\psi_g^{(0)}\Big]
 =\frac{2\mu}{\hbar^2}\hat V\,\psi_g\,\psi_g^{(0)}.$$
-Integrating from $r=0$ (where both wavefunctions vanish) to $r\to\infty$,
+Integrating from $r=0$, where both wavefunctions vanish, to $r\to\infty$,
 where $\psi_g^{(0)}\to r-a_{\text{bg}}$ and $\psi_g\to r-a$ by definition of
 the scattering length, yields
 $$\delta a \equiv a-a_{\text{bg}} = -\frac{2\mu}{\hbar^2}
 \int_0^\infty \hat V(r)\,\psi_g(r)\,\psi_g^{(0)}(r)\,dr.$$
-Replacing $\psi_g$ by $\psi_g^{(0)}$ inside the integral -- valid to leading
-order in $\hat V$, since their difference is itself $O(\hat V)$ -- gives
-$\delta a=-\frac{2\mu}{\hbar^2}\langle\hat V\rangle$, i.e. Eq.~\ref{V_opt}
-evaluated on the background threshold state, which directly reproduces the
-resonant form of $a(\Delta)$ in Eq.~\ref{a(delta)}.
+This integral still contains the full, unknown $\psi_g$, so nothing has been
+solved yet. To make progress, write $\psi_g=\psi_g^{(0)}+\delta\psi$, where
+$\delta\psi$ is the correction to the wavefunction caused by switching on
+$\hat V$. Since $\hat V$ already involves the coupling $\frac{\hbar\Omega}{2}$
+twice -- once to excite to $v_e$, once to decay back -- it is proportional
+to $\Omega^2$; the correction $\delta\psi$ it induces is therefore also of
+order $\Omega^2$. Splitting the integral according to
+$\psi_g=\psi_g^{(0)}+\delta\psi$ gives one term with $\psi_g^{(0)}$ in place
+of $\psi_g$, plus an extra term proportional to $\hat V\,\delta\psi$; since
+both factors are of order $\Omega^2$, this extra term is of order $\Omega^4$
+-- a much smaller correction, which can be dropped consistently with the
+weak-population assumption already stated above. Keeping only the leading
+term thus amounts to replacing $\psi_g$ by $\psi_g^{(0)}$ inside the
+integral:
+$$\delta a \approx -\frac{2\mu}{\hbar^2}
+\int_0^\infty \hat V(r)\,\left[\psi_g^{(0)}(r)\right]^2\,dr
+= -\frac{2\mu}{\hbar^2}\langle\hat V\rangle,$$
+i.e. Eq.~\ref{V_opt} evaluated on the background threshold state. This
+identifies
+\begin{equation}
+    a(\Delta) = a_{\text{bg}} - \frac{2\mu}{\hbar^2}\langle\hat V\rangle
+    = a_{\text{bg}} - \frac{2\mu}{\hbar^2}\,
+    \frac{\left|\left\langle v_e\middle|\frac{\hbar\hat\Omega(r)}{2}\middle|\psi_g^{(0)}\right\rangle\right|^2}
+    {E-E_{v_e}-\hbar\Delta+i\hbar\frac{\Gamma_{\text{mol}}}{2}}
+    \label{a_delta_intermediate}
+\end{equation}
+\textbf{Explicit form of $l_{\text{opt}}$ via the Wigner threshold law.}
 
+Following Bohn and Julienne \cite{bohn1997_prospects}, one can define the
+stimulated rate $\Gamma_{\text{stim}}$ from $\ket{v_e}$ to $\ket{\psi_g^{(0)}}$
+by the Fermi Golden Rule as
+\begin{equation}
+    \Gamma_{\text{stim}}(k) = 2\pi\left(\frac{2\pi I}{c}\right)d^2\left| \bra{v_e} \psi_g^{(0)} \rangle \right|^2
+    \label{gamma_stim_def}
+\end{equation}
+with $I$ the laser intensity, $c$ the speed of light, and $d$ the transition
+dipole moment; $\frac{\hbar\hat\Omega(r)}{2}=\vec d\cdot\vec E$ is the dipolar
+coupling to the laser field $\vec E$, so the numerator of
+Eq.~\ref{a_delta_intermediate} is identified with $\hbar\Gamma_{\text{stim}}(k)$,
+which depends on the \textbf{Franck-Condon factor} $\langle v_e\vert\psi_g^{(0)}\rangle$,
+the overlap between the (energy-normalized) ground-state scattering
+wavefunction and the excited molecular state.
 
+Because $\psi_g^{(0)}$ is
+energy-normalized, its amplitude at the moderate separations relevant to
+this overlap follows the s-wave Wigner threshold law and scales as
+$\sqrt{k}$ as $E\to0$ \cite{jones_ultracold_2006}: writing
+$\psi_g^{(0)}(r,E\to0)\approx\sqrt{k}\,f_0(r)$ for a $k$-independent
+reference function $f_0$, one obtains
+$\vert\langle v_e\vert\psi_g^{(0)}\rangle\vert^2=k\vert\langle v_e\vert
+f_0\rangle\vert^2$, so that $\Gamma_{\text{stim}}(k)\propto k$, consistent
+with the general threshold law $\Gamma_b(E,\ell)\propto E^{\ell+1/2}$ for
+$\ell=0$ \cite{jones_ultracold_2006}. Writing this proportionality as \cite{yan_controlling_2013}
+
+\begin{equation}
+    \Gamma_{\text{stim}}(k) = 2 k\,l_{\text{opt}}\,\Gamma_{\text{mol}}
+    \label{eq:gamma_stim_blatt}
+\end{equation}
+defines the k-independent \textbf{optical length}
+\begin{equation}
+    l_{\text{opt}} \equiv \frac{\pi}{\Gamma_{\text{mol}}}\left(\frac{2\pi I}{c}\right)d^2\left\vert\langle v_e\vert f_0\rangle\right\vert^2,
+    \label{lopt_def}
+\end{equation}
+which is independent of collision energy and scales linearly with the laser
+intensity $I$, as required.
+
+\textbf{Compact resonant form.}
+
+Absorbing $E_{v_e}$ into a redefinition of the detuning origin and using
+Eqs.~\ref{gamma_stim_def}-\ref{lopt_def}, Eq.~\ref{a_delta_intermediate}
+reduces to
 \begin{equation}
 a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{mol}}}{\Delta + i\frac{\Gamma_{\text{mol}}}{2}}
 \label{a(delta)}
 \end{equation}
-
-where $a_{\text{bg}}$ is the real background scattering length representing native elastic collisions \cite{yan_controlling_2013}. The parameter $l_{\text{opt}}$ is the temperature-independent optical scattering 
-length, which encapsulates the strength of the light-induced interaction and scales strictly linearly with the laser intensity $I$. The light-induced stimulated linewidth $\Gamma_{\text{stim}}(k)$ accounts for the 
-laser coupling and scales linearly with the wavevector $k$ at low temperature according to \cite{tiesinga2005measurement}:
-\begin{equation}
-    \Gamma_{\text{stim}}(k) = 2 k l_{\text{opt}} \Gamma_{\text{mol}}
-    \label{eq:gamma_stim_blatt}
-\end{equation}
-where $l_{\text{opt}}$ is the temperature-independent \textbf{optical length}, a central parameter characterizing the strength of the light-matter coupling which scales linearly with the laser intensity $I$.
+where $a_{\text{bg}}$ is the real background scattering length representing native elastic collisions \cite{yan_controlling_2013}.
 
 To distinguish how the laser independently alters the elastic interactions and the loss mechanisms, we multiply the resonant fraction in Eq.~\ref{a(delta)} by the complex conjugate of its denominator. This algebraic
  separation successfully decouples the scattering length into its real (dispersive) and imaginary (absorptive) components, $a(\Delta) = a_{\text{bg}} + \delta a(\Delta) - i a''(\Delta)$:
@@ -331,9 +403,6 @@ To distinguish how the laser independently alters the elastic interactions and t
     {\Delta^2 + \left(\frac{ \Gamma_{\text{mol}}}{2}\right)^2}
 \end{equation}
 The real light-induced shift $\delta a(\Delta)$ governs the modification of the elastic properties of the gas, whereas the imaginary part $a''(\Delta)$ directly quantifies the rate of inelastic two-body losses.
-
-
-
 \subsection{General scaling laws for PA}
 To connect this microscopic scattering amplitude to observable experimental quantities, one must translate these individual collision events into a population decay that writes as 
 \cite{martinez_de_escobar_two-photon_2008}:
@@ -1477,7 +1546,7 @@ anti-evaporation heating mechanism discussed in Sec.~\ref{sec:temperature_analys
     \label{fig:line_259MHz}
 \end{figure}
 
-\textbf{Line at $276.83$~MHz}
+\textbf{Line at $-276.83$~MHz}
 
 The second line is detected at $f_2 = -276.83\pm0.03$~MHz from the atomic
 resonance (Fig.~\ref{fig:line_276MHz}, top left). The gas, prepared at a density of
@@ -1533,7 +1602,7 @@ Sec.~\ref{sec:temperature_analysis}.
     \label{fig:line_276MHz}
 \end{figure}
 
-\textbf{Line at $375.74$~MHz}
+\textbf{Line at $-375.74$~MHz}
 
 The last molecular line is measured at $f_3=375.74\pm0.48$~MHz, for a
 recompressed gas illuminated for $1000$~ms at intensity $I=5.6$~W/cm$^2$

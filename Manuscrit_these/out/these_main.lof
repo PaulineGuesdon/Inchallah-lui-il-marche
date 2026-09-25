@@ -36,27 +36,27 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of the amplitude's wavefunction of collisional particles}}{69}{figure.caption.149}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Scheme of the general concept of photoassociation}}{71}{figure.caption.160}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Gerade/ungerade electronic symmetry}}{77}{figure.caption.201}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Hund's case (c) coupling scheme}}{77}{figure.caption.204}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Density of molecular potentials for $^{173}\text {Yb}$ \cite {zelevinsky_narrow_2006}}}{79}{figure.caption.209}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of the WKB semi-classical approximation at short range in an interatomic potential}}{81}{figure.caption.218}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Plot of the energy levels depending on the isotopic mass of Strontium from mass-scaling article }}{83}{figure.caption.229}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Beating scheme for PA process between the light from "AOM 11/2" that is settled on the resonance $^1S_0 \rightarrow ^3P_1, F=11/2$, and MOGlabs}}{85}{figure.caption.234}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Frequency schemes for photoassociation (PA) depending on the targeted isotope}}{87}{figure.caption.236}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Beating spectrum between the MOGlabs laser and the "AOM 11/2"}}{88}{figure.caption.238}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Modulus square of the $0^{th}$ and $1^{st}$ Bessel functions $J_n$ governing the power distribution between the carrier and PDH sidebands.}}{89}{figure.caption.241}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Scheme of the PDH sidebands addressing the atomic resonance}}{90}{figure.caption.243}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Atomic loss due to the FP cavity's PDH sideband}}{91}{figure.caption.244}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Experimental verification of the known resonances of $^{88}\text {Sr}$}}{96}{figure.caption.258}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Comparison of the $\nu = -2$ molecular line profile with two different sources}}{97}{figure.caption.261}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Noise measurement on $^{87}Sr$ at $\delta = +6$~MHz from the atomic resonance}}{98}{figure.caption.263}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Twelve $m_F$ states of the $^3P_1, F=11/2$ hyperfine excited state, measured at $\delta = -6$~MHz and $\delta = -12$~MHz from the atomic resonance.}}{99}{figure.caption.264}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces $dN/dt$ verification of the molecular nature of $^{88}Sr$ resonances \ref {88Sr resonance}}}{102}{figure.caption.292}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Zoom on the section of the red chain dedicated to the PA process}}{104}{figure.caption.294}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Evolution of the atom number as a function of the illumination time at $f = -6$~MHz}}{106}{figure.caption.297}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Temperature of the gas during the experiment described by the $6$~MHz atomic signal \ref {6MHz noise red detuned} and not molecular}}{107}{figure.caption.300}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr}}{109}{figure.caption.305}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr}}{111}{figure.caption.306}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr}}{112}{figure.caption.307}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Experimental sequence for ODT and PA laser chopping}}{114}{figure.caption.314}%
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Scheme of predissociation}}{116}{figure.caption.317}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Gerade/ungerade electronic symmetry}}{78}{figure.caption.204}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Hund's case (c) coupling scheme}}{78}{figure.caption.207}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Density of molecular potentials for $^{173}\text {Yb}$ \cite {zelevinsky_narrow_2006}}}{80}{figure.caption.212}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of the WKB semi-classical approximation at short range in an interatomic potential}}{82}{figure.caption.221}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Plot of the energy levels depending on the isotopic mass of Strontium from mass-scaling article }}{84}{figure.caption.232}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Beating scheme for PA process between the light from "AOM 11/2" that is settled on the resonance $^1S_0 \rightarrow ^3P_1, F=11/2$, and MOGlabs}}{86}{figure.caption.237}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Frequency schemes for photoassociation (PA) depending on the targeted isotope}}{88}{figure.caption.239}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Beating spectrum between the MOGlabs laser and the "AOM 11/2"}}{89}{figure.caption.241}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Modulus square of the $0^{th}$ and $1^{st}$ Bessel functions $J_n$ governing the power distribution between the carrier and PDH sidebands.}}{90}{figure.caption.244}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Scheme of the PDH sidebands addressing the atomic resonance}}{91}{figure.caption.246}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Atomic loss due to the FP cavity's PDH sideband}}{92}{figure.caption.247}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Experimental verification of the known resonances of $^{88}\text {Sr}$}}{97}{figure.caption.261}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Comparison of the $\nu = -2$ molecular line profile with two different sources}}{98}{figure.caption.264}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Noise measurement on $^{87}Sr$ at $\delta = +6$~MHz from the atomic resonance}}{99}{figure.caption.266}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Twelve $m_F$ states of the $^3P_1, F=11/2$ hyperfine excited state, measured at $\delta = -6$~MHz and $\delta = -12$~MHz from the atomic resonance.}}{100}{figure.caption.267}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces $dN/dt$ verification of the molecular nature of $^{88}Sr$ resonances \ref {88Sr resonance}}}{103}{figure.caption.295}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Zoom on the section of the red chain dedicated to the PA process}}{105}{figure.caption.297}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Evolution of the atom number as a function of the illumination time at $f = -6$~MHz}}{107}{figure.caption.300}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Temperature of the gas during the experiment described by the $6$~MHz atomic signal \ref {6MHz noise red detuned} and not molecular}}{108}{figure.caption.303}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr}}{110}{figure.caption.308}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr}}{112}{figure.caption.309}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Characterization of the molecular line at $375.74 \pm 0.48$ MHz in $^{87}$Sr}}{113}{figure.caption.310}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Experimental sequence for ODT and PA laser chopping}}{115}{figure.caption.317}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Scheme of predissociation}}{117}{figure.caption.320}%
