@@ -1,45 +1,51 @@
 import numpy as np
 
-# Création de deux matrices 4x4
-pi_sur_2 = np.array([
+s = 1/np.sqrt(2)
+
+X_pi2 = s * np.array([
     [1, -1j, 0, 0],
     [-1j, 1, 0, 0],
     [0, 0, 1, -1j],
     [0, 0, -1j, 1]
-], dtype=complex)
+], dtype=complex)          # attention au facteur 1/√2, il manquait dans ton code
 
-qubit = np.array([
+X_qubit = np.array([
     [1, 0, 0, 0],
-    [0, (1/np.sqrt(2)), -1j*(1/np.sqrt(2)), 0],
-    [0, -1j*(1/np.sqrt(2)), (1/np.sqrt(2)), 0],
+    [0, s, -1j*s, 0],
+    [0, -1j*s, s, 0],
     [0, 0, 0, 1]
 ], dtype=complex)
 
-phi = np.diag(1, 1, np.exp(-1j*p), 1)
-sept = np.array([
+def Phi(phi):
+    return np.diag([1, 1, np.exp(-1j*phi), 1])
+
+def E(k):                  # projecteur E_k, k = 1..4
+    M = np.zeros((4, 4), dtype=complex)
+    M[k-1, k-1] = 1
+    return M
+
+phi = 0.7                  # n'importe quelle valeur de test
+U = X_qubit @ Phi(phi) @ X_pi2          # X_pi2 agit en premier (à droite)
+
+E2p = U.conj().T @ E(2) @ U
+E4p = U.conj().T @ E(4) @ U
+
+# Tes formules de la thèse
+e, em = np.exp(1j*phi), np.exp(-1j*phi)
+E2_these = 0.25 * np.array([
+    [1,     1j,    em,     -1j*em],
+    [-1j,   1,     -1j*em, -em],
+    [e,     1j*e,  1,      -1j],
+    [1j*e,  -e,    1j,     1]
+])
+E4_these = np.array([
     [0, 0, 0, 0],
-    [0, 1, 0, 0],
     [0, 0, 0, 0],
-    [0, 0, 0, 0]
-], dtype=complex)
+    [0, 0, 0.5, 0.5j],
+    [0, 0, -0.5j, 0.5]
+])
 
-
-# Opérations de base
-print("A + B =\n", A + B)
-print("A * 2 =\n", A * 2)
-print("A x R (produit matriciel) =\n", A @ R)
-print("Transposée de A =\n", A.T)
-
-# Déterminant et inverse
-print("det(A) =", np.linalg.det(A))
-print("Inverse de A =\n", np.linalg.inv(A))
-
-# Valeurs propres et vecteurs propres
-valeurs, vecteurs = np.linalg.eig(A)
-print("Valeurs propres :", valeurs)
-print("Vecteurs propres (en colonnes) :\n", vecteurs)
-
-# Résoudre A x = b
-b = np.array([1, 2, 3, 4], dtype=float)
-x = np.linalg.solve(A, b)
-print("Solution de Ax = b :", x)
+np.set_printoptions(precision=3, suppress=True)
+print("E2' =\n", E2p)
+print("E2' correct :", np.allclose(E2p, E2_these))
+print("E4' correct :", np.allclose(E4p, E4_these))
