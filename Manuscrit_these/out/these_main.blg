@@ -1,15 +1,11 @@
-This is BibTeX, Version 0.99e
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: these_main.aux
-Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
-Reallocating 'name_of_file' (item size: 1) to 4 items.
-Reallocating 'name_of_file' (item size: 1) to 17 items.
 Database file #1: ref.bib
 Database file #2: spincontrol_refs.bib
 Warning--entry type for "notemixture" isn't style-file defined
---line 63 of file spincontrol_refs.bib
-Warning--I didn't find a database entry for "goral_adiabatic_2004"
+--line 62 of file spincontrol_refs.bib
 Warning--empty journal in bataille_realisation_nodate
 Warning--empty year in bataille_realisation_nodate
 Warning--empty booktitle in stellmer_degenerate_2014
@@ -19,45 +15,45 @@ Warning--empty journal in dalibard_interactions_nodate
 Warning--empty year in dalibard_interactions_nodate
 Warning--empty journal in reichenbach_optical_nodate
 Warning--empty year in reichenbach_optical_nodate
-You've used 124 entries,
+You've used 125 entries,
             1876 wiz_defined-function locations,
-            1238 strings with 29667 characters,
-and the built_in function-call counts, 39323 in all, are:
-= -- 3792
-> -- 2120
+            1244 strings with 29935 characters,
+and the built_in function-call counts, 39732 in all, are:
+= -- 3835
+> -- 2137
 < -- 0
-+ -- 754
-- -- 630
-* -- 2839
-:= -- 5564
-add.period$ -- 142
-call.type$ -- 124
-change.case$ -- 120
++ -- 760
+- -- 635
+* -- 2871
+:= -- 5619
+add.period$ -- 143
+call.type$ -- 125
+change.case$ -- 121
 chr.to.int$ -- 0
-cite$ -- 133
-duplicate$ -- 2143
-empty$ -- 2928
-format.name$ -- 630
-if$ -- 9600
+cite$ -- 134
+duplicate$ -- 2162
+empty$ -- 2961
+format.name$ -- 635
+if$ -- 9699
 int.to.chr$ -- 0
-int.to.str$ -- 124
-missing$ -- 118
-newline$ -- 396
-num.names$ -- 123
-pop$ -- 286
+int.to.str$ -- 125
+missing$ -- 119
+newline$ -- 399
+num.names$ -- 124
+pop$ -- 287
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1925
+skip$ -- 1942
 stack$ -- 0
-substring$ -- 1908
-swap$ -- 1232
+substring$ -- 1948
+swap$ -- 1243
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 292
-width$ -- 127
-write$ -- 1263
-(There were 11 warnings)
+while$ -- 296
+width$ -- 128
+write$ -- 1274
+(There were 10 warnings)
