@@ -846,7 +846,7 @@ broadened well beyond $\Gamma_{\text{mol}}$ by this spectral structure.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf}
+\includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf}
 \caption[Beating spectrum between the MOGlabs laser and the "AOM 11/2"]{Beating spectrum between the MOGlabs laser and the "AOM 11/2" measured at the spectrum analyzer at RBW = 10 kHz and 
     VBW = 300 Hz, with a three-Lorentzian fit (central peak + two sidebands at $\pm 70$~kHz). The sidebands, of larger FWHM than the central peak, carry the majority ($\simeq 69\%$) of the total optical power.}
 \label{beating broadening}
@@ -1269,7 +1269,7 @@ literature values are summarized in Table~\ref{tab:88Sr-lines-summary}.
  & $\nu=-1$ & $\nu=-2$ \\
 \midrule
 Exposure time $t$ & $1000$~ms & $10$~ms \\
-Intensity $I$ & $7.3\pm0.4$~mW/cm$^2$ & $826\pm47$~mW/cm$^2$ \\
+Intensity $I$ & $7.3\pm0.4$~mW/cm$^2$\textsuperscript{*} & $826\pm47$~mW/cm$^2$ \\
 \addlinespace
 Measured detuning $f$ & $-23.99 (1)$~MHz & $-222.70(1)$~MHz \\
 Literature $f$ \cite{zelevinsky_narrow_2006} & $-23.932(33)$~MHz & $-222.161(35)$~MHz \\
@@ -1289,7 +1289,10 @@ measured line centers and linewidths to the literature values from
 Zelevinsky et al.~\cite{zelevinsky_narrow_2006}. $\Gamma_0$ and $\Gamma_{\text{thermal}}$
 are estimated from first principles (not extracted from the data). Uncertainties are estimated as described in Sec.~\ref{sec:uncertainties}. The ratio
 $\Gamma_{\text{tot}}/\Gamma_0$ is the factor by which the peak loss coefficient is lowered
-by broadening (Sec.~\ref{sec:determining_lopt}).}
+by broadening (Sec.~\ref{sec:determining_lopt}).
+\textsuperscript{*}Intensity during the PA pulses: the $\nu=-1$ spectrum was recorded with the
+ODT/PA chopping sequence (Fig.~\ref{fig:sequence_chopping}, $50\%$ duty cycle), i.e. a
+time-averaged intensity of $3.65\pm0.2$~mW/cm$^2$.}
 \label{tab:88Sr-lines-summary}
 \end{table}
 
@@ -1325,10 +1328,10 @@ with an alternative, higher-stability laser source.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf}
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf}
     \caption[Experimental verification of the known resonances of $^{88}\text{Sr}$]{$^{88}\text{Sr}$ atom number (in units of $10^6$ atoms) across the intercombination line. 
     (Top) Atomic resonance used as the PA frequency reference ($I=276\pm16~\mu$W/cm$^2$, $80$~ms, $\bar\omega/2\pi=213\pm10$~Hz, $\langle n\rangle=(4.5\pm0.6)\times10^{13}$~cm$^{-3}$, $T=1.40\pm0.05~\mu$K). Data points are extracted from 2D Gaussian fits of absorption images; error bars include fit covariance and unperturbed cloud RMS fluctuations. 
-    (Middle) $\nu = -1$ vibrational state ($I = 7.3\pm0.4$~mW/cm$^2$, $1000$~ms, $\bar\omega/2\pi=181\pm9$~Hz, $\langle n\rangle=(1.8\pm0.3)\times10^{13}$~cm$^{-3}$, $T=1.80\pm0.06~\mu$K). 
+    (Middle) $\nu = -1$ vibrational state ($I = 7.3\pm0.4$~mW/cm$^2$ during the PA pulses, with ODT/PA chopping at $50\%$ duty cycle, i.e. $3.65\pm0.2$~mW/cm$^2$ time-averaged, $1000$~ms, $\bar\omega/2\pi=181\pm9$~Hz, $\langle n\rangle=(1.8\pm0.3)\times10^{13}$~cm$^{-3}$, $T=1.80\pm0.06~\mu$K). 
     (Bottom) $\nu = -2$ vibrational state ($I = 826\pm47$~mW/cm$^2$, $10$~ms, $\bar\omega/2\pi=184\pm9$~Hz, $\langle n\rangle=(3.0\pm0.4)\times10^{13}$~cm$^{-3}$, $T=1.40\pm0.05~\mu$K). Uncertainties: see Sec.~\ref{sec:uncertainties}. 
     Solid lines are Lorentzian fits with errors accounting for diagonal terms of covariance matrix and systematic fluctuations.}
     \label{88Sr resonance}
@@ -1420,6 +1423,7 @@ method of Sec.~\ref{sec:determining_lopt}.
 \label{decay dynamics}
 The common verification of inelastic nature of collisions is the time evolution of the atom number $dN/dt$ discussed in Section~3.1.3. This curve allows one to (i) verify the presence of two-body losses and (ii) 
 determine the value of $l_{\text{opt}}/I$ which characterizes the strength of the loss rate $\beta$. The fitting function is obtained by integrating the rate equation:
+
 \begin{gather}
     \frac{dN(t,T)}{dt} = -\beta(T(t)) N(t,T)^2 - \Gamma N(t,T) \label{eq globale collisions} \\[1.5ex]
     \text{Setting } M(t,T) = N(t,T)e^{\Gamma t} \iff N(t,T) = M(t,T)e^{-\Gamma t} \label{eq:change_var} \\[1.5ex]
@@ -1491,16 +1495,22 @@ $l_{\text{opt}}/I = (5.2\pm1.4)\times10^3~a_0/(\text{W/cm}^2)$. This is close to
 theoretical value $\xi = 6110~a_0/(\text{W/cm}^2)$ reported by Blatt et
 al.~\cite{blatt_systematic_2011} for the corresponding resonance (their $n=-2$ state), and
 a factor $\simeq3$ below their measured value $15.8(8)\times10^3~a_0/(\text{W/cm}^2)$.
-For this line, the spectrum and the decay are however not consistent: the loss coefficient
-deduced from the depth of the spectrum (Fig.~\ref{88Sr resonance}, middle), $\simeq1\times10^{-13}$~cm$^3$/s
-at $7.3$~mW/cm$^2$, is about two orders of magnitude lower than the one of the decay once
-brought to the same intensity and density, whereas the two measurements agree within
-$\simeq25\%$ for the $\nu=-2$ line. We attribute this discrepancy to the inhomogeneous PA
-intensity seen by the atoms in the $^{88}\text{Sr}$ measurements, caused by the misalignment
-between the PA beam and the atomic cloud discussed in Sec.~\ref{sec:88Sr_framework}: only a
-fraction of the atoms sees the nominal intensity, and this fraction can differ between two
-measurements, so that the effective intensity is poorly known for each of them.
-\hl{[Vérifier que la largeur utilisée a été mesurée avec le même laser que la décroissance $N(t)$.]}
+The spectrum of this line (Fig.~\ref{88Sr resonance}, middle), from which its linewidth is
+extracted, was recorded with the same MOGlabs laser as the decay $N(t)$, but with the ODT/PA
+chopping sequence active (Fig.~\ref{fig:sequence_chopping}), whereas the decay was not. The
+chopping itself was checked to have a negligible effect on the atoms, but the PA beam is then
+on only half of the time ($20~\mu$s every $40~\mu$s): the time-averaged intensity of this
+spectrum is $I/2 = 3.65$~mW/cm$^2$ rather than the nominal $7.3$~mW/cm$^2$.
+Even with this correction, the spectrum and the decay are not consistent for this line: the
+loss coefficient deduced from the depth of the spectrum, $\simeq1\times10^{-13}$~cm$^3$/s
+at a time-averaged intensity of $3.65$~mW/cm$^2$, is a factor $50\pm15$ lower than the one
+of the decay once brought to the same intensity and density, whereas the two measurements
+agree within $\simeq25\%$ for the $\nu=-2$ line. We attribute this discrepancy to the
+inhomogeneous PA intensity seen by the atoms in the $^{88}\text{Sr}$ measurements, caused by
+the misalignment between the PA beam and the atomic cloud discussed in
+Sec.~\ref{sec:88Sr_framework}: only a fraction of the atoms sees the nominal intensity, and
+this fraction can differ between two measurements, so that the effective intensity is poorly
+known for each of them.
 
 For the resonance $f_{\nu=-2}=-222.70(1)$~MHz, the fit gives
 $\beta=(4.0\pm0.3)\times10^{-5}$~s$^{-1}$ per atom, i.e.
@@ -1514,6 +1524,10 @@ al.~\cite{blatt_systematic_2011} for this line (their $n=-3$ state), and within 
 $\simeq2$ of the theoretical value $\xi = 32.8~a_0/(\text{W/cm}^2)$.
 Blatt et al. note themselves that significant experimental uncertainty can arise
 from the calibration of the atomic density and of the focused PA laser intensity.
+Our values of $l_{\text{opt}}/I$ are therefore close to those of Blatt et al., but a
+quantitative agreement cannot be confirmed: their theoretical values $\xi$ are given without
+uncertainty, and the uncertainties quoted on their measured values do not include these
+calibration errors.
 
 
 
@@ -1716,10 +1730,13 @@ $t=1000$~ms on a recompressed gas of average density
 $\langle n\rangle = (7.0\pm1.0)\times10^{12}$~atoms/cm$^3$ and temperature $T=2.38\pm0.08~\mu$K at intensity
 $I=19\pm1.1$~W/cm$^2$. The PA beam has a waist $w\simeq60~\mu$m; all uncertainties are estimated as described in
 Sec.~\ref{sec:uncertainties}. The
-Lorentzian shape of the data (Fig.~\ref{fig:line_259MHz}, top left) reveals a
-surprisingly large linewidth of $\Gamma = 2.5\pm0.2$~MHz, i.e.
-$\Gamma/(\Gamma_{\text{mol}}/2\pi) \simeq 170$, with a maximum loss of
-$31\pm1\%$ of the atom number at resonance.
+Lorentzian fit of the normalized data (Fig.~\ref{fig:line_259MHz}, top left) reveals a
+surprisingly large linewidth of $\Gamma = 7.4\pm0.9$~MHz, i.e.
+$\Gamma/(\Gamma_{\text{mol}}/2\pi) \simeq 490$, with a depth of
+$40\pm2\%$ of the off-resonant atom number at resonance. The off-resonant level of the
+normalized spectrum is itself below unity ($0.91\pm0.02$): away from the molecular line,
+the PA light induces an additional loss of $\simeq9\%$ in $1$~s which is not molecular, as
+already observed in Fig.~\ref{exp decay 6 MHz noise}.
 
 Fig.~\ref{fig:line_259MHz} (bottom left) shows the temperature of the cloud measured in the
 same experiment, intended to help confirm the molecular nature of the losses.
@@ -1740,15 +1757,32 @@ The fit yields \textbf{$K_2 = (5.0\pm2.8)\times10^{-13}$ cm$^3$/s} at
 ideal-line relation (Eq.~\ref{eq:K2_peak_ideal}) would give
 $l_{\text{opt}}^{\text{ideal}}/I=(6.8\pm3.8)\times10^{-3}$~$a_0$/(W/cm$^2$).
 Accounting for the linewidth through Eq.~\ref{eq:lopt_corrected}, Method 2 gives
-\textbf{$l_{\text{opt}}/I=1.15\pm0.65$ $a_0$/(W/cm$^2$)}. Method 1, using the depth
-of the spectrum (Eq.~\ref{eq:K2_from_spectrum}), gives
-$K_2^{\text{fit}}(0) = (6.4\pm1.0)\times10^{-14}$~cm$^3$/s, i.e.
-\textbf{$l_{\text{opt}}/I=0.15\pm0.03$ $a_0$/(W/cm$^2$)} (including the intensity and
-density uncertainties). The two methods differ by a factor $\simeq8$ on $l_{\text{opt}}/I$, but the two loss
-coefficients, $(6.4\pm1.0)\times10^{-14}$~cm$^3$/s for the spectrum and
-$(5.0\pm2.8)\times10^{-13}$~cm$^3$/s for the decay, remain compatible within $\simeq2\sigma$,
+\textbf{$l_{\text{opt}}/I=3.4\pm1.9$ $a_0$/(W/cm$^2$)}. Method 1, using the depth
+of the normalized spectrum (Eq.~\ref{eq:K2_from_spectrum}), gives
+$K_2^{\text{fit}}(0) = (9.4\pm1.5)\times10^{-14}$~cm$^3$/s, i.e.
+\textbf{$l_{\text{opt}}/I=0.63\pm0.13$ $a_0$/(W/cm$^2$)} (including the intensity and
+density uncertainties). The two methods differ by a factor $\simeq5$ on $l_{\text{opt}}/I$, but the two loss
+coefficients, $(9.4\pm1.5)\times10^{-14}$~cm$^3$/s for the spectrum and
+$(5.0\pm2.8)\times10^{-13}$~cm$^3$/s for the decay, remain compatible within $\simeq1.5\sigma$,
 owing to the large uncertainty of the decay fit for this line.
-\hl{[À discuter : origine de la tension entre le spectre et la décroissance pour cette raie.]}
+
+The two measurements can also be compared directly, independently of the decay model.
+Since the spectrum and the decay share the same intensity and density, the
+$(40\pm2)\%$ depth at the line center after $1$~s, i.e.
+$K_2\langle n\rangle t=A/(1-A)=0.66\pm0.05$, predicts the same loss after $1$~s on the
+decay. The decay, however, is not normalized: it also contains the non-molecular
+PA-induced loss that the shot-to-shot normalization removes from the spectrum. Since the
+solution of Eq.~\ref{eq:final_fit} is the product of the one-body factor $e^{-\gamma t}$,
+with $\gamma$ the one-body loss rate induced by the off-resonant PA light, and of a
+two-body factor, the off-resonant level of the spectrum, $b=e^{-\gamma t}$, cancels in
+the depth measured relative to it, and dividing the decay by $b$ isolates the same
+two-body factor. The raw
+$(49\pm3)\%$ loss read on the decay at $1$~s ($K_2\langle n\rangle t=0.96\pm0.12$) becomes
+$(44\pm3)\%$ once divided by the off-resonant level of the spectrum recorded at the same
+intensity, i.e. $K_2\langle n\rangle t=0.79\pm0.12$, in agreement with the spectrum within
+$\simeq1\sigma$. The larger factor between the two methods on $K_2$ is most likely due to
+the decay model: the fitted $K_2$ relies on the interpolated temperature $T(t)$, which rises up to
+$4.7~\mu$K and increases $V_e$, whereas the direct comparison at $1$~s does not.
 The saturating-exponential fit of $T(t)$ (Fig.~\ref{fig:line_259MHz}, bottom right),
 with $\Gamma$ fixed to the value extracted from $N(t)$, is consistent with the
 anti-evaporation heating mechanism discussed in Sec.~\ref{sec:temperature_analysis}.
@@ -1767,10 +1801,13 @@ resonance (Fig.~\ref{fig:line_276MHz}, top left). The gas, prepared at an averag
 density of $\langle n\rangle = (1.6\pm0.2)\times10^{13}~\text{atoms/cm}^3$ and temperature $T=1.24\pm0.05~\mu$K by evaporation at
 the crossing of the reservoir and dimple beams, was illuminated for $1000$~ms at
 intensity $I = 5.2\pm0.3$~W/cm$^2$. The measured linewidth,
-$\Gamma=7.48\pm0.77$~MHz ($\Gamma/(\Gamma_{\text{mol}}/2\pi) \simeq 500$), is again
-surprisingly large, and the maximum loss reaches $37\pm2\%$; the points deviating from
+$\Gamma=5.1\pm0.3$~MHz ($\Gamma/(\Gamma_{\text{mol}}/2\pi) \simeq 340$), is again
+surprisingly large, and the depth reaches $34\pm1\%$ of the off-resonant atom number,
+whose normalized level is $0.966\pm0.008$; the points deviating from
 the fit may result from the laser unlocking, or simply from a poor Gaussian fit
-of the cloud shape.
+of the cloud shape (the reduced $\chi^2$ of the fit is $2.5$, and the uncertainties
+given here are scaled accordingly).
+\hl{[À vérifier : le fit des données normalisées de la figure composite donne un centre à $276.15\pm0.05$~MHz, et non $276.83\pm0.03$~MHz.]}
 
 The temperature (Fig.~\ref{fig:line_276MHz}, bottom left) is close to maximal at the line
 center, but shows an unexplained oscillation of about $0.1~\mu$K around
@@ -1811,22 +1848,30 @@ The fit yields \textbf{$K_2 = (1.1\pm0.2)\times10^{-12}$ cm$^3$/s} at
 give $l_{\text{opt}}^{\text{ideal}}/I=(9.2\pm1.5)\times10^{-3}$~$a_0$/(W/cm$^2$).
 Accounting for the linewidth measured at $5.2$~W/cm$^2$ through
 Eq.~\ref{eq:lopt_corrected}, Method 2 gives
-\textbf{$l_{\text{opt}}/I=4.6\pm0.9$ $a_0$/(W/cm$^2$)}; since the decay and the
+\textbf{$l_{\text{opt}}/I=3.1\pm0.5$ $a_0$/(W/cm$^2$)}; since the decay and the
 spectrum were recorded at different intensities, this value is a lower bound if the
 width increases with intensity (light shift inhomogeneity) or if the line is
 light-shifted away from the decay frequency. Method 1, using the depth of the
-spectrum at $5.2$~W/cm$^2$, gives $K_2^{\text{fit}}(0) = (3.7\pm0.6)\times10^{-14}$~cm$^3$/s,
-i.e. \textbf{$l_{\text{opt}}/I=0.91\pm0.18$ $a_0$/(W/cm$^2$)}.
-\hl{[À discuter : écart d'un facteur $\sim 5$ entre les deux méthodes.]}
-Brought to the same intensity and density, the spectrum and the decay do not agree.
-Assuming $K_2\propto I$, the $(37\pm2)\%$ loss measured at the line center after $1$~s at
-$5.2$~W/cm$^2$, i.e. $K_2\langle n\rangle t=A/(1-A)=0.59\pm0.05$, corresponds to
-$K_2\langle n\rangle t=1.7\pm0.3$ at $31$~W/cm$^2$ and for the density of the decay, that
-is a loss of $(63\pm5)\%$ after $1$~s, whereas a $(74\pm2)\%$ loss is read on the decay at
-the same time (uncertainties from the fit of the spectrum, from the densities and from the
-$5\%$ uncertainty on each atom number of the decay; the uncertainty on the intensities is
-not included). The two measurements thus differ by a factor $\simeq1.7$ on
-$K_2\langle n\rangle t$, i.e. by $\simeq2.5\sigma$. \hl{[À discuter : origine de l'écart entre le spectre et la décroissance pour cette raie.]} The
+spectrum at $5.2$~W/cm$^2$, gives $K_2^{\text{fit}}(0) = (3.2\pm0.4)\times10^{-14}$~cm$^3$/s,
+i.e. \textbf{$l_{\text{opt}}/I=0.53\pm0.08$ $a_0$/(W/cm$^2$)}. As for the first line, the
+factor $\simeq6$ between the two methods is most likely due to the decay model, the
+temperature rising up to $4.7~\mu$K during the decay.
+Compared directly at $1$~s, the two measurements are compatible.
+Assuming $K_2\propto I$, the $(34\pm1)\%$ depth at the line center after $1$~s at
+$5.2$~W/cm$^2$, i.e. $K_2\langle n\rangle t=A/(1-A)=0.51\pm0.02$, corresponds to
+$K_2\langle n\rangle t=1.46\pm0.31$ at $31$~W/cm$^2$ and for the density of the decay, that
+is a loss of $(59\pm5)\%$ after $1$~s. On the decay, a raw $(74\pm2)\%$ loss is read at the
+same time. As for the first line, this raw loss includes the non-molecular PA-induced
+loss, measured on the off-resonant level of the spectrum ($0.966\pm0.008$ in $1$~s at
+$5.2$~W/cm$^2$). Scaled to $31$~W/cm$^2$ assuming a rate proportional to $I$, this loss
+amounts to a factor $0.81\pm0.04$ in $1$~s; once it is removed, the decay gives a
+$(68\pm3)\%$ loss, i.e. $K_2\langle n\rangle t=2.1\pm0.3$ (uncertainties from the fit of the
+spectrum, from the densities, from the intensities and from the $5\%$ uncertainty on each
+atom number of the decay). The two measurements thus
+differ by a factor $\simeq1.45$ on $K_2\langle n\rangle t$, i.e. by $\simeq1.6\sigma$, and
+remain compatible within $2\sigma$. The residual difference may come from the scaling
+between the two measurements, recorded at different intensities, densities and
+temperatures ($1.24$ and $2.31~\mu$K). The
 saturating-exponential fit of $T(t)$ (Fig.~\ref{fig:line_276MHz}, bottom right)
 does not reproduce the last three points of the temperature trace, which lie
 systematically above the model prediction -- see the discussion in
@@ -1834,7 +1879,7 @@ Sec.~\ref{sec:temperature_analysis}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf}
-    \caption[Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr]{Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr. Panel layout as in Fig.~\ref{fig:line_259MHz}, with $I=5.2\pm0.3$~W/cm$^2$ for the spectrum and $I=31\pm1.8$~W/cm$^2$ for the $N(t)$/$T(t)$ fits, and $\langle n\rangle=(1.6\pm0.2)\times10^{13}$~cm$^{-3}$ (spectrum) and $(7.75\pm1.1)\times10^{12}$~cm$^{-3}$ (decay). Brought to the same intensity and density ($K_2\propto I$), the loss at the line center after $1$~s in the spectrum ($(63\pm5)\%$ expected) is lower than the one of the decay ($(74\pm2)\%$ at $1$~s). All detunings are measured from the $^{87}$Sr atomic resonance.}
+    \caption[Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr]{Characterization of the molecular line at $276.83 \pm 0.03$ MHz in $^{87}$Sr. Panel layout as in Fig.~\ref{fig:line_259MHz}, with $I=5.2\pm0.3$~W/cm$^2$ for the spectrum and $I=31\pm1.8$~W/cm$^2$ for the $N(t)$/$T(t)$ fits, and $\langle n\rangle=(1.6\pm0.2)\times10^{13}$~cm$^{-3}$ (spectrum) and $(7.75\pm1.1)\times10^{12}$~cm$^{-3}$ (decay). Brought to the same intensity and density ($K_2\propto I$), the loss at the line center after $1$~s in the spectrum ($(59\pm5)\%$ expected) is compatible within $2\sigma$ with the one of the decay once the non-molecular PA-induced loss is removed ($(68\pm3)\%$ at $1$~s, $(74\pm2)\%$ raw). All detunings are measured from the $^{87}$Sr atomic resonance.}
     \label{fig:line_276MHz}
 \end{figure}
 
@@ -1849,12 +1894,15 @@ loss) and, again, a large linewidth (FWHM) of $\Gamma=20.2\pm2.3$~MHz
 the atom number with and without PA light for consecutive shots. The Lorentzian fit is
 performed after an iterative $3\sigma$ clipping of the residuals, $\sigma = 0.033$ being
 estimated from their median absolute deviation: $24$ of the $651$ points deviate by more
-than $3\sigma$ from the fit and are not included in it (open symbols in
-Fig.~\ref{fig:line_375MHz}). The error bars combine in quadrature the uncertainty of the
+than $3\sigma$ from the fit; they are removed from the data and are not shown in
+Fig.~\ref{fig:line_375MHz}. The error bars combine in quadrature the uncertainty of the
 2D Gaussian fits of the images (diagonal of their covariance matrix) and the relative
 RMS fluctuation of the atom number ratio, $3.4\%$, evaluated on the first $100$ points
-of the scan, far from the resonance.
-\hl{[À vérifier : les 24 points exclus du fit sont listés dans \texttt{points\_exclus\_fit\_375MHz.txt} ; décider s'ils doivent être retirés des données.]}
+of the scan, far from the resonance. Because of this shot-to-shot fluctuation, individual
+ratios above unity are expected even though the mean ratio cannot exceed one; these points
+are therefore kept, since removing them would bias the off-resonant level downwards and
+underestimate the depth of the line (removing them lowers the depth from $8.9\%$ to
+$7.6\%$). With these error bars, the fit gives a reduced $\chi^2$ of $1.1$.
 The temperature (Fig.~\ref{fig:line_375MHz}, bottom left) is slightly higher across the
 resonance ($2.41~\mu$K on average within the half width) than on the red-detuned side,
 where it decreases by $\Delta T\simeq 50$~nK.
@@ -1880,10 +1928,13 @@ $K_2^{\text{fit}}(0) = (1.4\pm0.2)\times10^{-14}$~cm$^3$/s at $5.6$~W/cm$^2$, i.
 uncertainties. The two measurements also agree directly once brought to the same
 intensity and density: assuming $K_2\propto I$, the $(8.9\pm0.5)\%$ loss of the spectrum
 at $5.6$~W/cm$^2$ ($K_2\langle n\rangle t=0.098\pm0.006$) corresponds to
-$K_2\langle n\rangle t=0.32\pm0.02$ at $19$~W/cm$^2$ and for the density of the decay,
-i.e. a loss of $(24\pm1)\%$ after
-$1$~s, in agreement with the $(27\pm5)\%$ loss read on the decay (same sources of
-uncertainty as for the previous line). The
+$K_2\langle n\rangle t=0.32\pm0.07$ at $19$~W/cm$^2$ and for the density of the decay,
+i.e. a loss of $(24\pm4)\%$ after
+$1$~s, in agreement with the $(27\pm5)\%$ raw loss read on the decay (same sources of
+uncertainty as for the previous line). Removing the non-molecular PA-induced loss as for
+the two other lines (off-resonant level $0.974\pm0.004$ at $5.6$~W/cm$^2$, i.e. a factor
+$0.91\pm0.01$ in $1$~s at $19$~W/cm$^2$) gives a $(20\pm6)\%$ loss on the decay, still in
+agreement with the spectrum. The
 saturating-exponential fit of $T(t)$ (Fig.~\ref{fig:line_375MHz}, bottom right)
 agrees well with the data over this timescale, though the transition to the
 $\Gamma$-dominated regime is not yet fully resolved given the small value of
@@ -1893,7 +1944,7 @@ $\Gamma$ for this line.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_375MHz.pdf}
-    \caption[Characterization of the molecular line at $-377.2 \pm 0.5$ MHz in $^{87}$Sr]{Characterization of the molecular line at $377.2 \pm 0.5$ MHz in $^{87}$Sr. Panel layout as in Fig.~\ref{fig:line_259MHz}, with $I=5.6\pm0.4$~W/cm$^2$ and $\langle n\rangle=(7.2\pm1.0)\times10^{12}$~cm$^{-3}$ for the spectrum, and $I=19\pm1.1$~W/cm$^2$ and $\langle n\rangle=(7.0\pm1.0)\times10^{12}$~cm$^{-3}$ for the $N(t)$/$T(t)$ fits. Brought to the same intensity ($K_2\propto I$), the loss at the line center after $1$~s in the spectrum ($(24\pm1)\%$ expected at $19$~W/cm$^2$) agrees with the decay ($(27\pm5)\%$ at $1$~s). Left panels: ratio of the atom numbers of consecutive shots with and without PA light, and temperature of the PA shots computed from the vertical cloud size after time of flight. The Lorentzian fit (green) excludes the points lying more than $3\sigma$ away from it (open symbols, $24$ of $651$ points), $\sigma = 0.033$ being the scatter of the fit residuals. Error bars: 2D Gaussian fit uncertainty, combined in quadrature for the atom number ratio with its relative RMS fluctuation ($3.4\%$) over the first $100$ off-resonant points of the scan. All detunings are measured from the $^{87}$Sr atomic resonance.}
+    \caption[Characterization of the molecular line at $-377.2 \pm 0.5$ MHz in $^{87}$Sr]{Characterization of the molecular line at $377.2 \pm 0.5$ MHz in $^{87}$Sr. Panel layout as in Fig.~\ref{fig:line_259MHz}, with $I=5.6\pm0.4$~W/cm$^2$ and $\langle n\rangle=(7.2\pm1.0)\times10^{12}$~cm$^{-3}$ for the spectrum, and $I=19\pm1.1$~W/cm$^2$ and $\langle n\rangle=(7.0\pm1.0)\times10^{12}$~cm$^{-3}$ for the $N(t)$/$T(t)$ fits. Brought to the same intensity ($K_2\propto I$), the loss at the line center after $1$~s in the spectrum ($(24\pm4)\%$ expected at $19$~W/cm$^2$) agrees with the decay ($(27\pm5)\%$ at $1$~s). Left panels: ratio of the atom numbers of consecutive shots with and without PA light, and temperature of the PA shots computed from the vertical cloud size after time of flight. The $24$ of $651$ points lying more than $3\sigma$ away from the Lorentzian fit (green) are removed, $\sigma = 0.033$ being the scatter of the fit residuals. Error bars: 2D Gaussian fit uncertainty, combined in quadrature for the atom number ratio with its relative RMS fluctuation ($3.4\%$) over the first $100$ off-resonant points of the scan. All detunings are measured from the $^{87}$Sr atomic resonance.}
     \label{fig:line_375MHz}
 \end{figure}
 
@@ -1903,7 +1954,7 @@ density $\langle n\rangle = N/(2\sqrt{2}\,V_e)$ and characteristic time $\tau$
 (defined in Eq.~\ref{temps caractéristique}). The mean trap frequency $\bar\omega$ is computed for each measurement
 from the measured Reservoir and Dimple beam powers (see Sec.~\hl{[ref]}), and all
 uncertainties are estimated as described in Sec.~\ref{sec:uncertainties}. 'Depth' refers to the peak amplitude
-of the fitted Lorentzian line, normalized to the off-resonant atom number. The densities
+of the Lorentzian fitted on the normalized data (ratio of the atom numbers with and without PA light), divided by its off-resonant level; the latter, below unity, measures the non-molecular loss induced by the PA light. The densities
 of the spectrum and of the decay are computed separately: they are identical for the
 first line and differ for the last two lines, as do the intensities. $l_{\text{opt}}^{\text{ideal}}/I$ is obtained from the ideal-line relation
 (Eq.~\ref{eq:K2_peak_ideal}), which neglects the linewidth, while the last two rows
@@ -1920,8 +1971,9 @@ depth (Method 1) or from the decay (Method 2).
 \hline \hline
 \textbf{Freq. $f$ (MHz)} & \textbf{$-259.01 \pm 0.12$} & \textbf{$-276.83 \pm 0.03$} & \textbf{$-377.2 \pm 0.5$} \\ 
 \hline
-Depth & $-0.31 \pm 0.01$ & $-0.37 \pm 0.02$ & $-0.087 \pm 0.005$ \\
-Width (MHz) & $2.5 \pm 0.2$ & $7.5 \pm 0.8$ & $20.2 \pm 2.3$ \\
+Depth & $-0.40 \pm 0.02$ & $-0.34 \pm 0.01$ & $-0.089 \pm 0.005$ \\
+Off-resonant level & $0.91 \pm 0.02$ & $0.97 \pm 0.01$ & $0.98 \pm 0.01$ \\
+Width (MHz) & $7.4 \pm 0.9$ & $5.1 \pm 0.3$ & $20.2 \pm 3.0$ \\
 Exposure time $t$ (ms) & 1000 & 1000 & 1000 \\ 
 Temperature for resonance $T$ ($\mu$K) & $2.38\pm0.08$ & $1.24\pm0.05$ & $2.38\pm0.04$ \\
 Density $\langle n\rangle$ (atoms/cm$^3$) & $(7.0\pm1.0)\times10^{12}$ & $(1.6\pm0.2)\times10^{13}$ & $(7.2\pm1.0)\times10^{12}$ \\
@@ -1935,10 +1987,10 @@ $K_2$ (cm$^3$/s) & $(5.0\pm2.8)\times10^{-13}$ & $(1.1\pm0.2)\times10^{-12}$ & $
 Characteristic time $\tau$ & $285~\text{ms}$ & $116~\text{ms}$ & $5.4~\text{s}$ \\
 $l_{\text{opt}}^{\text{ideal}}/I$ ($a_0/(\text{W/cm}^2)$) & $(6.8\pm3.8)\times10^{-3}$ & $(9.2\pm1.5)\times10^{-3}$ & $(3.6\pm2.6)\times10^{-4}$ \\ 
 \hline
-$\Gamma_{\text{fit}}/(\Gamma_{\text{mol}}/2\pi)$ & $169\pm11$ & $499\pm51$ & $1349\pm155$ \\
-$K_2^{\text{fit}}(0)$ from spectrum (cm$^3$/s) & $(6.4\pm1.0)\times10^{-14}$ & $(3.7\pm0.6)\times10^{-14}$ & $(1.4\pm0.2)\times10^{-14}$ \\
-$l_{\text{opt}}/I$, Method 1 ($a_0/(\text{W/cm}^2)$) & $0.15\pm0.03$ & $0.91\pm0.18$ & $0.84\pm0.17$ \\
-$l_{\text{opt}}/I$, Method 2 ($a_0/(\text{W/cm}^2)$) & $1.15\pm0.65$ & $4.6\pm0.9$ & $0.49\pm0.35$ \\
+$\Gamma_{\text{fit}}/(\Gamma_{\text{mol}}/2\pi)$ & $493\pm60$ & $338\pm22$ & $1349\pm155$ \\
+$K_2^{\text{fit}}(0)$ from spectrum (cm$^3$/s) & $(9.4\pm1.5)\times10^{-14}$ & $(3.2\pm0.4)\times10^{-14}$ & $(1.4\pm0.2)\times10^{-14}$ \\
+$l_{\text{opt}}/I$, Method 1 ($a_0/(\text{W/cm}^2)$) & $0.63\pm0.13$ & $0.53\pm0.08$ & $0.84\pm0.17$ \\
+$l_{\text{opt}}/I$, Method 2 ($a_0/(\text{W/cm}^2)$) & $3.4\pm1.9$ & $3.1\pm0.5$ & $0.49\pm0.35$ \\
 \hline \hline
 \end{tabular}
 \end{table}
@@ -1949,10 +2001,10 @@ These results show multiple surprising behaviors of our atoms :
 \begin{itemize}
     \item First, contrarely to the 270~kHz energy diffence between the 981 vibrational states estimated under 270~MHz from the atomic transition, we have not been able to detect two-body losses before $259.01$ 
     MHz. It is also not consistent with the expected results on $87$ isotope from mass scaling discussion of \cite{borkowski_mass_2014}.
-    \item The linewidth of each line is large: $2.53 \pm 0.17$, $7.48 \pm 0.77$ and $20.2 \pm 2.3$~MHz, while we expect $\Gamma_{\text{mol}}/2\pi \simeq 2\times \Gamma_{\text{at}}/2\pi \simeq 15$~kHz, i.e. two to three orders of magnitude larger. \hl{commentaire sur la largeur de certaines expériences déjà grande}
-    \item As a direct consequence of this broadening, the losses at resonance remain small: the three lines present depths from $9\pm1\%$ to $37\pm2\%$ for intensities greater than in many experiments like \cite{zelevinsky_narrow_2006} and 
+    \item The linewidth of each line is large: $7.4 \pm 0.9$, $5.1 \pm 0.3$ and $20.2 \pm 2.3$~MHz, while we expect $\Gamma_{\text{mol}}/2\pi \simeq 2\times \Gamma_{\text{at}}/2\pi \simeq 15$~kHz, i.e. two to three orders of magnitude larger. \hl{commentaire sur la largeur de certaines expériences déjà grande}
+    \item As a direct consequence of this broadening, the losses at resonance remain small: the three lines present depths from $9\pm1\%$ to $40\pm2\%$ for intensities greater than in many experiments like \cite{zelevinsky_narrow_2006} and 
     similar atomic densities. At fixed $l_{\text{opt}}$, a line $10^2$--$10^3$ times broader than $\Gamma_{\text{mol}}$ has a peak loss coefficient lowered by the same factor (Eq.~\ref{eq:lopt_corrected}): the low contrast and the large linewidth are therefore not two independent observations.
-    \item Once the linewidth is accounted for, the optical lengths are $l_{\text{opt}}/I \sim 0.15$--$5~a_0/(\text{W/cm}^2)$ (Table~\ref{tab:summary_fits_PA_final}). \hl{[Conclusion à revoir : la comparaison avec \mbox{\cite{reschovsky_narrow-line_2018}} et \mbox{\cite{reichenbach_optical_nodate}} indiquait un écart de cinq ordres de grandeur sur $l_{\text{opt}}$ avec les valeurs non corrigées ; il faut la refaire avec les valeurs corrigées, l'écart devrait se réduire à environ deux ou trois ordres de grandeur. Vérifier aussi si ces références corrigent elles-mêmes de la largeur.]}
+    \item Once the linewidth is accounted for, the optical lengths are $l_{\text{opt}}/I \sim 0.5$--$3.5~a_0/(\text{W/cm}^2)$ (Table~\ref{tab:summary_fits_PA_final}). \hl{[Conclusion à revoir : la comparaison avec \mbox{\cite{reschovsky_narrow-line_2018}} et \mbox{\cite{reichenbach_optical_nodate}} indiquait un écart de cinq ordres de grandeur sur $l_{\text{opt}}$ avec les valeurs non corrigées ; il faut la refaire avec les valeurs corrigées, l'écart devrait se réduire à environ deux ou trois ordres de grandeur. Vérifier aussi si ces références corrigent elles-mêmes de la largeur.]}
 \end{itemize}
 
 
@@ -2061,5 +2113,5 @@ but no significant change has been observed on the linewidth and the contrast of
 
 To conclude on this chapter I started to present theoretical aspect of PA process by introducting fundamental material such as scattering length, optical length, atoms evolution time for two-body collisions... 
 Then I presented the experimental results on $^{88}Sr$ on intercombination line as a reference to experimentally characterize the process. This chapter ends up with the measurement of molecular lines on an 
-unpolarized gas of $^{87}Sr$ with linewidths two to three orders of magnitude larger than the radiative width, which account for their low contrast. Once this broadening is taken into account, the optical lengths reach $l_{\text{opt}}/I \sim 0.15$--$5~a_0/(\text{W/cm}^2)$. \hl{[Conclusion à revoir : l'interprétation par la prédissociation reste la plus probable mais doit être discutée face au light shift inhomogène, et la comparaison des $l_{\text{opt}}$ avec la littérature doit être refaite avec les valeurs corrigées.]}\\
+unpolarized gas of $^{87}Sr$ with linewidths two to three orders of magnitude larger than the radiative width, which account for their low contrast. Once this broadening is taken into account, the optical lengths reach $l_{\text{opt}}/I \sim 0.5$--$3.5~a_0/(\text{W/cm}^2)$. \hl{[Conclusion à revoir : l'interprétation par la prédissociation reste la plus probable mais doit être discutée face au light shift inhomogène, et la comparaison des $l_{\text{opt}}$ avec la littérature doit être refaite avec les valeurs corrigées.]}\\
 
