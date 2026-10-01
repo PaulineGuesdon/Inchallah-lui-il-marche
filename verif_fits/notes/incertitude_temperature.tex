@@ -1,0 +1,41 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}\usepackage[french]{babel}
+\usepackage{amsmath,amssymb,booktabs}\usepackage[margin=2.2cm]{geometry}
+\begin{document}
+\section*{Comment est obtenue l'incertitude sur la température}
+\emph{Rien n'a été estimé à part : tout vient du fit de chaque image, puis d'une moyenne sur le spectre.}
+
+\paragraph{Étape 1 -- Fit de l'image (un seul shot).}
+Chaque image d'absorption est ajustée par une gaussienne 2D. Le fit donne la largeur verticale du nuage après temps de vol,
+$\sigma_y$, et son incertitude $\delta\sigma_y$ (racine de l'élément diagonal de la matrice de covariance du fit).
+
+\emph{Exemple (premier shot de la raie $-377$~MHz, fichier \texttt{resultats\_normalises.csv}) :}
+$\sigma_y = 15.98 \pm 0.024$~pixels, soit $\sigma_y = 103.86 \pm 0.15~\mu$m (pixel de $6.5~\mu$m).
+
+\paragraph{Étape 2 -- Température de ce shot.}
+\[
+T = \frac{m_{\text{at}}\left(\sigma_y^2-\sigma_{0,y}^2\right)}{k_B\,t_{\text{TOF}}^2},
+\qquad \sigma_{0,y}=32~\mu\text{m (fixé)},\quad t_{\text{TOF}}=6.658~\text{ms}.
+\]
+\emph{Exemple :} $T = 2.305~\mu$K.
+
+\paragraph{Étape 3 -- Incertitude de ce shot.}
+On propage uniquement l'incertitude du fit sur $\sigma_y$ (la taille dans le piège $\sigma_{0,y}$ est fixée, sans incertitude) :
+\[
+\delta T = \frac{2\,m_{\text{at}}\,\sigma_y\,\delta\sigma_y}{k_B\,t_{\text{TOF}}^2}.
+\]
+\emph{Exemple :} $\delta T = 0.0075~\mu$K. C'est la barre d'erreur de chaque point des panneaux $T(f)$ et $T(t)$.
+Elle est très petite : elle ne traduit que la précision du fit d'une image.
+
+\paragraph{Étape 4 -- Température d'un spectre entier (tableaux et texte).}
+Pour donner une seule température à tout un spectre (par exemple $T=2.38\pm0.04~\mu$K pour la raie $-377$), on prend
+\begin{itemize}
+\item la \textbf{moyenne} des températures de tous les points du spectre ;
+\item comme incertitude, leur \textbf{écart-type}.
+\end{itemize}
+Cet écart-type ($\sim0.03$--$0.08~\mu$K) est bien plus grand que $\delta T$ d'un shot ($\sim0.008~\mu$K) : il traduit
+la dispersion réelle de la température d'un shot à l'autre pendant le scan.
+
+\paragraph{Étape 5 -- Température d'une décroissance.}
+On donne la température du premier et du dernier point (ex. $2.28\to3.23~\mu$K), chacune avec son $\delta T$ de l'étape 3.
+\end{document}

@@ -1,0 +1,52 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}\usepackage[french]{babel}
+\usepackage{amsmath,amssymb}\usepackage[margin=2.2cm]{geometry}
+\begin{document}
+\section*{Pourquoi $A$ et $\sigma$ sont anticorrélés dans un fit gaussien}
+
+\paragraph{1. Covariance d'un fit par moindres carrés.}
+La matrice de covariance des paramètres est l'inverse de la matrice de Fisher :
+\begin{equation}
+C = F^{-1}, \qquad
+F_{ij} = \frac{1}{s^2}\sum_{\text{pixels}} \frac{\partial f}{\partial p_i}\,\frac{\partial f}{\partial p_j},
+\end{equation}
+où $s$ est le bruit sur un pixel et $p_i$ les paramètres du fit.
+
+\paragraph{2. Dérivées d'une gaussienne.}
+Pour $f(x) = A\,e^{-x^2/2\sigma^2}$ :
+\begin{equation}
+\frac{\partial f}{\partial A} = e^{-x^2/2\sigma^2} > 0,
+\qquad
+\frac{\partial f}{\partial \sigma} = A\,\frac{x^2}{\sigma^3}\,e^{-x^2/2\sigma^2} \geq 0 .
+\end{equation}
+Les deux dérivées ont le même signe sur tous les pixels, donc $F_{A\sigma} > 0$.
+
+\paragraph{3. Inversion.}
+Pour une matrice $2\times2$, l'élément hors diagonale de l'inverse change de signe :
+\begin{equation}
+C_{A\sigma} = -\frac{F_{A\sigma}}{\det F} < 0 .
+\end{equation}
+
+\paragraph{4. Valeur de la corrélation} (1D, sans offset, sommes remplacées par des intégrales) :
+\begin{equation}
+F_{AA} = \sqrt{\pi}\,\sigma,\qquad
+F_{A\sigma} = \frac{\sqrt{\pi}}{2}\,A,\qquad
+F_{\sigma\sigma} = \frac{3\sqrt{\pi}}{4}\,\frac{A^2}{\sigma},
+\end{equation}
+\begin{equation}
+\rho(A,\sigma) = -\frac{F_{A\sigma}}{\sqrt{F_{AA}F_{\sigma\sigma}}} = -\frac{1}{\sqrt{3}} \simeq -0.58 .
+\end{equation}
+En 2D avec offset, la simulation donne $\rho(A,\sigma_x)\simeq\rho(A,\sigma_y)\simeq-0.49$ et $\rho(\sigma_x,\sigma_y)\simeq0.05$.
+
+\paragraph{5. Conséquence sur le nombre d'atomes.}
+Avec $N \propto A\,\sigma_x\,\sigma_y$, la propagation complète s'écrit
+\begin{equation}
+\left(\frac{\delta N}{N}\right)^2 =
+\left(\frac{\delta A}{A}\right)^2 + \left(\frac{\delta \sigma_x}{\sigma_x}\right)^2 + \left(\frac{\delta \sigma_y}{\sigma_y}\right)^2
++ \frac{2\,\mathrm{Cov}(A,\sigma_x)}{A\,\sigma_x} + \frac{2\,\mathrm{Cov}(A,\sigma_y)}{A\,\sigma_y} + \frac{2\,\mathrm{Cov}(\sigma_x,\sigma_y)}{\sigma_x\,\sigma_y}.
+\end{equation}
+Les deux covariances avec $A$ sont négatives et $\mathrm{Cov}(\sigma_x,\sigma_y)\simeq0$ : ne garder que les trois premiers termes \emph{surestime} $\delta N/N$.
+Simulation : $\delta N/N = 0.53\,\%$ (diagonale seule) contre $0.33\,\%$ (covariance complète).
+
+\paragraph{Intuition.} Si le fit élargit un peu la gaussienne, il baisse l'amplitude pour garder la même intégrale : le nombre d'atomes est mieux déterminé que $A$ et $\sigma$ séparément.
+\end{document}

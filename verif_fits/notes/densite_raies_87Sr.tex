@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}\usepackage[french]{babel}
+\usepackage{amsmath,amssymb,booktabs}\usepackage[margin=2.2cm]{geometry}
+\begin{document}
+\section*{Densité attendue de raies moléculaires pour $^{87}$Sr}
+
+\paragraph{1. Quelle loi de LeRoy-Bernstein ?}
+$E_\nu = \big[(\nu_D-\nu)\,H_n\big]^{2n/(n-2)}$, soit $E^{1/6}$ linéaire en $\nu$ pour $n=3$ et $E^{1/3}$ linéaire pour $n=6$.
+Test sur les niveaux $0_u$ mesurés de $^{88}$Sr (Zelevinsky \emph{et al.}) :
+\begin{center}
+\begin{tabular}{lcccc}\toprule
+$\nu$ & $-1$ & $-2$ & $-3$ & $-4$\\ \midrule
+$E$ (MHz) & 0.435 & 23.932 & 222.161 & 1084.093\\
+$E^{1/6}$ & 0.870 & 1.698 & 2.461 & 3.205 \\
+$E^{1/3}$ & 0.758 & 2.882 & 6.057 & 10.273\\ \bottomrule
+\end{tabular}
+\end{center}
+Les écarts successifs de $E^{1/6}$ sont presque constants ($0.83,\ 0.76,\ 0.74$), ceux de $E^{1/3}$ ne le sont pas ($2.1,\ 3.2,\ 4.2$).
+Près du seuil, le potentiel excité suit donc la loi en $C_3/r^3$ ($n=3$), et non en $C_6/r^6$ :
+\[
+H_3(^{88}\text{Sr}) = 0.777~\text{MHz}^{1/6}.
+\]
+L'expression $3H_6\epsilon^{2/3}$ utilisée dans le texte est l'espacement $dE/d\nu$ d'un potentiel en $C_6$ : ni la bonne loi, ni la bonne grandeur.
+
+\paragraph{2. Passage à $^{87}$Sr.} $C_3$ est électronique (identique pour les deux isotopes) et $H_3\propto\mu^{-1/2}$ :
+\[
+H_3(^{87}\text{Sr}) = H_3(^{88}\text{Sr})\sqrt{\frac{\mu_{88}}{\mu_{87}}} = 0.781~\text{MHz}^{1/6}.
+\]
+
+\paragraph{3. Nombre de niveaux vibrationnels par canal.}
+Le nombre de niveaux liés à moins de $E$ sous le seuil d'un canal vaut environ $E^{1/6}/H_3$ :
+\begin{center}
+\begin{tabular}{lc}\toprule
+Domaine sous le seuil & Niveaux par canal \\ \midrule
+$0$--$266$~MHz & $\simeq 3.3$\\
+$0$--$380$~MHz (jusqu'à la raie la plus profonde observée) & $\simeq 3.5$\\ \bottomrule
+\end{tabular}
+\end{center}
+Ordre de grandeur des énergies de liaison successives (pour $\nu_D$ entier) : $0.2$, $15$, $170$, $930$~MHz. Il y a donc environ trois niveaux par canal dans la zone explorée, et le suivant est vers $1$~GHz.
+
+\paragraph{4. Espacement moyen des raies.}
+Avec les $981$ configurations accessibles, chacune portant $\simeq3.5$ niveaux sous $380$~MHz :
+\[
+N_{\text{raies}} \simeq 981\times3.5 \simeq 3.4\times10^3,
+\qquad
+\delta \simeq \frac{380~\text{MHz}}{3.4\times10^3} \simeq 110~\text{kHz}.
+\]
+(Sur $0$--$266$~MHz : $\simeq 3.2\times10^3$ raies, $\delta\simeq 85$~kHz.)
+
+\paragraph{Hypothèse à garder en tête.} On suppose que les $981$ canaux convergent tous vers la même asymptote.
+Ceux qui convergent vers les autres asymptotes hyperfines de $^3P_1$ (séparées de $\sim$GHz) placent leurs niveaux ailleurs :
+le chiffre ci-dessus est donc un espacement \emph{minimal} (densité maximale).
+
+\paragraph{Conclusion.} L'espacement moyen ($\sim100$~kHz) est quelques fois plus grand que la largeur naturelle ($15$~kHz),
+mais bien plus petit que les largeurs de plusieurs MHz observées : élargies, ces raies se chevauchent.
+\end{document}

@@ -23,21 +23,40 @@ of $^{87}$Sr -- giving access to physical quantities such as the linear and quad
 light shift induced by the two-photon Raman process used for spin manipulation.
 
 Finally, we demonstrate a measurement scheme for the non-commuting observables $\hat{s}^x, \hat{s}^y, 
-\hat{s}^z$, which we show is equivalent to the production of Positive-Operator-Valued Measures (POVMs); 
+\hat{s}^z$, which we show is equivalent to the implementation of a Positive-Operator-Valued Measure (POVM); 
 this equivalence is derived in a dedicated section following the included article.
 
 \paragraph{Chapter 3}
-The last chapter presents our results on the photoassociation of $^{87}$Sr, a process that had remained 
-unexplored prior to this work. The chapter opens with the molecular-physics background necessary to 
-interpret the spectroscopic measurements, complemented by the analysis of temperature and atom-number 
-decay as a function of illumination time. We encountered numerous technical difficulties along the way, 
-which are documented here for the reader's reference and should be kept in mind more generally when 
-performing this type of spectroscopy.
+The last chapter presents a photoassociation spectroscopy study of $^{87}$Sr on the
+$^1S_0-{}^3P_1$ intercombination line, a process that had only been briefly mentioned in the
+literature \cite{hill_photoassociative_2021}. The chapter opens with the molecular-physics background
+needed to interpret the measurements, and with the method used to extract the optical length
+$l_{\text{opt}}$ of broadened lines, either from the depth of a loss spectrum or from the decay
+of the atom number at the line center.
 
-The observed lines display a surprisingly rich structure in both their strength and linewidth. The most 
-plausible interpretation is a predissociation mechanism: free atoms are excited to a vibrational state 
-close in energy to a coupled atomic potential, so that instead of forming a bound photoassociated 
-molecule, they decay into an atomic kinetic continuum.
+The protocol was first calibrated on two known vibrational lines of $^{88}$Sr: their positions
+agree with the literature, and, once their linewidth is accounted for, their optical lengths
+agree with the measurements of Blatt et al. within a factor $\lesssim2$. This calibration, and
+the first attempts on $^{87}$Sr, also revealed several pitfalls that should be kept in mind for
+this type of spectroscopy: sidebands of the PA laser can address atomic transitions and mimic
+molecular losses; the PA light induces non-molecular losses, which are removed by a
+shot-to-shot normalization of the spectra but not from the decay curves; and a non-exponential
+decay alone is not a proof of photoassociation, so that each candidate line has to be checked by
+searching for losses at an equal and opposite detuning from the atomic resonance. Once these
+non-molecular losses are taken into account, the spectra and the decays give consistent
+loss coefficients.
+
+Three molecular lines were then observed on $^{87}$Sr, at $-259$, $-276$ and $-377$~MHz from
+the atomic resonance. They are two to three orders of magnitude broader than the expected
+radiative width (from $5$ to $20$~MHz instead of $15$~kHz), and their optical lengths,
+$l_{\text{opt}}/I\simeq0.5$--$3.5~a_0/(\text{W/cm}^2)$, lie one to two orders of magnitude below
+that of a $^{88}$Sr line at a comparable detuning, which explains the high intensities needed to
+observe them. The weak loss rates are a direct consequence of this broadening. Three
+explanations remain open: predissociation of the molecular states towards the continuum of
+another potential, an unresolved forest of overlapping molecular lines -- about $3\times10^3$
+lines are expected within the explored range -- and an inhomogeneous light shift across the
+cloud. Measuring the linewidth as a function of the PA intensity would discriminate between
+them, since only the last one depends on the intensity.
 
 \paragraph{Outcome}
 Several improvements to the experiment are already underway. To improve the resolution of the cloud imaging, 

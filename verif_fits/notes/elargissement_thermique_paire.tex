@@ -1,0 +1,54 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}\usepackage[french]{babel}
+\usepackage{amsmath,amssymb,booktabs}\usepackage[margin=2.2cm]{geometry}
+\begin{document}
+\section*{Élargissement thermique d'une raie de photoassociation}
+
+\paragraph{Ce que fait la formule actuelle.}
+\[
+\Gamma_{\text{thermal}} = \frac{1}{\lambda}\sqrt{\frac{k_BT}{\mu}},\qquad \mu=\frac{m_{\text{at}}}{2}
+\]
+C'est la dispersion de la vitesse \emph{relative} des deux atomes, divisée par $\lambda$. Mais la vitesse relative ne donne pas d'effet Doppler :
+le photon absorbé transfère son impulsion $\hbar k$ au \emph{centre de masse} de la paire, et le décalage Doppler vaut $\vec k\cdot\vec V$, où $\vec V$ est la vitesse du centre de masse.
+
+\paragraph{Deux effets distincts pour une paire.}
+\begin{enumerate}
+\item \textbf{Doppler de la paire} (mouvement du centre de masse, masse totale $M=2m_{\text{at}}$) :
+\[
+\Gamma_{\text{D,paire}} = \frac{1}{\lambda}\sqrt{\frac{k_BT}{2m_{\text{at}}}}
+= \frac{1}{\sqrt2}\,\Gamma_{\text{D,atome}},
+\qquad \Gamma_{\text{D,atome}} = \frac{1}{\lambda}\sqrt{\frac{k_BT}{m_{\text{at}}}} .
+\]
+La paire, deux fois plus lourde, a un Doppler $\sqrt2$ fois plus \emph{petit} qu'un atome seul.
+\item \textbf{Énergie de collision} (mouvement relatif, masse réduite $\mu$) : la résonance est déplacée de $E/h$ (terme $E/\hbar$ de l'équation de Zelevinsky), et $E$ suit la distribution thermique. La largeur associée est d'ordre
+\[
+\Gamma_E \sim \frac{k_BT}{h},
+\]
+avec un profil asymétrique (queue du côté de l'énergie de collision). C'est la contribution propre aux molécules.
+\end{enumerate}
+
+\paragraph{Valeurs numériques} ($^{88}$Sr, $\lambda=689$~nm, écarts-types pour les Doppler) :
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+$T$ & $\Gamma_{\text{D,atome}}$ & $\Gamma_{\text{D,paire}}$ & formule actuelle ($\mu$) & $k_BT/h$ \\
+\midrule
+$1.4~\mu$K & $16.7$~kHz & $11.8$~kHz & $23.6$~kHz & $29$~kHz \\
+$1.8~\mu$K & $18.9$~kHz & $13.4$~kHz & $26.8$~kHz & $37$~kHz \\
+\bottomrule
+\end{tabular}
+\end{center}
+La formule actuelle tombe par hasard entre les deux effets. Toutes ces largeurs restent petites devant les $120$--$340$~kHz mesurés : les conclusions ne changent pas.
+
+\paragraph{Proposition de paragraphe pour la thèse.}
+\begin{quote}\small
+For molecular resonances, the thermal motion of the atoms broadens the line in two
+ways. First, the Doppler shift is set by the motion of the centre of mass of the
+colliding pair, which absorbs the photon recoil: since the pair has a mass
+$2m_{\text{at}}$, its Doppler width $\frac{1}{\lambda}\sqrt{k_BT/2m_{\text{at}}}$ is $\sqrt2$
+smaller than that of a single atom. Second, and specific to photoassociation, the
+relative motion of the two atoms enters through the collision energy $E$, which shifts
+the resonance by $E/h$: its thermal distribution broadens the line asymmetrically, by
+an amount of order $k_BT/h$.
+\end{quote}
+\end{document}
