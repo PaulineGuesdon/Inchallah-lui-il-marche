@@ -10,21 +10,12 @@ Photoassociation (PA) consists of illuminating colliding atoms at a specific fre
 become a high-resolution spectroscopic tool, as the extremely low initial kinetic energy significantly reduces thermal broadening and reveals subtle structures 
 \cite{jones_ultracold_2006}.
 
-In bosonic strontium, photoassociation near the narrow $^1\text{S}_0-{}^3\text{P}_1$
-intercombination line has been studied extensively: the least-bound levels of the $0_u$ and
-$1_u$ excited potentials of $^{88}\text{Sr}$ were measured \cite{zelevinsky_narrow_2006}, used to
-demonstrate optical Feshbach resonances \cite{blatt_measurement_2011, blatt_systematic_2011},
-and mass-scaled to $^{84}\text{Sr}$ and $^{86}\text{Sr}$ \cite{borkowski_mass_2014,
-reschovsky_narrow-line_2018}; such a level was also used as the intermediate state to form
-ground-state $^{84}\text{Sr}_2$ molecules by STIRAP \cite{stellmer_creation_2012}. The
-ground-state potential $X^1\Sigma_g^+$ is known precisely, which gives the scattering lengths
-of all isotopic combinations, including $^{87}\text{Sr}$ \cite{stein_1s1s_2010}. For the
-fermionic isotope $^{87}\text{Sr}$, photoassociation has been reported on the broad
-$^1\text{S}_0-{}^1\text{P}_1$ transition \cite{hill_photoassociative_2021}, whereas on the
-intercombination line it has only been briefly mentioned. On this line, the hyperfine
-structure of the $^3\text{P}_1$ state ($I=9/2$) splits each molecular level into many
-components, which makes the spectrum dense and its assignment difficult, despite its promise
-as a controllable interface for state manipulation.
+However, the formation of $^{87}\text{Sr}$ molecules remains an open question. In contrast, many groups have reported molecular lines and quantum degeneracy in bosonic isotopes
+ ($^{88}\text{Sr}$, $^{86}\text{Sr}$, and $^{84}\text{Sr}$), notably leveraging Bose-Einstein condensates (BECs) and ultracold mixtures as demonstrated by Schreck and co-workers
+  \cite{Stellmer2011Fermi} alongside other experimental works \cite{reschovsky_narrow-line_2018, zelevinsky_narrow_2006, blatt_measurement_2011, borkowski_mass_2014}.
+Regarding the fermionic species, theoretical predictions for molecular potentials were established in \cite{stein_1s1s_2010}, while experimental PA on the broad $^1\text{S}_0 
+- ^1\text{P}_1$ transition was reported in \cite{hill_photoassociative_2021}. Nevertheless, the intricate structure of the narrow intercombination line ($^1\text{S}_0 
+- ^3\text{P}_1$) has so far hindered clear detection of molecular signatures, despite its unique promise as a controllable interface for state manipulation.
 
 Beyond fundamental spectroscopy, resolving these narrow molecular transitions is directly motivated by applications in quantum metrology. In this context, a fundamental 
 benchmark for phase estimation with $N$ independent particles prepared in a coherent spin state is the Standard Quantum Limit (SQL), defined by the shot-noise scaling $\Delta\phi_{\text{SQL}} = 
@@ -177,10 +168,9 @@ At low temperatures we can re-express equations \ref{sigma elastic} and \ref{sig
     \sigma_{inel} = \frac{4\pi}{k}|a''|
 \end{equation}
 
-A typical example of elastic collision is that of two ground-state atoms, which can only
-exchange kinetic energy. Photoassociation, in contrast, is an inelastic, dissipative
-process: a laser couples two ground-state atoms to an excited molecular state, which then
-decays, leading to the loss of the pair.
+As an illustration a usual case of the elastic collisions is atoms in the ground
+state. For inelasticity photoassociation is a good example of
+dissipative process where two atoms in the ground state are coupled to a molecular state by a laser.
 
 \subsection{PA and complex scattering length}
 Photoassociation (PA) is a process in which a pair of colliding free atoms absorbs a photon to form a bound molecule in an excited electronic state. Effectively, because the short-lived molecule quickly decays into 
@@ -273,7 +263,7 @@ optical coupling.
 This matrix equation shows that the laser creates a bridge between the two manifolds. During a collision, two atoms approaching each other on the ground potential $U_g(r)$ have a non-zero probability to absorb a 
 photon and transition to the excited molecular potential $U_e(r)$. Once populated, this state decays via spontaneous emission at a rate $\Gamma_{\text{mol}}$. To account for this particle loss, the molecular decay appears as an imaginary term $-i\hbar\frac{\Gamma_{\text{mol}}}{2}$ in the Hamiltonian matrix.
 
-The laser is detuned far from the atomic resonance, so that it does not excite single atoms: it is only resonant with the transition from the colliding pair to the bound molecular state. Since this free--bound coupling is weak, the excited molecular state remains weakly populated, and the pair spends most of its time on the ground-state potential.
+Since the laser is tuned far from any bare atomic resonance, the excited molecular state remains weakly populated, meaning the atoms spend most of their time interacting on the ground-state potential.
 To isolate the response of the excited molecular channel, we expand the closed-channel wavefunction $\psi_e(r)$ onto the bound vibrational eigenstates $\vert{}v_e\rangle$ of the excited Hamiltonian 
 $\hat{H}_e = -\frac{\hbar^2\nabla^2}{2\mu} + U_e(r)$, which satisfy $\hat{H}_e \vert{}v_e\rangle = E_{v_e} \vert{}v_e\rangle$.
 
@@ -498,9 +488,8 @@ prefactor, and the microscopic PA rate coefficient simplifies to:
     \label{K2 et lopt}
 \end{equation}
 This fundamental result demonstrates that at low temperatures, the maximum photoassociation rate becomes independent of the temperature and scales purely linearly with the laser intensity $I$ through its dependence 
-on $l_{\text{opt}}$. Structurally, $K_2$ is maximized when the ground- and excited-state wavefunctions exhibit maximum overlap at the Condon radius. In a classical picture, this distance corresponds to the outer turning point of the bound
-molecular state, where the two atoms of the molecule spend most of their time, maximizing the
-transition probability.
+on $l_{\text{opt}}$. Structurally, $K_2$ is maximized when the ground- and excited-state wavefunctions exhibit maximum overlap at the Condon radius. In a classical picture, this distance corresponds to the turning 
+point where the colliding atoms spend the most time, maximizing the transition probability.
 
 Eq.~\ref{K2 et lopt} is the relation through which $l_{\text{opt}}$ is defined
 experimentally. It is however only valid at the \textit{peak} of an ideal line,
@@ -550,7 +539,7 @@ estimate a total of 981 accessible $(R_f, T^f)$ molecular configurations. This m
 \begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/ytterbium.pdf}
-    \caption[Density of molecular potentials for $^{173}\text{Yb}$ \cite{han_photoassociation_2018}]{Density of molecular potentials for $^{173}\text{Yb}$ with three hyperfine states, adapted from \cite{han_photoassociation_2018}, giving rise to numerous triplets of quantum numbers $(T, F, R)$. 
+    \caption[Density of molecular potentials for $^{173}\text{Yb}$ \cite{zelevinsky_narrow_2006}]{Density of molecular potentials for $^{173}\text{Yb}$ with three hyperfine states, giving rise to numerous triplets of quantum numbers $(T, F, R)$. 
     The spectral lines are identified as $\Omega_{u/g}$, where $\Omega$ is the total orbital momentum projection of the molecule and $u/g$ denotes the electronic parity (see Fig.~\ref{fig:u-g symmetry}).}
     \label{fig:pa-ytterbium-potentials}
 \end{figure}
@@ -594,11 +583,10 @@ cross-check these energy assignments.
 \subsection{Internal energy states}
 \subsubsection{WKB approximation}
 
-The Wentzel-Kramers-Brillouin (WKB) approximation is a semi-classical method used to estimate
-the vibrational energies of a diatomic system. Theoretical potentials alone are not accurate
-enough to predict ab initio the position of a given level; however, once the position of one
-bound state has been measured experimentally, WKB-based methods allow the positions of the
-other levels to be predicted.
+The Wentzel-Kramers-Brillouin (WKB) approximation is a semi-classical method used to estimate the 
+vibrational eigenvalues of a diatomic system. By modeling the interatomic potential, the position 
+of a first bound state can be determined, which subsequently enables the deduction of the following 
+vibrational levels.
 
 In this approach, the wavefunction is assumed to take the form of a modified plane wave of wavevector $k(x)$,
 $\psi(x) = \frac{C}{\sqrt{k(x)}}e^{i\int_{x_0}^{x} k(x') dx'}$ \cite{sakurai2020modern}. These waves are solutions 
@@ -624,16 +612,18 @@ atoms' motion. This can be explicitly rewritten in terms of the potential gradie
     \label{eq:wkb_validity}
 \end{equation}
 
-This expression shows where the semi-classical approach fails: near the classical
-turning points $x_1$ and $x_2$ of Fig.~\ref{fig:pa-sakurai-wkb}, where $E \approx U(x)$, the
-kinetic energy vanishes and the local wavelength diverges, so that the condition of
-Eq.~\ref{eq:wkb_validity} is violated. Around these points, connection formulas, typically
-using Airy functions, are required to match the solutions across the turning points.
+This expression highlights two critical regimes where the semi-classical approach fails. 
+First, near the classical turning points where $E \approx U(x)$, the kinetic 
+energy vanishes and the wavelength diverges. Second, at short internuclear distances
+(Region I in Fig. \ref{fig:pa-sakurai-wkb}), the steepness of the repulsive wall $|dU/dx|$ 
+becomes too large for the atoms to follow the potential variations adiabatically. In these 
+regions, connection formulas, typically using Airy functions, are required to match the 
+solutions across the turning points.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/WKB_sakurai.pdf}
-    \caption[Illustration of the WKB semi-classical approximation in a simplified potential well]{Semi-classical (WKB) approximation in a simplified potential well
+    \caption[Illustration of the WKB semi-classical approximation at short range in an interatomic potential]{Semi-classical approximation at short range in an interatomic potential 
     $U(x)$. The energy level $E$ intersects the potential at the turning points $x_1$ and 
     $x_2$. In the classically allowed Region II, the wavefunction oscillates with an amplitude 
     proportional to $1/\sqrt{k(x)}$ where in the forbidden Regions I and III, the wavefunction is 
@@ -645,7 +635,8 @@ At positions $x=x_1$ and $x_2$, the momentum reaches zero and becomes imaginary 
 level $E$ crosses the potential $U(x)$. In the classically forbidden regions I and III, the 
 wavefunction is evanescent and characterized by the decay constant $\kappa(x) = \sqrt{2\mu(U(x)-E)}/\hbar$. 
 Around the turning points, it is standard to linearize the potential to connect the oscillatory 
-and evanescent solutions.
+and evanescent solutions. Region I is generally not studied in detail for photoassociation since 
+the repulsive wall of the potential is extremely steep and diverges at very short distances.
 
 To ensure a physical stationary state, the phase accumulated by the wave as it reflects between 
 the barriers at $x_1$ and $x_2$ must satisfy a quantization condition. By ensuring the continuity 
@@ -734,11 +725,8 @@ to be identical for all species. Consequently, only the reduced mass $\mu$ in th
 The experimental positions of the first vibrational states for the $0_u^+$ potential in $^{84}Sr, ^{86}Sr$, 
 and $^{88}Sr$ are shown as red crosses in Fig. \ref{fig:pa-mass-scaling}. These data points allow for the 
 refinement of the potential shape $U(r)$. The fitted functions (blue lines) then enable the prediction of 
-the frequency ranges where $^{87}Sr$ resonances should occur. Note that mass scaling applies
-to the ground-state potential: Martinez de Escobar et al. determined the scattering lengths of
-all isotopic combinations, including $^{87}$Sr--$^{87}$Sr \cite{martinez_de_escobar_two-photon_2008},
-but they give none for the excited states. For $^{87}$Sr, the hyperfine structure of the excited
-state prevents a direct mass scaling of the $^{88}$Sr levels.
+the frequency ranges where $^{87}Sr$ resonances should occur. Nevertheless article \cite{martinez_de_escobar_two-photon_2008} 
+demonstrates the impossibily to determine scattering length on $^{87}Sr$ from mass scaling due to the hyperfine interaction of the species.
 Notably, discontinuities observed for the 
 $^{84}Sr$ isotope correspond to avoided crossings resulting from couplings with the ground-state potential.
 \begin{figure}[H]
@@ -947,29 +935,50 @@ highlighted two critical experimental insights:
 \subsubsection{General experimental framework and baseline parameters}
 \label{sec:88Sr_framework}
 
-Before scanning for molecular resonances, the PA laser frequency is referenced to the atomic
-transition, by recording the atom loss as a function of the detuning around the atomic
-resonance (Fig.~\ref{88Sr resonance}, top). This loss is a one-body process: the atoms scatter
-photons and are heated out of the trap.
-
-The molecular lines, in contrast, induce two-body losses, $\dot n=-K_2n^2$, so that
-$1/n(t)-1/n_0=K_2t$, with a characteristic loss time at half the initial density
+Before scanning for molecular resonances, the atomic transition itself is calibrated by
+recording the atom loss induced by the PA beam as a function of its detuning around the
+expected atomic frequency. This loss follows a two-body decay: isolating the two-body
+term of Eq.~\ref{one and two body losses equation},
+\begin{gather*}
+\frac{dn(t)}{dt} = -K_2 n(t)^2 \\
+\int_{n_0}^{n(t)} \frac{dn}{n^2} = -K_2 \int_{0}^{t} dt \\
+    \left[ -\frac{1}{n} \right]_{n_0}^{n(t)} = -K_2 t \\
+\frac{1}{n(t)} - \frac{1}{n_0} = K_2 t \\
+    t = \frac{1}{K_2} \frac{n_0 - n(t)}{n(t) n_0}
+\end{gather*}
+so that the characteristic loss time at half the initial density is
 \begin{equation}
 \tau = \frac{1}{K_2 n_0}.
 \label{temps caractéristique}
 \end{equation}
 
-With the optical lengths measured by Blatt et al.~\cite{blatt_systematic_2011} for the two lines
-studied here, our densities and intensities, and once the measured linewidths are accounted for,
-one expects $\tau$ of a few ms for both lines. This is what we observe for the $\nu=-2$ line,
-whereas the losses on the $\nu=-1$ line are about two orders of magnitude slower. We attribute
-this to a misalignment of the PA beam with respect to the atomic cloud during these
-measurements, visible as a distorted beam profile at the output of the vacuum cell: only part
-of the cloud sees the nominal intensity, and this fraction can change between measurements.
-The effective intensity is therefore poorly known for these data, which limits the comparison
-with the literature to the line positions and to orders of magnitude for $l_{\text{opt}}$. This
-misalignment is specific to the $^{88}\text{Sr}$ measurements shown in this section and does not
-affect the $^{87}\text{Sr}$ data.
+The PA experiments on $^{88}\text{Sr}$ presented in this section begin with an initial
+density of $n_0 = 5 \times 10^{13}~\text{atoms/cm}^3$ and a temperature of
+$T \simeq 1.7~\mu\text{K}$. The atomic transition is addressed at
+$f^{\text{RF}}_{\text{beating}} = f_{\text{Raman}}$ using a laser beam with an intensity
+of $I = 100~I_{\text{sat}}$ and a waist of $w_0 = 340~\mu\text{m}$. For the typical
+two-body loss rate coefficients expected on this transition
+($10^{-12} < K_2 < 10^{-8}~\text{cm}^3\cdot\text{s}^{-1}$), 
+these parameters predict a
+characteristic loss time $\tau$ of a few milliseconds or less.
+
+Contrary to this prediction, the observed loss was
+much weaker than expected for the predicted $\tau$: the measured $l_{\text{opt}}$ values
+were far from those reported in the literature (see \cite{reschovsky_narrow-line_2018}, \cite{yan_controlling_2013}), despite using an intensity comparable
+to, or higher than, typical values used in similar experiments -- a discrepancy that
+would not be expected if it were simply due to insufficient laser power. Investigating
+this discrepancy revealed a spatial misalignment between the PA beam and the atomic
+cloud for this particular dataset: the shape of the out beam from the vacuum cell was 
+different that the input one, we interpret as only a fraction of the atoms actually contributed to the
+measured two-body loss, diluting the apparent loss rate. This misalignment is specific
+to the $^{88}\text{Sr}$ measurements shown in this section and does not affect the
+$^{87}\text{Sr}$ data presented elsewhere in this thesis. To recover a measurable loss
+signal despite this reduced effective overlap, all $^{88}\text{Sr}$ data shown here were
+acquired with a correspondingly extended illumination time of approximately
+$800~\text{ms}$.
+This comes at a cost: at resonance, the resulting $N = \Gamma_{at}/2 \times t \simeq 10^4$
+scattered photons per atom induce severe heating of the atomic cloud, causing significant
+thermal broadening of the molecular resonances discussed below.
 
 Once the MOGlabs laser is robustly locked to this reference, $f^{RF}_{beating}$ is
 scanned to search for the three lowest vibrational states, shown in
@@ -1101,17 +1110,15 @@ directly proportional to $K_2(\Delta)$:
 \begin{equation}
     f(\Delta) \approx \langle n \rangle \, t_{\text{PA}} \, K_2(\Delta)
 \end{equation}
-i.e. the initial loss rate $f(\Delta)/t_{\text{PA}} \simeq \langle n\rangle K_2(\Delta)$ directly gives the
-two-body loss coefficient.
 Fitting this measured resonance profile with a Lorentzian function yields:
 \begin{equation}
-    f(\Delta) = \frac{A}{1 + \left( \frac{\Delta + E/h}{\Gamma_{\text{fit}}/2} \right)^2}
+    f(\Delta) = \frac{A}{1 + \left( \frac{\Delta + \frac{E}{2\pi\hbar}}{\Gamma_{\text{fit}}/2} \right)^2}
 \label{eq:lorentzian_fit_standard}
 \end{equation}
 where $A$ is the dimensionless amplitude of the loss peak and $\Gamma_{\text{fit}}$
 is the full width at half maximum (FWHM), both $\Delta$ and $\Gamma_{\text{fit}}$ being in Hz.
 Factoring $(2\pi)^2$ out of the denominator of Eq.~\ref{eq:zelevinsky_K2} shows that it is
-indeed a Lorentzian in $\Delta$, centered at $-E/h$ and of FWHM
+indeed a Lorentzian in $\Delta$, centered at $-E/(2\pi\hbar)$ and of FWHM
 $(\Gamma_{\text{stim}}+\Gamma_{\text{mol}})/2\pi$.
 
 If the line had no other width than its natural one, the fit parameters would map
@@ -1319,8 +1326,8 @@ time-averaged intensity of $4\pm1$~mW/cm$^2$.}
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf}
     \caption[Experimental verification of the known resonances of $^{88}\text{Sr}$]{$^{88}\text{Sr}$ atom number (in units of $10^6$ atoms) across the intercombination line. 
-    (Top) Atomic resonance used as the PA frequency reference ($I=276\pm16~\mu$W/cm$^2$, $80$~ms, $\bar\omega/2\pi=213\pm10$~Hz, $\langle n\rangle=(4.5\pm0.6)\times10^{13}$~cm$^{-3}$, $T=1.40\pm0.05~\mu$K). Data points are extracted from 2D Gaussian fits of absorption images; error bars combine the uncertainty of the image fit and the shot-to-shot RMS fluctuation of the atom number measured without PA light. 
-    (Middle) $\nu = -1$ vibrational state ($I = 8\pm1$~mW/cm$^2$ during the PA pulses, with ODT/PA chopping at $50\%$ duty cycle, i.e. $4\pm1$~mW/cm$^2$ time-averaged, $1000$~ms, $\bar\omega/2\pi=181\pm9$~Hz, $\langle n\rangle=(1.8\pm0.3)\times10^{13}$~cm$^{-3}$, $T=1.80\pm0.06~\mu$K). 
+    (Top) Atomic resonance used as the PA frequency reference ($I=276\pm16~\mu$W/cm$^2$, $80$~ms, $\bar\omega/2\pi=213\pm10$~Hz, $\langle n\rangle=(4.5\pm0.6)\times10^{13}$~cm$^{-3}$, $T=1.40\pm0.05~\mu$K). Data points are extracted from 2D Gaussian fits of absorption images; error bars include fit covariance and unperturbed cloud RMS fluctuations. 
+    (Middle) $\nu = -1$ vibrational state ($I = 8\pm1$~mW/cm$^2$ during the PA pulses, with ODT/PA chopping at $50\%$ duty cycle, i.e. $3.65\pm0.2$~mW/cm$^2$ time-averaged, $1000$~ms, $\bar\omega/2\pi=181\pm9$~Hz, $\langle n\rangle=(1.8\pm0.3)\times10^{13}$~cm$^{-3}$, $T=1.80\pm0.06~\mu$K). 
     (Bottom) $\nu = -2$ vibrational state ($I = 826\pm50$~mW/cm$^2$, $10$~ms, $\bar\omega/2\pi=184\pm9$~Hz, $\langle n\rangle=(3.0\pm0.4)\times10^{13}$~cm$^{-3}$, $T=1.40\pm0.05~\mu$K). Uncertainties: see Sec.~\ref{sec:uncertainties}. 
     Solid lines are Lorentzian fits with errors accounting for diagonal terms of covariance matrix and systematic fluctuations.}
     \label{88Sr resonance}
@@ -1347,7 +1354,7 @@ beam to zero intensity. For the $\nu=-1$ state (their $n=-2$), we measure $-23.9
 in agreement with their $-23.98(1)$~MHz (and close to the $-23.932(33)$~MHz of Zelevinsky
 et al.~\cite{zelevinsky_narrow_2006}). The light shift of this state, $-(251\pm67)$~kHz per
 W/cm$^2$ of PA intensity \cite{blatt_measurement_2011}, i.e. a red shift of $\simeq200$~kHz
-for $0.8$~W/cm$^2$, amounts to only $\simeq-2$~kHz at the $8$~mW/cm$^2$ used here. For the
+for $0.8$~W/cm$^2$, amounts to only $\simeq-2$~kHz at the $7.3$~mW/cm$^2$ used here. For the
 $\nu=-2$ state (their $n=-3$), we measure $-222.70(1)$~MHz, about $0.5$~MHz further from the
 asymptote than their $-222.18(5)$~MHz and the $-222.161(35)$~MHz of Zelevinsky et al. This
 difference is not explained by the light shift of this state, $+(29\pm2)$~kHz per W/cm$^2$,
@@ -1359,7 +1366,7 @@ The measured linewidths ($\Gamma_{\text{tot}} \simeq 330\text{--}344$~kHz) remai
 significantly larger than the expected intrinsic molecular linewidth of
 $\Gamma_0/2\pi \approx 15$~kHz. This substantial broadening is consistent with the spectral
 impurities of the MOGlabs laser: convolving the measured beat-note spectrum -- a narrow
-central peak (FWHM $\simeq 13$~kHz) with sidebands at $\pm 70$~kHz with
+central peak (FWHM $\simeq 13$~kHz) flanked by sidebands at $\pm 70$~kHz with
 FWHM $\simeq 80$~kHz -- with the expected clean molecular lineshape
 ($\Gamma_0/2\pi \oplus \Gamma_{\text{thermal}} \simeq 19$~kHz) yields an apparent linewidth of
 $\simeq 135$~kHz. This accounts for a substantial fraction of the observed broadening,
@@ -1398,9 +1405,8 @@ Excess width $\sqrt{\Gamma_{\text{tot}}^2-(\Gamma_0/2\pi)^2-\Gamma_{\text{therma
     \label{linewidth avec pompopt}
 \end{figure}
 
-The MOGlabs source yields a total linewidth approximately twice as large as the injection-locked laser beam, for similar radiative and thermal contributions, which confirms the technical origin of the excess broadening. 
-There is still a factor 10 on the width of the resonance which has not been explained by our measurements.
-The MOGlabs laser remains essential for broad spectroscopic searches due to its wide frequency tunability.
+The MOGlabs source yields a total linewidth approximately twice as large as the injection-locked laser beam, for similar radiative and thermal contributions, which confirms the technical origin of the excess broadening. Nevertheless, the MOGlabs laser remains essential for broad spectroscopic 
+searches due to its wide frequency tunability.
 
 \subsubsection{Noise of the diode}
 
@@ -1409,21 +1415,11 @@ injection-locked source, extra noise peaks appeared. These peaks sit at $\pm 6$~
 $\pm 12$~MHz from $f_0$. Their symmetric position, both red and blue, points to
 sidebands. These sidebands originate from noise on the diode.
 
-At $\delta = +6$~MHz (Fig.~\ref{6MHz noise red detuned}), no structure is resolved: the atom
-number only shows noise, with large shot-to-shot fluctuations caused by the heating of the
-SU(10) gas at $T=1.6~\mu$K (with a fit uncertainty of $\simeq0.1~\mu$K, see
-Sec.~\ref{sec:uncertainties}).
-
-The same scan, taken on the blue side (Fig.~\ref{6MHz noise blue detuned}), clearly resolves
-the $m_F$ projections: the twelve Zeeman sublevels $-11/2 \leq m_F \leq 11/2$ of the
-$^3P_1, F=11/2$ excited state appear around $-6$~MHz and $-12$~MHz. This confirms that the
-peaks are atomic, not molecular. Each of these resonances removes up to $\simeq50\%$ of the
-atoms, although in the SU(10) gas a single Zeeman-resolved transition only addresses one of
-the ten ground-state spin components, i.e. $\simeq10\%$ of the atoms. The atoms that scatter
-photons are heated by the recoil and share this energy with all the other spin components
-through elastic collisions; the whole gas then heats up and atoms of all spin states are lost
-by evaporation from the finite-depth trap. A small resonant fraction can thus deplete a large
-part of the cloud.
+At $\delta = +6$~MHz, we resolved the response of $^{87}\text{Sr}$, $^3P_1, F=11/2$
+excited state that shows in Fig.~\ref{6MHz noise red detuned} a lot of fluctuations 
+coming from the heating of the SU(10) gas at 1.6~$\mu$K . The same scan, taken blue-detuned, gave the twelve $m_F$ sublevels of
+$-11/2 \leq m_F \leq 11/2$ structure (Fig.~\ref{6MHz noise blue detuned}) at -6~MHz and -12~MHz. This 
+confirms the peaks are atomic, not molecular.
 Each feature -- carrier, red sideband, blue sideband -- is not a single line. Instead,
 each spans a comparatively wide range of detunings. This width results from heating
 broadening many single-atom transitions, one for each $m_F$ sublevel, rather than from
@@ -1432,14 +1428,21 @@ $\pm 6$~MHz and $\pm 12$~MHz as a consequence of a sideband in the laser spectru
 As a result, searching for molecular lines
 near $\pm 6$~MHz and $\pm 12$~MHz with the $F=11/2$ beam is compromised: a weak molecular
 signal there would be hidden within this atomic structure.
+Each of these resonances removes up to $\simeq50\%$ of the atoms, although in the SU(10)
+gas a single Zeeman-resolved transition only addresses one of the ten ground-state spin
+components, i.e. $\simeq10\%$ of the atoms. The atoms that scatter photons are heated by
+the recoil and share this energy with all the other spin components through elastic
+collisions; the whole gas then heats up and atoms of all spin states are lost by
+evaporation from the finite-depth trap. A small resonant fraction can thus deplete a large
+part of the cloud.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf}
 \caption[Noise measurement on $^{87}Sr$ at $\delta = +6$~MHz from the atomic resonance]{Atom number measurement on $^3P_1, F=11/2$ hyperfine excited state, measured
-in an SU(10) gas at $\delta = +6$~MHz from the atomic resonance, where a sideband of the diode
-laser addresses the atomic transition. No structure is resolved: the signal is dominated by
-noise and by the heating of the gas.}
+in an SU(10) gas at $\delta = +6$~MHz from the atomic resonance. This heating-broadened
+pattern of single-atom lines is obtained by a sideband in the diode laser
+spectrum that is adressing the atomic resonance.}
 \label{6MHz noise red detuned}
 \end{figure}
 
@@ -1447,8 +1450,8 @@ noise and by the heating of the gas.}
 \centering
 \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf}
 \caption[Twelve $m_F$ states of the $^3P_1, F=11/2$ hyperfine excited state, measured at $\delta = -6$~MHz and $\delta = -12$~MHz from the atomic resonance.]{Twelve $m_F$ states of the $^3P_1, F=11/2$ hyperfine 
-excited state, measured in an SU(10) gas at $\delta = -6$~MHz and $\delta = -12$~MHz from the atomic resonance:
-the $m_F$ projections are clearly resolved. This heating-broadened pattern of single-atom lines is displaced in frequency by a
+excited state, measured in an SU(10) gas at $\delta = -6$~MHz and $\delta = -12$~MHz from the atomic resonance.
+This heating-broadened pattern of single-atom lines is displaced in frequency by a
 sideband in the diode laser spectrum.}
 \label{6MHz noise blue detuned}
 \end{figure}
@@ -1494,20 +1497,9 @@ with $\bar{\omega}$ the mean frequency of the trap that depends on the final int
 This fitting function is used to extract the two-body loss rate coefficient $K_2$ from the experimental data. The temperature $T(t)$ is numerically interpolated from the measured temperature. Then for each 
 illumination time, the integrale of \ref{equation fit finale} is calculated and the experimental data are fitted to extract $K_2$.\\
 
-From Eq.~\ref{eq globale collisions}, the decay is governed by two dynamics with different
-characteristic times: the two-body time $1/(\beta N_0)$, which sets the initial decay when the
-density is high, and the one-body time $1/\Gamma$. As the atom number decreases, the two-body
-loss rate $\beta N(t)$ decreases, and one-body losses take over when $\beta N(t)\simeq\Gamma$,
-i.e. when $N\simeq\Gamma/\beta$. There is no sharp break between these two dynamics but a
-smooth crossover: on a logarithmic scale, the one-body dynamics appears as a straight line,
-whereas the two-body dynamics appears as a faster, non-exponential decay whose rate
-continuously decreases.
+From equation \ref{eq globale collisions}, one expects two distinct slopes on the decay curve: an initial fast two-body decay regime followed by a slow one-body regime as the atomic density drops.\\ 
 
-For the $^{88}$Sr decays of Fig.~\ref{88sr exponential decay}, the two-body times are
-$\simeq10$ and $\simeq20$~ms, and the crossover would occur at $N\simeq4\times10^3$ and $10^4$
-atoms, well below the measured atom numbers: these decays are dominated by two-body losses over
-the whole observation window, and $\beta$ -- hence $l_{\text{opt}}$ -- is extracted from the fit of
-Eq.~\ref{eq:final_fit} for each resonance.
+Figure~\ref{88sr exponential decay} illustrates these two regimes, from which the $\beta$ value -- and hence $l_{\text{opt}}$ -- is extracted for each resonance.
 \begin{figure}[H]
     \centering
 \begin{subfigure}[t]{0.85\linewidth}
@@ -1537,27 +1529,27 @@ with $\bar\omega/2\pi=185\pm9$~Hz and $\langle n\rangle=(1.4\pm0.2)\times10^{13}
 $T=1.80\pm0.06~\mu$K ($\nu=-1$) and $2.00\pm0.07~\mu$K ($\nu=-2$), and at intensities $I=4.0\pm0.2$~mW/cm$^2$
 ($\nu=-1$) and $303\pm17$~mW/cm$^2$ ($\nu=-2$).
 
-For the resonance $f_{\nu=-1}=-23.99(1)$~MHz, the fit of the decay gives
+For the resonance $f_{\nu=-1}=-23.99$~MHz, the fit of the decay gives
 $\beta=(1.0\pm0.2)\times10^{-4}$~s$^{-1}$ per atom, i.e.
 $K_2=2\sqrt{2}\,V_e\,\beta=(6.3\pm1.6)\times10^{-12}$~cm$^3$/s. The ideal-line relation then gives
 $l_{\text{opt}}^{\text{ideal}} = 1.6\pm0.4~a_0$ at $I = 4.0\pm0.2~\text{mW/cm}^2$, i.e.
 $l_{\text{opt}}^{\text{ideal}}/I = (4.1\pm1.1)\times10^2~a_0/(\text{W/cm}^2)$.
-Accounting for the measured width ($\Gamma_{\text{tot}}/(\Gamma_0/2\pi) = 23.0\pm1.2$), the
+Accounting for the measured width ($\Gamma_{\text{tot}}/(\Gamma_0/2\pi) \simeq 23$), the
 optical length becomes $l_{\text{opt}} = 37\pm9~a_0$, i.e.
 $l_{\text{opt}}/I = (9.2\pm2.4)\times10^3~a_0/(\text{W/cm}^2)$. This lies between the
 theoretical value $\xi = 6110~a_0/(\text{W/cm}^2)$ reported by Blatt et
 al.~\cite{blatt_systematic_2011} for the corresponding resonance (their $n=-2$ state),
-which it exceeds by a factor $1.5\pm0.4$, and their measured value
-$15.8(8)\times10^3~a_0/(\text{W/cm}^2)$, a factor $1.7\pm0.5$ above it.
+which it exceeds by a factor $\simeq1.5$, and their measured value
+$15.8(8)\times10^3~a_0/(\text{W/cm}^2)$, a factor $\simeq1.7$ above it.
 The spectrum of this line (Fig.~\ref{88Sr resonance}, middle), from which its linewidth is
 extracted, was recorded with the same MOGlabs laser as the decay $N(t)$, but with the ODT/PA
 chopping sequence active (Fig.~\ref{fig:sequence_chopping}), whereas the decay was not. The
 chopping itself was checked to have a negligible effect on the atoms, but the PA beam is then
 on only half of the time ($20~\mu$s every $40~\mu$s): the time-averaged intensity of this
-spectrum is $I/2 = 4\pm1$~mW/cm$^2$ rather than the nominal $8\pm1$~mW/cm$^2$.
+spectrum is $I/2 = 3.65$~mW/cm$^2$ rather than the nominal $7.3$~mW/cm$^2$.
 Even with this correction, the spectrum and the decay are not consistent for this line: the
-loss coefficient deduced from the depth of the spectrum, $(1.2\pm0.3)\times10^{-13}$~cm$^3$/s
-at a time-averaged intensity of $4\pm1$~mW/cm$^2$, is a factor $50\pm15$ lower than the one
+loss coefficient deduced from the depth of the spectrum, $\simeq1\times10^{-13}$~cm$^3$/s
+at a time-averaged intensity of $3.65$~mW/cm$^2$, is a factor $50\pm15$ lower than the one
 of the decay once brought to the same intensity and density, whereas the two measurements
 agree within $\simeq25\%$ for the $\nu=-2$ line. We attribute this discrepancy to the
 inhomogeneous PA intensity seen by the atoms in the $^{88}\text{Sr}$ measurements, caused by
@@ -1571,11 +1563,11 @@ $\beta=(4.0\pm0.3)\times10^{-5}$~s$^{-1}$ per atom, i.e.
 $K_2=(2.9\pm0.5)\times10^{-12}$~cm$^3$/s, and the ideal-line relation gives
 $l_{\text{opt}}^{\text{ideal}} = 0.77\pm0.12~a_0$ at $I = 303\pm17~\text{mW/cm}^2$, i.e.
 $l_{\text{opt}}^{\text{ideal}}/I = 2.5\pm0.4~a_0/(\text{W/cm}^2)$. Accounting for the
-measured width ($\Gamma_{\text{tot}}/(\Gamma_0/2\pi) = 22.0\pm0.9$), the optical length becomes
+measured width ($\Gamma_{\text{tot}}/(\Gamma_0/2\pi) \simeq 22$), the optical length becomes
 $l_{\text{opt}} = 17\pm3~a_0$, i.e. $l_{\text{opt}}/I = 56\pm10~a_0/(\text{W/cm}^2)$, in
 agreement with the value $68(3)~a_0/(\text{W/cm}^2)$ measured by Blatt et
-al.~\cite{blatt_systematic_2011} for this line (their $n=-3$ state), and a factor
-$1.7\pm0.3$ above the theoretical value $\xi = 32.8~a_0/(\text{W/cm}^2)$.
+al.~\cite{blatt_systematic_2011} for this line (their $n=-3$ state), and within a factor
+$\simeq2$ of the theoretical value $\xi = 32.8~a_0/(\text{W/cm}^2)$.
 Our values of $l_{\text{opt}}/I$ are therefore close to those of Blatt et al., but a
 quantitative agreement cannot be confirmed: their theoretical values $\xi$ are given without
 uncertainty, and the uncertainties quoted on their measured values only come from their fit.
@@ -1724,7 +1716,6 @@ as an empirical model, not derived here, we describe the heating of the gas by t
 saturating exponential
 \begin{equation}
     T(t) = T_{\infty} - (T_{\infty} - T_0)\,e^{-\Gamma t}
-    \label{eq:T_saturating}
 \end{equation}
 with $T_0$ and $T_\infty$ the temperature without the PA laser and in the limit of
 infinite exposure time, and $\Gamma$ the one-body loss rate extracted from the $N(t)$
@@ -1774,8 +1765,7 @@ complementary experimental tests can help interpret the elastic or inelastic nat
 the collisions observed on the $^{87}$Sr signals:
 \begin{itemize}
     \item \textbf{$dN/dt$ measurement:} the theoretical part of this chapter derives the
-    two dynamics of the atomic decay, with different characteristic times, dominated by
-    two-body losses at high density and by one-body losses at low density. In practice, comparing this decay in
+    two expected slopes of the atomic decay curve. In practice, comparing this decay in
     the presence and absence of the PA laser was not on its own sufficient to conclude
     on the nature of the collisions.
     \item \textbf{$T(t)$ measurement:} the heating of the gas during the illumination is
@@ -1811,27 +1801,10 @@ shows negligible variations across the resonance ($2.43\pm0.07~\mu$K within the 
 against $2.34\pm0.08~\mu$K away from it), comparable to the shot-to-shot scatter, from
 which no conclusion can be drawn.
 
-Since the gas heats up during photoassociation and the temperature trace shows substantial
-fluctuations, the decay is fitted by letting the loss coefficient $\beta$ depend on the
-measured temperature. The temperature measurements
-are first linearly interpolated into a continuous function $T(t)$; this
-interpolated temperature is fixed once and for all, independently of the fit that
-follows. The nonlinear regression then iteratively adjusts four free parameters
--- the one-body loss rate $\Gamma$, the two-body loss coefficient $K_2$
-(equivalently $l_{\text{opt}}$), the initial atom number $N_0$, and a constant
-offset. At each iteration, a candidate value of $K_2$ is combined with the
-(fixed) interpolated $T(t)$ to compute the instantaneous loss rate
-$\beta(t) = K_2/(2\sqrt{2}\,V_e(T(t)))$ at every time step; $\beta(t)$ is then
-integrated numerically over time to reconstruct a trial decay curve $N(t)$ via
-Eq.~\ref{eq:final_fit}. This trial curve is compared to the measured $N(t)$
-(Fig.~\ref{fig:line_259MHz}, top right), and
-the four parameters are updated so as to reduce the resulting $\chi^2$; the
-procedure repeats until convergence. The final, best-fit $K_2$ is thus a single
-constant, common to the entire curve, while $\beta(t)$ varies throughout the
-decay solely because it inherits the time-dependence of $T(t)$ -- not because
-$K_2$ itself changes with time. The same procedure is applied to the $-276.83$~MHz line.
-
-The decay was recorded in the same
+As for the line discussed below, the temperature fluctuates substantially during
+illumination, so the atom number decay for this line
+(Fig.~\ref{fig:line_259MHz}, top right) is fitted using the interpolated-temperature
+procedure detailed for the $276.83$~MHz line. The decay was recorded in the same
 trap as the spectrum, the gas temperature rising from $2.65\pm0.04$ to $4.70\pm0.03~\mu$K during the decay:
 from the measured trap beam powers, the mean trap frequency is
 estimated at \textbf{$\bar\omega/2\pi = 224\pm10$ Hz}, giving an average density
@@ -1874,7 +1847,7 @@ identify the heating mechanism.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf}
-    \caption[Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr]{Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr. Top left: resonance spectrum ($I=19\pm1.1$~W/cm$^2$, $t=1000$~ms, $\langle n\rangle=(7.0\pm1.0)\times10^{12}$~cm$^{-3}$), with Lorentzian fit (green). Top right: atom number decay $N(t)$ (same intensity and density), fitted via Eq.~\ref{eq:final_fit} with interpolated $T(t)$. Bottom left: temperature of the cloud versus detuning; the shaded region and dashed line mark the resonance width and center from the top-left fit. Bottom right: temperature versus illumination time, fitted with the empirical saturating exponential of Eq.~\ref{eq:T_saturating}, with the one-body loss rate $\Gamma$ fixed to the value obtained from the fit of $N(t)$. All detunings are measured from the $^{87}$Sr atomic resonance.}
+    \caption[Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr]{Characterization of the molecular line at $259.01 \pm 0.12$ MHz in $^{87}$Sr. Top left: resonance spectrum ($I=19\pm1.1$~W/cm$^2$, $t=1000$~ms, $\langle n\rangle=(7.0\pm1.0)\times10^{12}$~cm$^{-3}$), with Lorentzian fit (green). Top right: atom number decay $N(t)$ (same intensity and density), fitted via Eq.~\ref{eq:final_fit} with interpolated $T(t)$. Bottom left: temperature of the cloud versus detuning; the shaded region and dashed line mark the resonance width and center from the top-left fit. Bottom right: temperature versus illumination time, with a saturating-exponential fit ($\Gamma$ fixed to the $N(t)$ value). All detunings are measured from the $^{87}$Sr atomic resonance.}
     \label{fig:line_259MHz}
 \end{figure}
 
@@ -1902,8 +1875,26 @@ dispersion of the other points ($1.25\pm0.03~\mu$K): I chose not to consider the
 are removed from Fig.~\ref{fig:line_276MHz}. The shots at $276.3$ and $281.8$~MHz are
 the two points removed from the atom number spectrum above.
 
-As for the first line, the atom number decay is fitted with the interpolated-temperature
-procedure described above.
+This misfit was resolved by letting the loss coefficient $\beta$ depend on the
+measured temperature, since the gas heats up during photoassociation and the
+temperature trace shows substantial fluctuations. The temperature measurements
+are first linearly interpolated into a continuous function $T(t)$; this
+interpolated temperature is fixed once and for all, independently of the fit that
+follows. The nonlinear regression then iteratively adjusts four free parameters
+-- the one-body loss rate $\Gamma$, the two-body loss coefficient $K_2$
+(equivalently $l_{\text{opt}}$), the initial atom number $N_0$, and a constant
+offset. At each iteration, a candidate value of $K_2$ is combined with the
+(fixed) interpolated $T(t)$ to compute the instantaneous loss rate
+$\beta(t) = K_2/(2\sqrt{2}\,V_e(T(t)))$ at every time step; $\beta(t)$ is then
+integrated numerically over time to reconstruct a trial decay curve $N(t)$ via
+Eq.~\ref{eq:final_fit}. This trial curve is compared to the measured $N(t)$
+(Fig.~\ref{fig:line_276MHz}, top right), and
+the four parameters are updated so as to reduce the resulting $\chi^2$; the
+procedure repeats until convergence. The final, best-fit $K_2$ is thus a single
+constant, common to the entire curve, while $\beta(t)$ varies throughout the
+decay solely because it inherits the time-dependence of $T(t)$ -- not because
+$K_2$ itself changes with time. This procedure is applied identically to the
+$259.01$~MHz line above.
 
 With this corrected fit, and for the same trap parameters as for the spectrum (the gas
 temperature rising from $2.31\pm0.04$ to $4.72\pm0.03~\mu$K during the decay), the mean trap frequency is
@@ -1939,7 +1930,7 @@ differ by a factor $\simeq1.45$ on $K_2\langle n\rangle t$, i.e. by $\simeq1.5\s
 remain compatible within $2\sigma$. The residual difference may come from the scaling
 between the two measurements, recorded at different intensities, densities and
 temperatures ($1.24$ and $2.31~\mu$K). The gas heats up during the decay
-(Fig.~\ref{fig:line_276MHz}, bottom right); the saturating-exponential model of Eq.~\ref{eq:T_saturating} does not
+(Fig.~\ref{fig:line_276MHz}, bottom right); the saturating-exponential model does not
 reproduce the last three points of the temperature trace, and the shape of $T(t)$ does
 not allow one to identify the heating mechanism (Sec.~\ref{sec:temperature_analysis}).
 \begin{figure}[H]

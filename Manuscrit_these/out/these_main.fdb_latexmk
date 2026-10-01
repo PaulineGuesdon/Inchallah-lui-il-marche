@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1790859974.62653 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1790860212.60074 0
+["bibtex out/these_main"] 1790864252.60598 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1790864493.94597 0
   "./ref.bib" 1790519170.96335 85386 aafee868506b7db8b50dab8b2055d225 ""
   "./spincontrol_refs.bib" 1786519568.72538 549304 6b3bd591fb7a36bddef0122884a01a8a ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1790860207.47409 57103 24b002743f3a5b12204ff735eb5cb485 "pdflatex"
+  "out/these_main.aux" 1790864474.49635 57206 83316d4e0f18b0c226e47507631d1f0c "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1790860188.96177 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1790860212.60153 0
+["pdflatex"] 1790864406.521 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1790864493.94719 0
   "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1790859955.65341 4744 8ea605b75bb0999d2699687001504d39 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -78,7 +78,6 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb" 1336858727 21098 d4aee7c0aac232caac5688b586b9363c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1248133631 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1215737283 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb" 1254269338 30696 2654571912f9cd384da9f7cb8a60c568 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb" 1254269338 30635 833ec815d446ec453a4913fc26d24cbc ""
@@ -199,7 +198,7 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1770486403 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1770486061 3345734 73c3e0ab3e3452bd60acd93a512a4193 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1790859405.75568 165447 6b858edc4d277b6a6dc2c5d2f97a09e4 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1790864395.73761 165947 49dd637d0ae5c0bb54c3f97969acd134 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf" 1790514991.09603 544738 889e0b431e39c0edcf9f6170411e98ee ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf" 1790516335.53589 1475443 3c8a9493d49d405ae9b04dd0b4913610 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf" 1790514990.9575 559541 170eb7257689a2aab70912c66eb2c743 ""
@@ -270,14 +269,14 @@
   "appendix/images/logo_USPN.png" 1790859458.90714 25589 88c27b5dd3e195d992a86dc83b04edac ""
   "appendix/mis/acknowledgements.tex" 1775984395.99768 28 c20483b5759ef691c060fd266e58e4d2 ""
   "appendix/mis/acronym.tex" 1775984395.99795 47 03677b53155ef51d7b75de3a2eec20ae ""
-  "appendix/titlepage.tex" 1790860182.34707 1763 ab6d1fe10a50b7859af0b950a35bed1e ""
+  "appendix/titlepage.tex" 1790861119.38388 1758 8bf6c78654f48f08d3b58c7c7281b7d7 ""
   "out/these_main.acr" 0 -1 0 ""
-  "out/these_main.aux" 1790860207.47409 57103 24b002743f3a5b12204ff735eb5cb485 "pdflatex"
-  "out/these_main.bbl" 1790859975.80088 28772 3f3aded962bb362bd366321823e66c2f "bibtex out/these_main"
-  "out/these_main.lof" 1790860207.49421 9343 d945cb3c2487c5ea3f6802b85439e99f "pdflatex"
-  "out/these_main.lot" 1790860207.49461 1354 59f77fd5ff189a99684d82ecf252df8e "pdflatex"
-  "out/these_main.out" 1790860207.49262 22040 2f407036d6b495c17173678841b3a0a4 "pdflatex"
-  "out/these_main.toc" 1790860207.49389 9607 e9b09735cbaba2b496af7dc278f77f95 "pdflatex"
+  "out/these_main.aux" 1790864474.49635 57206 83316d4e0f18b0c226e47507631d1f0c "pdflatex"
+  "out/these_main.bbl" 1790864253.74171 28575 c95b80ecb25db01099cf62add65aca52 "bibtex out/these_main"
+  "out/these_main.lof" 1790864474.60657 9334 2e0bfeb6a5a480c7fd483645b0e9ff16 "pdflatex"
+  "out/these_main.lot" 1790864474.60729 1354 653362d835320b6359eb728d6aae7854 "pdflatex"
+  "out/these_main.out" 1790864474.59489 22040 2f407036d6b495c17173678841b3a0a4 "pdflatex"
+  "out/these_main.toc" 1790864474.60511 9607 d1fd278764b3d4c62d723320fc7b2fa8 "pdflatex"
   "these_main.acr" 0 -1 0 ""
   "these_main.tex" 1790859955.65341 4744 8ea605b75bb0999d2699687001504d39 ""
   (generated)
