@@ -13,45 +13,45 @@ Warning--empty publisher in stellmer_degenerate_2014
 Warning--empty publisher in Landau
 Warning--empty journal in dalibard_interactions_nodate
 Warning--empty year in dalibard_interactions_nodate
-You've used 120 entries,
+You've used 122 entries,
             1876 wiz_defined-function locations,
-            1220 strings with 28925 characters,
-and the built_in function-call counts, 38312 in all, are:
-= -- 3695
-> -- 2071
+            1229 strings with 29389 characters,
+and the built_in function-call counts, 38932 in all, are:
+= -- 3762
+> -- 2096
 < -- 0
-+ -- 736
-- -- 616
-* -- 2780
-:= -- 5427
-add.period$ -- 138
-call.type$ -- 120
-change.case$ -- 116
++ -- 745
+- -- 623
+* -- 2818
+:= -- 5508
+add.period$ -- 141
+call.type$ -- 122
+change.case$ -- 118
 chr.to.int$ -- 0
-cite$ -- 127
-duplicate$ -- 2071
-empty$ -- 2852
-format.name$ -- 616
-if$ -- 9343
+cite$ -- 129
+duplicate$ -- 2111
+empty$ -- 2896
+format.name$ -- 623
+if$ -- 9502
 int.to.chr$ -- 0
-int.to.str$ -- 120
-missing$ -- 114
-newline$ -- 383
-num.names$ -- 119
-pop$ -- 272
+int.to.str$ -- 122
+missing$ -- 116
+newline$ -- 390
+num.names$ -- 121
+pop$ -- 275
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1862
+skip$ -- 1902
 stack$ -- 0
-substring$ -- 1900
-swap$ -- 1191
+substring$ -- 1924
+swap$ -- 1217
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 7
-while$ -- 287
-width$ -- 123
-write$ -- 1225
+while$ -- 291
+width$ -- 125
+write$ -- 1247
 (There were 8 warnings)
