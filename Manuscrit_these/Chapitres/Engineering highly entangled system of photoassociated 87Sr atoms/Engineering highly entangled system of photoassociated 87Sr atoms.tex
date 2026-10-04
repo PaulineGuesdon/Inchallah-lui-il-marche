@@ -2159,17 +2159,15 @@ As discussed in Sec.~\ref{sec:determining_lopt}, a broadening at fixed $l_{\text
 
         The second interpretation is a non-radiative decay within the $^3P$ manifold, for example a predissociation towards the $^3P_0$ state, illustrated in Fig.~\ref{predissociation}. Two free atoms in potential A are photoassociated to a vibrational state of a molecular potential B. A
         potential C crosses potential B above its dissociation limit, which
-        couples the two potentials \cite{mukherjee_feshbach_2022}. For $^{87}$Sr, potential C would be one of the potentials associated with the hyperfine structure of the $^3P_J$ states. The bound pair then decays into the
-        continuum of potential C, which shortens the lifetime of the excited
-        molecular state: 
-        \begin{equation}
-            \Gamma_{\text{eff}} = \Gamma_{\text{mol}} + \Gamma_{\text{stim}} + \Gamma_{\text{pred}},
-            \qquad
-            \Gamma_{\text{pred}} = \frac{2\pi}{\hbar}\,\left|\langle \psi_B | \hat V_{BC} | \psi_C(\epsilon_f)\rangle\right|^2 \rho(\epsilon_f),
-        \end{equation}
-
-        where the predissociation rate $\Gamma_{\text{pred}}$ is given by Fermi's golden rule: it is set both by the coupling $\hat V_{BC}$ between the bound state of potential B and the continuum of potential C, and by the density of states $\rho(\epsilon_f)$ of this continuum at the final kinetic energy $\epsilon_f$. The 
-        predissociation process is then a loss channel for the molecular state that decreases the lifetime of the molecule and increases its linewidth. Since the pair is lost in both decay channels, predissociation does not change $l_{\text{opt}}$, which is defined with respect to the radiative width $\Gamma_{\text{mol}}$, but lowers the peak loss coefficient by the ratio $\Gamma_{\text{mol}}/\Gamma_{\text{eff}}$ (Eq.~\ref{eq:lopt_corrected}). A broad line with a weak peak loss rate is therefore precisely the signature expected from strong predissociation. Contrary to a light shift inhomogeneity, this broadening does not depend on the PA intensity. In Ref.~\cite{franzen_intercombination_2023}, such a decay could broaden most of the lines, especially in a magnetic field, enough to make them unobservable, which would explain why a single pair of lines was found. Contrary to RbYb, however, the width of our $^{87}$Sr lines does not change with the magnetic field (Sec.~\ref{sec:tests_future}). 
+        couples the two potentials \cite{mukherjee_feshbach_2022}. For $^{87}$Sr, potential C would be one of the potentials associated with the hyperfine structure of the $^3P_J$ states. The bound pair can then decay into the
+        continuum of potential C. This adds a decay channel to the excited molecular state: its lifetime
+        is shortened, and the molecular line is broadened beyond its radiative width $\Gamma_{\text{mol}}$.
+        Following Fermi's golden rule, this additional width is proportional to the density of states of
+        the continuum of potential C at the energy of the bound level, and to the square of the coupling
+        between the two potentials. Since the pair is lost in both decay channels, predissociation does not
+        change $l_{\text{opt}}$, which is defined with respect to the radiative width $\Gamma_{\text{mol}}$, but
+        lowers the peak loss coefficient by the ratio of the radiative width to the total width of the line
+        (Eq.~\ref{eq:lopt_corrected}). A broad line with a weak peak loss rate is therefore precisely the signature expected from strong predissociation. Contrary to a light shift inhomogeneity, this broadening does not depend on the PA intensity. In Ref.~\cite{franzen_intercombination_2023}, such a decay could broaden most of the lines, especially in a magnetic field, enough to make them unobservable, which would explain why a single pair of lines was found. Contrary to RbYb, however, the width of our $^{87}$Sr lines does not change with the magnetic field (Sec.~\ref{sec:tests_future}). 
 
         In Fig.~\ref{fig:pa-ytterbium-potentials}, the linewidths do not seem to be affected by predissociation. We expected that, as for Yb,
         photoassociation below the lowest hyperfine asymptote would avoid this effect, but our $^{87}\text{Sr}$ data suggest the contrary: we do not know why
