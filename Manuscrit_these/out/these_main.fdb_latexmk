@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1791549263.61857 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1791549459.79122 0
+["bibtex out/these_main"] 1791556371.64228 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1791556382.88764 0
   "./ref.bib" 1790519170.96335 85386 aafee868506b7db8b50dab8b2055d225 ""
   "./spincontrol_refs.bib" 1786519568.72538 549304 6b3bd591fb7a36bddef0122884a01a8a ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1791549454.81438 59720 cc868cb8cf678e2db42776e2b66495ac "pdflatex"
+  "out/these_main.aux" 1791556381.21409 59874 64ea86c61e8c91486eab6f0245744866 "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1791549433.69171 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1791549459.79234 0
+["pdflatex"] 1791556372.25158 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1791556382.88823 0
   "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1790859955.65341 4744 8ea605b75bb0999d2699687001504d39 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -205,7 +205,7 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1770486403 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1770486061 3345734 73c3e0ab3e3452bd60acd93a512a4193 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1791549428.94072 177082 79d339d589699ef2b08e7db0b3352158 ""
+  "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/Engineering highly entangled system of photoassociated 87Sr atoms.tex" 1791556356.071 177495 0996a0cad4b8b6542982df423f343459 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/40MHz_resonance.pdf" 1790514991.09603 544738 889e0b431e39c0edcf9f6170411e98ee ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf" 1790516335.53589 1475443 3c8a9493d49d405ae9b04dd0b4913610 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf" 1790514990.9575 559541 170eb7257689a2aab70912c66eb2c743 ""
@@ -233,7 +233,7 @@
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Schemas_optiques/zoom_red_chain_beating.pdf" 1781095967.88521 118670 deef2fc8cae85a27febb278208a1fd38 ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_87.pdf" 1787471230 58777 35eaf1feb6e1ab555d1498d458eb281e ""
   "Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/frequences_PA_88.pdf" 1787471230 77678 bdc5c7996bd3a373c0b5b6eca0516d12 ""
-  "Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex" 1791547897.76309 75326 4934d674d6808863596e8be39307bda7 ""
+  "Chapitres/Gas preparation and spin control/Gas_preparation_and_spin_control.tex" 1791554471.01784 75376 7d30a3879534fa24513ab6b5e2636301 ""
   "Chapitres/Gas preparation and spin control/images/1.30_dipole_trap(1075)_setup.png" 1784017167.25041 249538 8dd17d39e6efee72dc58ff40fba10cf7 ""
   "Chapitres/Gas preparation and spin control/images/Carte_lock_laser_PDH_sr1sr2.pdf" 1787469531.30359 771842 90426ad0dcdc9807c5a2e2021b54d17a ""
   "Chapitres/Gas preparation and spin control/images/LevelDiagramRed.pdf" 1790089570.88092 49356 fe2dc89f29cc146694e4cc6223f7f1b9 ""
@@ -269,7 +269,7 @@
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig3.pdf" 1779216450.84288 124880 a995a1d3169ba13da03ac75f191c6930 ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig4.pdf" 1779216450.84503 196863 933448dfb53ed85f14595bebeac7fd5a ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf" 1782917439.77429 138292 87257a98384f328454136a85eb278b77 ""
-  "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1791546664.23297 83332 a11fe5b638899a03471fe24309b2872d ""
+  "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1791555972.80343 83333 2deed02122e789979c967cb5402c026c ""
   "Chapitres/conclusion/conclusion.tex" 1791546483.53254 6189 987839da9120bdd26a1170492d058a9e ""
   "appendix/abstract.tex" 1790859955.60045 21 8a6eeb3fde8f57960d614b96ade00bb0 ""
   "appendix/images/logo_ED_Galilee.png" 1790859458.91427 28634 04316c3bd3fb75fa22c3e3aec75f2713 ""
@@ -278,12 +278,12 @@
   "appendix/mis/acronym.tex" 1775984395.99795 47 03677b53155ef51d7b75de3a2eec20ae ""
   "appendix/titlepage.tex" 1790870023.57681 2128 b196c98e13fac2304f7b88bae3294113 ""
   "out/these_main.acr" 0 -1 0 ""
-  "out/these_main.aux" 1791549454.81438 59720 cc868cb8cf678e2db42776e2b66495ac "pdflatex"
-  "out/these_main.bbl" 1791549264.61942 28418 7712f744ad3a61326cd569eba455aa04 "bibtex out/these_main"
-  "out/these_main.lof" 1791549454.8732 9254 93ce6f04c60bb7480115e37913296113 "pdflatex"
-  "out/these_main.lot" 1791549454.87411 1882 18ce31bb687725af122e7f7381c804f4 "pdflatex"
-  "out/these_main.out" 1791549454.85465 22131 1a6cb94172341e679caed295602b6071 "pdflatex"
-  "out/these_main.toc" 1791549454.87272 9945 3786e2dfb0612b2c79edac7b83f20276 "pdflatex"
+  "out/these_main.aux" 1791556381.21409 59874 64ea86c61e8c91486eab6f0245744866 "pdflatex"
+  "out/these_main.bbl" 1791556372.23047 28418 7712f744ad3a61326cd569eba455aa04 "bibtex out/these_main"
+  "out/these_main.lof" 1791556381.22973 9305 7674756d59a7bf2466b5fa789d8b0a2e "pdflatex"
+  "out/these_main.lot" 1791556381.22994 1898 24568fbd2f38e9d890c6f867be9c2988 "pdflatex"
+  "out/these_main.out" 1791556381.22698 22022 f4d42ab7ad1b594e32a72ea0f2b6dc3f "pdflatex"
+  "out/these_main.toc" 1791556381.22885 9925 53e262fa970a500cec1dbdca4dc8679b "pdflatex"
   "these_main.acr" 0 -1 0 ""
   "these_main.tex" 1790859955.65341 4744 8ea605b75bb0999d2699687001504d39 ""
   (generated)

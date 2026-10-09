@@ -69,6 +69,7 @@ the Schrödinger equation reduces to a one-dimensional radial equation for each 
     \left( -\frac{\hbar^2}{2\mu_N} \frac{d^2}{dr^2} + \frac{\hbar^2 l(l+1)}{2\mu_N r^2} + \hat{U}(r) \right) u_l(r) = E u_l(r)
     \label{radial equation}
 \end{equation}
+
 E the eigenvalue associated to the eigenfunction $u(r)$.
 This one-dimensional structure allows a direct analogy with the 1D quantum framework \cite{Landau}. To extract the scattering properties of the system, one studies the 
 asymptotic behavior of the solutions at large 
@@ -905,7 +906,7 @@ by the PA beam, whether atomic or molecular depending on the laser frequency, we
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf}
+\includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/battement.pdf}
 \caption[Beat note between the MOGlabs laser and the "AOM 11/2" light]{Beat note between the MOGlabs laser and the "AOM 11/2" light, measured with the spectrum analyzer at RBW = 10 kHz and
     VBW = 300 Hz. A three-Lorentzian fit (central peak + two sidebands at $\pm 70$~kHz) gives sidebands broader than the central peak, which carry about one third of the total optical power (the vertical axis is a voltage, and the power is proportional to its square).}
 \label{beating broadening}
@@ -1404,7 +1405,7 @@ vibrational lines and compared our experimental findings (line center, linewidth
 literature, before discussing their broadening in more detail. The measured and
 literature values are summarized in Table~\ref{tab:88Sr-lines-summary}.
 
-\begin{table}[H]
+\begin{table}
 \centering
 \begin{tabular}{lcc}
 \toprule
@@ -1441,7 +1442,7 @@ checked and show a normal cloud, correctly described by the 2D Gaussian fit: the
 deviations do not come from the image analysis but from uncontrolled shot-to-shot
 fluctuations of the experiment, and the points are kept in the data.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf}
     \caption[Experimental verification of the known resonances of $^{88}\text{Sr}$]{$^{88}\text{Sr}$ atom number (in units of $10^6$ atoms) across the intercombination line. 
@@ -1552,7 +1553,7 @@ signal there would be hidden within this atomic structure.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf}
+\includegraphics[width=0.75\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf}
 \caption[Noise measurement on $^{87}$Sr at $\delta = -6$~MHz from the atomic resonance]{Atom number measurement on $^3P_1, F=11/2$ hyperfine excited state, measured
 in an SU(10) gas at $\delta = -6$~MHz from the atomic resonance (red side), where a sideband of the diode
 laser addresses the atomic transition. No structure is resolved: the signal is dominated by
@@ -1584,7 +1585,7 @@ $\simeq10$ and $\simeq20$~ms, and the crossover would occur at $N\simeq4\times10
 atoms, well below the measured atom numbers: these decays are dominated by two-body losses over
 the whole observation window, and $\beta$ -- hence $l_{\text{opt}}$ -- is extracted from the fit of
 Eq.~\ref{eq:final_fit} for each resonance.
-\begin{figure}[H]
+\begin{figure}
     \centering
 \begin{subfigure}[t]{0.85\linewidth}
 \centering
@@ -1628,7 +1629,12 @@ intensity, the spectrum and the decay are not consistent for this line: the loss
 deduced from the depth of the spectrum (Method~1), $(1.2\pm0.3)\times10^{-13}$~cm$^3$/s, i.e.
 $l_{\text{opt}}/I=(1.8\pm0.6)\times10^2~a_0/(\text{W/cm}^2)$, is a factor $50\pm15$ lower than the one
 of the decay, whereas the two methods differ only by a factor $\simeq1.5$ for the $\nu=-2$ line.
-\hl{At the time of writing, the origin of this factor $\simeq50$ is not understood.}
+This discrepancy comes from the path of the PA beam for the spectrum of this line: the beam
+went through a viewport that strongly scatters the light, which we only noticed afterwards. The
+intensity reaching the atoms is therefore poorly known: it must be much lower than the intensity
+measured with the power meter before the viewport, which leads to an underestimation of
+$l_{\text{opt}}/I$ with Method~1, and the scattered light makes the PA intensity strongly
+inhomogeneous across the cloud. The value of Method~1 for this line is therefore not reliable.
 
 \paragraph{$\nu=-2$ line}
 For this line, the fit of the decay gives
@@ -1674,7 +1680,7 @@ Literature $l_{\text{opt}}/I$ ($a_0$/(W/cm$^2$)) \cite{blatt_systematic_2011} & 
 the measured linewidth (Eq.~\ref{eq:lopt_corrected}): Method~1 uses the depth of the spectrum,
 Method~2 the decay of the atom number (Sec.~\ref{sec:determining_lopt}).
 \textsuperscript{*}Computed with the time-averaged intensity of the spectrum, $4\pm1$~mW/cm$^2$; this
-value disagrees with Method~2 by a factor $\simeq50$ (see text).}
+value is not reliable, the intensity on the atoms being overestimated (see text).}
 \label{tab:88Sr_results}
 \end{table}
 
@@ -2226,9 +2232,9 @@ As discussed in Sec.~\ref{sec:determining_lopt}, the measured peak loss coeffici
     each line differs between the two isotopes.
     \item \textbf{Spin selection:} spin selection further lowers the measured loss coefficient. In the unpolarized gas, each atom is in one of the ten $m_F$ states of $F=9/2$ with probability $1/10$. Two identical fermions colliding in the s-wave must be in an antisymmetric spin state, $(|m_{F,1}m_{F,2}\rangle-|m_{F,2}m_{F,1}\rangle)/\sqrt2$ with $m_{F,1}\neq m_{F,2}$: there are $45$ such states, each with a weight $1/10\times1/10$, which gives the factor $45/100\simeq0.45$ above. For $\pi$ light, a resolved molecular line has a well-defined total projection $T=m_{F,1}+m_{F,2}$ and can only be reached from the antisymmetric states with this projection. Among the colliding pairs, the loss coefficient is therefore lowered by the factor
     \begin{equation}
-        \frac{1}{45}\sum_{\substack{m_{F,1}<m_{F,2}\\ m_{F,1}+m_{F,2}=T}} \big|C_{m_{F,1}m_{F,2}}\big|^2 \;\leq\; \frac{1}{45}\left\lfloor\frac{10-|T|}{2}\right\rfloor,
+        \frac{1}{45}\sum_{\substack{m_{F,1}<m_{F,2}\\ m_{F,1}+m_{F,2}=T}} \big|C_{m_{F,1}m_{F,2}}\big|^2,
     \end{equation}
-    where $C_{m_{F,1}m_{F,2}}$ is the Clebsch--Gordan coefficient of the coupling between the pair spin state and the molecular state, and $\lfloor\cdot\rfloor$ the integer part. For $T=-8$, only the pair $\{-9/2,-7/2\}$ contributes, i.e. at most $1/45$; near $T=0$, five pairs contribute, i.e. at most $1/9$. This gives a reduction by one to two orders of magnitude depending on $T$, which could explain the small values of $l_{\text{opt}}$; the exact factor depends on the hyperfine structure of each molecular state, which is not known here. This factor comes in addition to the quantum-statistics factor above.
+    where $C_{m_{F,1}m_{F,2}}$ is the Clebsch--Gordan coefficient of the coupling between the pair spin state and the molecular state. Since $|C_{m_{F,1}m_{F,2}}|^2\leq1$, for $T=-8$, only the pair $\{-9/2,-7/2\}$ contributes, i.e. at most $1/45$; near $T=0$, five pairs contribute, i.e. at most $1/9$. This gives a reduction by one to two orders of magnitude depending on $T$, which could explain the small values of $l_{\text{opt}}$; the exact factor depends on the hyperfine structure of each molecular state, which is not known here. This factor comes in addition to the quantum-statistics factor above.
 \end{itemize}
 Quantum statistics and spin selection together can explain optical lengths one to two orders of magnitude below those of the bosonic isotopes, but none of these effects explains the observed linewidths.
 
