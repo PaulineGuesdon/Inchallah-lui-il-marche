@@ -1,4 +1,4 @@
-﻿\chapter{Photoassociation : concept and spectroscopy of $^{87}Sr$ calibrated on $^{88}Sr$}
+﻿\chapter{Photoassociation : concept and spectroscopy of $^{88}Sr$ and $^{87}Sr$}
 \label{chap 3}
 \newcommand{\PATheoryFigDir}{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/}
 \newcommand{\PATheoryFig}[1]{\PATheoryFigDir#1}
@@ -123,8 +123,10 @@ partial wave $l$ as
    \includegraphics[width=0.9\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/diffusion_sinus.pdf}
     \caption[Illustration of the amplitude's wavefunction of collisional particles]{The wavefunction $\Psi$ at large inter-atomic distances r behaves as a summation of an incoming plane wave
     and an outgoing spherical wave with attenuated amplitude $f(\theta)$. Here is a representation of this wavefunction for s-wave
-    collisions at $l=0$. The scattering occurs at background scattering length $r = a_{bg}$ the distance
-    where the elastic collisions properties start to be modified.}
+    collisions ($l=0$). At large distance, the radial wavefunction behaves as $\sin[k(r-a_{bg})]$, i.e. as the
+    free wavefunction shifted by the background scattering length: $a_{bg}$ is the position of the node of this
+    asymptotic form extrapolated to short distance (for $a_{bg}>0$, the radius of the equivalent hard sphere),
+    not a distance at which the interaction starts.}
     \label{fig:scattering_concept}
 \end{figure}
 
@@ -402,6 +404,8 @@ the former therefore multiplies the integral by $1/(A_k k)^2=\pi\hbar^2/(2\mu k)
     \label{a_delta_intermediate}
 \end{equation}
 where $\psi_g^{(0)}$ is now energy-normalized.
+
+
 \textbf{Explicit form of $l_{\text{opt}}$ via the Wigner threshold law.}
 
 Following Bohn and Julienne \cite{bohn1997_prospects}, one can define the
@@ -475,7 +479,7 @@ where $a_{\text{bg}}$ is the real background scattering length representing nati
 This is the expression of \cite{blatt_systematic_2011} for an isolated resonance,
 $\alpha=a_{\text{bg}}+\ell_{\text{opt}}\gamma_m/(\Delta+i\gamma/2)$, with $\gamma_m\to\Gamma_{\text{rad}}$ and $\gamma\to\Gamma_{\text{mol}}$.
 
-To distinguish how the laser independently alters the elastic interactions and the loss mechanisms, we multiply the resonant fraction in Eq.~\ref{a(delta)} by the complex conjugate of its denominator. This algebraic
+To distinguish how the laser alters the elastic interactions and the loss mechanisms, we multiply the resonant fraction in Eq.~\ref{a(delta)} by the complex conjugate of its denominator. This algebraic
  separation successfully decouples the scattering length into its real (dispersive) and imaginary (absorptive) components, $a(\Delta) = a_{\text{bg}} + \delta a(\Delta) - i a''(\Delta)$:
 \begin{equation}
     a(\Delta) = a_{\text{bg}} + \frac{l_{\text{opt}}\Gamma_{\text{rad}}\Delta}{\Delta^2 + \left(\frac{\Gamma_{\text{mol}}}{2}\right)^2} - i \frac{l_{\text{opt}}\Gamma_{\text{rad}}\frac{\Gamma_{\text{mol}}}{2}}
@@ -532,8 +536,8 @@ While $K_2$ characterizes the fundamental two-body collision process, the experi
 \end{gather}
 consistent with the definitions found in \cite{han_photoassociation_2018}.
 
-For low temperatures, we neglect the contribution of the wavevector since $k \to 0$. In this threshold regime, the light-induced linewidth becomes negligible compared to the total molecular width 
-($\Gamma_{\text{stim}}(k) \ll \Gamma_{\text{mol}}$). On resonance ($\Delta = 0$), substituting Eq.~\ref{eq:gamma_stim_blatt} into Eq.~\ref{K2 complet Blatt} allows the wavevector $k$ to cancel out from the 
+For low temperatures, we neglect the contribution of the wavevector since $k \to 0$. In this threshold regime, the light-induced linewidth becomes negligible compared to the total molecular width
+($\Gamma_{\text{stim}}(k) \ll \Gamma_{\text{mol}}$)\footnote{This approximation can fail at high intensity, even in a gas at $\mu$K temperatures: since $\Gamma_{\text{stim}}/\Gamma_{\text{rad}}=2k\,l_{\text{opt}}$ (Eq.~\ref{eq:gamma_stim_blatt}) and $l_{\text{opt}}\propto I$, the stimulated width reaches the radiative width when $l_{\text{opt}}\sim1/(2k)$. For Sr at $T=2~\mu$K, $k=\sqrt{2\mu k_BT}/\hbar\simeq10^{-3}\,a_0^{-1}$, i.e. $l_{\text{opt}}\sim500~a_0$, which is reached at $I\sim50$~mW/cm$^2$ for the strongest $^{88}$Sr lines ($l_{\text{opt}}/I\sim10^4~a_0/(\text{W/cm}^2)$); the loss rate then saturates. For the $^{87}$Sr lines of this work ($l_{\text{opt}}\lesssim100~a_0$), $\Gamma_{\text{stim}}\lesssim0.2\,\Gamma_{\text{rad}}$, which is negligible compared with their total width.}. On resonance ($\Delta = 0$), substituting Eq.~\ref{eq:gamma_stim_blatt} into Eq.~\ref{K2 complet Blatt} allows the wavevector $k$ to cancel out from the 
 prefactor, and the microscopic PA rate coefficient simplifies to:
 \begin{equation}
     K_2 = \frac{16h}{m_{\text{at}}}\,l_{\text{opt}}\,\frac{\Gamma_{\text{rad}}}{\Gamma_{\text{mol}}}
@@ -634,7 +638,10 @@ vibrational lines near the dissociation limit without requiring detailed short-r
 cross-check these energy assignments.
 
 
-\subsection{Internal energy states}
+\subsection{Vibrational states estimation theories}
+The definition of the molecular potentials in the previous section is crucial to estimate the 
+bound states of the system. In this subsection one presents the semi-classical methods used to estimate the vibrational energies of a diatomic system, which are particularly useful for predicting the positions of high-lying vibrational states near the dissociation limit.
+
 \subsubsection{WKB approximation}
 
 The Wentzel-Kramers-Brillouin (WKB) approximation is a semi-classical method used to estimate
@@ -1428,48 +1435,23 @@ time-averaged intensity of $4\pm1$~mW/cm$^2$.}
 \label{tab:88Sr-lines-summary}
 \end{table}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf}
-    \caption[Experimental verification of the known resonances of $^{88}\text{Sr}$]{$^{88}\text{Sr}$ atom number (in units of $10^6$ atoms) across the intercombination line. 
-    (Top) Atomic resonance used as the PA frequency reference ($I=276\pm16~\mu$W/cm$^2$, $80$~ms, $\bar\omega/2\pi=213\pm10$~Hz, $\langle n\rangle=(4.5\pm0.6)\times10^{13}$~cm$^{-3}$, $T=1.40\pm0.05~\mu$K). Data points are extracted from 2D Gaussian fits of absorption images; error bars combine the uncertainty of the image fit and the shot-to-shot RMS fluctuation of the atom number measured without PA light. 
-    (Middle) $\nu = -1$ vibrational state ($I = 8\pm1$~mW/cm$^2$ during the PA pulses, with ODT/PA chopping at $50\%$ duty cycle, i.e. $4\pm1$~mW/cm$^2$ time-averaged, $1000$~ms, $\bar\omega/2\pi=181\pm9$~Hz, $\langle n\rangle=(1.8\pm0.3)\times10^{13}$~cm$^{-3}$, $T=1.8\pm0.1~\mu$K). 
-    (Bottom) $\nu = -2$ vibrational state ($I = 826\pm50$~mW/cm$^2$, $10$~ms, $\bar\omega/2\pi=184\pm9$~Hz, $\langle n\rangle=(3.0\pm0.4)\times10^{13}$~cm$^{-3}$, $T=1.4\pm0.1~\mu$K). Uncertainties: see Sec.~\ref{sec:uncertainties}. 
-    Solid lines: Lorentzian fits; the error bars combine the diagonal terms of the covariance matrix of the image fit and the shot-to-shot fluctuations.}
-    \label{88Sr resonance}
-\end{figure}
-
-
-Both states were detected using the MOGlabs laser system. The natural width $\Gamma_0$
-and the thermal broadening $\Gamma_{\text{thermal}}$ are both estimated from first
-principles rather than extracted from the data -- the expected linewidth should in
-principle also include a power broadening contribution, which we take to be negligible
-here given the small Franck-Condon factors discussed above. The measured widths
-exceed $\Gamma_0/2\pi + \Gamma_{\text{thermal}} \simeq 27$~kHz by far: the excess broadening,
-of order $300$~kHz, captures both technical laser broadening and any deviation
-of these first-principles estimates from their true values.
-A few points lie far from the Lorentzian fits of the molecular lines
+Both states were detected using the MOGlabs laser system. A few points lie far from the Lorentzian fits of the molecular lines
 (Fig.~\ref{88Sr resonance}, middle and bottom). The corresponding absorption images were
 checked and show a normal cloud, correctly described by the 2D Gaussian fit: these
 deviations do not come from the image analysis but from uncontrolled shot-to-shot
 fluctuations of the experiment, and the points are kept in the data.
 
-With the optical lengths measured by Blatt et al.~\cite{blatt_systematic_2011} for these two
-lines, our densities and intensities, and once the measured linewidths are accounted for
-(Eq.~\ref{eq:lopt_corrected}), one expects a characteristic time $\tau$
-(Eq.~\ref{temps caractéristique}) of a few ms for both lines. This is what we observe on the
-spectrum of the $\nu=-2$ line, whereas the losses on the spectrum of the $\nu=-1$ line are
-about two orders of magnitude slower. We attribute this to a misalignment of the PA beam with
-respect to the atomic cloud during these measurements, visible as a distorted beam profile at
-the output of the vacuum cell: only part of the cloud sees the nominal intensity, and this
-fraction can change between measurements. The effective intensity is therefore poorly known for
-these data, which limits the comparison with the literature to the line positions and to orders
-of magnitude for $l_{\text{opt}}$. This misalignment only concerns the $^{88}\text{Sr}$
-measurements shown in this section, not the $^{87}\text{Sr}$ data.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf}
+    \caption[Experimental verification of the known resonances of $^{88}\text{Sr}$]{$^{88}\text{Sr}$ atom number (in units of $10^6$ atoms) across the intercombination line. 
+    (Top) Atomic resonance used as the PA frequency reference ($I=276\pm16~\mu$W/cm$^2$, $80$~ms, $\bar\omega/2\pi=213\pm10$~Hz, $\langle n\rangle=(4.5\pm0.6)\times10^{13}$~cm$^{-3}$, $T=1.40\pm0.05~\mu$K). Data points are extracted from 2D Gaussian fits of absorption images; error bars combine the uncertainty of the image fit and the shot-to-shot RMS fluctuation of the atom number measured without PA light. 
+    (Middle) $\nu = -1$ and (bottom) $\nu = -2$ vibrational states, recorded in the conditions of Table~\ref{tab:88Sr-lines-summary}. Uncertainties: see Sec.~\ref{sec:uncertainties}. 
+    Solid lines: Lorentzian fits; the error bars combine the diagonal terms of the covariance matrix of the image fit and the shot-to-shot fluctuations.}
+    \label{88Sr resonance}
+\end{figure}
 
-Our measured line centers can be compared to the zero-intensity line centers determined by
-Blatt et al.~\cite{blatt_measurement_2011}, who extrapolated the light shift induced by the PA
-beam to zero intensity. 
+
 
 \paragraph{$\nu =-1$ state}
 For the $\nu=-1$ state (their $n=-2$), we measure $-23.99(1)$~MHz,
@@ -1487,9 +1469,10 @@ i.e. only $\simeq+24$~kHz at the $826$~mW/cm$^2$ used here, and towards the blue
 also report a light shift induced by the trapping light, which broadens the lines on their
 blue side \cite{blatt_systematic_2011}. 
 
-The measured linewidths ($\Gamma_{\text{tot}} \simeq 330\text{--}344$~kHz) remain
-significantly larger than the expected intrinsic molecular linewidth of
-$\Gamma_0/2\pi \approx 15$~kHz. Part of this broadening could come from the spectral
+The measured linewidths ($\Gamma_{\text{tot}} \simeq 330\text{--}344$~kHz) are much larger
+than the sum of the natural and thermal widths, $\Gamma_0/2\pi + \Gamma_{\text{thermal}} \simeq 27$~kHz,
+power broadening being negligible for molecular lines (Sec.~\ref{sec:fitting_model}): the
+excess broadening is of order $300$~kHz. Part of this broadening could come from the spectral
 impurities of the MOGlabs laser. However, convolving the power spectrum of the beat note
 (Fig.~\ref{beating broadening}) -- a narrow central peak (FWHM $\simeq 13$~kHz) with
 sidebands at $\pm 70$~kHz of FWHM $\simeq 80$~kHz -- with the expected clean molecular lineshape
@@ -1615,23 +1598,17 @@ Eq.~\ref{eq:final_fit} for each resonance.
 \caption[Atom number decays on the two $^{88}$Sr molecular lines]{Top: atom number decay of $^{88}$Sr on the $\nu=-1$ line (Fig.~\ref{88Sr resonance}, middle). Bottom: atom number decay on the $\nu=-2$ line (Fig.~\ref{88Sr resonance}, bottom). Both plots use a logarithmic vertical scale. Solid lines: fit with two-body losses computed locally over the Gaussian density profile, without rethermalization, as expected for the nearly ideal $^{88}$Sr gas \cite{blatt_systematic_2011}. The values of $K_2$ and $l_{\text{opt}}$ given in the text were obtained with the global fit of the analysis software (Gaussian profile maintained); the local fit shown here gives a value larger by a factor $\sim2$, i.e. the same order of magnitude. Error bars are not shown, as the original raw data could not be recovered.}
 \label{88sr exponential decay}
 \end{figure}
-The loss coefficient obtained from these decays is the loss coefficient at the
-center of the \textit{broadened} line; $l_{\text{opt}}$ is therefore obtained through
-Eq.~\ref{eq:lopt_corrected} (Method 2), using the ratio
-$\Gamma_{\text{tot}}/(\Gamma_0/2\pi)$. For comparison,
-the value obtained by applying directly the ideal-line relation
-(Eq.~\ref{eq:K2_peak_ideal}) is also given. For both lines, $l_{\text{opt}}$ is recomputed from
-the two-body coefficient $\beta$ fitted on the decay (with $\dot N=-\beta N^2-\Gamma N$ and a constant
-temperature): $K_2=2\sqrt{2}\,V_e\,\beta$ (Eq.~\ref{eq:3.28}), with $V_e$ computed from the mean trap
-frequency and the temperature of each decay (Eq.~\ref{eq:3.27}), and then
-$l_{\text{opt}}=m_{\text{at}}K_2/16h$ (Eq.~\ref{K2 et lopt}). Uncertainties are estimated as described in
-Sec.~\ref{sec:uncertainties}. Both decays were recorded in the same trap,
+For both lines, the two-body coefficient $\beta$ is fitted on the decay with a constant
+temperature, and converted into the loss coefficient at the center of the broadened line,
+$K_2=2\sqrt{2}\,V_e\,\beta$ (Eq.~\ref{eq:3.28}). The optical length is then obtained with Method~2
+(Eq.~\ref{eq:lopt_corrected}), using the ratio $\Gamma_{\text{tot}}/(\Gamma_0/2\pi)$; the value given by
+the ideal-line relation (Eq.~\ref{eq:K2_peak_ideal}) is also given for comparison. Both decays were recorded in the same trap,
 with $\bar\omega/2\pi=185\pm9$~Hz and $\langle n\rangle=(1.4\pm0.2)\times10^{13}$~cm$^{-3}$, at
 $T=1.8\pm0.1~\mu$K ($\nu=-1$) and $2.0\pm0.1~\mu$K ($\nu=-2$), and at intensities $I=4\pm1$~mW/cm$^2$
 ($\nu=-1$) and $303\pm17$~mW/cm$^2$ ($\nu=-2$).
 
-\paragraph{$f_{\nu=-1}=-23.99(1)$~MHz}
-For the resonance $f_{\nu=-1}=-23.99(1)$~MHz, the fit of the decay gives
+\paragraph{$\nu=-1$ line}
+For this line, the fit of the decay gives
 $\beta=(1.0\pm0.2)\times10^{-4}$~s$^{-1}$ per atom, i.e.
 $K_2=2\sqrt{2}\,V_e\,\beta=(6.3\pm1.6)\times10^{-12}$~cm$^3$/s. The ideal-line relation then gives
 $l_{\text{opt}}^{\text{ideal}} = 1.6\pm0.4~a_0$ at $I = 4\pm1~\text{mW/cm}^2$, i.e.
@@ -1643,25 +1620,18 @@ theoretical value $\xi = 6110~a_0/(\text{W/cm}^2)$ reported by Blatt et
 al.~\cite{blatt_systematic_2011} for the corresponding resonance (their $n=-2$ state),
 which it exceeds by a factor $1.5\pm0.4$, and their measured value
 $15.8(8)\times10^3~a_0/(\text{W/cm}^2)$, a factor $1.7\pm0.5$ above it.
-The spectrum of this line (Fig.~\ref{88Sr resonance}, middle), from which its linewidth is
-extracted, was recorded with the same MOGlabs laser as the decay $N(t)$, but with the ODT/PA
-chopping sequence active (Fig.~\ref{fig:sequence_chopping}), whereas the decay was not. The
-chopping itself was checked to have a negligible effect on the atoms, but the PA beam is then
-on only half of the time ($20~\mu$s every $40~\mu$s): the time-averaged intensity of this
-spectrum is $I/2 = 4\pm1$~mW/cm$^2$ rather than the nominal $8\pm1$~mW/cm$^2$.
-Even with this correction, the spectrum and the decay are not consistent for this line: the
-loss coefficient deduced from the depth of the spectrum, $(1.2\pm0.3)\times10^{-13}$~cm$^3$/s
-at a time-averaged intensity of $4\pm1$~mW/cm$^2$, is a factor $50\pm15$ lower than the one
-of the decay once brought to the same intensity and density, whereas the two measurements
-differ only by a factor $\simeq1.5$ for the $\nu=-2$ line. We attribute this discrepancy to the
-inhomogeneous PA intensity seen by the atoms in the $^{88}\text{Sr}$ measurements, caused by
-the misalignment between the PA beam and the atomic cloud discussed at the beginning of
-this section: only a fraction of the atoms sees the nominal intensity, and
-this fraction can differ between two measurements, so that the effective intensity is poorly
-known for each of them.
+The spectrum of this line was recorded with the same MOGlabs laser, but with the ODT/PA
+chopping sequence active (time-averaged intensity $4\pm1$~mW/cm$^2$,
+Table~\ref{tab:88Sr-lines-summary}), whereas the decay was not; the chopping itself was checked
+to have a negligible effect on the atoms and on the linewidth. Even at the same time-averaged
+intensity, the spectrum and the decay are not consistent for this line: the loss coefficient
+deduced from the depth of the spectrum (Method~1), $(1.2\pm0.3)\times10^{-13}$~cm$^3$/s, i.e.
+$l_{\text{opt}}/I=(1.8\pm0.6)\times10^2~a_0/(\text{W/cm}^2)$, is a factor $50\pm15$ lower than the one
+of the decay, whereas the two methods differ only by a factor $\simeq1.5$ for the $\nu=-2$ line.
+\hl{At the time of writing, the origin of this factor $\simeq50$ is not understood.}
 
-\paragraph{$f_{\nu=-2}=-222.70(1)$~MHz}
-For the resonance $f_{\nu=-2}=-222.70(1)$~MHz, the fit gives
+\paragraph{$\nu=-2$ line}
+For this line, the fit of the decay gives
 $\beta=(4.0\pm0.3)\times10^{-5}$~s$^{-1}$ per atom, i.e.
 $K_2=(2.9\pm0.5)\times10^{-12}$~cm$^3$/s, and the ideal-line relation gives
 $l_{\text{opt}}^{\text{ideal}} = 0.77\pm0.12~a_0$ at $I = 303\pm17~\text{mW/cm}^2$, i.e.
@@ -1670,7 +1640,9 @@ measured width ($\Gamma_{\text{tot}}/(\Gamma_0/2\pi) = 22.0\pm0.9$), the optical
 $l_{\text{opt}} = 17\pm3~a_0$, i.e. $l_{\text{opt}}/I = 56\pm10~a_0/(\text{W/cm}^2)$, in
 agreement with the value $68(3)~a_0/(\text{W/cm}^2)$ measured by Blatt et
 al.~\cite{blatt_systematic_2011} for this line (their $n=-3$ state), and a factor
-$1.7\pm0.3$ above the theoretical value $\xi = 32.8~a_0/(\text{W/cm}^2)$.
+$1.7\pm0.3$ above the theoretical value $\xi = 32.8~a_0/(\text{W/cm}^2)$. Method~1, using the
+depth of the spectrum ($K_2^{\text{fit}}(0)=(1.17\pm0.17)\times10^{-11}$~cm$^3$/s at $826$~mW/cm$^2$),
+gives $l_{\text{opt}}/I=81\pm13~a_0/(\text{W/cm}^2)$, a factor $\simeq1.5$ above Method~2.
 Our values of $l_{\text{opt}}/I$ are therefore close to those of Blatt et al., but a
 quantitative agreement cannot be confirmed: their theoretical values $\xi$ are given without
 uncertainty, and the uncertainties quoted on their measured values only come from their fit.
@@ -1679,6 +1651,32 @@ with the mean trap frequency and is therefore large; the uncertainties on their 
 values of $l_{\text{opt}}/I$ are thus likely underestimated.
 
 
+
+The results obtained on the two $^{88}$Sr lines are summarized in Table~\ref{tab:88Sr_results}.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+ & $\nu=-1$ & $\nu=-2$ \\
+\midrule
+Measured detuning $f$ (MHz) & $-23.99(1)$ & $-222.70(1)$ \\
+Literature $f$ (MHz) \cite{zelevinsky_narrow_2006} & $-23.932(33)$ & $-222.161(35)$ \\
+Measured width $\Gamma_{\text{tot}}$ (kHz) & $344\pm17$ & $330\pm13$ \\
+\addlinespace
+$l_{\text{opt}}/I$, Method 1 (spectrum) ($a_0$/(W/cm$^2$)) & $(1.8\pm0.6)\times10^2$\textsuperscript{*} & $81\pm13$ \\
+$l_{\text{opt}}/I$, Method 2 (decay) ($a_0$/(W/cm$^2$)) & $(9.2\pm2.4)\times10^3$ & $56\pm10$ \\
+Literature $l_{\text{opt}}/I$ ($a_0$/(W/cm$^2$)) \cite{blatt_systematic_2011} & $15.8(8)\times10^3$ & $68(3)$ \\
+\bottomrule
+\end{tabular}
+\caption{Summary of the results obtained on the two $^{88}$Sr lines. Both methods account for
+the measured linewidth (Eq.~\ref{eq:lopt_corrected}): Method~1 uses the depth of the spectrum,
+Method~2 the decay of the atom number (Sec.~\ref{sec:determining_lopt}).
+\textsuperscript{*}Computed with the time-averaged intensity of the spectrum, $4\pm1$~mW/cm$^2$; this
+value disagrees with Method~2 by a factor $\simeq50$ (see text).}
+\label{tab:88Sr_results}
+\end{table}
 
 To conclude, the positions of the $^{88}\text{Sr}$ lines are close to the literature values
 (within $0.5$~MHz). Once the linewidth is accounted for, the optical lengths also agree with those of Blatt et al.~\cite{blatt_systematic_2011} within a factor $\lesssim2$.
@@ -2187,15 +2185,15 @@ The weak loss rate and the large linewidth could first come from technical limit
             \label{fig:sequence_chopping}
         \end{figure}
 
-        This possibility was ruled out by tests on $^{88}\text{Sr}$ and $^{87}\text{Sr}$ molecular lines, which did not change with the chopping.
+        The chopping sequence was only used for one $^{88}$Sr spectrum (the $\nu=-1$ line, Sec.~\ref{sec:88Sr_results}), where a comparison with and without chopping showed only a negligible effect on the linewidth. It was not used for the $^{87}$Sr measurements: this possibility therefore cannot be ruled out for $^{87}$Sr.
     \item \textbf{Noise of the MOGlabs laser:} on the $^{88}$Sr molecular lines, this laser gave widths about 20 times larger than the expected $\simeq15$~kHz, which is not enough to explain the MHz linewidths observed on $^{87}$Sr.
-    \item \textbf{Inhomogeneous trap:} the atoms could see different trap potentials if they are not all cold enough to stay at the center of the trap.
-    \item \textbf{Inhomogeneous light shift:} the intensities used on $^{87}\text{Sr}$ ($5$--$31$~W/cm$^2$) are much higher than on $^{88}\text{Sr}$. The PA beam induces a light shift of the molecular state, which reaches $\sim 200$~kHz for $0.8$~W/cm$^2$ on the $\nu=-1$ state of $^{88}\text{Sr}$ ($-251$~kHz per W/cm$^2$ \cite{blatt_measurement_2011}). With this coefficient, the waist $w\simeq60~\mu$m of the PA beam and a cloud of rms size $\sigma\simeq11~\mu$m, the intensity varies by $\simeq25\%$ over $\pm2\sigma$, which spreads the resonance over $\simeq1$~MHz at $19$~W/cm$^2$ and $\simeq0.3$~MHz at $5.6$~W/cm$^2$. Coefficients about $10$ to $60$ times larger would be needed to explain the observed widths of $5$ to $20$~MHz, and the broadest line ($20$~MHz) was measured at the lowest intensity. Such a broadening scales with the intensity and could be tested by measuring the width of a line at several intensities.
+    \item \textbf{Light shift by the trapping light:} the ODT light also shifts the molecular level, by an amount that depends on the local trap intensity. Atoms at different positions in the trap, in particular the hotter ones exploring its edges, therefore see the line at slightly different frequencies, which broadens it. This broadening does not depend on the PA intensity. On the $\nu=-1$ line of $^{88}$Sr, switching the chopping on and off had only a negligible effect on the linewidth, which suggests that this effect is small. However, the $^{87}$Sr lines were recorded with the trap on during the PA pulses, so that it cannot be ruled out for them; it would be suppressed by the chopping sequence.
+    \item \textbf{Light shift by the PA beam:} the intensities used on $^{87}\text{Sr}$ ($5$--$31$~W/cm$^2$) are much higher than on $^{88}\text{Sr}$. The PA beam itself shifts the molecular level, by an amount proportional to its intensity, as measured on $^{88}$Sr: $-251\pm67$~kHz per W/cm$^2$ for the $\nu=-1$ state, i.e. $\sim 200$~kHz for $0.8$~W/cm$^2$ \cite{blatt_measurement_2011}. This has two effects. First, the whole line is shifted: with this coefficient, the shift would reach $\simeq-5$~MHz at $19$~W/cm$^2$, so that lines measured at different intensities, or a spectrum and a decay recorded at different intensities, are not at exactly the same frequency. Second, since the intensity of the Gaussian PA beam varies across the cloud, atoms at different positions see different shifts, which broadens the line (inhomogeneous light shift of the PA beam). With this coefficient, the waist $w\simeq60~\mu$m of the PA beam and a cloud of rms size $\sigma\simeq11~\mu$m, the intensity varies by $\simeq25\%$ over $\pm2\sigma$, which spreads the resonance over $\simeq1$~MHz at $19$~W/cm$^2$ and $\simeq0.3$~MHz at $5.6$~W/cm$^2$. Coefficients about $10$ to $60$ times larger would be needed to explain the observed widths of $5$ to $20$~MHz, and the broadest line ($20$~MHz) was measured at the lowest intensity. Both the shift and the broadening scale with the PA intensity, and could be tested by measuring the position and the width of a line at several intensities.
     \item \textbf{Thermal width:} a high gas temperature could broaden the lines, but the thermal width at similar temperatures ($\simeq12$--$13$~kHz, Tables~\ref{tab:88Sr-lines-summary} and~\ref{tab:comparaison_lasers}) is negligible compared
     with the MHz linewidths observed.
 \end{itemize}
 
-Since these technical causes do not explain the observations, we now consider physical explanations.
+Some of these technical causes, related to the trapping light or to the PA beam, cannot be ruled out yet; we now consider physical explanations.
 
 \subsubsection{Physical hypotheses for the weak loss rate and large linewidth}
 \label{sec:physical_hypotheses}
@@ -2264,7 +2262,7 @@ Quantum statistics and spin selection together can explain optical lengths one t
         between the two potentials. Since the pair is lost in both decay channels, predissociation does not
         change $l_{\text{opt}}$, which is defined with respect to the radiative width $\Gamma_{\text{rad}}$, but
         lowers the peak loss coefficient by the ratio $\Gamma_{\text{rad}}/\Gamma_{\text{mol}}$ (Eq.~\ref{K2 et lopt}),
-        the area under the line remaining unchanged (Eq.~\ref{eq:lopt_corrected}). A broad line with a weak peak loss rate is therefore precisely the signature expected from strong predissociation. Contrary to a light shift inhomogeneity, this broadening does not depend on the PA intensity. In Ref.~\cite{franzen_intercombination_2023}, such a decay could broaden most of the lines, especially in a magnetic field, enough to make them unobservable, which would explain why a single pair of lines was found. Contrary to RbYb, however, the width of our $^{87}$Sr lines does not change with the magnetic field (Sec.~\ref{sec:tests_future}). 
+        the area under the line remaining unchanged (Eq.~\ref{eq:lopt_corrected}). A broad line with a weak peak loss rate is therefore precisely the signature expected from strong predissociation. Contrary to the inhomogeneous light shift of the PA beam, this broadening does not depend on the PA intensity. In Ref.~\cite{franzen_intercombination_2023}, such a decay could broaden most of the lines, especially in a magnetic field, enough to make them unobservable, which would explain why a single pair of lines was found. Contrary to RbYb, however, the width of our $^{87}$Sr lines does not change with the magnetic field (Sec.~\ref{sec:tests_future}). 
 
         In Fig.~\ref{fig:pa-ytterbium-potentials}, the linewidths do not seem to be affected by predissociation. We expected that, as for Yb,
         photoassociation below the lowest hyperfine asymptote would avoid this effect, but our $^{87}\text{Sr}$ data suggest the contrary: we do not know why
@@ -2284,7 +2282,7 @@ spin components, which lowers the optical length of each resolved line (spin sel
 and it provides lower-lying channels, correlated to other hyperfine asymptotes, into which the
 bound pair can predissociate, which broadens the lines.
 \end{itemize}
-Together with an inhomogeneous light shift (Sec.~\ref{sec:technical_causes}), predissociation is the most likely explanation of the broad linewidth of the molecular lines, and hence of their weak loss rate at the line center. The two can be distinguished by measuring the width of a line as a function of the PA intensity: a light shift broadening grows with the intensity, whereas predissociation does not. 
+Together with the inhomogeneous light shift of the PA beam and the light shift by the trapping light (Sec.~\ref{sec:technical_causes}), predissociation is the most likely explanation of the broad linewidth of the molecular lines, and hence of their weak loss rate at the line center. Two measurements can distinguish them: the width of a line as a function of the PA intensity, which grows with the intensity only for the light shift of the PA beam, and the width of a line recorded with the chopping sequence, which suppresses the effects of the trapping light. Predissociation is not affected by either of them. 
 
 This section ends with the experiments that could clarify this point.
 
@@ -2296,7 +2294,8 @@ Some tests have already been made on the lines we found, and others remain to be
     \item Changing the polarization of the PA laser could change the coupling strength with the atomic continuum. This test showed no significant change of the line.
     \item Changing the magnetic field could change the energy difference between the hyperfine states and so decrease the density of states. This was also tested: neither the width nor the position of the lines
     changed significantly, and no individual molecular lines were resolved.
-    \item Measuring the width of a given line at several PA intensities would discriminate an intensity-dependent broadening (inhomogeneous light shift) from an intensity-independent one (predissociation).
+    \item Measuring the position and the width of a given line at several PA intensities would give the light shift of the line and discriminate an intensity-dependent broadening (inhomogeneous light shift of the PA beam) from an intensity-independent one (predissociation, light shift by the trapping light).
+    \item Applying the ODT/PA chopping sequence to the $^{87}$Sr lines would test the effects of the trapping light (multi-photon transitions, light shift by the trapping light).
     \item Recording the spectrum and the atom number decay at the same intensity would allow a direct comparison of the two methods of Sec.~\ref{sec:determining_lopt} for every line.
     \item Optically pumping the atoms to reduce the size of the Hilbert space would reduce the number of atomic potentials and so the probability of predissociation. Experiments are
     in progress to test this hypothesis. A magnetic field switch has already been implemented in the experiment to populate the extremal $m_F$ states. So far, the measurements of $T(t)$ and $T(f)$ have not given any information on the loss mechanism.
@@ -2307,4 +2306,4 @@ Some tests have already been made on the lines we found, and others remain to be
 
 To conclude, this chapter first introduced the theory of the PA process (scattering length, optical length, two-body loss dynamics).
 It then presented PA measurements on the intercombination line of $^{88}$Sr, used as a reference to characterize the experimental procedure. It ends with the measurement of molecular lines in an
-unpolarized gas of $^{87}$Sr, with linewidths two to three orders of magnitude larger than the radiative width, which account for their weak loss rate at the line center. Once this broadening is taken into account, the optical lengths reach $l_{\text{opt}}/I \sim 0.5$--$3.5~a_0/(\text{W/cm}^2)$, one to two orders of magnitude below the bosonic lines of similar binding energy, which can be explained by quantum statistics and spin selection. The main anomaly of these lines is therefore their width. Predissociation and an inhomogeneous light shift remain possible explanations; measuring the width of a line as a function of the PA intensity would distinguish them.
+unpolarized gas of $^{87}$Sr, with linewidths two to three orders of magnitude larger than the radiative width, which account for their weak loss rate at the line center: the loss coefficients measured at the line center are $K_2\sim10^{-14}$--$10^{-12}$~cm$^3$/s for PA intensities of $5$ to $31$~W/cm$^2$ (Table~\ref{tab:summary_fits_PA_final}), against a few $10^{-12}$~cm$^3$/s for the $^{88}$Sr lines at intensities below $1$~W/cm$^2$. Once this broadening is taken into account, the optical lengths reach $l_{\text{opt}}/I \sim 0.5$--$3.5~a_0/(\text{W/cm}^2)$, one to two orders of magnitude below the bosonic lines of similar binding energy, which can be explained by quantum statistics and spin selection. The main anomaly of these lines is therefore their width. Predissociation, the inhomogeneous light shift of the PA beam and the light shift by the trapping light remain possible explanations; measuring the width of a line as a function of the PA intensity, and with the trap switched off during the PA pulses, would distinguish them.

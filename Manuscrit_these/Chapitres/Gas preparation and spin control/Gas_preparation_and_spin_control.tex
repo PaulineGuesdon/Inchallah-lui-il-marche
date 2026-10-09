@@ -27,14 +27,14 @@ $t_{\text{BlueMot}} = 8~\text{s}$, both operating on the broad
 $^1S_0 \rightarrow {}^1P_1$ transition (see Fig.~\ref{energy levels sr}), which both
 require a high magnetic gradient.
 
-Because the transition is not closed, atoms accumulate in $^3P_2$. The dipole of the atoms trapped in 
-this metastable state help to capture them with a magnetic trap set to $\Delta B = 51~\text{G/cm}$ for a coil current
+Because the transition is not closed, atoms accumulate in $^3P_2$. The dipolar magnetic moment
+of the atoms trapped in this metastable state help to capture them with a magnetic trap set to $\Delta B = 51~\text{G/cm}$ for a coil current
 of $170~\text{A}$. This trap is crucial for two reasons: it enables to accumulate the more atoms in the metastable 
 state which demand few seconds but also to avoid loosing them during the process when they are not adressed by the blue 
 MOT anymore.
 
 They are then repumped in 3.2 ms by a frequency sweep across multiple hyperfine states of the
-$^3P_2 \rightarrow {}^3D_2$ transition, to recover approximately 1:4 of the 1:20000 atoms that decayed
+$^3P_2 \rightarrow {}^3D_2$ transition, to recover atoms that decayed
 in metastable -instead of $^3P_1$- and immediately recaptured in a MOT on the narrow line. 
 By the end of this stage, approximately $30$ million atoms are
 captured spread in about a centimer in space.
@@ -217,7 +217,7 @@ negative before the atoms reach $v_f$.
 Because the atom's direction of motion does not change, this sign change reflects
 only the resonance condition of Eq.~\ref{eq:zeeman_resonance}, not a reversal of
 the atomic trajectory: atoms continue to decelerate in the same direction
-throughout. Supplementary coils of increasing radii, placed past this zero
+throughout. Supplementary coils of increasing radii (see Fig.\ref{setup exp}), placed past this zero
 crossing, produce the required negative field to keep the already-slowed atoms in
 resonance down to the final capture velocity suitable for MOT trapping.
 
@@ -293,7 +293,7 @@ To recover this population into the cooling cycle, the sequence proceeds as foll
 \subsection{Laser cooling on the intercombination line : the ``red MOT''}
 
 \subsubsection{Optical setup}
-Because the blue MOT temperature is bounded by $T_D \approx 770~\mu\text{K}$, further cooling requires transferring atoms to the narrow intercombination transition $^1S_0 \rightarrow {}^3P_1$ at $689~\text{nm}$ ($\Gamma = 2\pi \times 7.4~\text{kHz}$).
+Because the blue MOT temperature is bounded by $T_D \approx 770~\mu\text{K}$, further cooling requires transferring atoms to the narrow intercombination transition $^1S_0 \rightarrow {}^3P_1$ at $689~\text{nm}$ ($\Gamma = 2\pi \times 7.5~\text{kHz}$).
 
 For this transition, the formal Doppler limit ($T_D = \hbar \Gamma / m k_B = 177~\text{nK}$) falls below the single-photon recoil limit ($T_r = \hbar^2 k^2 / 2m = 462~\text{nK}$). Consequently, the ultimate red MOT temperature is bounded by the photon recoil limit.
 
@@ -488,11 +488,7 @@ efficiency to the cooling cycle.
 {}^3P_1(F=9/2)$ transition]{Spatial dependence of the resonance condition
 on each $m_F$ sub-level, as a function of position $x$ ($B\propto x$) --
 adapted from the principle illustrated in Fig.~2.8(d) of \cite{stellmerThesis}.
-Right: the stirring laser's frequency, swept in a sawtooth pattern
-\textit{over time} in our implementation. At each instant $t_0$, the
-instantaneous frequency (right) is simultaneously resonant with several
-$(m_F,x)$ pairs (left, black dots); sweeping this frequency over time thus
-randomizes the $m_F$ population across the whole trap.}
+}
 \label{fig:intro-randomisation}
 \end{figure}
 
@@ -542,9 +538,11 @@ the optical dipole potential:
 As seen from these expressions, the AC Stark shift induced by the dipole laser is state-dependent. As illustrated in Fig.~\ref{fig:intro-odt-loading}, the potential estimated in \cite{litvinov_these} is deeper for the ground state $^1S_0$ ($U_{\text{dip}}(^1S_0) \simeq -1.5~\text{MHz}$) than for the excited state $^3P_1$ ($U_{\text{dip}}(^3P_1) \simeq -1.2~\text{MHz}$) at the center of the trap, resulting in a differential blue-shift of the $^1S_0 \rightarrow {}^3P_1$ transition (black line)
 compared to the frequency the atoms feel from the red MOT (red curve).
 
-At the center, this shrinking gap is red-detuned from the MOT, enabling efficient cooling and confinement there. Away from
-the center, the laser is blue-detuned from the trap which gives kinetic energy to the atoms accumulated at the edges of the 
-ground state trap: these are the ones with the most kinetic energy we want to get rid off to reach ultracold temperatures.
+At the center of the trap, the differential light shift increases the transition frequency, so that the MOT laser is
+red-detuned and keeps cooling and confining the atoms there. Away from the center, the MOT laser becomes blue-detuned with
+respect to the local transition and heats the atoms located at the edges of the ground-state trap. This could help to remove
+the most energetic atoms, but it also heats the reservoir of atoms from which the trap is loaded; which of these two effects
+dominates was not established.
 
 \begin{figure}
     \centering
@@ -568,10 +566,9 @@ In Chapter 2, the horizontal arm is tilted by $\simeq 1^\circ$. For the photoass
 
 Both $^1S_0$ and $^3P_1$ are shifted downward by the dipole trap potential, but $^1S_0$
 experiences a larger shift due to its higher polarizability, so the energy difference between 
-the two states is way more important at the center of the trap than on the edges. The atoms adressed by the 
-red MOT laser at the center of the trapp are cooled with the red-detuned laser while the slighlty
-blue-detuned laser is heating the atoms with the more kinetic energy -- located at the edges of the 
-harmonic potential of the ODT -- in order to keep only the coldest atoms.
+the two states is much larger at the center of the trap than at the edges. As discussed above, the atoms at the
+center of the trap are therefore cooled by the red-detuned MOT laser, while the atoms at the edges of the harmonic
+potential of the ODT are heated by the slightly blue-detuned laser.
 
 
 \begin{figure}
@@ -589,8 +586,7 @@ For a degenerate Fermi gas, the key parameter to optimize is the phase-space den
     \item \textbf{Tight vertical beam (``Dimple''):} Writing the atom number as $N = nV$ (where $n$ is the spatial density and $V$ the trap volume), the elastic collision rate scales as $\Gamma_{\text{el}} = n\sigma_{\text{el}}v_{\text{th}}$ with $\sigma_{el}$ the elastic collision cross section and $v_{th}$ the thermal speed of the atoms, enhancing collision rates for fast re-thermalization. This
     beam impacts mostly the temperature of the gas since it acts on the collision rate. The tightly focused waist of the dimple beam mainly dictates the local horizontal confinement, and contributes negligibly to the vertical confinement due to its near-vertical propagation axis~\cite{stellmer_production_2012}.
 
-    \item \textbf{Broad horizontal beam (``Reservoir''):} Owing to its narrow vertical waist, the reservoir beam sets the effective trap depth $U$ against gravity-assisted atom loss, thereby controlling the evaporative truncation of the energy distribution and, in turn, the atom number~\cite{stellmer_production_2012}. Increasing the reservoir depth raises both $N$ (less truncation, more atoms retained) and $T$ (less evaporative cooling), and these two effects largely cancel out in the $N/T^3$ ratio: the reservoir therefore has a much weaker net effect on the PSD than the 
-    dimple, whose action on $\bar\omega^3$ is not compensated by an opposite change in $N$. Therefore the reservoir compensates alone the gravity effect on the cloud. 
+    \item \textbf{Broad horizontal beam (``Reservoir''):} Owing to its narrow vertical waist, the reservoir beam sets the effective trap depth $U$ against gravity-assisted atom loss, thereby controlling the evaporative truncation of the energy distribution and, in turn, the atom number~\cite{stellmer_production_2012}. Increasing the reservoir depth raises $N$ (less truncation, more atoms retained), but also $T$ (less evaporative cooling) and the vertical trap frequency: its net effect on the PSD results from a competition between these terms, and was optimized empirically. In our geometry, the reservoir is also the only beam that compensates gravity, since the dimple propagates nearly vertically. 
 
     \item \textbf{Ramp duration and adiabaticity:} The duration and adiabaticity of the evaporative ramps depend on the targeted state. Short evaporations are preferred when aiming solely for a large atom number at moderate temperatures when it is necessary to detect atom number fluctuations, such as for our experiments on photoassociation (see Chapt.3).
     Conversely, reaching deep quantum degeneracy requires a multi-stage ramp lasting approximately 7 seconds which was necessary for the results of Chapt.2.
@@ -799,10 +795,11 @@ STEMlab board, driving a home-made PID controller with separate proportional and
 integral stages (Fig.~\ref{lock PID}), which we found sufficient for our setup. The PID
 parameters were optimized by injecting a broadband electronic noise signal into the
 cavity piezo driver and measuring the closed-loop transfer function. As seen in the
-frequency response plot (Fig.~\ref{fig:analyse_bruit}), operating the system with
-specific gain values excites mechanical resonances at low frequencies, with at 3~kHz 
-the electronical bump that has similar amplitude for every gain but that is pushed to 
-higher frequencies while the gain increases. 
+frequency response plot (Fig.~\ref{fig:analyse_bruit}), the closed-loop noise spectrum
+shows a servo bump at 3~kHz, followed by peaks at its multiples (6, 9 and 12~kHz). It is a
+feature of the feedback loop rather than a mechanical resonance: its frequency increases
+with the gain (not shown). No mechanical resonance of the cavity is visible in this
+frequency range. 
 Consequently, the final feedback loop acting on the cavity incorporates a
 low-pass filter with a cut-off frequency of $f_c = 40~\text{kHz}$, a proportional gain
 strictly bounded between $1 < K_p < 10$, and an integral gain configured between
@@ -818,7 +815,7 @@ $0 < K_i < 8~\text{s}^{-1}$.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Chapitres/Gas preparation and spin control/images/noise_spectrum.pdf}
-    \caption[Closed-loop noise analysis of the Fabry-Pérot cavity]{Closed-loop noise analysis and mechanical resonance identification using the Red Pitaya with a gain that is amplifying parasitic noise, such as the mechanical resonance of the piezo at $f = 35~$kHz.}
+    \caption[Closed-loop noise analysis of the Fabry-Pérot cavity]{Closed-loop noise spectrum measured with the Red Pitaya, showing the servo bump at 3~kHz and its multiples.}
     \label{fig:analyse_bruit}
 \end{figure}
 
@@ -827,7 +824,7 @@ Total atom numbers are determined via standard absorption imaging on the broad $
 
 The measurement sequence proceeds as follows:
 \begin{enumerate}
-    \item Atoms are illuminated by a vertical, retro-reflected laser beam with opposite circular polarizations ($\sigma^+ / \sigma^-$), as illustrated in Fig.~\ref{fig:intro-spin-kick-scheme}(a), addressing the $|^1S_0, F=9/2\rangle \rightarrow |^3P_1, F=11/2\rangle$ transition at an intensity of $5~\text{mW/cm}^2$, giving Rabi couplings $\Omega \simeq 2\pi \times 220~\text{kHz}$ (scaled by the relevant Clebsch-Gordan coefficients). A magnetic field of $16~\text{G}$ is applied along the beam propagation direction, splitting adjacent $m_F'$ sub-levels of $^3P_1, F=11/2$ by $6.0~\text{MHz}$ -- far larger than the $7.4~\text{kHz}$ transition linewidth. The atoms are held against gravity in a weakly confining ($125~\text{Hz}$) horizontal dipole trapping beam during the momentum transfer.
+    \item Atoms are illuminated by a vertical, retro-reflected laser beam with opposite circular polarizations ($\sigma^+ / \sigma^-$), as illustrated in Fig.~\ref{fig:intro-spin-kick-scheme}(a), addressing the $|^1S_0, F=9/2\rangle \rightarrow |^3P_1, F=11/2\rangle$ transition at an intensity of $5~\text{mW/cm}^2$, giving Rabi couplings $\Omega \simeq 2\pi \times 220~\text{kHz}$ (scaled by the relevant Clebsch-Gordan coefficients). A magnetic field of $16~\text{G}$ is applied along the beam propagation direction, splitting adjacent $m_F'$ sub-levels of $^3P_1, F=11/2$ by $6.0~\text{MHz}$ -- far larger than the $7.5~\text{kHz}$ transition linewidth. The atoms are held against gravity in a weakly confining ($125~\text{Hz}$) horizontal dipole trapping beam during the momentum transfer.
     \item A state-selective pulse tuned to a specific $^1S_0 \rightarrow {}^3P_1, F=11/2, m_F$ transition --in the presence of linear Zeeman shift-- adiabatically transfers targeted spin populations (Fig.~\ref{fig:intro-spin-kick-scheme}(b)). The laser frequency is swept, with decreasing frequency only, over a span of $1.4~\text{MHz}$ within $300~\mu\text{s}$.
     \item Each absorption-stimulated emission cycle imparts a coherent $2\hbar k$ momentum kick to the selected $m_F$ state.
     \item Following a time-of-flight (TOF) expansion duration $t=6.6~$ms (set for the gas to stay in camera plane), spatial separation between spin components is observed in the absorption image (Fig.~\ref{fig:intro-spin-kick-scheme}(d)).
