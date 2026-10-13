@@ -599,7 +599,7 @@ estimate a total of 981 accessible $(R_f, T^f)$ molecular configurations. This m
     \centering
     \includegraphics[width=0.8\linewidth]{Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/ytterbium.pdf}
     \caption[Density of molecular potentials for $^{173}\text{Yb}$ \cite{han_photoassociation_2018}]{Density of molecular potentials for $^{173}\text{Yb}$ with three hyperfine states, adapted from \cite{han_photoassociation_2018}, giving rise to numerous triplets of quantum numbers $(T, F, R)$. 
-    The spectral lines are identified as $\Omega_{u/g}$, where $\Omega$ is the total orbital momentum projection of the molecule and $u/g$ denotes the electronic parity (see Fig.~\ref{fig:u-g symmetry}).}
+    The spectral lines are identified as $\Omega_{u/g}$, where $\Omega$ is the total orbital momentum projection of the molecule and $u/g$ denotes the electronic parity gerade/ungerade.}
     \label{fig:pa-ytterbium-potentials}
 \end{figure}
 
@@ -784,7 +784,7 @@ to be identical for all species. Consequently, only the reduced mass $\mu$ in th
 The experimental positions of the first vibrational states for the $0_u^+$ potential in $^{84}Sr, ^{86}Sr$, 
 and $^{88}Sr$ are shown as red crosses in Fig. \ref{fig:pa-mass-scaling}. These data points allow for the 
 refinement of the potential shape $U(r)$. The fitted functions (blue lines) then enable the prediction of 
-the frequency ranges where $^{87}Sr$ resonances should occur. Note that mass scaling applies
+the frequency ranges where $^{87}Sr$ resonances should occur. Note that mass scaling in this article applies
 to the ground-state potential: Martinez de Escobar et al. determined the scattering lengths of
 all isotopic combinations, including $^{87}$Sr--$^{87}$Sr \cite{martinez_de_escobar_two-photon_2008},
 but they give none for the excited states. For $^{87}$Sr, the hyperfine structure of the excited
@@ -835,7 +835,7 @@ optical transitions, by shining on the atoms a dedicated laser beam presented in
 
 \subsection{Photoassociation lasers and their spectral characteristics}
 \subsubsection{ECDL locking and frequency referencing}
-The PA beam comes from the MOGlabs ECDL (see Sec.~\ref{moglabs ecdl}), phase-locked to the Radiant Dyes ECDL (Thorlabs red diode \textbf{HL6750MG}), which is itself referenced to an ultrastable cavity.
+The PA beam comes from the MOGlabs ECDL (see Sec.~\ref{moglabs ecdl}), phase-locked to a slave diode (Thorlabs red diode \textbf{HL6750MG}) locked on the Radiant Dyes ECDL, which is itself referenced to an ultrastable cavity.
 This lock relies on a beat note: as shown in Fig.~\ref{frequences 88sr 87sr}, the MOGlabs and "AOM 11/2" beams are overlapped on the "beating photodiode". The
 beat signal is mixed with an RF source to produce an error signal, which is fed back to the current and piezo of the MOGlabs laser to stabilize its frequency.
 
@@ -1755,10 +1755,10 @@ The density of these lines can be estimated from the LeRoy-Bernstein law
 the $0_u$ levels of $^{88}\text{Sr}$ ($0.435$, $23.932$, $222.161$ and $1084.093$~MHz
 \cite{zelevinsky_narrow_2006}) follow the law for a $C_3/r^3$ potential ($n=3$), with
 $E_\nu^{1/6}$ linear in $\nu$ and $H_3\simeq0.78~\text{MHz}^{1/6}$; mass-scaled to
-$^{87}\text{Sr}$ ($H_3\propto\mu^{-1/2}$), this gives about three vibrational levels per
-molecular channel within the $\simeq380$~MHz explored below the asymptote, the next one
+$^{87}\text{Sr}$ ($H_3\propto\mu^{-1/2}$), this gives three to four vibrational levels per
+molecular channel ($\simeq3.4$ on average, i.e. $380^{1/6}/H_3$) within the $\simeq380$~MHz explored below the asymptote, the next one
 lying around $1$~GHz. Distributing the 981 accessible molecular configurations, each with
-$\simeq3.5$ levels, over this range, we expect a dense spectrum of about $3\times10^3$
+$\simeq3.4$ levels, over this range, we expect a dense spectrum of about $3\times10^3$
 molecular lines with a mean separation of only $\sim 100~\text{kHz}$ -- a few times larger
 than the natural linewidth of a single line, but much smaller than the several-MHz
 linewidths we actually observe (Sec.~\ref{raie sr87 }). This estimate assumes that all
@@ -2162,7 +2162,7 @@ These results show several unexpected features:
 \begin{itemize}
     \item First, although about $3\times10^3$ molecular lines, separated by $\sim100$~kHz on average, are expected within the $\simeq380$~MHz explored below the asymptote, we did not detect any two-body loss closer to the asymptote than $259.01$~MHz. This is also not consistent with the line positions expected for $^{87}$Sr from the mass scaling of Ref.~\cite{borkowski_mass_2014}.
     \item The linewidth of each line is large: $7.4 \pm 0.9$, $5.0 \pm 0.3$ and $20.2 \pm 2.3$~MHz, while we expect $\Gamma_{\text{rad}}/2\pi \simeq 2\times \Gamma_{\text{at}}/2\pi \simeq 15$~kHz, i.e. two to three orders of magnitude larger.
-    \item As a direct consequence of this broadening, the losses at resonance remain small: the depths of the three lines range from $8.9\pm0.5\%$ to $40\pm2\%$ after $1$~s of illumination (Table~\ref{tab:summary_fits_PA_final}). At fixed $l_{\text{opt}}$, a line $10^2$--$10^3$ times broader than $\Gamma_{\text{rad}}$ has a peak loss coefficient lowered by the same factor (Eq.~\ref{eq:lopt_corrected}): the small depths and the large linewidths are therefore not two independent observations: both reflect a peak loss rate lowered by the broadening.
+    \item As a direct consequence of this broadening, the losses at resonance remain small: the depths of the three lines range from $8.9\pm0.5\%$ to $40\pm2\%$ after $1$~s of illumination and high intensities (Table~\ref{tab:summary_fits_PA_final}). At fixed $l_{\text{opt}}$, a line $10^2$--$10^3$ times broader than $\Gamma_{\text{rad}}$ has a peak loss coefficient lowered by the same factor (Eq.~\ref{eq:lopt_corrected}): the small depths and the large linewidths are therefore not two independent observations: both reflect a peak loss rate lowered by the broadening.
     \item Once the linewidth is accounted for, the analysis of these data gives optical lengths $l_{\text{opt}}/I \simeq 0.5$--$3.5~a_0/(\text{W/cm}^2)$ (Table~\ref{tab:summary_fits_PA_final}), i.e. one to two orders of magnitude below the $\nu=-2$ line of $^{88}\text{Sr}$ measured in the same setup ($56\pm10~a_0/(\text{W/cm}^2)$), and about two orders of magnitude below the $^{84}$Sr line of similar binding energy ($228(42)~a_0/(\text{W/cm}^2)$ at $228$~MHz \cite{reschovsky_narrow-line_2018}, where $l_{\text{opt}}$ is also corrected for the broadening through a factor $\eta$). They are of the order of the weakest strontium lines, such as the $^{84}$Sr line at $1143$~MHz ($0.95(12)~a_0/(\text{W/cm}^2)$ \cite{reschovsky_narrow-line_2018}), which is suppressed by a node of the ground-state wavefunction; such a node is however unlikely for our lines (Sec.~\ref{sec:physical_hypotheses}).
 \end{itemize}
 

@@ -155,7 +155,6 @@
 \input{appendix/titlepage}
 \clearpage
 \pagenumbering{roman}
-\input{appendix/abstract}
 \input{appendix/mis/acknowledgements}
 
 \resettocpagededup
@@ -174,7 +173,9 @@
 
 \cleardoublepage
 \bibliography{ref,spincontrol_refs}
-\cleardoublepage
+
+% Back cover
+\input{appendix/abstract}
 
 
 \end{document}

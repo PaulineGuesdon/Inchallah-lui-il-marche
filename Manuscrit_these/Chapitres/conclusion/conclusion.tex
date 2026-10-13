@@ -1,29 +1,32 @@
 \chapter*{Conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}  
 \markboth{Conclusion}{Conclusion}
+To conclude this thesis work, I will summarize the main purpose of each chapter and their associated results, notably
+on the coherent manipulation of the nuclear spin of $^{87}$Sr, and on the photoassociation spectroscopy of 87 and 88
+isotopes of strontium. I will end with a discussion of the next steps for the experiment.
 
 \paragraph{Chapter 1}
 In the first chapter, I presented the physical concepts underlying the cooling scheme of our experiment, 
 providing the elements necessary for a new PhD student -- or a similar cold-atom experiment -- to operate 
 the setup and understand the physics behind it. Building on the previous theses from our team, this work 
 also presents a new optical setup for filtering the MOGlabs ECDL laser used for the photoassociation (PA) 
-process. The purpose of this filtering cavity is to suppress spontaneous emission on far-detuned states, 
-which otherwise arises from the broadening of the laser spectrum due to amplified spontaneous emission.
+process. The purpose of this filtering cavity is to suppress spontaneous emission responsible for unwanted
+losses in the atomic cloud, which otherwise arises from the broadening of the laser spectrum due to amplified spontaneous emission.
 
 \paragraph{Chapter 2}
 The second chapter presents the results of our team's article published in PRX Quantum during my PhD. This 
 work describes the quantum platform we engineered to measure physical properties of our Fermi gas using 
-quantum-enhanced protocols. The article begins with the characterization of the pseudo-spin qubits we 
+quantum protocols. The article begins with the characterization of the pseudo-spin qubits we 
 engineered: their coherence time reaches more than three seconds, owing to the low sensitivity of 
 $^{87}$Sr's ground state to external perturbations.
 
-The robustness of these pseudo-spin qubits then allowed us to extend the scheme to a multi-state 
-interferometer -- made possible by the large Hilbert space accessible through the nuclear spin $I = 9/2$ 
-of $^{87}$Sr -- giving access to physical quantities such as the linear and quadratic components of the 
+The robustness of these pseudo-spin qubits then allowed us to perform interferometers with more than the usual two states
+ -- made possible by the large Hilbert space accessible through the nuclear spin $I = 9/2$ 
+of $^{87}$Sr. It gives access to physical quantities such as the linear and quadratic components of the 
 light shift induced by the two-photon Raman process used for spin manipulation.
 
 Finally, we demonstrate a measurement scheme for the non-commuting observables $\hat{s}^x, \hat{s}^y, 
-\hat{s}^z$, which we show is equivalent to the implementation of a Positive-Operator-Valued Measure (POVM); 
+\hat{s}^z$ of a pseudo-spin, which we show is equivalent to the implementation of a Positive-Operator-Valued Measure (POVM); 
 this equivalence is derived in a dedicated section following the included article.
 
 \paragraph{Chapter 3}
@@ -41,14 +44,14 @@ the first attempts on $^{87}$Sr, also revealed several pitfalls that should be k
 this type of spectroscopy: sidebands of the PA laser can address atomic transitions and mimic
 molecular losses; the PA light induces non-molecular losses, which are removed from the
 spectra by measuring the depth relative to the off-resonant level, and must also be removed from
-the decay curves before comparing them with the spectra; and a non-exponential
+the temporal decay curves before comparing them with the spectra; and a non-exponential
 decay alone is not a proof of photoassociation, so that each candidate line has to be checked by
 searching for losses at an equal and opposite detuning from the atomic resonance. Once these
 non-molecular losses are taken into account, the spectra and the decays give consistent
 loss coefficients.
 
 Three molecular lines were then observed on $^{87}$Sr, at $-259$, $-276$ and $-377$~MHz from
-the atomic resonance. They are two to three orders of magnitude broader than the expected
+the atomic resonance on $^1S_0 - {}^3P_1 \text{,} F=11/2$. They are two to three orders of magnitude broader than the expected
 radiative width (from $5$ to $20$~MHz instead of $15$~kHz). Their loss coefficients at the line
 center, $K_2\sim10^{-14}$--$10^{-12}$~cm$^3$/s for PA intensities of $5$ to $31$~W/cm$^2$, are at
 most comparable to those of the $^{88}$Sr lines (a few $10^{-12}$~cm$^3$/s), although they were
@@ -58,25 +61,26 @@ that of a $^{88}$Sr line at a comparable detuning, which explains the high inten
 observe them. The weak loss rates are a direct consequence of this broadening. Three
 explanations remain open: predissociation of the molecular states towards the continuum of
 another potential, an inhomogeneous light shift of the PA beam across the cloud, and a light
-shift by the trapping light, which was on during the $^{87}$Sr measurements. Measuring the
-linewidth as a function of the PA intensity, and with the trap switched off during the PA pulses,
+shift by the trapping light, which was on during the $^{87}$Sr measurements (and $\nu = -2$ of $^{88}$Sr).
+Measuring the linewidth as a function of the PA intensity, and with the trap switched off during the PA pulses,
 would discriminate between them.
 
 \paragraph{Outcome}
 Several improvements to the experiment are already underway. To improve the resolution of the cloud imaging, 
-a microscope has been built by a member of the team and is ready to be implemented; this system would also 
+a higher-resolution objective (diffraction-limited NA 0.2) has been built by a member of the team and is ready to be implemented; this system would also 
 give access to the atom number before time-of-flight, providing a more accurate estimate at every step of the 
 sequence. In parallel, a full replacement for the current transverse cooling system has been constructed and 
 is ready to be installed on the main experiment table, which will consequently increase the number of atoms 
 delivered to the vacuum cell.
 
-On the scientific side, the interferometry scheme developed in this thesis also suggests a way to probe the 
-SU(N) symmetry of the fermionic species \hl{compléter : lien précis avec la mesure des interactions}, opening 
-a possible new diagnostic tool for interactions in this system.
+On the scientific side, the interferometric scheme developed in this thesis could also be used to test the
+SU(N) symmetry of the fermionic species, through spin-dependent, density-dependent phase shifts, and above all
+to characterize the external sources that break it, such as residual magnetic fields or vector and tensor light
+shifts. Measuring these effects precisely is a prerequisite for using the full nuclear-spin manifold in
+precision measurements.
 
-Understanding the physical origin of the line broadening -- expected from the ongoing optical pumping studies 
--- is the next necessary step: it should make a larger fraction of the $^{87}$Sr spectroscopy accessible, and 
-in turn allow the observed molecular lines to be unambiguously assigned to their associated molecular 
+Understanding the physical origin of the line broadening -- expected from the ongoing photoassociation studies 
+on optically-pumped spin mixtures -- is the next necessary step: it should allow the observed molecular lines to be unambiguously assigned to their associated molecular 
 potentials. This identification is the last missing piece toward the original goal of this work: driving the 
 system, through spin-selective photoassociative losses, into a highly-entangled Dicke state with well-defined 
 spin components.
