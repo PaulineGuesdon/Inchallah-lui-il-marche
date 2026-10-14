@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/these_main"] 1791902354.48279 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1791906119.52727 0
+["bibtex out/these_main"] 1791902354.48279 "out/these_main.aux" "out/these_main.bbl" "out/these_main" 1791979471.2697 0
   "./ref.bib" 1790519170.96335 85386 aafee868506b7db8b50dab8b2055d225 ""
   "./spincontrol_refs.bib" 1786519568.72538 549304 6b3bd591fb7a36bddef0122884a01a8a ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "out/these_main.aux" 1791906117.63394 59872 6dbbbcd4ca1271aca88947d0c63f84c1 "pdflatex"
+  "out/these_main.aux" 1791979468.7585 59872 6dbbbcd4ca1271aca88947d0c63f84c1 "pdflatex"
   (generated)
   "out/these_main.bbl"
   "out/these_main.blg"
   (rewritten before read)
-["pdflatex"] 1791906107.92404 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1791906119.52787 0
+["pdflatex"] 1791979447.45014 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" "out/these_main.pdf" "these_main" 1791979471.27055 0
   "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Manuscrit_these/these_main.tex" 1791812485.14955 4741 59c3912e62691ad258aac63216600ed4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -272,19 +272,19 @@
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/Fig5_v2.pdf" 1782917439.77429 138292 87257a98384f328454136a85eb278b77 ""
   "Chapitres/Ramsey interferometers on qudit/article Coherent Manip/SpinControl.tex" 1791555972.80343 83333 2deed02122e789979c967cb5402c026c ""
   "Chapitres/conclusion/conclusion.tex" 1791812107.01005 6812 fa5ff386e5f8e1448ade7837ba55f3d0 ""
-  "appendix/abstract.tex" 1791906106.60206 4904 163bb4bb463d00325d614159f98bd854 ""
+  "appendix/abstract.tex" 1791979390.00404 4977 d05fdc1e593006de260b2032eacefc4a ""
   "appendix/images/logo_ED_Galilee.png" 1790859458.91427 28634 04316c3bd3fb75fa22c3e3aec75f2713 ""
   "appendix/images/logo_USPN.png" 1790859458.90714 25589 88c27b5dd3e195d992a86dc83b04edac ""
   "appendix/mis/acknowledgements.tex" 1775984395.99768 28 c20483b5759ef691c060fd266e58e4d2 ""
   "appendix/mis/acronym.tex" 1775984395.99795 47 03677b53155ef51d7b75de3a2eec20ae ""
-  "appendix/titlepage.tex" 1791903207.85393 1914 41ed6ec532c408db98c3b401051619cf ""
+  "appendix/titlepage.tex" 1791979445.78688 1987 edcfd939ff08d5b93734e9bf2b572ff2 ""
   "out/these_main.acr" 0 -1 0 ""
-  "out/these_main.aux" 1791906117.63394 59872 6dbbbcd4ca1271aca88947d0c63f84c1 "pdflatex"
+  "out/these_main.aux" 1791979468.7585 59872 6dbbbcd4ca1271aca88947d0c63f84c1 "pdflatex"
   "out/these_main.bbl" 1791902355.00069 28418 7712f744ad3a61326cd569eba455aa04 "bibtex out/these_main"
-  "out/these_main.lof" 1791906117.65028 9304 ddd38900ef78e844e9f32bf47fdf157d "pdflatex"
-  "out/these_main.lot" 1791906117.65048 1898 471889da42238e883894005a71a695ba "pdflatex"
-  "out/these_main.out" 1791906117.64925 22019 88f6a7982b40e27ade172289d6ab1860 "pdflatex"
-  "out/these_main.toc" 1791906117.65006 9924 00c66158e0b2c026d0ce65416196dc99 "pdflatex"
+  "out/these_main.lof" 1791979468.78883 9304 ddd38900ef78e844e9f32bf47fdf157d "pdflatex"
+  "out/these_main.lot" 1791979468.78899 1898 471889da42238e883894005a71a695ba "pdflatex"
+  "out/these_main.out" 1791979468.78587 22019 88f6a7982b40e27ade172289d6ab1860 "pdflatex"
+  "out/these_main.toc" 1791979468.78854 9924 00c66158e0b2c026d0ce65416196dc99 "pdflatex"
   "these_main.acr" 0 -1 0 ""
   "these_main.tex" 1791812485.14955 4741 59c3912e62691ad258aac63216600ed4 ""
   (generated)
