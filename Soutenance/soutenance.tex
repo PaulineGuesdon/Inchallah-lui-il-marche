@@ -1,5 +1,7 @@
+% !LW recipe = latexmk (LuaLaTeX)
 % Soutenance — thème « strontium »
 % Compiler avec :  latexmk soutenance.tex   (LuaLaTeX, cf. latexmkrc)
+% Dans VS Code, la ligne « !LW recipe » ci-dessus choisit la recette LuaLaTeX
 % Graphes de comparaison PA : python3 scripts/graphes_PA.py
 \documentclass[aspectratio=169, 11pt]{beamer}
 \usetheme{strontium}
@@ -9,6 +11,7 @@
 \usepackage{siunitx}
 \usepackage{braket}
 \usepackage{booktabs}
+\usetikzlibrary{arrows.meta}
 \sisetup{locale=FR}
 
 % Dossiers où chercher les figures (on pointe vers ceux du manuscrit)
@@ -47,8 +50,8 @@
 \begin{frame}{Plan}
   \begin{enumerate}
     \item Introduction : le \Sr{87}, un atome à dix états de spin
-    \item Manipulations cohérentes de pseudo-spins
     \item Photoassociation du \Sr{87}
+    \item Manipulations cohérentes de pseudo-spins
     \item Conclusion et perspectives
   \end{enumerate}
 \end{frame}
@@ -83,8 +86,8 @@
             \item limite standard : $\Delta\phi = 1/\sqrt{N}$
             \item limite de Heisenberg : $\Delta\phi = 1/N$
           \end{itemize}
-        \item<3-> Deux leviers : \alert{contrôle cohérent} à un corps,
-          \textcolor{vert}{dissipation} à deux corps
+        \item<3-> Deux leviers : \textcolor{vert}{dissipation} à deux corps,
+          \alert{contrôle cohérent} à un corps
       \end{itemize}
     \end{column}
     \begin{column}{0.45\textwidth}
@@ -97,13 +100,13 @@
 
 \begin{frame}{Ce que j'ai fait en trois ans}
   \begin{enumerate}
-    \item<1-> \textbf{Isoler et manipuler des pseudo-spins}\\
-      {\small\color{vert} Point fort : au-delà de Stern-Gerlach, isolation de deux états parmi dix}
-    \item<2-> \textbf{Mesurer dans des espaces de Hilbert réduits}\\
-      {\small\color{vert} Point fort : deux observables non commutables en une seule réalisation}
-    \item<3-> \textbf{Dissiper à deux corps par photoassociation}\\
+    \item<1-> \textbf{Dissiper à deux corps par photoassociation}\\
       {\small\color{vert} Point fort : vers la limite de Heisenberg ; inexploré sur $^3P_1$}\\
       {\small\color{violet} Résultat surprenant : nombre et largeur des raies}
+    \item<2-> \textbf{Isoler et manipuler des pseudo-spins}\\
+      {\small\color{vert} Point fort : au-delà de Stern-Gerlach, isolation de deux états parmi dix}
+    \item<3-> \textbf{Mesurer dans des espaces de Hilbert réduits}\\
+      {\small\color{vert} Point fort : deux observables non commutables en une seule réalisation}
   \end{enumerate}
 \end{frame}
 
@@ -122,99 +125,6 @@
       \includegraphics[width=\linewidth, height=0.7\textheight, keepaspectratio]{setup_exp.pdf}
     \end{column}
   \end{columns}
-\end{frame}
-
-% =====================================================================
-\section{Manipulations cohérentes}  % ~15 min
-
-\begin{frame}{Isoler deux états parmi dix}
-  \begin{columns}[c]
-    \begin{column}{0.42\textwidth}
-      \begin{itemize}
-        \item<1-> Faisceau $\pi$ désaccordé dans la structure hyperfine de $^3P_1$
-        \item<2-> Déplacement lumineux \alert{tensoriel} : $U(m_F) = q\,m_F^2$
-        \item<3-> Les transitions $\delta m_F$ deviennent résolues : une paire d'états = un \alert{pseudo-spin 1/2}
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.54\textwidth}
-      \centering
-      \includegraphics[width=\linewidth, height=0.72\textheight, keepaspectratio]{Fig1.pdf}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Préparer des états cohérents}
-  \begin{columns}[c]
-    \begin{column}{0.4\textwidth}
-      \begin{itemize}
-        \item Oscillations de Rabi Raman ($\delta m_F = 1$)
-        \item Les états voisins ne sont pas affectés
-        \item Amortissement en \SI{298(17)}{ms}
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.56\textwidth}
-      \centering
-      \includegraphics[width=\linewidth, height=0.72\textheight, keepaspectratio]{Fig2.pdf}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Contrôle de phase et cohérence du qubit}
-  \begin{columns}[c]
-    \begin{column}{0.4\textwidth}
-      \begin{itemize}
-        \item Interféromètre de Ramsey entre $m_F=-5/2$ et $-7/2$
-        \item Analyse de la phase et du contraste
-        \item \acompleter{temps de cohérence obtenu}
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.56\textwidth}
-      \centering
-      \includegraphics[width=\linewidth, height=0.72\textheight, keepaspectratio]{Fig3.pdf}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Mesurer deux grandeurs physiques à la fois}
-  \begin{columns}[c]
-    \begin{column}{0.4\textwidth}
-      \begin{itemize}
-        \item Double interféromètre sur quatre états $m_F$
-        \item Deux énergies différentes : deux périodes
-        \item Corrélation des deux phases $\phi_1$, $\phi_2$
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.56\textwidth}
-      \centering
-      \includegraphics[width=\linewidth, height=0.72\textheight, keepaspectratio]{Fig4.pdf}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Deux observables non commutables en une réalisation}
-  \begin{columns}[c]
-    \begin{column}{0.4\textwidth}
-      \begin{itemize}
-        \item Une étape de préparation, une étape de mesure
-        \item Opérations unitaires avant la détection des populations
-        \item Simulation (équation maîtresse) : un seul paramètre ajusté
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.56\textwidth}
-      \centering
-      \includegraphics[width=\linewidth, height=0.72\textheight, keepaspectratio,
-                       trim=14 166 14 128, clip]{Fig5_v2.pdf}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}{Limites et extensions}
-  \begin{itemize}
-    \item<1-> Limites : \acompleter{à compléter}
-    \item<2-> Extension à six états : mesurer trois observables
-    \item<3-> \acompleter{conséquence sur la variance}
-  \end{itemize}
-  \amretenir{Un contrôle cohérent de pseudo-spins dans un espace à dix états.}
 \end{frame}
 
 % =====================================================================
@@ -449,6 +359,83 @@
   \amretenir{Hypothèses les plus probables : prédissociation et déplacements lumineux.}
 \end{frame}
 
+\begin{frame}{La prédissociation}{Une sortie de plus pour la molécule}
+  \begin{columns}[c]
+    \begin{column}{0.46\textwidth}
+      \centering
+      \includegraphics[width=\linewidth, height=0.55\textheight, keepaspectratio]{Figures_pour_theorie/predissociation.pdf}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item<1-> \textbf{A} : deux atomes libres $^1S_0+{}^1S_0$
+        \item<2-> \textbf{B} : état lié $\nu_B$ de $^1S_0+{}^3P_1$, atteint par le laser de PA
+        \item<3-> \textbf{C} : un potentiel dont l'asymptote est \alert{sous} $\nu_B$
+          (pour le \Sr{87} : vers $^1S_0+{}^3P_0$)
+        \item<4-> C croise B : $\nu_B$ couplé au \alert{continuum} de C, la paire se dissocie
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \only<5>{\amretenir{La molécule a deux sorties : l'émission spontanée et la prédissociation.}}
+\end{frame}
+
+\begin{frame}{Largeur effective de la raie}
+  \begin{columns}[c]
+    \begin{column}{0.58\textwidth}
+      \small
+      \begin{block}{Taux de sortie de l'état $\nu_B$}
+        \centering
+        $\Gamma_{\text{mol}} = \Gamma_{\text{rad}} + \Gamma_{\text{pd}}$,
+        \qquad $\Gamma_{\text{pd}} = \dfrac{2\pi}{\hbar}\,|W_{BC}|^2\,\rho_C(E_{\nu_B})$
+      \end{block}
+      \begin{itemize}
+        \item<2-> Les taux s'additionnent : la raie s'élargit
+        \item<3-> $\Gamma_{\text{perte}}(\Delta) \propto l_{\text{opt}}\,
+          \dfrac{\Gamma_{\text{rad}}\,\Gamma_{\text{mol}}}{\Delta^2 + \Gamma_{\text{mol}}^2/4}$
+        \item<4-> Pic abaissé de $1/\eta$, \alert{aire inchangée}
+        \item<5-> $\Gamma_{\text{pd}}$ indépendant de l'intensité de PA
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.38\textwidth}
+      \centering
+      \uncover<4->{%
+      \begin{tikzpicture}[x=0.75cm, y=1.1cm]
+        \draw[gris, ->] (-3.2,0) -- (3.3,0) node[below left, font=\scriptsize] {$\Delta$};
+        \draw[gris!70, line width=1pt, domain=-3:3, samples=120]
+          plot (\x, {2*0.25/(\x*\x + 0.0625)/3.1416});
+        \draw[violet, line width=1.2pt, domain=-3:3, samples=120]
+          plot (\x, {2*1/(\x*\x + 1)/3.1416});
+        \node[gris, font=\scriptsize, anchor=west] at (0.35,2.3) {sans prédissociation};
+        \node[violet, font=\scriptsize, anchor=west] at (1.1,0.75) {avec};
+      \end{tikzpicture}\par
+      {\scriptsize\color{gris} Même aire sous les deux courbes}}
+    \end{column}
+  \end{columns}
+  \only<5>{\amretenir{Raie large et peu profonde : la signature attendue d'une forte prédissociation.}}
+\end{frame}
+
+\begin{frame}{Une observation similaire : RbYb}{Franzen \textit{et al.}, Phys. Rev. A \textbf{107}, 023114 (2023)}
+  \begin{itemize}
+    \item<1-> PA \textsuperscript{87}Rb--\textsuperscript{170}Yb près de la raie d'intercombinaison de Yb
+    \item<2-> Recherche de \SIrange{0.1}{11}{GHz} : \alert{une seule paire} de raies, vers \SI{3.1}{GHz}
+    \item<3-> Raies larges, qui s'élargissent avec $B$ et ne s'affinent pas à plus faible $I$
+    \item<4-> Interprétation proposée : \alert{prédissociation} vers $^3P_0$
+  \end{itemize}
+  \vspace{0.2cm}
+  \uncover<5->{%
+  \centering\footnotesize
+  \begin{tabular}{@{}lcc@{}}
+    \toprule
+     & RbYb & \Sr{87} (cette thèse) \\
+    \midrule
+    Raies trouvées & 1 paire & 3 \\
+    Pertes (cm$^3$/s) & $5\times10^{-14}$ (\SI{40}{W/cm^2})
+      & $3\times10^{-14}$ -- $10^{-12}$ (\SIrange{5}{31}{W/cm^2}) \\
+    Largeur / largeur radiative & $\approx 17$ & $330$ à $1350$ \\
+    \bottomrule
+  \end{tabular}\par}
+  \only<6>{\amretenir{Question ouverte : pourquoi le \Sr{87}, et pas le \textsuperscript{173}Yb, lui aussi hyperfin ?}}
+\end{frame}
+
 \begin{frame}{Les pistes à explorer}
   \begin{columns}[c]
     \begin{column}{0.5\textwidth}
@@ -474,24 +461,230 @@
 \end{frame}
 
 % =====================================================================
+\section{Manipulations cohérentes}  % ~15 min, d'après l'exposé SFO
+
+% Texte superposé aux figures : scope en coordonnées de l'image, (0,0) en bas à gauche, (1,1) en haut à droite
+
+\begin{frame}{Objectif et atouts de notre dispositif}
+  \vspace{0.5cm}
+  \begin{center}
+    {\Large\color{violet} \underline{Objectif} : un espace de Hilbert accessible de grande dimension}\\[0.2cm]
+    {\large\color{violet} $\to$ un outil pour contrôler et mesurer des grandeurs physiques}
+  \end{center}
+  \vspace{0.6cm}
+  \begin{center}
+    \large
+    Gaz de \Sr{87} ultrafroid, piégé optiquement\\[0.15cm]
+    Spin nucléaire $I = 9/2$ $\to$ du pseudo-spin $\tfrac12$ au qudit
+  \end{center}
+\end{frame}
+
+\begin{frame}{Déplacement linéaire : non sélectif en spin}
+  \centering
+  \begin{tikzpicture}
+    \only<1>{\node[anchor=south west, inner sep=0] (img) {\includegraphics[height=0.6\textheight]{sfo/zeeman_0.pdf}};}
+    \only<2>{\node[anchor=south west, inner sep=0] (img) {\includegraphics[height=0.6\textheight]{sfo/zeeman_1.pdf}};}
+    \only<3>{\node[anchor=south west, inner sep=0] (img) {\includegraphics[height=0.6\textheight]{sfo/zeeman_2.pdf}};}
+    \only<4>{\node[anchor=south west, inner sep=0] (img) {\includegraphics[height=0.6\textheight]{sfo/zeeman_4.pdf}};}
+    \only<5>{\node[anchor=south west, inner sep=0] (img) {\includegraphics[height=0.6\textheight]{sfo/zeeman_6.pdf}};}
+    \begin{scope}[x={(img.south east)}, y={(img.north west)}]
+      \only<2->{\node[text=nuit, font=\large] at (0.79, 0.62) {Transition Raman};}
+      \only<1-2>{\node[text=nuit] at (0.8, 0.06) {Créer un état arbitraire};}
+      \only<3->{\node[text=nuit] at (0.8, 0.06) {Interaction Zeeman};}
+    \end{scope}
+  \end{tikzpicture}
+  \only<5>{\amretenir{Écarts égaux : la transition Raman couple tous les états voisins.}}
+\end{frame}
+
+\begin{frame}{Comment isoler deux états parmi dix ?}
+  \begin{columns}[c]
+    \begin{column}{0.6\textwidth}
+      \begin{tikzpicture}
+        \only<1-2>{\node[anchor=south west, inner sep=0] (img) {\includegraphics[width=\linewidth]{sfo/tls_0.pdf}};}
+        \only<3>{\node[anchor=south west, inner sep=0] (img) {\includegraphics[width=\linewidth]{sfo/tls_2.pdf}};}
+      \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.38\textwidth}
+      \only<3>{{\color{nuit}Hors résonance : comme si les états n'étaient pas couplés}\par\vspace{0.4cm}}
+      \uncover<2->{%
+        \begin{block}{Déplacement lumineux tensoriel}
+          \centering $\delta E \propto q\,m_F^2 + \beta\,m_F$
+        \end{block}}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Préparation d'un état cohérent du qubit}
+  \begin{columns}[T]
+    \begin{column}{0.3\textwidth}
+      \centering
+      \begin{tikzpicture}
+        \only<1>{\node[anchor=south west, inner sep=0] (img) {\includegraphics[width=0.8\linewidth]{sfo/atomes_0.pdf}};}
+        \only<2>{\node[anchor=south west, inner sep=0] (img) {\includegraphics[width=0.8\linewidth]{sfo/atomes_1.pdf}};}
+        \only<3->{\node[anchor=south west, inner sep=0] (img) {\includegraphics[width=0.8\linewidth]{sfo/atomes_2.pdf}};}
+        \begin{scope}[x={(img.south east)}, y={(img.north west)}]
+          \only<3->{\node[text=nuit, font=\small] at (0.85, 1.05) {Superposition};}
+        \end{scope}
+      \end{tikzpicture}\par
+      \raggedright\small
+      {\color{blue}$\bullet$} population $-3/2$\\
+      {\color{violet}$\bullet$} population $-7/2$ {\scriptsize(spectatrice)}\\[0.25cm]
+      \uncover<3->{$\ket{\psi_0} = N\left(a\ket{-\tfrac32} + b\ket{-\tfrac52}\right)$}\\[0.15cm]
+      \uncover<4>{\centering $a = b = 0.5$\par}
+    \end{column}
+    \begin{column}{0.68\textwidth}
+      \centering\small
+      \hfill{\color{nuit}Temps de cohérence de \SI{300(20)}{ms} $\to$ 21 cycles de Rabi}\par\vspace{0.1cm}
+      {\color{violet}Oscillations de Rabi} entre $m_F = -3/2$ et $m_F = -5/2$\par
+      \begin{tikzpicture}
+        \node[anchor=south west, inner sep=0] (img) {\includegraphics[height=0.44\textheight]{sfo/rabi.pdf}};
+        \begin{scope}[x={(img.south east)}, y={(img.north west)}]
+          \only<4>{\draw[-{Latex[length=3mm]}, line width=3pt, red!80!black] (0.0, -0.12) -- (0.115, 0.45);}
+        \end{scope}
+      \end{tikzpicture}\par\vspace{0.1cm}
+      \uncover<4>{Déterminer $t_{\pi/2}$ : moitié de la population dans chaque état}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Contrôle de phase et cohérence du qubit}{Contrôle de la phase par un interféromètre de Ramsey}
+  \centering
+  \uncover<2->{$\varphi = \left(E_{-5/2} - E_{-7/2} - \hbar\delta\right)\dfrac{T}{\hbar}$, \qquad $\delta = \omega_{L1} - \omega_{L2}$}\par
+  \vspace{0.2cm}
+  \includegraphics[width=0.85\linewidth]{sfo/ramsey_schema.pdf}\par
+  \vspace{0.2cm}
+  $\ket{\psi_0} = \dfrac{1}{\sqrt2}\left(\ket{-\tfrac52} + \ket{-\tfrac72}\right)$
+  \hspace{2.5cm}
+  \uncover<3>{$\ket{\psi_t} = \dfrac{1}{\sqrt2}\left(\ket{-\tfrac52} + e^{-i\varphi}\ket{-\tfrac72}\right)$}
+\end{frame}
+
+\begin{frame}{Contrôle de phase et cohérence du qubit}{Mesure d'un long temps de cohérence}
+  \begin{columns}[c]
+    \begin{column}{0.66\textwidth}
+      \only<1>{\includegraphics[width=\linewidth]{sfo/ramsey_franges_0.pdf}}%
+      \only<2>{\includegraphics[width=\linewidth]{sfo/ramsey_franges_1.pdf}}\par
+      \small {\color{blue}$\bullet$} population $-5/2$
+    \end{column}
+    \begin{column}{0.32\textwidth}
+      \centering
+      $\varphi = \left(E_{-5/2} - E_{-7/2} - \hbar\delta\right)\dfrac{T}{\hbar}$\par
+      {\small La phase varie avec $T$}\par\vspace{0.3cm}
+      \uncover<2>{%
+        {\color{violet}\fontforte Même contraste pendant plus de \SI{3}{s} !}\par\vspace{0.1cm}
+        \includegraphics[width=\linewidth, height=0.32\textheight, keepaspectratio]{sfo/ramsey_contraste.pdf}}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Exploiter le grand espace de Hilbert}
+  \centering
+  \includegraphics[height=0.32\textheight]{sfo/detecteurs.pdf}\par
+  \vspace{0.5cm}
+  {\Large\color{nuit}\underline{De nouvelles possibilités ?}}\par\vspace{0.2cm}
+  {\large Mesurer des observables non commutables en une seule opération}\par\vspace{0.1cm}
+  {\color{gris} grâce au grand spin}
+\end{frame}
+
+\begin{frame}{Au-delà du qubit}{Mesure simultanée d'observables non commutables}
+  \definecolor{rosesfo}{HTML}{F3D7FD}
+  \begin{columns}[c]
+    \begin{column}{0.58\textwidth}
+      \begin{tikzpicture}
+        \node[anchor=south west, inner sep=0] (img) {\includegraphics[width=\linewidth]{sfo/noncomm_schema.pdf}};
+        \begin{scope}[x={(img.south east)}, y={(img.north west)}]
+          \node[text=white, font=\tiny\fontforte, align=center] at (0.43, 0.53)
+            {Préparation\\cohérente\\du pseudo-\\spin};
+          \fill[rosesfo] (0.535, 0.23) rectangle (0.88, 0.36);
+          \node[text=encre, font=\scriptsize] at (0.705, 0.295) {Schéma de mesure};
+        \end{scope}
+      \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \small
+      \uncover<2->{{\color{violet}\scriptsize Non fermé $\to$ mesure de population}\\
+        $\hat S^Z \to p_{-3/2} - p_{-9/2}$\par\vspace{0.1cm}}
+      \uncover<3->{{\color{violet}\scriptsize Mesure de phase}\\
+        $\hat S_\varphi = \hat S^Y\cos\varphi + \hat S^X\sin\varphi$\\
+        $\hat S^X \to \ket{-\tfrac52} + e^{i\pi/2}\ket{-\tfrac72}$\\
+        $\hat S^Y \to \ket{-\tfrac52} + \ket{-\tfrac72}$\par}
+    \end{column}
+  \end{columns}
+  \vspace{0.15cm}
+  \begin{columns}[c]
+    \begin{column}{0.3\textwidth}
+      \centering\small
+      \only<5-6>{$\varphi = 0$\\ $\langle\hat S^Z\rangle = 0$, $\langle\hat S^Y\rangle = \hbar/2$,\\ $\langle\hat S^X\rangle = 0$}%
+      \only<7-8>{$\varphi = \pi/2$}%
+      \only<9->{$\varphi = \pi/2$\\ $\langle\hat S^Z\rangle = 0$, $\langle\hat S^Y\rangle = 0$,\\ $\langle\hat S^X\rangle = \hbar/2$}
+    \end{column}
+    \begin{column}{0.28\textwidth}
+      \centering
+      \only<4>{\includegraphics[height=0.31\textheight]{sfo/bloch_3.pdf}}%
+      \only<5>{\includegraphics[height=0.31\textheight]{sfo/bloch_4.pdf}}%
+      \only<6>{\includegraphics[height=0.31\textheight]{sfo/bloch_5.pdf}}%
+      \only<7>{\includegraphics[height=0.31\textheight]{sfo/bloch_6.pdf}}%
+      \only<8>{\includegraphics[height=0.31\textheight]{sfo/bloch_7.pdf}}%
+      \only<9>{\includegraphics[height=0.31\textheight]{sfo/bloch_8.pdf}}%
+      \only<10->{\includegraphics[height=0.31\textheight]{sfo/bloch_9.pdf}}%
+      \only<1-3>{\phantom{\includegraphics[height=0.31\textheight]{sfo/bloch_3.pdf}}}
+    \end{column}
+    \begin{column}{0.38\textwidth}
+      \small
+      {\color{violet}$\hat S^Z, \hat S^X, \hat S^Y$ mais $[\hat S^{X,Y}, \hat S^Z] \neq 0$\\
+        $\to$ agrandir l'espace de Hilbert}\par\vspace{0.3cm}
+      \uncover<11>{{\color{nuit}\underline{Limite} : bruit de projection}}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Résultats : deux observables non commutables}{Chaque tir mesure les deux observables}
+  \centering
+  $\hat S_\varphi = \hat S^Y\cos\varphi + \hat S^X\sin\varphi$\par\vspace{0.1cm}
+  \includegraphics[width=0.78\linewidth]{sfo/noncomm_resultats.pdf}\par
+  \begin{columns}[t]
+    \begin{column}{0.48\textwidth}\centering\small
+      Différence de population attendue nulle
+    \end{column}
+    \begin{column}{0.48\textwidth}\centering\small
+      Fluctuations comprises, et compensables
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Bilan des manipulations cohérentes}
+  \centering
+  {\large\color{violet}\underline{Objectif} : une plateforme pour manipuler et caractériser des qudits}\par
+  \vspace{0.4cm}
+  \begin{minipage}{0.75\textwidth}
+    \begin{itemize}
+      \item Isoler des paires d'états (qubits)
+      \item Les contrôler de façon cohérente\\
+        $\to$ espèce à grand spin nucléaire, quasi insensible au champ magnétique
+      \item Mesurer des observables non commutables\\
+        $=$ mesure à valeurs d'opérateurs positifs (POVM)
+    \end{itemize}
+  \end{minipage}
+\end{frame}
+
+% =====================================================================
 \section{Conclusion}
 
 \begin{frame}{Conclusion}
   \begin{columns}[t]
     \begin{column}{0.48\textwidth}
-      {\fontforte\color{violet} Manipulations cohérentes}\par\vspace{0.2cm}
-      \begin{itemize}
-        \item Pseudo-spins isolés parmi dix états
-        \item Mesure simultanée de deux grandeurs
-        \item Deux observables non commutables en une réalisation
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.48\textwidth}
-      {\fontforte\color{vert} Photoassociation}\par\vspace{0.2cm}
+      {\fontforte\color{violet} Photoassociation}\par\vspace{0.2cm}
       \begin{itemize}
         \item Protocole validé sur le \Sr{88}
         \item Trois raies du \Sr{87} sur $^3P_1$
         \item Raies $10^2$ à $10^3$ fois trop larges : une découverte inattendue
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      {\fontforte\color{vert} Manipulations cohérentes}\par\vspace{0.2cm}
+      \begin{itemize}
+        \item Pseudo-spins isolés parmi dix états
+        \item Mesure simultanée de deux grandeurs
+        \item Deux observables non commutables en une réalisation
       \end{itemize}
     \end{column}
   \end{columns}
@@ -565,6 +758,25 @@
   \centering
   \includegraphics[width=0.49\linewidth, height=0.66\textheight, keepaspectratio]{87Sr/data15_6MHz_noise.pdf}\hfill
   \includegraphics[width=0.49\linewidth, height=0.66\textheight, keepaspectratio]{87Sr/6MHz_blue_detuned.pdf}
+\end{frame}
+
+\begin{frame}{Limites de la mesure non commutable}
+  \begin{itemize}
+    \item Étendre à six états pour $\hat S^Z$, $\hat S^X$, $\hat S^Y$ en une réalisation\\
+      $\to$ plus de bruit de projection quantique
+    \item Plus d'états $m_F$ $\to$ les états positifs sont mal isolés
+    \item Réduire les fuites en adoucissant les rampes des impulsions
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Ramsey à quatre états : deux grandeurs}{Le schéma}
+  \centering
+  \includegraphics[width=\linewidth, height=0.7\textheight, keepaspectratio]{sfo/ramsey4_schema.pdf}
+\end{frame}
+
+\begin{frame}{Ramsey à quatre états : deux grandeurs}{Les résultats}
+  \centering
+  \includegraphics[width=\linewidth, height=0.68\textheight, keepaspectratio]{sfo/ramsey4_resultats.pdf}
 \end{frame}
 
 \end{document}

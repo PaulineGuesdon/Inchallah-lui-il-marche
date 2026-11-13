@@ -118,8 +118,11 @@
     \vskip0.25cm
     \hbox{\begin{tikzpicture}
       \fill[gris!15] (0,0) rectangle (\paperwidth,0.7mm);
-      \shade[left color=violet, right color=vert] (0,0) rectangle
-        ({\paperwidth*\insertframenumber/\inserttotalframenumber},0.7mm);
+      % le total vaut 0 à la première compilation : on ne dessine pas la barre
+      \ifnum\inserttotalframenumber>0
+        \shade[left color=violet, right color=vert] (0,0) rectangle
+          ({\paperwidth*\insertframenumber/\inserttotalframenumber},0.7mm);
+      \fi
     \end{tikzpicture}}}}
 
 % Puces : petits disques colorés
