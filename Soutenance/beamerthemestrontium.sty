@@ -1,0 +1,220 @@
+% =====================================================================
+%  Thème Beamer « strontium » — soutenance de thèse de Pauline Guesdon
+%  Palette reprise des graphes de la thèse :
+%    violet (#800080, « purple » de matplotlib)  et  vert (#00AA44)
+%  À compiler avec LuaLaTeX ou XeLaTeX (polices Fira).
+% =====================================================================
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamerthemestrontium}[2026/11/09]
+
+\RequirePackage{etoolbox}
+\RequirePackage{tikz}
+\usetikzlibrary{calc}
+\RequirePackage{fontspec}
+\RequirePackage{unicode-math}
+
+% ---------------------------------------------------------------------
+%  Couleurs — c'est ici qu'on change toute l'ambiance
+% ---------------------------------------------------------------------
+\definecolor{nuit}{HTML}{3E2A57}      % fond des pages sombres (violet)
+\definecolor{encre}{HTML}{2A2232}     % texte courant
+\definecolor{papier}{HTML}{FAF7F1}    % fond des diapos (crème)
+\definecolor{voile}{HTML}{EFEAE0}     % fond des blocs
+\definecolor{gris}{HTML}{8A8F98}      % texte secondaire
+\definecolor{violet}{HTML}{800080}    % violet des graphes
+\definecolor{vert}{HTML}{00AA44}      % vert des graphes
+\colorlet{accent}{violet}
+% versions éclaircies, plus lisibles sur les fonds sombres
+\colorlet{violetclair}{violet!55!white}
+\colorlet{vertclair}{vert!75!white}
+\colorlet{accentclair}{accent!55!white}
+% Couleurs « laser » des pages de partie : rouge, bleu, violet, vert, puis on recommence
+\definecolor{laserrouge}{HTML}{FF4B4B}
+\definecolor{laserbleu}{HTML}{4D8DFF}
+\definecolor{laserviolet}{HTML}{C17DFF}
+\definecolor{laservert}{HTML}{3DDC84}
+
+% ---------------------------------------------------------------------
+%  Polices
+% ---------------------------------------------------------------------
+\setsansfont{Fira Sans}[
+  UprightFont = *-Light, BoldFont = *-SemiBold,
+  ItalicFont = *-LightItalic, BoldItalicFont = *-SemiBoldItalic]
+\newfontfamily\fontfine{Fira Sans}[UprightFont = *-ExtraLight, BoldFont = *-Light]
+\newfontfamily\fontforte{Fira Sans}[UprightFont = *-Medium, BoldFont = *-SemiBold]
+\setmathfont{Fira Math}
+\usefonttheme{professionalfonts}
+
+% ---------------------------------------------------------------------
+%  Couleurs Beamer
+% ---------------------------------------------------------------------
+\setbeamercolor{normal text}{fg=encre, bg=papier}
+\setbeamercolor{background canvas}{bg=papier}
+\setbeamercolor{structure}{fg=accent}
+\setbeamercolor{frametitle}{fg=nuit}
+\setbeamercolor{alerted text}{fg=violet}
+\setbeamercolor{example text}{fg=vert!85!black}
+\setbeamercolor{block title}{fg=nuit, bg=voile}
+\setbeamercolor{block body}{fg=encre, bg=voile}
+\setbeamercolor{block title alerted}{fg=violet, bg=voile}
+\setbeamercolor{block title example}{fg=vert!85!black, bg=voile}
+\setbeamercolor{footline}{fg=gris}
+\setbeamercolor{caption name}{fg=gris}
+
+\setbeamerfont{frametitle}{family=\fontforte, size=\Large}
+\setbeamerfont{block title}{family=\fontforte, size=\normalsize}
+\setbeamerfont{footline}{size=\tiny}
+\setbeamerfont{caption}{size=\scriptsize}
+
+% ---------------------------------------------------------------------
+%  Petits éléments graphiques réutilisables
+% ---------------------------------------------------------------------
+% Trait dégradé violet -> vert
+\newcommand{\traitlaser}[1][2.2cm]{%
+  \tikz[baseline]\shade[left color=violet, right color=vert]
+    (0,0) rectangle (#1,0.55mm);}
+
+% Faisceau lumineux avec halo (utilisé sur la page de titre)
+\newcommand{\faisceau}[3]{% couleur, point de départ, point d'arrivée
+  \foreach \w/\o in {9mm/0.04, 5mm/0.07, 2.5mm/0.12, 1mm/0.35, 0.3mm/0.9}{
+    \draw[#1, line width=\w, opacity=\o, line cap=round] #2 -- #3;}}
+
+% Atome lumineux : point blanc entouré d'un halo
+\newcommand{\atome}[2]{% position, taille
+  \fill[inner color=white!70!violet, outer color=nuit, opacity=0.35] #1 circle (#2*3);
+  \fill[white, opacity=0.9] #1 circle (#2*0.45);}
+
+% Nuage d'atomes autour d'un point (graine fixe : même dessin à chaque compilation)
+\newcommand{\nuage}[1]{%
+  \pgfmathsetseed{461}
+  \foreach \i in {1,...,70}{
+    \pgfmathsetmacro\dx{0.9*rand}
+    \pgfmathsetmacro\dy{0.5*rand}
+    \pgfmathsetmacro\rr{0.25 + 0.6*rnd}
+    \atome{($#1 + (\dx,\dy)$)}{\rr mm}}}
+
+% ---------------------------------------------------------------------
+%  Mise en page générale
+% ---------------------------------------------------------------------
+\setbeamertemplate{navigation symbols}{}
+\setbeamersize{text margin left=1.1cm, text margin right=1.1cm}
+
+% Titre de diapo : texte sobre + trait laser dessous
+\setbeamertemplate{frametitle}{%
+  \vspace*{0.55cm}%
+  {\usebeamercolor[fg]{frametitle}\usebeamerfont{frametitle}\insertframetitle}%
+  \ifx\insertframesubtitle\@empty\else
+    \par\vspace{0.05cm}{\color{gris}\small\insertframesubtitle}%
+  \fi
+  \par\vspace{0.12cm}\traitlaser\par\vspace{0.1cm}}
+
+% Pied de page : barre de progression fine + nom + numéro
+\setbeamertemplate{footline}{%
+  \usebeamercolor[fg]{footline}\usebeamerfont{footline}%
+  \vbox{%
+    \hbox to \paperwidth{\hspace*{1.1cm}\insertshortauthor\hspace{0.4em}{\color{gris!50}|}%
+      \hspace{0.4em}\insertshorttitle\hfill
+      \insertframenumber\,/\,\inserttotalframenumber\hspace*{1.1cm}}%
+    \vskip0.25cm
+    \hbox{\begin{tikzpicture}
+      \fill[gris!15] (0,0) rectangle (\paperwidth,0.7mm);
+      \shade[left color=violet, right color=vert] (0,0) rectangle
+        ({\paperwidth*\insertframenumber/\inserttotalframenumber},0.7mm);
+    \end{tikzpicture}}}}
+
+% Puces : petits disques colorés
+\setbeamertemplate{itemize item}{\raisebox{0.15em}{\tikz\fill[accent] circle (0.6mm);}}
+\setbeamertemplate{itemize subitem}{\raisebox{0.15em}{\tikz\draw[vert, line width=0.4pt] circle (0.5mm);}}
+\setbeamertemplate{enumerate item}{{\fontforte\color{accent}\insertenumlabel.}}
+\setlength{\leftmargini}{1.2em}
+
+% Blocs : fond « voile », coins arrondis, sans ombre
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+% Légendes de figures discrètes
+\setbeamertemplate{caption}{\raggedright\color{gris}\insertcaption\par}
+
+% ---------------------------------------------------------------------
+%  Page de titre : fond nuit, deux faisceaux croisés et un nuage d'atomes
+%  (évocation d'un piège dipolaire croisé)
+% ---------------------------------------------------------------------
+\newcommand{\logostitre}{}   % à remplir dans le document : \renewcommand{\logostitre}{...}
+\setbeamertemplate{title page}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[nuit] (current page.south west) rectangle (current page.north east);
+    \coordinate (X) at ($(current page.center) + (4.1,0.6)$);
+    \faisceau{violetclair}{($(X) + (-7,-2.6)$)}{($(X) + (4,1.5)$)}
+    \faisceau{vertclair}{($(X) + (-5,3.2)$)}{($(X) + (3,-2.8)$)}
+    \nuage{(X)}
+    % logos sur un bandeau clair en bas
+    \fill[papier] (current page.south west) rectangle ($(current page.south east) + (0,1.15)$);
+    \node[anchor=west] at ($(current page.south west) + (1.1,0.575)$) {\logostitre};
+    \node[anchor=east, text=gris, font=\scriptsize] at ($(current page.south east) + (-1.1,0.575)$)
+      {\insertinstitute};
+  \end{tikzpicture}%
+  \vspace*{0.4cm}
+  \begin{minipage}[t]{0.62\textwidth}
+    \raggedright
+    {\color{white}\fontforte\LARGE\inserttitle\par}
+    \vspace{0.35cm}
+    {\color{white!70}\small\insertsubtitle\par}
+    \vspace{0.5cm}\traitlaser[3cm]\par\vspace{0.4cm}
+    {\color{white}\fontforte\normalsize\insertauthor\par}
+    \vspace{0.1cm}
+    {\color{white!60}\small\insertdate\par}
+  \end{minipage}
+  \vfill}
+
+% ---------------------------------------------------------------------
+%  Pages de section : fond nuit, grand numéro fin, faisceau d'une couleur laser
+% ---------------------------------------------------------------------
+\setbeamertemplate{section page}{%
+  \pgfmathtruncatemacro\strontium@n{mod(\insertsectionnumber-1,4)}%
+  \ifcase\strontium@n\colorlet{laser}{laserrouge}\or\colorlet{laser}{laserbleu}%
+  \or\colorlet{laser}{laserviolet}\else\colorlet{laser}{laservert}\fi
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[nuit] (current page.south west) rectangle (current page.north east);
+    \faisceau{laser}{($(current page.west) + (0,-1.9)$)}{($(current page.east) + (0,-1.9)$)}
+  \end{tikzpicture}%
+  \begin{minipage}{\textwidth}
+    {\color{laser}\fontfine\fontsize{64}{64}\selectfont
+      \ifnum\insertsectionnumber<10 0\fi\insertsectionnumber\par}
+    \vspace{0.3cm}
+    {\color{white}\fontforte\LARGE\insertsectionhead\par}
+  \end{minipage}}
+
+% Diapo de section automatique à chaque \section
+\AtBeginSection{\begin{frame}[plain, noframenumbering]\sectionpage\end{frame}}
+
+% ---------------------------------------------------------------------
+%  Diapo « message fort » : fond nuit, texte centré
+%  \begin{frame}[standout] ... \end{frame}
+% ---------------------------------------------------------------------
+\newif\ifstrontium@standout
+\define@key{beamerframe}{standout}[true]{%
+  \strontium@standouttrue
+  \begingroup
+  \setkeys{beamerframe}{c, plain, noframenumbering}%
+  \setbeamercolor{background canvas}{bg=nuit}%
+  \color{white}}
+% fin du groupe ouvert ci-dessus, une fois la diapo terminée (même méthode que Moloch)
+\pretocmd{\beamer@reseteecodes}{%
+  \ifstrontium@standout\endgroup\strontium@standoutfalse\fi}{}{}
+\AtBeginEnvironment{beamer@frameslide}{%
+  \ifstrontium@standout\centering\fontforte\Large\fi}
+
+% ---------------------------------------------------------------------
+%  Raccourcis pratiques
+% ---------------------------------------------------------------------
+% Message clé encadré en bas de diapo
+\newcommand{\amretenir}[1]{%
+  \vfill
+  \begin{tikzpicture}
+    \node[fill=voile, rounded corners=3pt, inner sep=7pt, text width=\linewidth-15pt,
+          font=\small] (b) {#1};
+    \fill[accent] (b.north west) rectangle ($(b.south west)+(0.9mm,0)$);
+  \end{tikzpicture}}
+% Source / référence en tout petit
+\newcommand{\source}[1]{{\color{gris}\tiny #1}}
+
+\mode<all>
