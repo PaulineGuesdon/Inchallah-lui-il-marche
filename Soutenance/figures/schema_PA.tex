@@ -1,0 +1,64 @@
+% Schéma de principe de la photoassociation : potentiels moléculaires en fonction de la
+% distance interatomique R. Courbes calculées (Lennard-Jones pour le fondamental, longue
+% portée en 1/R^3 pour l'excité), unités arbitraires. À inclure dans une diapo par \input :
+% étape 1 = résonance atomique, étape 2 = balayage vers le rouge, étape 3 = photoassociation.
+\begin{tikzpicture}[>={Latex[length=2.2mm]}, font=\small]
+  % axes
+  \draw[->, gris] (0.25,-1.6) -- (7.6,-1.6) node[below left, text=gris] {distance $R$};
+  \draw[->, gris] (0.25,-1.6) -- (0.25,4.3) node[above right, text=gris] {énergie};
+
+  % asymptotes
+  \draw[dashed, gris!70] (3.0,3.4) -- (7.4,3.4);
+  \node[anchor=west, text=violet] at (7.4,3.4) {$^1S_0 + {}^3P_1$};
+  \node[anchor=west, text=vert!80!black] at (7.4,0) {$^1S_0 + {}^1S_0$};
+
+  % potentiel fondamental
+  \draw[vert, line width=1.2pt] plot[smooth] coordinates {(1.100,0.420) (1.115,-0.046) (1.152,-0.777)
+    (1.189,-1.143) (1.228,-1.284) (1.268,-1.291) (1.310,-1.222) (1.353,-1.115) (1.397,-0.992)
+    (1.442,-0.868) (1.490,-0.749) (1.538,-0.641) (1.589,-0.544) (1.640,-0.459) (1.694,-0.386)
+    (1.749,-0.323) (1.807,-0.270) (1.866,-0.225) (1.927,-0.187) (1.990,-0.155) (2.055,-0.129)
+    (2.122,-0.106) (2.191,-0.088) (2.263,-0.073) (2.337,-0.060) (2.413,-0.050) (2.492,-0.041)
+    (2.573,-0.034) (2.657,-0.028) (2.744,-0.023) (2.834,-0.019) (2.926,-0.016) (3.022,-0.013)
+    (3.223,-0.009) (3.437,-0.006) (3.665,-0.004) (3.908,-0.003) (4.304,-0.002) (4.740,-0.001)
+    (5.220,0.000) (5.749,0.000) (6.331,0.000) (7.200,0.000)};
+
+  % potentiel excité
+  \draw[violet, line width=1.2pt] plot[smooth] coordinates {(1.220,3.600) (1.250,3.060) (1.300,2.418)
+    (1.338,2.082) (1.378,1.842) (1.418,1.677) (1.460,1.573) (1.503,1.518) (1.547,1.500)
+    (1.593,1.512) (1.640,1.546) (1.688,1.597) (1.738,1.660) (1.789,1.732) (1.841,1.809)
+    (1.896,1.890) (1.951,1.973) (2.009,2.055) (2.068,2.137) (2.129,2.216) (2.191,2.293)
+    (2.256,2.367) (2.322,2.438) (2.391,2.506) (2.461,2.569) (2.534,2.630) (2.608,2.686)
+    (2.685,2.739) (2.764,2.789) (2.845,2.835) (2.929,2.879) (3.015,2.919) (3.104,2.956)
+    (3.195,2.991) (3.290,3.023) (3.386,3.053) (3.486,3.081) (3.589,3.106) (3.694,3.130)
+    (3.803,3.151) (3.915,3.172) (4.030,3.190) (4.149,3.207) (4.271,3.223) (4.397,3.237)
+    (4.526,3.250) (4.659,3.263) (4.797,3.274) (4.938,3.284) (5.083,3.294) (5.233,3.303)
+    (5.387,3.311) (5.545,3.318) (5.709,3.325) (5.877,3.331) (6.050,3.337) (6.228,3.342)
+    (6.411,3.347) (6.600,3.351) (6.794,3.355) (6.994,3.359) (7.200,3.362)};
+
+  % niveaux vibrationnels, entre les deux points de rebroussement
+  \foreach \E/\rin/\rout/\nom in {3.180/1.243/3.966/{-1}, 2.850/1.264/2.873/{-2},
+                                  2.400/1.302/2.286/{-3}, 1.850/1.376/1.869/{-4}} {
+    \draw[violet!60, line width=0.7pt] (\rin,\E) -- (\rout,\E);
+    \node[anchor=east, text=violet!80, font=\scriptsize] at (\rin-0.02,\E) {$\nu=\nom$};
+  }
+
+  % deux atomes libres, loin l'un de l'autre
+  \fill[nuit] (6.05,0.17) circle (0.09) (6.55,0.17) circle (0.09);
+  \node[text=nuit, font=\scriptsize, align=center] at (6.3,-0.45) {atomes libres\\(non liés)};
+
+  % 1. résonance atomique : à grande distance, l'excitation d'un atome
+  \only<1->{
+    \draw[->, violet, line width=1.3pt] (6.3,0.3) -- (6.3,3.36)
+      node[midway, right, text=violet, align=left] {$\nu_0$\\[-2pt]{\scriptsize résonance}\\[-4pt]{\scriptsize atomique}};
+  }
+  % 2. on descend en fréquence, dans le rouge de la résonance
+  \only<2->{
+    \draw[->, red!75!black, line width=1.3pt] (2.75,3.4) -- (2.75,2.89);
+    \node[text=red!75!black, font=\scriptsize] at (2.75,3.68) {vers le rouge : $\Delta < 0$};
+  }
+  % 3. photoassociation vers un niveau lié, au point de Condon
+  \only<3->{
+    \draw[->, red!75!black, line width=1.3pt] (2.873,0.05) -- (2.873,2.81)
+      node[pos=0.4, right, text=red!75!black, font=\scriptsize] {$\nu_0 + \Delta$};
+  }
+\end{tikzpicture}

@@ -83,6 +83,7 @@ def retirer_formes(arbre, caches):
 # Textes anglais retirés de toutes les étapes : ils sont réécrits en français dans le beamer
 # (numéro de diapo -> identifiants p:cNvPr)
 A_TRADUIRE = {
+    3: {"11", "30", "40", "43", "51", "84", "85"},
     4: {"67", "68", "69"},
     5: {"13", "19"},
     6: {"9", "27", "165", "11", "53", "166", "167", "45"},
@@ -100,6 +101,8 @@ def version_etape(k, sortie):
             if info.filename.startswith("ppt/slides/slide") and info.filename.endswith(".xml"):
                 diapo = int(info.filename[len("ppt/slides/slide"):-len(".xml")])
                 arbre = etree.fromstring(donnees)
+                if diapo in DIAPOS_REAFFICHEES:
+                    arbre.attrib.pop("show", None)
                 caches = caches_a_l_etape(clics(arbre), k) | A_TRADUIRE.get(diapo, set())
                 retirer_formes(arbre, caches)
                 timing = arbre.find("p:timing", NS)
@@ -131,6 +134,7 @@ def etapes():
 
 # (nom, diapo, étape, x0, y0, x1, y1) : région en fraction de la page, origine en haut à gauche
 DECOUPES = [
+    *[(f"pompage_{k}", 3, k, 0.34, 0.30, 0.60, 0.68) for k in range(5)],
     *[(f"zeeman_{k}", 4, k, 0.02, 0.16, 0.86, 0.89) for k in (0, 1, 2, 4, 6)],
     *[(f"tls_{k}", 5, k, 0.0, 0.13, 0.66, 1.0) for k in (0, 2)],
     *[(f"atomes_{k}", 6, k, 0.01, 0.125, 0.23, 0.42) for k in (0, 1, 2)],
@@ -142,12 +146,15 @@ DECOUPES = [
     ("noncomm_schema", 10, 0, 0.0, 0.21, 0.70, 0.62),
     *[(f"bloch_{k}", 10, k, 0.36, 0.58, 0.60, 0.98) for k in range(3, 10)],
     ("noncomm_resultats", 11, 0, 0.10, 0.34, 0.86, 0.82),
-    ("ramsey4_schema", 15, 1, 0.03, 0.30, 0.99, 0.74),
-    ("ramsey4_resultats", 16, 0, 0.0, 0.235, 0.93, 0.98),
+    # schéma et graphe seuls : les équations sont réécrites en LaTeX
+    ("ramsey4_schema", 15, 0, 0.09, 0.30, 0.72, 0.70),
+    ("ramsey4_resultats", 16, 0, 0.05, 0.235, 0.88, 0.76),
 ]
 
-# Les diapos masquées n'apparaissent pas dans le PDF
-DIAPOS_MASQUEES = {3}
+# Diapo masquée dans le pptx (« Control spin state ») : réaffichée dans les copies par étape
+DIAPOS_REAFFICHEES = {3}
+# Les diapos encore masquées n'apparaissent pas dans le PDF
+DIAPOS_MASQUEES = set()
 
 
 def page_de(diapo):

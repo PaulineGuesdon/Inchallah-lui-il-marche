@@ -198,7 +198,7 @@
     \end{column}
     \begin{column}{0.54\textwidth}
       \centering
-      \includegraphics[width=\linewidth, height=0.7\textheight, keepaspectratio]{frequences_PA_88.pdf}
+      \resizebox{!}{0.72\textheight}{\input{figures/schema_PA.tex}}
     \end{column}
   \end{columns}
 \end{frame}
@@ -436,6 +436,7 @@
   \only<6>{\amretenir{Question ouverte : pourquoi le \Sr{87}, et pas le \textsuperscript{173}Yb, lui aussi hyperfin ?}}
 \end{frame}
 
+
 \begin{frame}{Les pistes à explorer}
   \begin{columns}[c]
     \begin{column}{0.5\textwidth}
@@ -477,6 +478,27 @@
     Gaz de \Sr{87} ultrafroid, piégé optiquement\\[0.15cm]
     Spin nucléaire $I = 9/2$ $\to$ du pseudo-spin $\tfrac12$ au qudit
   \end{center}
+\end{frame}
+
+\begin{frame}{Contrôler l'état de spin}{Contrôler la taille de l'espace}
+  \begin{columns}[c]
+    \begin{column}{0.52\textwidth}
+      \centering
+      \only<1>{\includegraphics[height=0.46\textheight]{sfo/pompage_0.pdf}}%
+      \only<2>{\includegraphics[height=0.46\textheight]{sfo/pompage_1.pdf}}%
+      \only<3>{\includegraphics[height=0.46\textheight]{sfo/pompage_2.pdf}}%
+      \only<4>{\includegraphics[height=0.46\textheight]{sfo/pompage_3.pdf}}%
+      \only<5>{\includegraphics[height=0.46\textheight]{sfo/pompage_4.pdf}}\par
+      {\fontforte\color{violet}\alt<3->{1 seul état de spin !}{10 états de spin !}}
+    \end{column}
+    \begin{column}{0.44\textwidth}
+      \begin{itemize}
+        \item<2-> \textbf{Pompage optique} : tous les atomes dans le même état $m_F$
+        \item<4-> \textbf{Transition Raman} : on les transfère vers l'état choisi
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \only<5>{\amretenir{De dix états à un seul, puis à celui que l'on choisit.}}
 \end{frame}
 
 \begin{frame}{Déplacement linéaire : non sélectif en spin}
@@ -651,6 +673,43 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}{Mesurer deux champs à la fois}{Deux interféromètres de Ramsey sur quatre états}
+  \begin{columns}[c]
+    \begin{column}{0.68\textwidth}
+      \begin{tikzpicture}
+        \node[anchor=south west, inner sep=0] (img) {\includegraphics[width=\linewidth]{sfo/ramsey4_schema.pdf}};
+        \begin{scope}[x={(img.south east)}, y={(img.north west)}]
+          \fill[white] (0,0) rectangle (0.04,0.12);  % reste d'un carré parasite du pptx
+        \end{scope}
+      \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \uncover<2->{%
+        $\Delta E^{-3/2}_{-5/2} = -4q + \beta$\\[0.25cm]
+        $\Delta E^{-9/2}_{-7/2} = -8q + \beta$\\[0.4cm]}
+      {\small\color{gris} $\delta E \propto q\,m_F^2 + \beta\,m_F$}
+    \end{column}
+  \end{columns}
+  \only<2>{\amretenir{Deux paires d'états, deux énergies différentes : deux grandeurs mesurées en une seule réalisation.}}
+\end{frame}
+
+\begin{frame}{Mesurer deux champs à la fois}{Résultats}
+  \begin{columns}[c]
+    \begin{column}{0.68\textwidth}
+      \includegraphics[width=\linewidth]{sfo/ramsey4_resultats.pdf}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      {\color{blue}\large$\bullet$} \;$m_F=-3/2$\\[0.1cm]
+      {\large$\bullet$} \;$m_F=-7/2$\\[0.3cm]
+      $\Delta E^{-3/2}_{-5/2} = -4q + \beta$\\[0.15cm]
+      $\Delta E^{-9/2}_{-7/2} = -8q + \beta$\\[0.25cm]
+      {\small $\left(E_{-9/2} - E_{-7/2} - \hbar\omega_{RF}\right)\dfrac{T}{\hbar} = \phi$\\[0.15cm]
+       $\omega_{RF} = \omega_{L1} - \omega_{L2}$}
+    \end{column}
+  \end{columns}
+  \amretenir{Deux périodes différentes : les deux grandeurs sont bien distinguées.}
+\end{frame}
+
 \begin{frame}{Bilan des manipulations cohérentes}
   \centering
   {\large\color{violet}\underline{Objectif} : une plateforme pour manipuler et caractériser des qudits}\par
@@ -767,16 +826,6 @@
     \item Plus d'états $m_F$ $\to$ les états positifs sont mal isolés
     \item Réduire les fuites en adoucissant les rampes des impulsions
   \end{itemize}
-\end{frame}
-
-\begin{frame}{Ramsey à quatre états : deux grandeurs}{Le schéma}
-  \centering
-  \includegraphics[width=\linewidth, height=0.7\textheight, keepaspectratio]{sfo/ramsey4_schema.pdf}
-\end{frame}
-
-\begin{frame}{Ramsey à quatre états : deux grandeurs}{Les résultats}
-  \centering
-  \includegraphics[width=\linewidth, height=0.68\textheight, keepaspectratio]{sfo/ramsey4_resultats.pdf}
 \end{frame}
 
 \end{document}
