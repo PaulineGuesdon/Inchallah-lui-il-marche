@@ -47,17 +47,55 @@
   \titlepage
 \end{frame}
 
-\begin{frame}{Plan}
-  \begin{enumerate}
-    \item Introduction : le \Sr{87}, un atome à dix états de spin
-    \item Photoassociation du \Sr{87}
-    \item Manipulations cohérentes de pseudo-spins
-    \item Conclusion et perspectives
-  \end{enumerate}
-\end{frame}
-
 % =====================================================================
 \section{Introduction}  % ~7 min : la motivation générale, pas de technique
+
+% Déroulé du sujet (discussion avec Martin) : les paires perdues (singulets) et celles qui restent (triplets)
+\begin{frame}{Le sujet de ma thèse}
+  \begin{columns}[c]
+    \begin{column}{0.55\textwidth}
+      \begin{itemize}
+        \item<1-> \textbf{But : les pertes à deux corps du \Sr{87}}\\
+          {\small un fermion, par photoassociation (PA)}
+        \item<2-> \textbf{Les paires qui collisionnent : \textcolor{violet}{singulets}}\\
+          {\small spectroscopie, les molécules elles-mêmes}
+          \mbox{\scriptsize\color{gris} $\to$ partie 1}
+        \item<3-> \textbf{Les paires qui restent : \textcolor{vert!70!black}{triplets}}\\
+          {\small immunes (onde $p$) : elles aussi éclairent la PA}
+        \item<4-> \textbf{Une plateforme de contrôle de spin}\\
+          {\small pour préparer et sonder ces états}
+          \mbox{\scriptsize\color{gris} $\to$ partie 2}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.42\textwidth}
+      \centering
+      % fermions identiques : la fonction d'onde totale change de signe par échange
+      \onslide<2->{%
+        $\Psi = \psi_{\text{spatial}}(\vec r)\otimes\chi_{\text{spin}}$\\[0.05cm]
+        {\small fermions : $\Psi$ \alert{impaire} par échange}\par\vspace{0.15cm}}
+      \begin{tikzpicture}[font=\small]
+        % paire singulet : spin impair, espace pair (onde s), la PA les éjecte
+        \onslide<2->{
+        \node[text=violet, right] at (-0.25,2.2) {{\fontforte singulet} $\uparrow\downarrow-\downarrow\uparrow$};
+        \fill[violet!70] (0,1.55) circle (0.18);
+        \fill[violet!70] (0.42,1.55) circle (0.18);
+        \draw[-{Stealth}, thick, laserrouge] (0.85,1.55) -- (1.95,1.55) node[midway, above] {PA};
+        \node[right, text=violet] at (2.05,1.55) {perdus};
+        \node[text=violet, font=\scriptsize, right] at (-0.25,1.1)
+          {$\chi$ impaire, $\psi$ paire : onde $s$};}
+        % paire triplet : spin pair, espace impair (onde p), la barrière centrifuge les tient à distance
+        \onslide<3->{
+        \node[text=vert!70!black, right] at (-0.25,0.55) {{\fontforte triplet} $\uparrow\uparrow$};
+        \fill[vert!80] (0,0) circle (0.18);
+        \fill[vert!80] (1.0,0) circle (0.18);
+        \draw[thick, gris] (0.5,-0.2) -- (0.5,0.2);
+        \node[right, text=vert!70!black] at (2.05,0) {immunes};
+        \node[text=vert!70!black, font=\scriptsize, right] at (-0.25,-0.45)
+          {$\chi$ paire, $\psi$ impaire : onde $p$};}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
 
 \begin{frame}{Le \Sr{87} : un atome à dix états de spin}
   \begin{columns}[c]
@@ -98,18 +136,6 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{Ce que j'ai fait en trois ans}
-  \begin{enumerate}
-    \item<1-> \textbf{Dissiper à deux corps par photoassociation}\\
-      {\small\color{vert} Point fort : vers la limite de Heisenberg ; inexploré sur $^3P_1$}\\
-      {\small\color{violet} Résultat surprenant : nombre et largeur des raies}
-    \item<2-> \textbf{Isoler et manipuler des pseudo-spins}\\
-      {\small\color{vert} Point fort : au-delà de Stern-Gerlach, isolation de deux états parmi dix}
-    \item<3-> \textbf{Mesurer dans des espaces de Hilbert réduits}\\
-      {\small\color{vert} Point fort : deux observables non commutables en une seule réalisation}
-  \end{enumerate}
-\end{frame}
-
 \begin{frame}{Le dispositif expérimental}
   \begin{columns}[c]
     \begin{column}{0.4\textwidth}
@@ -125,6 +151,19 @@
       \includegraphics[width=\linewidth, height=0.7\textheight, keepaspectratio]{setup_exp.pdf}
     \end{column}
   \end{columns}
+\end{frame}
+
+\begin{frame}{Sommaire}
+  \begin{enumerate}
+    \item \textbf{Photoassociation du \Sr{87}}\\
+      {\small\color{gris} des pertes à deux corps sélectives en spin}
+    \vspace{0.3cm}
+    \item \textbf{Manipulations cohérentes de pseudo-spins}\\
+      {\small\color{gris} préparer, contrôler et mesurer des compositions de spin}
+    \vspace{0.3cm}
+    \item \textbf{Conclusion et perspectives}\\
+      {\small\color{gris} sonder les atomes photoassociés avec nos interféromètres}
+  \end{enumerate}
 \end{frame}
 
 % =====================================================================
@@ -147,24 +186,6 @@
     \end{column}
   \end{columns}
   \only<4>{\amretenir{Une raie moléculaire = un creux dans le nombre d'atomes.}}
-\end{frame}
-
-\begin{frame}{Une perte à deux corps}
-  \begin{block}{Dynamique des pertes}
-    \centering
-    $\dfrac{dN}{dt} = -\beta N^2 - \Gamma N$, \qquad $\beta \propto K_2 / V_e(T)$
-  \end{block}
-  \begin{itemize}
-    \item<2-> $K_2$ : la force de la raie (ne dépend pas de la densité)
-    \item<3-> $K_2 \propto l_{\text{opt}}$, et $l_{\text{opt}} \propto I$ : on compare $l_{\text{opt}}/I$
-  \end{itemize}
-  \only<4->{%
-  \begin{alertblock}{Raie élargie}
-    \centering
-    $K_2(\text{résonance}) = \dfrac{16h}{m_{\text{at}}}\,\dfrac{l_{\text{opt}}}{\eta}$,
-    \qquad $\eta = \dfrac{\Gamma_{\text{fit}}}{\Gamma_{\text{rad}}/2\pi}$
-  \end{alertblock}}
-  \only<5>{\amretenir{Une raie $\eta$ fois trop large a un $K_2$ $\eta$ fois plus faible.}}
 \end{frame}
 
 \begin{frame}{Pourquoi la photoassociation du \Sr{87} ?}
@@ -236,6 +257,24 @@
     \end{column}
   \end{columns}
   \only<4>{\amretenir{Montage validé : accord avec la littérature à un facteur $\lesssim 2$.}}
+\end{frame}
+
+\begin{frame}{Une perte à deux corps}
+  \begin{block}{Dynamique des pertes}
+    \centering
+    $\dfrac{dN}{dt} = -\beta N^2 - \Gamma N$, \qquad $\beta \propto K_2 / V_e(T)$
+  \end{block}
+  \begin{itemize}
+    \item<2-> $K_2$ : la force de la raie (ne dépend pas de la densité)
+    \item<3-> $K_2 \propto l_{\text{opt}}$, et $l_{\text{opt}} \propto I$ : on compare $l_{\text{opt}}/I$
+  \end{itemize}
+  \only<4->{%
+  \begin{alertblock}{Raie élargie}
+    \centering
+    $K_2(\text{résonance}) = \dfrac{16h}{m_{\text{at}}}\,\dfrac{l_{\text{opt}}}{\eta}$,
+    \qquad $\eta = \dfrac{\Gamma_{\text{fit}}}{\Gamma_{\text{rad}}/2\pi}$
+  \end{alertblock}}
+  \only<5>{\amretenir{Une raie $\eta$ fois trop large a un $K_2$ $\eta$ fois plus faible.}}
 \end{frame}
 
 \begin{frame}{Reconnaître une vraie raie moléculaire}{Une leçon tirée d'un faux signal}
@@ -459,6 +498,21 @@
       \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{Figures_pour_theorie/predissociation.pdf}
     \end{column}
   \end{columns}
+\end{frame}
+
+% Points forts de la partie (anciennement dans « Ce que j'ai fait en trois ans »)
+\begin{frame}{Bilan de la photoassociation}
+  \centering
+  {\large\color{violet}\underline{Objectif} : une dissipation à deux corps sélective en spin}\par
+  \vspace{0.4cm}
+  \begin{minipage}{0.75\textwidth}
+    \begin{itemize}
+      \item {\color{vert}Point fort} : une voie vers la limite de Heisenberg,
+        encore inexplorée sur $^3P_1$
+      \item {\color{violet}Résultat surprenant} : seulement trois raies,
+        $10^2$ à $10^3$ fois trop larges
+    \end{itemize}
+  \end{minipage}
 \end{frame}
 
 % =====================================================================
@@ -723,6 +777,8 @@
         $=$ mesure à valeurs d'opérateurs positifs (POVM)
     \end{itemize}
   \end{minipage}
+  \amretenir{{\color{vert}Points forts} : au-delà de Stern-Gerlach, deux états isolés parmi dix ;
+    deux observables non commutables mesurées en une seule réalisation.}
 \end{frame}
 
 % =====================================================================
@@ -747,7 +803,78 @@
       \end{itemize}
     \end{column}
   \end{columns}
-  \amretenir{Perspectives : \acompleter{ouverture pour chaque sujet}}
+  \amretenir{Perspective : utiliser les outils de contrôle de spin pour sonder les atomes photoassociés.}
+\end{frame}
+
+% Ouvertures : lien entre les deux parties (discussion avec Martin)
+\begin{frame}{Perspectives : sonder la PA avec nos interféromètres}
+  \begin{itemize}
+    \item<1-> \textbf{Interféromètres parallèles}\\
+      {\small mesurer \textit{in situ} l'effet du laser de PA sur les atomes
+      (déplacements $q$ et $b$ : intensité, polarisation, inhomogénéité)}
+    \item<2-> \textbf{Mesure POVM}\\
+      {\small caractériser en une seule réalisation la population ($\hat S^z$) \alert{et} la phase
+      de l'état après PA}
+    \item<3-> \textbf{Mesure de brisure de symétrie}\\
+      {\small qubit $\{a,b\}$ + une troisième composante $c$ ;
+      si la PA n'a pas la même force entre $\{a,b\}$ et $\{b,c\}$, la symétrie du qubit est brisée}\\
+      {\small $\to$ $\langle \hat S^z\rangle$ nul sans PA vers $c$, non nul avec ;
+      possible avec deux interféromètres parallèles}
+  \end{itemize}
+  \only<3>{\amretenir{Les outils de la partie 2 deviennent des sondes de la partie 1.}}
+\end{frame}
+
+\begin{frame}{Perspectives : mesurer l'intrication de l'état photoassocié}
+  \begin{columns}[c]
+    \begin{column}{0.55\textwidth}
+      \begin{itemize}
+        \item<1-> La PA ne retire que les singulets :
+          l'état final peut être un \alert{état de Dicke} intriqué
+        \item<2-> La PA change $N$ et $\hat S^{x}$, $\hat S^{y}$, $\hat S^{z}$,
+          mais ne doit pas ajouter de fluctuations
+        \item<3-> Il faut un \alert{état initial précis}
+          (le pompage optique ne suffit pas) :\\
+          {\small moitié des atomes polarisée de façon déterministe,
+          ou réseau + TLS + renversement adiabatique du spin}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.42\textwidth}
+      \begin{block}{Témoin d'intrication}
+        \centering
+        $\xi_D^2 = \dfrac{N\,\mathrm{Var}(\hat S^z)}{\langle \hat S_x^2 + \hat S_y^2\rangle - N/2} < 1$
+      \end{block}
+      \onslide<4->{%
+      {\small
+      $\langle \hat S_x^2 + \hat S_y^2\rangle$ : accessible avec la POVM\\[0.1cm]
+      $\mathrm{Var}(\hat S^z)$ : il faut un bruit de détection
+      $<$ bruit de projection $\sqrt{N}$}}
+    \end{column}
+  \end{columns}
+  \only<4>{\amretenir{Une texture de spin déterministe ; la limite actuelle est la détection, pas le principe.}}
+\end{frame}
+
+\begin{frame}{Perspectives : vers les horloges}{Foss-Feig, Daley, Thompson, Rey, PRL \textbf{109}, 230501 (2012)}
+  \begin{columns}[t]
+    \begin{column}{0.5\textwidth}
+      {\fontforte\color{vert} L'idée}\par\vspace{0.1cm}
+      \begin{itemize}
+        \item<1-> Préparer un état de Dicke, puis l'interroger sur la transition d'horloge
+        \item<2-> Pas de collision en onde $s$ $\to$ \alert{pas de déplacement collisionnel}
+          (mesuré dans les horloges actuelles)
+        \item<3-> Interroger $\pm m_F$ : deux horloges à la fois
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.46\textwidth}
+      {\fontforte\color{violet} Les limites}\par\vspace{0.1cm}
+      \begin{itemize}
+        \item<4-> Peu d'atomes : précision proche d'une horloge usuelle
+        \item<4-> Onde $p$ non supprimée
+        \item<4-> Laser d'horloge inhomogène : intrication perdue
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \only<5>{\amretenir{Notre PA passe par $^3P_1$, pas par l'horloge : pas le même objet,
+    mais on peut tester la symétrie SU($N$) du fondamental.}}
 \end{frame}
 
 \begin{frame}[standout]
