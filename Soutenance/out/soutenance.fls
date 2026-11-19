@@ -328,14 +328,17 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf
 INPUT ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf
 INPUT ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf
 INPUT ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/setup_exp.pdf
@@ -346,9 +349,6 @@ INPUT ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoa
 INPUT ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf
 INPUT ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf
 INPUT ./figures/schema_PA.tex
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT ./figures/schema_PA.tex
 INPUT ./figures/schema_PA.tex
 INPUT ./figures/schema_PA.tex

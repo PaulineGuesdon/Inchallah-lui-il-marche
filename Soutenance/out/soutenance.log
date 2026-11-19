@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2026.2.7)  13 NOV 2026 15:59
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2026.2.7)  17 NOV 2026 19:41
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Soutenance/soutenance.tex
@@ -1261,42 +1261,42 @@ Package luatex.def Info: ../Manuscrit_these/appendix/images/logo_ED_Galilee.png 
 [3
 
 ]
-<../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf, id=69, 1486.55376pt x 1414.28375pt>
-File: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf  used on input line 77.
-(luatex.def)             Requested size: 143.83261pt x 136.84007pt.
-
 
 [4
 
-<../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf>]
-File: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf  used on input line 77.
-(luatex.def)             Requested size: 143.83261pt x 136.84007pt.
-
+]
 
 [5
 
 ]
-File: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf  used on input line 77.
-(luatex.def)             Requested size: 143.83261pt x 136.84007pt.
-
 
 [6
 
 ]
+<../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf, id=93, 1486.55376pt x 1414.28375pt>
+File: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf  used on input line 115.
+(luatex.def)             Requested size: 143.83261pt x 136.84007pt.
+
 
 [7
 
-]
+<../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf>]
+File: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf  used on input line 115.
+(luatex.def)             Requested size: 143.83261pt x 136.84007pt.
+
 
 [8
 
 ]
+File: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/energy_levels_sr.pdf  used on input line 115.
+(luatex.def)             Requested size: 143.83261pt x 136.84007pt.
+
 
 [9
 
@@ -1313,10 +1313,10 @@ Package luatex.def Info: ../Manuscrit_these/Chapitres/Gas preparation and spin c
 [12
 
 ]
-<../Manuscrit_these/Chapitres/Gas preparation and spin control/images/setup_exp.pdf, id=142, 685.56125pt x 599.23875pt>
+<../Manuscrit_these/Chapitres/Gas preparation and spin control/images/setup_exp.pdf, id=140, 685.56125pt x 599.23875pt>
 File: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/setup_exp.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/setup_exp.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/setup_exp.pdf  used on input line 128.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Gas preparation and spin control/images/setup_exp.pdf  used on input line 154.
 (luatex.def)             Requested size: 188.96405pt x 165.17062pt.
 
 
@@ -1324,76 +1324,71 @@ Package luatex.def Info: ../Manuscrit_these/Chapitres/Gas preparation and spin c
 
 <../Manuscrit_these/Chapitres/Gas preparation and spin control/images/setup_exp.pdf>]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\everymath' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\everymath' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ifbeamercolorempty' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\color' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ifbeamercolorempty' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\color' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 131.
-
-
-
 [14
 
 ]
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf, id=210, 417.56pt x 582.175pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf  used on input line 150.
-(luatex.def)             Requested size: 84.61914pt x 117.97862pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\everymath' on input line 170.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\everymath' on input line 170.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 170.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ifbeamercolorempty' on input line 170.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\color' on input line 170.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 170.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ifbeamercolorempty' on input line 170.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\color' on input line 170.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 170.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 170.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 170.
+
 
 
 [15
 
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf>]
+]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf, id=216, 417.56pt x 582.175pt>
 File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf  used on input line 150.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf  used on input line 189.
 (luatex.def)             Requested size: 84.61914pt x 117.97862pt.
 
 
 [16
 
-]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf>]
 File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf  used on input line 150.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf  used on input line 189.
 (luatex.def)             Requested size: 84.61914pt x 117.97862pt.
 
 
@@ -1402,13 +1397,18 @@ Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangl
 ]
 File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf  used on input line 150.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf  used on input line 189.
 (luatex.def)             Requested size: 84.61914pt x 117.97862pt.
 
 
 [18
 
 ]
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/Guttridge_PA_process.pdf  used on input line 189.
+(luatex.def)             Requested size: 84.61914pt x 117.97862pt.
+
 
 [19
 
@@ -1425,156 +1425,151 @@ Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangl
 [22
 
 ]
-Overfull \vbox (0.61159pt too high) detected at line 168
+
+[23
+
+] (./figures/schema_PA.tex)
+Overfull \hbox (3.53387pt too wide) in paragraph at lines 225--225
+ [][] 
  []
 
 
 
-[23
-
-]
-
 [24
 
-]
+] (./figures/schema_PA.tex)
+Overfull \hbox (3.53387pt too wide) in paragraph at lines 225--225
+ [][] 
+ []
+
+
 
 [25
 
-]
+] (./figures/schema_PA.tex)
+Overfull \hbox (3.53387pt too wide) in paragraph at lines 225--225
+ [][] 
+ []
+
+
 
 [26
 
-]
+] (./figures/schema_PA.tex)
+Overfull \hbox (3.53387pt too wide) in paragraph at lines 225--225
+ [][] 
+ []
+
+
 
 [27
 
-] (./figures/schema_PA.tex)
-Overfull \hbox (3.53387pt too wide) in paragraph at lines 204--204
- [][] 
+]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf, id=356, 913.4125pt x 1677.26625pt>
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf  used on input line 241.
+(luatex.def)             Requested size: 95.08185pt x 174.59537pt.
+
+Overfull \vbox (0.28163pt too high) detected at line 241
  []
 
 
 
 [28
 
-] (./figures/schema_PA.tex)
-Overfull \hbox (3.53387pt too wide) in paragraph at lines 204--204
- [][] 
- []
-
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf>]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf, id=1683, 621.82312pt x 389.60556pt>
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf  used on input line 260.
+(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf, id=1684, 621.82312pt x 389.60556pt>
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf  used on input line 260.
+(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
 
 
 [29
 
-] (./figures/schema_PA.tex)
-Overfull \hbox (3.53387pt too wide) in paragraph at lines 204--204
- [][] 
- []
-
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf><../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf>]
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf  used on input line 260.
+(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf  used on input line 260.
+(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
 
 
 [30
 
-] (./figures/schema_PA.tex)
-Overfull \hbox (3.53387pt too wide) in paragraph at lines 204--204
- [][] 
- []
-
+]
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf  used on input line 260.
+(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf  used on input line 260.
+(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
 
 
 [31
 
 ]
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf, id=390, 913.4125pt x 1677.26625pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf  used on input line 220.
-(luatex.def)             Requested size: 95.08185pt x 174.59537pt.
-
-Overfull \vbox (0.28163pt too high) detected at line 220
- []
-
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf  used on input line 260.
+(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf  used on input line 260.
+(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
 
 
 [32
 
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/resonance_88.pdf>]
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf, id=1717, 621.82312pt x 389.60556pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf  used on input line 239.
-(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf, id=1718, 621.82312pt x 389.60556pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf  used on input line 239.
-(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
-
+]
 
 [33
 
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf><../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf>]
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf  used on input line 239.
-(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf  used on input line 239.
-(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
-
+]
 
 [34
 
 ]
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf  used on input line 239.
-(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf  used on input line 239.
-(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
-
 
 [35
 
 ]
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_149_sr88.pdf  used on input line 239.
-(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/fig_148_sr88.pdf  used on input line 239.
-(luatex.def)             Requested size: 112.97652pt x 70.78584pt.
-
 
 [36
 
 ]
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf, id=1815, 614.295pt x 388.45125pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf  used on input line 256.
-(luatex.def)             Requested size: 204.18022pt x 129.11395pt.
+Overfull \vbox (0.61159pt too high) detected at line 278
+ []
+
 
 
 [37
 
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf>]
+]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf, id=1822, 614.295pt x 388.45125pt>
 File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf  used on input line 256.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf  used on input line 295.
 (luatex.def)             Requested size: 204.18022pt x 129.11395pt.
 
 
 [38
 
-]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf>]
 File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf  used on input line 256.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf  used on input line 295.
 (luatex.def)             Requested size: 204.18022pt x 129.11395pt.
 
 
@@ -1583,46 +1578,42 @@ Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangl
 ]
 File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf  used on input line 256.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf  used on input line 295.
 (luatex.def)             Requested size: 204.18022pt x 129.11395pt.
 
 
 [40
 
 ]
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf, id=7789, 244.915pt x 245.91875pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf  used on input line 273.
-(luatex.def)             Requested size: 159.80199pt x 160.45692pt.
-
-Overfull \vbox (0.6492pt too high) detected at line 273
- []
-
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data16_exp_bruit_6MHz.pdf  used on input line 295.
+(luatex.def)             Requested size: 204.18022pt x 129.11395pt.
 
 
 [41
 
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf>]
+]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf, id=7797, 244.915pt x 245.91875pt>
 File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf  used on input line 273.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf  used on input line 312.
 (luatex.def)             Requested size: 159.80199pt x 160.45692pt.
 
-Overfull \vbox (0.6492pt too high) detected at line 273
+Overfull \vbox (0.6492pt too high) detected at line 312
  []
 
 
 
 [42
 
-]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf>]
 File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf  used on input line 273.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf  used on input line 312.
 (luatex.def)             Requested size: 159.80199pt x 160.45692pt.
 
-Overfull \vbox (0.6492pt too high) detected at line 273
+Overfull \vbox (0.6492pt too high) detected at line 312
  []
 
 
@@ -1630,20 +1621,29 @@ Overfull \vbox (0.6492pt too high) detected at line 273
 [43
 
 ]
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf, id=8050, 865.76056pt x 640.4471pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf  used on input line 282.
-(luatex.def)             Requested size: 204.1407pt x 151.01324pt.
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/mass_scaling.pdf  used on input line 312.
+(luatex.def)             Requested size: 159.80199pt x 160.45692pt.
+
+Overfull \vbox (0.6492pt too high) detected at line 312
+ []
+
 
 
 [44
 
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf>]
+]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf, id=8057, 865.76056pt x 640.4471pt>
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf  used on input line 321.
+(luatex.def)             Requested size: 204.1407pt x 151.01324pt.
+
 
 [45
 
-]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf>]
 
 [46
 
@@ -1652,62 +1652,62 @@ Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangl
 [47
 
 ]
-<figures/lopt_comparaison.pdf, id=8941, 404.712pt x 281.853pt>
-File: figures/lopt_comparaison.pdf Graphic file (type pdf)
-<use figures/lopt_comparaison.pdf>
-Package luatex.def Info: figures/lopt_comparaison.pdf  used on input line 317.
-(luatex.def)             Requested size: 235.5915pt x 164.07265pt.
-
 
 [48
 
-<./figures/lopt_comparaison.pdf>]
+]
+<figures/lopt_comparaison.pdf, id=8949, 404.712pt x 281.853pt>
 File: figures/lopt_comparaison.pdf Graphic file (type pdf)
 <use figures/lopt_comparaison.pdf>
-Package luatex.def Info: figures/lopt_comparaison.pdf  used on input line 317.
+Package luatex.def Info: figures/lopt_comparaison.pdf  used on input line 356.
 (luatex.def)             Requested size: 235.5915pt x 164.07265pt.
 
 
 [49
 
-]
+<./figures/lopt_comparaison.pdf>]
 File: figures/lopt_comparaison.pdf Graphic file (type pdf)
 <use figures/lopt_comparaison.pdf>
-Package luatex.def Info: figures/lopt_comparaison.pdf  used on input line 317.
+Package luatex.def Info: figures/lopt_comparaison.pdf  used on input line 356.
 (luatex.def)             Requested size: 235.5915pt x 164.07265pt.
 
 
 [50
 
 ]
-<figures/elargissement_eta.pdf, id=9026, 404.712pt x 231.264pt>
-File: figures/elargissement_eta.pdf Graphic file (type pdf)
-<use figures/elargissement_eta.pdf>
-Package luatex.def Info: figures/elargissement_eta.pdf  used on input line 333.
-(luatex.def)             Requested size: 235.5915pt x 134.6237pt.
+File: figures/lopt_comparaison.pdf Graphic file (type pdf)
+<use figures/lopt_comparaison.pdf>
+Package luatex.def Info: figures/lopt_comparaison.pdf  used on input line 356.
+(luatex.def)             Requested size: 235.5915pt x 164.07265pt.
 
 
 [51
 
-<./figures/elargissement_eta.pdf>]
+]
+<figures/elargissement_eta.pdf, id=9034, 404.712pt x 231.264pt>
 File: figures/elargissement_eta.pdf Graphic file (type pdf)
 <use figures/elargissement_eta.pdf>
-Package luatex.def Info: figures/elargissement_eta.pdf  used on input line 333.
+Package luatex.def Info: figures/elargissement_eta.pdf  used on input line 372.
 (luatex.def)             Requested size: 235.5915pt x 134.6237pt.
 
 
 [52
 
-]
+<./figures/elargissement_eta.pdf>]
 File: figures/elargissement_eta.pdf Graphic file (type pdf)
 <use figures/elargissement_eta.pdf>
-Package luatex.def Info: figures/elargissement_eta.pdf  used on input line 333.
+Package luatex.def Info: figures/elargissement_eta.pdf  used on input line 372.
 (luatex.def)             Requested size: 235.5915pt x 134.6237pt.
 
 
 [53
 
 ]
+File: figures/elargissement_eta.pdf Graphic file (type pdf)
+<use figures/elargissement_eta.pdf>
+Package luatex.def Info: figures/elargissement_eta.pdf  used on input line 372.
+(luatex.def)             Requested size: 235.5915pt x 134.6237pt.
+
 
 [54
 
@@ -1716,28 +1716,23 @@ Package luatex.def Info: figures/elargissement_eta.pdf  used on input line 333.
 [55
 
 ]
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf, id=9106, 618.31pt x 455.7025pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf  used on input line 379.
-(luatex.def)             Requested size: 176.08809pt x 129.7792pt.
-
 
 [56
 
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf>]
+]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf, id=9113, 618.31pt x 455.7025pt>
 File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf  used on input line 379.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf  used on input line 418.
 (luatex.def)             Requested size: 176.08809pt x 129.7792pt.
 
 
 [57
 
-]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf>]
 File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf  used on input line 379.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf  used on input line 418.
 (luatex.def)             Requested size: 176.08809pt x 129.7792pt.
 
 
@@ -1746,7 +1741,7 @@ Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangl
 ]
 File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf  used on input line 379.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf  used on input line 418.
 (luatex.def)             Requested size: 176.08809pt x 129.7792pt.
 
 
@@ -1755,19 +1750,19 @@ Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangl
 ]
 File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf Graphic file (type pdf)
 <use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf  used on input line 379.
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf  used on input line 418.
 (luatex.def)             Requested size: 176.08809pt x 129.7792pt.
-
-Overfull \vbox (0.15817pt too high) detected at line 379
- []
-
 
 
 [60
 
 ]
-Overfull \hbox (7.21458pt too wide) in paragraph at lines 414--414
- [][][] 
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf  used on input line 418.
+(luatex.def)             Requested size: 176.08809pt x 129.7792pt.
+
+Overfull \vbox (0.15817pt too high) detected at line 418
  []
 
 
@@ -1775,7 +1770,7 @@ Overfull \hbox (7.21458pt too wide) in paragraph at lines 414--414
 [61
 
 ]
-Overfull \hbox (7.21458pt too wide) in paragraph at lines 414--414
+Overfull \hbox (7.21458pt too wide) in paragraph at lines 453--453
  [][][] 
  []
 
@@ -1784,7 +1779,7 @@ Overfull \hbox (7.21458pt too wide) in paragraph at lines 414--414
 [62
 
 ]
-Overfull \hbox (7.21458pt too wide) in paragraph at lines 414--414
+Overfull \hbox (7.21458pt too wide) in paragraph at lines 453--453
  [][][] 
  []
 
@@ -1793,8 +1788,8 @@ Overfull \hbox (7.21458pt too wide) in paragraph at lines 414--414
 [63
 
 ]
-Overfull \hbox (7.21458pt too wide) in paragraph at lines 414--414
- [][][][] 
+Overfull \hbox (7.21458pt too wide) in paragraph at lines 453--453
+ [][][] 
  []
 
 
@@ -1802,7 +1797,7 @@ Overfull \hbox (7.21458pt too wide) in paragraph at lines 414--414
 [64
 
 ]
-Overfull \hbox (7.21458pt too wide) in paragraph at lines 414--414
+Overfull \hbox (7.21458pt too wide) in paragraph at lines 453--453
  [][][][] 
  []
 
@@ -1811,15 +1806,20 @@ Overfull \hbox (7.21458pt too wide) in paragraph at lines 414--414
 [65
 
 ]
-
-LaTeX Font Warning: Font shape `TU/FiraSans(3)/m/it' undefined
-(Font)              using `TU/FiraSans(3)/m/n' instead on input line 437.
+Overfull \hbox (7.21458pt too wide) in paragraph at lines 453--453
+ [][][][] 
+ []
 
 
 
 [66
 
 ]
+
+LaTeX Font Warning: Font shape `TU/FiraSans(3)/m/it' undefined
+(Font)              using `TU/FiraSans(3)/m/n' instead on input line 476.
+
+
 
 [67
 
@@ -1840,15 +1840,15 @@ LaTeX Font Warning: Font shape `TU/FiraSans(3)/m/it' undefined
 [71
 
 ]
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf  used on input line 462.
-(luatex.def)             Requested size: 176.69191pt x 130.22423pt.
-
 
 [72
 
 ]
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/predissociation.pdf  used on input line 501.
+(luatex.def)             Requested size: 176.69191pt x 130.22423pt.
+
 
 [73
 
@@ -1857,512 +1857,512 @@ Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangl
 [74
 
 ]
-<figures/sfo/pompage_0.pdf, id=9298, 375.804pt x 308.95425pt>
-File: figures/sfo/pompage_0.pdf Graphic file (type pdf)
-<use figures/sfo/pompage_0.pdf>
-Package luatex.def Info: figures/sfo/pompage_0.pdf  used on input line 502.
-(luatex.def)             Requested size: 132.02652pt x 108.54315pt.
-
 
 [75
 
-<./figures/sfo/pompage_0.pdf>]
-<figures/sfo/pompage_1.pdf, id=9323, 375.804pt x 308.95425pt>
-File: figures/sfo/pompage_1.pdf Graphic file (type pdf)
-<use figures/sfo/pompage_1.pdf>
-Package luatex.def Info: figures/sfo/pompage_1.pdf  used on input line 502.
-(luatex.def)             Requested size: 132.02652pt x 108.54315pt.
-
+]
 
 [76
 
-<./figures/sfo/pompage_1.pdf>]
-<figures/sfo/pompage_2.pdf, id=9348, 375.804pt x 308.95425pt>
-File: figures/sfo/pompage_2.pdf Graphic file (type pdf)
-<use figures/sfo/pompage_2.pdf>
-Package luatex.def Info: figures/sfo/pompage_2.pdf  used on input line 502.
+]
+<figures/sfo/pompage_0.pdf, id=9313, 375.804pt x 308.95425pt>
+File: figures/sfo/pompage_0.pdf Graphic file (type pdf)
+<use figures/sfo/pompage_0.pdf>
+Package luatex.def Info: figures/sfo/pompage_0.pdf  used on input line 556.
 (luatex.def)             Requested size: 132.02652pt x 108.54315pt.
 
 
 [77
 
-<./figures/sfo/pompage_2.pdf>]
-<figures/sfo/pompage_3.pdf, id=9373, 375.804pt x 308.95425pt>
-File: figures/sfo/pompage_3.pdf Graphic file (type pdf)
-<use figures/sfo/pompage_3.pdf>
-Package luatex.def Info: figures/sfo/pompage_3.pdf  used on input line 502.
+<./figures/sfo/pompage_0.pdf>]
+<figures/sfo/pompage_1.pdf, id=9338, 375.804pt x 308.95425pt>
+File: figures/sfo/pompage_1.pdf Graphic file (type pdf)
+<use figures/sfo/pompage_1.pdf>
+Package luatex.def Info: figures/sfo/pompage_1.pdf  used on input line 556.
 (luatex.def)             Requested size: 132.02652pt x 108.54315pt.
 
 
 [78
 
-<./figures/sfo/pompage_3.pdf>]
-<figures/sfo/pompage_4.pdf, id=9398, 375.804pt x 308.95425pt>
-File: figures/sfo/pompage_4.pdf Graphic file (type pdf)
-<use figures/sfo/pompage_4.pdf>
-Package luatex.def Info: figures/sfo/pompage_4.pdf  used on input line 502.
+<./figures/sfo/pompage_1.pdf>]
+<figures/sfo/pompage_2.pdf, id=9363, 375.804pt x 308.95425pt>
+File: figures/sfo/pompage_2.pdf Graphic file (type pdf)
+<use figures/sfo/pompage_2.pdf>
+Package luatex.def Info: figures/sfo/pompage_2.pdf  used on input line 556.
 (luatex.def)             Requested size: 132.02652pt x 108.54315pt.
 
 
 [79
 
-<./figures/sfo/pompage_4.pdf>]
-<figures/sfo/zeeman_0.pdf, id=9424, 1214.136pt x 593.51738pt>
-File: figures/sfo/zeeman_0.pdf Graphic file (type pdf)
-<use figures/sfo/zeeman_0.pdf>
-Package luatex.def Info: figures/sfo/zeeman_0.pdf  used on input line 519.
-(luatex.def)             Requested size: 289.60155pt x 141.5774pt.
+<./figures/sfo/pompage_2.pdf>]
+<figures/sfo/pompage_3.pdf, id=9388, 375.804pt x 308.95425pt>
+File: figures/sfo/pompage_3.pdf Graphic file (type pdf)
+<use figures/sfo/pompage_3.pdf>
+Package luatex.def Info: figures/sfo/pompage_3.pdf  used on input line 556.
+(luatex.def)             Requested size: 132.02652pt x 108.54315pt.
 
 
 [80
 
-<./figures/sfo/zeeman_0.pdf>]
-<figures/sfo/zeeman_1.pdf, id=9467, 1214.136pt x 593.51738pt>
-File: figures/sfo/zeeman_1.pdf Graphic file (type pdf)
-<use figures/sfo/zeeman_1.pdf>
-Package luatex.def Info: figures/sfo/zeeman_1.pdf  used on input line 519.
-(luatex.def)             Requested size: 289.60155pt x 141.5774pt.
+<./figures/sfo/pompage_3.pdf>]
+<figures/sfo/pompage_4.pdf, id=9413, 375.804pt x 308.95425pt>
+File: figures/sfo/pompage_4.pdf Graphic file (type pdf)
+<use figures/sfo/pompage_4.pdf>
+Package luatex.def Info: figures/sfo/pompage_4.pdf  used on input line 556.
+(luatex.def)             Requested size: 132.02652pt x 108.54315pt.
 
 
 [81
 
-<./figures/sfo/zeeman_1.pdf>]
-<figures/sfo/zeeman_2.pdf, id=9510, 1214.136pt x 593.51738pt>
-File: figures/sfo/zeeman_2.pdf Graphic file (type pdf)
-<use figures/sfo/zeeman_2.pdf>
-Package luatex.def Info: figures/sfo/zeeman_2.pdf  used on input line 519.
+<./figures/sfo/pompage_4.pdf>]
+<figures/sfo/zeeman_0.pdf, id=9441, 1214.136pt x 593.51738pt>
+File: figures/sfo/zeeman_0.pdf Graphic file (type pdf)
+<use figures/sfo/zeeman_0.pdf>
+Package luatex.def Info: figures/sfo/zeeman_0.pdf  used on input line 573.
 (luatex.def)             Requested size: 289.60155pt x 141.5774pt.
 
 
 [82
 
-<./figures/sfo/zeeman_2.pdf>]
-<figures/sfo/zeeman_4.pdf, id=9552, 1214.136pt x 593.51738pt>
-File: figures/sfo/zeeman_4.pdf Graphic file (type pdf)
-<use figures/sfo/zeeman_4.pdf>
-Package luatex.def Info: figures/sfo/zeeman_4.pdf  used on input line 519.
+<./figures/sfo/zeeman_0.pdf>]
+<figures/sfo/zeeman_1.pdf, id=9483, 1214.136pt x 593.51738pt>
+File: figures/sfo/zeeman_1.pdf Graphic file (type pdf)
+<use figures/sfo/zeeman_1.pdf>
+Package luatex.def Info: figures/sfo/zeeman_1.pdf  used on input line 573.
 (luatex.def)             Requested size: 289.60155pt x 141.5774pt.
 
 
 [83
 
-<./figures/sfo/zeeman_4.pdf>]
-<figures/sfo/zeeman_6.pdf, id=9594, 1214.136pt x 593.51738pt>
-File: figures/sfo/zeeman_6.pdf Graphic file (type pdf)
-<use figures/sfo/zeeman_6.pdf>
-Package luatex.def Info: figures/sfo/zeeman_6.pdf  used on input line 519.
+<./figures/sfo/zeeman_1.pdf>]
+<figures/sfo/zeeman_2.pdf, id=9525, 1214.136pt x 593.51738pt>
+File: figures/sfo/zeeman_2.pdf Graphic file (type pdf)
+<use figures/sfo/zeeman_2.pdf>
+Package luatex.def Info: figures/sfo/zeeman_2.pdf  used on input line 573.
 (luatex.def)             Requested size: 289.60155pt x 141.5774pt.
 
 
 [84
 
-<./figures/sfo/zeeman_6.pdf>]
-<figures/sfo/tls_0.pdf, id=9638, 953.964pt x 707.34262pt>
-File: figures/sfo/tls_0.pdf Graphic file (type pdf)
-<use figures/sfo/tls_0.pdf>
-Package luatex.def Info: figures/sfo/tls_0.pdf  used on input line 537.
-(luatex.def)             Requested size: 235.59099pt x 174.67659pt.
-
-Overfull \vbox (0.36284pt too high) detected at line 537
- []
-
+<./figures/sfo/zeeman_2.pdf>]
+<figures/sfo/zeeman_4.pdf, id=9567, 1214.136pt x 593.51738pt>
+File: figures/sfo/zeeman_4.pdf Graphic file (type pdf)
+<use figures/sfo/zeeman_4.pdf>
+Package luatex.def Info: figures/sfo/zeeman_4.pdf  used on input line 573.
+(luatex.def)             Requested size: 289.60155pt x 141.5774pt.
 
 
 [85
 
-<./figures/sfo/tls_0.pdf>]
-File: figures/sfo/tls_0.pdf Graphic file (type pdf)
-<use figures/sfo/tls_0.pdf>
-Package luatex.def Info: figures/sfo/tls_0.pdf  used on input line 537.
-(luatex.def)             Requested size: 235.59099pt x 174.67659pt.
-
-Overfull \vbox (0.36284pt too high) detected at line 537
- []
-
+<./figures/sfo/zeeman_4.pdf>]
+<figures/sfo/zeeman_6.pdf, id=9609, 1214.136pt x 593.51738pt>
+File: figures/sfo/zeeman_6.pdf Graphic file (type pdf)
+<use figures/sfo/zeeman_6.pdf>
+Package luatex.def Info: figures/sfo/zeeman_6.pdf  used on input line 573.
+(luatex.def)             Requested size: 289.60155pt x 141.5774pt.
 
 
 [86
 
-]
-<figures/sfo/tls_2.pdf, id=9677, 953.964pt x 707.34262pt>
-File: figures/sfo/tls_2.pdf Graphic file (type pdf)
-<use figures/sfo/tls_2.pdf>
-Package luatex.def Info: figures/sfo/tls_2.pdf  used on input line 537.
+<./figures/sfo/zeeman_6.pdf>]
+<figures/sfo/tls_0.pdf, id=9653, 953.964pt x 707.34262pt>
+File: figures/sfo/tls_0.pdf Graphic file (type pdf)
+<use figures/sfo/tls_0.pdf>
+Package luatex.def Info: figures/sfo/tls_0.pdf  used on input line 591.
 (luatex.def)             Requested size: 235.59099pt x 174.67659pt.
 
-Overfull \vbox (0.36284pt too high) detected at line 537
+Overfull \vbox (0.36284pt too high) detected at line 591
  []
 
 
 
 [87
 
-<./figures/sfo/tls_2.pdf>]
-<figures/sfo/atomes_0.pdf, id=9720, 317.988pt x 239.84607pt>
-File: figures/sfo/atomes_0.pdf Graphic file (type pdf)
-<use figures/sfo/atomes_0.pdf>
-Package luatex.def Info: figures/sfo/atomes_0.pdf  used on input line 570.
-(luatex.def)             Requested size: 94.23674pt x 71.07968pt.
-<figures/sfo/rabi.pdf, id=9721, 794.97pt x 439.04025pt>
-File: figures/sfo/rabi.pdf Graphic file (type pdf)
-<use figures/sfo/rabi.pdf>
-Package luatex.def Info: figures/sfo/rabi.pdf  used on input line 570.
-(luatex.def)             Requested size: 187.98248pt x 103.82294pt.
+<./figures/sfo/tls_0.pdf>]
+File: figures/sfo/tls_0.pdf Graphic file (type pdf)
+<use figures/sfo/tls_0.pdf>
+Package luatex.def Info: figures/sfo/tls_0.pdf  used on input line 591.
+(luatex.def)             Requested size: 235.59099pt x 174.67659pt.
+
+Overfull \vbox (0.36284pt too high) detected at line 591
+ []
+
 
 
 [88
 
-<./figures/sfo/atomes_0.pdf><./figures/sfo/rabi.pdf>]
-<figures/sfo/atomes_1.pdf, id=9749, 317.988pt x 239.84607pt>
-File: figures/sfo/atomes_1.pdf Graphic file (type pdf)
-<use figures/sfo/atomes_1.pdf>
-Package luatex.def Info: figures/sfo/atomes_1.pdf  used on input line 570.
-(luatex.def)             Requested size: 94.23674pt x 71.07968pt.
-File: figures/sfo/rabi.pdf Graphic file (type pdf)
-<use figures/sfo/rabi.pdf>
-Package luatex.def Info: figures/sfo/rabi.pdf  used on input line 570.
-(luatex.def)             Requested size: 187.98248pt x 103.82294pt.
+]
+<figures/sfo/tls_2.pdf, id=9692, 953.964pt x 707.34262pt>
+File: figures/sfo/tls_2.pdf Graphic file (type pdf)
+<use figures/sfo/tls_2.pdf>
+Package luatex.def Info: figures/sfo/tls_2.pdf  used on input line 591.
+(luatex.def)             Requested size: 235.59099pt x 174.67659pt.
+
+Overfull \vbox (0.36284pt too high) detected at line 591
+ []
+
 
 
 [89
 
-<./figures/sfo/atomes_1.pdf>]
-<figures/sfo/atomes_2.pdf, id=9767, 317.988pt x 239.84607pt>
-File: figures/sfo/atomes_2.pdf Graphic file (type pdf)
-<use figures/sfo/atomes_2.pdf>
-Package luatex.def Info: figures/sfo/atomes_2.pdf  used on input line 570.
+<./figures/sfo/tls_2.pdf>]
+<figures/sfo/atomes_0.pdf, id=9735, 317.988pt x 239.84607pt>
+File: figures/sfo/atomes_0.pdf Graphic file (type pdf)
+<use figures/sfo/atomes_0.pdf>
+Package luatex.def Info: figures/sfo/atomes_0.pdf  used on input line 624.
 (luatex.def)             Requested size: 94.23674pt x 71.07968pt.
+<figures/sfo/rabi.pdf, id=9736, 794.97pt x 439.04025pt>
 File: figures/sfo/rabi.pdf Graphic file (type pdf)
 <use figures/sfo/rabi.pdf>
-Package luatex.def Info: figures/sfo/rabi.pdf  used on input line 570.
+Package luatex.def Info: figures/sfo/rabi.pdf  used on input line 624.
 (luatex.def)             Requested size: 187.98248pt x 103.82294pt.
 
 
 [90
 
-<./figures/sfo/atomes_2.pdf>]
-File: figures/sfo/atomes_2.pdf Graphic file (type pdf)
-<use figures/sfo/atomes_2.pdf>
-Package luatex.def Info: figures/sfo/atomes_2.pdf  used on input line 570.
+<./figures/sfo/atomes_0.pdf><./figures/sfo/rabi.pdf>]
+<figures/sfo/atomes_1.pdf, id=9764, 317.988pt x 239.84607pt>
+File: figures/sfo/atomes_1.pdf Graphic file (type pdf)
+<use figures/sfo/atomes_1.pdf>
+Package luatex.def Info: figures/sfo/atomes_1.pdf  used on input line 624.
 (luatex.def)             Requested size: 94.23674pt x 71.07968pt.
 File: figures/sfo/rabi.pdf Graphic file (type pdf)
 <use figures/sfo/rabi.pdf>
-Package luatex.def Info: figures/sfo/rabi.pdf  used on input line 570.
+Package luatex.def Info: figures/sfo/rabi.pdf  used on input line 624.
 (luatex.def)             Requested size: 187.98248pt x 103.82294pt.
 
 
 [91
 
-]
-<figures/sfo/ramsey_schema.pdf, id=9794, 1098.504pt x 195.129pt>
-File: figures/sfo/ramsey_schema.pdf Graphic file (type pdf)
-<use figures/sfo/ramsey_schema.pdf>
-Package luatex.def Info: figures/sfo/ramsey_schema.pdf  used on input line 581.
-(luatex.def)             Requested size: 333.75291pt x 59.2835pt.
+<./figures/sfo/atomes_1.pdf>]
+<figures/sfo/atomes_2.pdf, id=9783, 317.988pt x 239.84607pt>
+File: figures/sfo/atomes_2.pdf Graphic file (type pdf)
+<use figures/sfo/atomes_2.pdf>
+Package luatex.def Info: figures/sfo/atomes_2.pdf  used on input line 624.
+(luatex.def)             Requested size: 94.23674pt x 71.07968pt.
+File: figures/sfo/rabi.pdf Graphic file (type pdf)
+<use figures/sfo/rabi.pdf>
+Package luatex.def Info: figures/sfo/rabi.pdf  used on input line 624.
+(luatex.def)             Requested size: 187.98248pt x 103.82294pt.
 
 
 [92
 
-<./figures/sfo/ramsey_schema.pdf>]
-File: figures/sfo/ramsey_schema.pdf Graphic file (type pdf)
-<use figures/sfo/ramsey_schema.pdf>
-Package luatex.def Info: figures/sfo/ramsey_schema.pdf  used on input line 581.
-(luatex.def)             Requested size: 333.75291pt x 59.2835pt.
+<./figures/sfo/atomes_2.pdf>]
+File: figures/sfo/atomes_2.pdf Graphic file (type pdf)
+<use figures/sfo/atomes_2.pdf>
+Package luatex.def Info: figures/sfo/atomes_2.pdf  used on input line 624.
+(luatex.def)             Requested size: 94.23674pt x 71.07968pt.
+File: figures/sfo/rabi.pdf Graphic file (type pdf)
+<use figures/sfo/rabi.pdf>
+Package luatex.def Info: figures/sfo/rabi.pdf  used on input line 624.
+(luatex.def)             Requested size: 187.98248pt x 103.82294pt.
 
 
 [93
 
 ]
+<figures/sfo/ramsey_schema.pdf, id=9810, 1098.504pt x 195.129pt>
 File: figures/sfo/ramsey_schema.pdf Graphic file (type pdf)
 <use figures/sfo/ramsey_schema.pdf>
-Package luatex.def Info: figures/sfo/ramsey_schema.pdf  used on input line 581.
+Package luatex.def Info: figures/sfo/ramsey_schema.pdf  used on input line 635.
 (luatex.def)             Requested size: 333.75291pt x 59.2835pt.
 
 
 [94
 
-]
-<figures/sfo/ramsey_franges_0.pdf, id=9840, 982.872pt x 382.12762pt>
-File: figures/sfo/ramsey_franges_0.pdf Graphic file (type pdf)
-<use figures/sfo/ramsey_franges_0.pdf>
-Package luatex.def Info: figures/sfo/ramsey_franges_0.pdf  used on input line 599.
-(luatex.def)             Requested size: 259.1489pt x 100.75606pt.
-<figures/sfo/ramsey_contraste.pdf, id=9841, 419.166pt x 325.215pt>
-File: figures/sfo/ramsey_contraste.pdf Graphic file (type pdf)
-<use figures/sfo/ramsey_contraste.pdf>
-Package luatex.def Info: figures/sfo/ramsey_contraste.pdf  used on input line 599.
-(luatex.def)             Requested size: 97.32077pt x 75.50749pt.
+<./figures/sfo/ramsey_schema.pdf>]
+File: figures/sfo/ramsey_schema.pdf Graphic file (type pdf)
+<use figures/sfo/ramsey_schema.pdf>
+Package luatex.def Info: figures/sfo/ramsey_schema.pdf  used on input line 635.
+(luatex.def)             Requested size: 333.75291pt x 59.2835pt.
 
 
 [95
 
-<./figures/sfo/ramsey_franges_0.pdf><./figures/sfo/ramsey_contraste.pdf>]
-<figures/sfo/ramsey_franges_1.pdf, id=9887, 982.872pt x 382.12762pt>
-File: figures/sfo/ramsey_franges_1.pdf Graphic file (type pdf)
-<use figures/sfo/ramsey_franges_1.pdf>
-Package luatex.def Info: figures/sfo/ramsey_franges_1.pdf  used on input line 599.
-(luatex.def)             Requested size: 259.1489pt x 100.75606pt.
-File: figures/sfo/ramsey_contraste.pdf Graphic file (type pdf)
-<use figures/sfo/ramsey_contraste.pdf>
-Package luatex.def Info: figures/sfo/ramsey_contraste.pdf  used on input line 599.
-(luatex.def)             Requested size: 97.32077pt x 75.50749pt.
+]
+File: figures/sfo/ramsey_schema.pdf Graphic file (type pdf)
+<use figures/sfo/ramsey_schema.pdf>
+Package luatex.def Info: figures/sfo/ramsey_schema.pdf  used on input line 635.
+(luatex.def)             Requested size: 333.75291pt x 59.2835pt.
 
 
 [96
 
-<./figures/sfo/ramsey_franges_1.pdf>]
-<figures/sfo/detecteurs.pdf, id=9915, 274.626pt x 211.38976pt>
-File: figures/sfo/detecteurs.pdf Graphic file (type pdf)
-<use figures/sfo/detecteurs.pdf>
-Package luatex.def Info: figures/sfo/detecteurs.pdf  used on input line 608.
-(luatex.def)             Requested size: 98.09842pt x 75.5089pt.
+]
+<figures/sfo/ramsey_franges_0.pdf, id=9855, 982.872pt x 382.12762pt>
+File: figures/sfo/ramsey_franges_0.pdf Graphic file (type pdf)
+<use figures/sfo/ramsey_franges_0.pdf>
+Package luatex.def Info: figures/sfo/ramsey_franges_0.pdf  used on input line 653.
+(luatex.def)             Requested size: 259.1489pt x 100.75606pt.
+<figures/sfo/ramsey_contraste.pdf, id=9856, 419.166pt x 325.215pt>
+File: figures/sfo/ramsey_contraste.pdf Graphic file (type pdf)
+<use figures/sfo/ramsey_contraste.pdf>
+Package luatex.def Info: figures/sfo/ramsey_contraste.pdf  used on input line 653.
+(luatex.def)             Requested size: 97.32077pt x 75.50749pt.
 
 
 [97
 
-<./figures/sfo/detecteurs.pdf>]
-<figures/sfo/noncomm_schema.pdf, id=9949, 1011.78pt x 333.34537pt>
-File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
-<use figures/sfo/noncomm_schema.pdf>
-Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 660.
-(luatex.def)             Requested size: 227.73636pt x 75.02998pt.
-<figures/sfo/bloch_3.pdf, id=9950, 346.896pt x 325.215pt>
-File: figures/sfo/bloch_3.pdf Graphic file (type pdf)
-<use figures/sfo/bloch_3.pdf>
-Package luatex.def Info: figures/sfo/bloch_3.pdf  used on input line 660.
-(luatex.def)             Requested size: 78.02176pt x 73.147pt.
-
-Overfull \vbox (4.55713pt too high) detected at line 660
- []
-
+<./figures/sfo/ramsey_franges_0.pdf><./figures/sfo/ramsey_contraste.pdf>]
+<figures/sfo/ramsey_franges_1.pdf, id=9902, 982.872pt x 382.12762pt>
+File: figures/sfo/ramsey_franges_1.pdf Graphic file (type pdf)
+<use figures/sfo/ramsey_franges_1.pdf>
+Package luatex.def Info: figures/sfo/ramsey_franges_1.pdf  used on input line 653.
+(luatex.def)             Requested size: 259.1489pt x 100.75606pt.
+File: figures/sfo/ramsey_contraste.pdf Graphic file (type pdf)
+<use figures/sfo/ramsey_contraste.pdf>
+Package luatex.def Info: figures/sfo/ramsey_contraste.pdf  used on input line 653.
+(luatex.def)             Requested size: 97.32077pt x 75.50749pt.
 
 
 [98
 
-<./figures/sfo/noncomm_schema.pdf>]
-File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
-<use figures/sfo/noncomm_schema.pdf>
-Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 660.
-(luatex.def)             Requested size: 227.73636pt x 75.02998pt.
-File: figures/sfo/bloch_3.pdf Graphic file (type pdf)
-<use figures/sfo/bloch_3.pdf>
-Package luatex.def Info: figures/sfo/bloch_3.pdf  used on input line 660.
-(luatex.def)             Requested size: 78.02176pt x 73.147pt.
-
-Overfull \vbox (4.55713pt too high) detected at line 660
- []
-
+<./figures/sfo/ramsey_franges_1.pdf>]
+<figures/sfo/detecteurs.pdf, id=9930, 274.626pt x 211.38976pt>
+File: figures/sfo/detecteurs.pdf Graphic file (type pdf)
+<use figures/sfo/detecteurs.pdf>
+Package luatex.def Info: figures/sfo/detecteurs.pdf  used on input line 662.
+(luatex.def)             Requested size: 98.09842pt x 75.5089pt.
 
 
 [99
 
-]
+<./figures/sfo/detecteurs.pdf>]
+<figures/sfo/noncomm_schema.pdf, id=9965, 1011.78pt x 333.34537pt>
 File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
 <use figures/sfo/noncomm_schema.pdf>
-Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 660.
+Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 714.
 (luatex.def)             Requested size: 227.73636pt x 75.02998pt.
+<figures/sfo/bloch_3.pdf, id=9966, 346.896pt x 325.215pt>
 File: figures/sfo/bloch_3.pdf Graphic file (type pdf)
 <use figures/sfo/bloch_3.pdf>
-Package luatex.def Info: figures/sfo/bloch_3.pdf  used on input line 660.
+Package luatex.def Info: figures/sfo/bloch_3.pdf  used on input line 714.
 (luatex.def)             Requested size: 78.02176pt x 73.147pt.
 
-Overfull \vbox (4.55713pt too high) detected at line 660
+Overfull \vbox (4.55713pt too high) detected at line 714
  []
 
 
 
 [100
 
-]
+<./figures/sfo/noncomm_schema.pdf>]
 File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
 <use figures/sfo/noncomm_schema.pdf>
-Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 660.
+Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 714.
 (luatex.def)             Requested size: 227.73636pt x 75.02998pt.
 File: figures/sfo/bloch_3.pdf Graphic file (type pdf)
 <use figures/sfo/bloch_3.pdf>
-Package luatex.def Info: figures/sfo/bloch_3.pdf  used on input line 660.
+Package luatex.def Info: figures/sfo/bloch_3.pdf  used on input line 714.
 (luatex.def)             Requested size: 78.02176pt x 73.147pt.
 
-Overfull \vbox (4.55713pt too high) detected at line 660
+Overfull \vbox (4.55713pt too high) detected at line 714
  []
 
 
 
 [101
 
-<./figures/sfo/bloch_3.pdf>]
+]
 File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
 <use figures/sfo/noncomm_schema.pdf>
-Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 660.
+Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 714.
 (luatex.def)             Requested size: 227.73636pt x 75.02998pt.
-<figures/sfo/bloch_4.pdf, id=10059, 346.896pt x 325.215pt>
-File: figures/sfo/bloch_4.pdf Graphic file (type pdf)
-<use figures/sfo/bloch_4.pdf>
-Package luatex.def Info: figures/sfo/bloch_4.pdf  used on input line 660.
+File: figures/sfo/bloch_3.pdf Graphic file (type pdf)
+<use figures/sfo/bloch_3.pdf>
+Package luatex.def Info: figures/sfo/bloch_3.pdf  used on input line 714.
 (luatex.def)             Requested size: 78.02176pt x 73.147pt.
 
-Overfull \vbox (4.55713pt too high) detected at line 660
+Overfull \vbox (4.55713pt too high) detected at line 714
  []
 
 
 
 [102
 
-<./figures/sfo/bloch_4.pdf>]
+]
 File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
 <use figures/sfo/noncomm_schema.pdf>
-Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 660.
+Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 714.
 (luatex.def)             Requested size: 227.73636pt x 75.02998pt.
-<figures/sfo/bloch_5.pdf, id=10116, 346.896pt x 325.215pt>
-File: figures/sfo/bloch_5.pdf Graphic file (type pdf)
-<use figures/sfo/bloch_5.pdf>
-Package luatex.def Info: figures/sfo/bloch_5.pdf  used on input line 660.
+File: figures/sfo/bloch_3.pdf Graphic file (type pdf)
+<use figures/sfo/bloch_3.pdf>
+Package luatex.def Info: figures/sfo/bloch_3.pdf  used on input line 714.
 (luatex.def)             Requested size: 78.02176pt x 73.147pt.
 
-Overfull \vbox (4.55713pt too high) detected at line 660
+Overfull \vbox (4.55713pt too high) detected at line 714
  []
 
 
 
 [103
 
-<./figures/sfo/bloch_5.pdf>]
+<./figures/sfo/bloch_3.pdf>]
 File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
 <use figures/sfo/noncomm_schema.pdf>
-Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 660.
+Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 714.
 (luatex.def)             Requested size: 227.73636pt x 75.02998pt.
-<figures/sfo/bloch_6.pdf, id=10174, 346.896pt x 325.215pt>
-File: figures/sfo/bloch_6.pdf Graphic file (type pdf)
-<use figures/sfo/bloch_6.pdf>
-Package luatex.def Info: figures/sfo/bloch_6.pdf  used on input line 660.
+<figures/sfo/bloch_4.pdf, id=10074, 346.896pt x 325.215pt>
+File: figures/sfo/bloch_4.pdf Graphic file (type pdf)
+<use figures/sfo/bloch_4.pdf>
+Package luatex.def Info: figures/sfo/bloch_4.pdf  used on input line 714.
 (luatex.def)             Requested size: 78.02176pt x 73.147pt.
 
-Overfull \vbox (4.55713pt too high) detected at line 660
+Overfull \vbox (4.55713pt too high) detected at line 714
  []
 
 
 
 [104
 
-<./figures/sfo/bloch_6.pdf>]
+<./figures/sfo/bloch_4.pdf>]
 File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
 <use figures/sfo/noncomm_schema.pdf>
-Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 660.
+Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 714.
 (luatex.def)             Requested size: 227.73636pt x 75.02998pt.
-<figures/sfo/bloch_7.pdf, id=10231, 346.896pt x 325.215pt>
-File: figures/sfo/bloch_7.pdf Graphic file (type pdf)
-<use figures/sfo/bloch_7.pdf>
-Package luatex.def Info: figures/sfo/bloch_7.pdf  used on input line 660.
+<figures/sfo/bloch_5.pdf, id=10132, 346.896pt x 325.215pt>
+File: figures/sfo/bloch_5.pdf Graphic file (type pdf)
+<use figures/sfo/bloch_5.pdf>
+Package luatex.def Info: figures/sfo/bloch_5.pdf  used on input line 714.
 (luatex.def)             Requested size: 78.02176pt x 73.147pt.
 
-Overfull \vbox (4.55713pt too high) detected at line 660
+Overfull \vbox (4.55713pt too high) detected at line 714
  []
 
 
 
 [105
 
-<./figures/sfo/bloch_7.pdf>]
+<./figures/sfo/bloch_5.pdf>]
 File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
 <use figures/sfo/noncomm_schema.pdf>
-Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 660.
+Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 714.
 (luatex.def)             Requested size: 227.73636pt x 75.02998pt.
-<figures/sfo/bloch_8.pdf, id=10288, 346.896pt x 325.215pt>
-File: figures/sfo/bloch_8.pdf Graphic file (type pdf)
-<use figures/sfo/bloch_8.pdf>
-Package luatex.def Info: figures/sfo/bloch_8.pdf  used on input line 660.
+<figures/sfo/bloch_6.pdf, id=10189, 346.896pt x 325.215pt>
+File: figures/sfo/bloch_6.pdf Graphic file (type pdf)
+<use figures/sfo/bloch_6.pdf>
+Package luatex.def Info: figures/sfo/bloch_6.pdf  used on input line 714.
 (luatex.def)             Requested size: 78.02176pt x 73.147pt.
 
-Overfull \vbox (4.55713pt too high) detected at line 660
+Overfull \vbox (4.55713pt too high) detected at line 714
  []
 
 
 
 [106
 
-<./figures/sfo/bloch_8.pdf>]
+<./figures/sfo/bloch_6.pdf>]
 File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
 <use figures/sfo/noncomm_schema.pdf>
-Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 660.
+Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 714.
 (luatex.def)             Requested size: 227.73636pt x 75.02998pt.
-<figures/sfo/bloch_9.pdf, id=10346, 346.896pt x 325.215pt>
-File: figures/sfo/bloch_9.pdf Graphic file (type pdf)
-<use figures/sfo/bloch_9.pdf>
-Package luatex.def Info: figures/sfo/bloch_9.pdf  used on input line 660.
+<figures/sfo/bloch_7.pdf, id=10246, 346.896pt x 325.215pt>
+File: figures/sfo/bloch_7.pdf Graphic file (type pdf)
+<use figures/sfo/bloch_7.pdf>
+Package luatex.def Info: figures/sfo/bloch_7.pdf  used on input line 714.
 (luatex.def)             Requested size: 78.02176pt x 73.147pt.
 
-Overfull \vbox (4.55713pt too high) detected at line 660
+Overfull \vbox (4.55713pt too high) detected at line 714
  []
 
 
 
 [107
 
-<./figures/sfo/bloch_9.pdf>]
+<./figures/sfo/bloch_7.pdf>]
 File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
 <use figures/sfo/noncomm_schema.pdf>
-Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 660.
+Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 714.
 (luatex.def)             Requested size: 227.73636pt x 75.02998pt.
-File: figures/sfo/bloch_9.pdf Graphic file (type pdf)
-<use figures/sfo/bloch_9.pdf>
-Package luatex.def Info: figures/sfo/bloch_9.pdf  used on input line 660.
+<figures/sfo/bloch_8.pdf, id=10304, 346.896pt x 325.215pt>
+File: figures/sfo/bloch_8.pdf Graphic file (type pdf)
+<use figures/sfo/bloch_8.pdf>
+Package luatex.def Info: figures/sfo/bloch_8.pdf  used on input line 714.
 (luatex.def)             Requested size: 78.02176pt x 73.147pt.
 
-Overfull \vbox (4.55713pt too high) detected at line 660
+Overfull \vbox (4.55713pt too high) detected at line 714
  []
 
 
 
 [108
 
-]
-<figures/sfo/noncomm_resultats.pdf, id=10411, 1098.504pt x 390.258pt>
-File: figures/sfo/noncomm_resultats.pdf Graphic file (type pdf)
-<use figures/sfo/noncomm_resultats.pdf>
-Package luatex.def Info: figures/sfo/noncomm_resultats.pdf  used on input line 674.
-(luatex.def)             Requested size: 306.2647pt x 108.80106pt.
+<./figures/sfo/bloch_8.pdf>]
+File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
+<use figures/sfo/noncomm_schema.pdf>
+Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 714.
+(luatex.def)             Requested size: 227.73636pt x 75.02998pt.
+<figures/sfo/bloch_9.pdf, id=10361, 346.896pt x 325.215pt>
+File: figures/sfo/bloch_9.pdf Graphic file (type pdf)
+<use figures/sfo/bloch_9.pdf>
+Package luatex.def Info: figures/sfo/bloch_9.pdf  used on input line 714.
+(luatex.def)             Requested size: 78.02176pt x 73.147pt.
+
+Overfull \vbox (4.55713pt too high) detected at line 714
+ []
+
 
 
 [109
 
-<./figures/sfo/noncomm_resultats.pdf>]
-<figures/sfo/ramsey4_schema.pdf, id=10432, 910.602pt x 325.215pt>
-File: figures/sfo/ramsey4_schema.pdf Graphic file (type pdf)
-<use figures/sfo/ramsey4_schema.pdf>
-Package luatex.def Info: figures/sfo/ramsey4_schema.pdf  used on input line 694.
-(luatex.def)             Requested size: 266.99753pt x 95.35202pt.
+<./figures/sfo/bloch_9.pdf>]
+File: figures/sfo/noncomm_schema.pdf Graphic file (type pdf)
+<use figures/sfo/noncomm_schema.pdf>
+Package luatex.def Info: figures/sfo/noncomm_schema.pdf  used on input line 714.
+(luatex.def)             Requested size: 227.73636pt x 75.02998pt.
+File: figures/sfo/bloch_9.pdf Graphic file (type pdf)
+<use figures/sfo/bloch_9.pdf>
+Package luatex.def Info: figures/sfo/bloch_9.pdf  used on input line 714.
+(luatex.def)             Requested size: 78.02176pt x 73.147pt.
+
+Overfull \vbox (4.55713pt too high) detected at line 714
+ []
+
 
 
 [110
 
-<./figures/sfo/ramsey4_schema.pdf>]
-File: figures/sfo/ramsey4_schema.pdf Graphic file (type pdf)
-<use figures/sfo/ramsey4_schema.pdf>
-Package luatex.def Info: figures/sfo/ramsey4_schema.pdf  used on input line 694.
-(luatex.def)             Requested size: 266.99753pt x 95.35202pt.
+]
+<figures/sfo/noncomm_resultats.pdf, id=10426, 1098.504pt x 390.258pt>
+File: figures/sfo/noncomm_resultats.pdf Graphic file (type pdf)
+<use figures/sfo/noncomm_resultats.pdf>
+Package luatex.def Info: figures/sfo/noncomm_resultats.pdf  used on input line 728.
+(luatex.def)             Requested size: 306.2647pt x 108.80106pt.
 
 
 [111
 
-]
-<figures/sfo/ramsey4_resultats.pdf, id=10488, 1199.682pt x 426.84468pt>
-File: figures/sfo/ramsey4_resultats.pdf Graphic file (type pdf)
-<use figures/sfo/ramsey4_resultats.pdf>
-Package luatex.def Info: figures/sfo/ramsey4_resultats.pdf  used on input line 711.
-(luatex.def)             Requested size: 266.99753pt x 94.9938pt.
+<./figures/sfo/noncomm_resultats.pdf>]
+<figures/sfo/ramsey4_schema.pdf, id=10448, 910.602pt x 325.215pt>
+File: figures/sfo/ramsey4_schema.pdf Graphic file (type pdf)
+<use figures/sfo/ramsey4_schema.pdf>
+Package luatex.def Info: figures/sfo/ramsey4_schema.pdf  used on input line 748.
+(luatex.def)             Requested size: 266.99753pt x 95.35202pt.
 
 
 [112
 
-<./figures/sfo/ramsey4_resultats.pdf>]
+<./figures/sfo/ramsey4_schema.pdf>]
+File: figures/sfo/ramsey4_schema.pdf Graphic file (type pdf)
+<use figures/sfo/ramsey4_schema.pdf>
+Package luatex.def Info: figures/sfo/ramsey4_schema.pdf  used on input line 748.
+(luatex.def)             Requested size: 266.99753pt x 95.35202pt.
+
 
 [113
 
 ]
+<figures/sfo/ramsey4_resultats.pdf, id=10503, 1199.682pt x 426.84468pt>
+File: figures/sfo/ramsey4_resultats.pdf Graphic file (type pdf)
+<use figures/sfo/ramsey4_resultats.pdf>
+Package luatex.def Info: figures/sfo/ramsey4_resultats.pdf  used on input line 765.
+(luatex.def)             Requested size: 266.99753pt x 94.9938pt.
+
 
 [114
 
-]
+<./figures/sfo/ramsey4_resultats.pdf>]
 
 [115
 
@@ -2379,58 +2379,118 @@ Package luatex.def Info: figures/sfo/ramsey4_resultats.pdf  used on input line 7
 [118
 
 ]
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf, id=10599, 865.77502pt x 638.5182pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf  used on input line 803.
-(luatex.def)             Requested size: 192.39984pt x 141.89691pt.
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_375MHz.pdf, id=10600, 865.76056pt x 640.4471pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_375MHz.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_375MHz.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_375MHz.pdf  used on input line 803.
-(luatex.def)             Requested size: 192.39662pt x 142.32556pt.
-
 
 [119
 
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf><../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_375MHz.pdf>]
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf, id=15154, 578.16pt x 407.5225pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf  used on input line 809.
-(luatex.def)             Requested size: 220.93816pt x 155.73071pt.
-
+]
 
 [120
 
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf>]
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/sequence_chopping.pdf, id=18663, 263.98625pt x 35.13126pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/sequence_chopping.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/sequence_chopping.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/sequence_chopping.pdf  used on input line 814.
-(luatex.def)             Requested size: 392.67131pt x 52.2566pt.
-
+]
 
 [121
 
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/sequence_chopping.pdf>]
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf, id=18691, 459.7175pt x 343.2825pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf  used on input line 820.
-(luatex.def)             Requested size: 192.3996pt x 143.66957pt.
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf, id=18692, 610.28pt x 407.5225pt>
-File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf Graphic file (type pdf)
-<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf>
-Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf  used on input line 820.
-(luatex.def)             Requested size: 192.39752pt x 128.47597pt.
-
+]
 
 [122
 
-<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf><../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf>]
+]
 
 [123
+
+]
+
+[124
+
+]
+
+[125
+
+]
+
+[126
+
+]
+
+[127
+
+]
+
+[128
+
+]
+Overfull \vbox (3.22191pt too high) detected at line 878
+ []
+
+
+
+[129
+
+]
+
+[130
+
+]
+
+[131
+
+]
+
+[132
+
+]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf, id=10704, 865.77502pt x 638.5182pt>
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf  used on input line 930.
+(luatex.def)             Requested size: 192.39984pt x 141.89691pt.
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_375MHz.pdf, id=10705, 865.76056pt x 640.4471pt>
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_375MHz.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_375MHz.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_375MHz.pdf  used on input line 930.
+(luatex.def)             Requested size: 192.39662pt x 142.32556pt.
+
+
+[133
+
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf><../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_375MHz.pdf>]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf, id=15259, 578.16pt x 407.5225pt>
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf  used on input line 936.
+(luatex.def)             Requested size: 220.93816pt x 155.73071pt.
+
+
+[134
+
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/88Sr/comparaison_raie_24MHz_88_jolie.pdf>]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/sequence_chopping.pdf, id=18768, 263.98625pt x 35.13126pt>
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/sequence_chopping.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/sequence_chopping.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/sequence_chopping.pdf  used on input line 941.
+(luatex.def)             Requested size: 392.67131pt x 52.2566pt.
+
+
+[135
+
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/Figures_pour_theorie/sequence_chopping.pdf>]
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf, id=18795, 459.7175pt x 343.2825pt>
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf  used on input line 947.
+(luatex.def)             Requested size: 192.3996pt x 143.66957pt.
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf, id=18796, 610.28pt x 407.5225pt>
+File: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf Graphic file (type pdf)
+<use ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf>
+Package luatex.def Info: ../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf  used on input line 947.
+(luatex.def)             Requested size: 192.39752pt x 128.47597pt.
+
+
+[136
+
+<../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/data15_6MHz_noise.pdf><../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf>]
+
+[137
 
 ]
 \tf@nav=\write6
@@ -2456,19 +2516,19 @@ Package rerunfilecheck Info: File `soutenance.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39941 strings out of 475506
+ 40000 strings out of 475506
  195322,1648299 words of node,token memory allocated
- 15714 words of node memory still in use:
-   63 hlist, 10 vlist, 4 rule, 18 disc, 6 local_par, 12 math, 681 glue, 44 kern, 22 penalty, 224 glyph, 3205 attribute, 64 glue_spec, 460 attribute_list, 4 write, 78 pdf_literal, 30 pdf_colorstack nodes
-   avail lists: 2:29473,3:12711,4:753,5:406,6:48,7:3007,8:62,9:1974,10:20,11:145
- 61452 multiletter control sequences out of 65536+600000
- 161 fonts using 45067359 bytes
+ 17876 words of node memory still in use:
+   63 hlist, 10 vlist, 4 rule, 18 disc, 6 local_par, 12 math, 823 glue, 44 kern, 22 penalty, 224 glyph, 3716 attribute, 64 glue_spec, 533 attribute_list, 4 write, 78 pdf_literal, 30 pdf_colorstack nodes
+   avail lists: 1:1,2:29082,3:12711,4:753,5:431,6:48,7:3007,8:62,9:1974,10:20,11:187
+ 61483 multiletter control sequences out of 65536+600000
+ 162 fonts using 45528495 bytes
  128i,16n,116p,692b,1198s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-LightItalic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/firamath/FiraMath-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-SemiBold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-Light.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/firamath/FiraMath-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/firamath/FiraMath-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-ExtraLight.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-Medium.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-Light.otf>
-Output written on soutenance.pdf (123 pages, 14861237 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/firamath/FiraMath-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-LightItalic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-Light.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/firamath/FiraMath-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/firamath/FiraMath-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-SemiBold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-ExtraLight.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-Medium.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-Light.otf>
+Output written on soutenance.pdf (137 pages, 14901962 bytes).
 
-PDF statistics: 22436 PDF objects out of 26593 (max. 8388607)
- 7981 compressed objects within 80 object streams
- 252 named destinations out of 1000 (max. 131072)
+PDF statistics: 22541 PDF objects out of 26593 (max. 8388607)
+ 8067 compressed objects within 81 object streams
+ 280 named destinations out of 1000 (max. 131072)
  96 words of extra memory for PDF output out of 10000 (max. 100000000)
 

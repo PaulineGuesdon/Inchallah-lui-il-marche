@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1794581981.65815 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Soutenance/soutenance.tex" "out/soutenance.pdf" "soutenance" 1794582012.93074 0
+["lualatex"] 1794940874.21033 "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Soutenance/soutenance.tex" "out/soutenance.pdf" "soutenance" 1794940915.04818 0
   "../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/6MHz_blue_detuned.pdf" 1790516335.53589 1475443 3c8a9493d49d405ae9b04dd0b4913610 ""
   "../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_259MHz.pdf" 1790514990.9575 559541 170eb7257689a2aab70912c66eb2c743 ""
   "../Manuscrit_these/Chapitres/Engineering highly entangled system of photoassociated 87Sr atoms/images/87Sr/composite_276MHz.pdf" 1790791972.78004 755551 c1b621712d03f7ec4d8c964adb5248db ""
@@ -18,7 +18,7 @@
   "../Manuscrit_these/Chapitres/Gas preparation and spin control/images/setup_exp.pdf" 1788948354.50402 191391 f2adc99076262f08cafff788eeabaeec ""
   "../Manuscrit_these/appendix/images/logo_ED_Galilee.png" 1790859458.91427 28634 04316c3bd3fb75fa22c3e3aec75f2713 ""
   "../Manuscrit_these/appendix/images/logo_USPN.png" 1790859458.90714 25589 88c27b5dd3e195d992a86dc83b04edac ""
-  "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Soutenance/soutenance.tex" 1794581138.02713 36545 b3578c73e347f3ce07d9d16adf1dd719 ""
+  "/Users/pauline/Documents/GitHub/Inchallah-lui-il-marche/Soutenance/soutenance.tex" 1794939584.3751 42875 199b556378e5b907ee6c397222fbd254 ""
   "/Users/pauline/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/firamath-regular.luc" 1794242900.13763 240933 8cbd0d4470c7ea2a14b308b7e22a7111 ""
   "/Users/pauline/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/firasans-extralight.luc" 1794242893.15143 1806592 b4fc08cbc42cb525b58a3af4eae62ea3 ""
   "/Users/pauline/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/firasans-light.luc" 1794242834.84446 1821869 934f0b8621e4732241830f617911bbe1 ""
@@ -34,7 +34,7 @@
   "/Users/pauline/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1794569939.24199 128146 725fe7f98082e4316d75600fb2954f4b ""
   "/Users/pauline/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bold.luc" 1794242828.18157 128104 1f04e25a2de819cae1cdd0d5073e23be ""
   "/Users/pauline/Library/texlive/2025/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc" 1794242827.54092 127646 397fa0567f6d79c02271149f08186ede ""
-  "/Users/pauline/Library/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1794570479.18542 11181 e3f9575ea8904383c7b673a5debd78e4 ""
+  "/Users/pauline/Library/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1794940826.16363 11818 679a3d0b55d667d5f80036bf82cc42d1 ""
   "/Users/pauline/Library/texlive/2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1794242825.6417 408338 56f01b9355161c51890fe4583a27037c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-ExtraLight.otf" 1554498137 505316 fb57a5016be869ee263aab745159b430 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/fira/FiraSans-Light.otf" 1554498137 505308 9c7b22b54b0d47608efc27c58348b573 ""
@@ -351,10 +351,10 @@
   "figures/sfo/zeeman_2.pdf" 1794573674.22433 40423 6d50d5b75c575a090fce9f86a117c5bb ""
   "figures/sfo/zeeman_4.pdf" 1794573674.25828 41422 a5adf0d0c4d4ae700d045ecadc87708a ""
   "figures/sfo/zeeman_6.pdf" 1794573674.30106 41709 ec426feffb83a26fb3baafad21d4059a ""
-  "out/soutenance.aux" 1794582011.20294 9173 69fffd13ca4d37cd9901795cf22c4c7f "lualatex"
-  "out/soutenance.nav" 1794582011.21096 5981 38e107030f5ba52cb2732599e5db1979 "lualatex"
-  "out/soutenance.out" 1794582011.20921 1029 5280fe523a8e479a48b75ebee8b46fa8 "lualatex"
-  "soutenance.tex" 1794581138.02713 36545 b3578c73e347f3ce07d9d16adf1dd719 ""
+  "out/soutenance.aux" 1794940912.85184 9707 e0517063ff0dde1eb634354ca0470d8c "lualatex"
+  "out/soutenance.nav" 1794940912.8589 6371 a20160dad62cb3cde78e8f7cc3435a46 "lualatex"
+  "out/soutenance.out" 1794940912.85762 1029 5280fe523a8e479a48b75ebee8b46fa8 "lualatex"
+  "soutenance.tex" 1794939584.3751 42875 199b556378e5b907ee6c397222fbd254 ""
   (generated)
   "out/soutenance.aux"
   "out/soutenance.log"
